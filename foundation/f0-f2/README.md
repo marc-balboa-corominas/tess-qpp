@@ -41,3 +41,8 @@ Examples include:
 - artifacts containing machine-specific absolute local paths.
 
 The archival package, rather than this Git subset, remains the authoritative complete snapshot.
+## Archival record
+
+The canonical complete snapshot and its integrity information are documented in [`ARCHIVE_RECORD.md`](ARCHIVE_RECORD.md).
+
+Canonical OSF component: https://osf.io/539ub/
