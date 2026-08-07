@@ -1,0 +1,336 @@
+{
+  "date_utc": "2026-08-02T18:54:25.979245+00:00",
+  "execution_status": "FULL_BENCHMARK_EXECUTION_COMPLETE",
+  "runner_implementation_version": "1.0.1",
+  "environment": {
+    "python_version": "3.13.13",
+    "python_full": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 01:56:49) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable_relative": ".venv\\Scripts\\python.exe",
+    "numpy_version": "2.5.1",
+    "scipy_version": "1.18.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+    "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "afino_package_version": "0.5",
+    "tracked_diff_exit_code": 0,
+    "staged_diff_exit_code": 0,
+    "git_status_porcelain": "?? afino.egg-info/",
+    "pip_freeze": [
+      "-e git+https://github.com/aringlis/afino_release_version.git@6aceac9518fc8056052807e666da9d0c8bebb010#egg=afino",
+      "astropy==8.0.1",
+      "astropy-iers-data==0.2026.7.27.0.56.29",
+      "colorama==0.4.6",
+      "contourpy==1.3.3",
+      "cycler==0.12.1",
+      "fonttools==4.63.0",
+      "iniconfig==2.3.0",
+      "kiwisolver==1.5.0",
+      "matplotlib==3.11.1",
+      "numpy==2.5.1",
+      "packaging==26.2",
+      "pillow==12.3.0",
+      "pluggy==1.6.0",
+      "pyerfa==2.0.1.5",
+      "Pygments==2.20.0",
+      "pyparsing==3.3.2",
+      "pytest==9.1.1",
+      "python-dateutil==2.9.0.post0",
+      "PyYAML==6.0.3",
+      "scipy==1.18.0",
+      "setuptools==83.0.0",
+      "six==1.17.0",
+      "wheel==0.47.0"
+    ]
+  },
+  "preflight": {
+    "physical_hashes": {
+      "fase1_tarea04_run_afino_checkpointed_v2.py": "2e35137655a6fd66cd53d76f9229024b4c74ace597c9df62479e48cefc3c84e7",
+      "fase1_tarea04_full_execution_plan.csv": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+      "fase1_tarea03_core_flux_values.npy": "f5fdd48f2951a1e055355d76b8b82c931fceea8cbb0688ca0099fe329594e60d",
+      "fase1_tarea03_core_series_offsets.npy": "9169e4253cee3fb75b52e6ef61995efcdb71514720ba39c311eb9a085e901d85",
+      "fase1_tarea03_core_time_values.npy": "730e97faa7b9bbcf03ea9b8c897790fd500c36fadb8f7c47608d9614fbba8513",
+      "fase1_tarea03_core_time_offsets.npy": "c58d96df35b66a33ec3ffe37347f745af78cfd3eaa4e77762230206513f4c233",
+      "fase1_tarea03_core_series_manifest.csv": "2020c849348c81235036443d3215395c602b80b00debe64fec692935dda778f4",
+      "fase1_tarea03_time_vector_manifest.csv": "ce7f2f465f7ee73c8de983a91a8415b1a9d75e3b65a5e94b553d42c94068a5e7",
+      "fase1_tarea03_materialization_audit.json": "8fa6d0b108dd9f4c2d941729221ad9fcbfea14af63baaec1474cce751bb51310",
+      "fase1_tarea04_canary_checkpoint.sqlite": "e353f3c87ed2453fbb15e8dd17d09b66591badbe0f5d6ac7313691191c8415f8"
+    },
+    "logical_hashes": {
+      "canonical_flux_payload_sha256": "f593637faabf57bdcd9c4bea66f161cbaace77ad09de682179d709b002167abe",
+      "series_offsets_canonical_sha256": "b7ed6562c1d5a256309ca417744ed3f0520c79fb3d85b43a67383d9d4810817e",
+      "time_values_canonical_sha256": "6809c6c9ecb0667c5eda35e62fccbd958dc5c619845f9da37e0713f5b1580537",
+      "time_offsets_canonical_sha256": "28d9acdf22fdfaf6737337f20331e37a52710ec0d43c5b39251119b619a875a4"
+    },
+    "checkpoint_exists_before_start": false,
+    "initial_result_rows": 0,
+    "canary_checkpoint_imported": false,
+    "canary_results_imported": false
+  },
+  "postflight": {
+    "physical_hashes": {
+      "fase1_tarea04_run_afino_checkpointed_v2.py": "2e35137655a6fd66cd53d76f9229024b4c74ace597c9df62479e48cefc3c84e7",
+      "fase1_tarea04_full_execution_plan.csv": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+      "fase1_tarea03_core_flux_values.npy": "f5fdd48f2951a1e055355d76b8b82c931fceea8cbb0688ca0099fe329594e60d",
+      "fase1_tarea03_core_series_offsets.npy": "9169e4253cee3fb75b52e6ef61995efcdb71514720ba39c311eb9a085e901d85",
+      "fase1_tarea03_core_time_values.npy": "730e97faa7b9bbcf03ea9b8c897790fd500c36fadb8f7c47608d9614fbba8513",
+      "fase1_tarea03_core_time_offsets.npy": "c58d96df35b66a33ec3ffe37347f745af78cfd3eaa4e77762230206513f4c233",
+      "fase1_tarea03_core_series_manifest.csv": "2020c849348c81235036443d3215395c602b80b00debe64fec692935dda778f4",
+      "fase1_tarea03_time_vector_manifest.csv": "ce7f2f465f7ee73c8de983a91a8415b1a9d75e3b65a5e94b553d42c94068a5e7",
+      "fase1_tarea03_materialization_audit.json": "8fa6d0b108dd9f4c2d941729221ad9fcbfea14af63baaec1474cce751bb51310",
+      "fase1_tarea04_canary_checkpoint.sqlite": "e353f3c87ed2453fbb15e8dd17d09b66591badbe0f5d6ac7313691191c8415f8"
+    },
+    "logical_hashes": {
+      "canonical_flux_payload_sha256": "f593637faabf57bdcd9c4bea66f161cbaace77ad09de682179d709b002167abe",
+      "series_offsets_canonical_sha256": "b7ed6562c1d5a256309ca417744ed3f0520c79fb3d85b43a67383d9d4810817e",
+      "time_values_canonical_sha256": "6809c6c9ecb0667c5eda35e62fccbd958dc5c619845f9da37e0713f5b1580537",
+      "time_offsets_canonical_sha256": "28d9acdf22fdfaf6737337f20331e37a52710ec0d43c5b39251119b619a875a4"
+    },
+    "dataset_unchanged": true,
+    "runner_unchanged": true,
+    "plan_unchanged": true,
+    "canary_checkpoint_unchanged": true,
+    "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "afino_version": "0.5",
+    "tracked_git_diff_empty": true,
+    "staged_git_diff_empty": true,
+    "git_status_porcelain": "?? afino.egg-info/"
+  },
+  "plan": {
+    "planned_jobs": 16317,
+    "primary_jobs": 13320,
+    "stability_jobs": 2997,
+    "M0_rows": 5439,
+    "M1_rows": 5439,
+    "M2_rows": 5439,
+    "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+    "unique_job_ids": 16317,
+    "unique_scientific_keys": 16317
+  },
+  "checkpoint": {
+    "filename": "fase1_tarea05_full_checkpoint.sqlite",
+    "sha256": "9751062964e3db79f116270c58461a859c75c570d28bfc988a72a1cb577a934b",
+    "metadata": {
+      "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+      "afino_version": "0.5",
+      "created_at_utc": "2026-08-02T02:32:38.748385+00:00",
+      "dataset_logical_hashes": "{\"canonical_flux_payload_sha256\":\"f593637faabf57bdcd9c4bea66f161cbaace77ad09de682179d709b002167abe\",\"series_offsets_canonical_sha256\":\"b7ed6562c1d5a256309ca417744ed3f0520c79fb3d85b43a67383d9d4810817e\",\"time_values_canonical_sha256\":\"6809c6c9ecb0667c5eda35e62fccbd958dc5c619845f9da37e0713f5b1580537\",\"time_offsets_canonical_sha256\":\"28d9acdf22fdfaf6737337f20331e37a52710ec0d43c5b39251119b619a875a4\"}",
+      "dataset_physical_hashes": "{\"fase1_tarea03_core_flux_values.npy\":\"f5fdd48f2951a1e055355d76b8b82c931fceea8cbb0688ca0099fe329594e60d\",\"fase1_tarea03_core_series_offsets.npy\":\"9169e4253cee3fb75b52e6ef61995efcdb71514720ba39c311eb9a085e901d85\",\"fase1_tarea03_core_time_values.npy\":\"730e97faa7b9bbcf03ea9b8c897790fd500c36fadb8f7c47608d9614fbba8513\",\"fase1_tarea03_core_time_offsets.npy\":\"c58d96df35b66a33ec3ffe37347f745af78cfd3eaa4e77762230206513f4c233\",\"fase1_tarea03_core_series_manifest.csv\":\"2020c849348c81235036443d3215395c602b80b00debe64fec692935dda778f4\",\"fase1_tarea03_time_vector_manifest.csv\":\"ce7f2f465f7ee73c8de983a91a8415b1a9d75e3b65a5e94b553d42c94068a5e7\",\"fase1_tarea03_materialization_audit.json\":\"8fa6d0b108dd9f4c2d941729221ad9fcbfea14af63baaec1474cce751bb51310\",\"fase1_tarea04_build_execution_plan.py\":\"0980c0c8630106dc19627f50722ffe54c46b35d68809e6db6be651be537c79d3\",\"fase1_tarea04_full_execution_plan.csv\":\"ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03\",\"fase1_tarea04_canary_plan.csv\":\"5663ee0c5607db3764abe26f7e4e231a0b36d467714bb2f62778a3c414d47480\"}",
+      "plan_filename": "fase1_tarea04_full_execution_plan.csv",
+      "plan_kind": "full",
+      "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+      "runner_implementation_version": "1.0.1",
+      "runner_sha256": "2e35137655a6fd66cd53d76f9229024b4c74ace597c9df62479e48cefc3c84e7",
+      "schema_version": "1.0.0"
+    },
+    "sqlite_transaction_policy": "one independent transaction per completed model call",
+    "unique_job_id_enforced": true,
+    "unique_series_seed_model_enforced": true
+  },
+  "resume": {
+    "invocation_count": 10,
+    "first_invocation_existing_before": 0,
+    "total_committed_new": 16317,
+    "final_total_after": 16317,
+    "invocations": [
+      {
+        "invocation_id": 1,
+        "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-02T02:32:38.751021+00:00",
+        "finished_at_utc": "2026-08-02T02:46:57.995959+00:00",
+        "resume_requested": 1,
+        "stop_after": 2000,
+        "existing_before": 0,
+        "committed_new": 2000,
+        "skipped_existing": 0,
+        "total_after": 2000
+      },
+      {
+        "invocation_id": 2,
+        "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-02T02:50:48.061365+00:00",
+        "finished_at_utc": "2026-08-02T03:10:33.428210+00:00",
+        "resume_requested": 1,
+        "stop_after": 2000,
+        "existing_before": 2000,
+        "committed_new": 2000,
+        "skipped_existing": 2000,
+        "total_after": 4000
+      },
+      {
+        "invocation_id": 3,
+        "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-02T03:29:19.733118+00:00",
+        "finished_at_utc": "2026-08-02T03:45:43.116695+00:00",
+        "resume_requested": 1,
+        "stop_after": 2000,
+        "existing_before": 4000,
+        "committed_new": 2000,
+        "skipped_existing": 4000,
+        "total_after": 6000
+      },
+      {
+        "invocation_id": 4,
+        "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-02T10:13:06.897813+00:00",
+        "finished_at_utc": "2026-08-02T10:27:30.012957+00:00",
+        "resume_requested": 1,
+        "stop_after": 2000,
+        "existing_before": 6000,
+        "committed_new": 2000,
+        "skipped_existing": 6000,
+        "total_after": 8000
+      },
+      {
+        "invocation_id": 5,
+        "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-02T16:18:20.208808+00:00",
+        "finished_at_utc": "2026-08-02T16:33:18.306373+00:00",
+        "resume_requested": 1,
+        "stop_after": 2000,
+        "existing_before": 8000,
+        "committed_new": 2000,
+        "skipped_existing": 8000,
+        "total_after": 10000
+      },
+      {
+        "invocation_id": 6,
+        "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-02T16:38:22.440670+00:00",
+        "finished_at_utc": "2026-08-02T17:01:29.023159+00:00",
+        "resume_requested": 1,
+        "stop_after": 2000,
+        "existing_before": 10000,
+        "committed_new": 2000,
+        "skipped_existing": 10000,
+        "total_after": 12000
+      },
+      {
+        "invocation_id": 7,
+        "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-02T17:12:56.048900+00:00",
+        "finished_at_utc": "2026-08-02T17:35:35.940845+00:00",
+        "resume_requested": 1,
+        "stop_after": 2000,
+        "existing_before": 12000,
+        "committed_new": 2000,
+        "skipped_existing": 12000,
+        "total_after": 14000
+      },
+      {
+        "invocation_id": 8,
+        "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-02T17:39:37.322967+00:00",
+        "finished_at_utc": "2026-08-02T17:59:00.701149+00:00",
+        "resume_requested": 1,
+        "stop_after": 2000,
+        "existing_before": 14000,
+        "committed_new": 2000,
+        "skipped_existing": 14000,
+        "total_after": 16000
+      },
+      {
+        "invocation_id": 9,
+        "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-02T18:51:11.665230+00:00",
+        "finished_at_utc": "2026-08-02T18:54:20.481834+00:00",
+        "resume_requested": 1,
+        "stop_after": 317,
+        "existing_before": 16000,
+        "committed_new": 317,
+        "skipped_existing": 16000,
+        "total_after": 16317
+      },
+      {
+        "invocation_id": 10,
+        "plan_sha256": "ccc7b6232b921e6422097fa1fc2525ec7f559459994ba7dfb222dbb0abfecf03",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-02T18:54:22.352073+00:00",
+        "finished_at_utc": "2026-08-02T18:54:22.363948+00:00",
+        "resume_requested": 1,
+        "stop_after": null,
+        "existing_before": 16317,
+        "committed_new": 0,
+        "skipped_existing": 16317,
+        "total_after": 16317
+      }
+    ]
+  },
+  "execution": {
+    "checkpoint_result_rows": 16317,
+    "pending_jobs": 0,
+    "duplicate_job_ids": 0,
+    "duplicate_scientific_keys": 0,
+    "plan_result_metadata_mismatches": 0,
+    "input_hash_mismatches": 0,
+    "status_counts": {
+      "OK": 16317
+    },
+    "model_counts": {
+      "M0": 5439,
+      "M1": 5439,
+      "M2": 5439
+    },
+    "class_counts": {
+      "primary": 13320,
+      "stability": 2997
+    },
+    "warning_calls_by_model": {
+      "M0": 0,
+      "M1": 0,
+      "M2": 2529
+    },
+    "warning_totals_by_model": {
+      "M0": 0,
+      "M1": 0,
+      "M2": 22352
+    },
+    "bound_hit_calls_by_model": {
+      "M0": 567,
+      "M1": 3859,
+      "M2": 2116
+    },
+    "total_runtime_seconds": 8798.912625100376,
+    "exported_result_rows": 16317
+  },
+  "decisions": {
+    "primary_decisions": 4440,
+    "stability_decisions": 999,
+    "total_decisions": 5439,
+    "decision_status_counts": {
+      "VALID": 5439
+    }
+  },
+  "output_hashes": {
+    "fase1_tarea05_full_checkpoint.sqlite": "9751062964e3db79f116270c58461a859c75c570d28bfc988a72a1cb577a934b",
+    "fase1_tarea05_core_results.csv": "1ba98f4f0df406f36c17c75cf90d0773b09c3139eb2e11dc35d67ac42ac02775",
+    "fase1_tarea05_core_decisions.csv": "bf2b65aa42f40fa798910096ee62127556dc9cbe67445222df465b6a1352ab27",
+    "fase1_tarea05_validate_full_execution.py": "524ddd8ca09637f259cf12b9a2f285603afb2aaa97d98ff2ea191e8364f66a8e",
+    "fase1_tarea05_environment.txt": "5b416b49f0444a0df415b3b2d1ce13137c3a682a2695df8f2bd9033d9c16db63",
+    "fase1_tarea05_full_execution_report.md": "9829a33a177054ca442211c389d6b59a2d1948aa52c41cb193f6ef580b4478ef"
+  },
+  "incidents": [],
+  "incidents_text": "No se registraron incidencias mecánicas.",
+  "confirmations": {
+    "runner_modified": false,
+    "execution_plan_modified": false,
+    "afino_code_modified": false,
+    "dataset_modified": false,
+    "dataset_regenerated": false,
+    "canary_checkpoint_reused": false,
+    "canary_results_imported": false,
+    "jobs_removed": false,
+    "failed_jobs_redrawn": false,
+    "scientific_protocol_modified": false,
+    "scientific_results_interpreted_during_execution": false
+  }
+}

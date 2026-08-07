@@ -1,0 +1,181 @@
+{
+  "date_utc": "2026-08-03T07:46:07.115974+00:00",
+  "validation_conclusion": "NESTED_GENERATOR_VALIDATED",
+  "benchmark_id": "afino_nested_window_support_v1",
+  "benchmark_version": "1.0.0",
+  "environment": {
+    "python_version": "3.13.5",
+    "python_full": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "python_executable_name": "python",
+    "numpy_version": "2.3.5",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "processor": "",
+    "byteorder": "little",
+    "float64_itemsize": 8,
+    "canonical_dtype": "<f8",
+    "canonical_byte_order": "C"
+  },
+  "preflight": {
+    "input_hashes": {
+      "fase1_tarea08_nested_window_preregistration.json": "d80890319b4646f8df994ba7c1dd9da3dc1f141834dbf289d1b17c484fa67487",
+      "fase1_tarea08_nested_window_design_grid.csv": "7c1a1fb9724dfe195fec1337e4f0af906e3dd8f1c754ab0abc7f3bc2cc1e8dcd",
+      "fase1_tarea02_synthetic_generator.py": "743005e580f20be331408d9165522932a289d256cef0efbe4c4f24fcb38c54bd",
+      "fase1_tarea02_noise_block_manifest.csv": "898a47f697b3de765f2b73b4bc01181f031c485df5875b0a88e6216591e7883d",
+      "fase1_tarea02_generator_validation_audit.json": "3e4d588110dbe535038dc0e85ec08a60e47de946d438c05b121b379ee0c02f11",
+      "fase1_tarea01_core_benchmark_preregistration.json": "dd80346172290e014d73f78240b3e31f135bcc7e4f075963e7e20d8456de3401"
+    },
+    "f1_2_validation_conclusion": "GENERATOR_VALIDATED",
+    "required_numpy_version": "2.3.5",
+    "observed_numpy_version": "2.3.5"
+  },
+  "script_hashes": {
+    "fase1_tarea09_nested_generator.py": "9c708af7fd9c6a07eb9b52aa91c8ff34d0aef7e534b485ffb793d6e0713124f2",
+    "fase1_tarea09_test_nested_generator.py": "2edbba26a9fc73d5a6e97914c0d37b9961111f401c38cb52baf1d707f3d4efed"
+  },
+  "input_hashes": {
+    "fase1_tarea08_nested_window_preregistration.json": "d80890319b4646f8df994ba7c1dd9da3dc1f141834dbf289d1b17c484fa67487",
+    "fase1_tarea08_nested_window_design_grid.csv": "7c1a1fb9724dfe195fec1337e4f0af906e3dd8f1c754ab0abc7f3bc2cc1e8dcd",
+    "fase1_tarea02_synthetic_generator.py": "743005e580f20be331408d9165522932a289d256cef0efbe4c4f24fcb38c54bd",
+    "fase1_tarea02_noise_block_manifest.csv": "898a47f697b3de765f2b73b4bc01181f031c485df5875b0a88e6216591e7883d",
+    "fase1_tarea02_generator_validation_audit.json": "3e4d588110dbe535038dc0e85ec08a60e47de946d438c05b121b379ee0c02f11",
+    "fase1_tarea01_core_benchmark_preregistration.json": "dd80346172290e014d73f78240b3e31f135bcc7e4f075963e7e20d8456de3401"
+  },
+  "output_hashes_before_audit_and_report": {
+    "fase1_tarea09_parent_block_manifest.csv": "20f0b1aa1ebfe1747aa44962002a03d41f9eb16ee89956bacc1ad0b48fb18d19",
+    "fase1_tarea09_parent_flux_manifest.csv": "2dccc2db6c82ea356f849cf5c4bcbdc06015bc6930203d8a3edc5585b8ed3488",
+    "fase1_tarea09_child_prefix_manifest.csv": "39a4a85413b879e6dd614f4a930d82437b109aacd997d543cd455e05dc252969",
+    "fase1_tarea09_nested_time_manifest.csv": "93c213d1ad186b14d7c7619eb1dc8f2c8bf564d0124350f226644abcc7cfbcb7"
+  },
+  "f1_2_block_comparison": {
+    "planned": 120,
+    "matched": 120,
+    "mismatched": 0,
+    "statement": "120/120 block hash sets matched",
+    "compared_hashes": [
+      "time_sha256",
+      "noise_sha256",
+      "phase_float64_sha256"
+    ]
+  },
+  "parent_generation": {
+    "independent_blocks": 120,
+    "parent_flux_arrays": 360,
+    "valid_parent_flux_arrays": 360,
+    "nonfinite_parent_flux_arrays": 0,
+    "parent_failures": 0,
+    "fixed_envelope_constructed_once_per_validation_pass": true,
+    "peak_index": 3,
+    "t_peak_s": 60.0,
+    "envelope_peak_excess": 0.5,
+    "rise_tau_s": 11.2,
+    "decay_tau_s": 84.0
+  },
+  "child_generation": {
+    "child_prefixes": 2160,
+    "exact_prefix_matches": 2160,
+    "prefix_mismatches": 0,
+    "null_children": 720,
+    "positive_children": 1440,
+    "positive_trajectories": 240,
+    "adjacent_positive_transitions": 1200,
+    "time_vectors": 6,
+    "time_prefix_matches": 6
+  },
+  "independent_reference": {
+    "cases": [
+      {
+        "red_noise_alpha": 0.0,
+        "data_seed": 0
+      },
+      {
+        "red_noise_alpha": 0.0,
+        "data_seed": 39
+      },
+      {
+        "red_noise_alpha": 1.0,
+        "data_seed": 17
+      },
+      {
+        "red_noise_alpha": 2.0,
+        "data_seed": 0
+      },
+      {
+        "red_noise_alpha": 2.0,
+        "data_seed": 39
+      }
+    ],
+    "parent_types_per_case": 3,
+    "windows_per_parent": 6,
+    "comparisons_planned": 90,
+    "comparisons_exact": 90,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "statement": "90/90 independent-code-path comparisons exact",
+    "independence_scope": "The reference reuses validated F1.2 noise and phase but implements parent time, fixed envelope, null/QPP fluxes and prefix extraction without calling the main construction functions."
+  },
+  "order_independence": {
+    "orders": [
+      "normative",
+      "reverse",
+      "random_test"
+    ],
+    "random_order_seed": 20260803,
+    "random_order_engine": "python.random.Random local instance",
+    "global_numpy_random_used_for_ordering": false,
+    "normative_vs_reverse": {
+      "block_hash_mismatches": 0,
+      "parent_hash_mismatches": 0,
+      "child_hash_mismatches": 0
+    },
+    "normative_vs_random_test": {
+      "block_hash_mismatches": 0,
+      "parent_hash_mismatches": 0,
+      "child_hash_mismatches": 0
+    }
+  },
+  "repeated_measures": {
+    "blocks_with_exactly_three_parents": 120,
+    "blocks_with_exactly_eighteen_children": 120,
+    "shared_noise_hash_verified": true,
+    "shared_phase_hash_verified": true,
+    "shared_noise_seed_metadata_verified": true,
+    "shared_phase_seed_metadata_verified": true,
+    "six_nested_windows_per_parent_verified": 360,
+    "nested_window_sequence": [
+      15,
+      30,
+      45,
+      60,
+      90,
+      120
+    ]
+  },
+  "child_noise_prefix_statistics": {
+    "count": 2160,
+    "mean_min": -0.007490802264654829,
+    "mean_max": 0.009075585035796975,
+    "std_ddof1_min": 0.001056913178823984,
+    "std_ddof1_max": 0.007628153399928853,
+    "exact_0_005_required": false
+  },
+  "distinct_hashes": {
+    "block_noise_sha256": 120,
+    "parent_flux_sha256": 360,
+    "child_flux_sha256": 2160,
+    "time_sha256": 6
+  },
+  "incidents": [],
+  "confirmations": {
+    "afino_executed": false,
+    "full_nested_dataset_persisted": false,
+    "parent_failures_redrawn": false,
+    "child_noise_recentered": false,
+    "child_noise_rescaled": false,
+    "child_noise_restandardized": false,
+    "parent_signal_recomputed_per_child": false,
+    "preregistration_modified": false,
+    "generator_f1_2_modified": false,
+    "post_generation_tuning": false
+  }
+}

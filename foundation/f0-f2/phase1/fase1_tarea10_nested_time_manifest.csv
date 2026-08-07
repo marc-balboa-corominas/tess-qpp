@@ -1,0 +1,7 @@
+time_vector_id,n_samples,duration_s,cadence_s,start_offset,end_offset,time_sha256,all_finite,strictly_increasing,exact_f1_9_hash_match
+NT_N015,15,280,20,0,15,b2affa5abf9fde8b802c4229d7139db383cf6ebc48330de97baeb98d89966c6f,True,True,True
+NT_N030,30,580,20,15,45,e2ec0c9026e832e479e3364b90393c86d6f40901ee7b6639265afc71709d4b64,True,True,True
+NT_N045,45,880,20,45,90,53d6f419d7c4fb494a8959ad2735433208ea78f8a82471c3ce4638449fbf9ded,True,True,True
+NT_N060,60,1180,20,90,150,0fb3bcf8972317f3933dc34a9fc8dcfa18003b7acdfa76628a25b5b624b5634c,True,True,True
+NT_N090,90,1780,20,150,240,7c503bca93ba19d0fbe66f82a4c8ed063f60df020616c6e40c34f18b98e0c2b4,True,True,True
+NT_N120,120,2380,20,240,360,4336ffe242107726964b8b51c66378a90d2570cd732e2037b36e258fa25410b5,True,True,True

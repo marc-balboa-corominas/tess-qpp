@@ -1,0 +1,177 @@
+{
+  "generated_at_utc": "2026-08-02T21:44:56.687932+00:00",
+  "execution_status": "SHORT_WINDOW_FAILURE_DIAGNOSTIC_COMPLETE",
+  "analysis_protocol": {
+    "population": "primary only, n_samples in {15,30}, external_optimizer_seed=0",
+    "bic_threshold": 10.0,
+    "bic_tie_abs_tolerance": 5e-12,
+    "bic_tie_relative_tolerance": 0.0,
+    "quantile_method": "linear",
+    "bound_indices": {
+      "m1_amplitude": 2,
+      "m1_center": 4,
+      "m1_width": 5
+    }
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "python_full": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "numpy_version": "2.3.5",
+    "matplotlib_version": "3.10.8"
+  },
+  "input_hashes_pre": {
+    "fase1_tarea05_core_results.csv": "1ba98f4f0df406f36c17c75cf90d0773b09c3139eb2e11dc35d67ac42ac02775",
+    "fase1_tarea05_core_decisions.csv": "bf2b65aa42f40fa798910096ee62127556dc9cbe67445222df465b6a1352ab27",
+    "fase1_tarea06_primary_series_analysis.csv": "dae39c6a3425263c1bc7752b513d1c1d2a37ff8a3f7fc557c5773b9575beedd6",
+    "fase1_tarea06_condition_summary.csv": "25c60ca7cfdbb46bb9a389fa16ce8f2be98e734e689186815c6a97cdc042d1eb",
+    "fase1_tarea06_analysis_audit.json": "207b1b058a8faf6d145bb31d698a9994c90fa2550e0ea7d204c330f7a875a04a",
+    "fase1_tarea05_full_execution_audit.json": "7f4a6be19897bced53482cc5fd225f400ad85cd0c28544449e4c58e17d275205"
+  },
+  "input_hashes_post": {
+    "fase1_tarea05_core_results.csv": "1ba98f4f0df406f36c17c75cf90d0773b09c3139eb2e11dc35d67ac42ac02775",
+    "fase1_tarea05_core_decisions.csv": "bf2b65aa42f40fa798910096ee62127556dc9cbe67445222df465b6a1352ab27",
+    "fase1_tarea06_primary_series_analysis.csv": "dae39c6a3425263c1bc7752b513d1c1d2a37ff8a3f7fc557c5773b9575beedd6",
+    "fase1_tarea06_condition_summary.csv": "25c60ca7cfdbb46bb9a389fa16ce8f2be98e734e689186815c6a97cdc042d1eb",
+    "fase1_tarea06_analysis_audit.json": "207b1b058a8faf6d145bb31d698a9994c90fa2550e0ea7d204c330f7a875a04a",
+    "fase1_tarea05_full_execution_audit.json": "7f4a6be19897bced53482cc5fd225f400ad85cd0c28544449e4c58e17d275205"
+  },
+  "row_counts": {
+    "run_rows": 2040,
+    "positive_rows": 1800,
+    "null_rows": 240,
+    "model_rows_used": 6120,
+    "condition_rows": 51,
+    "amplitude_contrast_rows": 45
+  },
+  "independent_audit": {
+    "decision_mismatches": 0,
+    "input_hash_mismatches": 0,
+    "duplicate_series": 0,
+    "result_csv_fields": [
+      "job_id",
+      "job_class",
+      "series_id",
+      "condition_id",
+      "ground_truth",
+      "data_seed",
+      "external_optimizer_seed",
+      "model_id",
+      "model_name",
+      "status",
+      "runtime_seconds",
+      "n_samples",
+      "input_flux_sha256",
+      "input_time_sha256",
+      "afino_effective_dt_s",
+      "positive_frequency_bins",
+      "bins_after_cutoff",
+      "minimum_frequency_hz",
+      "maximum_frequency_hz",
+      "lnlike",
+      "BIC",
+      "rchi2",
+      "probability",
+      "parameters_json",
+      "estimated_period_s",
+      "parameter_at_bound",
+      "bound_indices_json",
+      "warning_count",
+      "warning_types_json",
+      "convergence_status",
+      "error"
+    ],
+    "decision_csv_fields": [
+      "job_class",
+      "series_id",
+      "condition_id",
+      "ground_truth",
+      "data_seed",
+      "external_optimizer_seed",
+      "valid_models",
+      "decision_status",
+      "delta_bic_0_1",
+      "delta_bic_2_1",
+      "qpp_selected",
+      "estimated_period_s",
+      "period_label"
+    ],
+    "primary_csv_fields": [
+      "series_id",
+      "condition_id",
+      "ground_truth",
+      "n_samples",
+      "duration_s",
+      "red_noise_alpha",
+      "period_s",
+      "qpp_fraction",
+      "nominal_window_cycles",
+      "data_seed",
+      "external_optimizer_seed",
+      "decision_status",
+      "bic_m0",
+      "bic_m1",
+      "bic_m2",
+      "delta_bic_0_1",
+      "delta_bic_2_1",
+      "delta_bic_min",
+      "qpp_selected",
+      "estimated_period_s",
+      "period_label",
+      "period_error_s",
+      "period_absolute_error_s",
+      "period_relative_error_percent",
+      "m0_parameter_at_bound",
+      "m1_parameter_at_bound",
+      "m2_parameter_at_bound",
+      "m0_warning_count",
+      "m1_warning_count",
+      "m2_warning_count"
+    ]
+  },
+  "descriptive_results": {
+    "threshold_failure_class_counts": {
+      "BOTH_COMPARISONS_FAILED": 2040
+    },
+    "bic_winner_counts": {
+      "M0": 2040
+    },
+    "all_joint_margins_limited_by_m0": true,
+    "amplitude_contrasts_positive_delta_bic_0_1": 45,
+    "amplitude_contrasts_positive_delta_bic_2_1": 40,
+    "amplitude_contrasts_positive_joint_margin": 45,
+    "amplitude_threshold_crossings": 0,
+    "amplitude_bic_winner_changes": 0,
+    "common_strata_n15_closer": 17,
+    "common_strata_n30_closer": 1,
+    "m1_any_bound_positive_count": 1001,
+    "m1_width_bound_positive_count": 827,
+    "m1_center_bound_positive_count": 183,
+    "m1_amplitude_bound_positive_count": 114,
+    "bins_after_cutoff_by_n": {
+      "15": 7,
+      "30": 14
+    },
+    "testable_hypothesis": "En ventanas cortas, aumentar el soporte espectral manteniendo la misma señal y el mismo proceso de ruido debería elevar principalmente ΔBIC₀,₁, porque la mejora de likelihood de M1 observada aquí no compensa el resto de penalización frente a M0; si la hipótesis es correcta, el margen frente a M0 crecerá más que el margen frente a M2 y aparecerán cruces conjuntos de los dos umbrales."
+  },
+  "output_hashes": {
+    "fase1_tarea07_short_window_run_diagnostics.csv": "0369d2ab4153dd5da437fd81fa2292d4fe1c0ed9d732b437201a9e20c98e4629",
+    "fase1_tarea07_short_window_condition_summary.csv": "001c2dd5586a1142796f0e8aac7883ac812f9b3a183f1a97dc6fe39b30fd1c9d",
+    "fase1_tarea07_short_window_amplitude_contrasts.csv": "d92ecbf529949a22b2d8314af491b401d920b52d10a3a0db89fa5cb10bc432fc",
+    "fase1_tarea07_fig01_n15_bic_threshold_plane.png": "67f2a4d48423ec0806151b17f2d580bd4722ccb1ccc21d2c8b911a9c63f903d0",
+    "fase1_tarea07_fig02_n30_bic_threshold_plane.png": "3640915e3b986d3b61e9acbe162b72eb2bb3de763332027d676d799b8225c072",
+    "fase1_tarea07_fig03_short_window_margin_grid.png": "fc05a187f12b54d41aa8b41a7894bd0e2e3b98d4dca72bedce0fc1dbb51b0b6a",
+    "fase1_tarea07_fig04_formal_period_error.png": "b2d7c9491920fd897313e94abf49a7d381728b221c6e6407ee6e670f0fbeeb3c",
+    "fase1_tarea07_short_window_diagnostic.md": "ea7489ead5d1f57f8effb6e52a8311eeafbac41d9b41af62981f4603d34d5dc0"
+  },
+  "confirmations": {
+    "afino_executed": false,
+    "new_curves_generated": false,
+    "raw_results_modified": false,
+    "raw_decisions_modified": false,
+    "post_result_selection_thresholds_added": false,
+    "stability_runs_included": false,
+    "canary_included": false,
+    "causal_mechanism_claimed": false
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "generated_at_utc": "2026-08-02T21:18:51.365870+00:00",
+  "execution_status": "CORE_BENCHMARK_ANALYSIS_COMPLETE",
+  "analysis_protocol": {
+    "decision_abs_tolerance": 5e-12,
+    "decision_relative_tolerance": 0.0,
+    "wilson_z": 1.959963984540054,
+    "quantile_method": "linear",
+    "m2_multiple_solution_threshold": 0.001
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "python_full": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "numpy_version": "2.3.5",
+    "matplotlib_version": "3.10.8"
+  },
+  "input_hashes_pre": {
+    "fase1_tarea01_core_benchmark_preregistration.json": "dd80346172290e014d73f78240b3e31f135bcc7e4f075963e7e20d8456de3401",
+    "fase1_tarea01_core_design_grid.csv": "f3c4c77ef71b9c8f9218bcf5a773d8e31c9ffc858ea68a1216542970e43f0bad",
+    "fase1_tarea03_core_series_manifest.csv": "2020c849348c81235036443d3215395c602b80b00debe64fec692935dda778f4",
+    "fase1_tarea05_full_checkpoint.sqlite": "9751062964e3db79f116270c58461a859c75c570d28bfc988a72a1cb577a934b",
+    "fase1_tarea05_core_results.csv": "1ba98f4f0df406f36c17c75cf90d0773b09c3139eb2e11dc35d67ac42ac02775",
+    "fase1_tarea05_core_decisions.csv": "bf2b65aa42f40fa798910096ee62127556dc9cbe67445222df465b6a1352ab27",
+    "fase1_tarea05_full_execution_audit.json": "7f4a6be19897bced53482cc5fd225f400ad85cd0c28544449e4c58e17d275205"
+  },
+  "input_hashes_post": {
+    "fase1_tarea01_core_benchmark_preregistration.json": "dd80346172290e014d73f78240b3e31f135bcc7e4f075963e7e20d8456de3401",
+    "fase1_tarea01_core_design_grid.csv": "f3c4c77ef71b9c8f9218bcf5a773d8e31c9ffc858ea68a1216542970e43f0bad",
+    "fase1_tarea03_core_series_manifest.csv": "2020c849348c81235036443d3215395c602b80b00debe64fec692935dda778f4",
+    "fase1_tarea05_full_checkpoint.sqlite": "9751062964e3db79f116270c58461a859c75c570d28bfc988a72a1cb577a934b",
+    "fase1_tarea05_core_results.csv": "1ba98f4f0df406f36c17c75cf90d0773b09c3139eb2e11dc35d67ac42ac02775",
+    "fase1_tarea05_core_decisions.csv": "bf2b65aa42f40fa798910096ee62127556dc9cbe67445222df465b6a1352ab27",
+    "fase1_tarea05_full_execution_audit.json": "7f4a6be19897bced53482cc5fd225f400ad85cd0c28544449e4c58e17d275205"
+  },
+  "preflight": {
+    "f1_1_preregistration_status": "FROZEN_BEFORE_SYNTHETIC_GENERATION",
+    "f1_5_execution_status": "FULL_BENCHMARK_EXECUTION_COMPLETE",
+    "results": 16317,
+    "decisions": 5439,
+    "all_model_statuses_ok": true,
+    "all_decision_statuses_valid": true,
+    "canary_provenance_absent": true
+  },
+  "independent_audit": {
+    "sqlite_csv_mismatches": 0,
+    "decision_recalculation_mismatches": 0,
+    "duplicate_result_job_ids": 0,
+    "duplicate_result_scientific_keys": 0,
+    "duplicate_decision_keys": 0,
+    "primary_valid_decisions": 4440,
+    "stability_valid_decisions": 999
+  },
+  "output_row_counts": {
+    "primary_series_rows": 4440,
+    "condition_summary_rows": 111,
+    "paired_contrast_rows": 288,
+    "optimizer_stability_rows": 111,
+    "model_diagnostic_rows": 30
+  },
+  "descriptive_results": {
+    "null_selected": 0,
+    "null_planned": 480,
+    "positive_condition_rate_min": 0.0,
+    "positive_condition_rate_median": 0.0,
+    "positive_condition_rate_max": 1.0,
+    "positive_selected_primary_runs": 488,
+    "amplitude_contrast_difference_signs": {
+      "zero": 71,
+      "positive": 28
+    },
+    "period_contrast_difference_signs": {
+      "zero": 65,
+      "negative": 25
+    },
+    "optimizer_conditions_with_decision_change": 0,
+    "m2_multiple_solution_conditions": 97
+  },
+  "output_hashes": {
+    "fase1_tarea06_primary_series_analysis.csv": "dae39c6a3425263c1bc7752b513d1c1d2a37ff8a3f7fc557c5773b9575beedd6",
+    "fase1_tarea06_condition_summary.csv": "25c60ca7cfdbb46bb9a389fa16ce8f2be98e734e689186815c6a97cdc042d1eb",
+    "fase1_tarea06_paired_contrasts.csv": "2e4783b884a886f360e880518874bd4bdb0d319ac30d7de9f4693b3019dcfeef",
+    "fase1_tarea06_optimizer_stability_summary.csv": "c08bd09988b5ae220bc0f83213b4af4c648923c0883995ad084a65ed455b13e2",
+    "fase1_tarea06_model_diagnostics.csv": "cb5ec327e240e7bf0ebfd33ea8d2e1a262f45996ca7611de55a8dd678814eccf",
+    "fase1_tarea06_fig01_null_false_selection.png": "e31c3f692325584b4f4ab17f6ab9180fda7fbe9a3fe0367fa50ab883412255c4",
+    "fase1_tarea06_fig02_positive_detection_grid.png": "d925d3aac7f4ae51d4a75f9b77945b62aa2c01d4df1cfba3ac0a4cd597bfeb2d",
+    "fase1_tarea06_fig03_period_error.png": "9595ea56a248525843ad1cb4dc162af439ce1bad0ea0047361a7be018263680d",
+    "fase1_tarea06_fig04_optimizer_stability.png": "66478bc97acb892e0a336645a698cce3d83d3014f909b7db761334c6e5481e7c",
+    "fase1_tarea06_fig05_numerical_diagnostics.png": "9bfd5b4c92e98a835fd1d8ed6c043a02fd0b4596a92aad41c5eaf65005f45027",
+    "fase1_tarea06_core_benchmark_analysis.md": "c9d31f3b248ae6298eb40d50b27f58adc545226c2c616996584a7cd0749a570c",
+    "fase1_tarea06_analyze_core_benchmark.py": "82c4cd544e733f986f95b879acde11d09522d021010550983b1e6f890520f6b8"
+  },
+  "confirmations": {
+    "afino_executed": false,
+    "raw_results_modified": false,
+    "raw_decisions_modified": false,
+    "checkpoint_modified": false,
+    "series_removed": false,
+    "conditions_removed": false,
+    "post_result_thresholds_added": false,
+    "canary_included": false,
+    "unbalanced_marginal_rates_presented": false,
+    "observational_performance_claimed": false
+  }
+}

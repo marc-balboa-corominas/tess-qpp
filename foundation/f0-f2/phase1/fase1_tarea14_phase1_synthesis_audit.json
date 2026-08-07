@@ -1,0 +1,170 @@
+{
+  "synthesis_status": "PHASE1_SYNTHESIS_COMPLETE",
+  "source_hashes_verified": {
+    "direct_artifacts_before": {
+      "fase0_tarea15_reproduced_baseline.json": "4c0bf97f875b9beb2bd2d619b26fa77b083fb946a05d3ee48c32896046690dc7",
+      "fase1_tarea01_core_benchmark_preregistration.json": "dd80346172290e014d73f78240b3e31f135bcc7e4f075963e7e20d8456de3401",
+      "fase1_tarea06_analysis_audit.json": "207b1b058a8faf6d145bb31d698a9994c90fa2550e0ea7d204c330f7a875a04a",
+      "fase1_tarea06_condition_summary.csv": "25c60ca7cfdbb46bb9a389fa16ce8f2be98e734e689186815c6a97cdc042d1eb",
+      "fase1_tarea06_core_benchmark_analysis.md": "c9d31f3b248ae6298eb40d50b27f58adc545226c2c616996584a7cd0749a570c",
+      "fase1_tarea07_short_window_diagnostic_audit.json": "c565716438d3990119aea48ed85ac8018fa4772d0cb1c952f33e02971ab0c2da",
+      "fase1_tarea07_short_window_amplitude_contrasts.csv": "d92ecbf529949a22b2d8314af491b401d920b52d10a3a0db89fa5cb10bc432fc",
+      "fase1_tarea07_short_window_diagnostic.md": "ea7489ead5d1f57f8effb6e52a8311eeafbac41d9b41af62981f4603d34d5dc0",
+      "fase1_tarea08_nested_window_preregistration.json": "d80890319b4646f8df994ba7c1dd9da3dc1f141834dbf289d1b17c484fa67487",
+      "fase1_tarea13_nested_analysis_audit.json": "7994cd4475c02f2f2675a3275dc1b7d6b90f0bfc9a9532555ea0541e8012ef35",
+      "fase1_tarea13_nested_analysis_report.md": "532711677fdc92ad317110000f27c49bc72c1a809892bca6a93c6a32d871b728",
+      "fase1_tarea13_optimizer_stability_summary.csv": "0250bf0deb69f02e8a716b9c8e77c43dc962ad6b28147c1831fc28570793bbc9",
+      "fase1_tarea13_model_diagnostics_by_n.csv": "d8a4193c644d820a2546cd828e9ef141aa674bd89401d5a1cf1afe98743f0a54"
+    },
+    "direct_artifacts_after": {
+      "fase0_tarea15_reproduced_baseline.json": "4c0bf97f875b9beb2bd2d619b26fa77b083fb946a05d3ee48c32896046690dc7",
+      "fase1_tarea01_core_benchmark_preregistration.json": "dd80346172290e014d73f78240b3e31f135bcc7e4f075963e7e20d8456de3401",
+      "fase1_tarea06_analysis_audit.json": "207b1b058a8faf6d145bb31d698a9994c90fa2550e0ea7d204c330f7a875a04a",
+      "fase1_tarea06_condition_summary.csv": "25c60ca7cfdbb46bb9a389fa16ce8f2be98e734e689186815c6a97cdc042d1eb",
+      "fase1_tarea06_core_benchmark_analysis.md": "c9d31f3b248ae6298eb40d50b27f58adc545226c2c616996584a7cd0749a570c",
+      "fase1_tarea07_short_window_diagnostic_audit.json": "c565716438d3990119aea48ed85ac8018fa4772d0cb1c952f33e02971ab0c2da",
+      "fase1_tarea07_short_window_amplitude_contrasts.csv": "d92ecbf529949a22b2d8314af491b401d920b52d10a3a0db89fa5cb10bc432fc",
+      "fase1_tarea07_short_window_diagnostic.md": "ea7489ead5d1f57f8effb6e52a8311eeafbac41d9b41af62981f4603d34d5dc0",
+      "fase1_tarea08_nested_window_preregistration.json": "d80890319b4646f8df994ba7c1dd9da3dc1f141834dbf289d1b17c484fa67487",
+      "fase1_tarea13_nested_analysis_audit.json": "7994cd4475c02f2f2675a3275dc1b7d6b90f0bfc9a9532555ea0541e8012ef35",
+      "fase1_tarea13_nested_analysis_report.md": "532711677fdc92ad317110000f27c49bc72c1a809892bca6a93c6a32d871b728",
+      "fase1_tarea13_optimizer_stability_summary.csv": "0250bf0deb69f02e8a716b9c8e77c43dc962ad6b28147c1831fc28570793bbc9",
+      "fase1_tarea13_model_diagnostics_by_n.csv": "d8a4193c644d820a2546cd828e9ef141aa674bd89401d5a1cf1afe98743f0a54"
+    },
+    "package_manifests": [
+      {
+        "source_task": "F1.6",
+        "package": "fase1_tarea06_entregables_mentor.zip",
+        "package_sha256": "0bd9d4be2875db11c70e5356be0647d7faa3280d34bb92735deeb778057741d4",
+        "package_status": "CORE_BENCHMARK_ANALYSIS_COMPLETE",
+        "review_status": "APPROVED",
+        "artifacts": [
+          {
+            "artifact": "fase1_tarea06_analysis_audit.json",
+            "sha256": "207b1b058a8faf6d145bb31d698a9994c90fa2550e0ea7d204c330f7a875a04a",
+            "verified": true
+          },
+          {
+            "artifact": "fase1_tarea06_condition_summary.csv",
+            "sha256": "25c60ca7cfdbb46bb9a389fa16ce8f2be98e734e689186815c6a97cdc042d1eb",
+            "verified": true
+          },
+          {
+            "artifact": "fase1_tarea06_core_benchmark_analysis.md",
+            "sha256": "c9d31f3b248ae6298eb40d50b27f58adc545226c2c616996584a7cd0749a570c",
+            "verified": true
+          }
+        ]
+      },
+      {
+        "source_task": "F1.7",
+        "package": "fase1_tarea07_entregables_mentor.zip",
+        "package_sha256": "484751d54276353891f279bbd38f0cbbe37232f45d1ad8bfeb7eead7016aab27",
+        "package_status": "SHORT_WINDOW_FAILURE_DIAGNOSTIC_COMPLETE",
+        "review_status": "APPROVED",
+        "artifacts": [
+          {
+            "artifact": "fase1_tarea07_short_window_diagnostic_audit.json",
+            "sha256": "c565716438d3990119aea48ed85ac8018fa4772d0cb1c952f33e02971ab0c2da",
+            "verified": true
+          },
+          {
+            "artifact": "fase1_tarea07_short_window_amplitude_contrasts.csv",
+            "sha256": "d92ecbf529949a22b2d8314af491b401d920b52d10a3a0db89fa5cb10bc432fc",
+            "verified": true
+          },
+          {
+            "artifact": "fase1_tarea07_short_window_diagnostic.md",
+            "sha256": "ea7489ead5d1f57f8effb6e52a8311eeafbac41d9b41af62981f4603d34d5dc0",
+            "verified": true
+          }
+        ]
+      },
+      {
+        "source_task": "F1.8",
+        "package": "fase1_tarea08_entregables_mentor.zip",
+        "package_sha256": "40cd5c92b4e6527811ceb67bdde864ace456348d4ba5654670b899452f4b633d",
+        "package_status": "FROZEN_BEFORE_SERIES_GENERATION",
+        "review_status": "APPROVED",
+        "artifacts": [
+          {
+            "artifact": "fase1_tarea08_nested_window_preregistration.json",
+            "sha256": "d80890319b4646f8df994ba7c1dd9da3dc1f141834dbf289d1b17c484fa67487",
+            "verified": true
+          }
+        ]
+      },
+      {
+        "source_task": "F1.13",
+        "package": "fase1_tarea13_entregables_mentor.zip",
+        "package_sha256": "7881f1ddbd5a305eae5afafa661ae91b855e4f47036e01184af6e245eb941ae6",
+        "package_status": "NESTED_SUPPORT_HYPOTHESIS_MIXED",
+        "review_status": "APPROVED",
+        "artifacts": [
+          {
+            "artifact": "fase1_tarea13_nested_analysis_audit.json",
+            "sha256": "7994cd4475c02f2f2675a3275dc1b7d6b90f0bfc9a9532555ea0541e8012ef35",
+            "verified": true
+          },
+          {
+            "artifact": "fase1_tarea13_nested_analysis_report.md",
+            "sha256": "532711677fdc92ad317110000f27c49bc72c1a809892bca6a93c6a32d871b728",
+            "verified": true
+          },
+          {
+            "artifact": "fase1_tarea13_optimizer_stability_summary.csv",
+            "sha256": "0250bf0deb69f02e8a716b9c8e77c43dc962ad6b28147c1831fc28570793bbc9",
+            "verified": true
+          },
+          {
+            "artifact": "fase1_tarea13_model_diagnostics_by_n.csv",
+            "sha256": "d8a4193c644d820a2546cd828e9ef141aa674bd89401d5a1cf1afe98743f0a54",
+            "verified": true
+          }
+        ]
+      }
+    ],
+    "cross_task_chain": [
+      {
+        "source": "F0.15",
+        "verification": "Direct required hash plus F1.1 baseline_reference.sha256",
+        "verified": true
+      },
+      {
+        "source": "F1.1",
+        "verification": "Direct required hash plus F1.6 input_hashes_pre/post",
+        "verified": true
+      }
+    ]
+  },
+  "ledger_row_count": 26,
+  "evidence_classes_present": [
+    "METHOD_CONSTRAINT",
+    "NUMERICAL_DIAGNOSTIC",
+    "OBSERVATIONAL_REPRODUCTION",
+    "PHYSICAL_INTERPRETATION_NOT_ESTABLISHED",
+    "SYNTHETIC_GROUND_TRUTH"
+  ],
+  "claims_with_missing_source": [],
+  "claims_with_missing_scope": [],
+  "claims_with_prohibited_interpretation": [],
+  "phase2_requirement_row_count": 10,
+  "phase_decision": "PHASE1_COMPLETE_PROCEED_TO_OBSERVATIONAL_ROBUSTNESS_WITH_LIMITATIONS",
+  "report_word_count": 1162,
+  "incidents": [],
+  "traceability_notes": [
+    "F0.15 y F1.1 no disponían de un ZIP mentor independiente en el workspace. Sus hashes se verificaron directamente y mediante la cadena normativa F0.15→F1.1→F1.6.",
+    "No se detectaron discrepancias entre audit JSON, CSV científicos, informes o manifiestos de paquete para las afirmaciones empleadas."
+  ],
+  "confirmations": {
+    "afino_executed": false,
+    "new_curves_generated": false,
+    "new_benchmark_statistics_computed": false,
+    "observational_ground_truth_claimed": false,
+    "synthetic_rates_relabelled_as_observational": false,
+    "afino_validated_claimed": false,
+    "new_selection_threshold_added": false,
+    "candidate_discovery_authorized": false,
+    "physical_qpp_truth_inferred": false
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "decision": "PHASE1_COMPLETE_PROCEED_TO_OBSERVATIONAL_ROBUSTNESS_WITH_LIMITATIONS",
+  "decision_basis": [
+    "El baseline observacional reproduce cinco detecciones publicadas y conserva cinco controles emparejados.",
+    "La Fase 1 identificó límites sintéticos y numéricos concretos que pueden convertirse en controles observacionales prerregistrados.",
+    "No existe una inconsistencia documental que obligue a repetir el benchmark sintético antes de estudiar las diez observaciones congeladas.",
+    "La autorización se limita a robustez de clasificaciones conocidas y no implica validación, rendimiento poblacional ni verdad física."
+  ],
+  "supporting_claim_ids": [
+    "C001",
+    "C002",
+    "C004",
+    "C005",
+    "C006",
+    "C011",
+    "C012",
+    "C018"
+  ],
+  "limiting_claim_ids": [
+    "C003",
+    "C009",
+    "C010",
+    "C013",
+    "C015",
+    "C016",
+    "C017",
+    "C019",
+    "C020",
+    "C021",
+    "C022",
+    "C023",
+    "C024",
+    "C025",
+    "C026"
+  ],
+  "unresolved_questions": [
+    "Robustez de cada una de las diez observaciones a perturbaciones de límites temporales.",
+    "Dependencia observacional PDCSAP frente a SAP.",
+    "Dependencia de la política QUALITY y de gaps o muestreo irregular.",
+    "Dependencia de detrending o representación espectral alternativa.",
+    "Estabilidad conjunta de clasificación, BIC y periodo entre seeds.",
+    "Unicidad numérica de M2.",
+    "Ground truth físico independiente para QPP.",
+    "Sensibilidad, especificidad y tasas observacionales poblacionales.",
+    "Adaptador TESS privado y política global exacta de los autores."
+  ],
+  "permitted_next_phase": "Análisis prerregistrado de robustez de las cinco detecciones y cinco controles observacionales ya congelados, aplicando controles simétricos y sin ampliar la cohorte.",
+  "prohibited_claims": [
+    "AFINO está validado.",
+    "Las detecciones reproducidas constituyen ground truth físico.",
+    "Los controles demuestran ausencia física de QPP.",
+    "Las tasas sintéticas son sensibilidad, especificidad o falsos positivos observacionales.",
+    "El número de bins causó por sí solo los cambios observados.",
+    "La estabilidad de clasificación demuestra un óptimo numérico único.",
+    "La fase siguiente autoriza búsqueda de nuevos candidatos."
+  ],
+  "candidate_discovery_allowed": false,
+  "new_thresholds_added": false,
+  "afino_executed": false
+}
