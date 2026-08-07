@@ -1,0 +1,14 @@
+window_variant_id,delta_start_cadences,delta_end_cadences,is_baseline,perturbation_family,description
+W00,0,0,True,baseline,baseline
+WSm2,-2,0,False,start_only,inicio dos cadencias antes
+WSm1,-1,0,False,start_only,inicio una cadencia antes
+WSp1,1,0,False,start_only,inicio una cadencia después
+WSp2,2,0,False,start_only,inicio dos cadencias después
+WEm2,0,-2,False,end_only,final dos cadencias antes
+WEm1,0,-1,False,end_only,final una cadencia antes
+WEp1,0,1,False,end_only,final una cadencia después
+WEp2,0,2,False,end_only,final dos cadencias después
+WX1,-1,1,False,symmetric_extension,extensión simétrica de una cadencia
+WC1,1,-1,False,symmetric_contraction,contracción simétrica de una cadencia
+WX2,-2,2,False,symmetric_extension,extensión simétrica de dos cadencias
+WC2,2,-2,False,symmetric_contraction,contracción simétrica de dos cadencias

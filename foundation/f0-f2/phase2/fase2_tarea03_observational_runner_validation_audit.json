@@ -1,0 +1,1128 @@
+{
+  "date_utc": "2026-08-03T23:46:35.555370+00:00",
+  "validation_conclusion": "OBSERVATIONAL_RUNNER_VALIDATED_WITH_DOCUMENTED_LIMITATION",
+  "runner_family": "afino_checkpointed",
+  "runner_implementation_version": "1.2.0",
+  "environment": {
+    "commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "afino_version": "0.5",
+    "tracked_diff_exit_code": 0,
+    "staged_diff_exit_code": 0,
+    "git_status": "?? afino.egg-info/",
+    "python_version": "3.13.13",
+    "python_full": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 01:56:49) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable_relative": ".venv\\Scripts\\python.exe",
+    "numpy_version": "2.5.1",
+    "scipy_version": "1.18.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+    "pip_freeze": [
+      "-e git+https://github.com/aringlis/afino_release_version.git@6aceac9518fc8056052807e666da9d0c8bebb010#egg=afino",
+      "astropy==8.0.1",
+      "astropy-iers-data==0.2026.7.27.0.56.29",
+      "colorama==0.4.6",
+      "contourpy==1.3.3",
+      "cycler==0.12.1",
+      "fonttools==4.63.0",
+      "iniconfig==2.3.0",
+      "kiwisolver==1.5.0",
+      "matplotlib==3.11.1",
+      "numpy==2.5.1",
+      "packaging==26.2",
+      "pillow==12.3.0",
+      "pluggy==1.6.0",
+      "pyerfa==2.0.1.5",
+      "Pygments==2.20.0",
+      "pyparsing==3.3.2",
+      "pytest==9.1.1",
+      "python-dateutil==2.9.0.post0",
+      "PyYAML==6.0.3",
+      "scipy==1.18.0",
+      "setuptools==83.0.0",
+      "six==1.17.0",
+      "wheel==0.47.0"
+    ]
+  },
+  "full_plan_rows": 2784,
+  "full_executable_decisions": 928,
+  "canary_unique_variants": 16,
+  "canary_primary_decisions": 16,
+  "canary_stability_decisions": 12,
+  "canary_decision_rows": 28,
+  "canary_plan_rows": 84,
+  "canary_result_rows": 84,
+  "first_pass_completed": 31,
+  "second_pass_new": 53,
+  "third_pass_new": 0,
+  "rows_per_model": 28,
+  "duplicate_job_ids": 0,
+  "duplicate_scientific_keys": 0,
+  "decision_recalculation_mismatches": 0,
+  "exact_replay_passed": 6,
+  "preflight": {
+    "physical_hashes": {
+      "fase2_tarea02_eligible_time_values.npy": "46a6c3c3afaf3c389dcdbc52715c68a9984849a12132e110cb0a80894c53b5e3",
+      "fase2_tarea02_eligible_flux_values.npy": "e943e4f77ba642fc640e082a0fd75ae21ad6057fc31be299101262b42ee4e4f6",
+      "fase2_tarea02_eligible_fits_index_values.npy": "43798bc41989283b31e863eec703c04719f592ba854f6f928f37e414723e3f06",
+      "fase2_tarea02_eligible_variant_offsets.npy": "2a06abede71f3d53704f5ac55a4d0a49dccca68606233cdf487613bdabd8dd77",
+      "fase2_tarea02_observational_variant_manifest.csv": "e89f33d433a48217feb44c07efae33b984377a205c218253553a604df71c5093",
+      "fase2_tarea02_resolved_decision_grid.csv": "2150657765dff06fb69272c4c11b7bcea656dce2d3fd8faa15b35821dec944dd",
+      "fase2_tarea02_exact_afino_execution_plan.csv": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+      "fase2_tarea02_variant_materialization_audit.json": "2264522b38cb6ea336518369200b3bce1370876bbe3b63273825cbaba3f7991b",
+      "fase2_tarea03_build_observational_canary.py": "6d65eb70b6476dd695979f1534ae1e6de1569c21649840387423519cf62b85b6",
+      "fase2_tarea03_observational_canary_plan.csv": "54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c",
+      "fase1_tarea11_run_nested_afino_checkpointed.py": "b5bdbccb4f1170a40163ef99f465fb63d75d51f9d227178af8cdd82934e5695f"
+    },
+    "logical_hashes": {
+      "canonical_time_payload_sha256": "e2f3fbbc8cb12ae94bcb8514d345a708587bae41b9e593cf1cb5035a1b8576e7",
+      "canonical_flux_payload_sha256": "47059dc92672828f8b6aa262b731dd47ef53aa830e2648cfb7bd4770e00372ee",
+      "canonical_fits_index_payload_sha256": "d169e884b6dfb5810a192c0bbccb3aa9d08716cbf7353aec3512a585e69039b5",
+      "variant_offsets_canonical_sha256": "009b2bac827816b2123a4dc1d90226c98e68324c605264f739f257ebe5ccd45b"
+    },
+    "payloads_loaded_with_allow_pickle_false": true,
+    "persisted_time_and_flux_used_directly": true
+  },
+  "postflight": {
+    "physical_hashes": {
+      "fase2_tarea02_eligible_time_values.npy": "46a6c3c3afaf3c389dcdbc52715c68a9984849a12132e110cb0a80894c53b5e3",
+      "fase2_tarea02_eligible_flux_values.npy": "e943e4f77ba642fc640e082a0fd75ae21ad6057fc31be299101262b42ee4e4f6",
+      "fase2_tarea02_eligible_fits_index_values.npy": "43798bc41989283b31e863eec703c04719f592ba854f6f928f37e414723e3f06",
+      "fase2_tarea02_eligible_variant_offsets.npy": "2a06abede71f3d53704f5ac55a4d0a49dccca68606233cdf487613bdabd8dd77",
+      "fase2_tarea02_observational_variant_manifest.csv": "e89f33d433a48217feb44c07efae33b984377a205c218253553a604df71c5093",
+      "fase2_tarea02_resolved_decision_grid.csv": "2150657765dff06fb69272c4c11b7bcea656dce2d3fd8faa15b35821dec944dd",
+      "fase2_tarea02_exact_afino_execution_plan.csv": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+      "fase2_tarea02_variant_materialization_audit.json": "2264522b38cb6ea336518369200b3bce1370876bbe3b63273825cbaba3f7991b",
+      "fase2_tarea03_build_observational_canary.py": "6d65eb70b6476dd695979f1534ae1e6de1569c21649840387423519cf62b85b6",
+      "fase2_tarea03_observational_canary_plan.csv": "54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c",
+      "fase1_tarea11_run_nested_afino_checkpointed.py": "b5bdbccb4f1170a40163ef99f465fb63d75d51f9d227178af8cdd82934e5695f"
+    },
+    "logical_hashes": {
+      "canonical_time_payload_sha256": "e2f3fbbc8cb12ae94bcb8514d345a708587bae41b9e593cf1cb5035a1b8576e7",
+      "canonical_flux_payload_sha256": "47059dc92672828f8b6aa262b731dd47ef53aa830e2648cfb7bd4770e00372ee",
+      "canonical_fits_index_payload_sha256": "d169e884b6dfb5810a192c0bbccb3aa9d08716cbf7353aec3512a585e69039b5",
+      "variant_offsets_canonical_sha256": "009b2bac827816b2123a4dc1d90226c98e68324c605264f739f257ebe5ccd45b"
+    },
+    "f2_2_inputs_unchanged": true,
+    "tracked_git_diff_empty": true,
+    "staged_git_diff_empty": true,
+    "git_status_porcelain": "?? afino.egg-info/"
+  },
+  "runner_diff": {
+    "reference_runner": "fase1_tarea11_run_nested_afino_checkpointed.py",
+    "reference_sha256": "b5bdbccb4f1170a40163ef99f465fb63d75d51f9d227178af8cdd82934e5695f",
+    "observational_runner": "fase2_tarea03_run_observational_afino_checkpointed_v2.py",
+    "observational_sha256": "1ddc7b9bafe668a7df8dab534f45bdcdb8519bc9d49041cb2b83ffc8079ad4ab",
+    "unified_diff_sha256": "ee176dd2bd481e0d8577dc4554b585c146e4bc887d08305d91c74fbf90ec9410",
+    "unified_diff_line_count": 2591,
+    "classified_changes": [
+      {
+        "category": "dataset_contract",
+        "sections": [
+          "constants",
+          "verify_frozen_files",
+          "load_dataset",
+          "load_plan",
+          "extract_series_and_time"
+        ],
+        "description": "F2.2 observational payloads and logical hashes."
+      },
+      {
+        "category": "observational_metadata",
+        "sections": [
+          "plan fields",
+          "SQLite result schema",
+          "result and decision export",
+          "temporal contract"
+        ],
+        "description": "Event, pair, role, window, profile and FITS-source metadata."
+      },
+      {
+        "category": "output_naming",
+        "sections": [
+          "checkpoint, CSV, audit, report and environment names"
+        ],
+        "description": "F2.3 observational artifact namespace."
+      },
+      {
+        "category": "job_counts",
+        "sections": [
+          "2784 full rows, 84 canary rows, 31+53+0 resume"
+        ],
+        "description": "F2.2/F2.3 frozen job counts."
+      },
+      {
+        "category": "plan_kind_validation",
+        "sections": [
+          "literal canary subset and explicit full-plan guard"
+        ],
+        "description": "Canary accepted by frozen hash; full execution blocked by default."
+      }
+    ],
+    "scientific_core_checks": {
+      "model_specs_identical": true,
+      "cutoff_identical": true,
+      "m1_bounds_identical": true,
+      "afino_import_lines_identical": true,
+      "afino_execution_fragment_byte_identical": true,
+      "seed_reset_before_each_model_call": true,
+      "parameter_serialization_identical": true,
+      "double_bic_rule_identical": true,
+      "function_inspect_bounds_byte_identical": true,
+      "function_warning_payload_byte_identical": true,
+      "function_insert_result_transaction_byte_identical": true,
+      "function_exact_replay_compare_byte_identical": true
+    },
+    "scientific_core_modified": false
+  },
+  "plan": {
+    "full_plan_sha256": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+    "canary_plan_sha256": "54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c",
+    "literal_subset": true,
+    "unique_variants": 16,
+    "primary_decisions": 16,
+    "stability_decisions": 12,
+    "rows_per_model": {
+      "M0": 28,
+      "M1": 28,
+      "M2": 28
+    }
+  },
+  "canary": {
+    "result_status_counts": {
+      "OK": 84
+    },
+    "decision_status_counts": {
+      "VALID": 28
+    },
+    "error_rows_without_temporal_output": [],
+    "result_csv_sqlite_mismatches": 0,
+    "decision_csv_sqlite_mismatches": 0,
+    "canary_results_eligible_for_analysis": false,
+    "requested_temporal_contract_mismatches": [
+      {
+        "job_id": "F2J000655",
+        "kind": "effective_dt",
+        "expected": 19.99993096687831,
+        "observed": 19.999932296407003
+      },
+      {
+        "job_id": "F2J000656",
+        "kind": "effective_dt",
+        "expected": 19.99993096687831,
+        "observed": 19.999932296407003
+      },
+      {
+        "job_id": "F2J000657",
+        "kind": "effective_dt",
+        "expected": 19.99993096687831,
+        "observed": 19.999932296407003
+      },
+      {
+        "job_id": "F2J000661",
+        "kind": "effective_dt",
+        "expected": 19.99993096687831,
+        "observed": 19.999932296407003
+      },
+      {
+        "job_id": "F2J000662",
+        "kind": "effective_dt",
+        "expected": 19.99993096687831,
+        "observed": 19.999932296407003
+      },
+      {
+        "job_id": "F2J000663",
+        "kind": "effective_dt",
+        "expected": 19.99993096687831,
+        "observed": 19.999932296407003
+      },
+      {
+        "job_id": "F2J000811",
+        "kind": "effective_dt",
+        "expected": 20.000232283200603,
+        "observed": 20.00023246011491
+      },
+      {
+        "job_id": "F2J000811",
+        "kind": "post_cutoff_bin_count",
+        "expected": 91,
+        "observed": 90
+      },
+      {
+        "job_id": "F2J000812",
+        "kind": "effective_dt",
+        "expected": 20.000232283200603,
+        "observed": 20.00023246011491
+      },
+      {
+        "job_id": "F2J000812",
+        "kind": "post_cutoff_bin_count",
+        "expected": 91,
+        "observed": 90
+      },
+      {
+        "job_id": "F2J000813",
+        "kind": "effective_dt",
+        "expected": 20.000232283200603,
+        "observed": 20.00023246011491
+      },
+      {
+        "job_id": "F2J000813",
+        "kind": "post_cutoff_bin_count",
+        "expected": 91,
+        "observed": 90
+      },
+      {
+        "job_id": "F2J000817",
+        "kind": "effective_dt",
+        "expected": 20.000232283200603,
+        "observed": 20.00023246011491
+      },
+      {
+        "job_id": "F2J000817",
+        "kind": "post_cutoff_bin_count",
+        "expected": 91,
+        "observed": 90
+      },
+      {
+        "job_id": "F2J000818",
+        "kind": "effective_dt",
+        "expected": 20.000232283200603,
+        "observed": 20.00023246011491
+      },
+      {
+        "job_id": "F2J000818",
+        "kind": "post_cutoff_bin_count",
+        "expected": 91,
+        "observed": 90
+      },
+      {
+        "job_id": "F2J000819",
+        "kind": "effective_dt",
+        "expected": 20.000232283200603,
+        "observed": 20.00023246011491
+      },
+      {
+        "job_id": "F2J000819",
+        "kind": "post_cutoff_bin_count",
+        "expected": 91,
+        "observed": 90
+      },
+      {
+        "job_id": "F2J000835",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000836",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000837",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000838",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000839",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000840",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000841",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000842",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000843",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000844",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000845",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000846",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000847",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000848",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000849",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000850",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000851",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J000852",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J001069",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001070",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001071",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001072",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001073",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001074",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001075",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001076",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001077",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001078",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001079",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001080",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001081",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001082",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001083",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001084",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001085",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J001086",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002245",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002246",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002247",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002272",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002273",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002274",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002299",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002300",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002301",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002326",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002327",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002328",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002353",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002354",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002355",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002380",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002381",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002382",
+        "kind": "effective_dt",
+        "expected": 20.00023251894163,
+        "observed": 20.000232516758842
+      },
+      {
+        "job_id": "F2J002407",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002408",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002409",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002434",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002435",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002436",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002461",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002462",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002463",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002488",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002489",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002490",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002515",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002516",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002517",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002542",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002543",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      },
+      {
+        "job_id": "F2J002544",
+        "kind": "effective_dt",
+        "expected": 19.99999108084012,
+        "observed": 19.99997770646587
+      }
+    ],
+    "afino_0_5_temporal_contract_mismatches": [],
+    "afino_0_5_temporal_contract_passed": true
+  },
+  "resume_test": {
+    "invocations": [
+      {
+        "invocation_id": 1,
+        "plan_sha256": "54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c",
+        "plan_kind": "canary",
+        "started_at_utc": "2026-08-03T23:45:43.327160+00:00",
+        "finished_at_utc": "2026-08-03T23:46:01.238663+00:00",
+        "resume_requested": 0,
+        "stop_after": 31,
+        "existing_before": 0,
+        "committed_new": 31,
+        "skipped_existing": 0,
+        "total_after": 31
+      },
+      {
+        "invocation_id": 2,
+        "plan_sha256": "54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c",
+        "plan_kind": "canary",
+        "started_at_utc": "2026-08-03T23:46:02.698724+00:00",
+        "finished_at_utc": "2026-08-03T23:46:29.194487+00:00",
+        "resume_requested": 1,
+        "stop_after": null,
+        "existing_before": 31,
+        "committed_new": 53,
+        "skipped_existing": 31,
+        "total_after": 84
+      },
+      {
+        "invocation_id": 3,
+        "plan_sha256": "54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c",
+        "plan_kind": "canary",
+        "started_at_utc": "2026-08-03T23:46:30.621964+00:00",
+        "finished_at_utc": "2026-08-03T23:46:30.623169+00:00",
+        "resume_requested": 1,
+        "stop_after": null,
+        "existing_before": 84,
+        "committed_new": 0,
+        "skipped_existing": 84,
+        "total_after": 84
+      }
+    ],
+    "completed_sequence": [
+      31,
+      53,
+      0
+    ]
+  },
+  "exact_replay": {
+    "expected_count": 6,
+    "passed_count": 6,
+    "failed_count": 0,
+    "comparisons": [
+      {
+        "job_id": "F2J000817",
+        "planned_decision_id": "F2D000461",
+        "variant_id": "F2V000461",
+        "model_id": "M0",
+        "passed": true,
+        "fields_compared": [
+          "status",
+          "BIC",
+          "lnlike",
+          "parameters_json",
+          "estimated_period_s",
+          "rchi2",
+          "probability",
+          "warning_count",
+          "warning_types_json",
+          "warnings_json",
+          "parameter_at_bound",
+          "bound_indices_json",
+          "bound_details_json"
+        ],
+        "differences": [],
+        "additional_fields_compared": [
+          "afino_effective_dt_s",
+          "bins_after_cutoff",
+          "error"
+        ],
+        "additional_differences": []
+      },
+      {
+        "job_id": "F2J000818",
+        "planned_decision_id": "F2D000461",
+        "variant_id": "F2V000461",
+        "model_id": "M1",
+        "passed": true,
+        "fields_compared": [
+          "status",
+          "BIC",
+          "lnlike",
+          "parameters_json",
+          "estimated_period_s",
+          "rchi2",
+          "probability",
+          "warning_count",
+          "warning_types_json",
+          "warnings_json",
+          "parameter_at_bound",
+          "bound_indices_json",
+          "bound_details_json"
+        ],
+        "differences": [],
+        "additional_fields_compared": [
+          "afino_effective_dt_s",
+          "bins_after_cutoff",
+          "error"
+        ],
+        "additional_differences": []
+      },
+      {
+        "job_id": "F2J000819",
+        "planned_decision_id": "F2D000461",
+        "variant_id": "F2V000461",
+        "model_id": "M2",
+        "passed": true,
+        "fields_compared": [
+          "status",
+          "BIC",
+          "lnlike",
+          "parameters_json",
+          "estimated_period_s",
+          "rchi2",
+          "probability",
+          "warning_count",
+          "warning_types_json",
+          "warnings_json",
+          "parameter_at_bound",
+          "bound_indices_json",
+          "bound_details_json"
+        ],
+        "differences": [],
+        "additional_fields_compared": [
+          "afino_effective_dt_s",
+          "bins_after_cutoff",
+          "error"
+        ],
+        "additional_differences": []
+      },
+      {
+        "job_id": "F2J000841",
+        "planned_decision_id": "F2D000471",
+        "variant_id": "F2V000471",
+        "model_id": "M0",
+        "passed": true,
+        "fields_compared": [
+          "status",
+          "BIC",
+          "lnlike",
+          "parameters_json",
+          "estimated_period_s",
+          "rchi2",
+          "probability",
+          "warning_count",
+          "warning_types_json",
+          "warnings_json",
+          "parameter_at_bound",
+          "bound_indices_json",
+          "bound_details_json"
+        ],
+        "differences": [],
+        "additional_fields_compared": [
+          "afino_effective_dt_s",
+          "bins_after_cutoff",
+          "error"
+        ],
+        "additional_differences": []
+      },
+      {
+        "job_id": "F2J000842",
+        "planned_decision_id": "F2D000471",
+        "variant_id": "F2V000471",
+        "model_id": "M1",
+        "passed": true,
+        "fields_compared": [
+          "status",
+          "BIC",
+          "lnlike",
+          "parameters_json",
+          "estimated_period_s",
+          "rchi2",
+          "probability",
+          "warning_count",
+          "warning_types_json",
+          "warnings_json",
+          "parameter_at_bound",
+          "bound_indices_json",
+          "bound_details_json"
+        ],
+        "differences": [],
+        "additional_fields_compared": [
+          "afino_effective_dt_s",
+          "bins_after_cutoff",
+          "error"
+        ],
+        "additional_differences": []
+      },
+      {
+        "job_id": "F2J000843",
+        "planned_decision_id": "F2D000471",
+        "variant_id": "F2V000471",
+        "model_id": "M2",
+        "passed": true,
+        "fields_compared": [
+          "status",
+          "BIC",
+          "lnlike",
+          "parameters_json",
+          "estimated_period_s",
+          "rchi2",
+          "probability",
+          "warning_count",
+          "warning_types_json",
+          "warnings_json",
+          "parameter_at_bound",
+          "bound_indices_json",
+          "bound_details_json"
+        ],
+        "differences": [],
+        "additional_fields_compared": [
+          "afino_effective_dt_s",
+          "bins_after_cutoff",
+          "error"
+        ],
+        "additional_differences": []
+      }
+    ]
+  },
+  "checkpoint": {
+    "filename": "fase2_tarea03_observational_canary_checkpoint.sqlite",
+    "sha256": "d4da2f9bb41d78d7a6968bdbf8a7f287b402d109a47eb982d0a6a36ddbc32459",
+    "result_rows": 84,
+    "metadata": {
+      "schema_version": "1.2.0",
+      "runner_family": "afino_checkpointed",
+      "runner_implementation_version": "1.2.0",
+      "plan_filename": "fase2_tarea03_observational_canary_plan.csv",
+      "plan_sha256": "54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c",
+      "plan_kind": "canary",
+      "full_plan_sha256": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+      "canary_plan_sha256": "54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c",
+      "runner_sha256": "1ddc7b9bafe668a7df8dab534f45bdcdb8519bc9d49041cb2b83ffc8079ad4ab",
+      "dataset_physical_hashes": "{\"fase2_tarea02_eligible_time_values.npy\":\"46a6c3c3afaf3c389dcdbc52715c68a9984849a12132e110cb0a80894c53b5e3\",\"fase2_tarea02_eligible_flux_values.npy\":\"e943e4f77ba642fc640e082a0fd75ae21ad6057fc31be299101262b42ee4e4f6\",\"fase2_tarea02_eligible_fits_index_values.npy\":\"43798bc41989283b31e863eec703c04719f592ba854f6f928f37e414723e3f06\",\"fase2_tarea02_eligible_variant_offsets.npy\":\"2a06abede71f3d53704f5ac55a4d0a49dccca68606233cdf487613bdabd8dd77\",\"fase2_tarea02_observational_variant_manifest.csv\":\"e89f33d433a48217feb44c07efae33b984377a205c218253553a604df71c5093\",\"fase2_tarea02_resolved_decision_grid.csv\":\"2150657765dff06fb69272c4c11b7bcea656dce2d3fd8faa15b35821dec944dd\",\"fase2_tarea02_exact_afino_execution_plan.csv\":\"96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97\",\"fase2_tarea02_variant_materialization_audit.json\":\"2264522b38cb6ea336518369200b3bce1370876bbe3b63273825cbaba3f7991b\",\"fase2_tarea03_build_observational_canary.py\":\"6d65eb70b6476dd695979f1534ae1e6de1569c21649840387423519cf62b85b6\",\"fase2_tarea03_observational_canary_plan.csv\":\"54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c\",\"fase1_tarea11_run_nested_afino_checkpointed.py\":\"b5bdbccb4f1170a40163ef99f465fb63d75d51f9d227178af8cdd82934e5695f\"}",
+      "dataset_logical_hashes": "{\"canonical_time_payload_sha256\":\"e2f3fbbc8cb12ae94bcb8514d345a708587bae41b9e593cf1cb5035a1b8576e7\",\"canonical_flux_payload_sha256\":\"47059dc92672828f8b6aa262b731dd47ef53aa830e2648cfb7bd4770e00372ee\",\"canonical_fits_index_payload_sha256\":\"d169e884b6dfb5810a192c0bbccb3aa9d08716cbf7353aec3512a585e69039b5\",\"variant_offsets_canonical_sha256\":\"009b2bac827816b2123a4dc1d90226c98e68324c605264f739f257ebe5ccd45b\"}",
+      "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+      "afino_version": "0.5",
+      "created_at_utc": "2026-08-03T23:45:43.323890+00:00"
+    },
+    "sqlite_transaction_policy": "one independent transaction per completed model call",
+    "primary_key_job_id": true,
+    "unique_variant_seed_model": true
+  },
+  "protocol": {
+    "low_frequency_cutoff_hz": 0.025,
+    "models": {
+      "M0": "pow_const",
+      "M1": "pow_const_gauss",
+      "M2": "bpow_const"
+    },
+    "M1_bounds": [
+      [
+        -10.0,
+        10.0
+      ],
+      [
+        -1.0,
+        6.0
+      ],
+      [
+        -20.0,
+        10.0
+      ],
+      [
+        -16.0,
+        5.0
+      ],
+      [
+        -5.703782474656201,
+        -3.6888794541139363
+      ],
+      [
+        0.05,
+        0.25
+      ]
+    ],
+    "seed_reset_before_each_model_call": true,
+    "selection_rule": "(BIC_M0 - BIC_M1 > 10.0) and (BIC_M2 - BIC_M1 > 10.0)",
+    "convergence_status": "NOT_AUDITABLE",
+    "absolute_tolerance": 5e-12,
+    "relative_tolerance": 0.0
+  },
+  "output_hashes": {
+    "fase2_tarea03_build_observational_canary.py": "6d65eb70b6476dd695979f1534ae1e6de1569c21649840387423519cf62b85b6",
+    "fase2_tarea03_observational_canary_plan.csv": "54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c",
+    "fase2_tarea03_run_observational_afino_checkpointed_v2.py": "1ddc7b9bafe668a7df8dab534f45bdcdb8519bc9d49041cb2b83ffc8079ad4ab",
+    "fase2_tarea03_observational_canary_checkpoint.sqlite": "d4da2f9bb41d78d7a6968bdbf8a7f287b402d109a47eb982d0a6a36ddbc32459",
+    "fase2_tarea03_observational_canary_results.csv": "ef0d21420b5ecab4e12273815e45e8b50bdec56187c26ee9d183e9c78a0e77a6",
+    "fase2_tarea03_observational_canary_decisions.csv": "06927ba8d38ad3b5ec1b66bac7dff177557913a402145a2d4a88fd8d7ef71b84",
+    "fase2_tarea03_environment.txt": "a4b6cb64fbab8af0607ae9d1accad6d5d7e111742bc6412e6b9ec6723a7c7e2b"
+  },
+  "incidents": [
+    {
+      "incident_id": "F2.3-TEMPORAL-CONTRACT-001",
+      "category": "VALIDATOR_ASSUMPTION_MISMATCH",
+      "severity": "DOCUMENTED_LIMITATION",
+      "description": "The external validator required median cadence and counted the even-N Nyquist bin. AFINO 0.5 used arithmetic-mean cadence and excluded Nyquist from positive frequencies.",
+      "impact_on_afino_results": "NONE; no result was recalculated",
+      "impact_on_runner_validation": "Full validation conclusion downgraded from the strongest status to VALIDATED_WITH_DOCUMENTED_LIMITATION.",
+      "requires_afino_rerun": false,
+      "requires_protocol_tuning": false
+    }
+  ],
+  "confirmations": {
+    "full_observational_plan_executed": false,
+    "fits_opened": false,
+    "dataset_regenerated": false,
+    "detrending_recomputed": false,
+    "quality_filter_reapplied": false,
+    "canary_results_used_for_tuning": false,
+    "canary_results_eligible_for_analysis": false,
+    "candidate_discovery_authorized": false,
+    "afino_code_modified": false,
+    "scientific_protocol_modified": false,
+    "f2_2_plan_modified": false,
+    "f2_2_payloads_modified": false,
+    "checkpoint_reused": false
+  },
+  "original_validation_artifacts": {
+    "audit_filename": "fase2_tarea03_observational_runner_validation_audit.json",
+    "audit_sha256": "62b3514236153aad038ce8991c19cf7fe56e5342f0aedffd13b97d26909c44d7",
+    "report_filename": "fase2_tarea03_observational_runner_validation_report.md",
+    "report_sha256": "2d8a2aeba55d7f659af7eebeff91920a23121a1cc1840f9ea89a75522a8bb687",
+    "original_conclusion": "OBSERVATIONAL_RUNNER_VALIDATION_BLOCKED",
+    "preserved_as_evidence": true
+  },
+  "posthoc_revalidation": {
+    "scope": "validation_logic_only",
+    "afino_imported": false,
+    "afino_executed": false,
+    "checkpoint_modified": false,
+    "results_modified": false,
+    "decisions_modified": false,
+    "f2_2_inputs_modified": false,
+    "scientific_protocol_modified": false,
+    "tuning_performed": false,
+    "diagnostic_filename": "fase2_tarea03_temporal_contract_diagnostic.csv",
+    "diagnostic_sha256": "795d36fcc72f4491240f2dba8d64268de11ba7c64d3cc1932c1f4fbe7d857fc3"
+  },
+  "temporal_contract_resolution": {
+    "requested_contract": {
+      "cadence_statistic": "median(diff(time_seconds))",
+      "absolute_tolerance_s": 5e-12,
+      "relative_tolerance": 0.0,
+      "dt_mismatch_result_rows": 84,
+      "dt_match_result_rows": 0,
+      "maximum_absolute_dt_difference_s": 1.3374374248087406e-05,
+      "frequency_construction": "numpy.fft.rfftfreq including the Nyquist bin for even N",
+      "post_cutoff_bin_mismatch_result_rows": 6,
+      "passed": false
+    },
+    "observed_afino_0_5_contract": {
+      "cadence_statistic": "mean(diff(time_seconds)) == (time[-1]-time[0])/(N-1)",
+      "absolute_tolerance_s": 5e-12,
+      "relative_tolerance": 0.0,
+      "dt_match_result_rows": 84,
+      "dt_mismatch_result_rows": 0,
+      "maximum_absolute_dt_difference_s": 0.0,
+      "frequency_construction": "numpy.fft.fftfreq with frequencies > 0; Nyquist excluded for even N",
+      "post_cutoff_bin_match_result_rows": 84,
+      "post_cutoff_bin_mismatch_result_rows": 0,
+      "passed": true
+    },
+    "classification": "DOCUMENTED_VALIDATION_LIMITATION",
+    "interpretation": "The runner and persisted inputs are coherent with the frozen AFINO 0.5 implementation. The preregistered external temporal check assumed a median cadence and an rfftfreq Nyquist convention that AFINO 0.5 does not use."
+  },
+  "report_word_count": 454,
+  "corrected_report": {
+    "filename": "fase2_tarea03_observational_runner_validation_report_v2.md",
+    "sha256": "2883c579e20ff0b0bf358c25f2f528ea3a18e48741d8078836039b3982df7c09"
+  }
+}

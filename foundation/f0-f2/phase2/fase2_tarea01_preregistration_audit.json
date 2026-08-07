@@ -1,0 +1,76 @@
+{
+  "preregistration_status": "OBSERVATIONAL_ROBUSTNESS_PREREGISTRATION_FROZEN",
+  "study_id": "afino_tess_frozen_cohort_robustness_v1",
+  "study_version": "1.0.0",
+  "source_hashes_verified": {
+    "before": {
+      "fase0_tarea15_reproduced_baseline.json": "4c0bf97f875b9beb2bd2d619b26fa77b083fb946a05d3ee48c32896046690dc7",
+      "fase1_tarea14_phase1_decision.json": "356504bce1df734bfd5cf01cf1e84211fc5a458f6bf81ddb5458ef0a9166ef1a",
+      "fase1_tarea14_phase2_entry_requirements.csv": "a2472a525cca398494faf876af1f7894bb0b625067bd750f156095eedd5cc298",
+      "fase1_tarea14_phase1_synthesis_audit.json": "0255843af4b5f935aa6ff75398e695d3b8f5bf8bf20b57d4ee463eb741be22a7",
+      "fase0_tarea10_index_window_results.csv": "7b5f8a6f88e7cbd35df37b4ce2baee410f91fae56f6036c63edeab05a55941db",
+      "fase0_tarea10_execution_audit.json": "f06ad189a8e0ff67f64399fa8279f6bde0007c9b01fe73cc02f59c6d07f5b50e",
+      "fase0_tarea11_validation_cohort.csv": "b48cdc09d37b2ea4c4faec430903f81b0f7b9e4f4b026510175881a2c766fb36",
+      "fase0_tarea12_product_manifest.csv": "19b8cc1ad53c193a08e1f38405b196598a0fae96aec444ebfd087907e4fe3270",
+      "fase0_tarea12_event_reconstruction.csv": "d168907f616ff14898f86b5e318914d0deba2d954b1dbe1d05353d242966c4c5",
+      "fase0_tarea13_validation_input_manifest.csv": "5046f335d375af85ce6f1b5d58f0336688f1b2225887793f727d76cf46c57323",
+      "fase0_tarea14_validation_decisions.csv": "e427b8fcf9049cba1a91f33a98b04e7eebb71314576a07cca4156e64af0141d8",
+      "fase0_tarea14_primary_cohort_summary.csv": "c02f42883ca0a82d1b98b139638442c8e17eaab8c8ec30003091999aad1e77fa",
+      "fase0_tarea09_index_window_manifest.csv": "ba303fa13dda064e6d18d06e9d7e75f03039717a02f78b0590ffdcb7ca396149"
+    },
+    "after": {
+      "fase0_tarea15_reproduced_baseline.json": "4c0bf97f875b9beb2bd2d619b26fa77b083fb946a05d3ee48c32896046690dc7",
+      "fase1_tarea14_phase1_decision.json": "356504bce1df734bfd5cf01cf1e84211fc5a458f6bf81ddb5458ef0a9166ef1a",
+      "fase1_tarea14_phase2_entry_requirements.csv": "a2472a525cca398494faf876af1f7894bb0b625067bd750f156095eedd5cc298",
+      "fase1_tarea14_phase1_synthesis_audit.json": "0255843af4b5f935aa6ff75398e695d3b8f5bf8bf20b57d4ee463eb741be22a7",
+      "fase0_tarea10_index_window_results.csv": "7b5f8a6f88e7cbd35df37b4ce2baee410f91fae56f6036c63edeab05a55941db",
+      "fase0_tarea10_execution_audit.json": "f06ad189a8e0ff67f64399fa8279f6bde0007c9b01fe73cc02f59c6d07f5b50e",
+      "fase0_tarea11_validation_cohort.csv": "b48cdc09d37b2ea4c4faec430903f81b0f7b9e4f4b026510175881a2c766fb36",
+      "fase0_tarea12_product_manifest.csv": "19b8cc1ad53c193a08e1f38405b196598a0fae96aec444ebfd087907e4fe3270",
+      "fase0_tarea12_event_reconstruction.csv": "d168907f616ff14898f86b5e318914d0deba2d954b1dbe1d05353d242966c4c5",
+      "fase0_tarea13_validation_input_manifest.csv": "5046f335d375af85ce6f1b5d58f0336688f1b2225887793f727d76cf46c57323",
+      "fase0_tarea14_validation_decisions.csv": "e427b8fcf9049cba1a91f33a98b04e7eebb71314576a07cca4156e64af0141d8",
+      "fase0_tarea14_primary_cohort_summary.csv": "c02f42883ca0a82d1b98b139638442c8e17eaab8c8ec30003091999aad1e77fa",
+      "fase0_tarea09_index_window_manifest.csv": "ba303fa13dda064e6d18d06e9d7e75f03039717a02f78b0590ffdcb7ca396149"
+    },
+    "all_match": true
+  },
+  "script": {
+    "filename": "fase2_tarea01_build_observational_preregistration.py",
+    "sha256": "3c8e1c0e254c0a7d721c6dbe3678ea748accf3c5b928d7963f63b67ca2ba66e5"
+  },
+  "cohort_rows": 10,
+  "published_qpp_rows": 5,
+  "matched_not_selected_rows": 5,
+  "pair_count": 5,
+  "window_perturbation_rows": 13,
+  "processing_profile_rows": 6,
+  "primary_decision_rows": 780,
+  "stability_decision_rows": 540,
+  "total_planned_decision_rows": 1320,
+  "maximum_planned_model_calls": 3960,
+  "duplicate_event_ids": 0,
+  "duplicate_planned_decision_ids": 0,
+  "new_events_added": 0,
+  "report_word_count": 628,
+  "output_hashes_excluding_audit": {
+    "fase2_tarea01_observational_robustness_preregistration.json": "ed37166ad6917b54711c3ce7ac9f3aeffdaaba9477672a9b1e5d506c07f427d7",
+    "fase2_tarea01_frozen_observational_cohort.csv": "34f4a5ce53e7fb16ee16c976d5b06af524d6cacda4a4bc303a5d580193745cc1",
+    "fase2_tarea01_window_perturbations.csv": "4e0a602e89f17594afe4624ae0d48781cfde7c17a17a1cc129002aeb0c45f130",
+    "fase2_tarea01_processing_profiles.csv": "232af6bdc6fa09851cd1039c5b159849f2f675803ea6ff1f53f51e7a4a7629e0",
+    "fase2_tarea01_planned_decision_grid.csv": "c177c10604a5f79aae1e3e154b450da1084ba96fb351298354654c0cbb6f61a0",
+    "fase2_tarea01_preregistration_report.md": "f5678741448bc694f4d58c9672a005ec6710bb670d3369490fde0bf482bb28aa"
+  },
+  "incidents": [],
+  "confirmations": {
+    "afino_executed": false,
+    "fits_downloaded": false,
+    "curves_materialized": false,
+    "variant_eligibility_inspected": false,
+    "scientific_results_observed": false,
+    "candidate_discovery_authorized": false,
+    "new_selection_threshold_added": false,
+    "cohort_modified": false,
+    "baseline_modified": false
+  }
+}

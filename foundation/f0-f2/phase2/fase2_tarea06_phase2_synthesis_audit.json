@@ -1,0 +1,147 @@
+{
+  "date_utc": "2026-08-04T15:05:54.340927+00:00",
+  "phase2_status": "PHASE2_COMPLETE_ROBUSTNESS_MANUSCRIPT_VIABLE_CORRECTION_REQUIRES_PHASE3",
+  "source_packages_verified": [
+    {
+      "package": "fase1_tarea14_entregables_mentor.zip",
+      "package_sha256": "60056d0e114c6bb5231225e23150c77c3e8fcf7368facd8a5ccee49ae990e757",
+      "task": "Fase 1 — Tarea 1.14",
+      "review_status": "APPROVED",
+      "status_field": "status",
+      "status_value": "PHASE1_COMPLETE_PROCEED_TO_OBSERVATIONAL_ROBUSTNESS_WITH_LIMITATIONS",
+      "manifest_members_verified": 6
+    },
+    {
+      "package": "fase2_tarea01_entregables_mentor.zip",
+      "package_sha256": "6596c78f7cef1045b4205ed0611372e38c161b500b8b43fb15ab14fb7c9424c6",
+      "task": "Fase 2 — Tarea 2.1",
+      "review_status": "APPROVED",
+      "status_field": "status",
+      "status_value": "OBSERVATIONAL_ROBUSTNESS_PREREGISTRATION_FROZEN",
+      "manifest_members_verified": 8
+    },
+    {
+      "package": "fase2_tarea02_entregables_mentor.zip",
+      "package_sha256": "b667477a3c060f1713ca333cd82b30138dcff40a7ee694bdadc413bf55b511cf",
+      "task": "Fase 2 — Tarea 2.2",
+      "review_status": "APPROVED",
+      "status_field": "status",
+      "status_value": "OBSERVATIONAL_VARIANTS_AND_EXACT_PLAN_FROZEN_BEFORE_AFINO",
+      "manifest_members_verified": 13
+    },
+    {
+      "package": "fase2_tarea03_entregables_mentor.zip",
+      "package_sha256": "9394f6adf17e23ccb10139e11e51f1374042878c7e80ec72be46716f0d568a77",
+      "task": "Fase 2 — Tarea 2.3",
+      "review_status": "APPROVED_WITH_DOCUMENTED_LIMITATION",
+      "status_field": "validation_conclusion",
+      "status_value": "OBSERVATIONAL_RUNNER_VALIDATED_WITH_DOCUMENTED_LIMITATION",
+      "manifest_members_verified": 10
+    },
+    {
+      "package": "fase2_tarea04_entregables_mentor.zip",
+      "package_sha256": "15fc8cc4b6d9d33504403fed42af23a9afb83e869b648baeac5f1c0dff24fdb5",
+      "task": "Fase 2 — Tarea 2.4",
+      "review_status": "APPROVED",
+      "status_field": "execution_status",
+      "status_value": "FULL_OBSERVATIONAL_PLAN_EXECUTION_COMPLETE",
+      "manifest_members_verified": 9
+    },
+    {
+      "package": "fase2_tarea05_entregables_mentor.zip",
+      "package_sha256": "a63159ecbbad4fbfe39f3489f444ff0663be472f4841bcb86086b36ef5fad06b",
+      "task": "Fase 2 — Tarea 2.5",
+      "review_status": "APPROVED_WITH_LIMITATIONS",
+      "status_field": "analysis_conclusion",
+      "status_value": "FROZEN_COHORT_ROBUSTNESS_CHARACTERIZED_WITH_LIMITATIONS",
+      "manifest_members_verified": 16
+    }
+  ],
+  "direct_sources_verified": {
+    "fase1_tarea14_phase1_decision.json": "356504bce1df734bfd5cf01cf1e84211fc5a458f6bf81ddb5458ef0a9166ef1a",
+    "fase1_tarea14_phase1_evidence_ledger.csv": "ab471a68016c19abb6672be7ab29f1f890d9b9c67dfdf750edfb224afbae975a",
+    "fase1_tarea14_phase1_synthesis_report.md": "5d748476630023ec6b0f4a11c0851711f34b5b5c7a20a2e30fce1b1138a6c466",
+    "fase2_tarea01_observational_robustness_preregistration.json": "ed37166ad6917b54711c3ce7ac9f3aeffdaaba9477672a9b1e5d506c07f427d7",
+    "fase2_tarea01_preregistration_audit.json": "1111b5e060abc4f619f6c7ac01306d423bbc73ae520d8c15e7c31317afdfcf55",
+    "fase2_tarea01_frozen_observational_cohort.csv": "34f4a5ce53e7fb16ee16c976d5b06af524d6cacda4a4bc303a5d580193745cc1",
+    "fase2_tarea01_window_perturbations.csv": "4e0a602e89f17594afe4624ae0d48781cfde7c17a17a1cc129002aeb0c45f130",
+    "fase2_tarea01_processing_profiles.csv": "232af6bdc6fa09851cd1039c5b159849f2f675803ea6ff1f53f51e7a4a7629e0",
+    "fase2_tarea02_observational_variant_manifest.csv": "e89f33d433a48217feb44c07efae33b984377a205c218253553a604df71c5093",
+    "fase2_tarea02_resolved_decision_grid.csv": "2150657765dff06fb69272c4c11b7bcea656dce2d3fd8faa15b35821dec944dd",
+    "fase2_tarea02_variant_materialization_audit.json": "2264522b38cb6ea336518369200b3bce1370876bbe3b63273825cbaba3f7991b",
+    "fase2_tarea03_observational_runner_validation_audit_v2.json": "56fc2eb4eec927b6032a991c2c96dc1867da394ef08129f7a774d58f5c417d7c",
+    "fase2_tarea04_observational_full_results.csv": "791e071df6e05749937070a31ed4c344b95e10f09abd83a392093ccf2c85a9f8",
+    "fase2_tarea04_observational_full_decisions.csv": "f4c6940f8c67c5a5bdfbabaf6f540fc07538f2a09acddd56edebf3a894f225f0",
+    "fase2_tarea04_full_execution_audit.json": "9c406be909cbdccbf7dff196c309568d228973ed5dbb3fae4e06573e8ada5b07",
+    "fase2_tarea05_observational_robustness_audit.json": "be80d4bcb56199624787bc49ad15a59648cc541d44907c975229967ef74ca3d1",
+    "fase2_tarea05_observational_robustness_report.md": "0b9b2451be1fbe46418ad810591d6c54c8ddf6a2cb93e2b67dfd65196dc530aa",
+    "fase2_tarea05_primary_robustness_enriched.csv": "31877d98de4012d1a8927afdc94c7de18f7176700f04841345a977c261e5eddb"
+  },
+  "normative_states_verified": {
+    "F1.14": "PHASE1_COMPLETE_PROCEED_TO_OBSERVATIONAL_ROBUSTNESS_WITH_LIMITATIONS",
+    "F2.1": "OBSERVATIONAL_ROBUSTNESS_PREREGISTRATION_FROZEN",
+    "F2.2": "OBSERVATIONAL_VARIANTS_AND_EXACT_PLAN_FROZEN_BEFORE_AFINO",
+    "F2.3": "OBSERVATIONAL_RUNNER_VALIDATED_WITH_DOCUMENTED_LIMITATION",
+    "F2.4": "FULL_OBSERVATIONAL_PLAN_EXECUTION_COMPLETE",
+    "F2.5": "FROZEN_COHORT_ROBUSTNESS_CHARACTERIZED_WITH_LIMITATIONS"
+  },
+  "claims_total": 34,
+  "claims_without_source": 0,
+  "claims_without_scope": 0,
+  "claims_without_prohibited_interpretation": 0,
+  "evidence_planes_represented": [
+    "CLASSIFICATION_ROBUSTNESS",
+    "INPUT_ADMISSIBILITY",
+    "INTERPRETATION_LIMITS",
+    "OBSERVATIONAL_BASELINE_REPRODUCTION",
+    "OPERATIONAL_DIAGNOSTICS",
+    "OPTIMIZER_NUMERICAL_STABILITY",
+    "PERIOD_ROBUSTNESS"
+  ],
+  "limitations_registered": 18,
+  "manuscript_claims_assessed": 17,
+  "phase3_requirements": 16,
+  "phase3_requirements_by_route": {
+    "ROUTE_A": 7,
+    "ROUTE_B": 9
+  },
+  "incidents": [
+    {
+      "incident_id": "F2.3-TEMPORAL-CONTRACT-001",
+      "category": "DOCUMENTED_VALIDATION_LIMITATION",
+      "description": "El control mediana/rfftfreq no coincidió con la convención AFINO 0.5 media/fftfreq positivo.",
+      "effect_on_synthesis": "Se conserva como limitación y no invalida las clasificaciones ejecutadas.",
+      "resolved_for_phase2": true
+    },
+    {
+      "incident_id": "F2.5-BASELINE-BIC-FIELDS-001",
+      "category": "FROZEN_FIELD_ABSENCE",
+      "description": "F2.1 no contiene BIC individuales M0/M1/M2 del baseline.",
+      "effect_on_synthesis": "El manuscrito no puede afirmar una comparación independiente congelada de esos tres valores.",
+      "resolved_for_phase2": true
+    }
+  ],
+  "report_word_count": 1415,
+  "decision_consistency": {
+    "robustness_manuscript_viable": true,
+    "correction_claim_established": false,
+    "correction_requires_phase3": true,
+    "held_out_required": true,
+    "f2_5_may_be_used_as_posthoc_validation": false
+  },
+  "confirmations": {
+    "afino_executed": false,
+    "fits_opened": false,
+    "variants_regenerated": false,
+    "new_statistics_computed": false,
+    "new_threshold_added": false,
+    "candidate_discovery_authorized": false,
+    "observational_ground_truth_established": false,
+    "sensitivity_estimated": false,
+    "specificity_estimated": false,
+    "physical_qpp_truth_inferred": false,
+    "correction_claim_established": false,
+    "events_removed": false,
+    "inadmissible_variants_removed": false
+  }
+}

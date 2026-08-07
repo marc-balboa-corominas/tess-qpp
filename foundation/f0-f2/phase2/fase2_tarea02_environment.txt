@@ -1,0 +1,12 @@
+Python: 3.13.13
+Python full: 3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 01:56:49) [MSC v.1944 64 bit (AMD64)]
+Python executable relative: fase0_tarea06_tess_reconstruction\.venv_tess\Scripts\python.exe
+NumPy: 2.5.1
+Astropy: 8.0.1
+Platform: Windows-11-10.0.26200-SP0
+Machine: AMD64
+Processor: AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD
+FITS root: $HOME\Desktop\afino_public_smoke_test\fase0_tarea06_tess_reconstruction
+AFINO imported: false
+AFINO executed: false
+FITS downloaded: false

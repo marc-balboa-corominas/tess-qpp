@@ -1,0 +1,42 @@
+{
+  "phase2_status": "PHASE2_COMPLETE_ROBUSTNESS_MANUSCRIPT_VIABLE_CORRECTION_REQUIRES_PHASE3",
+  "robustness_manuscript_viable": true,
+  "correction_claim_established": false,
+  "held_out_validation_required_for_correction": true,
+  "candidate_discovery_allowed": false,
+  "observational_ground_truth_established": false,
+  "afino_validated": false,
+  "sensitivity_estimated": false,
+  "specificity_estimated": false,
+  "recommended_next_route": "ROUTE_A_ROBUSTNESS_MANUSCRIPT_NOW; ROUTE_B_ONLY_AS_SEPARATE_PREREGISTERED_HELD_OUT_PROGRAM",
+  "decision_basis": [
+    "F1.14 separó reproducción observacional, ground truth sintético, diagnósticos numéricos e interpretación física no establecida.",
+    "F2.1 congeló cohorte, ventanas, perfiles, outcomes y denominadores antes de materializar variantes.",
+    "F2.2 conservó 780 variantes, incluidas 266 inadmisibles, y congeló 928 decisiones ejecutables.",
+    "F2.3 validó el runner con una limitación temporal explícita y sin tuning.",
+    "F2.4 completó 2.784 llamadas y 928 decisiones válidas con integridad estructural.",
+    "F2.5 mostró pérdidas de selección bajo perturbaciones, estabilidad frente a seed en W00 y multiplicidad numérica.",
+    "F2.5 no estableció ground truth, sensibilidad, especificidad, FPR ni verdad física.",
+    "No existe una regla correctiva definida antes de datos held-out.",
+    "Los diez eventos F2 no pueden usarse para desarrollar y validar simultáneamente una corrección."
+  ],
+  "immediate_manuscript_scope": [
+    "reproducción del baseline observacional efectivo",
+    "resultados sintéticos relevantes de Fase 1",
+    "admisibilidad de inputs observacionales",
+    "dependencia de clasificación respecto a ventana y procesamiento",
+    "estabilidad de clasificación frente a seed externa",
+    "periodo condicionado a selección retenida",
+    "warnings, bounds y convergencia no auditable",
+    "limitaciones de interpretación y ausencia de ground truth"
+  ],
+  "prohibited_phase2_conclusions": [
+    "AFINO está validado observacionalmente.",
+    "Se estimaron sensibilidad o especificidad.",
+    "Se estableció una tasa observacional de falsos positivos.",
+    "Se estableció verdad física de QPP.",
+    "Se validó una corrección del procedimiento.",
+    "Los controles son verdaderos negativos.",
+    "La estabilidad entre seeds demuestra un óptimo único."
+  ]
+}

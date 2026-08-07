@@ -1,0 +1,363 @@
+{
+  "date_utc": "2026-08-04T01:25:46.523271+00:00",
+  "execution_status": "FULL_OBSERVATIONAL_PLAN_EXECUTION_COMPLETE",
+  "temporal_validation_status": "AFINO_0_5_CONTRACT_CONFIRMED_WITH_DOCUMENTED_PREREGISTERED_CHECK_MISMATCH",
+  "runner_family": "afino_checkpointed",
+  "runner_implementation_version": "1.2.0",
+  "planned_jobs": 2784,
+  "sqlite_result_rows": 2784,
+  "exported_result_rows": 2784,
+  "decision_rows": 928,
+  "primary_decisions": 514,
+  "stability_decisions": 414,
+  "pending_jobs": 0,
+  "rows_per_model": {
+    "M0": 928,
+    "M1": 928,
+    "M2": 928
+  },
+  "result_status_counts": {
+    "OK": 2784
+  },
+  "decision_status_counts": {
+    "VALID": 928
+  },
+  "duplicate_job_ids": 0,
+  "duplicate_scientific_keys": 0,
+  "plan_result_mismatches": 0,
+  "sqlite_csv_mismatches": 0,
+  "decision_recalculation_mismatches": 0,
+  "afino_mean_dt_matches": 928,
+  "afino_bin_contract_matches": 928,
+  "models_agree_on_dt": 928,
+  "models_agree_on_bin_count": 928,
+  "requested_median_dt_matches": 12,
+  "requested_median_dt_mismatches": 916,
+  "requested_rfftfreq_bin_matches": 740,
+  "requested_rfftfreq_bin_mismatches": 188,
+  "resume_and_idempotence": {
+    "committed_new_sequence": [
+      700,
+      700,
+      700,
+      684,
+      0
+    ],
+    "existing_before_sequence": [
+      0,
+      700,
+      1400,
+      2100,
+      2784
+    ],
+    "total_after_sequence": [
+      700,
+      1400,
+      2100,
+      2784,
+      2784
+    ],
+    "invocations": [
+      {
+        "invocation_id": 1,
+        "plan_sha256": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-04T00:57:06.334091+00:00",
+        "finished_at_utc": "2026-08-04T01:04:27.751886+00:00",
+        "resume_requested": 0,
+        "stop_after": 700,
+        "existing_before": 0,
+        "committed_new": 700,
+        "skipped_existing": 0,
+        "total_after": 700
+      },
+      {
+        "invocation_id": 2,
+        "plan_sha256": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-04T01:04:29.475243+00:00",
+        "finished_at_utc": "2026-08-04T01:12:02.671294+00:00",
+        "resume_requested": 1,
+        "stop_after": 700,
+        "existing_before": 700,
+        "committed_new": 700,
+        "skipped_existing": 700,
+        "total_after": 1400
+      },
+      {
+        "invocation_id": 3,
+        "plan_sha256": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-04T01:12:04.059352+00:00",
+        "finished_at_utc": "2026-08-04T01:18:45.555317+00:00",
+        "resume_requested": 1,
+        "stop_after": 700,
+        "existing_before": 1400,
+        "committed_new": 700,
+        "skipped_existing": 1400,
+        "total_after": 2100
+      },
+      {
+        "invocation_id": 4,
+        "plan_sha256": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-04T01:18:47.008019+00:00",
+        "finished_at_utc": "2026-08-04T01:25:43.723643+00:00",
+        "resume_requested": 1,
+        "stop_after": null,
+        "existing_before": 2100,
+        "committed_new": 684,
+        "skipped_existing": 2100,
+        "total_after": 2784
+      },
+      {
+        "invocation_id": 5,
+        "plan_sha256": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+        "plan_kind": "full",
+        "started_at_utc": "2026-08-04T01:25:45.082539+00:00",
+        "finished_at_utc": "2026-08-04T01:25:45.085484+00:00",
+        "resume_requested": 1,
+        "stop_after": null,
+        "existing_before": 2784,
+        "committed_new": 0,
+        "skipped_existing": 2784,
+        "total_after": 2784
+      }
+    ]
+  },
+  "input_integrity": {
+    "pre_execution_physical_hashes": {
+      "fase2_tarea03_run_observational_afino_checkpointed.py": "1ddc7b9bafe668a7df8dab534f45bdcdb8519bc9d49041cb2b83ffc8079ad4ab",
+      "fase2_tarea02_exact_afino_execution_plan.csv": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+      "fase2_tarea02_eligible_time_values.npy": "46a6c3c3afaf3c389dcdbc52715c68a9984849a12132e110cb0a80894c53b5e3",
+      "fase2_tarea02_eligible_flux_values.npy": "e943e4f77ba642fc640e082a0fd75ae21ad6057fc31be299101262b42ee4e4f6",
+      "fase2_tarea02_eligible_fits_index_values.npy": "43798bc41989283b31e863eec703c04719f592ba854f6f928f37e414723e3f06",
+      "fase2_tarea02_eligible_variant_offsets.npy": "2a06abede71f3d53704f5ac55a4d0a49dccca68606233cdf487613bdabd8dd77",
+      "fase2_tarea02_observational_variant_manifest.csv": "e89f33d433a48217feb44c07efae33b984377a205c218253553a604df71c5093",
+      "fase2_tarea02_resolved_decision_grid.csv": "2150657765dff06fb69272c4c11b7bcea656dce2d3fd8faa15b35821dec944dd",
+      "fase2_tarea02_variant_materialization_audit.json": "2264522b38cb6ea336518369200b3bce1370876bbe3b63273825cbaba3f7991b",
+      "fase2_tarea03_observational_canary_checkpoint.sqlite": "d4da2f9bb41d78d7a6968bdbf8a7f287b402d109a47eb982d0a6a36ddbc32459"
+    },
+    "post_execution_physical_hashes": {
+      "fase2_tarea03_run_observational_afino_checkpointed.py": "1ddc7b9bafe668a7df8dab534f45bdcdb8519bc9d49041cb2b83ffc8079ad4ab",
+      "fase2_tarea02_exact_afino_execution_plan.csv": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+      "fase2_tarea02_eligible_time_values.npy": "46a6c3c3afaf3c389dcdbc52715c68a9984849a12132e110cb0a80894c53b5e3",
+      "fase2_tarea02_eligible_flux_values.npy": "e943e4f77ba642fc640e082a0fd75ae21ad6057fc31be299101262b42ee4e4f6",
+      "fase2_tarea02_eligible_fits_index_values.npy": "43798bc41989283b31e863eec703c04719f592ba854f6f928f37e414723e3f06",
+      "fase2_tarea02_eligible_variant_offsets.npy": "2a06abede71f3d53704f5ac55a4d0a49dccca68606233cdf487613bdabd8dd77",
+      "fase2_tarea02_observational_variant_manifest.csv": "e89f33d433a48217feb44c07efae33b984377a205c218253553a604df71c5093",
+      "fase2_tarea02_resolved_decision_grid.csv": "2150657765dff06fb69272c4c11b7bcea656dce2d3fd8faa15b35821dec944dd",
+      "fase2_tarea02_variant_materialization_audit.json": "2264522b38cb6ea336518369200b3bce1370876bbe3b63273825cbaba3f7991b",
+      "fase2_tarea03_observational_canary_checkpoint.sqlite": "d4da2f9bb41d78d7a6968bdbf8a7f287b402d109a47eb982d0a6a36ddbc32459"
+    },
+    "pre_execution_logical_hashes": {
+      "canonical_time_payload_sha256": "e2f3fbbc8cb12ae94bcb8514d345a708587bae41b9e593cf1cb5035a1b8576e7",
+      "canonical_flux_payload_sha256": "47059dc92672828f8b6aa262b731dd47ef53aa830e2648cfb7bd4770e00372ee",
+      "canonical_fits_index_payload_sha256": "d169e884b6dfb5810a192c0bbccb3aa9d08716cbf7353aec3512a585e69039b5",
+      "variant_offsets_canonical_sha256": "009b2bac827816b2123a4dc1d90226c98e68324c605264f739f257ebe5ccd45b"
+    },
+    "post_execution_logical_hashes": {
+      "canonical_time_payload_sha256": "e2f3fbbc8cb12ae94bcb8514d345a708587bae41b9e593cf1cb5035a1b8576e7",
+      "canonical_flux_payload_sha256": "47059dc92672828f8b6aa262b731dd47ef53aa830e2648cfb7bd4770e00372ee",
+      "canonical_fits_index_payload_sha256": "d169e884b6dfb5810a192c0bbccb3aa9d08716cbf7353aec3512a585e69039b5",
+      "variant_offsets_canonical_sha256": "009b2bac827816b2123a4dc1d90226c98e68324c605264f739f257ebe5ccd45b"
+    },
+    "f2_2_inputs_unchanged": true,
+    "runner_unchanged": true,
+    "full_plan_unchanged": true
+  },
+  "canary_checkpoint_integrity": {
+    "before": {
+      "filename": "fase2_tarea03_observational_canary_checkpoint.sqlite",
+      "sha256": "d4da2f9bb41d78d7a6968bdbf8a7f287b402d109a47eb982d0a6a36ddbc32459",
+      "result_rows": 84,
+      "plan_kind": "canary",
+      "runner_implementation_version": "1.2.0",
+      "plan_sha256": "54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c"
+    },
+    "after": {
+      "filename": "fase2_tarea03_observational_canary_checkpoint.sqlite",
+      "sha256": "d4da2f9bb41d78d7a6968bdbf8a7f287b402d109a47eb982d0a6a36ddbc32459",
+      "result_rows": 84,
+      "plan_kind": "canary",
+      "runner_implementation_version": "1.2.0",
+      "plan_sha256": "54ea652f03943e2adce202343c39e074df88a1b0999faf57287d28d253c7dd1c"
+    },
+    "unchanged": true
+  },
+  "transaction_validation": {
+    "reference_runner": "fase1_tarea11_run_nested_afino_checkpointed.py",
+    "reference_runner_sha256": "b5bdbccb4f1170a40163ef99f465fb63d75d51f9d227178af8cdd82934e5695f",
+    "insert_result_transaction_byte_identical": true,
+    "fragment_checks": {
+      "begin_immediate": true,
+      "single_insert": true,
+      "commit": true,
+      "rollback": true
+    },
+    "one_transaction_per_completed_call": true
+  },
+  "checkpoint": {
+    "filename": "fase2_tarea04_observational_full_checkpoint.sqlite",
+    "sha256": "e35f280ed5711cc8f9771edeb5a1a4f7b2778106d9cc1ad21fda7ce460cba565",
+    "plan_kind": "full",
+    "runner_sha256": "1ddc7b9bafe668a7df8dab534f45bdcdb8519bc9d49041cb2b83ffc8079ad4ab",
+    "plan_sha256": "96c26a49bda9c2485ef02ed6a6de12caf56b54b45a9d997d86fb144e33abeb97",
+    "result_rows": 2784,
+    "invocation_rows": 5
+  },
+  "temporal_contract": {
+    "absolute_tolerance_s": 5e-12,
+    "relative_tolerance": 0.0,
+    "requested_preregistered_check": {
+      "dt": "median(diff(time_seconds))",
+      "frequencies": "numpy.fft.rfftfreq(N, d=requested_dt)",
+      "dt_matches": 12,
+      "dt_mismatches": 916,
+      "bin_matches": 740,
+      "bin_mismatches": 188,
+      "mismatches_are_runner_failures": false
+    },
+    "observed_afino_0_5_contract": {
+      "dt": "mean(diff(time_seconds))",
+      "frequencies": "numpy.fft.fftfreq(N, d=afino_dt); frequencies > 0",
+      "dt_matches": 928,
+      "bin_matches": 928,
+      "models_agree_on_dt": 928,
+      "models_agree_on_bin_count": 928,
+      "confirmed": true
+    }
+  },
+  "operational_diagnostics": {
+    "M0": {
+      "result_status_counts": {
+        "OK": 928
+      },
+      "warning_calls": 0,
+      "warning_totals": 0,
+      "bound_hit_calls": 66,
+      "runtime_total_seconds": 266.57673009921564,
+      "runtime_median_seconds": 0.2852514999685809,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 928
+      }
+    },
+    "M1": {
+      "result_status_counts": {
+        "OK": 928
+      },
+      "warning_calls": 0,
+      "warning_totals": 0,
+      "bound_hit_calls": 632,
+      "runtime_total_seconds": 914.8973981001764,
+      "runtime_median_seconds": 0.9834053500089794,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 928
+      }
+    },
+    "M2": {
+      "result_status_counts": {
+        "OK": 928
+      },
+      "warning_calls": 555,
+      "warning_totals": 4690,
+      "bound_hit_calls": 827,
+      "runtime_total_seconds": 513.848560498911,
+      "runtime_median_seconds": 0.5566484000300989,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 928
+      }
+    },
+    "all_models": {
+      "runtime_total_seconds": 1695.322688698303,
+      "result_status_counts": {
+        "OK": 2784
+      },
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 2784
+      }
+    }
+  },
+  "environment": {
+    "python_version": "3.13.13",
+    "python_full": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 01:56:49) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable_relative": ".venv\\Scripts\\python.exe",
+    "numpy_version": "2.5.1",
+    "scipy_version": "1.18.0",
+    "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "afino_package_version": "0.5",
+    "tracked_diff_exit_code": 0,
+    "staged_diff_exit_code": 0,
+    "git_status_porcelain": "?? afino.egg-info/",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+    "pip_freeze": [
+      "-e git+https://github.com/aringlis/afino_release_version.git@6aceac9518fc8056052807e666da9d0c8bebb010#egg=afino",
+      "astropy==8.0.1",
+      "astropy-iers-data==0.2026.7.27.0.56.29",
+      "colorama==0.4.6",
+      "contourpy==1.3.3",
+      "cycler==0.12.1",
+      "fonttools==4.63.0",
+      "iniconfig==2.3.0",
+      "kiwisolver==1.5.0",
+      "matplotlib==3.11.1",
+      "numpy==2.5.1",
+      "packaging==26.2",
+      "pillow==12.3.0",
+      "pluggy==1.6.0",
+      "pyerfa==2.0.1.5",
+      "Pygments==2.20.0",
+      "pyparsing==3.3.2",
+      "pytest==9.1.1",
+      "python-dateutil==2.9.0.post0",
+      "PyYAML==6.0.3",
+      "scipy==1.18.0",
+      "setuptools==83.0.0",
+      "six==1.17.0",
+      "wheel==0.47.0"
+    ],
+    "afino_imported": false,
+    "astropy_imported": false,
+    "fits_opened": false
+  },
+  "validator": {
+    "filename": "fase2_tarea04_validate_full_observational_execution.py",
+    "sha256": "57d2d1335442bc941269f402e5e069eb7d708aadb28099e34adebe9cdec29c6e",
+    "afino_imported": false,
+    "astropy_imported": false,
+    "fits_opened": false,
+    "sqlite_opened_read_only": true,
+    "models_executed": false
+  },
+  "diagnostic": {
+    "filename": "fase2_tarea04_temporal_contract_diagnostic.csv",
+    "sha256": "7aee23029c350c6eef5ebd402db79de528fcd9303bf7eaa15de2428c0cc11370",
+    "rows": 928
+  },
+  "mismatch_examples": {
+    "plan_result": [],
+    "sqlite_csv": [],
+    "decisions": []
+  },
+  "confirmations": {
+    "canary_results_imported": false,
+    "canary_checkpoint_modified": false,
+    "fits_opened": false,
+    "dataset_regenerated": false,
+    "quality_filter_reapplied": false,
+    "detrending_recomputed": false,
+    "interpolation_performed": false,
+    "gap_filling_performed": false,
+    "candidate_discovery_authorized": false,
+    "scientific_results_interpreted": false,
+    "selection_threshold_modified": false,
+    "afino_code_modified": false,
+    "runner_modified": false,
+    "full_plan_modified": false,
+    "failed_jobs_redrawn": false,
+    "jobs_removed": false
+  },
+  "report_word_count": 475
+}
