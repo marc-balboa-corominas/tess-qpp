@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local configuration / secrets
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local-only scientific data and runtime artifacts
+local_archive/
+data/raw/
+data/cache/
+data/interim/
+runtime/
+scratch/
+
+# Large or regenerated scientific artifacts
+*.fits
+*.fit
+*.fts
+*.npy
+*.npz
+*.sqlite
+*.db
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Packaged archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Runtime logs
+*_console_output.txt
+*_execution_log.txt
