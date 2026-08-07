@@ -24,9 +24,9 @@ The project began as a focused reproduction and methodological audit. That work 
 
 Rather than moving directly from detections to physical interpretation, the project separates **baseline reconstruction**, **controlled synthetic testing**, **observational robustness**, **numerical behaviour**, **validation**, and later **population and physical inference** into explicit stages.
 
-> **Research status:** active development  
-> **F0–F2:** completed and frozen  
-> **Current stage:** Phase 3 preparation  
+> **Research status:** active development
+> **F0–F2:** completed and frozen
+> **Current stage:** Phase 3 preparation
 > **Peer review:** not yet peer reviewed
 
 ---
@@ -190,7 +190,7 @@ Major public updates are shared at selected scientific checkpoints rather than a
 
 ## Author
 
-**Marc Balboa Corominas**  
+**Marc Balboa Corominas**
 Independent scientific project
 
 > This repository documents research in active development. Material contained here should not be interpreted as peer-reviewed scientific evidence unless explicitly associated with a later released manuscript or citable research object.
