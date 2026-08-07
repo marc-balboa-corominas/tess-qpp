@@ -1,0 +1,74 @@
+{
+  "task": "Fase 2 — Tarea 2.6",
+  "review_status": "APPROVED",
+  "phase2_status": "PHASE2_COMPLETE_ROBUSTNESS_MANUSCRIPT_VIABLE_CORRECTION_REQUIRES_PHASE3",
+  "robustness_manuscript_viable": true,
+  "correction_claim_established": false,
+  "held_out_validation_required_for_correction": true,
+  "counts": {
+    "claims_total": 34,
+    "limitations_registered": 18,
+    "manuscript_claims_assessed": 17,
+    "phase3_requirements": 16,
+    "route_a_requirements": 7,
+    "route_b_requirements": 9,
+    "report_word_count": 1415
+  },
+  "confirmations": {
+    "afino_executed": false,
+    "fits_opened": false,
+    "variants_regenerated": false,
+    "new_statistics_computed": false,
+    "new_threshold_added": false,
+    "candidate_discovery_authorized": false,
+    "observational_ground_truth_established": false,
+    "sensitivity_estimated": false,
+    "specificity_estimated": false,
+    "physical_qpp_truth_inferred": false,
+    "correction_claim_established": false,
+    "events_removed": false,
+    "inadmissible_variants_removed": false
+  },
+  "files": [
+    {
+      "filename": "fase2_tarea06_build_phase2_synthesis.py",
+      "sha256": "b271331068233338ef0d8b9241a3bd437187adabd727d1cf23478696d817835b",
+      "size_bytes": 93180
+    },
+    {
+      "filename": "fase2_tarea06_phase2_evidence_ledger.csv",
+      "sha256": "eb6eb383839d5360ad9b843d61b682a808f49c6f5932bea1c30d0c47a4aaa225",
+      "size_bytes": 18687
+    },
+    {
+      "filename": "fase2_tarea06_phase2_limitations_register.csv",
+      "sha256": "5379501c84162ff18b4c1dfc7d576e9051a214c885a2ab0ce10faf684d67c07a",
+      "size_bytes": 5587
+    },
+    {
+      "filename": "fase2_tarea06_manuscript_claim_matrix.csv",
+      "sha256": "070c7cb4eb85345c6222ecc476d527007abdfff940d80b2fd3a1b009286e57b0",
+      "size_bytes": 5362
+    },
+    {
+      "filename": "fase2_tarea06_phase3_entry_requirements.csv",
+      "sha256": "b3155e16beed5917d3fdc3416eace0b5d97a55ea84a7b3d3a91c27eb6846e657",
+      "size_bytes": 3920
+    },
+    {
+      "filename": "fase2_tarea06_phase2_decision.json",
+      "sha256": "6ac1962077833b08d979b715a52a75a99b1d3a169430ca7abc46d17926eb3ab2",
+      "size_bytes": 2397
+    },
+    {
+      "filename": "fase2_tarea06_phase2_synthesis_audit.json",
+      "sha256": "de7093044e5d1ea4f32d17926cdb52c59614db0eb8af1982703fe650782b7cdd",
+      "size_bytes": 7337
+    },
+    {
+      "filename": "fase2_tarea06_phase2_synthesis_report.md",
+      "sha256": "b2c693c40fd8d29227e4d03837e1901e488624b1dc60d87ca8b5b5461a93303e",
+      "size_bytes": 10191
+    }
+  ]
+}
