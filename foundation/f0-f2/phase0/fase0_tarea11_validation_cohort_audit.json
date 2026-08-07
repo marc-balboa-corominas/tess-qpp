@@ -1,0 +1,1031 @@
+{
+  "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 01:56:49) [MSC v.1944 64 bit (AMD64)]",
+  "pandas": "3.0.5",
+  "numpy": "2.5.1",
+  "script": {
+    "filename": "fase0_tarea11_select_validation_cohort.py",
+    "sha256": "2a0e03f02207e949a8cc81be2e307d40b7d715e490147e668e6abb9a37652dd1"
+  },
+  "catalogs": {
+    "Flare_detections.csv": {
+      "sha256": "866c7ebf0d2d3a6f024b55bd112e7d91491518dfd18a57b26a3f999c5d66faa4",
+      "rows": 3878,
+      "columns": [
+        "TIC_ID",
+        "T_eff (K)",
+        "Start_time (TBJD)",
+        "End_time (TBJD)",
+        "Peak_time (TBJD)",
+        "Amplitude",
+        "Duration (days)",
+        "Flare_energy (erg)",
+        "ED (s)"
+      ]
+    },
+    "QPP_detections.csv": {
+      "sha256": "4f9d6c07fc722917fa432989b2d7c20b9b8da7cef4227a44187b55b6ddcfbe8e",
+      "rows": 61,
+      "columns": [
+        "TIC_ID",
+        "Start_Time (TBJD)",
+        "End_Time (TBJD)",
+        "Tau",
+        "Time_Extension (days)",
+        "Best_Model_BIC",
+        "Power_Law_Index",
+        "rchi2_M0",
+        "rchi2_M1",
+        "rchi2_M2",
+        "Period (s)",
+        "Err_P",
+        "Error_P (s)",
+        "BIC_M2_M1",
+        "BIC_M0_M1",
+        "T_eff (K)",
+        "Amplitude",
+        "Flare_energy (erg)",
+        "ED (s)",
+        "Duration (days)",
+        "Duration (mins)",
+        "Prot (d)"
+      ]
+    }
+  },
+  "initial_qpp_count": 61,
+  "eligible_positive_count": 7,
+  "calibration_event": {
+    "tic_id": 67378184,
+    "start_tbjd": "2505.134541",
+    "role": "calibration_event",
+    "excluded": true
+  },
+  "eligibility_rule": {
+    "tau": "Tau == 0",
+    "bic_m0_m1": "BIC_M0_M1 > 10",
+    "bic_m2_m1": "BIC_M2_M1 > 10",
+    "period": "40 <= Period (s) <= 300",
+    "calibration": "excluded",
+    "duplicates": "all rows for duplicated TIC/start keys excluded",
+    "delta_min": "min(BIC_M0_M1, BIC_M2_M1)"
+  },
+  "exclusions": {
+    "independent_counts": {
+      "tau_not_zero": 51,
+      "bic_m0_m1_not_strictly_above_10": 0,
+      "bic_m2_m1_not_strictly_above_10": 4,
+      "period_below_40_s": 0,
+      "period_above_300_s": 0,
+      "calibration_event_rows": 1,
+      "rows_with_duplicated_tic_start_key": 0
+    },
+    "sequential_filter_counts": [
+      {
+        "step": "Tau == 0",
+        "before": 61,
+        "excluded_at_step": 51,
+        "after": 10
+      },
+      {
+        "step": "BIC_M0_M1 > 10",
+        "before": 10,
+        "excluded_at_step": 0,
+        "after": 10
+      },
+      {
+        "step": "BIC_M2_M1 > 10",
+        "before": 10,
+        "excluded_at_step": 2,
+        "after": 8
+      },
+      {
+        "step": "40 <= Period (s) <= 300",
+        "before": 8,
+        "excluded_at_step": 0,
+        "after": 8
+      },
+      {
+        "step": "exclude calibration_event",
+        "before": 8,
+        "excluded_at_step": 1,
+        "after": 7
+      },
+      {
+        "step": "exclude all duplicated TIC/start keys",
+        "before": 7,
+        "excluded_at_step": 0,
+        "after": 7
+      }
+    ],
+    "second_bic_literal_failures_expected": 4,
+    "second_bic_literal_failures_observed": 4,
+    "second_bic_failure_rows": [
+      {
+        "qpp_catalog_index": 3,
+        "tic_id": 425933644,
+        "start_tbjd": "2097.667076",
+        "bic_m2_m1": 7.525481675
+      },
+      {
+        "qpp_catalog_index": 13,
+        "tic_id": 167551757,
+        "start_tbjd": "2227.328669",
+        "bic_m2_m1": 7.711377373
+      },
+      {
+        "qpp_catalog_index": 15,
+        "tic_id": 348898049,
+        "start_tbjd": "2203.079285",
+        "bic_m2_m1": 8.868561736
+      },
+      {
+        "qpp_catalog_index": 25,
+        "tic_id": 153977353,
+        "start_tbjd": "2442.896749",
+        "bic_m2_m1": 7.866370042
+      }
+    ],
+    "duplicate_policy": "exclude all rows for every duplicated TIC/start key",
+    "duplicate_key_count": 0,
+    "duplicate_details": [],
+    "calibration_event": {
+      "tic_id": 67378184,
+      "start_tbjd": "2505.134541",
+      "role": "calibration_event",
+      "excluded": true,
+      "qpp_catalog_index": 28
+    }
+  },
+  "selection_order": [
+    {
+      "pair_id": "P1",
+      "selection_role": "highest_margin",
+      "ranking": "delta_min descending; TIC_ID ascending; start ascending"
+    },
+    {
+      "pair_id": "P2",
+      "selection_role": "near_threshold",
+      "ranking": "delta_min ascending, restricted to delta_min > 10; TIC_ID ascending; start ascending"
+    },
+    {
+      "pair_id": "P3",
+      "selection_role": "shortest_period",
+      "ranking": "Period (s) ascending; TIC_ID ascending; start ascending"
+    },
+    {
+      "pair_id": "P4",
+      "selection_role": "longest_period",
+      "ranking": "Period (s) descending; TIC_ID ascending; start ascending"
+    }
+  ],
+  "selection_steps": [
+    {
+      "pair_id": "P1",
+      "selection_order": 1,
+      "selection_role": "highest_margin",
+      "ranking": "delta_min descending; TIC_ID ascending; start ascending",
+      "candidate_count": 7,
+      "candidates_considered": [
+        {
+          "rank": 1,
+          "qpp_catalog_index": 10,
+          "tic_id": 24518895,
+          "start_tbjd": "2198.799707",
+          "period_s": 56.05823638,
+          "bic_m0_m1": 17.55796487,
+          "bic_m2_m1": 19.98756342,
+          "delta_min": 17.55796487,
+          "selected": true
+        },
+        {
+          "rank": 2,
+          "qpp_catalog_index": 20,
+          "tic_id": 55663720,
+          "start_tbjd": "2359.888752",
+          "period_s": 52.54821951,
+          "bic_m0_m1": 14.67901628,
+          "bic_m2_m1": 19.20116638,
+          "delta_min": 14.67901628
+        },
+        {
+          "rank": 3,
+          "qpp_catalog_index": 32,
+          "tic_id": 160619243,
+          "start_tbjd": "2662.677869",
+          "period_s": 60.05392234,
+          "bic_m0_m1": 13.50380923,
+          "bic_m2_m1": 17.7063444,
+          "delta_min": 13.50380923
+        },
+        {
+          "rank": 4,
+          "qpp_catalog_index": 57,
+          "tic_id": 219790151,
+          "start_tbjd": "3390.607915",
+          "period_s": 47.88422537,
+          "bic_m0_m1": 12.63112378,
+          "bic_m2_m1": 17.18946974,
+          "delta_min": 12.63112378
+        },
+        {
+          "rank": 5,
+          "qpp_catalog_index": 21,
+          "tic_id": 225953237,
+          "start_tbjd": "2345.223856",
+          "period_s": 44.03128221,
+          "bic_m0_m1": 11.61905655,
+          "bic_m2_m1": 14.45167103,
+          "delta_min": 11.61905655
+        },
+        {
+          "rank": 6,
+          "qpp_catalog_index": 1,
+          "tic_id": 355766445,
+          "start_tbjd": "2070.211398",
+          "period_s": 51.26799237,
+          "bic_m0_m1": 10.63081349,
+          "bic_m2_m1": 17.228738,
+          "delta_min": 10.63081349
+        },
+        {
+          "rank": 7,
+          "qpp_catalog_index": 7,
+          "tic_id": 220433364,
+          "start_tbjd": "2166.070869",
+          "period_s": 73.20971864,
+          "bic_m0_m1": 10.543015,
+          "bic_m2_m1": 12.71921134,
+          "delta_min": 10.543015
+        }
+      ],
+      "selected_qpp_catalog_index": 10,
+      "selected_key": {
+        "tic_id": 24518895,
+        "start_tbjd": "2198.799707"
+      }
+    },
+    {
+      "pair_id": "P2",
+      "selection_order": 2,
+      "selection_role": "near_threshold",
+      "ranking": "delta_min ascending, restricted to delta_min > 10; TIC_ID ascending; start ascending",
+      "candidate_count": 6,
+      "candidates_considered": [
+        {
+          "rank": 1,
+          "qpp_catalog_index": 7,
+          "tic_id": 220433364,
+          "start_tbjd": "2166.070869",
+          "period_s": 73.20971864,
+          "bic_m0_m1": 10.543015,
+          "bic_m2_m1": 12.71921134,
+          "delta_min": 10.543015,
+          "selected": true
+        },
+        {
+          "rank": 2,
+          "qpp_catalog_index": 1,
+          "tic_id": 355766445,
+          "start_tbjd": "2070.211398",
+          "period_s": 51.26799237,
+          "bic_m0_m1": 10.63081349,
+          "bic_m2_m1": 17.228738,
+          "delta_min": 10.63081349
+        },
+        {
+          "rank": 3,
+          "qpp_catalog_index": 21,
+          "tic_id": 225953237,
+          "start_tbjd": "2345.223856",
+          "period_s": 44.03128221,
+          "bic_m0_m1": 11.61905655,
+          "bic_m2_m1": 14.45167103,
+          "delta_min": 11.61905655
+        },
+        {
+          "rank": 4,
+          "qpp_catalog_index": 57,
+          "tic_id": 219790151,
+          "start_tbjd": "3390.607915",
+          "period_s": 47.88422537,
+          "bic_m0_m1": 12.63112378,
+          "bic_m2_m1": 17.18946974,
+          "delta_min": 12.63112378
+        },
+        {
+          "rank": 5,
+          "qpp_catalog_index": 32,
+          "tic_id": 160619243,
+          "start_tbjd": "2662.677869",
+          "period_s": 60.05392234,
+          "bic_m0_m1": 13.50380923,
+          "bic_m2_m1": 17.7063444,
+          "delta_min": 13.50380923
+        },
+        {
+          "rank": 6,
+          "qpp_catalog_index": 20,
+          "tic_id": 55663720,
+          "start_tbjd": "2359.888752",
+          "period_s": 52.54821951,
+          "bic_m0_m1": 14.67901628,
+          "bic_m2_m1": 19.20116638,
+          "delta_min": 14.67901628
+        }
+      ],
+      "selected_qpp_catalog_index": 7,
+      "selected_key": {
+        "tic_id": 220433364,
+        "start_tbjd": "2166.070869"
+      }
+    },
+    {
+      "pair_id": "P3",
+      "selection_order": 3,
+      "selection_role": "shortest_period",
+      "ranking": "Period (s) ascending; TIC_ID ascending; start ascending",
+      "candidate_count": 5,
+      "candidates_considered": [
+        {
+          "rank": 1,
+          "qpp_catalog_index": 21,
+          "tic_id": 225953237,
+          "start_tbjd": "2345.223856",
+          "period_s": 44.03128221,
+          "bic_m0_m1": 11.61905655,
+          "bic_m2_m1": 14.45167103,
+          "delta_min": 11.61905655,
+          "selected": true
+        },
+        {
+          "rank": 2,
+          "qpp_catalog_index": 57,
+          "tic_id": 219790151,
+          "start_tbjd": "3390.607915",
+          "period_s": 47.88422537,
+          "bic_m0_m1": 12.63112378,
+          "bic_m2_m1": 17.18946974,
+          "delta_min": 12.63112378
+        },
+        {
+          "rank": 3,
+          "qpp_catalog_index": 1,
+          "tic_id": 355766445,
+          "start_tbjd": "2070.211398",
+          "period_s": 51.26799237,
+          "bic_m0_m1": 10.63081349,
+          "bic_m2_m1": 17.228738,
+          "delta_min": 10.63081349
+        },
+        {
+          "rank": 4,
+          "qpp_catalog_index": 20,
+          "tic_id": 55663720,
+          "start_tbjd": "2359.888752",
+          "period_s": 52.54821951,
+          "bic_m0_m1": 14.67901628,
+          "bic_m2_m1": 19.20116638,
+          "delta_min": 14.67901628
+        },
+        {
+          "rank": 5,
+          "qpp_catalog_index": 32,
+          "tic_id": 160619243,
+          "start_tbjd": "2662.677869",
+          "period_s": 60.05392234,
+          "bic_m0_m1": 13.50380923,
+          "bic_m2_m1": 17.7063444,
+          "delta_min": 13.50380923
+        }
+      ],
+      "selected_qpp_catalog_index": 21,
+      "selected_key": {
+        "tic_id": 225953237,
+        "start_tbjd": "2345.223856"
+      }
+    },
+    {
+      "pair_id": "P4",
+      "selection_order": 4,
+      "selection_role": "longest_period",
+      "ranking": "Period (s) descending; TIC_ID ascending; start ascending",
+      "candidate_count": 4,
+      "candidates_considered": [
+        {
+          "rank": 1,
+          "qpp_catalog_index": 32,
+          "tic_id": 160619243,
+          "start_tbjd": "2662.677869",
+          "period_s": 60.05392234,
+          "bic_m0_m1": 13.50380923,
+          "bic_m2_m1": 17.7063444,
+          "delta_min": 13.50380923,
+          "selected": true
+        },
+        {
+          "rank": 2,
+          "qpp_catalog_index": 20,
+          "tic_id": 55663720,
+          "start_tbjd": "2359.888752",
+          "period_s": 52.54821951,
+          "bic_m0_m1": 14.67901628,
+          "bic_m2_m1": 19.20116638,
+          "delta_min": 14.67901628
+        },
+        {
+          "rank": 3,
+          "qpp_catalog_index": 1,
+          "tic_id": 355766445,
+          "start_tbjd": "2070.211398",
+          "period_s": 51.26799237,
+          "bic_m0_m1": 10.63081349,
+          "bic_m2_m1": 17.228738,
+          "delta_min": 10.63081349
+        },
+        {
+          "rank": 4,
+          "qpp_catalog_index": 57,
+          "tic_id": 219790151,
+          "start_tbjd": "3390.607915",
+          "period_s": 47.88422537,
+          "bic_m0_m1": 12.63112378,
+          "bic_m2_m1": 17.18946974,
+          "delta_min": 12.63112378
+        }
+      ],
+      "selected_qpp_catalog_index": 32,
+      "selected_key": {
+        "tic_id": 160619243,
+        "start_tbjd": "2662.677869"
+      }
+    }
+  ],
+  "qpp_to_flare_link_validation": {
+    "qpp_unique_keys": 61,
+    "missing_qpp_keys_in_flare_catalog": [],
+    "ambiguous_qpp_keys_in_flare_catalog": [],
+    "all_qpp_keys_link_uniquely": true
+  },
+  "selected_positive_links": [
+    {
+      "pair_id": "P1",
+      "link_method": "TIC_ID + start rounded to six decimals",
+      "match_count": 1,
+      "qpp_catalog_index": 10,
+      "flare_catalog_index": 171,
+      "event_key": {
+        "tic_id": 24518895,
+        "start_tbjd": "2198.799707"
+      },
+      "duration_difference_days_qpp_vs_flare": 0.0,
+      "amplitude_difference_qpp_vs_flare": 0.0
+    },
+    {
+      "pair_id": "P2",
+      "link_method": "TIC_ID + start rounded to six decimals",
+      "match_count": 1,
+      "qpp_catalog_index": 7,
+      "flare_catalog_index": 1890,
+      "event_key": {
+        "tic_id": 220433364,
+        "start_tbjd": "2166.070869"
+      },
+      "duration_difference_days_qpp_vs_flare": 0.0,
+      "amplitude_difference_qpp_vs_flare": 0.0
+    },
+    {
+      "pair_id": "P3",
+      "link_method": "TIC_ID + start rounded to six decimals",
+      "match_count": 1,
+      "qpp_catalog_index": 21,
+      "flare_catalog_index": 1938,
+      "event_key": {
+        "tic_id": 225953237,
+        "start_tbjd": "2345.223856"
+      },
+      "duration_difference_days_qpp_vs_flare": 0.0,
+      "amplitude_difference_qpp_vs_flare": 0.0
+    },
+    {
+      "pair_id": "P4",
+      "link_method": "TIC_ID + start rounded to six decimals",
+      "match_count": 1,
+      "qpp_catalog_index": 32,
+      "flare_catalog_index": 1377,
+      "event_key": {
+        "tic_id": 160619243,
+        "start_tbjd": "2662.677869"
+      },
+      "duration_difference_days_qpp_vs_flare": 0.0,
+      "amplitude_difference_qpp_vs_flare": 0.0
+    }
+  ],
+  "comparison_pool": {
+    "flare_rows_initial": 3878,
+    "qpp_rows_excluded": 61,
+    "not_selected_rows_available": 3817
+  },
+  "matching": [
+    {
+      "pair_id": "P1",
+      "positive_tic_id": 24518895,
+      "positive_start_tbjd": "2198.799707",
+      "target_duration_days": 0.006018442,
+      "target_amplitude": 0.384969191,
+      "same_tic_candidates_total": 1,
+      "same_tic_candidates_available_at_selection": 1,
+      "previously_used_controls": 0,
+      "matching_method": "same_tic_duration_match",
+      "ranking_rules": "same TIC: absolute duration difference, absolute amplitude difference, start ascending; global: absolute duration difference, absolute amplitude difference, TIC ascending, start ascending",
+      "selected_flare_catalog_index": 170,
+      "selected_tic_id": 24518895,
+      "selected_start_tbjd": "2180.577182",
+      "selected_duration_difference_days": 0.0016205720000000007,
+      "selected_amplitude_difference": 0.265542156,
+      "ranked_candidates_preview_first_25": [
+        {
+          "rank": 1,
+          "flare_catalog_index": 170,
+          "tic_id": 24518895,
+          "start_tbjd": "2180.577182",
+          "duration_difference_days": 0.0016205720000000007,
+          "amplitude_difference": 0.265542156,
+          "selected": true
+        }
+      ]
+    },
+    {
+      "pair_id": "P2",
+      "positive_tic_id": 220433364,
+      "positive_start_tbjd": "2166.070869",
+      "target_duration_days": 0.034953585,
+      "target_amplitude": 0.049418596,
+      "same_tic_candidates_total": 3,
+      "same_tic_candidates_available_at_selection": 3,
+      "previously_used_controls": 1,
+      "matching_method": "same_tic_duration_match",
+      "ranking_rules": "same TIC: absolute duration difference, absolute amplitude difference, start ascending; global: absolute duration difference, absolute amplitude difference, TIC ascending, start ascending",
+      "selected_flare_catalog_index": 1892,
+      "selected_tic_id": 220433364,
+      "selected_start_tbjd": "2361.784182",
+      "selected_duration_difference_days": 0.0060191129999999995,
+      "selected_amplitude_difference": 0.07926122699999999,
+      "ranked_candidates_preview_first_25": [
+        {
+          "rank": 1,
+          "flare_catalog_index": 1892,
+          "tic_id": 220433364,
+          "start_tbjd": "2361.784182",
+          "duration_difference_days": 0.0060191129999999995,
+          "amplitude_difference": 0.07926122699999999,
+          "selected": true
+        },
+        {
+          "rank": 2,
+          "flare_catalog_index": 1893,
+          "tic_id": 220433364,
+          "start_tbjd": "2384.722402",
+          "duration_difference_days": 0.011111836,
+          "amplitude_difference": 0.048781097,
+          "selected": false
+        },
+        {
+          "rank": 3,
+          "flare_catalog_index": 1891,
+          "tic_id": 220433364,
+          "start_tbjd": "2202.726538",
+          "duration_difference_days": 0.025000018000000002,
+          "amplitude_difference": 0.018268408999999992,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "pair_id": "P3",
+      "positive_tic_id": 225953237,
+      "positive_start_tbjd": "2345.223856",
+      "target_duration_days": 0.004166715,
+      "target_amplitude": 0.03691269,
+      "same_tic_candidates_total": 2,
+      "same_tic_candidates_available_at_selection": 2,
+      "previously_used_controls": 2,
+      "matching_method": "same_tic_duration_match",
+      "ranking_rules": "same TIC: absolute duration difference, absolute amplitude difference, start ascending; global: absolute duration difference, absolute amplitude difference, TIC ascending, start ascending",
+      "selected_flare_catalog_index": 1939,
+      "selected_tic_id": 225953237,
+      "selected_start_tbjd": "2349.891231",
+      "selected_duration_difference_days": 0.0006944969999999996,
+      "selected_amplitude_difference": 0.181675311,
+      "ranked_candidates_preview_first_25": [
+        {
+          "rank": 1,
+          "flare_catalog_index": 1939,
+          "tic_id": 225953237,
+          "start_tbjd": "2349.891231",
+          "duration_difference_days": 0.0006944969999999996,
+          "amplitude_difference": 0.181675311,
+          "selected": true
+        },
+        {
+          "rank": 2,
+          "flare_catalog_index": 1940,
+          "tic_id": 225953237,
+          "start_tbjd": "2357.843043",
+          "duration_difference_days": 0.0027776630000000005,
+          "amplitude_difference": 0.0027338280000000006,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "pair_id": "P4",
+      "positive_tic_id": 160619243,
+      "positive_start_tbjd": "2662.677869",
+      "target_duration_days": 0.00949054,
+      "target_amplitude": 0.05638211,
+      "same_tic_candidates_total": 17,
+      "same_tic_candidates_available_at_selection": 17,
+      "previously_used_controls": 3,
+      "matching_method": "same_tic_duration_match",
+      "ranking_rules": "same TIC: absolute duration difference, absolute amplitude difference, start ascending; global: absolute duration difference, absolute amplitude difference, TIC ascending, start ascending",
+      "selected_flare_catalog_index": 1384,
+      "selected_tic_id": 160619243,
+      "selected_start_tbjd": "2753.995580",
+      "selected_duration_difference_days": 0.00046309399999999896,
+      "selected_amplitude_difference": 0.068518781,
+      "ranked_candidates_preview_first_25": [
+        {
+          "rank": 1,
+          "flare_catalog_index": 1384,
+          "tic_id": 160619243,
+          "start_tbjd": "2753.995580",
+          "duration_difference_days": 0.00046309399999999896,
+          "amplitude_difference": 0.068518781,
+          "selected": true
+        },
+        {
+          "rank": 2,
+          "flare_catalog_index": 1381,
+          "tic_id": 160619243,
+          "start_tbjd": "2737.120068",
+          "duration_difference_days": 0.0009259939999999994,
+          "amplitude_difference": 0.009316031000000002,
+          "selected": false
+        },
+        {
+          "rank": 3,
+          "flare_catalog_index": 1379,
+          "tic_id": 160619243,
+          "start_tbjd": "2729.832683",
+          "duration_difference_days": 0.0016202940000000013,
+          "amplitude_difference": 0.028486317,
+          "selected": false
+        },
+        {
+          "rank": 4,
+          "flare_catalog_index": 1376,
+          "tic_id": 160619243,
+          "start_tbjd": "2656.471746",
+          "duration_difference_days": 0.0023147600000000008,
+          "amplitude_difference": 0.032287048,
+          "selected": false
+        },
+        {
+          "rank": 5,
+          "flare_catalog_index": 1373,
+          "tic_id": 160619243,
+          "start_tbjd": "2441.213185",
+          "duration_difference_days": 0.003009609,
+          "amplitude_difference": 0.103015811,
+          "selected": false
+        },
+        {
+          "rank": 6,
+          "flare_catalog_index": 1385,
+          "tic_id": 160619243,
+          "start_tbjd": "2764.624445",
+          "duration_difference_days": 0.0034720390000000005,
+          "amplitude_difference": 0.019809406,
+          "selected": false
+        },
+        {
+          "rank": 7,
+          "flare_catalog_index": 1387,
+          "tic_id": 160619243,
+          "start_tbjd": "2798.188171",
+          "duration_difference_days": 0.0037034660000000007,
+          "amplitude_difference": 0.139513424,
+          "selected": false
+        },
+        {
+          "rank": 8,
+          "flare_catalog_index": 1378,
+          "tic_id": 160619243,
+          "start_tbjd": "2720.003679",
+          "duration_difference_days": 0.004166572,
+          "amplitude_difference": 0.036021499,
+          "selected": false
+        },
+        {
+          "rank": 9,
+          "flare_catalog_index": 1382,
+          "tic_id": 160619243,
+          "start_tbjd": "2748.809047",
+          "duration_difference_days": 0.005323912,
+          "amplitude_difference": 0.015218543000000001,
+          "selected": false
+        },
+        {
+          "rank": 10,
+          "flare_catalog_index": 1380,
+          "tic_id": 160619243,
+          "start_tbjd": "2734.246727",
+          "duration_difference_days": 0.005323935,
+          "amplitude_difference": 0.015395421000000006,
+          "selected": false
+        },
+        {
+          "rank": 11,
+          "flare_catalog_index": 1388,
+          "tic_id": 160619243,
+          "start_tbjd": "2820.761595",
+          "duration_difference_days": 0.0076393780000000005,
+          "amplitude_difference": 0.007978535999999994,
+          "selected": false
+        },
+        {
+          "rank": 12,
+          "flare_catalog_index": 1375,
+          "tic_id": 160619243,
+          "start_tbjd": "2620.633239",
+          "duration_difference_days": 0.010185155999999999,
+          "amplitude_difference": 0.018128250999999998,
+          "selected": false
+        },
+        {
+          "rank": 13,
+          "flare_catalog_index": 1371,
+          "tic_id": 160619243,
+          "start_tbjd": "2430.254986",
+          "duration_difference_days": 0.019444877,
+          "amplitude_difference": 0.067024937,
+          "selected": false
+        },
+        {
+          "rank": 14,
+          "flare_catalog_index": 1372,
+          "tic_id": 160619243,
+          "start_tbjd": "2430.375125",
+          "duration_difference_days": 0.022454161,
+          "amplitude_difference": 0.18708468,
+          "selected": false
+        },
+        {
+          "rank": 15,
+          "flare_catalog_index": 1374,
+          "tic_id": 160619243,
+          "start_tbjd": "2619.809174",
+          "duration_difference_days": 0.024305395,
+          "amplitude_difference": 0.45959957700000004,
+          "selected": false
+        },
+        {
+          "rank": 16,
+          "flare_catalog_index": 1383,
+          "tic_id": 160619243,
+          "start_tbjd": "2753.985858",
+          "duration_difference_days": 0.030092515,
+          "amplitude_difference": 0.014783795000000002,
+          "selected": false
+        },
+        {
+          "rank": 17,
+          "flare_catalog_index": 1386,
+          "tic_id": 160619243,
+          "start_tbjd": "2798.181458",
+          "duration_difference_days": 0.031018981,
+          "amplitude_difference": 0.065370004,
+          "selected": false
+        }
+      ]
+    }
+  ],
+  "selected_events": [
+    {
+      "pair_id": "P1",
+      "event_role": "published_qpp",
+      "selection_role": "highest_margin",
+      "tic_id": "24518895",
+      "start_tbjd": "2198.799707",
+      "peak_tbjd": "2198.800633",
+      "end_tbjd": "2198.805725",
+      "duration_days": "0.006018442",
+      "amplitude": "0.384969191",
+      "energy_erg": "3.42e+30",
+      "tau": "0",
+      "published_period_s": "56.05823638",
+      "bic_m0_m1": "17.55796487",
+      "bic_m2_m1": "19.98756342",
+      "delta_min": "17.55796487",
+      "matching_method": "",
+      "matched_to_start_tbjd": "",
+      "selection_order": "1",
+      "catalog_source": "QPP_detections.csv+Flare_detections.csv"
+    },
+    {
+      "pair_id": "P1",
+      "event_role": "not_selected_qpp",
+      "selection_role": "matched_not_selected",
+      "tic_id": "24518895",
+      "start_tbjd": "2180.577182",
+      "peak_tbjd": "2180.577876",
+      "end_tbjd": "2180.584821",
+      "duration_days": "0.007639014",
+      "amplitude": "0.119427035",
+      "energy_erg": "2.3e+30",
+      "tau": "",
+      "published_period_s": "",
+      "bic_m0_m1": "",
+      "bic_m2_m1": "",
+      "delta_min": "",
+      "matching_method": "same_tic_duration_match",
+      "matched_to_start_tbjd": "2198.799707",
+      "selection_order": "1",
+      "catalog_source": "Flare_detections.csv"
+    },
+    {
+      "pair_id": "P2",
+      "event_role": "published_qpp",
+      "selection_role": "near_threshold",
+      "tic_id": "220433364",
+      "start_tbjd": "2166.070869",
+      "peak_tbjd": "2166.072026",
+      "end_tbjd": "2166.105822",
+      "duration_days": "0.034953585",
+      "amplitude": "0.049418596",
+      "energy_erg": "5.33e+30",
+      "tau": "0",
+      "published_period_s": "73.20971864",
+      "bic_m0_m1": "10.543015",
+      "bic_m2_m1": "12.71921134",
+      "delta_min": "10.543015",
+      "matching_method": "",
+      "matched_to_start_tbjd": "",
+      "selection_order": "2",
+      "catalog_source": "QPP_detections.csv+Flare_detections.csv"
+    },
+    {
+      "pair_id": "P2",
+      "event_role": "not_selected_qpp",
+      "selection_role": "matched_not_selected",
+      "tic_id": "220433364",
+      "start_tbjd": "2361.784182",
+      "peak_tbjd": "2361.785339",
+      "end_tbjd": "2361.825154",
+      "duration_days": "0.040972698",
+      "amplitude": "0.128679823",
+      "energy_erg": "1.89e+31",
+      "tau": "",
+      "published_period_s": "",
+      "bic_m0_m1": "",
+      "bic_m2_m1": "",
+      "delta_min": "",
+      "matching_method": "same_tic_duration_match",
+      "matched_to_start_tbjd": "2166.070869",
+      "selection_order": "2",
+      "catalog_source": "Flare_detections.csv"
+    },
+    {
+      "pair_id": "P3",
+      "event_role": "published_qpp",
+      "selection_role": "shortest_period",
+      "tic_id": "225953237",
+      "start_tbjd": "2345.223856",
+      "peak_tbjd": "2345.224319",
+      "end_tbjd": "2345.228023",
+      "duration_days": "0.004166715",
+      "amplitude": "0.03691269",
+      "energy_erg": "",
+      "tau": "0",
+      "published_period_s": "44.03128221",
+      "bic_m0_m1": "11.61905655",
+      "bic_m2_m1": "14.45167103",
+      "delta_min": "11.61905655",
+      "matching_method": "",
+      "matched_to_start_tbjd": "",
+      "selection_order": "3",
+      "catalog_source": "QPP_detections.csv+Flare_detections.csv"
+    },
+    {
+      "pair_id": "P3",
+      "event_role": "not_selected_qpp",
+      "selection_role": "matched_not_selected",
+      "tic_id": "225953237",
+      "start_tbjd": "2349.891231",
+      "peak_tbjd": "2349.891925",
+      "end_tbjd": "2349.894703",
+      "duration_days": "0.003472218",
+      "amplitude": "0.218588001",
+      "energy_erg": "",
+      "tau": "",
+      "published_period_s": "",
+      "bic_m0_m1": "",
+      "bic_m2_m1": "",
+      "delta_min": "",
+      "matching_method": "same_tic_duration_match",
+      "matched_to_start_tbjd": "2345.223856",
+      "selection_order": "3",
+      "catalog_source": "Flare_detections.csv"
+    },
+    {
+      "pair_id": "P4",
+      "event_role": "published_qpp",
+      "selection_role": "longest_period",
+      "tic_id": "160619243",
+      "start_tbjd": "2662.677869",
+      "peak_tbjd": "2662.679258",
+      "end_tbjd": "2662.687360",
+      "duration_days": "0.00949054",
+      "amplitude": "0.05638211",
+      "energy_erg": "2.61e+30",
+      "tau": "0",
+      "published_period_s": "60.05392234",
+      "bic_m0_m1": "13.50380923",
+      "bic_m2_m1": "17.7063444",
+      "delta_min": "13.50380923",
+      "matching_method": "",
+      "matched_to_start_tbjd": "",
+      "selection_order": "4",
+      "catalog_source": "QPP_detections.csv+Flare_detections.csv"
+    },
+    {
+      "pair_id": "P4",
+      "event_role": "not_selected_qpp",
+      "selection_role": "matched_not_selected",
+      "tic_id": "160619243",
+      "start_tbjd": "2753.995580",
+      "peak_tbjd": "2753.996274",
+      "end_tbjd": "2754.005534",
+      "duration_days": "0.009953634",
+      "amplitude": "0.124900891",
+      "energy_erg": "6.57e+30",
+      "tau": "",
+      "published_period_s": "",
+      "bic_m0_m1": "",
+      "bic_m2_m1": "",
+      "delta_min": "",
+      "matching_method": "same_tic_duration_match",
+      "matched_to_start_tbjd": "2662.677869",
+      "selection_order": "4",
+      "catalog_source": "Flare_detections.csv"
+    }
+  ],
+  "coverage": {
+    "period_min_s": 44.03128221,
+    "period_max_s": 73.20971864,
+    "delta_min_min": 10.543015,
+    "delta_min_max": 17.55796487,
+    "distinct_positive_tics": 4,
+    "distinct_cohort_tics": 4,
+    "same_tic_matches": 4,
+    "global_matches": 0
+  },
+  "outputs": {
+    "cohort_csv": {
+      "filename": "fase0_tarea11_validation_cohort.csv",
+      "sha256": "b48cdc09d37b2ea4c4faec430903f81b0f7b9e4f4b026510175881a2c766fb36",
+      "rows": 8,
+      "columns": [
+        "pair_id",
+        "event_role",
+        "selection_role",
+        "tic_id",
+        "start_tbjd",
+        "peak_tbjd",
+        "end_tbjd",
+        "duration_days",
+        "amplitude",
+        "energy_erg",
+        "tau",
+        "published_period_s",
+        "bic_m0_m1",
+        "bic_m2_m1",
+        "delta_min",
+        "matching_method",
+        "matched_to_start_tbjd",
+        "selection_order",
+        "catalog_source"
+      ]
+    },
+    "report": {
+      "filename": "fase0_tarea11_validation_cohort_report.md",
+      "sha256": "9565b31394e9d6c6af88e81e9b7ff620f104403e4439fb26739641dae33fb030",
+      "diagnosis_word_count": 252
+    }
+  },
+  "fits_downloaded": false,
+  "afino_executed": false,
+  "visual_inspection_used": false,
+  "mast_used": false,
+  "accepted": true,
+  "blocking_reasons": []
+}

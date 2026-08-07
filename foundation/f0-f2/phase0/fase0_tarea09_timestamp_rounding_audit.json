@@ -1,0 +1,205 @@
+{
+  "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 01:56:49) [MSC v.1944 64 bit (AMD64)]",
+  "astropy": "8.0.1",
+  "script_sha256": "39f399e129886ba04462c04c2bfbb3afa725efdfefc531739081af61aa818732",
+  "afino_executed": false,
+  "rounding_decimals": 6,
+  "rounding_tolerance_days": "5E-7",
+  "rounding_tolerance_seconds": "0.0432",
+  "post_pilot_statement": "Esta reconstrucción se formula después de F0.8, pero no se ha seleccionado para mejorar sus BIC. Está motivada por una discrepancia objetiva entre la precisión decimal de los marcadores publicados y la primera cadencia incluida mediante límites numéricos literales.",
+  "preservation": {
+    "required_verified": {
+      "Flare_detections.csv": "866c7ebf0d2d3a6f024b55bd112e7d91491518dfd18a57b26a3f999c5d66faa4",
+      "fase0_tarea06_events_manifest.csv": "081b85cbd2706bc0186404273858233b85403885ba663071f0522e0845142987",
+      "fase0_tarea07_published_qpp_sap_all.csv": "a2ba27fe6ec8e11e2e5c8c8a273585c86cd2325260d9b23769af9052a7c214e6",
+      "fase0_tarea07_published_qpp_sap_q0.csv": "a2ba27fe6ec8e11e2e5c8c8a273585c86cd2325260d9b23769af9052a7c214e6",
+      "fase0_tarea07_published_qpp_pdcsap_all.csv": "aeed2423e0f032ce2edfb599cbbfada7da704cd19f237950eaac9db96fc967bd",
+      "fase0_tarea07_published_qpp_pdcsap_q0.csv": "aeed2423e0f032ce2edfb599cbbfada7da704cd19f237950eaac9db96fc967bd",
+      "fase0_tarea07_notselected_sap_all.csv": "7921f8f3f1453266d2d41de2bc731f4db8f2d27fae7bf3756b635f5212875a46",
+      "fase0_tarea07_notselected_sap_q0.csv": "f0be3b0569c302e9408f5f2d3ecb7b34a6c0f5bc5a15781d717a25cbbd5faee6",
+      "fase0_tarea07_notselected_pdcsap_all.csv": "8f7f0a8e439afc7d1b8cc74b85ec61c7dab37af1196dff99686ea8a5ef1c5da8",
+      "fase0_tarea07_notselected_pdcsap_q0.csv": "632d0de25ae989905f491205ed5ed5320b6a0da5e0d16d0810f5ebe765882df9",
+      "fase0_tarea07_pilot_input_manifest.csv": "38b9a47929fcde55ef94e197270c7782906f44080b0aead00b09dccded1e7c5d",
+      "fase0_tarea07_pilot_input_report.md": "598270971d9e8a54af955e247dd0a9c1f7c76bad55acf0c24f26effd29084828",
+      "fase0_tarea07_pilot_input_audit.json": "652703b82af7dc5f44c7401ed0ec25e7a45fa1d18b4a9f28d504699cc2a92753",
+      "fase0_tarea08_run_real_pilot.py": "bd43be5b76e61bb870795d52237c8598cc8f79d5c9df6006be44e52fe690c4c8",
+      "fase0_tarea08_real_pilot_results.csv": "3e03b66459d4e01f6e4acf3daa4971428c2f8586735916f77d2169a22743f06b",
+      "fase0_tarea08_execution_audit.json": "16fa96a7e1ace531a2f4bcb4e8904dd4fb5a7350ac4a5d5ec1f11146d620695e",
+      "fase0_tarea08_execution_log.txt": "d10452e0af753ed477cb181680ba24160953687322403d67da63edce42e363cc",
+      "fase0_tarea08_environment.txt": "011f8ed9d7bd0f339792b2914142e94c4d30dcd4ed76d0cf96ace83fb34c079f",
+      "fase0_tarea08_console_output.txt": "ee537ecf5dca96ea81a372da293c5de118c7c5ecd97b51b5fdb0c22b7e5f2c02"
+    },
+    "optional_f08_artifacts": {
+      "fase0_tarea08_real_pilot_report.md": {
+        "present": false,
+        "sha256": null
+      },
+      "fase0_tarea08_interpretive_erratum.md": {
+        "present": false,
+        "sha256": null
+      }
+    }
+  },
+  "accepted": true,
+  "acceptance_failures": [],
+  "event_results": {
+    "published_qpp": {
+      "catalog_times_raw": {
+        "start": "2505.134541",
+        "peak": "2505.135235",
+        "end": "2505.137782"
+      },
+      "selected_indices": {
+        "start": 21400,
+        "peak": 21403,
+        "end": 21414
+      },
+      "compatible_counts": {
+        "start": 1,
+        "peak": 1,
+        "end": 1
+      },
+      "literal_metrics": {
+        "start_fits_row_index": 21401,
+        "end_fits_row_index": 21414,
+        "n_samples": 14,
+        "time_min": 2505.1347720414574,
+        "time_max": 2505.1377816039617,
+        "cadence_median_s": 20.00201542832656,
+        "max_gap_s": 20.00201546761673,
+        "n_quality_nonzero": 0,
+        "n_quality_zero": 14,
+        "n_sap_finite": 14,
+        "n_pdcsap_finite": 14
+      },
+      "index_metrics": {
+        "start_fits_row_index": 21400,
+        "end_fits_row_index": 21414,
+        "n_samples": 15,
+        "time_min": 2505.1345405366496,
+        "time_max": 2505.1377816039617,
+        "cadence_median_s": 20.002015408681473,
+        "max_gap_s": 20.00201546761673,
+        "n_quality_nonzero": 0,
+        "n_quality_zero": 15,
+        "n_sap_finite": 15,
+        "n_pdcsap_finite": 15
+      },
+      "start_marker_is_immediately_previous_to_f07_first": true,
+      "end_marker_matches_f07_last": true
+    },
+    "not_selected_qpp": {
+      "catalog_times_raw": {
+        "start": "2535.256201",
+        "peak": "2535.256895",
+        "end": "2535.259442"
+      },
+      "selected_indices": {
+        "start": 42133,
+        "peak": 42136,
+        "end": 42147
+      },
+      "compatible_counts": {
+        "start": 1,
+        "peak": 1,
+        "end": 1
+      },
+      "literal_metrics": {
+        "start_fits_row_index": 42134,
+        "end_fits_row_index": 42147,
+        "n_samples": 14,
+        "time_min": 2535.2564320720876,
+        "time_max": 2535.259441594971,
+        "cadence_median_s": 20.001761299499776,
+        "max_gap_s": 20.00176141737029,
+        "n_quality_nonzero": 1,
+        "n_quality_zero": 13,
+        "n_sap_finite": 14,
+        "n_pdcsap_finite": 14
+      },
+      "index_metrics": {
+        "start_fits_row_index": 42133,
+        "end_fits_row_index": 42147,
+        "n_samples": 15,
+        "time_min": 2535.2562005704535,
+        "time_max": 2535.259441594971,
+        "cadence_median_s": 20.001751300151227,
+        "max_gap_s": 20.00176141737029,
+        "n_quality_nonzero": 1,
+        "n_quality_zero": 14,
+        "n_sap_finite": 15,
+        "n_pdcsap_finite": 15
+      },
+      "start_marker_is_immediately_previous_to_f07_first": true,
+      "end_marker_matches_f07_last": true
+    }
+  },
+  "marker_audit": {
+    "filename": "fase0_tarea09_timestamp_marker_audit.csv",
+    "sha256": "4d4a72e995c5936b9f7608e7430ef3f26bc610013c43456edaf80e44b0fd02d0",
+    "rows": 18
+  },
+  "manifest": {
+    "filename": "fase0_tarea09_index_window_manifest.csv",
+    "sha256": "ba303fa13dda064e6d18d06e9d7e75f03039717a02f78b0590ffdcb7ca396149",
+    "rows": 8
+  },
+  "new_inputs": [
+    {
+      "filename": "fase0_tarea09_published_qpp_sap_all.csv",
+      "sha256": "9549b87917198e1ab88a5018d62eb89ea90fa72c4bc986de4218d1a1bce996fd",
+      "n_samples": 15,
+      "sampling_status": "regular"
+    },
+    {
+      "filename": "fase0_tarea09_published_qpp_sap_q0.csv",
+      "sha256": "9549b87917198e1ab88a5018d62eb89ea90fa72c4bc986de4218d1a1bce996fd",
+      "n_samples": 15,
+      "sampling_status": "regular"
+    },
+    {
+      "filename": "fase0_tarea09_published_qpp_pdcsap_all.csv",
+      "sha256": "e55949806744c1bc2e5e85d9e09a2a26775abc862dcbc8f82e2f5e4dca52040f",
+      "n_samples": 15,
+      "sampling_status": "regular"
+    },
+    {
+      "filename": "fase0_tarea09_published_qpp_pdcsap_q0.csv",
+      "sha256": "e55949806744c1bc2e5e85d9e09a2a26775abc862dcbc8f82e2f5e4dca52040f",
+      "n_samples": 15,
+      "sampling_status": "regular"
+    },
+    {
+      "filename": "fase0_tarea09_notselected_sap_all.csv",
+      "sha256": "37aa5c2a866a303caeb48aaf51dacebe5757134ecaa56220599288fdfc4c3bab",
+      "n_samples": 15,
+      "sampling_status": "regular"
+    },
+    {
+      "filename": "fase0_tarea09_notselected_sap_q0.csv",
+      "sha256": "9ca65fb1c134c7fe4d9c401e3d6361a798d544810377b4325275f4cb39c48475",
+      "n_samples": 14,
+      "sampling_status": "diagnostic_irregular_sampling"
+    },
+    {
+      "filename": "fase0_tarea09_notselected_pdcsap_all.csv",
+      "sha256": "08ab8a53a42ba3689d919038ae4e8f1b07df4e449b25a862ee6a51e42aa53e72",
+      "n_samples": 15,
+      "sampling_status": "regular"
+    },
+    {
+      "filename": "fase0_tarea09_notselected_pdcsap_q0.csv",
+      "sha256": "5801c2687be7a8806323465f3ebde007e9b1fa53fbad9a0686f8903fe8577e98",
+      "n_samples": 14,
+      "sampling_status": "diagnostic_irregular_sampling"
+    }
+  ],
+  "report": {
+    "filename": "fase0_tarea09_timestamp_rounding_report.md",
+    "sha256": "2ca87488bfe157830150fa07fcb73938fe32401d9741a0d6eb9839c40aa0833d"
+  },
+  "f08_n_samples_erratum": {
+    "cause": "specification.get(\"n_samples\") used on a static specification without that field",
+    "correct_source_next_time": "loaded input structure or actual result rows"
+  }
+}

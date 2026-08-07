@@ -1,0 +1,587 @@
+{
+  "baseline_id": "afino_public_tess_reproduction_v1",
+  "status": "EMPIRICALLY_REPRODUCED_BASELINE",
+  "paper_reproduction_status": "UNRESOLVED",
+  "specification_version": "1.0.0",
+  "generated_at_utc": "2026-08-02T00:09:39.401972+00:00",
+  "phase0_decision": "GO_TO_PHASE_1",
+  "scope_statement": "Effective baseline reproduced on five published QPP detections and five matched events not selected as QPP; it is not a documentary reconstruction of the complete author pipeline and is not a population-performance estimate.",
+  "evidence_classes_allowed": [
+    "DIRECT_PUBLIC_CODE",
+    "DIRECT_PUBLIC_CATALOG",
+    "EMPIRICALLY_IDENTIFIED",
+    "SUPPORTED_INFERENCE",
+    "UNRESOLVED"
+  ],
+  "afino": {
+    "repository": "aringlis/afino_release_version",
+    "commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "package_version": "0.5",
+    "code_modified": false,
+    "installation_mode": "editable_from_frozen_commit",
+    "evidence_class": "DIRECT_PUBLIC_CODE",
+    "author_method_confirmed": true
+  },
+  "input_data": {
+    "mission": "TESS",
+    "archive_product": "SPOC FAST-LC",
+    "nominal_exposure_s": 20.0,
+    "flux_type": "PDCSAP_FLUX",
+    "quality_policy": "finite_all",
+    "quality_policy_definition": "Retain every cadence in the inclusive window with finite TIME and finite selected flux; do not reject non-zero QUALITY values.",
+    "time_unit_input": "TBJD days",
+    "external_normalization": false,
+    "external_detrending": false,
+    "external_smoothing": false,
+    "external_interpolation": false,
+    "evidence_class_by_field": {
+      "mission": "DIRECT_PUBLIC_CATALOG",
+      "archive_product": "EMPIRICALLY_IDENTIFIED",
+      "nominal_exposure_s": "DIRECT_PUBLIC_CATALOG",
+      "flux_type": "EMPIRICALLY_IDENTIFIED",
+      "quality_policy": "EMPIRICALLY_IDENTIFIED"
+    },
+    "author_method_confirmed_by_field": {
+      "mission": true,
+      "archive_product": false,
+      "nominal_exposure_s": true,
+      "flux_type": false,
+      "quality_policy": false
+    }
+  },
+  "window_definition": {
+    "window_variant": "tau0_nearest_cadence_indices",
+    "catalog_extension": "Tau == 0",
+    "start_end_inclusive": true,
+    "marker_mapping": "Map catalog start, peak and end decimal strings to the unique FITS cadence within ±0.5e-6 d (±0.0432 s); use the associated start and end FITS row indices inclusively.",
+    "rounding_tolerance_days": 5e-07,
+    "rounding_tolerance_seconds": 0.0432,
+    "window_extension_performed": false,
+    "evidence_class": "EMPIRICALLY_IDENTIFIED",
+    "author_method_confirmed": false
+  },
+  "time_handling": {
+    "time_unit_input": "TBJD days",
+    "time_conversion": "(time_tbjd - time_tbjd[0]) * 86400",
+    "time_unit_afino": "seconds relative to first retained cadence",
+    "time_compaction": false,
+    "cadence_renumbering": false,
+    "evidence_class": "EMPIRICALLY_IDENTIFIED",
+    "author_method_confirmed": false
+  },
+  "spectral_processing": {
+    "internal_time_series_normalization": "((flux - mean(flux)) / mean(flux))",
+    "window": "numpy.hanning(N)",
+    "window_order": "normalization_then_Hann",
+    "fft": "numpy FFT of the normalized, Hann-windowed series",
+    "power": "abs(FFT)**2",
+    "frequency_selection": "positive frequencies; effective code path retains f < low_frequency_cutoff",
+    "power_rescaling": [
+      "divide positive-frequency power by its mean",
+      "divide the result by its standard deviation"
+    ],
+    "low_frequency_cutoff_hz": 0.025,
+    "low_frequency_cutoff_expression": "1.0 / 40.0",
+    "m1_center_period_domain_s": [
+      40.0,
+      300.0
+    ],
+    "evidence_class_by_field": {
+      "internal_time_series_normalization": "DIRECT_PUBLIC_CODE",
+      "window": "DIRECT_PUBLIC_CODE",
+      "fft": "DIRECT_PUBLIC_CODE",
+      "power": "DIRECT_PUBLIC_CODE",
+      "power_rescaling": "DIRECT_PUBLIC_CODE",
+      "low_frequency_cutoff_hz": "EMPIRICALLY_IDENTIFIED",
+      "m1_center_period_domain_s": "EMPIRICALLY_IDENTIFIED"
+    },
+    "author_method_confirmed_by_field": {
+      "internal_time_series_normalization": true,
+      "window": true,
+      "fft": true,
+      "power": true,
+      "power_rescaling": true,
+      "low_frequency_cutoff_hz": false,
+      "m1_center_period_domain_s": false
+    }
+  },
+  "models": {
+    "M0": {
+      "public_name": "pow_const",
+      "parameter_count": 3,
+      "formula": "exp(a0) * (f / f_min)**(-a1) + exp(a2)",
+      "evidence_class": "DIRECT_PUBLIC_CODE"
+    },
+    "M1": {
+      "public_name": "pow_const_gauss",
+      "parameter_count": 6,
+      "formula": "M0(f) + exp(a3)/sqrt(2*pi*a5**2) * exp(-0.5*((ln(f)-a4)/a5)**2)",
+      "period_estimator_s": "1 / exp(a4)",
+      "evidence_class": "DIRECT_PUBLIC_CODE"
+    },
+    "M2": {
+      "public_name": "bpow_const",
+      "parameter_count": 5,
+      "formula": {
+        "f_below_a2": "exp(a0)*f**(-a1) + exp(a4)",
+        "f_at_or_above_a2": "exp(a0)*a2**(-a1+a3)*f**(-a3) + exp(a4)"
+      },
+      "evidence_class": "DIRECT_PUBLIC_CODE"
+    },
+    "likelihood": {
+      "log_likelihood": "-sum(log(model_power)) - sum(observed_power/model_power)",
+      "evidence_class": "DIRECT_PUBLIC_CODE"
+    },
+    "author_method_confirmed": true
+  },
+  "bounds": {
+    "M0_pow_const_public": [
+      [
+        -10.0,
+        10.0
+      ],
+      [
+        -1.0,
+        6.0
+      ],
+      [
+        -20.0,
+        10.0
+      ]
+    ],
+    "M1_pow_const_gauss_effective": [
+      [
+        -10.0,
+        10.0
+      ],
+      [
+        -1.0,
+        6.0
+      ],
+      [
+        -20.0,
+        10.0
+      ],
+      [
+        -16.0,
+        5.0
+      ],
+      [
+        "ln(1/300)",
+        "ln(1/40)"
+      ],
+      [
+        0.05,
+        0.25
+      ]
+    ],
+    "M1_center_numeric_log_frequency_bounds": [
+      -5.703782474656201,
+      -3.6888794541139363
+    ],
+    "M2_bpow_const_public": [
+      [
+        null,
+        null
+      ],
+      [
+        1.0,
+        9.0
+      ],
+      [
+        0.0033,
+        0.25
+      ],
+      [
+        1.0,
+        9.0
+      ],
+      [
+        null,
+        null
+      ]
+    ],
+    "M0_M2_defaults_modified": false,
+    "M1_override_used": true,
+    "evidence_class_by_field": {
+      "M0_pow_const_public": "DIRECT_PUBLIC_CODE",
+      "M1_pow_const_gauss_effective": "EMPIRICALLY_IDENTIFIED",
+      "M2_bpow_const_public": "DIRECT_PUBLIC_CODE"
+    },
+    "author_method_confirmed_by_field": {
+      "M0_pow_const_public": true,
+      "M1_pow_const_gauss_effective": false,
+      "M2_bpow_const_public": true
+    }
+  },
+  "selection_rule": {
+    "delta_bic_0_1": "BIC_M0 - BIC_M1",
+    "delta_bic_2_1": "BIC_M2 - BIC_M1",
+    "qpp_selected": "(delta_bic_0_1 > 10.0) and (delta_bic_2_1 > 10.0)",
+    "threshold": 10.0,
+    "comparison_operator": "strictly_greater_than",
+    "rchi2_used": false,
+    "probability_used": false,
+    "visual_inspection_used": false,
+    "published_period_proximity_used": false,
+    "public_bic_formula": "-2*lnlike + k*ln(n)",
+    "public_bic_k_values": {
+      "M0": 2,
+      "M1": 5,
+      "M2": 4
+    },
+    "note": "The public package computes model outputs but the TESS classification wrapper is not published. The double strict-BIC rule is the effective rule reproduced against the public catalog.",
+    "evidence_class": "EMPIRICALLY_IDENTIFIED",
+    "author_method_confirmed": false
+  },
+  "optimizer": {
+    "public_algorithms": [
+      "L-BFGS-B",
+      "SLSQP"
+    ],
+    "public_result_choice": "retain the candidate with the largest log-likelihood",
+    "public_random_initializations_per_model_call": 20,
+    "validation_optimizer_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "seed_reset": "np.random.seed(optimizer_seed) immediately before every individual model call",
+    "validation_calls_per_event_variant": 30,
+    "convergence_status": "NOT_AUDITABLE",
+    "convergence_limitation": "main_analysis does not return res.success or res.message",
+    "evidence_class_by_field": {
+      "public_algorithms": "DIRECT_PUBLIC_CODE",
+      "public_result_choice": "DIRECT_PUBLIC_CODE",
+      "public_random_initializations_per_model_call": "DIRECT_PUBLIC_CODE",
+      "validation_optimizer_seeds": "EMPIRICALLY_IDENTIFIED",
+      "seed_reset": "EMPIRICALLY_IDENTIFIED",
+      "convergence_status": "UNRESOLVED"
+    },
+    "author_method_confirmed_by_field": {
+      "public_algorithms": true,
+      "public_result_choice": true,
+      "public_random_initializations_per_model_call": true,
+      "validation_optimizer_seeds": false,
+      "seed_reset": false,
+      "convergence_status": false
+    }
+  },
+  "validated_events": {
+    "published_qpp_reproduced": 5,
+    "matched_not_selected_retained": 5,
+    "distinct_tics": 5,
+    "duplicate_all_q0_pairs_counted_as_additional_events": false,
+    "calibration_pair": {
+      "published": {
+        "tic_id": 67378184,
+        "start_tbjd": "2505.134541",
+        "status": "STABLE_REPRODUCTION",
+        "selected_seeds": 10,
+        "total_seeds": 10,
+        "published_period_s": 68.52768338,
+        "estimated_period_median_s": 68.5276712005594
+      },
+      "matched_not_selected": {
+        "tic_id": 67378184,
+        "start_tbjd": "2535.256201",
+        "status": "STABLE_NOT_SELECTED",
+        "selected_seeds": 0,
+        "total_seeds": 10
+      },
+      "supporting_task": "F0.10"
+    },
+    "blind_validation_pairs": [
+      {
+        "pair_id": "P1",
+        "tic_id": 24518895,
+        "published_start_tbjd": "2198.799707",
+        "matched_start_tbjd": "2180.577182",
+        "published_status": "STABLE_REPRODUCTION",
+        "matched_status": "STABLE_NOT_SELECTED",
+        "published_period_s": 56.05823638,
+        "estimated_period_median_s": 56.058234572029825
+      },
+      {
+        "pair_id": "P2",
+        "tic_id": 220433364,
+        "published_start_tbjd": "2166.070869",
+        "matched_start_tbjd": "2361.784182",
+        "published_status": "STABLE_REPRODUCTION",
+        "matched_status": "STABLE_NOT_SELECTED",
+        "published_period_s": 73.20971864,
+        "estimated_period_median_s": 73.2097457383199
+      },
+      {
+        "pair_id": "P3",
+        "tic_id": 225953237,
+        "published_start_tbjd": "2345.223856",
+        "matched_start_tbjd": "2349.891231",
+        "published_status": "STABLE_REPRODUCTION",
+        "matched_status": "STABLE_NOT_SELECTED",
+        "published_period_s": 44.03128221,
+        "estimated_period_median_s": 44.0313237960962
+      },
+      {
+        "pair_id": "P4",
+        "tic_id": 160619243,
+        "published_start_tbjd": "2662.677869",
+        "matched_start_tbjd": "2753.995580",
+        "published_status": "STABLE_REPRODUCTION",
+        "matched_status": "STABLE_NOT_SELECTED",
+        "published_period_s": 60.05392234,
+        "estimated_period_median_s": 60.05392866242701
+      }
+    ],
+    "blind_validation_category": "FULL_PRIMARY_COHORT_REPRODUCTION",
+    "evidence_class": "EMPIRICALLY_IDENTIFIED",
+    "author_method_confirmed": false,
+    "population_performance_claim_allowed": false
+  },
+  "numerical_risks": {
+    "priority_order": [
+      "M2_MULTIPLE_NUMERICAL_SOLUTIONS",
+      "FREQUENT_PARAMETER_BOUND_HITS",
+      "SINGLE_CADENCE_SENSITIVITY",
+      "SAP_PDCSAP_DEPENDENCE",
+      "QUALITY_FILTER_INDUCED_IRREGULAR_SAMPLING",
+      "FEW_SPECTRAL_BINS_IN_SHORT_WINDOWS",
+      "NO_OBSERVATIONAL_GROUND_TRUTH",
+      "FITS_CHECKSUM_FAILURE_LIGHTCURVE_AND_APERTURE"
+    ],
+    "M2_MULTIPLE_NUMERICAL_SOLUTIONS": {
+      "observed": true,
+      "affected_primary_positives": [
+        "P1",
+        "P3",
+        "P4"
+      ],
+      "interpretation": "stable classification does not imply a unique numerical optimum",
+      "evidence_class": "EMPIRICALLY_IDENTIFIED"
+    },
+    "FREQUENT_PARAMETER_BOUND_HITS": {
+      "F0.14": {
+        "M0_rows_at_bound": 0,
+        "M1_rows_at_bound": 222,
+        "M2_rows_at_bound": 295,
+        "calls_per_model": 320
+      },
+      "evidence_class": "EMPIRICALLY_IDENTIFIED"
+    },
+    "M2_WARNINGS": {
+      "warning_rows": 194,
+      "warning_count_total": 1775,
+      "main_types": {
+        "overflow encountered in exp": 1334,
+        "invalid value encountered in subtract": 395
+      },
+      "evidence_class": "EMPIRICALLY_IDENTIFIED"
+    },
+    "SINGLE_CADENCE_SENSITIVITY": {
+      "calibration_change": "14 to 15 samples; 6 to 7 bins; selection 0/10 to 10/10",
+      "causal_scope": "Including the initial cadence and all resulting changes to normalization, Hann window, FFT grid and likelihood; not attributable solely to one bin.",
+      "evidence_class": "EMPIRICALLY_IDENTIFIED"
+    },
+    "SAP_PDCSAP_DEPENDENCE": {
+      "F0.14_published_finite_all": {
+        "SAP_reproduced": 2,
+        "PDCSAP_reproduced": 4,
+        "total": 4
+      },
+      "evidence_class": "EMPIRICALLY_IDENTIFIED"
+    },
+    "QUALITY_FILTER_INDUCED_IRREGULAR_SAMPLING": {
+      "irregular_q0_variants": 12,
+      "decision_changes_all_vs_q0": 40,
+      "P2_positive_q0": "peak_marker_removed; diagnostic_only",
+      "primary_conclusion_eligible": false,
+      "evidence_class": "EMPIRICALLY_IDENTIFIED"
+    },
+    "FEW_SPECTRAL_BINS_IN_SHORT_WINDOWS": {
+      "minimum_primary_or_comparison_bins_after_cutoff": 7,
+      "minimum_samples": 16,
+      "evidence_class": "EMPIRICALLY_IDENTIFIED"
+    },
+    "NO_OBSERVATIONAL_GROUND_TRUTH": {
+      "description": "Published QPP labels and matched non-selected events are catalog outcomes, not an independently established physical ground truth.",
+      "evidence_class": "UNRESOLVED"
+    },
+    "FITS_CHECKSUM_FAILURE_LIGHTCURVE_AND_APERTURE": {
+      "affected_products": 6,
+      "primary_hdu_checksum_valid": true,
+      "lightcurve_checksum_valid": false,
+      "aperture_checksum_valid": false,
+      "blocking": false,
+      "evidence_class": "EMPIRICALLY_IDENTIFIED"
+    },
+    "OPTIMIZER_CONVERGENCE": {
+      "status": "NOT_AUDITABLE",
+      "evidence_class": "UNRESOLVED"
+    }
+  },
+  "unresolved_items": {
+    "exact_author_tess_adapter": "UNRESOLVED",
+    "global_use_of_PDCSAP_for_all_article_events": "UNRESOLVED",
+    "global_quality_policy": "UNRESOLVED",
+    "tau_1_2_3_extensions": "UNRESOLVED",
+    "full_61_qpp_detection_reproduction": "UNRESOLVED",
+    "full_3817_not_selected_event_outputs": "UNRESOLVED",
+    "flare_detection_pipeline": "UNRESOLVED",
+    "published_period_uncertainty_calculation": "UNRESOLVED",
+    "exact_private_optimizer_configuration_and_versions": "UNRESOLVED",
+    "formal_optimizer_convergence": "UNRESOLVED",
+    "unique_M2_optimum": "UNRESOLVED",
+    "population_sensitivity_specificity_and_false_selection_rate": "UNRESOLVED",
+    "independent_physical_ground_truth": "UNRESOLVED",
+    "complete_FITS_integrity_despite_checksum_failures": "UNRESOLVED"
+  },
+  "artifact_references": {
+    "F0.1_study_audit": {
+      "artifact": "fase0_tarea01_auditoria_estudio_base.md",
+      "sha256": "1866e8163c6f135ae75f653f2b5cb43d9b599fe9d8009e18762f6295a8b3ab18",
+      "proof_role": "Public-study and catalog-method audit."
+    },
+    "F0.2_public_code_audit": {
+      "artifact": "fase0_tarea02_auditoria_afino.md",
+      "sha256": "26558f31ad38f475a0fe4b8078f96cfd1bc6796103e6d5d6073cf4b464efac9d",
+      "proof_role": "Public-code formulas, preprocessing, optimizer and unresolved TESS layer."
+    },
+    "F0.5_synthetic_script": {
+      "artifact": "fase0_tarea05_synthetic_model_selection.py",
+      "sha256": "4fbe868786fd96bf3c81862931f1e661a402f8cad727287d9c2c865ef0c02fd1",
+      "proof_role": "Frozen synthetic functional-test implementation."
+    },
+    "F0.5_synthetic_results": {
+      "artifact": "fase0_tarea05_results.csv",
+      "sha256": "0110eb02602542bd611882256128c5b27cc0ef6e50e37c7e8aea4e39f9df1097",
+      "proof_role": "Sixty synthetic model calls and seed-level outputs."
+    },
+    "F0.5_synthetic_report": {
+      "artifact": "fase0_tarea05_synthetic_model_selection.md",
+      "sha256": "0bee6b63e1ee514527df16f8b36145966c3c0ee3b801dc19f97f3430bcf681ff",
+      "proof_role": "Synthetic baseline: null 0/10, injected 80 s QPP 10/10."
+    },
+    "F0.10_calibration_script": {
+      "artifact": "fase0_tarea10_run_index_window_pilot.py",
+      "sha256": "07d3b54ec0fdc1225638339b73a06dae07dbd5367b724b5a32359fa47942cf31",
+      "proof_role": "Frozen calibration execution protocol."
+    },
+    "F0.10_calibration_results": {
+      "artifact": "fase0_tarea10_index_window_results.csv",
+      "sha256": "7b5f8a6f88e7cbd35df37b4ce2baee410f91fae56f6036c63edeab05a55941db",
+      "proof_role": "Calibration model outputs for the inclusive 15-cadence window."
+    },
+    "F0.10_calibration_comparison": {
+      "artifact": "fase0_tarea10_f08_f10_comparison.csv",
+      "sha256": "330d87511925b456b7326c7330ca400df2b7b31eb0ab6c94c900baf1cb8a5da9",
+      "proof_role": "Paired evidence that the omitted initial cadence explains the F0.8 mismatch."
+    },
+    "F0.10_calibration_audit": {
+      "artifact": "fase0_tarea10_execution_audit.json",
+      "sha256": "f06ad189a8e0ff67f64399fa8279f6bde0007c9b01fe73cc02f59c6d07f5b50e",
+      "proof_role": "Calibration preflight, invariants, bounds and warnings."
+    },
+    "F0.10_calibration_report": {
+      "artifact": "fase0_tarea10_index_window_report.md",
+      "sha256": "c2a10970f6e9bd12f91ee6ed95a79aef3eb0ea3fbfb7ca4dc0a05337be896d6e",
+      "proof_role": "SELECTION_REPRODUCED_UNDER_INDEX_WINDOW interpretation."
+    },
+    "F0.11_cohort": {
+      "artifact": "fase0_tarea11_validation_cohort.csv",
+      "sha256": "b48cdc09d37b2ea4c4faec430903f81b0f7b9e4f4b026510175881a2c766fb36",
+      "proof_role": "Deterministically frozen four-pair validation cohort."
+    },
+    "F0.11_cohort_audit": {
+      "artifact": "fase0_tarea11_validation_cohort_audit.json",
+      "sha256": "6b072e9ad777df52b50f742ab878c3937195922274f87785dec889e146766430",
+      "proof_role": "Eligibility, exclusions, ordering and matching audit."
+    },
+    "F0.11_cohort_report": {
+      "artifact": "fase0_tarea11_validation_cohort_report.md",
+      "sha256": "9565b31394e9d6c6af88e81e9b7ff620f104403e4439fb26739641dae33fb030",
+      "proof_role": "Human-readable cohort coverage and matching report."
+    },
+    "F0.12_product_manifest": {
+      "artifact": "fase0_tarea12_product_manifest.csv",
+      "sha256": "19b8cc1ad53c193a08e1f38405b196598a0fae96aec444ebfd087907e4fe3270",
+      "proof_role": "Six unique SPOC FAST-LC products and local hashes."
+    },
+    "F0.12_event_reconstruction": {
+      "artifact": "fase0_tarea12_event_reconstruction.csv",
+      "sha256": "d168907f616ff14898f86b5e318914d0deba2d954b1dbe1d05353d242966c4c5",
+      "proof_role": "Eight event windows classified RECONSTRUCTABLE."
+    },
+    "F0.12_marker_audit": {
+      "artifact": "fase0_tarea12_marker_audit.csv",
+      "sha256": "c4c78041099214f913cc8e3a0f4e8e0d833e82ae523ecffec27faecac43fef4a",
+      "proof_role": "Seventy-two neighbor rows and unique cadence association for 24 markers."
+    },
+    "F0.12_reconstruction_audit": {
+      "artifact": "fase0_tarea12_reconstruction_audit.json",
+      "sha256": "f40d6eef155ac73589b3fd4ed363f50a7529d1f4d45b930712185f65cc2d6875",
+      "proof_role": "MAST queries, downloads, FITS metadata and reconstruction checks."
+    },
+    "F0.12_reconstruction_report": {
+      "artifact": "fase0_tarea12_reconstruction_report.md",
+      "sha256": "4990370916d9215986ef90601de6d117e2bd52d699375b5208b03845a6124bf3",
+      "proof_role": "Archivistic reconstruction synthesis and checksum incidence."
+    },
+    "F0.13_input_manifest": {
+      "artifact": "fase0_tarea13_validation_input_manifest.csv",
+      "sha256": "5046f335d375af85ce6f1b5d58f0336688f1b2225887793f727d76cf46c57323",
+      "proof_role": "Frozen matrix of 32 validation inputs and classifications."
+    },
+    "F0.13_input_audit": {
+      "artifact": "fase0_tarea13_validation_input_audit.json",
+      "sha256": "4014c9f6888b3bc01447571e84ef698365ff917fd8c7618c11dbd212e42d4c4f",
+      "proof_role": "Input hashes, removed indices, marker retention and P3 invariants."
+    },
+    "F0.13_input_report": {
+      "artifact": "fase0_tarea13_validation_input_report.md",
+      "sha256": "10ed7e30b5eeb2c08c2e9fdb7ca93ed3887ea628c8d17529137542bd2f9541e6",
+      "proof_role": "Frozen-input interpretation: 20 scientific and 12 diagnostic variants."
+    },
+    "F0.14_results": {
+      "artifact": "fase0_tarea14_validation_results.csv",
+      "sha256": "e832059ace112013d3545ee768d013942ffdc2d752dc31f31ce8424546a2ba35",
+      "proof_role": "Nine hundred sixty model-call outputs."
+    },
+    "F0.14_decisions": {
+      "artifact": "fase0_tarea14_validation_decisions.csv",
+      "sha256": "e427b8fcf9049cba1a91f33a98b04e7eebb71314576a07cca4156e64af0141d8",
+      "proof_role": "Three hundred twenty seed-level double-BIC decisions."
+    },
+    "F0.14_primary_summary": {
+      "artifact": "fase0_tarea14_primary_cohort_summary.csv",
+      "sha256": "c02f42883ca0a82d1b98b139638442c8e17eaab8c8ec30003091999aad1e77fa",
+      "proof_role": "Eight primary-event classifications and catalog differences."
+    },
+    "F0.14_execution_audit": {
+      "artifact": "fase0_tarea14_execution_audit.json",
+      "sha256": "7d77da2d862d8052b7b9a70897ff9f3b809c275217416b1aaf447447d480efa6",
+      "proof_role": "Preflight, protocol, invariants, warnings, bounds and global category."
+    },
+    "F0.14_report": {
+      "artifact": "fase0_tarea14_validation_report.md",
+      "sha256": "9f5afbc52fbfcb6ca1604ffe91295c035689b6d83e7507313648c8af4727113d",
+      "proof_role": "FULL_PRIMARY_COHORT_REPRODUCTION synthesis."
+    },
+    "F0.14_environment": {
+      "artifact": "fase0_tarea14_environment.txt",
+      "sha256": "011f8ed9d7bd0f339792b2914142e94c4d30dcd4ed76d0cf96ace83fb34c079f",
+      "proof_role": "Frozen package environment and editable AFINO commit."
+    }
+  },
+  "no_new_operations": {
+    "afino_executed": false,
+    "data_downloaded": false,
+    "previous_artifacts_modified": false
+  }
+}

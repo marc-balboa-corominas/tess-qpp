@@ -1,0 +1,9 @@
+pair_id,event_role,selection_role,tic_id,start_tbjd,peak_tbjd,end_tbjd,duration_days,amplitude,energy_erg,tau,published_period_s,bic_m0_m1,bic_m2_m1,delta_min,matching_method,matched_to_start_tbjd,selection_order,catalog_source
+P1,published_qpp,highest_margin,24518895,2198.799707,2198.800633,2198.805725,0.006018442,0.384969191,3.42e+30,0,56.05823638,17.55796487,19.98756342,17.55796487,,,1,QPP_detections.csv+Flare_detections.csv
+P1,not_selected_qpp,matched_not_selected,24518895,2180.577182,2180.577876,2180.584821,0.007639014,0.119427035,2.3e+30,,,,,,same_tic_duration_match,2198.799707,1,Flare_detections.csv
+P2,published_qpp,near_threshold,220433364,2166.070869,2166.072026,2166.105822,0.034953585,0.049418596,5.33e+30,0,73.20971864,10.543015,12.71921134,10.543015,,,2,QPP_detections.csv+Flare_detections.csv
+P2,not_selected_qpp,matched_not_selected,220433364,2361.784182,2361.785339,2361.825154,0.040972698,0.128679823,1.89e+31,,,,,,same_tic_duration_match,2166.070869,2,Flare_detections.csv
+P3,published_qpp,shortest_period,225953237,2345.223856,2345.224319,2345.228023,0.004166715,0.03691269,,0,44.03128221,11.61905655,14.45167103,11.61905655,,,3,QPP_detections.csv+Flare_detections.csv
+P3,not_selected_qpp,matched_not_selected,225953237,2349.891231,2349.891925,2349.894703,0.003472218,0.218588001,,,,,,,same_tic_duration_match,2345.223856,3,Flare_detections.csv
+P4,published_qpp,longest_period,160619243,2662.677869,2662.679258,2662.687360,0.00949054,0.05638211,2.61e+30,0,60.05392234,13.50380923,17.7063444,13.50380923,,,4,QPP_detections.csv+Flare_detections.csv
+P4,not_selected_qpp,matched_not_selected,160619243,2753.995580,2753.996274,2754.005534,0.009953634,0.124900891,6.57e+30,,,,,,same_tic_duration_match,2662.677869,4,Flare_detections.csv
