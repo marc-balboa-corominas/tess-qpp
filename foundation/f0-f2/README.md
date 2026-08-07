@@ -1,6 +1,6 @@
-# Frozen F0–F2 Foundation
+# Frozen F0â€“F2 Foundation
 
-This directory preserves the Git-compatible documentary subset of the completed F0–F2 foundation.
+This directory preserves the Git-compatible documentary subset of the completed F0â€“F2 foundation.
 
 ## Status
 
@@ -12,7 +12,7 @@ Corrections must be represented by explicit new records.
 
 ## Complete snapshot
 
-The complete byte-preserving F0–F2 package is maintained outside Git and is intended to be archived in the corresponding OSF component.
+The complete byte-preserving F0â€“F2 package is maintained outside Git and is intended to be archived in the corresponding OSF component.
 
 The Git subset deliberately excludes selected large, binary, runtime, or machine-specific artifacts.
 

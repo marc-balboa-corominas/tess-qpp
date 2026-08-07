@@ -1,31 +1,31 @@
-# F0–F2 Archive Record
+# F0â€“F2 Archive Record
 
 ## Scope
 
-This record links the Git-compatible documentary foundation in this repository to the canonical complete F0–F2 research snapshot preserved in OSF.
+This record links the Git-compatible documentary foundation in this repository to the canonical complete F0â€“F2 research snapshot preserved in OSF.
 
 ## Canonical archival object
 
-**OSF component:** 01 — Frozen F0–F2 Foundation
+**OSF component:** 01 â€” Frozen F0â€“F2 Foundation
 
-**OSF URL:**  
+**OSF URL:**
 https://osf.io/539ub/
 
-**Archive filename:**  
+**Archive filename:**
 `tess_qpp.zip`
 
-**SHA-256:**  
+**SHA-256:**
 `62d06b47d596b0373459d1284093e0f9532e3847e8402bb6dcc1ec653636a2a3`
 
-**Archive size:**  
+**Archive size:**
 17,584,775 bytes
 
-**Checksum companion file:**  
+**Checksum companion file:**
 `tess_qpp.zip.sha256`
 
 ## Archival status
 
-The OSF archive is the canonical byte-preserving snapshot of the completed F0–F2 foundation.
+The OSF archive is the canonical byte-preserving snapshot of the completed F0â€“F2 foundation.
 
 The corresponding `foundation/f0-f2/` directory in Git is a curated, Git-compatible documentary subset and must not be interpreted as a byte-identical copy of the OSF archive.
 
@@ -46,7 +46,7 @@ The `SHA256SUMS.txt` contained inside the historical package refers to selected 
 
 ## Immutability rule
 
-The archived F0–F2 snapshot must not be silently modified or replaced.
+The archived F0â€“F2 snapshot must not be silently modified or replaced.
 
 Any future correction, reinterpretation, or superseding result must be represented by a new explicitly documented artifact while preserving this historical snapshot.
 
