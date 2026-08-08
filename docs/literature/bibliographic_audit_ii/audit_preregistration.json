@@ -1,0 +1,179 @@
+{
+  "audit_id": "tess_qpp_bibliographic_audit_ii_v1",
+  "audit_version": "1.0.0",
+  "audit_status": "FROZEN_BEFORE_SYSTEMATIC_SEARCH",
+  "freeze_date": "2026-08-08",
+  "repository_relative_root": "docs/literature/bibliographic_audit_ii/",
+  "pre_freeze_repository_head": "46cefa3d080ce025f1f71304665e372ca63fcbed",
+  "scientific_questions": {
+    "Q1_OBSERVATIONAL_OVERLAP": "¿Existen trabajos recientes que hayan construido catálogos o muestras QPP de fulguraciones TESS que se solapen materialmente con el espacio previsto para F3A?",
+    "Q2_METHODOLOGICAL_OVERLAP": "¿Existen métodos recientes de detección o clasificación QPP aplicables a TESS que deban incluirse como comparadores, contexto o potenciales alternativas en F3A/F3B?",
+    "Q3_VALIDATION": "¿Existen estudios recientes con injection–recovery, simulaciones con ground truth, calibración de selección o validación held-out relevantes para el diseño de F3B?",
+    "Q4_POSITIONING": "¿Cambian los trabajos recientes la novedad o el framing defendible del programa TESS QPP?"
+  },
+  "date_window": {
+    "primary_recent_window_start": "2024-01-01",
+    "search_freeze_date": "2026-08-07",
+    "pre_2024_backward_citation_classes": [
+      "FOUNDATIONAL_CONTEXT",
+      "METHOD_PRECURSOR",
+      "CATALOG_PRECURSOR"
+    ],
+    "pre_2024_counts_as_recent_finding": false
+  },
+  "search_sources": {
+    "primary": [
+      "NASA ADS / SciX",
+      "arXiv"
+    ],
+    "verification": [
+      "Crossref",
+      "publisher/editorial page",
+      "DOI landing page"
+    ],
+    "auxiliary_non_normative": [
+      "Google Scholar only to locate a work already identified by another route; usage must be logged."
+    ]
+  },
+  "query_ids": [
+    "Q01_DIRECT_TESS_QPP",
+    "Q02_TESS_STELLAR_FLARE_PERIODICITY",
+    "Q03_TESS_QPP_CATALOG",
+    "Q04_QPP_DETECTION_METHOD",
+    "Q05_INJECTION_RECOVERY_SELECTION",
+    "Q06_AFINO_RELATED"
+  ],
+  "inclusion_criteria": {
+    "I1": "Analiza QPP en fulguraciones estelares observadas por TESS.",
+    "I2": "Construye un catálogo/muestra TESS relevante para el universo observacional de F3A.",
+    "I3": "Propone o compara métodos de detección QPP aplicables a series temporales de fulguraciones estelares.",
+    "I4": "Estudia robustez respecto a ventana, detrending, preprocesamiento, gaps o ruido.",
+    "I5": "Realiza injection–recovery, simulaciones con ground truth o caracterización de función de selección relevante para F3B.",
+    "I6": "Discute o utiliza AFINO de manera metodológicamente relevante.",
+    "I7": "Introduce un método reciente suficientemente próximo como para cambiar los comparadores razonables de Manuscript 1."
+  },
+  "exclusion_criteria": {
+    "E1": "QPO/QPP de compact objects sin relación metodológica directa con fulguraciones estelares.",
+    "E2": "Trabajo exclusivamente solar sin transferencia metodológica material al problema de detección/validación estelar.",
+    "E3": "Trabajo sobre TESS sin análisis de flares/QPP pertinente.",
+    "E4": "Resumen de conferencia sin método o resultados recuperables, salvo que sea la única versión conocida de un trabajo material.",
+    "E5": "Duplicado bibliográfico o versión anterior cuando existe una versión posterior sustancialmente equivalente.",
+    "E6": "Artículo puramente físico cuya relevancia no afecta al diseño, catálogo, selección o método de F3A/F3B."
+  },
+  "version_policy": {
+    "counting_entity": "work_id",
+    "preprint_plus_journal_article": "ONE_WORK_ID",
+    "preferred_claim_version": "journal version when available and substantively current",
+    "priority_rule": "retain earliest verifiable public date",
+    "required_fields": [
+      "first_public_date",
+      "latest_version_date",
+      "arxiv_id",
+      "doi",
+      "bibcode",
+      "preferred_citation_version",
+      "peer_review_status"
+    ],
+    "duplicates": "Preserve traceability but do not double-count substantially equivalent versions."
+  },
+  "screening_labels": [
+    "DIRECT_F3A_OVERLAP",
+    "DIRECT_F3B_OVERLAP",
+    "CATALOG_RELEVANT",
+    "DETECTION_METHOD_RELEVANT",
+    "ROBUSTNESS_RELEVANT",
+    "SELECTION_FUNCTION_RELEVANT",
+    "PHYSICAL_CONTEXT",
+    "BACKGROUND_ONLY"
+  ],
+  "impact_categories": [
+    "NO_DESIGN_IMPACT",
+    "POSITIONING_ONLY",
+    "F3A_DESIGN_ADJUSTMENT_POSSIBLE",
+    "F3B_DESIGN_ADJUSTMENT_POSSIBLE",
+    "F3A_REDRAFT_REQUIRED"
+  ],
+  "impact_rules": {
+    "NO_DESIGN_IMPACT": "Relevant work requiring neither F3A/F3B design change nor Manuscript 1 repositioning.",
+    "POSITIONING_ONLY": "Changes framing, terminology, priority context or related-work discussion without changing cohort/comparator/outcome/preprocessing/validation design.",
+    "F3A_DESIGN_ADJUSTMENT_POSSIBLE": "Material F3A catalogue/sample overlap, required comparator, or processing/selection issue may warrant prospective adjustment.",
+    "F3B_DESIGN_ADJUSTMENT_POSSIBLE": "Material injection–recovery, ground-truth, held-out, selection-function, complexity or multiplicity framework may warrant prospective F3B adjustment.",
+    "F3A_REDRAFT_REQUIRED": "Recent evidence materially duplicates the planned central F3A contribution or renders its design framing inadequate before freeze."
+  },
+  "f0_f2_modifiable": false,
+  "f3a_design_frozen": false,
+  "candidate_discovery_allowed": false,
+  "scientific_results_computed": false,
+  "papers_screened_before_freeze": false,
+  "searches_executed_before_freeze": false,
+  "novelty_claims_allowed": false,
+  "prohibited_screening_terms": [
+    "NOVEL",
+    "NOT_NOVEL",
+    "SCOOPED"
+  ],
+  "f2_6_premises": {
+    "robustness_manuscript_viable": true,
+    "correction_claim_established": false,
+    "held_out_validation_required_for_correction": true,
+    "candidate_discovery_allowed": false,
+    "f2_ten_events_reuse_rule": "The ten F2 events are already observed and cannot be used simultaneously for development and independent held-out validation of a new rule."
+  },
+  "normative_f2_6_inputs": [
+    {
+      "path": "foundation/f0-f2/phase2/fase2_tarea06_phase2_decision.json",
+      "sha256": "6ac1962077833b08d979b715a52a75a99b1d3a169430ca7abc46d17926eb3ab2"
+    },
+    {
+      "path": "foundation/f0-f2/phase2/fase2_tarea06_manuscript_claim_matrix.csv",
+      "sha256": "070c7cb4eb85345c6222ecc476d527007abdfff940d80b2fd3a1b009286e57b0"
+    },
+    {
+      "path": "foundation/f0-f2/phase2/fase2_tarea06_phase3_entry_requirements.csv",
+      "sha256": "b3155e16beed5917d3fdc3416eace0b5d97a55ea84a7b3d3a91c27eb6846e657"
+    },
+    {
+      "path": "foundation/f0-f2/phase2/fase2_tarea06_phase2_synthesis_report.md",
+      "sha256": "b2c693c40fd8d29227e4d03837e1901e488624b1dc60d87ca8b5b5461a93303e"
+    }
+  ],
+  "preexisting_baii_files": [
+    {
+      "path": "docs/literature/bibliographic_audit_ii/PROTOCOL.md",
+      "state_before_baii1": "TRACKED_AT_PRE_FREEZE_REPOSITORY_HEAD",
+      "baii1_action": "CASE_NORMALIZE_TO_protocol.md_AND_UPDATE_TO_V1.0.0"
+    },
+    {
+      "path": "docs/literature/bibliographic_audit_ii/AUDIT_MATRIX.csv",
+      "state_before_baii1": "TRACKED_LEGACY_EMPTY_TEMPLATE",
+      "baii1_action": "UNCHANGED_NOT_NORMATIVE_FOR_FUTURE_SCREENING"
+    },
+    {
+      "path": "docs/literature/bibliographic_audit_ii/SEED_SOURCES.csv",
+      "state_before_baii1": "TRACKED_PREEXISTING_SEED_CONTEXT",
+      "baii1_action": "UNCHANGED_NOT_SYSTEMATIC_SEARCH_CORPUS_NOT_SCREENED_UNDER_BAII1"
+    }
+  ],
+  "decision_gate": {
+    "decision_made_now": false,
+    "decision_stage": "BAII.5",
+    "allowed_outcomes": [
+      "NO_CHANGE_TO_F3A",
+      "POSITIONING_UPDATE_ONLY",
+      "F3A_DESIGN_ADJUSTMENT_REQUIRED",
+      "F3A_DESIGN_RECONSIDERATION_REQUIRED"
+    ]
+  },
+  "mechanical_checks_expected": {
+    "search_queries_defined": 6,
+    "inclusion_criteria_defined": 7,
+    "exclusion_criteria_defined": 6,
+    "screening_labels_defined": 8,
+    "impact_categories_defined": 5,
+    "scientific_papers_screened": 0,
+    "searches_executed": 0,
+    "f0_f2_files_modified": 0,
+    "f3a_workflow_files_modified": 0,
+    "f3b_workflow_files_modified": 0
+  }
+}
