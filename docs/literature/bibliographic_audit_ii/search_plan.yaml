@@ -1,10 +1,27 @@
-schema_version: 1.0.0
+schema_version: 1.1.0
 audit_id: tess_qpp_bibliographic_audit_ii_v1
-audit_status: FROZEN_BEFORE_SYSTEMATIC_SEARCH
+audit_status: AMENDED_AND_REFROZEN_BEFORE_BAII2_RESTART
 primary_recent_window_start: '2024-01-01'
 search_freeze_date: '2026-08-07'
+amendment:
+  version: 1.1.0
+  amendment_date: '2026-08-09'
+  prior_design_tag: bibliographic-audit-ii-design-v1
+  prior_design_commit: 24b3ddde7a9b7baf35f6b236d83e80ec20571c95
+  target_design_tag: bibliographic-audit-ii-design-v2
+  scope: SCIX_DATE_RANGE_PARSER_SYNTAX_ONLY
+  reason: Current SciX parser rejected the unescaped timestamp colons in every v1.0.0 scix_ads_query.
+  semantic_query_terms_changed: false
+  boolean_structure_changed: false
+  date_window_changed: false
+  arxiv_queries_changed: false
+  screening_rules_changed: false
+  scix_parser_correction: Escape each colon inside the exact machine-readable `date` range as `\:`.
+  incomplete_retrieval_attempts_before_amendment: 2
+  complete_12_of_12_raw_corpus_before_amendment: false
+  scientific_screening_before_amendment: false
 date_semantics:
-  scix_ads: ADS machine-readable publication date field `date`.
+  scix_ads: SciX machine-readable publication date field `date`; v1.1.0 escapes timestamp colons for parser compatibility.
   arxiv: arXiv `submittedDate`, GMT, reflecting arXiv submission time.
 language_policy:
   language_restriction: NONE_AT_RETRIEVAL
@@ -21,13 +38,20 @@ search_sources:
   - Google Scholar only to locate a work already identified by another route; usage must be logged.
 syntax_documentation:
   scix_ads:
-  - https://ui.adsabs.harvard.edu/help/search/search-syntax
-  - https://ui.adsabs.harvard.edu/help/search/comprehensive-solr-term-list
+  - https://scixplorer.org/scixhelp/search-scix/search-syntax
+  - https://scixplorer.org/scixhelp/search-scix/comprehensive-solr-term-list
   arxiv:
   - https://info.arxiv.org/help/api/user-manual.html
 execution_policy:
   systematic_search_executed_in_baii1: false
   scientific_screening_executed_in_baii1: false
+  incomplete_baii2_attempts_before_v1_1_amendment: 2
+  successful_provider_executions_before_v1_1_amendment: 12
+  failed_provider_executions_before_v1_1_amendment: 12
+  unique_query_provider_combinations_successfully_retrieved_before_v1_1_amendment: 6
+  complete_12_of_12_retrieval_before_v1_1_amendment: false
+  scientific_screening_before_v1_1_amendment: false
+  baii2_restart_required_after_v1_1_freeze: true
   exact_queries_must_be_used_in_baii2: true
   raw_corpus_frozen_before_screening: true
   record_query_id_source_exact_string_timestamp_count_and_pagination: true
@@ -36,7 +60,7 @@ queries:
 - query_id: Q01_DIRECT_TESS_QPP
   purpose: Direct recent TESS stellar-flare QPP literature and material observational overlap with F3A.
   semantic_query: ("quasi-periodic pulsation" OR QPP) AND (TESS OR "Transiting Exoplanet Survey Satellite") AND (stellar OR flare)
-  scix_ads_query: abs:(("quasi-periodic pulsation" OR QPP) AND (TESS OR "Transiting Exoplanet Survey Satellite") AND (stellar OR flare)) AND date:[2024-01-01T00:00:00.000Z TO 2026-08-07T23:59:59.999Z]
+  scix_ads_query: abs:(("quasi-periodic pulsation" OR QPP) AND (TESS OR "Transiting Exoplanet Survey Satellite") AND (stellar OR flare)) AND date:[2024-01-01T00\:00\:00.000Z TO 2026-08-07T23\:59\:59.999Z]
   arxiv_query: ((all:"quasi-periodic pulsation" OR all:QPP) AND (all:TESS OR all:"Transiting Exoplanet Survey Satellite") AND (all:stellar OR all:flare)) AND submittedDate:[202401010000 TO 202608072359]
   date_start: '2024-01-01'
   date_end: '2026-08-07'
@@ -48,7 +72,7 @@ queries:
 - query_id: Q02_TESS_STELLAR_FLARE_PERIODICITY
   purpose: Capture TESS stellar-flare periodicity or oscillation work that may not use the QPP label.
   semantic_query: TESS AND (stellar flare OR stellar flares) AND (periodicity OR periodic OR oscillation)
-  scix_ads_query: abs:(TESS AND ("stellar flare" OR "stellar flares") AND (periodicity OR periodic OR oscillation)) AND date:[2024-01-01T00:00:00.000Z TO 2026-08-07T23:59:59.999Z]
+  scix_ads_query: abs:(TESS AND ("stellar flare" OR "stellar flares") AND (periodicity OR periodic OR oscillation)) AND date:[2024-01-01T00\:00\:00.000Z TO 2026-08-07T23\:59\:59.999Z]
   arxiv_query: (all:TESS AND (all:"stellar flare" OR all:"stellar flares") AND (all:periodicity OR all:periodic OR all:oscillation)) AND submittedDate:[202401010000 TO 202608072359]
   date_start: '2024-01-01'
   date_end: '2026-08-07'
@@ -60,7 +84,7 @@ queries:
 - query_id: Q03_TESS_QPP_CATALOG
   purpose: Recent TESS flare catalogues, surveys or samples with material QPP content relevant to F3A cohort framing.
   semantic_query: TESS AND (flare OR flares) AND (catalog OR catalogue OR survey) AND (QPP OR quasi-periodic)
-  scix_ads_query: abs:(TESS AND (flare OR flares) AND (catalog OR catalogue OR survey) AND (QPP OR "quasi-periodic")) AND date:[2024-01-01T00:00:00.000Z TO 2026-08-07T23:59:59.999Z]
+  scix_ads_query: abs:(TESS AND (flare OR flares) AND (catalog OR catalogue OR survey) AND (QPP OR "quasi-periodic")) AND date:[2024-01-01T00\:00\:00.000Z TO 2026-08-07T23\:59\:59.999Z]
   arxiv_query: (all:TESS AND (all:flare OR all:flares) AND (all:catalog OR all:catalogue OR all:survey) AND (all:QPP OR all:"quasi-periodic")) AND submittedDate:[202401010000 TO 202608072359]
   date_start: '2024-01-01'
   date_end: '2026-08-07'
@@ -71,7 +95,7 @@ queries:
 - query_id: Q04_QPP_DETECTION_METHOD
   purpose: Recent QPP detection/classification approaches that may be reasonable comparators or alternatives for F3A/F3B.
   semantic_query: (QPP OR "quasi-periodic pulsation") AND (detection OR method OR classification OR periodogram OR wavelet OR Bayesian) AND (stellar OR flare)
-  scix_ads_query: abs:((QPP OR "quasi-periodic pulsation") AND (detection OR method OR classification OR periodogram OR wavelet OR Bayesian) AND (stellar OR flare)) AND date:[2024-01-01T00:00:00.000Z TO 2026-08-07T23:59:59.999Z]
+  scix_ads_query: abs:((QPP OR "quasi-periodic pulsation") AND (detection OR method OR classification OR periodogram OR wavelet OR Bayesian) AND (stellar OR flare)) AND date:[2024-01-01T00\:00\:00.000Z TO 2026-08-07T23\:59\:59.999Z]
   arxiv_query: ((all:QPP OR all:"quasi-periodic pulsation") AND (all:detection OR all:method OR all:classification OR all:periodogram OR all:wavelet OR all:Bayesian) AND (all:stellar OR all:flare)) AND submittedDate:[202401010000 TO 202608072359]
   date_start: '2024-01-01'
   date_end: '2026-08-07'
@@ -83,7 +107,7 @@ queries:
 - query_id: Q05_INJECTION_RECOVERY_SELECTION
   purpose: Injection–recovery, synthetic ground truth, selection-function, completeness or benchmark work relevant to F3B.
   semantic_query: (stellar flare OR QPP) AND (injection recovery OR injection-recovery OR selection function OR completeness OR synthetic validation OR benchmark)
-  scix_ads_query: abs:(("stellar flare" OR QPP) AND ("injection recovery" OR "injection-recovery" OR "selection function" OR completeness OR "synthetic validation" OR benchmark)) AND date:[2024-01-01T00:00:00.000Z TO 2026-08-07T23:59:59.999Z]
+  scix_ads_query: abs:(("stellar flare" OR QPP) AND ("injection recovery" OR "injection-recovery" OR "selection function" OR completeness OR "synthetic validation" OR benchmark)) AND date:[2024-01-01T00\:00\:00.000Z TO 2026-08-07T23\:59\:59.999Z]
   arxiv_query: ((all:"stellar flare" OR all:QPP) AND (all:"injection recovery" OR all:"injection-recovery" OR all:"selection function" OR all:completeness OR all:"synthetic validation" OR all:benchmark)) AND submittedDate:[202401010000 TO 202608072359]
   date_start: '2024-01-01'
   date_end: '2026-08-07'
@@ -95,7 +119,7 @@ queries:
 - query_id: Q06_AFINO_RELATED
   purpose: Recent work using, discussing or comparing AFINO in a methodologically material way.
   semantic_query: AFINO AND (flare OR QPP OR quasi-periodic)
-  scix_ads_query: abs:(AFINO AND (flare OR QPP OR "quasi-periodic")) AND date:[2024-01-01T00:00:00.000Z TO 2026-08-07T23:59:59.999Z]
+  scix_ads_query: abs:(AFINO AND (flare OR QPP OR "quasi-periodic")) AND date:[2024-01-01T00\:00\:00.000Z TO 2026-08-07T23\:59\:59.999Z]
   arxiv_query: (all:AFINO AND (all:flare OR all:QPP OR all:"quasi-periodic")) AND submittedDate:[202401010000 TO 202608072359]
   date_start: '2024-01-01'
   date_end: '2026-08-07'

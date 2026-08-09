@@ -1,10 +1,71 @@
 {
   "audit_id": "tess_qpp_bibliographic_audit_ii_v1",
-  "audit_version": "1.0.0",
-  "audit_status": "FROZEN_BEFORE_SYSTEMATIC_SEARCH",
-  "freeze_date": "2026-08-08",
+  "audit_version": "1.1.0",
+  "audit_status": "AMENDED_AND_REFROZEN_BEFORE_BAII2_RESTART",
+  "freeze_date": "2026-08-09",
   "repository_relative_root": "docs/literature/bibliographic_audit_ii/",
   "pre_freeze_repository_head": "46cefa3d080ce025f1f71304665e372ca63fcbed",
+  "amendment": {
+    "amendment_version": "1.1.0",
+    "amendment_date": "2026-08-09",
+    "prior_design_tag": "bibliographic-audit-ii-design-v1",
+    "prior_design_commit": "24b3ddde7a9b7baf35f6b236d83e80ec20571c95",
+    "target_design_tag": "bibliographic-audit-ii-design-v2",
+    "scope": "SCIX_DATE_RANGE_PARSER_SYNTAX_ONLY",
+    "reason": "All six v1.0.0 SciX queries failed with HTTP 400 INVALID_SYNTAX_CANNOT_PARSE because timestamp colons inside the exact date range were unescaped.",
+    "scientific_query_semantics_changed": false,
+    "semantic_terms_changed": false,
+    "boolean_structure_changed": false,
+    "date_window_changed": false,
+    "arxiv_queries_changed": false,
+    "screening_rules_changed": false,
+    "f0_f2_changed": false,
+    "f3a_changed": false,
+    "f3b_changed": false,
+    "selected_correction": "Escape timestamp colons in the exact SciX date range as \\:.",
+    "failed_attempts": [
+      {
+        "attempt_id": "attempt01_ads401",
+        "failure": "ADS/SciX HTTP 401 before record retrieval",
+        "ads_scix_complete": 0,
+        "arxiv_complete": 6,
+        "review_bundle_sha256": "3c3ebc12ff15c2aae86c9ae83b15ed86022cff84ca42259c2bafe0897596bb25"
+      },
+      {
+        "attempt_id": "attempt02_scix400_syntax",
+        "failure": "SciX HTTP 400 INVALID_SYNTAX_CANNOT_PARSE on all six unescaped date-range queries",
+        "ads_scix_complete": 0,
+        "arxiv_complete": 6,
+        "review_bundle_sha256": "e5a4d9e0a3f2dbea6e76caa8496579c07c9dd1244a38975ecf2120ad4b743b90"
+      }
+    ],
+    "provider_parser_diagnostic": {
+      "scientific_corpus_query": false,
+      "P0_ABS_ONLY": {
+        "status": "OK",
+        "numFound": 1829
+      },
+      "P1_PUBDATE_DOCUMENTED": {
+        "status": "OK",
+        "numFound": 245
+      },
+      "P2_DATE_QUOTED": {
+        "status": "OK",
+        "numFound": 245
+      },
+      "P3_DATE_ESCAPED": {
+        "status": "OK",
+        "numFound": 245
+      },
+      "selected_form": "P3_DATE_ESCAPED"
+    },
+    "complete_12_of_12_raw_corpus_before_amendment": false,
+    "scientific_screening_before_amendment": false,
+    "deduplication_before_amendment": false,
+    "work_ids_assigned_before_amendment": false,
+    "design_impact_assessed_before_amendment": false,
+    "novelty_assessed_before_amendment": false
+  },
   "scientific_questions": {
     "Q1_OBSERVATIONAL_OVERLAP": "¿Existen trabajos recientes que hayan construido catálogos o muestras QPP de fulguraciones TESS que se solapen materialmente con el espacio previsto para F3A?",
     "Q2_METHODOLOGICAL_OVERLAP": "¿Existen métodos recientes de detección o clasificación QPP aplicables a TESS que deban incluirse como comparadores, contexto o potenciales alternativas en F3A/F3B?",
@@ -105,7 +166,7 @@
   "candidate_discovery_allowed": false,
   "scientific_results_computed": false,
   "papers_screened_before_freeze": false,
-  "searches_executed_before_freeze": false,
+  "searches_executed_before_freeze": true,
   "novelty_claims_allowed": false,
   "prohibited_screening_terms": [
     "NOVEL",
@@ -171,9 +232,10 @@
     "screening_labels_defined": 8,
     "impact_categories_defined": 5,
     "scientific_papers_screened": 0,
-    "searches_executed": 0,
     "f0_f2_files_modified": 0,
     "f3a_workflow_files_modified": 0,
-    "f3b_workflow_files_modified": 0
+    "f3b_workflow_files_modified": 0,
+    "complete_12_of_12_raw_corpus_frozen": 0,
+    "incomplete_retrieval_attempts_documented": 2
   }
 }
