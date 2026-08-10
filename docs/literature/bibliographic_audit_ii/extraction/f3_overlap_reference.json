@@ -1,0 +1,135 @@
+{
+  "audit_id": "tess_qpp_bibliographic_audit_ii_v1",
+  "audit_version": "1.1.0",
+  "task": "BAII.4",
+  "reference_status": "FROZEN_FOR_BAII4_COMPARISON_ONLY",
+  "reference_freeze_commit": "c5cd41bcc04bc0bafa4fc457d42e39cdee06a8d1",
+  "reference_note": "This file freezes the documentary comparison target used by BAII.4. It does not freeze or modify Phase 3A or Phase 3B scientific design.",
+  "f3a_entry_contract_path": "workflows/phase3a/ENTRY_CONTRACT.md",
+  "f3a_entry_contract_sha256": "fed87a63b1afc8221d7be175648955141664195eba253ffb05cafe8071db760a",
+  "f3a_supporting_sources": [
+    {
+      "path": "workflows/phase3a/FROZEN_INPUTS.json",
+      "sha256": "57e2ac1ad9185fb6cba057723a2bf97199dbb4f24091a7cf03df560e8093eda7",
+      "role": "Frozen F0-F2 reference set inherited by the Phase 3A entry contract"
+    },
+    {
+      "path": "workflows/phase3a/README.md",
+      "sha256": "50cf38db3f1439afc75d7f08cfa8cc61e959e089df60a9caf3072304961e964a",
+      "role": "Current Phase 3A workflow status and pre-design bibliographic gate"
+    }
+  ],
+  "f3b_validation_contract_path": "workflows/phase3b/README.md",
+  "f3b_validation_contract_sha256": "c6e1dee3c4a35cd37b032ff7bcc466f47d0b83db58b8b8d47c59bc1f8c947d14",
+  "f3b_supporting_sources": [
+    {
+      "path": "docs/decisions/DR-002-phase3-program-and-manuscript-sequencing.md",
+      "sha256": "95b677ea1ffd013abbc84c3c78ff2730dc481136702ddfdcd94adbcf1d391703",
+      "role": "Accepted program decision defining Phase 3B as realistic injection-recovery plus independent held-out validation"
+    },
+    {
+      "path": "foundation/f0-f2/phase2/fase2_tarea06_phase3_entry_requirements.csv",
+      "sha256": "b3155e16beed5917d3fdc3416eace0b5d97a55ea84a7b3d3a91c27eb6846e657",
+      "role": "Frozen B001-B009 correction-development and validation requirements"
+    }
+  ],
+  "f3a_current_status": "PHASE3A_ENTRY_CONTRACT_ESTABLISHED_DESIGN_NOT_YET_FROZEN",
+  "f3b_current_status": "WORKFLOW_RESERVED_PREREGISTRATION_NOT_YET_FROZEN",
+  "f3a_comparison_dimensions": {
+    "F3A_COHORT_UNIVERSE": {
+      "project_reference": "Prospectively defined catalogue-scale observational cohort; source catalogue(s), eligibility criteria, cohort construction, inclusion/exclusion, duplicates/repeated observations and observational roles/strata must be frozen before execution.",
+      "source": "workflows/phase3a/ENTRY_CONTRACT.md",
+      "source_locator": "Phase 3A scientific role; Required prospective design"
+    },
+    "F3A_CATALOG_SCALE": {
+      "project_reference": "Catalogue-scale observational robustness extending the frozen ten-event F2 pilot to a substantially broader prospectively defined observational cohort.",
+      "source": "workflows/phase3a/ENTRY_CONTRACT.md",
+      "source_locator": "Purpose; Phase 3A scientific role"
+    },
+    "F3A_EVENT_SELECTION": {
+      "project_reference": "Event eligibility, cohort construction, inclusion/exclusion, duplicate handling and provenance/selection of QPP-labelled or comparison events must be defined prospectively; candidate discovery is not authorized.",
+      "source": "workflows/phase3a/ENTRY_CONTRACT.md",
+      "source_locator": "Required prospective design; Candidate discovery"
+    },
+    "F3A_QPP_CLASSIFICATION_REFERENCE": {
+      "project_reference": "QPP-labelled/comparison-event provenance and selection rules must be independent of the F3A output; F3A cannot establish physical truth, sensitivity/specificity, observational false-positive rate or true-negative status.",
+      "source": "workflows/phase3a/ENTRY_CONTRACT.md",
+      "source_locator": "Candidate discovery; Prohibited Phase 3A interpretations"
+    },
+    "F3A_WINDOW_ROBUSTNESS": {
+      "project_reference": "Temporal-window dependence is a primary observational-robustness dimension; future F3A must freeze temporal-window perturbations rather than silently inherit the F2 grid.",
+      "source": "workflows/phase3a/ENTRY_CONTRACT.md",
+      "source_locator": "Phase 3A scientific role; Required prospective design"
+    },
+    "F3A_PROCESSING_ROBUSTNESS": {
+      "project_reference": "Dependence on processing choices is a primary observational-robustness dimension; processing profiles must be explicitly frozen prospectively.",
+      "source": "workflows/phase3a/ENTRY_CONTRACT.md",
+      "source_locator": "Phase 3A scientific role; Required prospective design"
+    },
+    "F3A_QUALITY_AND_GAPS": {
+      "project_reference": "Admissibility and failed/missing execution handling must remain explicit; input inadmissibility is not non-selection. The future design must freeze an admissibility contract and missingness/failed-execution handling.",
+      "source": "workflows/phase3a/ENTRY_CONTRACT.md",
+      "source_locator": "Frozen scientific inheritance; Required prospective design"
+    },
+    "F3A_NUMERICAL_STABILITY": {
+      "project_reference": "Classification robustness and optimizer behaviour are separate evidence planes. Optimizer-seed policy and numerical diagnostics must be frozen; warnings, bounds, convergence limitations and numerical multiplicity remain reportable. Stable classification does not demonstrate a unique numerical optimum.",
+      "source": "workflows/phase3a/ENTRY_CONTRACT.md",
+      "source_locator": "Frozen scientific inheritance; Required prospective design"
+    }
+  },
+  "f3b_comparison_dimensions": {
+    "F3B_INJECTION_RECOVERY": {
+      "project_reference": "Phase 3B is reserved for realistic injection-recovery and independent held-out validation.",
+      "source": "workflows/phase3b/README.md",
+      "source_locator": "Phase 3B"
+    },
+    "F3B_SYNTHETIC_GROUND_TRUTH": {
+      "project_reference": "Explicit synthetic ground truth is required for classification and period; observational roles must not be treated as physical truth.",
+      "source": "foundation/f0-f2/phase2/fase2_tarea06_phase3_entry_requirements.csv",
+      "source_locator": "B003"
+    },
+    "F3B_SIGNAL_FAMILIES": {
+      "project_reference": "No final signal-family design is currently frozen. BAII.4 should identify literature signal families that may be relevant prospectively to realistic injection-recovery.",
+      "source": "docs/decisions/DR-002-phase3-program-and-manuscript-sequencing.md",
+      "source_locator": "Phase 3B"
+    },
+    "F3B_NOISE_BACKGROUND": {
+      "project_reference": "No final noise/background design is currently frozen. BAII.4 should characterize literature noise/background choices relevant to realistic injection-recovery without treating them as adopted project design.",
+      "source": "docs/decisions/DR-002-phase3-program-and-manuscript-sequencing.md",
+      "source_locator": "Phase 3B"
+    },
+    "F3B_SELECTION_FUNCTION": {
+      "project_reference": "Any correction/performance program requires explicit known truth and prospectively defined success criteria; selection/recovery performance belongs to Phase 3B rather than observational F3A.",
+      "source": "foundation/f0-f2/phase2/fase2_tarea06_phase3_entry_requirements.csv",
+      "source_locator": "B003-B004"
+    },
+    "F3B_DEVELOPMENT_VALIDATION_SPLIT": {
+      "project_reference": "Formal development and validation sets must remain explicitly separated; validation cannot be partitioned post hoc after designing the rule.",
+      "source": "foundation/f0-f2/phase2/fase2_tarea06_phase3_entry_requirements.csv",
+      "source_locator": "B009"
+    },
+    "F3B_HELDOUT_VALIDATION": {
+      "project_reference": "An independent held-out benchmark is required, and any corrective rule evaluated confirmatorily must be defined before access to held-out validation data.",
+      "source": "docs/decisions/DR-002-phase3-program-and-manuscript-sequencing.md",
+      "source_locator": "Phase 3B"
+    },
+    "F3B_BASELINE_COMPARISON": {
+      "project_reference": "Any new rule must be compared with the frozen baseline without modifying historical baseline results.",
+      "source": "foundation/f0-f2/phase2/fase2_tarea06_phase3_entry_requirements.csv",
+      "source_locator": "B005"
+    },
+    "F3B_CLASSIFICATION_VS_PERIOD": {
+      "project_reference": "Classification and period are separate outcomes; period is interpretable only when selection survives unless a different outcome definition is prospectively justified.",
+      "source": "foundation/f0-f2/phase2/fase2_tarea06_phase3_entry_requirements.csv",
+      "source_locator": "B007"
+    }
+  },
+  "comparison_guardrails": {
+    "f3a_modified": false,
+    "f3b_modified": false,
+    "candidate_discovery_authorized": false,
+    "novelty_assessed": false,
+    "final_f3a_gate_decision_made": false,
+    "note": "BAII.4 may characterize descriptive overlap and prospective impact categories only. The formal F3A gate decision remains reserved for BAII.5."
+  }
+}
