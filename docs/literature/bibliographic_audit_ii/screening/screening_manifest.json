@@ -1,0 +1,88 @@
+{
+  "audit_id": "tess_qpp_bibliographic_audit_ii_v1",
+  "audit_version": "1.1.0",
+  "task": "BAII.3",
+  "screening_status": "DEDUPLICATED_CORPUS_SCREENED_BEFORE_STRUCTURED_EXTRACTION",
+  "design_tag": "bibliographic-audit-ii-design-v2",
+  "design_commit": "a53ea8c5935e686df1fe8680b9c36bdf5111d05e",
+  "corpus_tag": "bibliographic-audit-ii-corpus-v1",
+  "corpus_commit": "ed62e78bf5280b557e0565ebcf21d8441948946b",
+  "raw_hit_rows": 322,
+  "unique_work_count": 190,
+  "version_count": 283,
+  "preferred_version_count": 190,
+  "automatic_mapping_count": 201,
+  "automatic_component_count_before_manual_adjudication": 201,
+  "auto_fuzzy_candidate_pair_count": 10,
+  "manual_same_work_adjudications": 11,
+  "manual_distinct_work_adjudications": 11,
+  "unresolved_mapping_count": 0,
+  "include_for_baii4_count": 40,
+  "background_only_count": 33,
+  "excluded_count": 117,
+  "unresolved_access_count": 0,
+  "exclusion_counts_by_E_criterion": {
+    "E1": 11,
+    "E2": 6,
+    "E3": 33,
+    "E4": 0,
+    "E5": 0,
+    "E6": 67
+  },
+  "background_context_counts_by_E_criterion": {
+    "E2": 28,
+    "E6": 5
+  },
+  "inclusion_counts_by_I_criterion": {
+    "I1": 4,
+    "I2": 25,
+    "I3": 7,
+    "I4": 10,
+    "I5": 8,
+    "I6": 2,
+    "I7": 10
+  },
+  "systematic_work_ids_matching_seed_sources": [
+    {
+      "source_id": "S005",
+      "work_id": "BAIIW0098"
+    },
+    {
+      "source_id": "S006",
+      "work_id": "BAIIW0001"
+    },
+    {
+      "source_id": "S007",
+      "work_id": "BAIIW0003"
+    },
+    {
+      "source_id": "S008",
+      "work_id": "BAIIW0008"
+    }
+  ],
+  "systematic_work_ids_matching_seed_sources_count": 4,
+  "auto_work_candidate_rebuild_status": "AUTO_WORK_CANDIDATE_REBUILD_EXACT",
+  "auto_work_candidate_sha256": "ffbb71847522361076c82dc24e16da94292f9016f20d47af249f0ee860e5f7c0",
+  "raw_hits_lost": 0,
+  "raw_hits_multiply_mapped": 0,
+  "verification_lookup_count": 4,
+  "full_text_required_count": 0,
+  "full_text_accessed_count": 0,
+  "relevance_labels_assigned": false,
+  "design_impact_assessed": false,
+  "f3a_design_impact_assessed": false,
+  "f3b_design_impact_assessed": false,
+  "manuscript_positioning_assessed": false,
+  "novelty_assessed": false,
+  "f0_f2_modified": false,
+  "f3a_modified": false,
+  "f3b_modified": false,
+  "candidate_discovery_authorized": false,
+  "structured_extraction_started": false,
+  "notes": [
+    "E5 was applied as a version-resolution principle rather than a work-level exclusion; no duplicate version is counted as an independent work.",
+    "Fuzzy title matching generated candidates only. All non-automatic SAME/DISTINCT decisions are explicit in manual_adjudications.csv.",
+    "No work was excluded for lack of access; all 190 work-level screening decisions were resolved from frozen title/abstract/provider metadata.",
+    "Detailed methodological extraction, overlap labels, prospective design impact, positioning impact, and novelty assessment are deferred to BAII.4/BAII.5."
+  ]
+}

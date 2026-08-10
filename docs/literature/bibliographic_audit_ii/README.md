@@ -1,6 +1,6 @@
 # Bibliographic Audit II
 
-**STATUS:** `RAW CORPUS FROZEN — SCREENING NOT YET EXECUTED`
+**STATUS:** `DEDUPLICATION AND SCREENING FROZEN — STRUCTURED EXTRACTION NOT STARTED`
 
 Bibliographic Audit II is the literature gate between the frozen F0–F2 foundation and the future freeze of F3A. BAII.1 v1.0.0 froze the prospective search and screening design. BAII.1 v1.1.0 is a narrow technical amendment created after incomplete BAII.2 retrieval attempts exposed a SciX parser incompatibility in the exact `date` timestamp syntax. The scientific query semantics and screening design remain unchanged.
 
@@ -27,8 +27,14 @@ BAII.5 synthesis + F3A gate decision
 - BAII.2 normative executions: **12/12 successful**
 - BAII.2 raw hit rows: **322** (**249 SciX + 73 arXiv**)
 - BAII.2 deterministic rebuild: **`RAW_LEDGER_REBUILD_EXACT`**
-- Scientific papers screened under BAII: **0**
-- Deduplication / `work_id` assignment: **0**
+- BAII.3 raw hits mapped: **322/322**
+- BAII.3 unique intellectual works: **190**
+- BAII.3 bibliographic versions: **283**
+- BAII.3 preferred versions: **190**
+- BAII.3 screening outcomes: **40 include / 33 background / 117 exclude / 0 unresolved**
+- BAII.3 automatic candidate rebuild: **`AUTO_WORK_CANDIDATE_REBUILD_EXACT`**
+- Scientific works screened under BAII.3: **190**
+- Deduplication / `work_id` assignment: **complete and frozen for BAII.3**
 - F0–F2 modified: **no**
 - F3A or F3B modified: **no**
 - Candidate discovery authorized: **no**
@@ -59,9 +65,15 @@ The v1.0.0 tag must not be moved or replaced. Version 1.1.0 is frozen by annotat
 ## BAII.2 raw-corpus freeze
 
 The normative BAII.2 retrieval completed all 12 frozen query × provider executions successfully.
-The frozen ledger contains 322 raw hits. Duplicate appearances remain intentional; no deduplication
-or `work_id` resolution has begun.
+The frozen ledger contains 322 raw hits. BAII.3 maps every hit exactly once into 190 unique `work_id` entities while preserving all raw-hit provenance.
 
 The raw archive is `bibliographic_audit_ii_raw_corpus_v1.zip` with SHA-256
-`9dd526ecf58b6fed8af4d2902989dc6b8d4255126fd82aed02ce59d07537f993`. BAII.3 is the first task permitted to resolve versions, assign `work_id`, and apply
-the frozen inclusion/exclusion screening criteria.
+`9dd526ecf58b6fed8af4d2902989dc6b8d4255126fd82aed02ce59d07537f993`.
+
+## BAII.3 work-resolution and screening freeze
+
+BAII.3 resolves the 322 raw hits into **190 unique intellectual works** and **283 bibliographic versions**, with exactly one preferred version per work. The automatic resolution layer produced 201 exact bibliographic components; 11 explicit same-work adjudications reduced this to 190 works, while 11 explicit distinct-work adjudications prevented false fuzzy merges. No relationship remains unresolved.
+
+Final screening at work level yields **40 `INCLUDE_FOR_BAII4`**, **33 `BACKGROUND_ONLY`**, **117 `EXCLUDE`**, and **0 access-limited unresolved decisions**. `SEED_SOURCES.csv` remains outside the systematic denominator; four seeds (S005–S008) also occur independently in the systematic corpus.
+
+BAII.3 does not assign `relevance_labels`, F3A/F3B design impact, Manuscript 1 positioning impact, or novelty. Detailed structured extraction has not started. BAII.4 is the first task permitted to extract detailed methods/results and assess observational or methodological overlap.
