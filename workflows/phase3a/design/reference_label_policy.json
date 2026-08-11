@@ -1,0 +1,33 @@
+{
+  "policy_id": "PHASE3A_REFERENCE_LABEL_POLICY_V1",
+  "status": "FROZEN_BEFORE_COHORT_MATERIALIZATION",
+  "primary_reference_source_work_id": "BAIIW0001",
+  "primary_source_method": "Published AFINO-based Fourier model-comparison classification as recorded by BAII; exact source-version metadata preserved in F3A.2 provenance.",
+  "allowed_project_reference_roles": {
+    "PUBLISHED_QPP_REFERENCE": "Primary-source event selected as QPP before F3A. Never interpreted as physical ground truth.",
+    "PUBLISHED_NOT_SELECTED_REFERENCE": "Primary-source flare not selected as QPP by the source procedure. Never interpreted as a true negative.",
+    "OTHER_EXTERNAL_CLASSIFIER_REFERENCE": "External published classification, e.g. BAIIW0003, retained only as a separately sourced annotation/comparator label.",
+    "REFERENCE_LABEL_CONFLICT": "Two independently sourced observational labels conflict for a deterministically cross-matched event."
+  },
+  "provenance_fields_required": [
+    "source_work_id",
+    "source_method",
+    "source_version",
+    "original_label",
+    "project_reference_role"
+  ],
+  "conflict_policy": {
+    "primary_analysis": "Retain the BAIIW0001 role for the primary robustness question because cohort membership was frozen from that source.",
+    "annotation": "Flag REFERENCE_LABEL_CONFLICT and retain all external labels with independent provenance.",
+    "no_resolution_from_f3a_output": true,
+    "secondary_agreement_analysis": "May be descriptive only if cross-match and external label provenance are deterministic before execution."
+  },
+  "baseline_classifier": "AFINO execution contract inherited from F0-F2, applied only after cohort freeze to W00/P00/seed0.",
+  "external_classifier_policy": "External classifier outputs are never silently merged with primary labels and do not redefine cohort membership.",
+  "observational_reference_label_is_ground_truth": false,
+  "physical_qpp_truth_established": false,
+  "comparison_reference_is_true_negative": false,
+  "sensitivity_specificity_authorized": false,
+  "observational_fpr_authorized": false,
+  "candidate_discovery_authorized": false
+}

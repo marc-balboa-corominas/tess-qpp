@@ -2,26 +2,26 @@
 
 Catalogue-scale observational robustness analysis.
 
-## Current status
+## STATUS
 
-`PHASE3A_ENTRY_CONTRACT_ESTABLISHED_DESIGN_NOT_YET_FROZEN`
+`SCIENTIFIC DESIGN FROZEN — COHORT MATERIALIZATION NOT STARTED`
 
-The scientific boundary inherited from F0–F2 is defined in:
+Phase 3A is prospectively defined as a catalogue-scale stress test of independently defined
+observational QPP reference classifications under frozen temporal-window, processing,
+admissibility, and numerical perturbations.
+
+The historical pre-BAII boundary remains preserved in:
 
 - [`ENTRY_CONTRACT.md`](ENTRY_CONTRACT.md)
 - [`FROZEN_INPUTS.json`](FROZEN_INPUTS.json)
 
-Phase 3A design, cohort construction, perturbations, outcomes, and execution are not yet frozen.
+Those two files are historical references and are not modified by the F3A.1 design freeze.
 
-No scientific Phase 3A execution is authorized at this stage.
+The scientific design frozen after Bibliographic Audit II is in [`design/`](design/).
+The offline validator is [`scripts/validate_design_freeze.py`](scripts/validate_design_freeze.py).
 
-Historical F0–F2 artifacts must not be modified from this workspace.
-## Pre-design gate
+No Phase 3A cohort has been materialized, no TESS light curve has been downloaded or opened for
+F3A, AFINO has not been executed for F3A, and no Phase 3A scientific result has been computed.
 
-Bibliographic Audit II must close before the final F3A cohort, perturbation grid, and analysis design are frozen.
-
-See:
-
-`../../docs/literature/bibliographic_audit_ii/PROTOCOL.md`
-
-No change is made to the existing F3A scientific entry contract.
+The next authorized task after review of this freeze is F3A.2: deterministic cohort
+materialization, provenance/admissibility verification, and exact execution-plan freeze.

@@ -1,0 +1,99 @@
+{
+  "contract_id": "PHASE3A_OUTCOMES_DENOMINATORS_V1",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "primary_classification_rule": {
+    "models": {
+      "M0": "pow_const",
+      "M1": "pow_const_gauss",
+      "M2": "bpow_const"
+    },
+    "low_frequency_cutoff_hz": "1/40",
+    "qpp_selected_rule": "(BIC_M0 - BIC_M1 > 10.0) AND (BIC_M2 - BIC_M1 > 10.0)",
+    "optimizer_seed_primary": 0
+  },
+  "baseline_reproduction_gate": {
+    "cell": "W00/P00/seed0",
+    "states": [
+      "REFERENCE_CONCORDANT",
+      "REFERENCE_BASELINE_MISMATCH",
+      "INPUT_INADMISSIBLE",
+      "INCOMPLETE_NUMERICAL"
+    ],
+    "reference_concordant_definition": "The W00/P00/seed0 selected/not-selected state equals the frozen primary-source observational reference role.",
+    "mismatch_policy": "Preserve and report; do not force concordance or replace the event.",
+    "robustness_transition_eligibility": "Only REFERENCE_CONCORDANT events enter denominators requiring a reproduced classification baseline."
+  },
+  "classification_outcome_states": [
+    "SELECTED_RETAINED",
+    "SELECTION_LOST",
+    "NOT_SELECTED_RETAINED",
+    "SELECTION_GAINED",
+    "INPUT_INADMISSIBLE",
+    "INCOMPLETE_NUMERICAL",
+    "REFERENCE_BASELINE_MISMATCH"
+  ],
+  "classification_transition_definitions": {
+    "SELECTED_RETAINED": "Reference-concordant baseline selected; variant selected.",
+    "SELECTION_LOST": "Reference-concordant baseline selected; variant not selected.",
+    "NOT_SELECTED_RETAINED": "Reference-concordant baseline not selected; variant not selected.",
+    "SELECTION_GAINED": "Reference-concordant baseline not selected; variant selected.",
+    "INPUT_INADMISSIBLE": "Variant cannot be evaluated under the frozen admissibility contract.",
+    "INCOMPLETE_NUMERICAL": "Input is admissible but required model outputs are incomplete/unavailable.",
+    "REFERENCE_BASELINE_MISMATCH": "W00/P00/seed0 is evaluable but disagrees with the frozen source observational role."
+  },
+  "denominators": {
+    "planned_event_count": "All events frozen by the F3A.2 cohort materialization contract, including later inadmissible/mismatched events.",
+    "planned_primary_variant_count": "planned_event_count × 78.",
+    "cell_eligible_count": "For each of 78 cells, number of planned events with admissible input and complete numerical output in that cell.",
+    "cell_transition_count": "For each cell, number of events that are REFERENCE_CONCORDANT at W00/P00/seed0 and have an admissible/complete result in that cell.",
+    "classification_concordance_fraction_among_eligible": "Within each event or prespecified stratum, numerator = eligible primary cells whose selected/not-selected state equals W00/P00/seed0; denominator = eligible/complete primary cells for events with REFERENCE_CONCORDANT baseline. Report denominator beside every fraction.",
+    "inadmissible_fraction": "INPUT_INADMISSIBLE count / planned primary variants, separately by reason and stratum.",
+    "incomplete_numerical_fraction": "INCOMPLETE_NUMERICAL count / variants admissible for AFINO, separately by model/stratum where appropriate."
+  },
+  "period_outcome": {
+    "eligibility": "baseline selected AND variant selected AND both selected M1 periods available",
+    "reported_quantities": [
+      "signed_period_change_s",
+      "absolute_period_change_s",
+      "period_ratio_variant_to_baseline"
+    ],
+    "formal_m1_center_not_selected": "Stored as numerical diagnostic only; never recoded as recovered period.",
+    "inadmissible_or_not_selected": "NOT_APPLICABLE for period transition summaries."
+  },
+  "robustness_descriptive": {
+    "classification_concordance_fraction_among_eligible": "AUTHORIZED_DESCRIPTIVE_SUMMARY",
+    "robustness_threshold": null,
+    "binary_robust_not_robust_label_authorized": false,
+    "inferential_success_threshold_authorized": false
+  },
+  "prohibited_metrics": [
+    "accuracy",
+    "sensitivity",
+    "specificity",
+    "observational_false_positive_rate",
+    "physical_truth_rate"
+  ],
+  "analysis_plan": {
+    "primary": "Descriptive transition and admissibility summaries across all 78 frozen cells, stratified by primary observational reference role.",
+    "secondary": [
+      "window-family summaries",
+      "processing-profile summaries",
+      "period-change summaries conditional on retained selection",
+      "numerical stability summaries kept separate"
+    ],
+    "formal_hypothesis_tests": "NONE_PREREGISTERED",
+    "multiplicity_policy": "No inferential p-value family is planned; all 78 cells and denominators are reported, so no data-driven cell selection or multiplicity-adjusted significance claim is authorized.",
+    "planned_tables": [
+      "Cohort/provenance and baseline-reproduction flow",
+      "78-cell eligibility and classification-transition table by reference role",
+      "Window-family and processing-profile marginal summaries with planned/eligible denominators",
+      "Period-change summary restricted to selected-selected comparable variants",
+      "Numerical stability summary for W00/P00 seeds 0-9"
+    ],
+    "planned_figures": [
+      "Complete 13×6 classification-concordance/eligibility heatmaps by reference role; no cell may be omitted based on result.",
+      "Period-change distribution for prespecified eligible selected-selected contrasts.",
+      "Seed-stability diagnostic at W00/P00 with classification/BIC/period ranges."
+    ]
+  }
+}
