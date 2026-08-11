@@ -1,0 +1,83 @@
+{
+  "audit_id": "PHASE3A_F3A2_MATERIALIZATION_AUDIT_V1",
+  "status": "PHASE3A_COHORT_AND_EXECUTION_PLAN_FROZEN_WITH_DOCUMENTED_LIMITATION",
+  "primary_source_provenance_status": "PRIMARY_CATALOGUE_PROVENANCE_VERIFIED",
+  "source_parent_rows": 3878,
+  "source_parent_unique_tics": 1285,
+  "source_qpp_rows": 61,
+  "source_qpp_unique_events": 61,
+  "source_qpp_unique_tics_observed": 56,
+  "source_qpp_reported_star_count": 57,
+  "source_count_inconsistency_documented": true,
+  "reference_events_frozen": 61,
+  "comparison_events_frozen": 61,
+  "unmatched_reference_events": 0,
+  "total_cohort_events": 122,
+  "unique_tic_count": 63,
+  "sector_count": 35,
+  "matching_level_counts": {
+    "SAME_TIC_SAME_SECTOR": 31,
+    "SAME_TIC_ANY_SECTOR": 22,
+    "SAME_SECTOR": 8,
+    "GLOBAL_ALLOWED_SECTOR_POOL": 0
+  },
+  "event_product_relationships": 122,
+  "unique_physical_fits": 87,
+  "missing_product_event_relationships": 0,
+  "time_mapping_valid": 122,
+  "time_mapping_unresolved": 0,
+  "time_mapping_out_of_range": 0,
+  "physical_sha256_before_fits_open": true,
+  "primary_planned_variants": 9516,
+  "primary_eligible_variants": 6422,
+  "primary_inadmissible_variants": 3094,
+  "inadmissibility_counts": {
+    "IRREGULAR_SAMPLING": 1824,
+    "PEAK_OUTSIDE_WINDOW": 138,
+    "PEAK_REMOVED_BY_QUALITY": 282,
+    "TOO_FEW_CADENCES": 844,
+    "WINDOW_OUT_OF_RANGE": 6
+  },
+  "w00_p00_eligible_events": 116,
+  "primary_executable_decisions": 6422,
+  "stability_extra_decisions": 1044,
+  "total_executable_decisions": 7466,
+  "exact_model_calls": 22398,
+  "m0_calls": 7466,
+  "m1_calls": 7466,
+  "m2_calls": 7466,
+  "payload_roundtrip_mismatches": 0,
+  "duplicate_event_ids": 0,
+  "duplicate_variant_ids": 0,
+  "duplicate_job_ids": 0,
+  "controls_reused": false,
+  "afino_imported": false,
+  "afino_executed": false,
+  "scientific_results_computed": false,
+  "baseline_classifications_observed": false,
+  "environment": {
+    "numpy_version": "2.5.1",
+    "astropy_version": "8.0.1",
+    "afino_package_frozen_for_future_execution": "0.5",
+    "afino_commit_frozen_for_future_execution": "6aceac9518fc8056052807e666da9d0c8bebb010"
+  },
+  "source_physical_hashes": {
+    "Flare_detections.csv": "866c7ebf0d2d3a6f024b55bd112e7d91491518dfd18a57b26a3f999c5d66faa4",
+    "QPP_detections.csv": "4f9d6c07fc722917fa432989b2d7c20b9b8da7cef4227a44187b55b6ddcfbe8e",
+    "TESS_FFI_observation_times.csv": "e7c937a06e941f3ee7af150132f135ccb3c9636fda78d30cc0f8e343fd138768"
+  },
+  "payload_physical_hashes": {
+    "time_seconds.npy": "8302d2d9527ee358bfe3b809d1d91f88022f47411d08f6cdf2fc2a0e0c2113fa",
+    "flux.npy": "aae865acd94446072e89175057ce2c6d49bb3fe294b14ae8c0a095eb42d280fa",
+    "native_index.npy": "abe2c5b23bfcade8000c992b64067ee933c514a577deca8a870ea13ba562e52a",
+    "offsets.npy": "72d87c7ca15ce446bdefa79651e70836cfd77826630f9c870119c80f80956a68"
+  },
+  "documented_limitations": [
+    {
+      "id": "SOURCE_TEXT_QPP_STAR_COUNT_INCONSISTENCY",
+      "blocking": false,
+      "description": "The manuscript reports 61 QPPs in 57 stars, while the machine-readable QPP table contains 61 events across 56 unique TIC IDs. The source table is preserved without alteration; five duplicated TICs listed by the source are consistent with 56 unique TIC IDs."
+    }
+  ],
+  "next_task": "F3A.3 — canary/checkpointed validation of the catalogue-scale runner against the frozen F3A.2 execution plan before full AFINO execution."
+}

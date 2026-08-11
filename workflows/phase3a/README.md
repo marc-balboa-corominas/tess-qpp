@@ -4,9 +4,9 @@ Catalogue-scale observational robustness analysis.
 
 ## STATUS
 
-`SCIENTIFIC DESIGN FROZEN — COHORT MATERIALIZATION NOT STARTED`
+`COHORT AND EXACT EXECUTION PLAN MATERIALIZED/AUDITED — AFINO NOT STARTED`
 
-Phase 3A is prospectively defined as a catalogue-scale stress test of independently defined
+Phase 3A remains a prospectively defined catalogue-scale stress test of independently defined
 observational QPP reference classifications under frozen temporal-window, processing,
 admissibility, and numerical perturbations.
 
@@ -15,13 +15,24 @@ The historical pre-BAII boundary remains preserved in:
 - [`ENTRY_CONTRACT.md`](ENTRY_CONTRACT.md)
 - [`FROZEN_INPUTS.json`](FROZEN_INPUTS.json)
 
-Those two files are historical references and are not modified by the F3A.1 design freeze.
+Those two files are historical references. The scientific design frozen after Bibliographic
+Audit II remains unchanged in [`design/`](design/).
 
-The scientific design frozen after Bibliographic Audit II is in [`design/`](design/).
-The offline validator is [`scripts/validate_design_freeze.py`](scripts/validate_design_freeze.py).
+F3A.2 has now established, before any Phase 3A AFINO execution:
 
-No Phase 3A cohort has been materialized, no TESS light curve has been downloaded or opened for
-F3A, AFINO has not been executed for F3A, and no Phase 3A scientific result has been computed.
+- byte-level provenance for the BAIIW0001 parent catalogue and QPP table;
+- a deterministic 122-event cohort: 61 published-QPP references and 61 matched observational
+  non-selected controls, without replacement;
+- exact SPOC 20-second TESS product bindings for 87 unique TIC-sector products serving all
+  122 events;
+- valid deterministic source-marker to native-cadence mappings for all 122 events;
+- the complete 9,516-row primary 13x6 robustness matrix;
+- frozen exact payloads for every eligible primary variant;
+- the resolved primary and W00/P00 numerical-stability decision grid;
+- an exact three-model AFINO call plan whose rows remain `NOT_EXECUTED`.
 
-The next authorized task after review of this freeze is F3A.2: deterministic cohort
-materialization, provenance/admissibility verification, and exact execution-plan freeze.
+No Phase 3A AFINO model has been imported or executed by the F3A.2 materialization workflow, no
+Phase 3A classification has been observed, and no scientific result has been computed.
+
+The next authorized task after review/freeze of F3A.2 is F3A.3: canary/checkpointed validation of
+the catalogue-scale runner against the frozen execution plan before any full catalogue execution.
