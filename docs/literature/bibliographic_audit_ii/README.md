@@ -1,6 +1,6 @@
 # Bibliographic Audit II
 
-**STATUS:** `STRUCTURED EXTRACTION AND OVERLAP ASSESSMENT FROZEN — FINAL SYNTHESIS/GATE NOT STARTED`
+**STATUS:** `BIBLIOGRAPHIC AUDIT II CLOSED — F3A GATE DECISION FROZEN`
 
 Bibliographic Audit II is the literature gate between the frozen F0–F2 foundation and the future freeze of F3A. BAII.1 v1.0.0 froze the prospective search and screening design. BAII.1 v1.1.0 is a narrow technical amendment created after incomplete BAII.2 retrieval attempts exposed a SciX parser incompatibility in the exact `date` timestamp syntax. The scientific query semantics and screening design remain unchanged.
 
@@ -40,7 +40,9 @@ BAII.5 synthesis + F3A gate decision
 - Candidate discovery authorized: **no**
 - Scientific results computed: **no**
 - BAII.4 prospective design-impact assessment: **complete and frozen**
-- Novelty assessment or final F3A gate authorized: **no**
+- BAII.5 final F3A gate decision: **`F3A_DESIGN_RECONSIDERATION_REQUIRED`**
+- Formal novelty assessment performed: **no**
+- Priority claim authorized: **no**
 
 The directory already contained `AUDIT_MATRIX.csv` and `SEED_SOURCES.csv` before BAII.1. They remain unchanged. `SEED_SOURCES.csv` is pre-existing seed/context material, not a systematically retrieved or screened BAII corpus. `AUDIT_MATRIX.csv` is a legacy empty template and is not the normative BAII.1 screening schema; future BAII screening uses `screening_schema.csv`.
 
@@ -98,4 +100,29 @@ PARTIAL / 31 CONTEXT_ONLY** for F3B. The impact rubric records **2 `F3A_REDRAFT_
 `POSITIONING_ONLY`** assignments. These are prospective literature-gate annotations, not actual
 changes to F3A/F3B and not novelty or precedence claims.
 
-The final BAII.5 synthesis/gate decision has not started.
+BAII.5 has now completed the final synthesis and frozen the pre-F3A gate decision. No BAII.3 screening field or BAII.4 extraction/overlap field was retrospectively modified.
+
+## BAII.5 final synthesis and gate freeze
+
+BAII.5 reviewed all **15** works carrying prospective F3A impact, including the two
+`F3A_REDRAFT_REQUIRED` / `DIRECT` overlap works, assessed all **11** comparator candidates, and
+represented all **9** F3B-impact works. The systematic denominator remains **190 works / 40 primary
+extracted works**.
+
+The frozen hierarchical gate resolves to:
+
+`F3A_DESIGN_RECONSIDERATION_REQUIRED`
+
+BAIIW0001 independently satisfies the highest gate branch through direct catalogue-scale TESS QPP
+overlap with sufficient evidence. BAIIW0003 independently reinforces the catalogue/classification
+overlap but retains its documented source-access limitation; unresolved implementation details
+remain `NOT_REPORTED`.
+
+The gate does not cancel F3A and is not a novelty verdict. It means that the next task must
+prospectively reformulate and freeze F3A while addressing the open BAII.5 requirements before any
+catalogue-scale execution.
+
+F0–F2 remain frozen. F3A and F3B remain scientifically unfrozen.
+
+Next task: **F3A.1 — prospective reconsideration and freeze of the F3A scientific design from the
+BAII.5 gate.**

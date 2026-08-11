@@ -1,0 +1,61 @@
+{
+  "audit_id": "tess_qpp_bibliographic_audit_ii_v1",
+  "audit_version": "1.1.0",
+  "baii_status": "BIBLIOGRAPHIC_AUDIT_II_COMPLETE",
+  "f3a_gate_decision": "F3A_DESIGN_RECONSIDERATION_REQUIRED",
+  "decision_rule_applied": "Hierarchy A: at least one BAII.4 F3A_REDRAFT_REQUIRED work remains DIRECT F3A overlap after BAII.5 critical review, has evidence sufficient for gate use, and materially overlaps the central catalogue-scale contribution/framing.",
+  "gate_trigger_work_ids": [
+    "BAIIW0001",
+    "BAIIW0003"
+  ],
+  "gate_trigger_evidence_ids": [
+    "BAII4E0001",
+    "BAII4E0002",
+    "BAII4E0003",
+    "BAII4E0004",
+    "BAII4E0009",
+    "BAII4E0010",
+    "BAII4E0011",
+    "BAII4E0012"
+  ],
+  "f3a_design_reconsideration_required": true,
+  "f3a_design_adjustment_required": true,
+  "positioning_update_required": true,
+  "f3b_design_considerations_present": true,
+  "comparator_consideration_required": true,
+  "systematic_work_count": 190,
+  "included_work_count": 40,
+  "direct_f3a_overlap_count": 2,
+  "direct_f3b_overlap_count": 7,
+  "f3a_redraft_required_count": 2,
+  "f3a_adjustment_possible_count": 13,
+  "f3b_adjustment_possible_count": 9,
+  "access_limitations_material_to_gate": false,
+  "novelty_assessed": false,
+  "priority_claim_authorized": false,
+  "f3a_modified": false,
+  "f3b_modified": false,
+  "recommended_next_task": "F3A.1 — prospective reconsideration and freeze of the F3A scientific design from the BAII.5 gate before any catalogue-scale execution.",
+  "decision_basis": [
+    "BAIIW0001 independently establishes direct catalogue-scale TESS QPP/AFINO overlap with sufficient gate evidence.",
+    "BAIIW0003 independently establishes direct large-catalogue TESS QPP-classification overlap at the supported provider/abstract level; unresolved full-method detail remains NOT_REPORTED.",
+    "Thirteen additional works identify concrete cohort, event-selection, processing, quality/gap, numerical or comparator considerations.",
+    "The decision does not cancel F3A and does not assert novelty or lack of novelty; it requires prospective redesign/reframing before freeze."
+  ],
+  "freeze_bindings": {
+    "design_tag": "bibliographic-audit-ii-design-v2",
+    "design_commit": "a53ea8c5935e686df1fe8680b9c36bdf5111d05e",
+    "corpus_tag": "bibliographic-audit-ii-corpus-v1",
+    "corpus_commit": "ed62e78bf5280b557e0565ebcf21d8441948946b",
+    "screening_tag": "bibliographic-audit-ii-screening-v1",
+    "screening_commit": "c5cd41bcc04bc0bafa4fc457d42e39cdee06a8d1",
+    "f3_comparison_microfreeze_commit": "9ae33ce9458ceb826e1efbea31a4f96843334f5d",
+    "extraction_tag": "bibliographic-audit-ii-extraction-v1",
+    "extraction_commit": "0b8da64a546e4871faec59fe9dfd5a2d8c93db6b"
+  },
+  "input_hashes": {
+    "screening_manifest.json": "b8d53cc6f51cfbf33ba3fd5d32a5651c0db772842d9fdab678d70f0f15ef7dba",
+    "extraction_manifest.json": "4de9ffac6ccd78e15690ab674c15af91529788fc7b05f63966f6fb79880b1581",
+    "f3_overlap_reference.json": "1b6be4a17d23457d3164b23c4b16557467e84ae44bbb35df57064b7c9566639e"
+  }
+}
