@@ -1,0 +1,80 @@
+{
+  "policy_id": "PHASE3A_F3A2_TESS_PRODUCT_BINDING_POLICY_V1",
+  "status": "FROZEN_BEFORE_FITS_ACCESS",
+  "archive_provider": "MAST",
+  "mission": "TESS",
+  "target_matching": {
+    "primary_key": "TIC_ID",
+    "sector_key": "sector",
+    "source_sector_role": "matching stratum and expected archive sector; exact archive metadata is authoritative at product binding",
+    "nominal_cadence_s": 20.0
+  },
+  "required_columns": [
+    "TIME",
+    "SAP_FLUX",
+    "PDCSAP_FLUX",
+    "QUALITY"
+  ],
+  "product_selection_policy": {
+    "required_provenance": "SPOC",
+    "required_product_kind": "target light curve",
+    "required_cadence": "20-second",
+    "required_tic_match": "exact",
+    "required_sector_match": "exact",
+    "preference_order": [
+      "highest available official MAST data-release / processing-version metadata",
+      "lexicographically smallest stable MAST dataURI/archive key"
+    ],
+    "result_dependent_selection_forbidden": true
+  },
+  "zero_product_policy": "Record MISSING_PRODUCT; retain frozen cohort membership and planned denominator visibility; do not replace event.",
+  "multiple_product_policy": "Apply the frozen preference order without inspecting scientific flux behavior or AFINO outputs; record all candidate identifiers and chosen product.",
+  "physical_hash_policy": "SHA-256 every unique downloaded FITS byte stream before opening scientific arrays; shared physical FITS may serve multiple source flares from the same TIC/sector.",
+  "fits_checksum_recording_policy": "Record FITS CHECKSUM/DATASUM verification status independently of physical SHA-256; checksum warnings do not silently remove cohort members.",
+  "time_system_conversion_policy": {
+    "source_system": "TBJD as recorded by BAIIW0001",
+    "native_authority": "TESS FITS TIME metadata (TIMESYS/BJDREF* and related headers) once the exact product is bound",
+    "rule": "Derive source-marker to native-time comparison only from explicit source/native metadata; do not guess BJD/BTJD offsets.",
+    "unresolved_policy": "SOURCE_TIME_MAPPING_UNRESOLVED"
+  },
+  "source_marker_to_cadence_policy": {
+    "start": "nearest native cadence",
+    "peak": "nearest native cadence independently",
+    "end": "nearest native cadence",
+    "window_bounds": "inclusive start/end",
+    "exact_distance_tie_breaker": "lowest original FITS row index",
+    "boundary_optimization_allowed": false,
+    "classification_reproduction_used_to_adjust_mapping": false
+  },
+  "required_product_manifest_fields": [
+    "phase3a_event_id",
+    "tic_id",
+    "sector",
+    "product_status",
+    "product_identifier",
+    "product_uri_or_archive_key",
+    "physical_filename",
+    "physical_sha256",
+    "size_bytes",
+    "fits_checksum_status",
+    "fits_datasum_status",
+    "time_column_present",
+    "sap_flux_present",
+    "pdcsap_flux_present",
+    "quality_present",
+    "n_rows",
+    "median_cadence_s",
+    "source_start_index",
+    "source_peak_index",
+    "source_end_index",
+    "start_mapping_residual_s",
+    "peak_mapping_residual_s",
+    "end_mapping_residual_s",
+    "time_mapping_status"
+  ],
+  "scientific_boundaries": {
+    "policy_frozen_before_fits_access": true,
+    "afino_execution_authorized": false,
+    "candidate_discovery_authorized": false
+  }
+}

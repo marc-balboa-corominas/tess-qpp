@@ -1,0 +1,36 @@
+artifact_id,table_name,column_order,column_name,inferred_type
+SRC_FLARES,Flare_detections.csv,1,TIC_ID,integer
+SRC_FLARES,Flare_detections.csv,2,T_eff (K),decimal
+SRC_FLARES,Flare_detections.csv,3,Start_time (TBJD),decimal
+SRC_FLARES,Flare_detections.csv,4,End_time (TBJD),decimal
+SRC_FLARES,Flare_detections.csv,5,Peak_time (TBJD),decimal
+SRC_FLARES,Flare_detections.csv,6,Amplitude,decimal
+SRC_FLARES,Flare_detections.csv,7,Duration (days),decimal
+SRC_FLARES,Flare_detections.csv,8,Flare_energy (erg),decimal
+SRC_FLARES,Flare_detections.csv,9,ED (s),decimal
+SRC_QPPS,QPP_detections.csv,1,TIC_ID,integer
+SRC_QPPS,QPP_detections.csv,2,Start_Time (TBJD),decimal
+SRC_QPPS,QPP_detections.csv,3,End_Time (TBJD),decimal
+SRC_QPPS,QPP_detections.csv,4,Tau,integer
+SRC_QPPS,QPP_detections.csv,5,Time_Extension (days),decimal
+SRC_QPPS,QPP_detections.csv,6,Best_Model_BIC,decimal
+SRC_QPPS,QPP_detections.csv,7,Power_Law_Index,decimal
+SRC_QPPS,QPP_detections.csv,8,rchi2_M0,decimal
+SRC_QPPS,QPP_detections.csv,9,rchi2_M1,decimal
+SRC_QPPS,QPP_detections.csv,10,rchi2_M2,decimal
+SRC_QPPS,QPP_detections.csv,11,Period (s),decimal
+SRC_QPPS,QPP_detections.csv,12,Err_P,decimal
+SRC_QPPS,QPP_detections.csv,13,Error_P (s),decimal
+SRC_QPPS,QPP_detections.csv,14,BIC_M2_M1,decimal
+SRC_QPPS,QPP_detections.csv,15,BIC_M0_M1,decimal
+SRC_QPPS,QPP_detections.csv,16,T_eff (K),decimal
+SRC_QPPS,QPP_detections.csv,17,Amplitude,decimal
+SRC_QPPS,QPP_detections.csv,18,Flare_energy (erg),decimal
+SRC_QPPS,QPP_detections.csv,19,ED (s),decimal
+SRC_QPPS,QPP_detections.csv,20,Duration (days),decimal
+SRC_QPPS,QPP_detections.csv,21,Duration (mins),decimal
+SRC_QPPS,QPP_detections.csv,22,Prot (d),decimal
+TESS_SECTOR_SCHEDULE,TESS_FFI_observation_times.csv,1,Sector,string
+TESS_SECTOR_SCHEDULE,TESS_FFI_observation_times.csv,2,Orbit,integer
+TESS_SECTOR_SCHEDULE,TESS_FFI_observation_times.csv,3,Start Time,string
+TESS_SECTOR_SCHEDULE,TESS_FFI_observation_times.csv,4,End Time,string
