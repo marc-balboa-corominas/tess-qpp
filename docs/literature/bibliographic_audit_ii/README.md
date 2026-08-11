@@ -1,6 +1,6 @@
 # Bibliographic Audit II
 
-**STATUS:** `DEDUPLICATION AND SCREENING FROZEN — STRUCTURED EXTRACTION NOT STARTED`
+**STATUS:** `STRUCTURED EXTRACTION AND OVERLAP ASSESSMENT FROZEN — FINAL SYNTHESIS/GATE NOT STARTED`
 
 Bibliographic Audit II is the literature gate between the frozen F0–F2 foundation and the future freeze of F3A. BAII.1 v1.0.0 froze the prospective search and screening design. BAII.1 v1.1.0 is a narrow technical amendment created after incomplete BAII.2 retrieval attempts exposed a SciX parser incompatibility in the exact `date` timestamp syntax. The scientific query semantics and screening design remain unchanged.
 
@@ -39,7 +39,8 @@ BAII.5 synthesis + F3A gate decision
 - F3A or F3B modified: **no**
 - Candidate discovery authorized: **no**
 - Scientific results computed: **no**
-- Design-impact or novelty verdicts authorized: **no**
+- BAII.4 prospective design-impact assessment: **complete and frozen**
+- Novelty assessment or final F3A gate authorized: **no**
 
 The directory already contained `AUDIT_MATRIX.csv` and `SEED_SOURCES.csv` before BAII.1. They remain unchanged. `SEED_SOURCES.csv` is pre-existing seed/context material, not a systematically retrieved or screened BAII corpus. `AUDIT_MATRIX.csv` is a legacy empty template and is not the normative BAII.1 screening schema; future BAII screening uses `screening_schema.csv`.
 
@@ -76,4 +77,25 @@ BAII.3 resolves the 322 raw hits into **190 unique intellectual works** and **28
 
 Final screening at work level yields **40 `INCLUDE_FOR_BAII4`**, **33 `BACKGROUND_ONLY`**, **117 `EXCLUDE`**, and **0 access-limited unresolved decisions**. `SEED_SOURCES.csv` remains outside the systematic denominator; four seeds (S005–S008) also occur independently in the systematic corpus.
 
-BAII.3 does not assign `relevance_labels`, F3A/F3B design impact, Manuscript 1 positioning impact, or novelty. Detailed structured extraction has not started. BAII.4 is the first task permitted to extract detailed methods/results and assess observational or methodological overlap.
+BAII.3 did not assign `relevance_labels`, F3A/F3B design impact, Manuscript 1 positioning impact, or novelty. BAII.4 subsequently extracted the 40 included works and froze descriptive overlap plus prospective impact annotations against the pre-frozen F3 comparison reference. Novelty remains unassessed and the final F3A gate remains reserved for BAII.5.
+
+
+## BAII.4 structured extraction and overlap freeze
+
+Before systematic extraction, the documentary F3 comparison target was frozen in
+`extraction/f3_overlap_reference.json` (SHA-256
+`1b6be4a17d23457d3164b23c4b16557467e84ae44bbb35df57064b7c9566639e`) and committed at
+`9ae33ce9458ceb826e1efbea31a4f96843334f5d`.
+
+BAII.4 extracted **40/40** included works, retaining **160 extraction-evidence rows**, **40
+work-level overlap assessments**, **62 dimensional overlap-evidence rows**, and **40 source-access
+records**. No work is blocked. Five work records retain explicitly documented source-access
+limitations and unresolved detail is encoded as `NOT_REPORTED`.
+
+Descriptive overlap is **2 DIRECT / 36 PARTIAL / 2 CONTEXT_ONLY** for F3A and **7 DIRECT / 2
+PARTIAL / 31 CONTEXT_ONLY** for F3B. The impact rubric records **2 `F3A_REDRAFT_REQUIRED`**, **13
+`F3A_DESIGN_ADJUSTMENT_POSSIBLE`**, **9 `F3B_DESIGN_ADJUSTMENT_POSSIBLE`**, and **23
+`POSITIONING_ONLY`** assignments. These are prospective literature-gate annotations, not actual
+changes to F3A/F3B and not novelty or precedence claims.
+
+The final BAII.5 synthesis/gate decision has not started.

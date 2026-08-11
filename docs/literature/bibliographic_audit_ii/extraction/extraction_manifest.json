@@ -1,0 +1,117 @@
+{
+  "audit_id": "tess_qpp_bibliographic_audit_ii_v1",
+  "audit_version": "1.1.0",
+  "task": "BAII.4",
+  "extraction_status": "STRUCTURED_EXTRACTION_COMPLETE_WITH_DOCUMENTED_LIMITATIONS",
+  "design_tag": "bibliographic-audit-ii-design-v2",
+  "design_commit": "a53ea8c5935e686df1fe8680b9c36bdf5111d05e",
+  "corpus_tag": "bibliographic-audit-ii-corpus-v1",
+  "corpus_commit": "ed62e78bf5280b557e0565ebcf21d8441948946b",
+  "screening_tag": "bibliographic-audit-ii-screening-v1",
+  "screening_commit": "c5cd41bcc04bc0bafa4fc457d42e39cdee06a8d1",
+  "f3_reference_microfreeze_commit": "9ae33ce9458ceb826e1efbea31a4f96843334f5d",
+  "f3_reference_sha256": "1b6be4a17d23457d3164b23c4b16557467e84ae44bbb35df57064b7c9566639e",
+  "screening_work_count": 190,
+  "included_work_count": 40,
+  "extracted_work_count": 40,
+  "evidence_rows": 160,
+  "overlap_assessment_rows": 40,
+  "overlap_dimension_rows": 62,
+  "source_access_rows": 40,
+  "relevance_label_counts": {
+    "DIRECT_F3A_OVERLAP": 2,
+    "CATALOG_RELEVANT": 26,
+    "DETECTION_METHOD_RELEVANT": 17,
+    "ROBUSTNESS_RELEVANT": 10,
+    "PHYSICAL_CONTEXT": 6,
+    "DIRECT_F3B_OVERLAP": 7,
+    "SELECTION_FUNCTION_RELEVANT": 8
+  },
+  "f3a_overlap_counts": {
+    "PARTIAL": 36,
+    "DIRECT": 2,
+    "CONTEXT_ONLY": 2
+  },
+  "f3b_overlap_counts": {
+    "CONTEXT_ONLY": 31,
+    "DIRECT": 7,
+    "PARTIAL": 2
+  },
+  "f3a_impact_counts": {
+    "NO_DESIGN_IMPACT": 25,
+    "F3A_DESIGN_ADJUSTMENT_POSSIBLE": 13,
+    "F3A_REDRAFT_REQUIRED": 2
+  },
+  "f3b_impact_counts": {
+    "NO_DESIGN_IMPACT": 31,
+    "F3B_DESIGN_ADJUSTMENT_POSSIBLE": 9
+  },
+  "positioning_impact_counts": {
+    "POSITIONING_ONLY": 23,
+    "NO_DESIGN_IMPACT": 17
+  },
+  "comparator_candidate_count": 11,
+  "full_text_access_count": 3,
+  "abstract_only_extraction_count": 35,
+  "provider_metadata_or_table_extraction_count": 2,
+  "access_limitation_count": 5,
+  "blocked_work_count": 0,
+  "deferred_citation_candidate_count": 1,
+  "deferred_citation_candidates": [
+    {
+      "title": "Stellar Flare Study of nearby Young Moving Group Members with TESS Data",
+      "identifier": "arXiv:2602.20402",
+      "discovery_work_id": "BAIIW0182",
+      "reason": "Later related work located during source verification; it was not substituted for the frozen AAS 247 preferred version and is not added to the systematic denominator.",
+      "pre_2024_context_candidate": false,
+      "recent_missed_candidate": true
+    }
+  ],
+  "f3_reference_status": "FROZEN_FOR_BAII4_COMPARISON_ONLY",
+  "f3_reference_sources": [
+    {
+      "path": "workflows/phase3a/ENTRY_CONTRACT.md",
+      "sha256": "fed87a63b1afc8221d7be175648955141664195eba253ffb05cafe8071db760a"
+    },
+    {
+      "path": "workflows/phase3a/FROZEN_INPUTS.json",
+      "sha256": "57e2ac1ad9185fb6cba057723a2bf97199dbb4f24091a7cf03df560e8093eda7"
+    },
+    {
+      "path": "workflows/phase3a/README.md",
+      "sha256": "50cf38db3f1439afc75d7f08cfa8cc61e959e089df60a9caf3072304961e964a"
+    },
+    {
+      "path": "workflows/phase3b/README.md",
+      "sha256": "c6e1dee3c4a35cd37b032ff7bcc466f47d0b83db58b8b8d47c59bc1f8c947d14"
+    },
+    {
+      "path": "docs/decisions/DR-002-phase3-program-and-manuscript-sequencing.md",
+      "sha256": "95b677ea1ffd013abbc84c3c78ff2730dc481136702ddfdcd94adbcf1d391703"
+    },
+    {
+      "path": "foundation/f0-f2/phase2/fase2_tarea06_phase3_entry_requirements.csv",
+      "sha256": "b3155e16beed5917d3fdc3416eace0b5d97a55ea84a7b3d3a91c27eb6846e657"
+    }
+  ],
+  "source_evidence_levels": {
+    "ABSTRACT": 35,
+    "FULL_TEXT": 3,
+    "TABLE": 1,
+    "PROVIDER_METADATA": 1
+  },
+  "screening_modified": false,
+  "work_ids_modified": false,
+  "inclusion_decisions_modified": false,
+  "f0_f2_modified": false,
+  "f3a_modified": false,
+  "f3b_modified": false,
+  "candidate_discovery_authorized": false,
+  "novelty_assessed": false,
+  "final_f3a_gate_decision_made": false,
+  "notes": [
+    "Prospective impact categories are descriptive BAII.4 assessments and do not constitute modifications to F3A/F3B.",
+    "F3A_REDRAFT_REQUIRED is used only in the frozen rubric sense: material overlap requiring reconsideration before a future F3A freeze; it is not a novelty or precedence claim.",
+    "No included work was dropped because of source-access limitations; unresolved details remain explicitly NOT_REPORTED."
+  ]
+}
