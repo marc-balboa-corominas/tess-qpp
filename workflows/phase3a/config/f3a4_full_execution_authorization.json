@@ -1,0 +1,28 @@
+{
+  "authorization_status": "FULL_FROZEN_PLAN_EXECUTION_AUTHORIZED_WITHOUT_SCIENTIFIC_ANALYSIS",
+  "authorized_plan_path": "workflows/phase3a/evidence/tables/f3a2_exact_afino_plan.csv",
+  "authorized_plan_sha256": "d190a4f5e70339b05fd42b2d0cda9c51dd180c10e885c27fdfa43323c8dc1c6f",
+  "f3a2_commit": "6bf9beca8fa8016495693575f8c86a2dec5fecb1",
+  "f3a2_tag": "phase3a-execution-plan-v1",
+  "f3a3_runner_commit": "0738b1cc132598119dcbbc27b4113c93ae9d2733",
+  "f3a3_runner_tag": "phase3a-runner-v1",
+  "runner_sha256": "0de4b1b3745e7c7b237ff82680dd8f6cb8e2bf1288c58fd07d1624ca034558db",
+  "planned_decisions": 7466,
+  "planned_model_jobs": 22398,
+  "validated_canary_jobs": 102,
+  "remaining_new_jobs": 22296,
+  "canary_checkpoint_sha256": "9781b13889d2a66e33be973f555b081f5d4de6d97c155a73fd93f5118d2073ca",
+  "reuse_validated_canary_results": true,
+  "rerun_canary_jobs": false,
+  "scientific_analysis_authorized": false,
+  "baseline_reference_comparison_authorized": false,
+  "candidate_discovery_authorized": false,
+  "execution_root_policy": {
+    "mode": "DETACHED_SHADOW_WORKTREE_FOR_BYTE_EXACT_F3A3_RUNNER_HEAD_GUARD",
+    "execution_root_commit": "b66764db49f7b823f6d7e3e21ce0da66476479bd",
+    "reason": "The byte-exact F3A.3 runner validates repo-root HEAD against the frozen canary-plan commit. F3A.4 governance requires the authorization commit to exist first on main. A detached shadow worktree satisfies the frozen runner guard without modifying the runner or historical scientific inputs.",
+    "runner_bytes_source": "workflows/phase3a/scripts/run_afino_checkpointed.py from phase3a-runner-v1",
+    "checkpoint_location": "runtime/phase3a/f3a4/full_checkpoint.sqlite in the main repository",
+    "results_location": "workflows/phase3a/evidence/tables/f3a4_full_results.csv in the main repository"
+  }
+}
