@@ -44,3 +44,29 @@ def test_analyzer_has_no_forbidden_binary_open_contract():
  src=P.read_text(encoding='utf-8').lower();assert '.npy' not in src;assert 'sqlite3' not in src;assert '.fits' not in src
 def test_required_outputs_contract():
  c=json.loads((REPO/A.CONTRACT_REL).read_text(encoding='utf-8'));assert c['required_outputs']=={'baseline_rows':122,'outcome_matrix_rows':9516,'event_summaries':122,'cell_role_summaries':156,'window_role_summaries':26,'profile_role_summaries':12,'optimizer_summaries':116,'seed_model_diagnostics':3,'figures':4}
+
+
+def test_audit_categories_include_explicit_zero_keys_contract():
+ import inspect
+ src=inspect.getsource(A.main)
+ for key in ('SELECTED_RETAINED','SELECTION_LOST','NOT_SELECTED_RETAINED','SELECTION_GAINED'):
+  assert key in src
+
+def test_baseline_gate_state_vocabulary_contract():
+ import inspect
+ src=inspect.getsource(A.main)
+ for key in ('REFERENCE_CONCORDANT','REFERENCE_BASELINE_MISMATCH','INPUT_INADMISSIBLE','INCOMPLETE_NUMERICAL'):
+  assert key in src
+
+def test_inadmissibility_vocabulary_contract():
+ import inspect
+ src=inspect.getsource(A.main)
+ for key in ('IRREGULAR_SAMPLING','TOO_FEW_CADENCES','PEAK_REMOVED_BY_QUALITY','PEAK_OUTSIDE_WINDOW','WINDOW_OUT_OF_RANGE'):
+  assert key in src
+
+def test_validator_requires_exact_generated_artifact_sets():
+ src=(REPO/'workflows/phase3a/scripts/validate_catalogue_robustness.py').read_text(encoding='utf-8')
+ assert 'checksum_registry_exact_members' in src
+ assert 'all_78_cells_both_roles' in src
+ assert 'period_selected_selected_complete' in src
+ assert 'audit_all_four_transitions' in src
