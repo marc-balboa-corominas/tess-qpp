@@ -1,6 +1,6 @@
 # DR-005 — Phase 3A closure and F3B entry
 
-**Status:** Accepted  
+**Status:** Accepted
 **Date:** 2026-08-13
 
 ## Decision

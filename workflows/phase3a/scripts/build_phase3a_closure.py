@@ -331,7 +331,7 @@ def build(repo: Path, verify_git: bool=True):
         "Known-ground-truth injection–recovery with frozen development/held-out separation is therefore required in F3B."
       ]
     }
-    (closure/"f3a6_phase3a_decision.json").write_text(json.dumps(decision,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    (closure/"f3a6_phase3a_decision.json").write_text(json.dumps(decision,ensure_ascii=False,indent=2)+"\n",encoding="utf-8",newline="\n")
 
     report = """# F3A.6 — Phase 3A synthesis and closure
 
@@ -444,7 +444,7 @@ development/held-out separation, and validation architecture.
 
     dr=f"""# DR-005 — Phase 3A closure and F3B entry
 
-**Status:** Accepted  
+**Status:** Accepted
 **Date:** 2026-08-13
 
 ## Decision
@@ -564,7 +564,7 @@ architecture before generating a single injection.
       },
       "report_word_count":wc
     }
-    (closure/"f3a6_closure_audit.json").write_text(json.dumps(audit,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    (closure/"f3a6_closure_audit.json").write_text(json.dumps(audit,ensure_ascii=False,indent=2)+"\n",encoding="utf-8",newline="\n")
 
     # SHA256SUMS covers all closure files except itself.
     sums=closure/"SHA256SUMS.txt"
