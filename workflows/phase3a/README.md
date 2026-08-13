@@ -4,7 +4,8 @@ Catalogue-scale observational robustness analysis.
 
 ## STATUS
 
-`COHORT AND EXACT EXECUTION PLAN MATERIALIZED/AUDITED — AFINO NOT STARTED`
+CATALOGUE-SCALE ROBUSTNESS CHARACTERIZED —
+PHASE 3A CLOSURE NOT STARTED
 
 Phase 3A remains a prospectively defined catalogue-scale stress test of independently defined
 observational QPP reference classifications under frozen temporal-window, processing,

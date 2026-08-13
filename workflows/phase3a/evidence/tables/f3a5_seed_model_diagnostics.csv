@@ -1,0 +1,4 @@
+model_id,calls,warning_calls,warning_count,bound_calls,convergence_status_counts,unique_parameter_payload_summary
+M0,1160,0,0,196,"{""NOT_AUDITABLE"":1160}","{""n"":116,""min"":10.0,""q1"":10.0,""median"":10.0,""q3"":10.0,""max"":10.0}"
+M1,1160,0,0,660,"{""NOT_AUDITABLE"":1160}","{""n"":116,""min"":10.0,""q1"":10.0,""median"":10.0,""q3"":10.0,""max"":10.0}"
+M2,1160,623,5709,910,"{""NOT_AUDITABLE"":1160}","{""n"":116,""min"":10.0,""q1"":10.0,""median"":10.0,""q3"":10.0,""max"":10.0}"

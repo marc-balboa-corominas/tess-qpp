@@ -1,0 +1,87 @@
+{
+  "analysis_status": "PHASE3A_CATALOGUE_ROBUSTNESS_CHARACTERIZED_WITH_LIMITATIONS",
+  "baseline_gate_counts": {
+    "REFERENCE_CONCORDANT": 65,
+    "REFERENCE_BASELINE_MISMATCH": 51,
+    "INPUT_INADMISSIBLE": 6,
+    "INCOMPLETE_NUMERICAL": 0
+  },
+  "baseline_gate_denominator": 122,
+  "transition_counts": {
+    "SELECTED_RETAINED": 295,
+    "SELECTION_LOST": 171,
+    "NOT_SELECTED_RETAINED": 3178,
+    "SELECTION_GAINED": 0
+  },
+  "transition_denominator": 3644,
+  "inadmissibility_counts": {
+    "IRREGULAR_SAMPLING": 1824,
+    "TOO_FEW_CADENCES": 844,
+    "PEAK_REMOVED_BY_QUALITY": 282,
+    "PEAK_OUTSIDE_WINDOW": 138,
+    "WINDOW_OUT_OF_RANGE": 6
+  },
+  "inadmissibility_denominator": 9516,
+  "period_comparable_rows": 295,
+  "seed_discordant_events": 0,
+  "seed_stable_events": 116,
+  "numerical_diagnostics": {
+    "M0": {
+      "model_id": "M0",
+      "calls": 1160,
+      "warning_calls": 0,
+      "warning_count": 0,
+      "bound_calls": 196,
+      "convergence_status_counts": "{\"NOT_AUDITABLE\":1160}",
+      "unique_parameter_payload_summary": "{\"n\":116,\"min\":10.0,\"q1\":10.0,\"median\":10.0,\"q3\":10.0,\"max\":10.0}"
+    },
+    "M1": {
+      "model_id": "M1",
+      "calls": 1160,
+      "warning_calls": 0,
+      "warning_count": 0,
+      "bound_calls": 660,
+      "convergence_status_counts": "{\"NOT_AUDITABLE\":1160}",
+      "unique_parameter_payload_summary": "{\"n\":116,\"min\":10.0,\"q1\":10.0,\"median\":10.0,\"q3\":10.0,\"max\":10.0}"
+    },
+    "M2": {
+      "model_id": "M2",
+      "calls": 1160,
+      "warning_calls": 623,
+      "warning_count": 5709,
+      "bound_calls": 910,
+      "convergence_status_counts": "{\"NOT_AUDITABLE\":1160}",
+      "unique_parameter_payload_summary": "{\"n\":116,\"min\":10.0,\"q1\":10.0,\"median\":10.0,\"q3\":10.0,\"max\":10.0}"
+    }
+  },
+  "counts": {
+    "cohort_rows": 122,
+    "primary_planned_rows": 9516,
+    "primary_eligible_source_rows": 6422,
+    "primary_inadmissible_source_rows": 3094,
+    "baseline_rows": 122,
+    "baseline_input_eligible": 116,
+    "outcome_matrix_rows": 9516,
+    "event_summaries": 122,
+    "cell_role_summaries": 156,
+    "window_role_summaries": 26,
+    "profile_role_summaries": 12,
+    "optimizer_summaries": 116,
+    "stability_decisions": 1160
+  },
+  "scientific_boundaries": {
+    "new_afino_execution": false,
+    "fits_opened": false,
+    "payload_npy_opened": false,
+    "sqlite_opened": false,
+    "variants_regenerated": false,
+    "new_threshold_added": false,
+    "formal_hypothesis_test_performed": false,
+    "observational_ground_truth_established": false,
+    "sensitivity_computed": false,
+    "specificity_computed": false,
+    "observational_fpr_computed": false,
+    "candidate_discovery_authorized": false
+  },
+  "report_word_count": 1416
+}
