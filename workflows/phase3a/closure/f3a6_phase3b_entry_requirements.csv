@@ -1,0 +1,19 @@
+requirement_id,requirement_category,requirement,evidence_basis,blocking_for_f3b_validation,must_freeze_before_execution,prohibited_shortcut,status
+F3BR001,GROUND_TRUTH,Use known synthetic ground truth for classification validation.,F3A016;F3A017;L3A001,true,true,Treat published observational labels as physical truth.,OPEN_FOR_F3B_DESIGN
+F3BR002,SIMULATION_REALISM,Freeze realistic flare/background/noise generation assumptions.,L3A016;L3A020,true,true,Tune generators after held-out results.,OPEN_FOR_F3B_DESIGN
+F3BR003,INJECTION_DOMAIN,Predefine injection–recovery parameter domain and sampling.,F3A018;L3A010,true,true,Choose domain after seeing validation outcomes.,OPEN_FOR_F3B_DESIGN
+F3BR004,DATA_SPLIT,Freeze a development dataset before rule development.,F3A018;E3A026,true,true,Use held-out examples during development.,OPEN_FOR_F3B_DESIGN
+F3BR005,DATA_SPLIT,Freeze an independent held-out dataset separately.,F3A018;E3A026,true,true,Reuse development data as confirmation.,OPEN_FOR_F3B_DESIGN
+F3BR006,DATA_SPLIT,Enforce development/held-out separation operationally.,F3A018;E3A026,true,true,Manual informal separation without audit.,OPEN_FOR_F3B_DESIGN
+F3BR007,RULE_FREEZE,Freeze the final classification/correction rule before held-out access.,F3A018;L3A010,true,true,Post-hoc threshold or rule adjustment on held-out data.,OPEN_FOR_F3B_DESIGN
+F3BR008,METRICS,Define classification metrics prospectively under known ground truth.,F3A016,true,true,Back-calculate metrics from observational reference roles.,OPEN_FOR_F3B_DESIGN
+F3BR009,SELECTION_FUNCTION,Define prospective selection-function characterization.,F3A018;L3A007,true,true,Infer selection function from F3A repeated observational perturbations.,OPEN_FOR_F3B_DESIGN
+F3BR010,PERIOD,Separate period-recovery metrics from classification metrics.,F3A012;L3A015,true,true,Use formal M1 centers from non-selected cases as recovered periods.,OPEN_FOR_F3B_DESIGN
+F3BR011,BASELINE,Retain frozen AFINO 0.5 as the baseline comparator.,L3A017,true,true,Silently change baseline implementation.,OPEN_FOR_F3B_DESIGN
+F3BR012,COMPARATORS,Resolve BAII-deferred comparator decisions before execution.,L3A018,true,true,Add comparators after observing F3B outcomes.,OPEN_FOR_F3B_DESIGN
+F3BR013,ADMISSIBILITY,Represent F3A inadmissibility/gap regimes where scientifically relevant.,L3A003;L3A007,false,true,Ignore structural input regimes revealed by F3A.,OPEN_FOR_F3B_DESIGN
+F3BR014,LABEL_POLICY,Do not use published observational labels as physical truth.,F3A004;F3A005;F3A017;L3A001,true,true,Treat PUBLISHED_QPP_REFERENCE as positive ground truth.,OPEN_FOR_F3B_DESIGN
+F3BR015,INDEPENDENCE,Do not reuse F2/F3A observational events as independent held-out validation.,E3A026;L3A019,true,true,Validate a new rule on the same events that motivated it.,OPEN_FOR_F3B_DESIGN
+F3BR016,NUMERICAL_STABILITY,Retain numerical stability as a separate evidence plane.,F3A009;F3A010;F3A011,false,true,Collapse seed/numerical behavior into classification accuracy.,OPEN_FOR_F3B_DESIGN
+F3BR017,DISCOVERY_SCOPE,Keep candidate discovery outside the initial F3B validation scope.,E3A027;L3A022,false,true,Search new observational candidates before validation architecture is frozen.,OPEN_FOR_F3B_DESIGN
+F3BR018,SUCCESS_CRITERIA,Freeze F3B success/failure and promotion criteria before execution.,F3A018;E3A026,true,true,Declare success after inspecting held-out performance.,OPEN_FOR_F3B_DESIGN

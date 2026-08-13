@@ -1,0 +1,84 @@
+{
+  "validation_status": "PHASE3A_CLOSURE_VALIDATION_PASS",
+  "phase3a_decision": "PHASE3A_COMPLETE_PROCEED_TO_F3B_WITH_LIMITATIONS",
+  "f2_source_bindings_verified": true,
+  "f3a5_source_bindings_verified": true,
+  "comparison_dimensions": 11,
+  "evidence_planes": [
+    "OBSERVATIONAL_REFERENCE_REPRODUCTION",
+    "INPUT_ADMISSIBILITY",
+    "CLASSIFICATION_ROBUSTNESS",
+    "NUMERICAL_STABILITY",
+    "PERIOD_ROBUSTNESS",
+    "F2_TO_F3A_COMPARISON",
+    "INTERPRETATION_LIMITS"
+  ],
+  "evidence_rows": 27,
+  "claim_matrix_rows": 23,
+  "all_claims_evidence_mapped": true,
+  "unsupported_positive_claims": 0,
+  "limitations": 22,
+  "f3b_entry_requirements": 18,
+  "frozen_counts": {
+    "f2_events": 10,
+    "f2_pairs": 5,
+    "f2_primary_variants": 780,
+    "f2_eligible": 514,
+    "f2_inadmissible": 266,
+    "f3a_events": 122,
+    "qpp_reference_events": 61,
+    "not_selected_reference_events": 61,
+    "baseline_gate": {
+      "concordant": 65,
+      "mismatch": 51,
+      "inadmissible": 6
+    },
+    "qpp_role": {
+      "concordant": 8,
+      "mismatch": 51,
+      "inadmissible": 2
+    },
+    "not_selected_role": {
+      "concordant": 57,
+      "mismatch": 0,
+      "inadmissible": 4
+    },
+    "f3a_primary_variants": 9516,
+    "f3a_eligible": 6422,
+    "f3a_inadmissible": 3094,
+    "transitions": {
+      "selected_retained": 295,
+      "selection_lost": 171,
+      "not_selected_retained": 3178,
+      "selection_gained": 0
+    },
+    "optimizer_events": 116,
+    "optimizer_seed_decisions": 1160,
+    "seed_discordant": 0,
+    "period_comparable": 295
+  },
+  "qpp_baseline_mismatches_preserved": 51,
+  "baseline_mismatches_recoded": 0,
+  "events_removed": 0,
+  "f2_denominator_unchanged": true,
+  "f3a_denominator_unchanged": true,
+  "scientific_boundaries": {
+    "new_afino_execution": false,
+    "fits_opened": false,
+    "payload_npy_opened": false,
+    "sqlite_opened": false,
+    "new_scientific_statistics_computed": false,
+    "frozen_evidence_reconstruction_only": true,
+    "new_figures_generated": false,
+    "new_threshold_added": false,
+    "formal_hypothesis_test_performed": false,
+    "f0_f2_modified": false,
+    "baii_modified": false,
+    "f3a1_f3a5_modified": false,
+    "f3b_modified": false,
+    "observational_ground_truth_established": false,
+    "candidate_discovery_authorized": false,
+    "manuscript1_full_draft_started": false
+  },
+  "report_word_count": 1824
+}

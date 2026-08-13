@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "phase": "F3A.6",
+  "purpose": "Freeze exact F2 and F3A.5 documentary sources before Phase-3A synthesis and closure.",
+  "f2_provenance": {
+    "historical_import_commit": "28c97e220ebdd74d05fd76ad9527fe7d11c686ca",
+    "historical_import_subject": "archive: import Phase 2 documentary foundation",
+    "checksum_registry_available": false,
+    "provenance_method": "Git history plus repository-relative path and SHA-256, with a later immutable tag that contains byte-exact copies.",
+    "byte_exact_witness_tag": "phase3a-design-v1",
+    "byte_exact_witness_tag_commit": "6f7d4b03a16dbf4d4fa44dec0f67bd06ec5b9d85",
+    "retrospective_rewrite_allowed": false
+  },
+  "f3a5_freeze": {
+    "commit": "06a1785d5a45453911044f19590d78f9a0fdad5f",
+    "tag": "phase3a-robustness-v1"
+  },
+  "sources": [
+    {
+      "source_id": "F2SRC001",
+      "phase": "F2.5",
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea05_observational_robustness_audit.json",
+      "sha256": "be80d4bcb56199624787bc49ad15a59648cc541d44907c975229967ef74ca3d1",
+      "scientific_role": "Machine-readable Phase-2 observational robustness characterization.",
+      "authoritative_for": "F2 cohort size, admissibility, baseline verification, global transition counts, optimizer stability, conditional period robustness, interpretation boundaries.",
+      "not_authoritative_for": "Catalogue-scale F3A denominators, physical QPP truth, observational sensitivity/specificity/FPR."
+    },
+    {
+      "source_id": "F2SRC002",
+      "phase": "F2.5",
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea05_observational_robustness_report.md",
+      "sha256": "0b9b2451be1fbe46418ad810591d6c54c8ddf6a2cb93e2b67dfd65196dc530aa",
+      "scientific_role": "Narrative Phase-2 robustness interpretation.",
+      "authoritative_for": "Permitted qualitative interpretation of F2 robustness, repeated-measures scope, stable-classification versus numerical-uniqueness distinction.",
+      "not_authoritative_for": "New statistics, physical validation, correction/selection-function claims."
+    },
+    {
+      "source_id": "F2SRC003",
+      "phase": "F2.6",
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea06_phase2_evidence_ledger.csv",
+      "sha256": "eb6eb383839d5360ad9b843d61b682a808f49c6f5932bea1c30d0c47a4aaa225",
+      "scientific_role": "Phase-2 evidence ledger.",
+      "authoritative_for": "F2 factual claim-to-source mapping and explicit allowed/prohibited interpretations.",
+      "not_authoritative_for": "F3A catalogue-scale results not yet available in Phase 2."
+    },
+    {
+      "source_id": "F2SRC004",
+      "phase": "F2.6",
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea06_manuscript_claim_matrix.csv",
+      "sha256": "070c7cb4eb85345c6222ecc476d527007abdfff940d80b2fd3a1b009286e57b0",
+      "scientific_role": "Phase-2 manuscript claim matrix.",
+      "authoritative_for": "Historical status of F2 robustness, validation, ground-truth, optimizer and correction claims.",
+      "not_authoritative_for": "Any upgrade of a previously prohibited claim without new frozen evidence."
+    },
+    {
+      "source_id": "F2SRC005",
+      "phase": "F2.6",
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea06_phase2_limitations_register.csv",
+      "sha256": "5379501c84162ff18b4c1dfc7d576e9051a214c885a2ab0ce10faf684d67c07a",
+      "scientific_role": "Phase-2 limitations register.",
+      "authoritative_for": "Historical F2 limitations and remaining requirements.",
+      "not_authoritative_for": "Resolution of limitations not explicitly addressed by later frozen evidence."
+    },
+    {
+      "source_id": "F2SRC006",
+      "phase": "F2.6",
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea06_phase2_decision.json",
+      "sha256": "6ac1962077833b08d979b715a52a75a99b1d3a169430ca7abc46d17926eb3ab2",
+      "scientific_role": "Formal Phase-2 decision.",
+      "authoritative_for": "F2 closure status, manuscript viability, correction/held-out requirement, prohibited Phase-2 conclusions.",
+      "not_authoritative_for": "Formal Phase-3A closure before F3A evidence exists."
+    },
+    {
+      "source_id": "F2SRC007",
+      "phase": "F2.6",
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea06_phase2_synthesis_report.md",
+      "sha256": "b2c693c40fd8d29227e4d03837e1901e488624b1dc60d87ca8b5b5461a93303e",
+      "scientific_role": "Phase-2 synthesis report.",
+      "authoritative_for": "Integrated F2 methodological interpretation and Route-A/Route-B separation.",
+      "not_authoritative_for": "Pooling F2 with F3A or claiming later catalogue-scale validation."
+    },
+    {
+      "source_id": "F3A5SRC001",
+      "phase": "F3A.5",
+      "repository_relative_path": "workflows/phase3a/evidence/tables/f3a5_reference_baseline_audit.csv",
+      "sha256": "86958544bd2f8246c79a7b0a75abd1aaf55d6ca2b044c65fa5c34725c2eed2bc",
+      "scientific_role": "Catalogue-scale baseline reproduction gate.",
+      "authoritative_for": "122-event baseline gate and role-specific concordant/mismatch/inadmissible counts.",
+      "not_authoritative_for": "Physical truth or cause of baseline mismatch."
+    },
+    {
+      "source_id": "F3A5SRC002",
+      "phase": "F3A.5",
+      "repository_relative_path": "workflows/phase3a/evidence/tables/f3a5_primary_outcome_matrix.csv",
+      "sha256": "950547b4c97b871d8a6015ffaef6a8931252b4fd34d75b3ad00a7c69d85e0526",
+      "scientific_role": "Complete 9,516-row primary outcome matrix.",
+      "authoritative_for": "Primary planned/elegible/inadmissible rows and baseline-conditioned transition counts.",
+      "not_authoritative_for": "Independent-event inference, physical accuracy, sensitivity, specificity or FPR."
+    },
+    {
+      "source_id": "F3A5SRC003",
+      "phase": "F3A.5",
+      "repository_relative_path": "workflows/phase3a/evidence/tables/f3a5_event_summary.csv",
+      "sha256": "4372186edd60a63fb7ed8662b4ef6f45bdf4bfd898b5572efd0b2b76acd89da2",
+      "scientific_role": "Per-event catalogue-scale robustness summary.",
+      "authoritative_for": "Event-level repeated-measures denominators and transitions.",
+      "not_authoritative_for": "Binary robust/not-robust event labels."
+    },
+    {
+      "source_id": "F3A5SRC004",
+      "phase": "F3A.5",
+      "repository_relative_path": "workflows/phase3a/evidence/tables/f3a5_optimizer_stability.csv",
+      "sha256": "2f1286e6697b87a7de6ec63c4237f40a4943e3dcb6ad256be1e06cd1a3ee3767",
+      "scientific_role": "W00/P00 optimizer-seed stability summary.",
+      "authoritative_for": "116-event seed stability, 1,160 decisions, parameter-payload multiplicity.",
+      "not_authoritative_for": "Unique optimum or audited convergence."
+    },
+    {
+      "source_id": "F3A5SRC005",
+      "phase": "F3A.5",
+      "repository_relative_path": "workflows/phase3a/evidence/tables/f3a5_period_robustness.csv",
+      "sha256": "b231bab71060bbc4b444a62beafaeb29798e766ba4a09baca14f5a42712dd5f3",
+      "scientific_role": "Selected-to-selected conditional period robustness.",
+      "authoritative_for": "295 comparable selected-selected period rows.",
+      "not_authoritative_for": "True physical period or period robustness for lost/inadmissible classifications."
+    },
+    {
+      "source_id": "F3A5SRC006",
+      "phase": "F3A.5",
+      "repository_relative_path": "workflows/phase3a/evidence/reports/f3a5_robustness_audit.json",
+      "sha256": "fd5be4f38e656ed9bcac7c1974e15a40baac2666404880d792e1b89120b847f2",
+      "scientific_role": "Machine-readable F3A.5 robustness audit.",
+      "authoritative_for": "Validated catalogue-scale counts, numerical diagnostics and scientific-boundary flags.",
+      "not_authoritative_for": "Ground truth, formal inferential claims or candidate discovery."
+    },
+    {
+      "source_id": "F3A5SRC007",
+      "phase": "F3A.5",
+      "repository_relative_path": "workflows/phase3a/evidence/reports/f3a5_robustness_report.md",
+      "sha256": "7cb76a82b739546a3a61a71ef0ff7299d77d16b0d7292312e095fe8327394a3f",
+      "scientific_role": "Narrative F3A.5 robustness report.",
+      "authoritative_for": "Permitted catalogue-scale interpretation and limitations.",
+      "not_authoritative_for": "Any new metric or threshold absent from frozen F3A.5."
+    }
+  ],
+  "scientific_boundaries": {
+    "new_scientific_statistics_computed": false,
+    "new_afino_execution": false,
+    "fits_opened": false,
+    "payload_npy_opened": false,
+    "sqlite_opened": false,
+    "new_figures_generated": false,
+    "new_threshold_added": false,
+    "formal_hypothesis_test_performed": false,
+    "candidate_discovery_authorized": false
+  }
+}

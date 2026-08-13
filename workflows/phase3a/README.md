@@ -4,8 +4,9 @@ Catalogue-scale observational robustness analysis.
 
 ## STATUS
 
-CATALOGUE-SCALE ROBUSTNESS CHARACTERIZED —
-PHASE 3A CLOSURE NOT STARTED
+PHASE 3A CLOSED —
+CATALOGUE-SCALE ROBUSTNESS CHARACTERIZED WITH LIMITATIONS
+F3B NOT STARTED
 
 Phase 3A remains a prospectively defined catalogue-scale stress test of independently defined
 observational QPP reference classifications under frozen temporal-window, processing,
