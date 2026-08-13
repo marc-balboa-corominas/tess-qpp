@@ -1,0 +1,119 @@
+{
+  "contract_id": "PHASE3A_F3A5_CATALOGUE_ROBUSTNESS_ANALYSIS_V1",
+  "status": "FROZEN_BEFORE_CATALOGUE_SUMMARIES",
+  "input_freeze": {
+    "tag": "phase3a-full-execution-v1",
+    "commit": "27628ee48e8a2195dea354ee8135762dccfbcfb0"
+  },
+  "normative_inputs": {
+    "workflows/phase3a/design/outcomes_denominators.json": "59b5513c763e6fba0859ddd139ca9c746374b75c0682dfa8e6c474ed47d3234c",
+    "workflows/phase3a/design/reference_label_policy.json": "e139db5e335eb6ae059a25166e08918c9fa5f7ae2d9a7f6d406ef5c52e2412f0",
+    "workflows/phase3a/design/robustness_matrix.csv": "2412c686b91a287361865347f8159fb48fabae809eee783222dbbc190f0d3590",
+    "workflows/phase3a/design/numerical_stability_protocol.json": "c7869210a9d7d75532d285349a39f62be108e72acb53dd4143e2e4891b66686a",
+    "workflows/phase3a/evidence/tables/f3a2_cohort_manifest.csv": "03c2ecd52abe0a9b78897aae4c4238160eb0b0d051c8ccc1139913b604c813e8",
+    "workflows/phase3a/evidence/tables/f3a2_primary_variant_manifest.csv": "fc60d846bd1328692f90cd31dea91f7f16aff88b4917ff13579907b88ce88467",
+    "workflows/phase3a/evidence/tables/f3a2_resolved_decision_grid.csv": "6d2292070332a5ca68ccd2c2d9a0673ec56657d6185845adf8dbc316d12557de",
+    "workflows/phase3a/evidence/tables/f3a4_full_results.csv": "de1c7fe48a799ee802b7975464f802cc7dea3e14f353e9b16fa02fc0023d59a8",
+    "workflows/phase3a/evidence/tables/f3a4_full_decisions.csv": "8d54818943ced4ddd7ec507ea11fa12c9125ef507daa1adbe0dc42dce98d33d1",
+    "workflows/phase3a/evidence/tables/f3a4_temporal_contract_diagnostic.csv": "93c181e1782450baa7772932cba167242c3e0dbd85518260b7f32885a86b2e8e"
+  },
+  "planned_counts": {
+    "events": 122,
+    "primary_variants": 9516,
+    "primary_eligible": 6422,
+    "primary_inadmissible": 3094,
+    "baseline_input_eligible": 116,
+    "stability_events": 116,
+    "stability_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "stability_decisions": 1160
+  },
+  "baseline": {
+    "window_variant_id": "W00",
+    "processing_profile_id": "P00",
+    "external_optimizer_seed": 0,
+    "states": [
+      "REFERENCE_CONCORDANT",
+      "REFERENCE_BASELINE_MISMATCH",
+      "INPUT_INADMISSIBLE",
+      "INCOMPLETE_NUMERICAL"
+    ],
+    "expected_selection": {
+      "PUBLISHED_QPP_REFERENCE": true,
+      "PUBLISHED_NOT_SELECTED_REFERENCE": false
+    },
+    "transition_denominator_policy": "REFERENCE_CONCORDANT_BASELINE_ONLY",
+    "no_alternative_baseline": true
+  },
+  "primary_transition_states": [
+    "SELECTED_RETAINED",
+    "SELECTION_LOST",
+    "NOT_SELECTED_RETAINED",
+    "SELECTION_GAINED"
+  ],
+  "period": {
+    "eligibility": "REFERENCE_CONCORDANT baseline AND baseline selected AND variant selected AND both M1 periods finite",
+    "quantities": [
+      "signed_period_change_s",
+      "absolute_period_change_s",
+      "period_ratio_variant_to_baseline"
+    ],
+    "formal_not_selected_label": "formal_m1_center_not_selected",
+    "quantile_method": "linear interpolation at position (n-1)*q; deterministic descriptive implementation detail, not a scientific threshold"
+  },
+  "repeated_measures": {
+    "window": {
+      "planned_variant_rows_per_role_window": 366,
+      "independent_observations": false,
+      "repeated_measure_unit": "phase3a_event_id"
+    },
+    "processing_profile": {
+      "planned_variant_rows_per_role_profile": 793,
+      "independent_observations": false,
+      "repeated_measure_unit": "phase3a_event_id"
+    }
+  },
+  "formal_hypothesis_tests": "NONE",
+  "robustness_threshold": null,
+  "binary_robust_not_robust_label_authorized": false,
+  "prohibited_metrics": [
+    "accuracy",
+    "sensitivity",
+    "specificity",
+    "observational_false_positive_rate",
+    "physical_truth_rate"
+  ],
+  "scientific_boundaries": {
+    "new_afino_execution": false,
+    "fits_opened": false,
+    "payload_npy_opened": false,
+    "sqlite_opened": false,
+    "variants_regenerated": false,
+    "new_windows": false,
+    "new_profiles": false,
+    "new_comparators": false,
+    "candidate_discovery_authorized": false,
+    "observational_ground_truth_established": false
+  },
+  "required_outputs": {
+    "baseline_rows": 122,
+    "outcome_matrix_rows": 9516,
+    "event_summaries": 122,
+    "cell_role_summaries": 156,
+    "window_role_summaries": 26,
+    "profile_role_summaries": 12,
+    "optimizer_summaries": 116,
+    "seed_model_diagnostics": 3,
+    "figures": 4
+  }
+}
