@@ -1,0 +1,28 @@
+{
+  "python_version": "3.13.13",
+  "python_full": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 01:56:49) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Tricejer\\Desktop\\afino_public_smoke_test\\.venv\\Scripts\\python.exe",
+  "numpy_version": "2.5.1",
+  "scipy_version": "1.18.0",
+  "os": "Windows-11-10.0.26200-SP0",
+  "architecture": "AMD64",
+  "processor": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+  "afino_package_version": "0.5",
+  "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+  "afino_tracked_diff_exit_code": 0,
+  "afino_staged_diff_exit_code": 0,
+  "runner_sha256": "0de4b1b3745e7c7b237ff82680dd8f6cb8e2bf1288c58fd07d1624ca034558db",
+  "full_plan_sha256": "d190a4f5e70339b05fd42b2d0cda9c51dd180c10e885c27fdfa43323c8dc1c6f",
+  "payload_manifest_sha256": "fa5bdfa20eaf499e5354caf159221577633de92f43ec31f48be31e16cd84c148",
+  "payload_array_sha256": {
+    "time_seconds.npy": "8302d2d9527ee358bfe3b809d1d91f88022f47411d08f6cdf2fc2a0e0c2113fa",
+    "flux.npy": "aae865acd94446072e89175057ce2c6d49bb3fe294b14ae8c0a095eb42d280fa",
+    "native_index.npy": "abe2c5b23bfcade8000c992b64067ee933c514a577deca8a870ea13ba562e52a",
+    "offsets.npy": "72d87c7ca15ce446bdefa79651e70836cfd77826630f9c870119c80f80956a68"
+  },
+  "bootstrap_script_sha256": "70d3387be80719a7efdb64a1420bd0d713d34f1e47d82bfd82efc0e8d8fadcb3",
+  "decision_assembler_sha256": "afcbc1a83959eb78426d1003522154c04889a75c0a762f773ffb3304f456eefe",
+  "validator_sha256": "43e946eda17bd7a571d51cd2afcaccb6bbb356b52a6f1fce647449782e0be9b5",
+  "canary_checkpoint_sha256": "9781b13889d2a66e33be973f555b081f5d4de6d97c155a73fd93f5118d2073ca",
+  "full_checkpoint_sha256": "5e7578dba91ec218a440c9419f803bcf51e180dfb9a134fa5788109ab5100569"
+}

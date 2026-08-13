@@ -1,0 +1,155 @@
+{
+  "execution_status": "PHASE3A_FULL_EXECUTION_VALIDATION_PASS",
+  "frozen_plan_decisions": 7466,
+  "frozen_plan_jobs": 22398,
+  "preexisting_validated_canary_jobs": 102,
+  "new_jobs_executed_f3a4": 22296,
+  "checkpoint_rows": 22398,
+  "result_rows": 22398,
+  "decision_rows": 7466,
+  "model_counts": {
+    "M0": 7466,
+    "M1": 7466,
+    "M2": 7466
+  },
+  "checkpoint_invocations": [
+    {
+      "existing_before": 0,
+      "new_jobs": 0,
+      "total_after": 0,
+      "pending_after": 22398
+    },
+    {
+      "existing_before": 102,
+      "new_jobs": 3000,
+      "total_after": 3102,
+      "pending_after": 19296
+    },
+    {
+      "existing_before": 3102,
+      "new_jobs": 3000,
+      "total_after": 6102,
+      "pending_after": 16296
+    },
+    {
+      "existing_before": 6102,
+      "new_jobs": 3000,
+      "total_after": 9102,
+      "pending_after": 13296
+    },
+    {
+      "existing_before": 9102,
+      "new_jobs": 3000,
+      "total_after": 12102,
+      "pending_after": 10296
+    },
+    {
+      "existing_before": 12102,
+      "new_jobs": 3000,
+      "total_after": 15102,
+      "pending_after": 7296
+    },
+    {
+      "existing_before": 15102,
+      "new_jobs": 3000,
+      "total_after": 18102,
+      "pending_after": 4296
+    },
+    {
+      "existing_before": 18102,
+      "new_jobs": 3000,
+      "total_after": 21102,
+      "pending_after": 1296
+    },
+    {
+      "existing_before": 21102,
+      "new_jobs": 1296,
+      "total_after": 22398,
+      "pending_after": 0
+    },
+    {
+      "existing_before": 22398,
+      "new_jobs": 0,
+      "total_after": 22398,
+      "pending_after": 0
+    }
+  ],
+  "idempotent_final_invocation": true,
+  "result_status_counts": {
+    "OK": 22398
+  },
+  "decision_status_counts": {
+    "VALID": 7466
+  },
+  "plan_checkpoint_mismatches": 0,
+  "checkpoint_csv_mismatches": 0,
+  "decision_recalculation_mismatches": 0,
+  "canary_bootstrap_rows": 102,
+  "canary_result_core_mismatches": 0,
+  "temporal_contract_matches": {
+    "actual_mean_dt": 7466,
+    "actual_positive_fftfreq": 7466
+  },
+  "legacy_temporal_diagnostics": {
+    "median_dt_matches": 16,
+    "rfftfreq_positive_matches": 3840
+  },
+  "operational_diagnostics": {
+    "M0": {
+      "calls": 7466,
+      "warning_calls": 0,
+      "total_warnings": 0,
+      "bound_calls": 1107,
+      "runtime_total_seconds": 1642.4244752013838,
+      "runtime_median_seconds": 0.20980065000185277,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 7466
+      }
+    },
+    "M1": {
+      "calls": 7466,
+      "warning_calls": 0,
+      "total_warnings": 0,
+      "bound_calls": 4172,
+      "runtime_total_seconds": 5195.326959899321,
+      "runtime_median_seconds": 0.6625654500021483,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 7466
+      }
+    },
+    "M2": {
+      "calls": 7466,
+      "warning_calls": 4535,
+      "total_warnings": 41117,
+      "bound_calls": 5942,
+      "runtime_total_seconds": 3015.994395399335,
+      "runtime_median_seconds": 0.39442525000777096,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 7466
+      }
+    }
+  },
+  "duplicate_job_ids": 0,
+  "duplicate_scientific_keys": 0,
+  "payload_identity_mismatches": 0,
+  "afino_executed": true,
+  "full_plan_execution_authorized": true,
+  "fits_opened": false,
+  "variants_regenerated": false,
+  "quality_reapplied": false,
+  "detrending_recomputed": false,
+  "interpolation_performed": false,
+  "gap_filling_performed": false,
+  "events_removed": false,
+  "jobs_removed": false,
+  "jobs_redrawn": false,
+  "baseline_reference_comparison_performed": false,
+  "scientific_analysis_performed": false,
+  "candidate_discovery_authorized": false,
+  "f3a2_commit": "6bf9beca8fa8016495693575f8c86a2dec5fecb1",
+  "f3a3_runner_commit": "0738b1cc132598119dcbbc27b4113c93ae9d2733",
+  "f3a4_authorization_commit": "843b6916ad3699808372bbde33a96fdfdc61ef04",
+  "canary_checkpoint_sha256": "9781b13889d2a66e33be973f555b081f5d4de6d97c155a73fd93f5118d2073ca",
+  "full_checkpoint_sha256": "5e7578dba91ec218a440c9419f803bcf51e180dfb9a134fa5788109ab5100569",
+  "report_word_count": 775
+}
