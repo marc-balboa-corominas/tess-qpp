@@ -1,0 +1,623 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "artifact_role": "NUMERICAL_STABILITY_PROTOCOL",
+  "protocol_status": "FROZEN_WITHIN_F3B1_DESIGN_BLOCK_5",
+  "evidence_plane": "NUMERICAL_STABILITY",
+  "scope": {
+    "split": "DEVELOPMENT only",
+    "gap_quality_regime": "CONTIGUOUS_ALL_GOOD",
+    "background_selection": "one deterministic background per each of 36 n_samples × red_noise_alpha × qpp_fraction strata",
+    "selector": "minimum split_rank_sha256 among DEVELOPMENT primary backgrounds in each stratum",
+    "background_realizations": 36,
+    "paired_truth_series_per_background": 2,
+    "simulation_series": 72,
+    "heldout_series": 0
+  },
+  "selected_backgrounds": [
+    {
+      "stratum": {
+        "n_samples": 15,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N015_A0_Q001_R013",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "03f6c2717ba3adbf984ed9ac1164f65d02d49bf20974e49f309d87433efbadd5",
+      "simulation_unit_ids": [
+        "F3BBG_N015_A0_Q001_R013:NULL:PRIMARY",
+        "F3BBG_N015_A0_Q001_R013:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 15,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N015_A0_Q002_R012",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "019a5aaee925399fe01e5ab84eb5ade57546a64f58f57640f72b65e479d80e19",
+      "simulation_unit_ids": [
+        "F3BBG_N015_A0_Q002_R012:NULL:PRIMARY",
+        "F3BBG_N015_A0_Q002_R012:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 15,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N015_A0_Q004_R054",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "044f59bfbb91d418d6b955f721c2a586a71559bb8450d62ccf29024e58601aad",
+      "simulation_unit_ids": [
+        "F3BBG_N015_A0_Q004_R054:NULL:PRIMARY",
+        "F3BBG_N015_A0_Q004_R054:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 15,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N015_A1_Q001_R004",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "00c14934f0328604c7cf9372ea4392987a34dd945e87a65ab1078fb0660d27e2",
+      "simulation_unit_ids": [
+        "F3BBG_N015_A1_Q001_R004:NULL:PRIMARY",
+        "F3BBG_N015_A1_Q001_R004:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 15,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N015_A1_Q002_R054",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "0506c35ac65f607b1726a12f7fd8cb6c94345aea3e7656b562c6f7fbab859666",
+      "simulation_unit_ids": [
+        "F3BBG_N015_A1_Q002_R054:NULL:PRIMARY",
+        "F3BBG_N015_A1_Q002_R054:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 15,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N015_A1_Q004_R035",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "02ffaa6e15ac8a13ae7c02b704f6a5ed6f6b15ddd2b353f28c342e8ee974b511",
+      "simulation_unit_ids": [
+        "F3BBG_N015_A1_Q004_R035:NULL:PRIMARY",
+        "F3BBG_N015_A1_Q004_R035:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 15,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N015_A2_Q001_R031",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "07130e66e166cb47c17a4cef255f8145eac1ecf043db091ea318ebf391adeaa2",
+      "simulation_unit_ids": [
+        "F3BBG_N015_A2_Q001_R031:NULL:PRIMARY",
+        "F3BBG_N015_A2_Q001_R031:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 15,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N015_A2_Q002_R044",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "0131873c8a3f43a1dda21ce3f17f45a3b55251c188d752e37fae5d412dc3712c",
+      "simulation_unit_ids": [
+        "F3BBG_N015_A2_Q002_R044:NULL:PRIMARY",
+        "F3BBG_N015_A2_Q002_R044:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 15,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N015_A2_Q004_R076",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "035b872cb6df93c8ac6b38aa06535df0b8cdf8bf94815e4f96a94f69d3608f2e",
+      "simulation_unit_ids": [
+        "F3BBG_N015_A2_Q004_R076:NULL:PRIMARY",
+        "F3BBG_N015_A2_Q004_R076:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 30,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N030_A0_Q001_R005",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "03156e5cc04258b6dfc0120cfa864ed1ac064f085b808e2e1ce8b2864baaaa03",
+      "simulation_unit_ids": [
+        "F3BBG_N030_A0_Q001_R005:NULL:PRIMARY",
+        "F3BBG_N030_A0_Q001_R005:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 30,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N030_A0_Q002_R003",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "031817b978c25132e0d77f9b6d8b4546017c2dd6761bc1b82d0692315cfca3e0",
+      "simulation_unit_ids": [
+        "F3BBG_N030_A0_Q002_R003:NULL:PRIMARY",
+        "F3BBG_N030_A0_Q002_R003:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 30,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N030_A0_Q004_R035",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "00e83294e6ee82215294c53e0782e886f96afe64a9f538217a31211da09e7880",
+      "simulation_unit_ids": [
+        "F3BBG_N030_A0_Q004_R035:NULL:PRIMARY",
+        "F3BBG_N030_A0_Q004_R035:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 30,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N030_A1_Q001_R095",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "023f332778a2a4b47a68c8788fb7c5dee8823b446d8bdfad5a05c8c1529bf62f",
+      "simulation_unit_ids": [
+        "F3BBG_N030_A1_Q001_R095:NULL:PRIMARY",
+        "F3BBG_N030_A1_Q001_R095:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 30,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N030_A1_Q002_R027",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "01904bd87bb9d633b3332a830cf7a75f4fd9825100d10ea9b190b50b6fe1113c",
+      "simulation_unit_ids": [
+        "F3BBG_N030_A1_Q002_R027:NULL:PRIMARY",
+        "F3BBG_N030_A1_Q002_R027:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 30,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N030_A1_Q004_R058",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "003d324a9a4a53f583024bc5d0907203e0cf676520227192cef183637d4ab3a2",
+      "simulation_unit_ids": [
+        "F3BBG_N030_A1_Q004_R058:NULL:PRIMARY",
+        "F3BBG_N030_A1_Q004_R058:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 30,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N030_A2_Q001_R040",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "026d7ceff55c2301ebab36dcc86a8e6c7817263958153200a6495d9f5ee889a9",
+      "simulation_unit_ids": [
+        "F3BBG_N030_A2_Q001_R040:NULL:PRIMARY",
+        "F3BBG_N030_A2_Q001_R040:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 30,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N030_A2_Q002_R014",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "00484de1b979dad3a0eaaafef3949e67d57d5cb48b18cc37bf1ab64b8c8c4057",
+      "simulation_unit_ids": [
+        "F3BBG_N030_A2_Q002_R014:NULL:PRIMARY",
+        "F3BBG_N030_A2_Q002_R014:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 30,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N030_A2_Q004_R065",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "0133c8e33c1b765f6acc48e45e3d2b60d37c4ac5d7b1e4efb60667f62bbda837",
+      "simulation_unit_ids": [
+        "F3BBG_N030_A2_Q004_R065:NULL:PRIMARY",
+        "F3BBG_N030_A2_Q004_R065:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 60,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N060_A0_Q001_R024",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "0128b2b1ad613c61f357e73efb61601aab2d96954f949e5c05322b7294e370fd",
+      "simulation_unit_ids": [
+        "F3BBG_N060_A0_Q001_R024:NULL:PRIMARY",
+        "F3BBG_N060_A0_Q001_R024:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 60,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N060_A0_Q002_R021",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "01a3d6f5bd5ddce908b62bafadb3dfb498a1cbccb39da186523ff5b64692a33f",
+      "simulation_unit_ids": [
+        "F3BBG_N060_A0_Q002_R021:NULL:PRIMARY",
+        "F3BBG_N060_A0_Q002_R021:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 60,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N060_A0_Q004_R094",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "00624cd5b8901ce7f0077c8d44ee6580f18f8fb3b516fa97da0f5b5db650da9f",
+      "simulation_unit_ids": [
+        "F3BBG_N060_A0_Q004_R094:NULL:PRIMARY",
+        "F3BBG_N060_A0_Q004_R094:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 60,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N060_A1_Q001_R062",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "0027a494015fa99704bc6ad464bdb50a0d8a2103474799800c066cb3739dfd09",
+      "simulation_unit_ids": [
+        "F3BBG_N060_A1_Q001_R062:NULL:PRIMARY",
+        "F3BBG_N060_A1_Q001_R062:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 60,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N060_A1_Q002_R062",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "0025c58a2599c12699662924b4830c06f47643c1b6d1b76c3ce3e42959b715b7",
+      "simulation_unit_ids": [
+        "F3BBG_N060_A1_Q002_R062:NULL:PRIMARY",
+        "F3BBG_N060_A1_Q002_R062:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 60,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N060_A1_Q004_R055",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "00f8f7258e9ebd795b8b6f9f8544527a500b999701eb310d4506228f741d956b",
+      "simulation_unit_ids": [
+        "F3BBG_N060_A1_Q004_R055:NULL:PRIMARY",
+        "F3BBG_N060_A1_Q004_R055:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 60,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N060_A2_Q001_R022",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "00d3338df7d700c47c71200b4d54d2cca61b01d6ceef65d69dd828fcd0603a30",
+      "simulation_unit_ids": [
+        "F3BBG_N060_A2_Q001_R022:NULL:PRIMARY",
+        "F3BBG_N060_A2_Q001_R022:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 60,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N060_A2_Q002_R100",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "0393b3de3b84df9e11c83958624fc6eda6c69f0130f9bb17f00d83fceaabf6bd",
+      "simulation_unit_ids": [
+        "F3BBG_N060_A2_Q002_R100:NULL:PRIMARY",
+        "F3BBG_N060_A2_Q002_R100:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 60,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N060_A2_Q004_R005",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "02ec30f42119a692ec7aacc883f8c3e5784bbe11b94bf4050b900f65f4385712",
+      "simulation_unit_ids": [
+        "F3BBG_N060_A2_Q004_R005:NULL:PRIMARY",
+        "F3BBG_N060_A2_Q004_R005:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 120,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N120_A0_Q001_R032",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "026149e1b695105d27e1ad040319baccdba7842cc40e8db669c0e9ddb09453ae",
+      "simulation_unit_ids": [
+        "F3BBG_N120_A0_Q001_R032:NULL:PRIMARY",
+        "F3BBG_N120_A0_Q001_R032:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 120,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N120_A0_Q002_R046",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "009df5e62a04cbd642c8caa4ff6679620f79f9ffd3ec1f11858c5cf652ae1fee",
+      "simulation_unit_ids": [
+        "F3BBG_N120_A0_Q002_R046:NULL:PRIMARY",
+        "F3BBG_N120_A0_Q002_R046:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 120,
+        "red_noise_alpha": 0.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N120_A0_Q004_R082",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "02239ad16de413d35613119647bbbfafc4196a6ae14bab4bca2be1f436e637e8",
+      "simulation_unit_ids": [
+        "F3BBG_N120_A0_Q004_R082:NULL:PRIMARY",
+        "F3BBG_N120_A0_Q004_R082:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 120,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N120_A1_Q001_R024",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "04081a144c4b9feb2bdae34b4745b418c58030209999e90e786d3595bb0d3e9f",
+      "simulation_unit_ids": [
+        "F3BBG_N120_A1_Q001_R024:NULL:PRIMARY",
+        "F3BBG_N120_A1_Q001_R024:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 120,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N120_A1_Q002_R004",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "0003ccffa1c8e921506f9189ad61d6def7a88c63a3e155710dba3e71aaa269e6",
+      "simulation_unit_ids": [
+        "F3BBG_N120_A1_Q002_R004:NULL:PRIMARY",
+        "F3BBG_N120_A1_Q002_R004:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 120,
+        "red_noise_alpha": 1.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N120_A1_Q004_R058",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "009cb5081ef4b6d8732bfeb924d4f2103b3a0d617e8104b19f2c7cdae32f9cf4",
+      "simulation_unit_ids": [
+        "F3BBG_N120_A1_Q004_R058:NULL:PRIMARY",
+        "F3BBG_N120_A1_Q004_R058:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 120,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.01
+      },
+      "background_realization_id": "F3BBG_N120_A2_Q001_R048",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "04f111277027366a40ff9e66f1604a73f82e2d9f1c9cca7cdb79161837a857df",
+      "simulation_unit_ids": [
+        "F3BBG_N120_A2_Q001_R048:NULL:PRIMARY",
+        "F3BBG_N120_A2_Q001_R048:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 120,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.02
+      },
+      "background_realization_id": "F3BBG_N120_A2_Q002_R051",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "0348d7429fc26b3ba816af7f0ad0066deea2f257c7519ae85d5f7839b46b4fd8",
+      "simulation_unit_ids": [
+        "F3BBG_N120_A2_Q002_R051:NULL:PRIMARY",
+        "F3BBG_N120_A2_Q002_R051:POS:PRIMARY"
+      ]
+    },
+    {
+      "stratum": {
+        "n_samples": 120,
+        "red_noise_alpha": 2.0,
+        "qpp_fraction_of_flare_envelope": 0.04
+      },
+      "background_realization_id": "F3BBG_N120_A2_Q004_R038",
+      "selector": "minimum split_rank_sha256 among DEVELOPMENT backgrounds in stratum",
+      "split_rank_sha256": "00e9a6da1a9a213822c05aebb79bd6ace4f4003958e7caaf14003c919fe2c07b",
+      "simulation_unit_ids": [
+        "F3BBG_N120_A2_Q004_R038:NULL:PRIMARY",
+        "F3BBG_N120_A2_Q004_R038:POS:PRIMARY"
+      ]
+    }
+  ],
+  "optimizer_seed_protocol": {
+    "external_optimizer_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "seed0_role": "same baseline optimizer seed used by primary DEVELOPMENT execution",
+    "extra_stability_seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "generation_rng_fixed_across_optimizer_seeds": true,
+    "synthetic_flux_payload_identical_across_optimizer_seeds": true,
+    "expected_stability_decisions": 720,
+    "expected_stability_model_calls": 2160,
+    "expected_additional_decisions_beyond_primary_seed0": 648,
+    "expected_additional_model_calls_beyond_primary_seed0": 1944
+  },
+  "afino_contract": {
+    "package_version": "0.5",
+    "commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "models": [
+      "M0",
+      "M1",
+      "M2"
+    ],
+    "model_functions": {
+      "M0": "pow_const",
+      "M1": "pow_const_gauss",
+      "M2": "bpow_const"
+    },
+    "selection_rule": "BIC_M0-BIC_M1 > 10 AND BIC_M2-BIC_M1 > 10",
+    "optimizer_seed_application": "np.random.seed(external_optimizer_seed) immediately before each model call"
+  },
+  "per_series_recording": [
+    "seed0_selected",
+    "selected_seed_count",
+    "classification_state_set",
+    "discordant_vs_seed0_count",
+    "discordant_vs_seed0_fraction",
+    "bic_m0_range",
+    "bic_m1_range",
+    "bic_m2_range",
+    "delta01_range",
+    "delta21_range",
+    "formal_m1_center_range",
+    "formal_m1_period_range_s_when_defined",
+    "unique_parameter_payloads_m0",
+    "unique_parameter_payloads_m1",
+    "unique_parameter_payloads_m2",
+    "warning_calls_by_model",
+    "warning_count_by_model",
+    "bound_calls_by_model",
+    "convergence_status_set"
+  ],
+  "per_model_summary": [
+    "model_id",
+    "calls",
+    "warning_calls",
+    "warning_count",
+    "bound_calls",
+    "convergence_status_counts",
+    "unique_parameter_payload_summary"
+  ],
+  "classification_discordance_definition": {
+    "discordant_vs_seed0": "selection state at seed != selection state at seed0",
+    "series_classification_stable": "all ten optimizer seeds have the same selection state"
+  },
+  "interpretation_guard": {
+    "classification_stability_implies_unique_optimum": false,
+    "unique_parameter_payload_count_one_proves_unique_optimum": false,
+    "warnings_or_bounds_are_classification_evidence": false,
+    "allowed_inference": "classification stable/discordant across frozen seeds and numerical solutions identical/different over the tested seeds"
+  },
+  "execution_timing": {
+    "may_run_only_after": "DEVELOPMENT synthetic series have been validly materialized under the frozen generator",
+    "must_run_before": "FINAL_RULE_FREEZE if any numerical-stability summary is ever used by a future rule; current candidate policy prohibits such features",
+    "heldout_generation_required": false
+  },
+  "execution_state": {
+    "stability_series_generated_now": false,
+    "afino_executed_now": false,
+    "heldout_generated": false,
+    "heldout_accessed": false,
+    "scientific_results_computed": false
+  }
+}

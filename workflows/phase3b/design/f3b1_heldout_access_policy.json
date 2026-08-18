@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "artifact_role": "HELDOUT_ACCESS_POLICY",
+  "policy_status": "FROZEN_WITHIN_F3B1_DESIGN_BLOCK_3",
+  "split_registry": {
+    "artifact": "f3b1_split_registry.csv",
+    "sha256": "2316e09ba061910d360ba0d11aa4a766a3b657f56182bb6ba1c455d2b8120c93",
+    "heldout_background_realizations": 1800,
+    "heldout_planned_series": 4320
+  },
+  "heldout_generated_before_rule_freeze": false,
+  "heldout_access_before_rule_freeze": "PROHIBITED",
+  "heldout_generation_allowed_only_after": "FINAL_RULE_FREEZE",
+  "heldout_is_single_use": true,
+  "heldout_identity_and_sampling_frozen_in_f3b1": true,
+  "heldout_series_materialized_now": 0,
+  "heldout_true_period_draws_materialized_now": 0,
+  "heldout_background_noise_draws_materialized_now": 0,
+  "allowed_before_final_rule_freeze": [
+    "read heldout row identifiers and predeclared strata from f3b1_split_registry.csv",
+    "verify counts, uniqueness, split membership and hashes",
+    "verify sampling and RNG algorithms without drawing heldout random variables"
+  ],
+  "prohibited_before_final_rule_freeze": [
+    "draw heldout noise",
+    "draw heldout QPP periods or phases",
+    "generate heldout flux arrays",
+    "execute AFINO on heldout",
+    "inspect any heldout outcome",
+    "tune any rule using heldout information"
+  ],
+  "failure_policy": {
+    "tuning_on_heldout": false,
+    "second_attempt_on_same_heldout": false,
+    "if_rule_fails_heldout": "HELDOUT_VALIDATION_FAILED",
+    "subsequent_rule_change_requires": "new independent validation dataset plus a new prospective freeze; the same heldout cannot be renamed or reused"
+  },
+  "generator_identity": {
+    "same_generator_code_as_development": true,
+    "heldout_specific_generator_variant_allowed": false
+  },
+  "execution_state": {
+    "final_rule_frozen": false,
+    "heldout_generated": false,
+    "heldout_accessed": false,
+    "injections_generated": false,
+    "afino_executed": false
+  }
+}

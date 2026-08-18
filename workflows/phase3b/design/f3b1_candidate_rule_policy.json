@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "artifact_role": "CANDIDATE_RULE_POLICY",
+  "contract_status": "FROZEN_WITHIN_F3B1_DESIGN_BLOCK_4",
+  "baseline": {
+    "baseline_validation_mandatory": true,
+    "afino_package_version": "0.5",
+    "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "models": {
+      "M0": "pow_const",
+      "M1": "pow_const_gauss",
+      "M2": "bpow_const"
+    },
+    "selection_rule": "delta_BIC01 > 10 AND delta_BIC21 > 10",
+    "delta_BIC01": "BIC_M0 - BIC_M1",
+    "delta_BIC21": "BIC_M2 - BIC_M1"
+  },
+  "correction_rule_mandatory": false,
+  "candidate_development_allowed": true,
+  "development_data_only": true,
+  "heldout_access_for_development": "PROHIBITED",
+  "allowed_features": [
+    "delta_BIC01",
+    "delta_BIC21"
+  ],
+  "prohibited_features": [
+    "synthetic truth label at inference time",
+    "true_period_s",
+    "qpp_fraction_of_flare_envelope",
+    "red_noise_alpha",
+    "generator RNG state or seed",
+    "background_realization_id",
+    "source catalogue label",
+    "F2/F3A observational reference label",
+    "heldout outcome or heldout-derived statistic",
+    "posthoc robustness or numerical feature not frozen in F3B.1"
+  ],
+  "allowed_rule_families": [
+    "TWO_THRESHOLD_BIC_CONJUNCTION: selected iff delta_BIC01 > t01 AND delta_BIC21 > t21"
+  ],
+  "complexity_constraints": {
+    "learned_scalar_thresholds": 2,
+    "interactions": 0,
+    "nonlinear_model": false,
+    "additional_classifier": false,
+    "feature_addition_after_development_starts": false
+  },
+  "threshold_candidate_generation": {
+    "split": "DEVELOPMENT only",
+    "eligible_inputs_only": true,
+    "for_each_feature": "sorted finite unique observed values plus baseline threshold 10; evaluate strict-greater-than partitions at exact observed values and adjacent finite midpoints",
+    "infinite_select_all_or_select_none_thresholds": false
+  },
+  "development_objective": {
+    "primary": "maximize balanced_accuracy",
+    "tie_breakers_in_order": [
+      "maximize minimum(sensitivity,specificity)",
+      "minimize FPR",
+      "minimize abs(t01-10)+abs(t21-10)",
+      "maximize t01",
+      "maximize t21"
+    ],
+    "promotion_is_separate_from_optimization": true
+  },
+  "final_rule_freeze": {
+    "if_candidate_passes_development_gate": "freeze exact t01/t21, code SHA, DEVELOPMENT evidence and decision as FINAL_RULE_FREEZE_CANDIDATE before heldout generation",
+    "if_no_candidate_passes": "freeze baseline AFINO rule as FINAL_RULE_FREEZE_BASELINE_ONLY before heldout generation",
+    "candidate_rule_frozen_now": false,
+    "heldout_generation_before_final_rule_freeze": false
+  },
+  "no_candidate_outcome": {
+    "f3b_proceeds_with_baseline_validation_only": true,
+    "correction_claim": "NOT_ESTABLISHED"
+  }
+}

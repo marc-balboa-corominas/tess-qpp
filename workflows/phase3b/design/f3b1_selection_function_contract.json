@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "artifact_role": "SELECTION_FUNCTION_CONTRACT",
+  "contract_status": "FROZEN_WITHIN_F3B1_DESIGN_BLOCK_4",
+  "primary_representation": "STRATIFIED_EMPIRICAL",
+  "probabilistic_model_primary": false,
+  "reason": "The fully prospective synthetic design already supplies exact controlled strata; an empirical representation avoids adding an unnecessary fitted-model layer before independent held-out validation.",
+  "three_functions_kept_separate": {
+    "input_eligibility": "P(ELIGIBLE_FOR_AFINO | true/nuisance parameters)",
+    "conditional_selection": "P(selected | ELIGIBLE_FOR_AFINO, true/nuisance parameters)",
+    "end_to_end_selection": "P(selected end-to-end | true/nuisance parameters)"
+  },
+  "primary_positive_strata": {
+    "dimensions": [
+      "n_samples",
+      "red_noise_alpha",
+      "qpp_fraction_of_flare_envelope"
+    ],
+    "planned_backgrounds_per_stratum_per_split": 50,
+    "period_treatment": "true_period_s additionally reported using frozen log-Voronoi bins anchored on the F1 periods 50, 80 and 140 s"
+  },
+  "positive_period_bins_s": [
+    {
+      "bin_id": "P40_63",
+      "lower": 40.0,
+      "upper": 63.245553203367585,
+      "lower_inclusive": true,
+      "upper_inclusive": false
+    },
+    {
+      "bin_id": "P63_106",
+      "lower": 63.245553203367585,
+      "upper": 105.83005244258362,
+      "lower_inclusive": true,
+      "upper_inclusive": false
+    },
+    {
+      "bin_id": "P106_300",
+      "lower": 105.83005244258362,
+      "upper": 300.0,
+      "lower_inclusive": true,
+      "upper_inclusive": true
+    }
+  ],
+  "period_bin_rationale": "Boundaries are geometric means between the frozen F1 period anchors 50, 80 and 140 s, clipped to the reviewer-mandated 40–300 s support. Structural no-exposure cells caused by the >=3-cycle rule are labelled rather than estimated.",
+  "primary_null_strata": {
+    "dimensions": [
+      "n_samples",
+      "red_noise_alpha"
+    ],
+    "qpp_fraction_pairing_label_is_null_parameter": false,
+    "pool_across_pairing_qpp_fraction_strata": true,
+    "planned_backgrounds_per_stratum_per_split": 150
+  },
+  "gap_quality_challenges": {
+    "plane": "INPUT_ADMISSIBILITY only",
+    "reported_separately": true,
+    "pooled_with_primary_classifier_metrics": false
+  },
+  "estimation": {
+    "point_estimate": "empirical proportion",
+    "uncertainty": "95% Wilson score interval for each binomial proportion",
+    "minimum_denominator_for_point_estimate": 1,
+    "zero_denominator_behavior": "STRUCTURAL_NO_EXPOSURE",
+    "heldout_estimation_timing": "only after FINAL_RULE_FREEZE and single-use heldout generation"
+  },
+  "aggregation_rules": {
+    "development_and_heldout_never_pooled_for_model_selection": true,
+    "signal_families_never_pooled_without_stratification": true,
+    "challenge_regimes_never_prevalence_weighted_as_observational frequencies": true
+  },
+  "prohibited_posthoc_changes": [
+    "change primary representation after development results",
+    "add fitted predictors after seeing heldout",
+    "change period-bin boundaries after observing recovery",
+    "pool null pairing-qpp-fraction labels as if they were true null signal strengths"
+  ]
+}

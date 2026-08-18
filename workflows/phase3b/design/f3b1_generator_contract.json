@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "artifact_role": "SYNTHETIC_GENERATOR_CONTRACT",
+  "contract_status": "FROZEN_WITHIN_F3B1_DESIGN_BLOCK_2",
+  "source_binding_sha256": "7d6f84e30de4a7703c5262f1dc02c78ab45f4dd36f06f7ffac7e86f021fee85d",
+  "simulation_domain": {
+    "artifact": "f3b1_simulation_domain.csv",
+    "sha256": "f4436ccf7907b660c415e86b8e8c88867656bc481c957e5a07662c06155992f9",
+    "parameter_rows": 18
+  },
+  "normative_continuity": {
+    "primary_reference": "F1SRC001/F1SRC003",
+    "core_generator_equations_preserved": true,
+    "prospective_f3b_changes": [
+      "true period is sampled continuously inside the reviewer-mandated 40–300 s support rather than only the three F1 period grid points",
+      "background identities will be new F3B identities rather than F1 data_seed values",
+      "secondary deterministic gap/quality challenge masks are added only for the INPUT_ADMISSIBILITY plane"
+    ],
+    "no_retrospective_f1_change": true
+  },
+  "sampling_grid": {
+    "cadence_s": 20.0,
+    "n_samples_allowed": [
+      15,
+      30,
+      60,
+      120
+    ],
+    "duration_definition": "duration_s = (n_samples - 1) * cadence_s",
+    "durations_s": {
+      "15": 280.0,
+      "30": 580.0,
+      "60": 1180.0,
+      "120": 2380.0
+    },
+    "time_definition": "time_s = np.arange(n_samples, dtype=float64) * cadence_s"
+  },
+  "flare_background_component": {
+    "baseline_flux": 1.0,
+    "peak_index_definition": "round(0.20 * (n_samples - 1)) using Python round",
+    "flare_peak_excess": 0.5,
+    "rise_tau_definition": "0.04 * duration_s",
+    "decay_tau_definition": "0.30 * duration_s",
+    "envelope": {
+      "t_le_t_peak": "E(t)=flare_peak_excess*exp((t-t_peak)/rise_tau)",
+      "t_gt_t_peak": "E(t)=flare_peak_excess*exp(-(t-t_peak)/decay_tau)"
+    }
+  },
+  "red_noise_component": {
+    "family": "Gaussian Fourier synthesis power-law background",
+    "red_noise_alpha_allowed": [
+      0.0,
+      1.0,
+      2.0
+    ],
+    "spectral_power_law": "P(f) proportional to f**(-alpha)",
+    "fourier_amplitude_scaling": "scale(f)=f**(-alpha/2)",
+    "dc_component": "forced to zero",
+    "nyquist_rule": "for even n_samples, final complex draw replaced by one extra real normal draw",
+    "standardization": "subtract sample mean; divide by sample std ddof=1; multiply by 0.005",
+    "post_standardization_sample_std": 0.005,
+    "generation_failure_policy": "non-finite or zero-std realization is retained as generation failure and is never redrawn"
+  },
+  "white_noise_component": {
+    "independent_component_enabled": false,
+    "independent_white_noise_std": 0.0,
+    "note": "No independent photometric white-noise term is added in the primary generator. alpha=0 is the white-spectrum Fourier-background case.",
+    "limitation": "The bound F1 inputs provide no prospectively validated independent white-noise amplitude interval; none is invented in F3B.1."
+  },
+  "qpp_component": {
+    "truth_family": "STATIONARY_ENVELOPE_MODULATED_SINUSOID",
+    "frequency_behavior": "stationary",
+    "additional_damping": false,
+    "period_support_s": {
+      "minimum": 40.0,
+      "maximum": 300.0,
+      "interval": "inclusive support"
+    },
+    "period_sampling": "log-uniform continuous subject to duration_s/period_s >= 3",
+    "minimum_cycles": 3.0,
+    "qpp_fraction_allowed": [
+      0.01,
+      0.02,
+      0.04
+    ],
+    "phase_distribution": "Uniform[0,2*pi)",
+    "periodic_component": "qpp_fraction * E(t) * sin(2*pi*(t-t_peak)/period_s + phase)",
+    "positive_flux": "1 + E(t) + periodic_component + red_noise",
+    "null_flux": "1 + E(t) + red_noise",
+    "coherence_parameterization": {
+      "regime": "FULL_WINDOW_STATIONARY_NO_EXTRA_DAMPING",
+      "finite_Q_parameter": "NOT_APPLICABLE_TO_PRIMARY_FAMILY",
+      "reason": "The primary truth model contains no separate damping/linewidth parameter."
+    }
+  },
+  "quality_gap_mask": {
+    "application_stage": "after full latent flux construction; before AFINO input eligibility",
+    "primary": {
+      "regime": "CONTIGUOUS_ALL_GOOD",
+      "mask_rule": "retain every native sample"
+    },
+    "secondary_challenges": {
+      "ONE_INTERNAL_NONPEAK_SAMPLE_MASKED": {
+        "mask_rule": "mask native index peak_index + 1",
+        "purpose": "deterministic internal-gap admissibility challenge"
+      },
+      "PEAK_SAMPLE_MASKED": {
+        "mask_rule": "mask native index peak_index",
+        "purpose": "deterministic peak-removal admissibility challenge"
+      }
+    },
+    "no_interpolation": true,
+    "no_gap_fill": true,
+    "prevalence_interpretation": "PROHIBITED; challenge regimes are not observational frequency estimates"
+  },
+  "composition_order": [
+    "construct native time grid",
+    "construct asymmetric flare envelope",
+    "generate one power-law stochastic background realization",
+    "generate one independent QPP phase for the paired background realization",
+    "materialize synthetic null or synthetic QPP-positive latent flux",
+    "apply the prospectively assigned quality/gap mask without interpolation",
+    "evaluate input admissibility",
+    "only eligible inputs may proceed to AFINO classification metrics"
+  ],
+  "pairing_contract": {
+    "pairing_unit": "background_realization_id",
+    "same_background_for_null_and_positive": true,
+    "same_nuisance_realization_for_pair": true,
+    "same_phase_draw_available_to_positive_pair": true,
+    "split_unit_must_be_background_realization_id": true,
+    "development_and_heldout_must_never_share_background_realization_id": true
+  },
+  "rng_contract": {
+    "bit_generator": "numpy.random.PCG64",
+    "identity_namespace": "TESS-QPP:F3B1:v1",
+    "background_entropy_definition": "int(SHA256('TESS-QPP:F3B1:v1:'+background_realization_id).hexdigest()[0:32],16)",
+    "seed_sequence": "np.random.SeedSequence(background_entropy)",
+    "children": "noise_seed, phase_seed = seed_sequence.spawn(2)",
+    "draw_order": "preserve F1 Fourier real-vector, imaginary-vector, even-N Nyquist real draw, then independent uniform phase",
+    "redraw_policy": "never redraw a failed realization",
+    "exact_background_realization_ids": "FROZEN_LATER_IN_f3b1_split_registry.csv"
+  },
+  "same_generator_code_for_development_and_heldout": true,
+  "heldout_specific_generator_variant_allowed": false,
+  "versioning_rule": "Any generator-semantic change after phase3b-design-v1 requires a new phase3b-design-v2 freeze before generating further data.",
+  "prohibited_generator_changes_after_freeze": [
+    "change signal family without new design freeze",
+    "change period support or qpp_fraction values after observing development results",
+    "change noise slopes or normalization after observing results",
+    "tune held-out generator after development",
+    "replace failed realizations by redraw",
+    "interpolate or fill masked cadences",
+    "use real observational backgrounds as primary synthetic null truth"
+  ],
+  "known_limitations": [
+    "Primary flare morphology is the fixed validated F1 asymmetric envelope, not an empirical distribution of flare shapes.",
+    "Independent photometric white noise is fixed to zero because no bound source supplies a validated amplitude domain.",
+    "Per-realization Fourier noise is standardized to a fixed sample standard deviation as in F1.",
+    "Primary QPP family has no extra damping or chirp; secondary stress families remain unresolved.",
+    "Gap/quality challenge regimes are design stress tests and must not be prevalence-weighted as observational frequencies."
+  ],
+  "execution_state": {
+    "synthetic_series_generated": false,
+    "injections_generated": false,
+    "afino_executed": false,
+    "development_generated": false,
+    "heldout_generated": false,
+    "heldout_accessed": false,
+    "scientific_results_computed": false
+  }
+}

@@ -1,0 +1,718 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "artifact_role": "NORMATIVE_SOURCE_BINDING",
+  "binding_status": "F3B1_NORMATIVE_SOURCES_BOUND_BEFORE_ANY_INJECTION",
+  "authoritative_parent": {
+    "phase3a_commit": "1f3b1cc21286c25dea6a0e5779c0dc18edd81933",
+    "phase3a_tag": "phase3a-complete-v2",
+    "phase3a_tag_object": "baf3db645acdb94e10ea530c61f44cc8214f7235"
+  },
+  "source_counts": {
+    "total_authoritative": 22,
+    "f1": 15,
+    "baii": 3,
+    "f3a": 4,
+    "reviewed_not_bound": 3
+  },
+  "provenance_summary": {
+    "all_current_sha_verified": true,
+    "all_exact_in_phase3a_complete_v2": true,
+    "all_have_exact_git_tag_witness": true,
+    "common_exact_byte_tags_f1": [
+      "bibliographic-audit-ii-complete-v1",
+      "bibliographic-audit-ii-corpus-v1",
+      "bibliographic-audit-ii-design-v1",
+      "bibliographic-audit-ii-design-v2",
+      "bibliographic-audit-ii-extraction-v1",
+      "bibliographic-audit-ii-screening-v1",
+      "phase3a-complete-v1",
+      "phase3a-complete-v2",
+      "phase3a-design-v1",
+      "phase3a-execution-plan-v1",
+      "phase3a-full-execution-v1",
+      "phase3a-robustness-v1",
+      "phase3a-runner-v1"
+    ],
+    "common_exact_byte_tags_baii": [
+      "bibliographic-audit-ii-complete-v1",
+      "phase3a-complete-v1",
+      "phase3a-complete-v2",
+      "phase3a-design-v1",
+      "phase3a-execution-plan-v1",
+      "phase3a-full-execution-v1",
+      "phase3a-robustness-v1",
+      "phase3a-runner-v1"
+    ]
+  },
+  "binding_semantics": {
+    "binding_freezes_evidence_sources_not_f3b_design_choices": true,
+    "f1_numeric_values_may_inform_but_do_not_automatically_define_f3b_domain": true,
+    "baii_comparator_adoption_remains_unresolved_until_f3b1_comparator_resolution": true,
+    "f3a_observational_reference_labels_are_not_ground_truth": true,
+    "no_new_bibliographic_search": true,
+    "no_unreferenced_numeric_interval_may_be_introduced": true
+  },
+  "authoritative_sources": [
+    {
+      "source_id": "F1SRC001",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea01_core_benchmark_preregistration.json",
+      "sha256": "dd80346172290e014d73f78240b3e31f135bcc7e4f075963e7e20d8456de3401",
+      "scientific_role": "Frozen F1 core stationary-QPP/red-noise benchmark preregistration.",
+      "authoritative_for": "F1 synthetic truth states; stationary QPP construction; flare envelope; 20-s cadence; F1 period/amplitude/red-noise grids; RNG/pairing; exclusions; F1 estimands and design semantics.",
+      "not_authoritative_for": "Final F3B simulation domain, F3B sample size, held-out architecture, F3B comparator adoption, or validation thresholds.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC002",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea01_core_design_grid.csv",
+      "sha256": "f3c4c77ef71b9c8f9218bcf5a773d8e31c9ffc858ea68a1216542970e43f0bad",
+      "scientific_role": "Exact frozen F1 core design grid.",
+      "authoritative_for": "Exact combinations and denominators used by the F1 stationary benchmark.",
+      "not_authoritative_for": "Automatic reuse of the same grid as the F3B injection domain.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC003",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea02_synthetic_generator.py",
+      "sha256": "743005e580f20be331408d9165522932a289d256cef0efbe4c4f24fcb38c54bd",
+      "scientific_role": "Validated F1 core synthetic-generator implementation.",
+      "authoritative_for": "Reference implementation of the F1 flare, red-noise, phase pairing and stationary-QPP construction.",
+      "not_authoritative_for": "The final F3B generator implementation before f3b1_generator_contract.json is frozen.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC004",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea02_generator_validation_audit.json",
+      "sha256": "3e4d588110dbe535038dc0e85ec08a60e47de946d438c05b121b379ee0c02f11",
+      "scientific_role": "Machine-readable validation of the F1 core generator.",
+      "authoritative_for": "Evidence that the F1 implementation reproduced its frozen generator contract and pairing/structural checks.",
+      "not_authoritative_for": "Validation of a future F3B generator or empirical realism of F3B simulations.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC005",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea06_analysis_audit.json",
+      "sha256": "207b1b058a8faf6d145bb31d698a9994c90fa2550e0ea7d204c330f7a875a04a",
+      "scientific_role": "Machine-readable audit of F1 core benchmark analysis.",
+      "authoritative_for": "Frozen F1 benchmark outcomes and numerical/optimizer diagnostics relevant to F3B design continuity.",
+      "not_authoritative_for": "Prospective F3B success criteria, held-out thresholds or performance estimates.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC006",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea06_core_benchmark_analysis.md",
+      "sha256": "c9d31f3b248ae6298eb40d50b27f58adc545226c2c616996584a7cd0749a570c",
+      "scientific_role": "Narrative interpretation of the F1 core benchmark.",
+      "authoritative_for": "F1 interpretive boundaries and methodological lessons for stationary-QPP/red-noise validation.",
+      "not_authoritative_for": "New F3B numeric design choices or inferential guarantees.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC007",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea08_nested_window_preregistration.json",
+      "sha256": "d80890319b4646f8df994ba7c1dd9da3dc1f141834dbf289d1b17c484fa67487",
+      "scientific_role": "Frozen F1 nested-window preregistration.",
+      "authoritative_for": "Nested-window experimental semantics, prospective window/prefix logic and associated F1 truth/pairing rules.",
+      "not_authoritative_for": "Mandatory reuse of the nested-window design as the primary F3B validation plane.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC008",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea08_nested_window_design_grid.csv",
+      "sha256": "7c1a1fb9724dfe195fec1337e4f0af906e3dd8f1c754ab0abc7f3bc2cc1e8dcd",
+      "scientific_role": "Exact frozen F1 nested-window design grid.",
+      "authoritative_for": "Exact nested F1 combinations and planned repeated-measures structure.",
+      "not_authoritative_for": "Automatic F3B sampling counts or final simulation grid.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC009",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea09_nested_generator.py",
+      "sha256": "9c708af7fd9c6a07eb9b52aa91c8ff34d0aef7e534b485ffb793d6e0713124f2",
+      "scientific_role": "Validated F1 nested-generator implementation.",
+      "authoritative_for": "Reference implementation for F1 nested-window generation and continuity from the core generator.",
+      "not_authoritative_for": "Unfrozen F3B generator changes or held-out-specific generator variants.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC010",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea09_nested_generator_validation_audit.json",
+      "sha256": "38f5579c3f1ad2732a4523cbdb42ebb1ba509391585114898985c6b09c125a6d",
+      "scientific_role": "Machine-readable validation of the F1 nested generator.",
+      "authoritative_for": "Evidence that the nested generator matched its prospective F1 contract.",
+      "not_authoritative_for": "Validation of the future F3B generator or held-out materialization.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC011",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea13_nested_analysis_audit.json",
+      "sha256": "7994cd4475c02f2f2675a3275dc1b7d6b90f0bfc9a9532555ea0541e8012ef35",
+      "scientific_role": "Machine-readable F1 nested-analysis audit.",
+      "authoritative_for": "F1 nested-window results, admissibility and numerical behavior used as design evidence for F3B.",
+      "not_authoritative_for": "F3B performance metrics or final validation gates.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC012",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea14_phase1_evidence_ledger.csv",
+      "sha256": "ab471a68016c19abb6672be7ab29f1f890d9b9c67dfdf750edfb224afbae975a",
+      "scientific_role": "Final F1 evidence ledger.",
+      "authoritative_for": "F1 claim-to-evidence mapping and allowed/prohibited interpretation.",
+      "not_authoritative_for": "Claims not established during F1 or future F3B validation outcomes.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC013",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea14_phase1_decision.json",
+      "sha256": "356504bce1df734bfd5cf01cf1e84211fc5a458f6bf81ddb5458ef0a9166ef1a",
+      "scientific_role": "Formal Phase-1 decision.",
+      "authoritative_for": "F1 closure decision and unresolved validation questions carried forward.",
+      "not_authoritative_for": "Closing any F3B requirement without a prospective F3B resolution.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC014",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea14_phase1_synthesis_audit.json",
+      "sha256": "0255843af4b5f935aa6ff75398e695d3b8f5bf8bf20b57d4ee463eb741be22a7",
+      "scientific_role": "Final machine-readable F1 synthesis audit.",
+      "authoritative_for": "Validated F1 synthesis counts, evidence planes and interpretation boundaries.",
+      "not_authoritative_for": "Prospective F3B design values not frozen in F1.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F1SRC015",
+      "source_phase": "F1",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea14_phase1_synthesis_report.md",
+      "sha256": "5d748476630023ec6b0f4a11c0851711f34b5b5c7a20a2e30fce1b1138a6c466",
+      "scientific_role": "Final narrative F1 synthesis.",
+      "authoritative_for": "Integrated interpretation of F1 core/nested evidence and its limitations.",
+      "not_authoritative_for": "F3B sample-size choice, final signal-family choice, comparator adoption or held-out success criteria.",
+      "provenance": {
+        "first_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "last_commit_touching_path": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "bibliographic-audit-ii-corpus-v1",
+          "bibliographic-audit-ii-design-v1",
+          "bibliographic-audit-ii-design-v2",
+          "bibliographic-audit-ii-extraction-v1",
+          "bibliographic-audit-ii-screening-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "BAIISRC001",
+      "source_phase": "BAII",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "docs/literature/bibliographic_audit_ii/closure/comparator_consideration_matrix.csv",
+      "sha256": "34bb2e7b105f51b94c334aa3ec0fec90307fa2240ddab18c29b4e3d21e87bb86",
+      "scientific_role": "Frozen BAII comparator consideration matrix.",
+      "authoritative_for": "Which literature comparator/method families must be considered and the evidence/risk recorded for each.",
+      "not_authoritative_for": "Automatic implementation or adoption of any comparator in F3B.",
+      "provenance": {
+        "first_commit": "73378199865258e89f6132c82755a647be37a9d6",
+        "last_commit_touching_path": "73378199865258e89f6132c82755a647be37a9d6",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "BAIISRC002",
+      "source_phase": "BAII",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "docs/literature/bibliographic_audit_ii/closure/f3b_design_considerations.csv",
+      "sha256": "fefc871f147b9bffc75bd82d299130f63e6f78cd4dfc8f505128b180b04f8793",
+      "scientific_role": "Frozen BAII considerations explicitly deferred to F3B design.",
+      "authoritative_for": "The literature-informed design questions that must be resolved prospectively in F3B.1.",
+      "not_authoritative_for": "The project-specific resolution of those questions.",
+      "provenance": {
+        "first_commit": "73378199865258e89f6132c82755a647be37a9d6",
+        "last_commit_touching_path": "73378199865258e89f6132c82755a647be37a9d6",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "BAIISRC003",
+      "source_phase": "BAII",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "docs/literature/bibliographic_audit_ii/closure/final_evidence_ledger.csv",
+      "sha256": "09f7d73f97773672b90552cfe7fc73d8bd0fa4e67a8a0460bb3c6dbd4f63ab0a",
+      "scientific_role": "Final BAII evidence ledger.",
+      "authoritative_for": "Literature-derived claims, source-work/evidence identifiers, and allowed/prohibited interpretations relevant to F3B.",
+      "not_authoritative_for": "New bibliographic claims or unreviewed implementation details.",
+      "provenance": {
+        "first_commit": "73378199865258e89f6132c82755a647be37a9d6",
+        "last_commit_touching_path": "73378199865258e89f6132c82755a647be37a9d6",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "bibliographic-audit-ii-complete-v1",
+          "phase3a-complete-v1",
+          "phase3a-complete-v2",
+          "phase3a-design-v1",
+          "phase3a-execution-plan-v1",
+          "phase3a-full-execution-v1",
+          "phase3a-robustness-v1",
+          "phase3a-runner-v1"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F3ASRC001",
+      "source_phase": "F3A",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "workflows/phase3a/closure/f3a6_phase3a_decision.json",
+      "sha256": "7826665097e7fdaf366d24eb914abb3a357b9a5ad60bcdeee887a286db919214",
+      "scientific_role": "Formal Phase-3A closure decision.",
+      "authoritative_for": "Authorization to proceed to F3B with limitations; validation claims still unresolved; candidate discovery still prohibited.",
+      "not_authoritative_for": "Ground truth, sensitivity, specificity, FPR, correction or selection-function performance.",
+      "provenance": {
+        "first_commit": "ee9d93a68839cd3e27867183c96ccb8c285a6923",
+        "last_commit_touching_path": "ee9d93a68839cd3e27867183c96ccb8c285a6923",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "phase3a-complete-v1",
+          "phase3a-complete-v2"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F3ASRC002",
+      "source_phase": "F3A",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "workflows/phase3a/closure/f3a6_phase3a_evidence_ledger.csv",
+      "sha256": "87d36a5873aacdcf396ff463e419d92f0100ec1c8ee154810dfd9265caad53e3",
+      "scientific_role": "Final Phase-3A evidence ledger.",
+      "authoritative_for": "Frozen F2→F3A facts and interpretation boundaries that motivate F3B.",
+      "not_authoritative_for": "Synthetic ground-truth performance metrics.",
+      "provenance": {
+        "first_commit": "ee9d93a68839cd3e27867183c96ccb8c285a6923",
+        "last_commit_touching_path": "ee9d93a68839cd3e27867183c96ccb8c285a6923",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "phase3a-complete-v1",
+          "phase3a-complete-v2"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F3ASRC003",
+      "source_phase": "F3A",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "workflows/phase3a/closure/f3a6_limitations_register.csv",
+      "sha256": "7a9dd6eede0038c320d719bb78d9c3a2a5d63a25740847d0e222078a34e6d2e0",
+      "scientific_role": "Final Phase-3A limitations register.",
+      "authoritative_for": "Unresolved F3A limitations and their explicit F3B implications.",
+      "not_authoritative_for": "Treating observational reference labels or baseline mismatches as physical truth.",
+      "provenance": {
+        "first_commit": "ee9d93a68839cd3e27867183c96ccb8c285a6923",
+        "last_commit_touching_path": "ee9d93a68839cd3e27867183c96ccb8c285a6923",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "phase3a-complete-v1",
+          "phase3a-complete-v2"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    },
+    {
+      "source_id": "F3ASRC004",
+      "source_phase": "F3A",
+      "binding_status": "AUTHORITATIVE_NORMATIVE_INPUT",
+      "repository_relative_path": "workflows/phase3a/closure/f3a6_phase3b_entry_requirements.csv",
+      "sha256": "2e61cff0473bdfd8273f69d92dc4db191d6d8b968efd99347f35390182a6e9a3",
+      "scientific_role": "Normative F3B entry-requirement registry.",
+      "authoritative_for": "Exactly F3BR001–F3BR018 and their blocking/prospective-freeze requirements and prohibited shortcuts.",
+      "not_authoritative_for": "Marking any requirement resolved before its F3B.1 design artifact exists.",
+      "provenance": {
+        "first_commit": "ee9d93a68839cd3e27867183c96ccb8c285a6923",
+        "last_commit_touching_path": "ee9d93a68839cd3e27867183c96ccb8c285a6923",
+        "commit_count_touching_path": 1,
+        "matching_tags_same_bytes": [
+          "phase3a-complete-v1",
+          "phase3a-complete-v2"
+        ],
+        "authoritative_phase3a_v2_blob_exact": true
+      }
+    }
+  ],
+  "reviewed_not_bound": [
+    {
+      "review_id": "F1REVIEW001",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea02_generator_validation.md",
+      "sha256": "3d8987f97da8f34e2a54284a430d5888cf5bda77885306834db3c480d84a8f77",
+      "binding_status": "REVIEWED_NOT_BOUND_REDUNDANT",
+      "reason_not_bound": "Reviewed narrative companion to F1SRC004; redundant for normative binding.",
+      "authoritative_phase3a_v2_blob_exact": true
+    },
+    {
+      "review_id": "F1REVIEW002",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea06_optimizer_stability_summary.csv",
+      "sha256": "c08bd09988b5ae220bc0f83213b4af4c648923c0883995ad084a65ed455b13e2",
+      "binding_status": "REVIEWED_NOT_BOUND_REDUNDANT",
+      "reason_not_bound": "Reviewed detailed numerical table; design-level authority is bound through F1SRC005/F1SRC006 plus F1 synthesis.",
+      "authoritative_phase3a_v2_blob_exact": true
+    },
+    {
+      "review_id": "F1REVIEW003",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea13_nested_analysis_report.md",
+      "sha256": "532711677fdc92ad317110000f27c49bc72c1a809892bca6a93c6a32d871b728",
+      "binding_status": "REVIEWED_NOT_BOUND_REDUNDANT",
+      "reason_not_bound": "Reviewed narrative companion to F1SRC011 and final F1 synthesis; redundant for normative binding.",
+      "authoritative_phase3a_v2_blob_exact": true
+    }
+  ],
+  "execution_state": {
+    "design_artifacts_created_before_this_binding": 0,
+    "new_scientific_statistics_computed": false,
+    "injections_generated": false,
+    "afino_executed": false,
+    "development_generated": false,
+    "heldout_generated": false,
+    "heldout_accessed": false,
+    "candidate_rule_frozen": false,
+    "correction_claim_established": false
+  }
+}

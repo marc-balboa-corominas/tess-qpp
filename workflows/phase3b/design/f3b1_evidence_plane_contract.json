@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "artifact_role": "EVIDENCE_PLANE_CONTRACT",
+  "contract_status": "FROZEN_WITHIN_F3B1_DESIGN_BLOCK_1",
+  "source_binding_sha256": "7d6f84e30de4a7703c5262f1dc02c78ab45f4dd36f06f7ffac7e86f021fee85d",
+  "critical_separation": "KNOWN_SYNTHETIC_TRUTH_IS_NOT_OBSERVATIONAL_REFERENCE_LABEL",
+  "planes": {
+    "SYNTHETIC_GROUND_TRUTH_CLASSIFICATION": {
+      "status": "PRIMARY_ACTIVE",
+      "truth_basis": [
+        "SYNTHETIC_QPP_PRESENT",
+        "SYNTHETIC_QPP_ABSENT"
+      ],
+      "purpose": "Classification performance under known synthetic truth.",
+      "cannot_use": [
+        "observational reference labels as truth",
+        "input-inadmissible rows as TN/FN"
+      ]
+    },
+    "INPUT_ADMISSIBILITY": {
+      "status": "PRIMARY_ACTIVE",
+      "truth_basis": "planned synthetic input structure",
+      "purpose": "Characterize whether a planned series is eligible for AFINO before classification.",
+      "states": [
+        "ELIGIBLE_FOR_AFINO",
+        "INPUT_INADMISSIBLE"
+      ]
+    },
+    "SELECTION_FUNCTION": {
+      "status": "PRIMARY_ACTIVE",
+      "truth_basis": "known true and nuisance parameters",
+      "purpose": "Prospectively characterize eligibility and selection probabilities over the frozen domain.",
+      "representation": "UNRESOLVED_UNTIL_f3b1_selection_function_contract.json"
+    },
+    "PERIOD_RECOVERY": {
+      "status": "PRIMARY_ACTIVE",
+      "truth_basis": "SYNTHETIC_QPP_PRESENT with exact true_period_s",
+      "purpose": "Measure period recovery separately from classification.",
+      "nonselection_rule": "Formal M1 centers from non-selected cases are not period recovery."
+    },
+    "NUMERICAL_STABILITY": {
+      "status": "SECONDARY_REQUIRED",
+      "truth_basis": "optimizer repetitions on a deterministic prespecified subset",
+      "purpose": "Quantify seed/numerical variability without conflating it with classification accuracy.",
+      "inference_guard": "classification stability != unique optimum"
+    },
+    "DEVELOPMENT_RULE_SELECTION": {
+      "status": "CONDITIONAL_ACTIVE",
+      "truth_basis": "DEVELOPMENT synthetic truth only",
+      "purpose": "Allow candidate-rule development only if prospectively permitted by policy.",
+      "heldout_access": "PROHIBITED"
+    },
+    "HELDOUT_VALIDATION": {
+      "status": "PRIMARY_ACTIVE_LATER",
+      "truth_basis": "independently generated HELDOUT synthetic truth",
+      "purpose": "Single-use independent validation after final rule freeze.",
+      "currently_generated": false,
+      "currently_accessed": false
+    },
+    "EMPIRICAL_REALISM_DIAGNOSTIC": {
+      "status": "OPTIONAL_DISABLED_FOR_PRIMARY_VALIDATION",
+      "truth_basis": "NONE",
+      "purpose": "May later compare synthetic nuisance properties with observational summaries without supplying truth labels.",
+      "enabled": false,
+      "may_support_specificity_or_fpr": false
+    }
+  },
+  "cross_plane_rules": [
+    "INPUT_INADMISSIBLE is never recoded as NOT_SELECTED.",
+    "Classification performance conditional on eligible input is separate from end-to-end recovery over all planned simulations.",
+    "Period recovery is separate from classification.",
+    "Numerical stability is separate from classification accuracy.",
+    "Development rule selection cannot access held-out data.",
+    "Held-out validation is single-use and cannot be tuned after inspection.",
+    "Observational reference labels never define synthetic truth."
+  ],
+  "scope_controls": {
+    "candidate_discovery": "OUT_OF_SCOPE_FOR_INITIAL_F3B_VALIDATION",
+    "observational_candidate_search": false,
+    "observational_events_as_independent_validation": false,
+    "new_bibliographic_search": false
+  },
+  "execution_state": {
+    "injections_generated": false,
+    "afino_executed": false,
+    "scientific_results_computed": false,
+    "development_generated": false,
+    "heldout_generated": false,
+    "heldout_accessed": false
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "artifact_role": "SYNTHETIC_TRUTH_LABEL_CONTRACT",
+  "contract_status": "FROZEN_WITHIN_F3B1_DESIGN_BLOCK_1",
+  "source_binding": {
+    "artifact": "f3b1_source_bindings.json",
+    "sha256": "7d6f84e30de4a7703c5262f1dc02c78ab45f4dd36f06f7ffac7e86f021fee85d"
+  },
+  "truth_states": {
+    "SYNTHETIC_QPP_PRESENT": {
+      "qpp_component": "PRESENT",
+      "definition": "Fully synthetic series with a prospectively specified QPP component and exact generating parameters known by construction.",
+      "required_truth_fields": [
+        "true_period_s",
+        "true_signal_amplitude",
+        "signal_family",
+        "signal_parameters",
+        "envelope_parameters"
+      ]
+    },
+    "SYNTHETIC_QPP_ABSENT": {
+      "qpp_component": "NONE",
+      "definition": "Fully synthetic series generated from the same prospectively specified nuisance/background process but with no QPP component.",
+      "required_truth_fields": [
+        "signal_family",
+        "signal_parameters",
+        "envelope_parameters"
+      ]
+    }
+  },
+  "f1_truth_mapping": {
+    "NULL_FLARE_RED_NOISE": "SYNTHETIC_QPP_ABSENT",
+    "STATIONARY_QPP_PRESENT": "SYNTHETIC_QPP_PRESENT",
+    "source": "F1SRC001"
+  },
+  "primary_signal_family": {
+    "family_id": "STATIONARY_ENVELOPE_MODULATED_SINUSOID",
+    "status": "PRIMARY_SIGNAL_FAMILY",
+    "definition": "Fixed-frequency sinusoid whose amplitude is modulated by the synthetic flare envelope; no additional damping or chirp.",
+    "continuity_sources": [
+      "F1SRC001",
+      "F1SRC003",
+      "F1SRC004",
+      "F1SRC012",
+      "F1SRC015"
+    ],
+    "scientific_rationale": "Provides direct continuity with the validated F1 stationary-QPP generator while matching the spectral-peak validation target of the frozen AFINO baseline. This choice avoids introducing signal-family mismatch into the primary validation plane.",
+    "numeric_parameters_are_defined_elsewhere": "f3b1_simulation_domain.csv"
+  },
+  "secondary_stress_signal_family": {
+    "status": "UNRESOLVED_F3B1_DESIGN",
+    "allowed": true,
+    "constraint": "Any damped, chirped or transient family must be prospectively justified, separately labelled and never pooled with the primary family in an unstratified primary metric.",
+    "literature_sources": [
+      "BAIISRC002",
+      "BAIISRC003"
+    ]
+  },
+  "ground_truth_policy": {
+    "synthetic_ground_truth_known": true,
+    "observational_reference_ground_truth": false,
+    "real_observational_background_allowed_as_primary_null": false,
+    "specificity_and_fpr_truth_source": "SYNTHETIC_QPP_ABSENT only",
+    "positive_class_truth_source": "SYNTHETIC_QPP_PRESENT only",
+    "observational_physical_truth_claimed": false
+  },
+  "observational_label_policy": {
+    "PUBLISHED_QPP_REFERENCE": "OBSERVATIONAL_REFERENCE_LABEL_NOT_TRUTH",
+    "PUBLISHED_NOT_SELECTED_REFERENCE": "OBSERVATIONAL_REFERENCE_LABEL_NOT_TRUTH",
+    "REFERENCE_BASELINE_MISMATCH": "METHODOLOGICAL_REPRODUCTION_STATE_NOT_TRUTH"
+  },
+  "observational_reuse_policy": {
+    "F2_events": "NOT_HELDOUT_TRUTH",
+    "F3A_events": "NOT_HELDOUT_TRUTH",
+    "may_inform": [
+      "nuisance_distributions",
+      "gap_regimes",
+      "sampling_design",
+      "realism_constraints"
+    ],
+    "prohibited_uses": [
+      "synthetic_truth_label",
+      "independent_heldout_validation",
+      "observational_specificity_or_fpr_ground_truth"
+    ]
+  },
+  "secondary_observational_background_policy": {
+    "may_be_considered_later": true,
+    "plane": "EMPIRICAL_REALISM_DIAGNOSTIC only unless separately preregistered",
+    "may_contribute_to_specificity_or_fpr": false,
+    "reason": "A latent physical QPP cannot be excluded in a real observational background."
+  },
+  "execution_state": {
+    "injections_generated": false,
+    "afino_executed": false,
+    "development_generated": false,
+    "heldout_generated": false,
+    "heldout_accessed": false
+  }
+}

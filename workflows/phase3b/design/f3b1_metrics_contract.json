@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "artifact_role": "METRICS_CONTRACT",
+  "contract_status": "FROZEN_WITHIN_F3B1_DESIGN_BLOCK_4",
+  "scope": {
+    "primary_classification_plane": "SYNTHETIC_GROUND_TRUTH_CLASSIFICATION",
+    "classification_population": "CONTIGUOUS_ALL_GOOD series only",
+    "classification_condition": "ELIGIBLE_FOR_AFINO only",
+    "input_inadmissible_as_fn_or_tn": false,
+    "confidence_level": 0.95
+  },
+  "truth_mapping": {
+    "positive": "SYNTHETIC_QPP_PRESENT",
+    "negative": "SYNTHETIC_QPP_ABSENT",
+    "selected": "AFINO selection rule returns selected=true",
+    "not_selected": "AFINO selection rule returns selected=false"
+  },
+  "confusion_matrix": {
+    "TP": "eligible synthetic-positive AND selected",
+    "FN": "eligible synthetic-positive AND not selected",
+    "TN": "eligible synthetic-null AND not selected",
+    "FP": "eligible synthetic-null AND selected"
+  },
+  "primary_classification_metrics": {
+    "sensitivity_TPR": "TP/(TP+FN)",
+    "specificity_TNR": "TN/(TN+FP)",
+    "false_positive_rate_FPR": "FP/(FP+TN)",
+    "uncertainty": "95% Wilson score interval computed separately for each binomial proportion"
+  },
+  "secondary_classification_summary": {
+    "balanced_accuracy": "0.5*(sensitivity_TPR+specificity_TNR)",
+    "role": "development objective / comparative summary, not a replacement for separate sensitivity and specificity"
+  },
+  "end_to_end_metrics": {
+    "input_admissibility_fraction": "ELIGIBLE_FOR_AFINO / all planned series in the stated plane",
+    "end_to_end_positive_recovery_fraction": "selected synthetic-positive / all planned synthetic-positive series",
+    "end_to_end_null_selection_fraction": "selected synthetic-null / all planned synthetic-null series",
+    "classification_synonym_prohibited": true
+  },
+  "precision_ppv": {
+    "primary_metric": false,
+    "if_reported_label": "SIMULATION-PREVALENCE-DEPENDENT",
+    "reason": "Synthetic positive/null prevalence is fixed by design and is not an observational prevalence estimate."
+  },
+  "period_recovery": {
+    "classification_separate": true,
+    "true_population": "ELIGIBLE_FOR_AFINO SYNTHETIC_QPP_PRESENT",
+    "period_estimate_source": "formal M1 center converted to seconds only for selected true positives with finite in-support estimate",
+    "nonselected_m1_center_is_period_recovery": false,
+    "metrics_on_selected_true_positives": [
+      "absolute_period_error_s = abs(recovered_period_s - true_period_s)",
+      "relative_period_error = abs(recovered_period_s - true_period_s)/true_period_s",
+      "log_period_ratio = log(recovered_period_s/true_period_s)"
+    ],
+    "all_eligible_positive_denominator": {
+      "period_estimate_coverage_fraction": "selected true-positive injections with finite recovered period / all eligible positive injections",
+      "missing_period_estimate_count": "explicitly reported",
+      "error_imputation_for_nonselection": "PROHIBITED"
+    },
+    "selected_true_positive_denominator": {
+      "error_distribution_summaries": [
+        "median absolute_period_error_s",
+        "median relative_period_error",
+        "median log_period_ratio",
+        "16th and 84th empirical percentiles for each error variable"
+      ]
+    },
+    "period_recovered_within_X_percent_threshold": "NOT_USED"
+  },
+  "candidate_vs_baseline_comparison": {
+    "pairing_unit": "background_realization_id",
+    "bootstrap_method": "stratified paired nonparametric bootstrap of background_realization_id within split and designated n_samples×red_noise_alpha×qpp_fraction strata",
+    "bootstrap_replicates": 10000,
+    "bootstrap_rng_entropy": "int(SHA256('TESS-QPP:F3B1:PAIRED_BOOTSTRAP:v1').hexdigest()[0:32],16)",
+    "reported_differences": [
+      "candidate_minus_baseline_sensitivity",
+      "candidate_minus_baseline_specificity",
+      "candidate_minus_baseline_FPR",
+      "candidate_minus_baseline_balanced_accuracy"
+    ],
+    "confidence_interval": "two-sided percentile 95% interval; promotion rules use the corresponding lower confidence bound where prespecified"
+  },
+  "denominator_reporting": {
+    "every_metric_must_report_numerator": true,
+    "every_metric_must_report_denominator": true,
+    "every_stratum_must_report_denominator": true,
+    "zero_exposure_stratum": "report STRUCTURAL_NO_EXPOSURE; do not fabricate a rate"
+  },
+  "prohibited_interpretations": [
+    "observational sensitivity, specificity or FPR",
+    "physical truth about F2/F3A labels",
+    "PPV as observational predictive value",
+    "treating input inadmissibility as classifier non-selection",
+    "calling a non-selected formal M1 center a recovered period"
+  ]
+}

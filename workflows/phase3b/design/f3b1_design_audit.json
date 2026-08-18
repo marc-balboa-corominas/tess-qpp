@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "result": "PHASE3B_DESIGN_FREEZE_VALIDATION_PASS",
+  "f3a_entry_requirements": {
+    "resolved": 18,
+    "total": 18,
+    "pass": true
+  },
+  "baii_deferred_comparators": {
+    "resolved": 6,
+    "total": 6,
+    "pass": true
+  },
+  "ground_truth_states": {
+    "defined": true,
+    "states": [
+      "SYNTHETIC_QPP_PRESENT",
+      "SYNTHETIC_QPP_ABSENT"
+    ]
+  },
+  "simulation_domain": {
+    "fully_bounded": true,
+    "primary_period_support_s": [
+      40,
+      300
+    ]
+  },
+  "generator": {
+    "fully_specified": true,
+    "same_code_development_heldout": true
+  },
+  "development_split": {
+    "frozen": true,
+    "background_realizations": 1800,
+    "planned_series": 4320
+  },
+  "heldout_split": {
+    "frozen": true,
+    "background_realizations": 1800,
+    "planned_series": 4320
+  },
+  "development_data_generated": 0,
+  "heldout_data_generated": 0,
+  "metrics_frozen": true,
+  "selection_function_method_frozen": true,
+  "rule_development_policy_frozen": true,
+  "promotion_gates_frozen": true,
+  "afino_executed": false,
+  "injections_generated": false,
+  "heldout_accessed": false,
+  "candidate_rule_frozen": false,
+  "correction_claim_established": false,
+  "scientific_results_computed": false,
+  "observational_ground_truth_assumed": false,
+  "protected_scopes_modified": {
+    "foundation_f0_f2": false,
+    "bibliographic_audit_ii": false,
+    "phase3a": false
+  },
+  "all_protected_scopes_unchanged": true,
+  "heldout_generated_before_rule_freeze": false,
+  "heldout_access_before_rule_freeze": "PROHIBITED",
+  "heldout_is_single_use": true,
+  "baseline_validation_mandatory": true,
+  "correction_rule_mandatory": false,
+  "truth_contract_observational_reference_ground_truth": false
+}
