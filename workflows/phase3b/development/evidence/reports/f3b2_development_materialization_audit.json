@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.2",
+  "artifact_role": "DEVELOPMENT_MATERIALIZATION_AUDIT",
+  "status": "PHASE3B_DEVELOPMENT_GENERATOR_VALIDATED_AND_MATERIALIZED",
+  "final_f3b2_status_not_yet_declared": false,
+  "f3b1_design_tag": "phase3b-design-v1",
+  "f3b1_design_commit": "b8680934644be1bfec196e2009311b3060968f0a",
+  "f3b2_implementation_binding_commit": "467abe9d5fc8379e342f7c98d735aae12ad56ea1",
+  "f1_generator_continuity_status": "F3B2_F1_GENERATOR_CONTINUITY_PASS",
+  "generator_canary_status": "F3B2_GENERATOR_CANARY_PASS",
+  "generator_canary_environment": {
+    "python_version": "3.13.13",
+    "python_major_minor": [
+      3,
+      13
+    ],
+    "numpy_version": "2.3.5",
+    "byteorder": "little"
+  },
+  "pre_materialization_environment_incident": {
+    "incident_id": "F3B2-ENV-001",
+    "invalidated_canary_numpy_version": "2.5.1",
+    "bound_and_valid_numpy_version": "2.3.5",
+    "quarantine_archive_sha256": "752749fe09bdace7ab878121e677fc55a54fd74774eec2419db84ce26e10cbd5",
+    "invalid_canary_used_as_scientific_evidence": false
+  },
+  "pre_materialization_tooling_incident": {
+    "incident_id": "F3B2-TOOL-001",
+    "failed_helper_sha256": "fbdf5b1815542918017053d93a0872c494288cc0dd809db7bd033e0f33d70807",
+    "failure": "NameError: py_compile not imported",
+    "failure_stage": "after copying helper into repo, before loading F3B generator and before any full-DEVELOPMENT stochastic draw",
+    "stale_helper_recovered": true,
+    "scientific_bytes_generated_by_failed_attempt": false,
+    "heldout_bytes_generated_by_failed_attempt": false,
+    "afino_executed_by_failed_attempt": false
+  },
+  "development_registry_rows": 4320,
+  "development_backgrounds": 1800,
+  "primary_planned": 3600,
+  "challenge_planned": 720,
+  "positive_total": 2160,
+  "null_total": 2160,
+  "materialized_series": 4320,
+  "materialization_failures": 0,
+  "generation_failure_backgrounds": 0,
+  "primary_eligible": 3600,
+  "primary_inadmissible": 0,
+  "challenge_input_state_counts": {
+    "INPUT_INADMISSIBLE": 720
+  },
+  "all_input_state_counts": {
+    "ELIGIBLE_FOR_AFINO": 3600,
+    "INPUT_INADMISSIBLE": 720
+  },
+  "inadmissibility_primary_reason_counts": {
+    "TOO_FEW_CADENCES": 90,
+    "PEAK_REMOVED_BY_QUALITY": 360,
+    "IRREGULAR_SAMPLING": 270
+  },
+  "inadmissibility_all_triggered_reason_counts": {
+    "TOO_FEW_CADENCES": 180,
+    "IRREGULAR_SAMPLING": 720,
+    "PEAK_REMOVED_BY_QUALITY": 360
+  },
+  "period_support_40_300_s_pass": true,
+  "minimum_cycles_ge_3_pass": true,
+  "background_roundtrip_mismatches": 0,
+  "series_roundtrip_mismatches": 0,
+  "rematerialization": {
+    "background_hash_mismatches": 0,
+    "latent_hash_mismatches": 0,
+    "retained_payload_hash_mismatches": 0,
+    "truth_record_mismatches": 0,
+    "array_file_byte_mismatches": 0,
+    "status": "F3B2_DEVELOPMENT_REMATERIALIZATION_EXACT"
+  },
+  "arrays": {
+    "directory": "data/interim/phase3b/f3b2_development",
+    "files": {
+      "background_noise.npy": "932b4b1de4869f3937ac205cacc2a071610f47d09937997815eade2660d2bba6",
+      "background_offsets.npy": "8e0f77105f1fd3a13580adcd2c4dcbf5b09de5e32dbfd906795014a9d8f0be2c",
+      "latent_flux.npy": "ed83e778f20b0d36208a9abadac0ee2db25c8ffa872cfaba93eecfdedd9b69cf",
+      "latent_offsets.npy": "aba31f5bf921b48a046037b8ab09474edcd3136c2b405ed84b0f6e011867dd5c",
+      "retained_time_s.npy": "fe86e78f73780a3c965be8f34385ea3ece4a7eedf7b566a9f206df445aee8e7b",
+      "retained_flux.npy": "b12a873c629125843c5dc9dcc77ecc4bf3bc6272bbfd1d5dac9d3078c8e1c6a4",
+      "retained_native_index.npy": "982b010abc1e59c723e01c088f85868d1a0a87fac45368a495005418f055e2ca",
+      "retained_offsets.npy": "b1a25174a990266223d4c7d8c7313297db2ecf12674765950c90a5e24a2e4364"
+    }
+  },
+  "heldout_registry_rows": 4320,
+  "heldout_materialized_rows": 0,
+  "heldout_noise_draws": 0,
+  "heldout_period_draws": 0,
+  "heldout_phase_draws": 0,
+  "heldout_flux_arrays": 0,
+  "heldout_payloads": 0,
+  "afino_executed": false,
+  "candidate_rule_fitted": false,
+  "candidate_thresholds_generated": false,
+  "scientific_metrics_computed": false,
+  "afino_plan_frozen": true,
+  "next_required_block": "validate complete F3B.2 closure; freeze Git/OSF; only then authorize F3B.3 runner work",
+  "f3b2_closure_validation_pending": false,
+  "baseline_decisions_planned": 3600,
+  "stability_extra_decisions_planned": 648,
+  "total_development_decisions_planned": 4248,
+  "exact_model_calls_planned": 12744,
+  "m0_calls_planned": 4248,
+  "m1_calls_planned": 4248,
+  "m2_calls_planned": 4248,
+  "all_plan_jobs_execution_status": "NOT_EXECUTED",
+  "decision_grid": {
+    "path": "workflows/phase3b/development/evidence/tables/f3b2_development_decision_grid.csv",
+    "sha256": "e3bb6c99647af5b8776ceb638868fdf88dd2d930cadd968126016cc47d319289",
+    "rows": 4248
+  },
+  "exact_afino_plan": {
+    "path": "workflows/phase3b/development/evidence/tables/f3b2_development_exact_afino_plan.csv",
+    "sha256": "7cb503b0c43c1251c28d828aa71707208ebca8fced4680f13662cb91ab2a2daf",
+    "rows": 12744,
+    "afino_version": "0.5",
+    "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "low_frequency_cutoff_hz": 0.025
+  },
+  "f3b2_closure_validation_result": "PHASE3B_DEVELOPMENT_GENERATOR_VALIDATION_PASS",
+  "f3b2_closure_validation_environment": {
+    "python_version": "3.13.13",
+    "python_major_minor": [
+      3,
+      13
+    ],
+    "numpy_version": "2.3.5",
+    "byteorder": "little"
+  },
+  "f3b2_closure_validator": {
+    "path": "workflows/phase3b/scripts/validate_f3b2_development.py",
+    "sha256": "f43dadbaa1b3099c60c51a01bee4387db57979751659c6155ab3ad792661667e"
+  },
+  "f3b2_test_contract": {
+    "path": "workflows/phase3b/tests/test_f3b2_generator_and_materialization.py",
+    "sha256": "1d7ed9d4af83d1052db04621c5679ad8ea1799c97e24c9d599a4ecf166381d66",
+    "pytest_result": "21 passed"
+  },
+  "git_osf_freeze_pending": true
+}

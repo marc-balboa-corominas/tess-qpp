@@ -1,23 +1,23 @@
 # Phase 3B
 
 STATUS:
-VALIDATION DESIGN FROZEN —
-NO INJECTIONS GENERATED
-DEVELOPMENT NOT STARTED
+DEVELOPMENT MATERIALIZED —
+AFINO EXECUTION NOT STARTED
 HELDOUT NOT GENERATED
 
-F3B.1 preregisters the synthetic injection–recovery programme, the
-DEVELOPMENT/HELDOUT architecture, metrics, selection-function representation,
-optional rule-development policy, comparators, numerical-stability scope and
-success/failure gates before any synthetic light curve exists.
+F3B.1 design freeze:
+`phase3b-design-v1`
+`b8680934644be1bfec196e2009311b3060968f0a`
 
-Authoritative predecessor:
-`phase3a-complete-v2`
-`1f3b1cc21286c25dea6a0e5779c0dc18edd81933`
+F3B.2 implementation binding:
+`467abe9d5fc8379e342f7c98d735aae12ad56ea1`
 
-The frozen F3B.1 design must pass
-`PHASE3B_DESIGN_FREEZE_VALIDATION_PASS` before Git/OSF freeze.
+F3B.2 has validated the frozen generator, materialized 1,800 DEVELOPMENT
+backgrounds / 4,320 DEVELOPMENT series, verified exact roundtrip and complete
+rematerialization, and frozen the exact future AFINO worklist.
 
-Next task after approved freeze:
-F3B.2 — generator implementation/validation and DEVELOPMENT-only
-materialization. HELDOUT remains ungenerated.
+AFINO has not been executed. No sensitivity, specificity, FPR, selection
+function estimate, candidate threshold or classifier outcome exists yet.
+
+HELDOUT remains ungenerated, unaccessed and protected by its byte-exact F3B.1
+guard. F3B.3 may begin only after F3B.2 closure validation plus Git/OSF freeze.

@@ -1,9 +1,12 @@
-# DEVELOPMENT guard
+# DEVELOPMENT
 
-No DEVELOPMENT synthetic dataset exists at F3B.1 freeze.
+STATUS:
+DEVELOPMENT MATERIALIZED AND FROZEN —
+AFINO NOT STARTED
 
-This directory intentionally contains only this guard document. Materialization
-is prohibited until F3B.1 is approved and F3B.2 validates the frozen generator.
+F3B.2 validated the frozen generator and materialized DEVELOPMENT only.
+The exact persistent payload arrays are stored outside ordinary Git under
+`data/interim/phase3b/f3b2_development/`.
 
-Allowed next phase: generate DEVELOPMENT only from the frozen split registry
-and generator. HELDOUT must remain ungenerated.
+The future DEVELOPMENT AFINO plan is frozen but every job remains
+`NOT_EXECUTED`. HELDOUT remains ungenerated and unaccessed.

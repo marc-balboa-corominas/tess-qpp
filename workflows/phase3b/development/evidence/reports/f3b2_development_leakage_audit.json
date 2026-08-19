@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.2",
+  "artifact_role": "DEVELOPMENT_LEAKAGE_AUDIT",
+  "status": "F3B2_DEVELOPMENT_LEAKAGE_AUDIT_PASS",
+  "development_backgrounds": 1800,
+  "heldout_backgrounds": 1800,
+  "background_split_overlap": 0,
+  "heldout_stochastic_draws": 0,
+  "truth_used_to_construct_positive_null_series": true,
+  "truth_used_as_afino_inference_feature": false,
+  "observational_labels_used_as_truth": false,
+  "development_outcomes_observed": false,
+  "afino_executed": false,
+  "candidate_rule_fitted": false,
+  "candidate_thresholds_generated": false,
+  "scientific_metrics_computed": false
+}

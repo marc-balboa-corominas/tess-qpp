@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.2",
+  "artifact_role": "GENERATOR_CANARY_VALIDATION_AUDIT",
+  "status": "F3B2_GENERATOR_CANARY_PASS",
+  "f3b1_design_tag": "phase3b-design-v1",
+  "f3b1_design_commit": "b8680934644be1bfec196e2009311b3060968f0a",
+  "f3b2_implementation_binding_commit": "467abe9d5fc8379e342f7c98d735aae12ad56ea1",
+  "execution_environment": {
+    "python_version": "3.13.13",
+    "python_major_minor": [
+      3,
+      13
+    ],
+    "numpy_version": "2.3.5",
+    "byteorder": "little"
+  },
+  "generator_sha256": "d538d53c7845916e29c4dd351b85ae91076d5a342acb5619898788ef5d825d11",
+  "f1_generator_continuity_status": "F3B2_F1_GENERATOR_CONTINUITY_PASS",
+  "f1_generator_continuity": {
+    "status": "F3B2_F1_GENERATOR_CONTINUITY_PASS",
+    "abs_tol": 5e-12,
+    "rel_tol": 0.0,
+    "reference_cases": [
+      {
+        "n_samples": 15,
+        "red_noise_alpha": 0.0,
+        "data_seed": 0,
+        "status": "PASS"
+      },
+      {
+        "n_samples": 15,
+        "red_noise_alpha": 2.0,
+        "data_seed": 39,
+        "status": "PASS"
+      },
+      {
+        "n_samples": 30,
+        "red_noise_alpha": 1.0,
+        "data_seed": 17,
+        "status": "PASS"
+      },
+      {
+        "n_samples": 60,
+        "red_noise_alpha": 0.0,
+        "data_seed": 39,
+        "status": "PASS"
+      },
+      {
+        "n_samples": 120,
+        "red_noise_alpha": 2.0,
+        "data_seed": 0,
+        "status": "PASS"
+      }
+    ]
+  },
+  "canary": {
+    "primary_backgrounds": 36,
+    "primary_series": 72,
+    "challenge_backgrounds": 4,
+    "challenge_series": 16,
+    "total_series": 88,
+    "primary_selection": "exact 36 F3B.1 numerical-stability backgrounds",
+    "challenge_selection": "one DEVELOPMENT challenge background per n_samples using minimum challenge_rank_sha256"
+  },
+  "validations": {
+    "time_grid_exact": true,
+    "flare_peak_and_two_branch_envelope": true,
+    "red_noise_finite": true,
+    "red_noise_mean_abs_tol_5e_12": true,
+    "red_noise_sample_std_0_005_abs_tol_5e_12": true,
+    "redraw_count_zero": true,
+    "null_positive_shared_background_exact": true,
+    "positive_minus_null_equals_qpp_component_abs_tol_5e_12": true,
+    "period_support_40_300_s": true,
+    "minimum_cycles_ge_3": true,
+    "period_reconstruction_exact": true,
+    "phase_range_0_2pi": true,
+    "phase_reconstruction_exact": true,
+    "challenge_only_changes_retained_input": true,
+    "latent_flux_invariant_under_challenge_mask": true
+  },
+  "heldout_nonmaterialization": {
+    "heldout_registry_rows": 4320,
+    "heldout_background_rng_initializations": 0,
+    "heldout_period_draws": 0,
+    "heldout_phase_draws": 0,
+    "heldout_noise_draws": 0,
+    "heldout_flux_arrays": 0,
+    "heldout_payloads": 0,
+    "heldout_generated": false,
+    "heldout_accessed": false
+  },
+  "execution_state": {
+    "f3b_canary_stochastic_draws_executed": true,
+    "full_development_materialized": false,
+    "afino_executed": false,
+    "candidate_rule_fitted": false,
+    "candidate_thresholds_generated": false,
+    "scientific_metrics_computed": false
+  },
+  "manifest": {
+    "path": "workflows/phase3b/development/evidence/tables/f3b2_generator_canary_manifest.csv",
+    "sha256": "6f1b42bfd1d7ae5dd58888c5821d120b0ffb1cedd3bf870099bc1dfe93c981a1",
+    "rows": 88
+  },
+  "limitations": [
+    "Canary validates implementation mechanics, not empirical realism.",
+    "No sensitivity, specificity, FPR, balanced accuracy, selection-function estimate, candidate threshold or AFINO outcome is computed."
+  ]
+}
