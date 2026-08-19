@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.2",
+  "artifact_role": "GENERATOR_IMPLEMENTATION_BINDING",
+  "binding_status": "FROZEN_BEFORE_FIRST_F3B2_STOCHASTIC_DRAW",
+  "f3b1_authoritative_freeze": {
+    "commit": "b8680934644be1bfec196e2009311b3060968f0a",
+    "tag": "phase3b-design-v1"
+  },
+  "normative_inputs": {
+    "workflows/phase3b/design/f3b1_generator_contract.json": "08877cb38f9e86cfe52c310bf9e19d1bd5cd437c800d2935f81c3587eb7c484e",
+    "workflows/phase3b/design/f3b1_simulation_domain.csv": "f4436ccf7907b660c415e86b8e8c88867656bc481c957e5a07662c06155992f9",
+    "workflows/phase3b/design/f3b1_sampling_plan.json": "3c8b36112ece4e028161c78338a3d7448056470453390b43705f6c6d5fd51a2e",
+    "workflows/phase3b/design/f3b1_split_registry.csv": "2316e09ba061910d360ba0d11aa4a766a3b657f56182bb6ba1c455d2b8120c93",
+    "workflows/phase3b/design/f3b1_truth_label_contract.json": "99967b5cff89409a1ff5df25cf1045e1618800d05224a21248ca0676e35d82b2",
+    "workflows/phase3b/design/f3b1_heldout_access_policy.json": "4f7276fdfec55a887e06adc5146a42e0974c9e2ca0650622972e66f593f417f3",
+    "workflows/phase3b/design/f3b1_numerical_stability_protocol.json": "cee38e35aa2c6fcab0f6d3022744f9c10cbd27532657303b72c8fcd1a83a8a16",
+    "foundation/f0-f2/phase1/fase1_tarea02_synthetic_generator.py": "743005e580f20be331408d9165522932a289d256cef0efbe4c4f24fcb38c54bd",
+    "foundation/f0-f2/phase1/fase1_tarea02_generator_validation_audit.json": "3e4d588110dbe535038dc0e85ec08a60e47de946d438c05b121b379ee0c02f11",
+    "foundation/f0-f2/phase1/fase1_tarea01_core_benchmark_preregistration.json": "dd80346172290e014d73f78240b3e31f135bcc7e4f075963e7e20d8456de3401"
+  },
+  "environment_binding": {
+    "python_major_minor": "3.13",
+    "numpy_version": "2.3.5",
+    "byteorder": "little",
+    "canonical_float_dtype": "<f8",
+    "canonical_int_dtype": "<i8",
+    "canonical_bool_dtype": "|b1",
+    "canonical_array_order": "C"
+  },
+  "background_and_phase_rng": {
+    "bit_generator": "numpy.random.PCG64",
+    "namespace": "TESS-QPP:F3B1:v1",
+    "utf8_preimage": "\"TESS-QPP:F3B1:v1:\" + background_realization_id",
+    "digest": "SHA256",
+    "entropy_conversion": "int(hexdigest[0:32], 16)",
+    "seed_sequence": "np.random.SeedSequence(background_entropy)",
+    "child_generation": "noise_seed, phase_seed = SeedSequence(...).spawn(2)",
+    "child_count": 2,
+    "child_order": [
+      "noise_seed",
+      "phase_seed"
+    ],
+    "generator_construction": "np.random.Generator(np.random.PCG64(child_seed))",
+    "spawn_3_prohibited": true
+  },
+  "period_rng": {
+    "bit_generator": "numpy.random.PCG64",
+    "namespace": "TESS-QPP:F3B1:PERIOD:v1",
+    "utf8_preimage": "\"TESS-QPP:F3B1:PERIOD:v1:\" + background_realization_id",
+    "digest": "SHA256",
+    "entropy_conversion": "int(hexdigest[0:32], 16)",
+    "seed_sequence": "np.random.SeedSequence(period_entropy)",
+    "generator_construction": "np.random.Generator(np.random.PCG64(seed_sequence))",
+    "distribution": "log-uniform",
+    "u_distribution": "Uniform[0,1)",
+    "period_min_s": 40.0,
+    "period_max_formula": "min(300.0, duration_s / 3.0)",
+    "transform": "exp(log(P_min) + u * (log(P_max) - log(P_min)))",
+    "independent_of_background_noise_and_phase_rng": true
+  },
+  "frozen_dtypes": {
+    "time_s": "float64",
+    "flux": "float64",
+    "red_noise": "float64",
+    "latent_flux": "float64",
+    "native_index": "int64",
+    "offset": "int64",
+    "quality_retain_mask": "bool"
+  },
+  "serialization_and_hashing": {
+    "float_arrays": "little-endian float64 contiguous C-order raw bytes",
+    "int_arrays": "little-endian int64 contiguous C-order raw bytes",
+    "bool_arrays": "numpy bool one-byte contiguous C-order raw bytes",
+    "scalar_phase_hash": "little-endian float64 raw bytes",
+    "canonical_json": "UTF-8 JSON sort_keys=true separators=(',',':') allow_nan=false",
+    "logical_payload_sha256": "SHA256(b'F3B2_PAYLOAD_V1\\x00' + simulation_unit_id UTF-8 + b'\\x00' + retained_time_s<f8 bytes + retained_flux<f8 bytes + retained_native_index<i8 bytes)"
+  },
+  "generator_semantics": {
+    "single_generator_module": "workflows/phase3b/scripts/f3b_synthetic_generator.py",
+    "development_specific_generator_prohibited": true,
+    "heldout_specific_generator_prohibited": true,
+    "same_module_required_for_future_heldout": true,
+    "redraw_count_required": 0,
+    "no_interpolation": true,
+    "no_gap_fill": true,
+    "mask_application_stage": "after latent flux construction"
+  },
+  "f1_continuity_contract": {
+    "f1_generator_sha256": "743005e580f20be331408d9165522932a289d256cef0efbe4c4f24fcb38c54bd",
+    "reference_cases_source": "fase1_tarea02_generator_validation_audit.json independent_reference.cases",
+    "reference_cases": [
+      {
+        "n_samples": 15,
+        "red_noise_alpha": 0.0,
+        "data_seed": 0
+      },
+      {
+        "n_samples": 15,
+        "red_noise_alpha": 2.0,
+        "data_seed": 39
+      },
+      {
+        "n_samples": 30,
+        "red_noise_alpha": 1.0,
+        "data_seed": 17
+      },
+      {
+        "n_samples": 60,
+        "red_noise_alpha": 0.0,
+        "data_seed": 39
+      },
+      {
+        "n_samples": 120,
+        "red_noise_alpha": 2.0,
+        "data_seed": 0
+      }
+    ],
+    "comparison_fields": [
+      "time grid",
+      "flare envelope",
+      "red-noise realization",
+      "phase",
+      "null flux",
+      "stationary-QPP component",
+      "positive flux"
+    ],
+    "absolute_tolerance": 5e-12,
+    "relative_tolerance": 0.0,
+    "required_result": "F3B2_F1_GENERATOR_CONTINUITY_PASS"
+  },
+  "predraw_state": {
+    "stochastic_draws_executed": false,
+    "development_materialized": false,
+    "heldout_materialized": false,
+    "heldout_accessed": false,
+    "afino_executed": false,
+    "candidate_rule_fitted": false,
+    "scientific_metrics_computed": false
+  }
+}
