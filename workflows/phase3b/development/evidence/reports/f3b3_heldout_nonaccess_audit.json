@@ -1,0 +1,13 @@
+{
+  "afino_heldout_jobs": 0,
+  "heldout_accessed": false,
+  "heldout_flux_arrays": 0,
+  "heldout_generated": false,
+  "heldout_noise_draws": 0,
+  "heldout_payloads": 0,
+  "heldout_period_draws": 0,
+  "heldout_phase_draws": 0,
+  "heldout_registry_rows": 4320,
+  "phase": "F3B.3",
+  "status": "HELDOUT_UNGENERATED_UNACCESSED"
+}

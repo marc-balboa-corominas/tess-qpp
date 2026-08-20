@@ -1,0 +1,94 @@
+{
+  "canary_decisions": 216,
+  "canary_manifest_sha256": "e28fca1275abdab169d47b95ce97eab51df81a2e2a3a2b2c7646072471095f82",
+  "candidate_rule_fitted": false,
+  "checkpoint_resume_sequence": [
+    {
+      "existing": 0,
+      "new": 211,
+      "total": 211
+    },
+    {
+      "existing": 211,
+      "new": 223,
+      "total": 434
+    },
+    {
+      "existing": 434,
+      "new": 214,
+      "total": 648
+    },
+    {
+      "existing": 648,
+      "new": 0,
+      "total": 648
+    }
+  ],
+  "checkpoint_rows": 648,
+  "checkpoint_sha256": "4c073a8f699f12c9ed7f7f3953d1161cdeacfb2c4e8c71be4f6b1ffa9c0876a3",
+  "checkpoint_status_counts": {
+    "OK": 648
+  },
+  "decision_recalculation_mismatches": 0,
+  "duplicate_job_ids": 0,
+  "duplicate_scientific_keys": 0,
+  "exact_replay_abs_tol": 5e-12,
+  "exact_replay_decisions": 6,
+  "exact_replay_jobs": 18,
+  "exact_replay_matches": 18,
+  "exact_replay_mismatches": 0,
+  "exact_replay_rel_tol": 0.0,
+  "f3b3_canary_freeze_commit": "763a40b4ec4a2ace90fe6c0c500c2c94440534f3",
+  "finalizer_sha256": "2048ed09e50c5121028073e9fef340ddc19defbf15642177f2b39e359530a4c9",
+  "full_development_authorized": false,
+  "full_development_executed": false,
+  "heldout_accessed": false,
+  "heldout_afino_jobs": 0,
+  "heldout_generated": false,
+  "mean_dt_temporal_contract_pass": 216,
+  "payload_mismatches": 0,
+  "phase": "F3B.3",
+  "positive_fftfreq_temporal_contract_pass": 216,
+  "replay_anchor_rule": {
+    "anchors": [
+      {
+        "anchor_id": "N015_NULL_SEED0",
+        "external_optimizer_seed": 0,
+        "simulation_unit_id": "F3BBG_N015_A0_Q001_R013:NULL:PRIMARY"
+      },
+      {
+        "anchor_id": "N015_POS_SEED0",
+        "external_optimizer_seed": 0,
+        "simulation_unit_id": "F3BBG_N015_A0_Q001_R013:POS:PRIMARY"
+      },
+      {
+        "anchor_id": "N120_NULL_SEED0",
+        "external_optimizer_seed": 0,
+        "simulation_unit_id": "F3BBG_N120_A0_Q001_R032:NULL:PRIMARY"
+      },
+      {
+        "anchor_id": "N120_POS_SEED0",
+        "external_optimizer_seed": 0,
+        "simulation_unit_id": "F3BBG_N120_A0_Q001_R032:POS:PRIMARY"
+      },
+      {
+        "anchor_id": "GLOBAL_NULL_SEED9",
+        "external_optimizer_seed": 9,
+        "simulation_unit_id": "F3BBG_N015_A0_Q001_R013:NULL:PRIMARY"
+      },
+      {
+        "anchor_id": "GLOBAL_POS_SEED9",
+        "external_optimizer_seed": 9,
+        "simulation_unit_id": "F3BBG_N015_A0_Q001_R013:POS:PRIMARY"
+      }
+    ],
+    "selection_uses_afino_outcomes": false,
+    "tie_break": "lexicographically smallest simulation_unit_id within required frozen scope"
+  },
+  "result_core_mismatches": 0,
+  "runner_sha256": "4d5b68cdda60abd7f3a4380abf63d1b0b5e9f4e5889caf22ff85f95b31d813bc",
+  "scientific_metrics_computed": false,
+  "status": "PHASE3B_DEVELOPMENT_RUNNER_VALIDATED_ON_FROZEN_CANARY",
+  "truth_columns_used_as_inference_features": false,
+  "valid_decisions": 216
+}

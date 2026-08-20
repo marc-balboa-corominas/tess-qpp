@@ -1,0 +1,41 @@
+{
+  "authorization_scope": "DEVELOPMENT_ONLY",
+  "authorization_status": "AUTHORIZED_AFTER_FROZEN_CANARY_PASS",
+  "authorized_inputs": {
+    "blinded_plan_sha256": "180446352dc055132989cfb562e28c3df4730f2de8f38be767c6a79cc83cf600",
+    "canary_checkpoint_sha256": "4c073a8f699f12c9ed7f7f3953d1161cdeacfb2c4e8c71be4f6b1ffa9c0876a3",
+    "canary_job_manifest_sha256": "e28fca1275abdab169d47b95ce97eab51df81a2e2a3a2b2c7646072471095f82",
+    "environment_binding_sha256": "1105199deead4782b76008d4a7c1ba636f7b3898a4808bb76585909d1bbe85c9",
+    "runner_sha256": "4d5b68cdda60abd7f3a4380abf63d1b0b5e9f4e5889caf22ff85f95b31d813bc"
+  },
+  "baseline_decisions": 3600,
+  "canary_evidence_sha256": {
+    "f3b3_canary_decisions.csv": "8cbb04e18b3ee408d087dea79e8ebbbc7bee400bf91b55c444c514df60df4a26",
+    "f3b3_canary_exact_replay_audit.csv": "ad2c3a22c6f97fcfef26cd462f844fa893656432dc2d53e67a780bfe0d8a4b37",
+    "f3b3_canary_results.csv": "f95f3a031de088fcefd1866cb351975c18afb1847a34e8562fa1d8d2606fb1e4",
+    "f3b3_canary_temporal_contract.csv": "7bbff90f6a3f6494c878b28f74e00e3ebee499acd6760764e7c0a527c9590ff8",
+    "f3b3_execution_environment.json": "4224d83c6673a86a998a09fe22c2819b17d3cae96c6757c8423e23201fc23aad",
+    "f3b3_heldout_nonaccess_audit.json": "68d5daff5cd97c8dcf76708ffb5fd67d2a5ee331374e2a644a285d7098c348d5",
+    "f3b3_runner_canary_audit.json": "abdb089634587f2585b85538d22f2e12655018db53c771977d400aa503a3b2bb"
+  },
+  "canary_gate_status": "PHASE3B_DEVELOPMENT_RUNNER_VALIDATED_ON_FROZEN_CANARY",
+  "canary_rerun": false,
+  "canary_reuse": true,
+  "candidate_rule_fitting_authorized": false,
+  "development_only": true,
+  "diagnostic_replay_jobs": 18,
+  "diagnostic_replay_matches": 18,
+  "diagnostic_replay_mismatches": 0,
+  "f3b2_commit": "7550679a8b0ea1f028987a38cfbe7ac7671fb8ce",
+  "f3b2_tag": "phase3b-development-materialization-v1",
+  "f3b3_canary_freeze_commit": "763a40b4ec4a2ace90fe6c0c500c2c94440534f3",
+  "frozen_decisions": 4248,
+  "frozen_jobs": 12744,
+  "heldout_authorized": false,
+  "phase": "F3B.3",
+  "remaining_new_jobs": 12096,
+  "scientific_metrics_authorized": false,
+  "stability_extra_decisions": 648,
+  "validated_canary_decisions": 216,
+  "validated_canary_jobs": 648
+}
