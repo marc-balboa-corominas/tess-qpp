@@ -1,0 +1,112 @@
+{
+  "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+  "afino_heldout_jobs": 0,
+  "afino_version": "0.5",
+  "blinded_plan_sha256": "180446352dc055132989cfb562e28c3df4730f2de8f38be767c6a79cc83cf600",
+  "canary_decisions": 216,
+  "canary_exact_replay_jobs": 18,
+  "canary_exact_replay_matches": 18,
+  "canary_imported": 648,
+  "canary_jobs": 648,
+  "canary_result_core_mismatches": 0,
+  "candidate_rule_fitted": false,
+  "checkpoint_csv_mismatches": 0,
+  "checkpoint_jobs": 12744,
+  "decision_class_counts": {
+    "BASELINE": 3600,
+    "NUMERICAL_STABILITY_EXTRA": 648
+  },
+  "decision_recalculation_mismatches": 0,
+  "decisions_rows": 4248,
+  "development_checkpoint_sha256": "41247f0c05cae443d4e58ecf13ee8217e747c45e5fec2541d47d73cf3b704d32",
+  "duplicate_job_ids": 0,
+  "duplicate_scientific_keys": 0,
+  "f3b2_commit": "7550679a8b0ea1f028987a38cfbe7ac7671fb8ce",
+  "f3b2_tag": "phase3b-development-materialization-v1",
+  "f3b3_authorization_commit": "ed48da39bcd31e2c829e0aecd5dfa25d9bea44fa",
+  "f3b3_canary_freeze_commit": "763a40b4ec4a2ace90fe6c0c500c2c94440534f3",
+  "frozen_plan_jobs": 12744,
+  "full_checkpoint_sequence_new_jobs": [
+    3000,
+    3000,
+    3000,
+    3000,
+    96,
+    0
+  ],
+  "generator_imported": false,
+  "heldout_accessed": false,
+  "heldout_generated": false,
+  "heldout_registry_rows": 4320,
+  "heldout_stochastic_draws": 0,
+  "mean_dt_temporal_contract_pass": 4248,
+  "model_counts": {
+    "M0": 4248,
+    "M1": 4248,
+    "M2": 4248
+  },
+  "operational_summary_by_model": {
+    "M0": {
+      "bound_calls": 158,
+      "calls": 4248,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 4248
+      },
+      "runtime_median_seconds": 0.28132999999797903,
+      "runtime_total_seconds": 1162.098666500271,
+      "warning_calls": 0,
+      "warning_count": 0
+    },
+    "M1": {
+      "bound_calls": 2733,
+      "calls": 4248,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 4248
+      },
+      "runtime_median_seconds": 0.83866969999508,
+      "runtime_total_seconds": 3578.9134849003167,
+      "warning_calls": 0,
+      "warning_count": 0
+    },
+    "M2": {
+      "bound_calls": 1682,
+      "calls": 4248,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 4248
+      },
+      "runtime_median_seconds": 0.4906005999946501,
+      "runtime_total_seconds": 2058.7203853002575,
+      "warning_calls": 2001,
+      "warning_count": 16742
+    }
+  },
+  "output_sha256": {
+    "f3b3_canary_bootstrap_audit.csv": "fb2aee87e78a5cb935c641ef78b9763da3784c37302224c2f934691cbeaba36d",
+    "f3b3_development_decisions.csv": "8143bfdc87909ba6559fa5a6534107e49741ba186861d939fa89883c5c022a39",
+    "f3b3_development_results.csv": "4b12b384b0130c7ac1c43f51395e13026bed03eb2560a51dc9f16d5ad63cf0b4",
+    "f3b3_development_temporal_contract.csv": "5c8767f96dc83db62cde19e65dffda565935c73f27fba9368a1141fa58f6ed7e"
+  },
+  "payload_mismatches": 0,
+  "phase": "F3B.3",
+  "plan_checkpoint_mismatches": 0,
+  "positive_fftfreq_temporal_contract_pass": 4248,
+  "result_core_mismatches": 0,
+  "results_csv_rows": 12744,
+  "runner_sha256": "4d5b68cdda60abd7f3a4380abf63d1b0b5e9f4e5889caf22ff85f95b31d813bc",
+  "scientific_metrics_computed": false,
+  "scope": "DEVELOPMENT_ONLY",
+  "selection_function_estimated": false,
+  "status": "PHASE3B_DEVELOPMENT_EXECUTION_VALIDATION_PASS",
+  "synthetic_arrays_regenerated": false,
+  "temporal_csv_mismatches": 0,
+  "temporal_rows": 4248,
+  "truth_used_as_inference_feature": false,
+  "validator_incidents": [
+    {
+      "classification": "VALIDATOR_COMPARISON_BUG_NO_SCIENTIFIC_BYTES_CHANGED",
+      "detail": "The first final-validator candidate compared plan-only AFINO version/commit/cutoff fields against SQLite result rows where those fields are intentionally not persisted per row. All other independent checks were zero-mismatch/pass. The corrected validator checks per-row scientific/execution identity against runner-normalized jobs and validates AFINO provenance through frozen plan fields plus checkpoint metadata.",
+      "failed_validator_sha256": "77c5e5cb0589aa88a094f246a49509b2d51c490f76986d988526ed46e08e65af",
+      "incident_id": "F3B3-TOOL-002"
+    }
+  ]
+}
