@@ -1,0 +1,93 @@
+{
+  "artifact_role": "BASELINE_DEVELOPMENT_PERIOD_RECOVERY_SUMMARY",
+  "execution_boundary": {
+    "generator_calls": 0,
+    "heldout_accessed": false,
+    "heldout_generated": false,
+    "new_afino_calls": 0
+  },
+  "not_computed_in_this_gate": {
+    "candidate_promotion_gate": true,
+    "candidate_threshold_search": true,
+    "final_rule_freeze": true,
+    "heldout_metrics": true,
+    "optimizer_stability": true,
+    "paired_bootstrap": true,
+    "selection_function": true
+  },
+  "period_estimate_coverage_fraction": {
+    "denominator": 1800,
+    "denominator_definition": "ALL_ELIGIBLE_SYNTHETIC_QPP_PRESENT",
+    "numerator": 143,
+    "point_estimate": 0.07944444444444444
+  },
+  "period_semantics": {
+    "formal_m1_period_definition": "1 / exp(M1_parameter_a4)",
+    "nonselected_error_imputation": "PROHIBITED",
+    "nonselected_m1_center_is_period_recovery": false,
+    "period_recovered_within_X_percent_threshold": "NOT_USED"
+  },
+  "phase": "F3B.4",
+  "population": {
+    "baseline_false_negatives": 1657,
+    "baseline_true_positives": 143,
+    "eligible_positive_injections": 1800,
+    "selected_true_positives_missing_finite_period": 0,
+    "selected_true_positives_with_finite_period": 143
+  },
+  "provenance": {
+    "baseline_evaluation_sha256": "01e6651a7805b46d321cf4551b31b833cd73ec62cf5fbacad73bd5b83a8d44bb",
+    "baseline_metrics_sha256": "718f1a03af218da8a3bc52cdea9f8007f7b3dffc3477038a5577eef0f162250c",
+    "f3b3_decisions_sha256": "8143bfdc87909ba6559fa5a6534107e49741ba186861d939fa89883c5c022a39",
+    "implementation_binding_sha256": "4ec52789deb06f40cc6a80b31b0a98852af7723971625c5e86bebd17cc2997cf",
+    "metrics_contract_sha256": "4ff43df03a0b895944c78382b864ace92c66967e760238ffb4f83367bf9dfb22"
+  },
+  "quantile_convention": {
+    "implementation": "numpy.quantile",
+    "method": "linear",
+    "source": "REUSE_FROZEN_F3B4_ANALYSIS_BINDING_QUANTILE_IMPLEMENTATION"
+  },
+  "schema_version": "1.0.0",
+  "scope": {
+    "classifier": "AFINO_0_5_BASELINE",
+    "input_condition": "ELIGIBLE_FOR_AFINO",
+    "observational_period_claim": false,
+    "optimizer_seed": 0,
+    "selected_only_for_recovered_period": true,
+    "split": "DEVELOPMENT",
+    "synthetic_domain_only": true,
+    "truth_state": "SYNTHETIC_QPP_PRESENT"
+  },
+  "selected_true_positive_error_distributions": {
+    "absolute_period_error_s": {
+      "empirical_percentile_16": 0.23207739153627158,
+      "empirical_percentile_84": 2.0874258904619793,
+      "median": 0.8555459988347351,
+      "n": 143,
+      "quantile_implementation": "numpy.quantile",
+      "quantile_method": "linear"
+    },
+    "log_period_ratio": {
+      "empirical_percentile_16": -0.015425499319341989,
+      "empirical_percentile_84": 0.02468984706394365,
+      "median": 0.005142490233852693,
+      "n": 143,
+      "quantile_implementation": "numpy.quantile",
+      "quantile_method": "linear"
+    },
+    "relative_period_error": {
+      "empirical_percentile_16": 0.0038890402253348583,
+      "empirical_percentile_84": 0.02965191669760797,
+      "median": 0.014847583385661523,
+      "n": 143,
+      "quantile_implementation": "numpy.quantile",
+      "quantile_method": "linear"
+    }
+  },
+  "status": "BASELINE_PERIOD_RECOVERY_COMPUTED",
+  "validation": {
+    "evaluation_decision_selection_mismatches": 0,
+    "nonselected_m1_centers_used_as_recovery": 0,
+    "row_level_recovery_rows": 143
+  }
+}
