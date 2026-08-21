@@ -1,0 +1,125 @@
+{
+  "artifact_role": "BASELINE_DEVELOPMENT_CLASSIFICATION_METRICS",
+  "baseline_characterization_gate": {
+    "evaluated": false,
+    "reason": "Classification metrics only. Period recovery and remaining preregistered baseline characterization outputs are still pending."
+  },
+  "baseline_rule": {
+    "comparison": "STRICT_GREATER_THAN",
+    "delta_bic_0_1_threshold": 10.0,
+    "delta_bic_2_1_threshold": 10.0,
+    "rule": "(delta_BIC01 > 10) AND (delta_BIC21 > 10)",
+    "stored_vs_recomputed_mismatches": 0
+  },
+  "confusion_matrix": {
+    "FN": 1657,
+    "FP": 1,
+    "TN": 1799,
+    "TP": 143,
+    "total": 3600
+  },
+  "end_to_end_metrics": {
+    "classification_synonym_prohibited": true,
+    "end_to_end_null_selection_fraction": {
+      "denominator": 1800,
+      "numerator": 1,
+      "point_estimate": 0.0005555555555555556,
+      "wilson_95_lower": 9.807592967258326e-05,
+      "wilson_95_upper": 0.0031402678793854047
+    },
+    "end_to_end_positive_recovery_fraction": {
+      "denominator": 1800,
+      "numerator": 143,
+      "point_estimate": 0.07944444444444444,
+      "wilson_95_lower": 0.06782821927072591,
+      "wilson_95_upper": 0.09285189893111712
+    },
+    "input_admissibility_fraction": {
+      "denominator": 3600,
+      "numerator": 3600,
+      "point_estimate": 1.0,
+      "wilson_95_lower": 0.9989340655340728,
+      "wilson_95_upper": 1.0
+    },
+    "note": "Numerical equality with conditional classifier metrics may occur here because all 3600 primary classifier-plane series are ELIGIBLE_FOR_AFINO; the quantities remain semantically distinct."
+  },
+  "execution_boundary": {
+    "generator_calls": 0,
+    "heldout_accessed": false,
+    "heldout_generated": false,
+    "new_afino_calls": 0,
+    "truth_used_as_rule_feature": false
+  },
+  "not_computed_in_this_gate": {
+    "candidate_promotion_gate": true,
+    "candidate_threshold_search": true,
+    "final_rule_freeze": true,
+    "heldout_metrics": true,
+    "paired_bootstrap": true,
+    "period_recovery": true,
+    "selection_function": true
+  },
+  "phase": "F3B.4",
+  "population": {
+    "classifier_rows": 3600,
+    "eligible_for_afino": 3600,
+    "input_inadmissible_in_confusion_matrix": 0,
+    "numerical_stability_extra_in_confusion_matrix": 0,
+    "synthetic_qpp_absent": 1800,
+    "synthetic_qpp_present": 1800
+  },
+  "primary_classification_metrics": {
+    "false_positive_rate_FPR": {
+      "denominator": 1800,
+      "numerator": 1,
+      "point_estimate": 0.0005555555555555556,
+      "wilson_95_lower": 9.807592967258326e-05,
+      "wilson_95_upper": 0.0031402678793854047
+    },
+    "sensitivity_TPR": {
+      "denominator": 1800,
+      "numerator": 143,
+      "point_estimate": 0.07944444444444444,
+      "wilson_95_lower": 0.06782821927072591,
+      "wilson_95_upper": 0.09285189893111712
+    },
+    "specificity_TNR": {
+      "denominator": 1800,
+      "numerator": 1799,
+      "point_estimate": 0.9994444444444445,
+      "wilson_95_lower": 0.9968597321206145,
+      "wilson_95_upper": 0.9999019240703273
+    }
+  },
+  "provenance": {
+    "candidate_rule_policy_sha256": "8b6f65739825ff1b67fc33694861298dbf5e704685deee2f3b9594fab1e6325a",
+    "f3b3_decisions_sha256": "8143bfdc87909ba6559fa5a6534107e49741ba186861d939fa89883c5c022a39",
+    "implementation_binding_sha256": "4ec52789deb06f40cc6a80b31b0a98852af7723971625c5e86bebd17cc2997cf",
+    "metrics_contract_sha256": "4ff43df03a0b895944c78382b864ace92c66967e760238ffb4f83367bf9dfb22",
+    "truth_join_audit_sha256": "2cd7ae191be8cb977a10d2525efef9119bb9b2076e085a2e6126acfd2bc8a09e"
+  },
+  "schema_version": "1.0.0",
+  "scope": {
+    "decision_class": "BASELINE",
+    "evidence_plane": "SYNTHETIC_GROUND_TRUTH_CLASSIFICATION",
+    "gap_quality_regime": "CONTIGUOUS_ALL_GOOD",
+    "input_condition": "ELIGIBLE_FOR_AFINO",
+    "observational_performance_claim": false,
+    "optimizer_seed": 0,
+    "split": "DEVELOPMENT",
+    "synthetic_domain_only": true
+  },
+  "secondary_classification_summary": {
+    "balanced_accuracy": {
+      "formula": "0.5*(sensitivity_TPR+specificity_TNR)",
+      "point_estimate": 0.5394444444444445,
+      "wilson_interval": "NOT_APPLICABLE_NOT_SINGLE_BINOMIAL_PROPORTION"
+    }
+  },
+  "status": "BASELINE_CLASSIFICATION_METRICS_COMPUTED",
+  "wilson_interval": {
+    "confidence_level": 0.95,
+    "implementation": "CLOSED_FORM_STANDARD_WILSON_SCORE",
+    "z": 1.959963984540054
+  }
+}
