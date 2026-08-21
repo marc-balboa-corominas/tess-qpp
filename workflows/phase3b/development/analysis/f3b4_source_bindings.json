@@ -1,0 +1,62 @@
+{
+  "candidate_threshold_search_started": false,
+  "f3b3_frozen_parent": {
+    "annotated_tag_object": "1ccd3476c4ff38e53a401e8cfb37cc2a807e9767",
+    "commit": "e776dc766882836008f96ec111604d74a8d3246b",
+    "tag": "phase3b-development-execution-v1"
+  },
+  "ground_truth_metrics_computed": false,
+  "heldout_accessed": false,
+  "heldout_generated": false,
+  "paired_bootstrap_started": false,
+  "phase": "F3B.4",
+  "schema_version": "1.0.0",
+  "scientific_outputs_created": false,
+  "source_count": 11,
+  "source_files": [
+    {
+      "path": "workflows/phase3b/design/f3b1_candidate_rule_policy.json",
+      "sha256": "8b6f65739825ff1b67fc33694861298dbf5e704685deee2f3b9594fab1e6325a"
+    },
+    {
+      "path": "workflows/phase3b/design/f3b1_comparator_resolution.csv",
+      "sha256": "a2b65a84491adcf714f8ae10b20ec44ccd9a18d45bc0ac1736f45f0948347141"
+    },
+    {
+      "path": "workflows/phase3b/design/f3b1_metrics_contract.json",
+      "sha256": "4ff43df03a0b895944c78382b864ace92c66967e760238ffb4f83367bf9dfb22"
+    },
+    {
+      "path": "workflows/phase3b/design/f3b1_numerical_stability_protocol.json",
+      "sha256": "cee38e35aa2c6fcab0f6d3022744f9c10cbd27532657303b72c8fcd1a83a8a16"
+    },
+    {
+      "path": "workflows/phase3b/design/f3b1_selection_function_contract.json",
+      "sha256": "ae2cc931d239ee25b4d5eb4c7eaf65dd00d3d2f1daaf43d96c7e8b77b33cfc51"
+    },
+    {
+      "path": "workflows/phase3b/design/f3b1_success_failure_gate.json",
+      "sha256": "23d65ce7dc281799a484012c19a883f27ce17fbf5af0022c856bd7b946b6bfab"
+    },
+    {
+      "path": "workflows/phase3b/development/evidence/tables/f3b2_development_admissibility.csv",
+      "sha256": "e834f5a9635354ea8b8907ef00e707a90a23a0d78cd1e7160117a3b583b35933"
+    },
+    {
+      "path": "workflows/phase3b/development/evidence/tables/f3b2_development_series_manifest.csv",
+      "sha256": "1fc68051e3c43a9acaac5d861234fb1824d689e5e64bed5ef5810ffd0c4a6535"
+    },
+    {
+      "path": "workflows/phase3b/development/evidence/tables/f3b2_development_truth_ledger.csv",
+      "sha256": "a0111af78e1545507d54dcb50f7532a10b266ffe8af8f956f70c1bdf9876a820"
+    },
+    {
+      "path": "workflows/phase3b/development/evidence/tables/f3b3_development_decisions.csv",
+      "sha256": "8143bfdc87909ba6559fa5a6534107e49741ba186861d939fa89883c5c022a39"
+    },
+    {
+      "path": "workflows/phase3b/development/evidence/tables/f3b3_development_results.csv",
+      "sha256": "4b12b384b0130c7ac1c43f51395e13026bed03eb2560a51dc9f16d5ad63cf0b4"
+    }
+  ]
+}

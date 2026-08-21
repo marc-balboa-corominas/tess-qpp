@@ -1,0 +1,102 @@
+{
+  "analysis_runtime": {
+    "byteorder": "little",
+    "float_dtype": "float64",
+    "numpy_version": "2.3.5",
+    "python_version": "3.13.13"
+  },
+  "candidate_rule_family": {
+    "allowed_features": [
+      "delta_BIC01",
+      "delta_BIC21"
+    ],
+    "optimization_order": [
+      "MAXIMIZE_BALANCED_ACCURACY",
+      "MAXIMIZE_MIN_SENSITIVITY_SPECIFICITY",
+      "MINIMIZE_FPR",
+      "MINIMIZE_L1_DISTANCE_TO_10_10",
+      "MAXIMIZE_T01",
+      "MAXIMIZE_T21"
+    ],
+    "rule": "(delta_BIC01 > t01) AND (delta_BIC21 > t21)",
+    "runner_up_rescue": "FORBIDDEN"
+  },
+  "candidate_threshold_axis": {
+    "adjacent_midpoint": "np.float64(a + (b - a) / 2.0)",
+    "comparison_operator": "STRICT_GREATER_THAN",
+    "finite_unique_sort": "ASCENDING_NUMERIC",
+    "finite_values_only": true,
+    "include_baseline_threshold": 10.0,
+    "infinite_thresholds": "FORBIDDEN",
+    "input_dtype": "float64",
+    "post_union_sort": "ASCENDING_NUMERIC_UNIQUE"
+  },
+  "execution_guard": {
+    "generator_rerun_allowed": false,
+    "heldout_materialization_allowed": false,
+    "new_afino_calls_allowed": false
+  },
+  "heldout_guard": {
+    "afino_heldout_jobs": 0,
+    "heldout_accessed": false,
+    "heldout_flux_arrays": 0,
+    "heldout_generated": false,
+    "heldout_noise_draws": 0,
+    "heldout_payloads": 0,
+    "heldout_period_draws": 0,
+    "heldout_phase_draws": 0,
+    "heldout_registry_rows": 4320
+  },
+  "must_precede": [
+    "truth_join_metrics",
+    "sensitivity_specificity_fpr",
+    "selection_function_estimation",
+    "candidate_threshold_search",
+    "paired_bootstrap",
+    "candidate_promotion_gate"
+  ],
+  "paired_bootstrap": {
+    "background_order_within_stratum": "background_realization_id_LEXICOGRAPHIC_ASC",
+    "bit_generator": "numpy.random.PCG64",
+    "draw_convention": "For a stratum with N ordered unique backgrounds, draw exactly N indices using rng.integers(0,N,size=N,endpoint=False,dtype=np.int64). Preserve draw order. Each sampled background carries the paired synthetic NULL and POSITIVE members together.",
+    "entropy_first_128_bits_hex": "cbc9b94275923fff0a278f500c98c5f0",
+    "entropy_integer": 270880692324125375585783153936804922864,
+    "entropy_sha256": "cbc9b94275923fff0a278f500c98c5f0037c08121236e8ab833c9c86ed4b3e67",
+    "entropy_source": "TESS-QPP:F3B1:PAIRED_BOOTSTRAP:v1",
+    "generator_construction": "np.random.Generator(np.random.PCG64(entropy_integer))",
+    "percentile_ci": {
+      "dtype": "float64",
+      "implementation": "numpy.quantile",
+      "method": "linear",
+      "quantiles": [
+        0.025,
+        0.975
+      ],
+      "two_sided_confidence_level": 0.95
+    },
+    "replicate_order": "0_TO_9999_INCLUSIVE_NO_RESEEDING",
+    "replicates": 10000,
+    "sampling_unit": "background_realization_id",
+    "sampling_with_replacement": true,
+    "stratum_order": [
+      "n_samples_NUMERIC_ASC",
+      "red_noise_alpha_NUMERIC_ASC",
+      "qpp_fraction_NUMERIC_ASC"
+    ]
+  },
+  "phase": "F3B.4",
+  "promotion_gate": {
+    "all_four_required": true,
+    "balanced_accuracy_improvement_min": 0.025,
+    "paired_ci_lower_balanced_accuracy": "GREATER_THAN_0",
+    "paired_ci_lower_sensitivity": "GREATER_THAN_-0.025",
+    "paired_ci_lower_specificity": "GREATER_THAN_-0.025"
+  },
+  "schema_version": "1.0.0",
+  "status": "PRE_ANALYSIS_IMPLEMENTATION_BINDING_FROZEN",
+  "wilson_interval": {
+    "confidence_level": 0.95,
+    "implementation": "CLOSED_FORM_STANDARD_WILSON_SCORE",
+    "z_two_sided_0_95": 1.959963984540054
+  }
+}
