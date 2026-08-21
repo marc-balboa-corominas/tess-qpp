@@ -1,0 +1,131 @@
+{
+  "artifact_role": "DEVELOPMENT_CANDIDATE_PROMOTION_GATE",
+  "candidate": {
+    "balanced_accuracy": 0.635,
+    "balanced_accuracy_improvement": 0.0955555555555555,
+    "baseline_balanced_accuracy": 0.5394444444444445,
+    "candidate_id": "DEVELOPMENT_OPTIMUM_001",
+    "t01": -7.517054630023225,
+    "t21": -4.4514075428899105
+  },
+  "execution_boundary": {
+    "candidate_search_rerun": false,
+    "final_rule_frozen": false,
+    "generator_calls": 0,
+    "heldout_accessed": false,
+    "heldout_generated": false,
+    "new_afino_calls": 0,
+    "runner_up_search": false
+  },
+  "next_final_rule_branch_if_frozen": {
+    "candidate_rule_promoted": false,
+    "correction_claim": "NOT_ESTABLISHED",
+    "final_rule_type": "AFINO_0_5_BASELINE",
+    "freeze_state": "FINAL_RULE_FREEZE_BASELINE_ONLY",
+    "t01": 10.0,
+    "t21": 10.0
+  },
+  "paired_bootstrap": {
+    "difference_intervals_95_percentile": {
+      "FPR": {
+        "confidence_level": 0.95,
+        "difference_direction": "CANDIDATE_MINUS_BASELINE",
+        "dtype": "float64",
+        "implementation": "numpy.quantile",
+        "lower": 0.3672222222222222,
+        "lower_quantile": 0.025,
+        "method": "linear",
+        "replicates": 10000,
+        "upper": 0.3933333333333333,
+        "upper_quantile": 0.975
+      },
+      "balanced_accuracy": {
+        "confidence_level": 0.95,
+        "difference_direction": "CANDIDATE_MINUS_BASELINE",
+        "dtype": "float64",
+        "implementation": "numpy.quantile",
+        "lower": 0.08611111111111114,
+        "lower_quantile": 0.025,
+        "method": "linear",
+        "replicates": 10000,
+        "upper": 0.10472222222222227,
+        "upper_quantile": 0.975
+      },
+      "sensitivity": {
+        "confidence_level": 0.95,
+        "difference_direction": "CANDIDATE_MINUS_BASELINE",
+        "dtype": "float64",
+        "implementation": "numpy.quantile",
+        "lower": 0.5533333333333333,
+        "lower_quantile": 0.025,
+        "method": "linear",
+        "replicates": 10000,
+        "upper": 0.5894444444444444,
+        "upper_quantile": 0.975
+      },
+      "specificity": {
+        "confidence_level": 0.95,
+        "difference_direction": "CANDIDATE_MINUS_BASELINE",
+        "dtype": "float64",
+        "implementation": "numpy.quantile",
+        "lower": -0.3933333333333333,
+        "lower_quantile": 0.025,
+        "method": "linear",
+        "replicates": 10000,
+        "upper": -0.3672222222222222,
+        "upper_quantile": 0.975
+      }
+    },
+    "replicates": 10000
+  },
+  "phase": "F3B.4",
+  "promotion_criteria": {
+    "C1_point_BA_improvement_ge_0_025": {
+      "observed": 0.0955555555555555,
+      "operator": "GREATER_THAN_OR_EQUAL",
+      "passed": true,
+      "threshold": 0.025
+    },
+    "C2_lower_CI_delta_BA_gt_0": {
+      "observed": 0.08611111111111114,
+      "operator": "GREATER_THAN",
+      "passed": true,
+      "threshold": 0.0
+    },
+    "C3_lower_CI_delta_sensitivity_gt_neg_0_025": {
+      "observed": 0.5533333333333333,
+      "operator": "GREATER_THAN",
+      "passed": true,
+      "threshold": -0.025
+    },
+    "C4_lower_CI_delta_specificity_gt_neg_0_025": {
+      "observed": -0.3933333333333333,
+      "operator": "GREATER_THAN",
+      "passed": false,
+      "threshold": -0.025
+    },
+    "all_four_required": true
+  },
+  "promotion_result": {
+    "all_four_passed": false,
+    "alternate_candidate_search": "FORBIDDEN",
+    "candidate_rule_promoted": false,
+    "criteria_passed": 3,
+    "criteria_required": 4,
+    "failed_criteria": [
+      "C4_LOWER_CI_DELTA_SPECIFICITY_GT_NEG_0_025"
+    ],
+    "runner_up_rescue": "FORBIDDEN"
+  },
+  "provenance": {
+    "analysis_implementation_binding_sha256": "4ec52789deb06f40cc6a80b31b0a98852af7723971625c5e86bebd17cc2997cf",
+    "baseline_metrics_sha256": "718f1a03af218da8a3bc52cdea9f8007f7b3dffc3477038a5577eef0f162250c",
+    "candidate_rule_development_sha256": "b67de57a2678842bda6bdae451b14d9bb8114e5c6c8fee7986e095d70cf94775",
+    "candidate_rule_policy_sha256": "8b6f65739825ff1b67fc33694861298dbf5e704685deee2f3b9594fab1e6325a",
+    "candidate_threshold_axes_sha256": "52845deea2db624ee8d213449448585361feb8434c477103b4afa5504bf44be1",
+    "paired_bootstrap_sha256": "67da9348e488076e35efad1c3b355cedd1027100dadd501aeba717779288d406",
+    "success_failure_gate_sha256": "23d65ce7dc281799a484012c19a883f27ce17fbf5af0022c856bd7b946b6bfab"
+  },
+  "schema_version": "1.0.0",
+  "status": "CANDIDATE_NOT_PROMOTED"
+}
