@@ -1,0 +1,270 @@
+{
+  "analysis_runtime": {
+    "byteorder": "little",
+    "float_dtype": "float64",
+    "numpy": "2.3.5",
+    "python": "3.13.13"
+  },
+  "artifact_role": "DEVELOPMENT_ANALYSIS_CLOSURE_AUDIT",
+  "artifact_sha256": {
+    "workflows/phase3b/development/analysis/f3b4_baseline_evaluation.csv": "01e6651a7805b46d321cf4551b31b833cd73ec62cf5fbacad73bd5b83a8d44bb",
+    "workflows/phase3b/development/analysis/f3b4_baseline_metrics.json": "718f1a03af218da8a3bc52cdea9f8007f7b3dffc3477038a5577eef0f162250c",
+    "workflows/phase3b/development/analysis/f3b4_candidate_rule_development.csv": "b67de57a2678842bda6bdae451b14d9bb8114e5c6c8fee7986e095d70cf94775",
+    "workflows/phase3b/development/analysis/f3b4_candidate_rule_gate.json": "f47b2b03aff0d60d8dbce040d7298d1904295552f610cdf92bba6a48f6eddbf9",
+    "workflows/phase3b/development/analysis/f3b4_candidate_threshold_axes.json": "52845deea2db624ee8d213449448585361feb8434c477103b4afa5504bf44be1",
+    "workflows/phase3b/development/analysis/f3b4_end_to_end_metrics.csv": "7024035e9b923040597bbef675911e194888ecd32e4e60c2492aeb0f986aab45",
+    "workflows/phase3b/development/analysis/f3b4_final_rule_freeze.json": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
+    "workflows/phase3b/development/analysis/f3b4_optimizer_stability.csv": "153e7d85954e1d7bc8930fb47d9c5f8ebf15c51b7184a170d9dd7e41c59fd477",
+    "workflows/phase3b/development/analysis/f3b4_paired_bootstrap.csv": "67da9348e488076e35efad1c3b355cedd1027100dadd501aeba717779288d406",
+    "workflows/phase3b/development/analysis/f3b4_period_recovery.csv": "b3a138fe9ca2c32c618b8e0d3622f9c2503fe78e955a18f60f524dc99609f65b",
+    "workflows/phase3b/development/analysis/f3b4_period_recovery_summary.json": "1e860ddc04598b8e7adaede9d5b6d2067a0249e29fdfa91276271815eca65534",
+    "workflows/phase3b/development/analysis/f3b4_seed_model_diagnostics.csv": "002b87cb8948082377e29401bed9b87d7314caf0acf24c88a11df43728d8c68b",
+    "workflows/phase3b/development/analysis/f3b4_selection_function.csv": "4ddd79d8a6c8778c56f3f7c78ce89e1f80d9404bc43e3e7cb892c8caf2fa2933",
+    "workflows/phase3b/development/analysis/f3b4_source_bindings.json": "6c835489b1dc1753073c6f24a0c58cc8e9c5d153e805347150d479a0368d8e6c",
+    "workflows/phase3b/development/analysis/f3b4_truth_join_audit.csv": "2cd7ae191be8cb977a10d2525efef9119bb9b2076e085a2e6126acfd2bc8a09e",
+    "workflows/phase3b/scripts/analyze_f3b_development.py": "d2add53280c775e9ff04454a424edd97fd651426d0878bef01cda6444d9dca85",
+    "workflows/phase3b/scripts/apply_f3b_frozen_rule.py": "47f49cd15424be81c2aeb167d15f98013d9e0401b616d2c529cf66a9dddffaa8",
+    "workflows/phase3b/scripts/develop_f3b_candidate_rule.py": "710f8cb77a30c08905ecd8d009bf5f920d9a1d24b8a7d20908f4d26f419544de",
+    "workflows/phase3b/scripts/validate_f3b4_development_analysis.py": "61b877f1fa787199f336165dfc48f95dba4e66b1c76c68306fdce137610f0d94",
+    "workflows/phase3b/tests/test_f3b4_development_analysis.py": "f13a544e5ee896e5627b1c42a2ad39556acbf60e69fd0c47516e25bb35fd972f"
+  },
+  "candidate_development": {
+    "FN": 629,
+    "FP": 685,
+    "FPR": 0.38055555555555554,
+    "TN": 1115,
+    "TP": 1171,
+    "axis01_count": 7200,
+    "axis21_count": 7200,
+    "balanced_accuracy": 0.635,
+    "balanced_accuracy_improvement": 0.0955555555555555,
+    "candidate_id": "DEVELOPMENT_OPTIMUM_001",
+    "comparison": "STRICT_GREATER_THAN",
+    "features": [
+      "delta_BIC01",
+      "delta_BIC21"
+    ],
+    "full_axis_pairs": 51840000,
+    "runner_up_rescue": "FORBIDDEN",
+    "runner_up_rows_written": 0,
+    "search_mode": "ONE_SHOT",
+    "selection_state_pairs": 12960000,
+    "sensitivity": 0.6505555555555556,
+    "specificity": 0.6194444444444445,
+    "t01": -7.517054630023225,
+    "t21": -4.4514075428899105,
+    "truth_usage": "TARGET_FOR_OBJECTIVE_ONLY_NOT_RULE_FEATURE"
+  },
+  "classification_population": {
+    "FN": 1657,
+    "FP": 1,
+    "FPR": 0.0005555555555555556,
+    "TN": 1799,
+    "TP": 143,
+    "balanced_accuracy": 0.5394444444444445,
+    "baseline_seed0_evaluations": 3600,
+    "challenge_rows_in_confusion_matrix": 0,
+    "sensitivity": 0.07944444444444444,
+    "specificity": 0.9994444444444445,
+    "stability_extra_rows_in_confusion_matrix": 0,
+    "synthetic_null": 1800,
+    "synthetic_positive": 1800,
+    "wilson_95_reconstructed": true
+  },
+  "end_to_end": {
+    "all_planned_input_admissibility": 0.8333333333333334,
+    "challenge_input_admissibility": 0.0,
+    "classification_metric_synonym": false,
+    "inadmissible_recoded_as_FN_or_TN": 0,
+    "primary_input_admissibility": 1.0,
+    "primary_null_selection": 0.0005555555555555556,
+    "primary_positive_recovery": 0.07944444444444444,
+    "rows": 9
+  },
+  "final_rule": {
+    "alternate_candidate_search": "FORBIDDEN",
+    "candidate_rule_promoted": false,
+    "comparison": "STRICT_GREATER_THAN",
+    "correction_claim": "NOT_ESTABLISHED",
+    "freeze_state": "FINAL_RULE_FREEZE_BASELINE_ONLY",
+    "rule_type": "AFINO_0_5_BASELINE",
+    "runner_up_rescue": "FORBIDDEN",
+    "selection_rule": "delta_BIC01 > 10 AND delta_BIC21 > 10",
+    "t01": 10.0,
+    "t21": 10.0,
+    "threshold_mutation_after_freeze": "FORBIDDEN"
+  },
+  "leakage_and_execution_boundary": {
+    "bootstrap_generation_rerun": false,
+    "candidate_search_rerun": false,
+    "challenge_classifier_observations": 0,
+    "generator_calls": 0,
+    "heldout_accessed": false,
+    "heldout_generated": false,
+    "heldout_used_for_rule_selection": false,
+    "new_afino_calls": 0,
+    "posthoc_bins": 0,
+    "posthoc_comparators": 0,
+    "posthoc_thresholds": 0,
+    "qpp_fraction_used_as_inference_feature": false,
+    "red_noise_alpha_used_as_inference_feature": false,
+    "stability_extra_classifier_observations": 0,
+    "true_period_used_as_inference_feature": false,
+    "truth_feature_leakage": 0
+  },
+  "next_boundary": {
+    "formal_f3b4_git_closure_required": true,
+    "heldout_materialization_currently_authorized": false,
+    "next_step_after_validated_commit_and_tag": "F3B5_HELDOUT_MATERIALIZATION_SINGLE_USE_PIPELINE",
+    "phase3b_final_rule_tag_required_before_heldout": true
+  },
+  "numerical_stability": {
+    "classification_discordant_series": 0,
+    "convergence_status": "NOT_AUDITABLE",
+    "decisions": 720,
+    "model_diagnostics": {
+      "M0": {
+        "bound_calls": 5,
+        "calls": 720,
+        "warning_calls": 0,
+        "warning_count": 0
+      },
+      "M1": {
+        "bound_calls": 400,
+        "calls": 720,
+        "warning_calls": 0,
+        "warning_count": 0
+      },
+      "M2": {
+        "bound_calls": 311,
+        "calls": 720,
+        "warning_calls": 296,
+        "warning_count": 3158
+      }
+    },
+    "parameter_payload_uniqueness_is_unique_optimum_claim": false,
+    "seed0_selected_series": 2,
+    "seeds_per_series": 10,
+    "series": 72,
+    "stability_extra_decisions": 648
+  },
+  "paired_bootstrap": {
+    "backgrounds_per_stratum": 50,
+    "bit_generator": "PCG64",
+    "delta_balanced_accuracy_ci95": [
+      0.08611111111111114,
+      0.10472222222222227
+    ],
+    "delta_sensitivity_ci95": [
+      0.5533333333333333,
+      0.5894444444444444
+    ],
+    "delta_specificity_ci95": [
+      -0.3933333333333333,
+      -0.3672222222222222
+    ],
+    "global_draw_stream_sha256": "6e37f0c99c8dbc018d9be25e7530cf1aa4c6c1cf3edc0df9e6075214232cac2c",
+    "pairing_preserved": true,
+    "replicates": 10000,
+    "reseeded": false,
+    "sampling_unit": "background_realization_id",
+    "strata": 36,
+    "unique_backgrounds": 1800
+  },
+  "period_recovery": {
+    "absolute_error_s_median": 0.8555459988347351,
+    "absolute_error_s_p16": 0.23207739153627158,
+    "absolute_error_s_p84": 2.0874258904619793,
+    "baseline_false_negatives": 1657,
+    "baseline_true_positives": 143,
+    "eligible_positive_injections": 1800,
+    "finite_recovered_periods": 143,
+    "nonselected_error_imputation": "PROHIBITED",
+    "relative_error_median": 0.014847583385661523,
+    "relative_error_p16": 0.0038890402253348583,
+    "relative_error_p84": 0.02965191669760797,
+    "selected_true_positives_missing_finite_period": 0
+  },
+  "permanent_validation": {
+    "full_bootstrap_rng_replay": true,
+    "pytest_status": "PASS",
+    "pytest_tests": 22,
+    "validator_status": "PHASE3B_DEVELOPMENT_ANALYSIS_VALIDATION_PASS"
+  },
+  "phase": "F3B.4",
+  "preclosure_git_state": {
+    "closure_commit_created": false,
+    "final_rule_freeze_commit": "7b0e4c05fe958aa65c501b699540e7bbac0cbe12",
+    "final_rule_freeze_sha256": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
+    "phase3b_final_rule_tag_created": false
+  },
+  "promotion_gate": {
+    "alternate_candidate_search": "FORBIDDEN",
+    "candidate_rule_promoted": false,
+    "criteria_passed": 3,
+    "criteria_required": 4,
+    "criterion_results": {
+      "C1_point_BA_improvement_ge_0_025": true,
+      "C2_lower_CI_delta_BA_gt_0": true,
+      "C3_lower_CI_delta_sensitivity_gt_neg_0_025": true,
+      "C4_lower_CI_delta_specificity_gt_neg_0_025": false
+    },
+    "failed_criteria": [
+      "C4_LOWER_CI_DELTA_SPECIFICITY_GT_NEG_0_025"
+    ],
+    "runner_up_rescue": "FORBIDDEN"
+  },
+  "schema_version": "1.0.0",
+  "scope": {
+    "heldout_validation_claim": false,
+    "observational_validation_claim": false,
+    "performance_domain": "SYNTHETIC_GROUND_TRUTH",
+    "split": "DEVELOPMENT"
+  },
+  "selection_function": {
+    "challenge_rows_included": 0,
+    "null_pooled_strata": 12,
+    "positive_base_strata": 36,
+    "positive_period_strata": 108,
+    "probabilistic_model_fitted": false,
+    "representation": "STRATIFIED_EMPIRICAL",
+    "rows": 156,
+    "structural_no_exposure": 9
+  },
+  "status": "PHASE3B_DEVELOPMENT_CHARACTERIZED_FINAL_RULE_FROZEN_BASELINE_ONLY",
+  "tool_incidents": [
+    {
+      "incident_class": "ANALYSIS_TOOL_NULL_PARSING_BUG",
+      "incident_id": "F3B4-TOOL-001",
+      "resolution": "NULL qpp_fraction remained categorical/pooled; corrected tool produced frozen selection-function output.",
+      "scientific_bytes_changed_by_failed_attempt": false
+    },
+    {
+      "candidate_search_rerun": false,
+      "incident_class": "POWERSHELL_SINGLE_ROW_SCALAR_AUDIT_BUG",
+      "incident_id": "F3B4-TOOL-002",
+      "resolution": "Outer PowerShell audit was corrected to force Import-Csv into an array; existing one-shot scientific bytes were validated without rerunning search.",
+      "scientific_bytes_changed": false
+    },
+    {
+      "incident_class": "PERMANENT_VALIDATOR_SEMANTIC_LABEL_MISMATCH",
+      "incident_id": "F3B4-TOOL-003",
+      "resolution": "Permanent validator expectation corrected from baseline truth-usage label to the frozen candidate objective-only truth-usage label.",
+      "scientific_bytes_changed": false
+    },
+    {
+      "closure_artifacts_regenerated": false,
+      "incident_class": "CLOSURE_REPORT_LITERAL_CONTRACT_MISMATCH",
+      "incident_id": "F3B4-TOOL-004",
+      "resolution": "The already-generated DEVELOPMENT report used 'Criterion 4' while the closure wrapper required the literal label 'C4'. The report was patched in place to 'Criterion 4 (C4)' and only dependent closure checksums were refreshed. No scientific artifact was regenerated or modified.",
+      "scientific_bytes_changed": false
+    },
+    {
+      "closure_artifacts_regenerated": false,
+      "incident_class": "CLOSURE_DR_LITERAL_CONTRACT_MISMATCH",
+      "incident_id": "F3B4-TOOL-005",
+      "resolution": "After TOOL-004 passed the report, audit and checksum contracts, the closure wrapper stopped because DR-007 did not contain the required literal statement 'candidate was not promoted'. The existing decision record was patched in place with one explicit sentence stating the already-frozen promotion outcome. No scientific artifact was regenerated or modified.",
+      "scientific_bytes_changed": false
+    }
+  ]
+}
