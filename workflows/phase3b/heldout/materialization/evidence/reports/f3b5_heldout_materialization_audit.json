@@ -1,0 +1,126 @@
+{
+  "admissibility": {
+    "challenge_input_state_counts": {
+      "INPUT_INADMISSIBLE": 720
+    },
+    "inadmissibility_reason_counts": {
+      "IRREGULAR_SAMPLING": 720,
+      "PEAK_REMOVED_BY_QUALITY": 360,
+      "TOO_FEW_CADENCES": 180
+    },
+    "primary_eligible": 3600,
+    "primary_inadmissible": 0
+  },
+  "artifact_role": "HELDOUT_MATERIALIZATION_FINAL_AUDIT",
+  "authorization": {
+    "authorization_commit": "5e9f62eacfd2c82cc4db5e3c3df48fc3bd6e7565",
+    "authorization_sha256": "9244c772a88e163d927098fdf0f9b1e44a8814fb7d1cbe1923a57452ed0a7925",
+    "authorization_status": "AUTHORIZED_FOR_MATERIALIZATION_ONLY",
+    "materialization_authorized": true
+  },
+  "final_rule": {
+    "candidate_rule_promoted": false,
+    "final_rule_freeze_status": "FINAL_RULE_FREEZE_BASELINE_ONLY",
+    "final_rule_t01": 10.0,
+    "final_rule_t21": 10.0,
+    "final_rule_type": "AFINO_0_5_BASELINE",
+    "threshold_mutation_after_freeze": "FORBIDDEN"
+  },
+  "future_blinded_afino_plan": {
+    "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "afino_version": "0.5",
+    "all_future_jobs": "NOT_EXECUTED",
+    "external_optimizer_seed_set": [
+      0
+    ],
+    "heldout_decisions_planned": 3600,
+    "heldout_model_calls_planned": 10800,
+    "low_frequency_cutoff_hz": 0.025,
+    "m0_planned": 3600,
+    "m1_planned": 3600,
+    "m2_planned": 3600,
+    "stability_extra_decisions": 0,
+    "truth_columns_in_execution_plan": 0
+  },
+  "integrity": {
+    "background_roundtrip_mismatches": 0,
+    "challenge_latent_mismatches": 0,
+    "payload_roundtrip_mismatches": 0,
+    "persistent_first_bytes_preserved": true,
+    "rematerialization_mismatches": 0,
+    "second_temporary_rematerialization_exact": true,
+    "third_materialization_performed": false
+  },
+  "materialization": {
+    "challenge_planned": 720,
+    "heldout_backgrounds": 1800,
+    "heldout_series": 4320,
+    "materialization_failures": 0,
+    "materialized_series": 4320,
+    "null_total": 2160,
+    "positive_total": 2160,
+    "primary_null": 1800,
+    "primary_planned": 3600,
+    "primary_positive": 1800,
+    "redraws": 0
+  },
+  "next_permitted_state_transition": "F3B5_GIT_FREEZE_TAG_PUSH_AND_PREEXECUTION_SNAPSHOT",
+  "phase": "F3B.5",
+  "provenance": {
+    "f3b1_split_registry_sha256": "2316e09ba061910d360ba0d11aa4a766a3b657f56182bb6ba1c455d2b8120c93",
+    "f3b2_generator_binding_sha256": "b6519f84c0e6aa6b0c86cbd7a66dd79c1de1758e313d96ea4d750ebb212d9946",
+    "f3b2_generator_sha256": "d538d53c7845916e29c4dd351b85ae91076d5a342acb5619898788ef5d825d11",
+    "f3b4_final_rule_freeze_sha256": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
+    "f3b5_materializer_sha256": "6b1b883990bb1a9f59c40f550db4f0f8642f4b5f2be5983efeb22f1aa254c66d",
+    "f3b5_plan_builder_sha256": "9a3c07ced1bdf6d6601904fbe2bb24b1faab6b3135093525aafe68df7e5e3c9b",
+    "f3b5_test_sha256": "99bec52e89a497895428b19b984490d8c2840f51648247f9de89013fdac3f555",
+    "f3b5_validator_sha256": "cb2c96d4653a005be39e9e188644aee5a9e74c681375ec7b2bb8c081dd0fe50e"
+  },
+  "requirements_before_first_heldout_afino_job": {
+    "annotated_tag": "phase3b-heldout-materialization-v1",
+    "final_materialization_commit": "REQUIRED",
+    "pre_execution_snapshot": "REQUIRED",
+    "remote_main_and_tag_verification": "REQUIRED"
+  },
+  "schema_version": "1.0.0",
+  "single_use_boundary": {
+    "candidate_search_performed": false,
+    "development_reopened_for_tuning": false,
+    "first_persistent_materialization_rerun": false,
+    "heldout_afino_executed": false,
+    "heldout_materialization_performed": true,
+    "heldout_metrics_computed": false,
+    "heldout_outcomes_inspected": false,
+    "heldout_rule_applied": false,
+    "heldout_stochastic_truth_generated": true,
+    "rule_refitted": false,
+    "second_temporary_rematerialization_performed": true,
+    "second_temporary_rematerialization_rerun": false,
+    "third_materialization_performed": false,
+    "thresholds_modified": false,
+    "truth_ledger_joined_with_afino_results": false
+  },
+  "status": "PHASE3B_HELDOUT_MATERIALIZATION_VALIDATION_PASS",
+  "tooling_incidents": [
+    {
+      "incident_id": "F3B5-TOOL-001",
+      "scientific_mutation": false
+    },
+    {
+      "incident_id": "F3B5-TOOL-002",
+      "scientific_mutation": false
+    },
+    {
+      "first_persistent_materialization_changed": false,
+      "incident_id": "F3B5-TOOL-003",
+      "recovery_second_rematerialization_exact": true
+    }
+  ],
+  "validation": {
+    "permanent_tests": "PASS",
+    "permanent_validator": "PASS",
+    "rematerialization": "EXACT",
+    "single_use_boundary": "PASS",
+    "tests_passed": 18
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "afino_execution_authorized_at_current_uncommitted_state": false,
+  "artifact_role": "SINGLE_USE_BOUNDARY_AUDIT",
+  "authorization_commit": "5e9f62eacfd2c82cc4db5e3c3df48fc3bd6e7565",
+  "authorization_sha256": "9244c772a88e163d927098fdf0f9b1e44a8814fb7d1cbe1923a57452ed0a7925",
+  "candidate_search_performed": false,
+  "development_reopened_for_tuning": false,
+  "final_rule_freeze": {
+    "rule_type": "AFINO_0_5_BASELINE",
+    "sha256": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
+    "status": "FINAL_RULE_FREEZE_BASELINE_ONLY",
+    "t01": 10.0,
+    "t21": 10.0
+  },
+  "future_afino_plan": {
+    "all_jobs": "NOT_EXECUTED",
+    "decisions": 3600,
+    "external_optimizer_seed_set": [
+      0
+    ],
+    "model_jobs": 10800,
+    "stability_extra_decisions": 0,
+    "truth_columns_in_exact_plan": 0
+  },
+  "heldout_afino_executed": false,
+  "heldout_materialization_performed": true,
+  "heldout_metrics_computed": false,
+  "heldout_outcomes_inspected": false,
+  "heldout_rule_applied": false,
+  "heldout_stochastic_truth_generated": true,
+  "materialization": {
+    "heldout_backgrounds": 1800,
+    "heldout_series": 4320,
+    "input_admissibility_challenges": 720,
+    "null_total": 2160,
+    "persistent_first_materialization_rerun": false,
+    "positive_total": 2160,
+    "primary": 3600,
+    "rematerialization_status": "F3B5_HELDOUT_REMATERIALIZATION_EXACT",
+    "temporary_second_rematerialization_performed": true,
+    "third_materialization_performed": false
+  },
+  "next_permitted_state_transition": "F3B5_FINAL_CLOSURE_ARTIFACTS_AND_GIT_FREEZE",
+  "phase": "F3B.5",
+  "requirements_before_first_heldout_afino_job": {
+    "f3b5_annotated_tag": "phase3b-heldout-materialization-v1",
+    "f3b5_final_commit": "REQUIRED",
+    "f3b5_final_validation": "REQUIRED",
+    "pre_execution_snapshot": "REQUIRED",
+    "remote_main_and_tag_verification": "REQUIRED"
+  },
+  "rule_refitted": false,
+  "schema_version": "1.0.0",
+  "status": "F3B5_SINGLE_USE_BOUNDARY_AUDIT_PASS",
+  "thresholds_modified": false,
+  "tooling_incidents": [
+    {
+      "class": "POWERSHELL_PATH_NORMALIZATION_REGEX",
+      "incident_id": "F3B5-TOOL-001",
+      "scientific_mutation": false
+    },
+    {
+      "class": "AUTHORIZATION_BUILDER_EVIDENCE_PLANE_LABEL_MISMATCH",
+      "incident_id": "F3B5-TOOL-002",
+      "scientific_mutation": false
+    },
+    {
+      "class": "POWERSHELL_DYNAMIC_PROPERTY_PARSE_FAILURE",
+      "first_persistent_materialization_changed": false,
+      "incident_id": "F3B5-TOOL-003",
+      "previous_second_rematerialization_performed": false,
+      "recovery_second_rematerialization_exact": true
+    }
+  ],
+  "truth_ledger_joined_with_afino_results": false
+}

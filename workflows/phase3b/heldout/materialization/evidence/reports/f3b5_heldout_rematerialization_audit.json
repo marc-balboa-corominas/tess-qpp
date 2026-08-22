@@ -1,0 +1,75 @@
+{
+  "artifact_role": "HELDOUT_FULL_REMATERIALIZATION_AUDIT",
+  "candidate_search_performed": false,
+  "comparison": {
+    "array_file_byte_mismatches": 0,
+    "background_hash_mismatches": 0,
+    "latent_hash_mismatches": 0,
+    "retained_payload_hash_mismatches": 0,
+    "table_file_byte_mismatches": 0,
+    "truth_record_mismatches": 0
+  },
+  "derived_materializer_sha256": "f84a201a944d3c745623244e7230f12d26f772d69510314fd0983f3e1da108e0",
+  "generator_sha256": "d538d53c7845916e29c4dd351b85ae91076d5a342acb5619898788ef5d825d11",
+  "heldout_afino_executed": false,
+  "heldout_backgrounds": 1800,
+  "heldout_materializer_sha256": "6b1b883990bb1a9f59c40f550db4f0f8642f4b5f2be5983efeb22f1aa254c66d",
+  "heldout_metrics_computed": false,
+  "heldout_rule_applied": false,
+  "heldout_series": 4320,
+  "persistent_array_sha256": {
+    "background_noise.npy": "26dc41dc0a280d92b45ed116f79060d547b7c1bc3d5673df6abb9def9bb8f794",
+    "background_offsets.npy": "8e0f77105f1fd3a13580adcd2c4dcbf5b09de5e32dbfd906795014a9d8f0be2c",
+    "latent_flux.npy": "5cdaff08c31f10c717de4b55f148c8af2e2333711fdaf0715e213403d8ce9758",
+    "latent_offsets.npy": "aba31f5bf921b48a046037b8ab09474edcd3136c2b405ed84b0f6e011867dd5c",
+    "retained_flux.npy": "f8e8fa86f9a307ef78bd34b153752078110b9461d8d172b7ec0d3e9425edebc6",
+    "retained_native_index.npy": "c0b19f204fecad603c0d8b63bfe0a0643cb57ea74694d4f8849e443786072e4c",
+    "retained_offsets.npy": "5fd86ec64fe858b3ed665f11a06f4ca7f054e83c51c6e21cb3339693cb99da64",
+    "retained_time_s.npy": "573527515b71d29eadfe20d0b6eb87296f38f8ec188419a1a4b5fc95dab1d050"
+  },
+  "persistent_first_materialization_rerun": false,
+  "persistent_table_sha256": {
+    "f3b5_heldout_admissibility.csv": "dfd79a20616f333f4e3f1cb0a0f0a03e46e537233554a956fa3547262af07ffe",
+    "f3b5_heldout_background_manifest.csv": "ef76d7fd0646c20bf9466a32e74a3412ad63e203a3fa520322633507cca333e6",
+    "f3b5_heldout_payload_manifest.csv": "d20b0dac662cf809eb86d5e87d96f35e236b6ff2fbfb0fa86eeb4da8a49af8b4",
+    "f3b5_heldout_series_manifest.csv": "3b98e31137b3f1d3cc67c2a7eead70414879891556be16196f954e4682410336",
+    "f3b5_heldout_truth_ledger.csv": "2270ef77926c6e95a8df97b292ba6ae0a64cb081e683a1e42cf238360232c708"
+  },
+  "phase": "F3B.5",
+  "rule_refitted": false,
+  "schema_version": "1.0.0",
+  "second_array_sha256": {
+    "background_noise.npy": "26dc41dc0a280d92b45ed116f79060d547b7c1bc3d5673df6abb9def9bb8f794",
+    "background_offsets.npy": "8e0f77105f1fd3a13580adcd2c4dcbf5b09de5e32dbfd906795014a9d8f0be2c",
+    "latent_flux.npy": "5cdaff08c31f10c717de4b55f148c8af2e2333711fdaf0715e213403d8ce9758",
+    "latent_offsets.npy": "aba31f5bf921b48a046037b8ab09474edcd3136c2b405ed84b0f6e011867dd5c",
+    "retained_flux.npy": "f8e8fa86f9a307ef78bd34b153752078110b9461d8d172b7ec0d3e9425edebc6",
+    "retained_native_index.npy": "c0b19f204fecad603c0d8b63bfe0a0643cb57ea74694d4f8849e443786072e4c",
+    "retained_offsets.npy": "5fd86ec64fe858b3ed665f11a06f4ca7f054e83c51c6e21cb3339693cb99da64",
+    "retained_time_s.npy": "573527515b71d29eadfe20d0b6eb87296f38f8ec188419a1a4b5fc95dab1d050"
+  },
+  "second_materialization_rng_counts": {
+    "background_rng_initializations": 1800,
+    "noise_draws": 1800,
+    "period_draws": 1800,
+    "phase_draws": 1800,
+    "redraw_total": 0
+  },
+  "second_table_sha256": {
+    "f3b5_heldout_admissibility.csv": "dfd79a20616f333f4e3f1cb0a0f0a03e46e537233554a956fa3547262af07ffe",
+    "f3b5_heldout_background_manifest.csv": "ef76d7fd0646c20bf9466a32e74a3412ad63e203a3fa520322633507cca333e6",
+    "f3b5_heldout_payload_manifest.csv": "d20b0dac662cf809eb86d5e87d96f35e236b6ff2fbfb0fa86eeb4da8a49af8b4",
+    "f3b5_heldout_series_manifest.csv": "3b98e31137b3f1d3cc67c2a7eead70414879891556be16196f954e4682410336",
+    "f3b5_heldout_truth_ledger.csv": "2270ef77926c6e95a8df97b292ba6ae0a64cb081e683a1e42cf238360232c708"
+  },
+  "status": "F3B5_HELDOUT_REMATERIALIZATION_EXACT",
+  "temporary_second_materialization_performed": true,
+  "thresholds_modified": false,
+  "tooling_incident_recovery": {
+    "first_persistent_bytes_changed": false,
+    "incident_class": "POWERSHELL_DYNAMIC_PROPERTY_PARSE_FAILURE",
+    "incident_id": "F3B5-TOOL-003",
+    "previous_plan_built": false,
+    "previous_second_rematerialization_performed": false
+  }
+}
