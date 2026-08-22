@@ -1,0 +1,119 @@
+{
+  "artifact_role": "HELDOUT_MATERIALIZATION_AUTHORIZATION",
+  "authorization": {
+    "candidate_search_authorized": false,
+    "development_reopened_for_tuning": false,
+    "heldout_afino_execution_authorized": false,
+    "heldout_materialization_authorized": true,
+    "heldout_metrics_authorized": false,
+    "rule_refitting_authorized": false,
+    "threshold_mutation_authorized": false
+  },
+  "authorization_id": "F3B5_HELDOUT_MATERIALIZATION_AUTHORIZATION_V1",
+  "final_rule_authorization_basis": {
+    "alternate_candidate_search": "FORBIDDEN",
+    "candidate_rule_promoted": false,
+    "final_rule_freeze_verified": true,
+    "final_rule_type": "AFINO_0_5_BASELINE",
+    "freeze_state": "FINAL_RULE_FREEZE_BASELINE_ONLY",
+    "runner_up_rescue": "FORBIDDEN",
+    "t01": 10.0,
+    "t21": 10.0,
+    "threshold_mutation_after_freeze": "FORBIDDEN"
+  },
+  "generator_environment": {
+    "bool_dtype": "|b1",
+    "byteorder": "little",
+    "float_dtype": "<f8",
+    "int_dtype": "<i8",
+    "numpy": "2.3.5",
+    "python_major_minor": "3.13",
+    "python_observed": "3.13.13"
+  },
+  "git_frontier": {
+    "final_rule_annotated_tag_object": "0ba4c7480bafd643d5050a20796d8125d34e0cab",
+    "final_rule_commit": "703ea23a1bf8e3f5c6e0daf0045f636dfc7358bf",
+    "final_rule_tag": "phase3b-final-rule-v1"
+  },
+  "heldout_registry_scope": {
+    "background_group_size_distribution": {
+      "2": 1620,
+      "6": 180
+    },
+    "development_materialization_authorized": false,
+    "development_rows": 4320,
+    "evidence_plane_counts": {
+      "INPUT_ADMISSIBILITY": 720,
+      "SYNTHETIC_GROUND_TRUTH_CLASSIFICATION": 3600
+    },
+    "gap_quality_regime_counts": {
+      "CONTIGUOUS_ALL_GOOD": 3600,
+      "ONE_INTERNAL_NONPEAK_SAMPLE_MASKED": 360,
+      "PEAK_SAMPLE_MASKED": 360
+    },
+    "heldout_background_realizations": 1800,
+    "heldout_challenge_null": 360,
+    "heldout_challenge_positive": 360,
+    "heldout_input_admissibility": 720,
+    "heldout_null_total": 2160,
+    "heldout_positive_total": 2160,
+    "heldout_primary": 3600,
+    "heldout_primary_null": 1800,
+    "heldout_primary_positive": 1800,
+    "heldout_rows": 4320,
+    "materialize_only_split": "HELDOUT",
+    "registry_rows_total": 8640
+  },
+  "next_permitted_operation_after_exact_git_freeze": "F3B5_HELDOUT_STOCHASTIC_MATERIALIZATION",
+  "normative_inputs": {
+    "f3b1_heldout_access_policy": {
+      "path": "workflows/phase3b/design/f3b1_heldout_access_policy.json",
+      "sha256": "4f7276fdfec55a887e06adc5146a42e0974c9e2ca0650622972e66f593f417f3"
+    },
+    "f3b1_split_registry": {
+      "path": "workflows/phase3b/design/f3b1_split_registry.csv",
+      "sha256": "2316e09ba061910d360ba0d11aa4a766a3b657f56182bb6ba1c455d2b8120c93"
+    },
+    "f3b2_generator_code": {
+      "path": "workflows/phase3b/scripts/f3b_synthetic_generator.py",
+      "sha256": "d538d53c7845916e29c4dd351b85ae91076d5a342acb5619898788ef5d825d11"
+    },
+    "f3b2_generator_implementation_binding": {
+      "path": "workflows/phase3b/development/config/f3b2_generator_implementation_binding.json",
+      "sha256": "b6519f84c0e6aa6b0c86cbd7a66dd79c1de1758e313d96ea4d750ebb212d9946"
+    },
+    "f3b4_final_rule_freeze": {
+      "path": "workflows/phase3b/development/analysis/f3b4_final_rule_freeze.json",
+      "sha256": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c"
+    }
+  },
+  "phase": "F3B.5",
+  "pre_draw_boundary": {
+    "afino_executed_before_authorization": false,
+    "afino_imported_before_authorization": false,
+    "authorization_committed_before_first_draw_required": true,
+    "generator_imported_before_authorization": false,
+    "heldout_materialization_performed_before_authorization": false,
+    "heldout_metrics_computed_before_authorization": false,
+    "heldout_rule_applied_before_authorization": false,
+    "stochastic_draws_before_authorization": 0
+  },
+  "resolved_tooling_incidents": [
+    {
+      "incident_class": "POWERSHELL_PATH_NORMALIZATION_REGEX",
+      "incident_id": "F3B5-TOOL-001",
+      "resolution": "RESOLVED_WITHOUT_SCIENTIFIC_MUTATION",
+      "scientific_bytes_changed": false,
+      "stochastic_draws_consumed": 0
+    },
+    {
+      "incident_class": "AUTHORIZATION_BUILDER_EVIDENCE_PLANE_LABEL_MISMATCH",
+      "incident_id": "F3B5-TOOL-002",
+      "resolution": "RESOLVED_WITHOUT_SCIENTIFIC_MUTATION",
+      "scientific_bytes_changed": false,
+      "stochastic_draws_consumed": 0
+    }
+  ],
+  "schema_version": "1.0.0",
+  "status": "AUTHORIZED_FOR_MATERIALIZATION_ONLY"
+}
