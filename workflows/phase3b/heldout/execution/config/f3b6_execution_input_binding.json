@@ -1,0 +1,116 @@
+{
+  "afino_environment": {
+    "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "afino_package": "0.5",
+    "binding_path": "workflows/phase3b/development/config/f3b3_afino_execution_environment_binding.json",
+    "binding_sha256": "1105199deead4782b76008d4a7c1ba636f7b3898a4808bb76585909d1bbe85c9",
+    "numpy": "2.5.1",
+    "python": "3.13.13",
+    "scipy": "1.18.0"
+  },
+  "artifact_role": "HELDOUT_EXECUTION_INPUT_BINDING",
+  "binding_id": "F3B6_FROZEN_BLINDED_HELDOUT_EXECUTION_INPUTS_V1",
+  "blinding_firewall": {
+    "candidate_search_authorized": false,
+    "final_rule_application_authorized": false,
+    "heldout_metrics_authorized": false,
+    "heldout_outcomes_unblinding_authorized": false,
+    "rule_refitting_authorized": false,
+    "threshold_mutation_authorized": false,
+    "truth_join_authorized": false,
+    "truth_ledger_is_execution_input": false
+  },
+  "development_runner_regression": {
+    "audit_path": "workflows/phase3b/heldout/execution/evidence/tables/f3b6_development_runner_regression_audit.csv",
+    "audit_sha256": "3c9b383207271ee5edb16a06bb473d4d2af48bba0e7f27ae0df9e8402c6981bc",
+    "exact_matches": 18,
+    "heldout_jobs_in_regression": 0,
+    "jobs": 18,
+    "rerun_authorized": false,
+    "scientific_one_shot_consumed": true
+  },
+  "execution_topology": {
+    "M0_jobs": 3600,
+    "M1_jobs": 3600,
+    "M2_jobs": 3600,
+    "checkpointed_resume": true,
+    "completed_job_rerun": "FORBIDDEN",
+    "decisions": 3600,
+    "external_optimizer_seed_set": [
+      0
+    ],
+    "jobs": 10800,
+    "stability_extra_decisions": 0
+  },
+  "f3b5_materialization_evidence": {
+    "materialization_audit": {
+      "path": "workflows/phase3b/heldout/materialization/evidence/reports/f3b5_heldout_materialization_audit.json",
+      "sha256": "da7e58e39d2b1c11dc33c61917a9760e01d401470b3cc9b65be731b9b9c09b4a"
+    },
+    "single_use_boundary_audit": {
+      "path": "workflows/phase3b/heldout/materialization/evidence/reports/f3b5_single_use_boundary_audit.json",
+      "sha256": "763dafbed6ad646b8a07511f7166bb7ae5797a2fe18339ee8f5bd6a24351c926"
+    }
+  },
+  "final_rule_boundary": {
+    "freeze_path": "workflows/phase3b/development/analysis/f3b4_final_rule_freeze.json",
+    "freeze_sha256": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
+    "freeze_state": "FINAL_RULE_FREEZE_BASELINE_ONLY",
+    "rule_application_in_f3b6": false,
+    "rule_type": "AFINO_0_5_BASELINE",
+    "t01": 10.0,
+    "t21": 10.0
+  },
+  "git_frontier": {
+    "f3b5_materialization_commit": "690b54212ffc91d5d396da02db2bcd883b359e6b",
+    "f3b5_materialization_tag": "phase3b-heldout-materialization-v1",
+    "f3b5_materialization_tag_object": "396c86111fc7cf5462b895aaecd71622f2a1ebd6",
+    "remote_main_verified_at_f3b5_commit": true,
+    "remote_tag_verified": true
+  },
+  "heldout_execution_inputs": {
+    "decision_grid": {
+      "decision_class": "BASELINE",
+      "decisions": 3600,
+      "path": "workflows/phase3b/heldout/materialization/evidence/tables/f3b5_heldout_decision_grid.csv",
+      "sha256": "09419a4d5d968d5305f262b5aefe28cd29bc01cdcf67b53d91e1732c0e15aa34"
+    },
+    "exact_afino_plan": {
+      "execution_status": "NOT_EXECUTED",
+      "jobs": 10800,
+      "path": "workflows/phase3b/heldout/materialization/evidence/tables/f3b5_heldout_exact_afino_plan.csv",
+      "sha256": "0b59e2f4ab4e1f3a1064b2281a9a428b117a7b258102e237702deee86171f2f9"
+    },
+    "payload_manifest": {
+      "materialized_payload_rows": 4320,
+      "path": "workflows/phase3b/heldout/materialization/evidence/tables/f3b5_heldout_payload_manifest.csv",
+      "sha256": "d20b0dac662cf809eb86d5e87d96f35e236b6ff2fbfb0fa86eeb4da8a49af8b4"
+    },
+    "persistent_array_directory": "data/interim/phase3b/f3b5_heldout",
+    "persistent_array_sha256": {
+      "background_noise.npy": "26dc41dc0a280d92b45ed116f79060d547b7c1bc3d5673df6abb9def9bb8f794",
+      "background_offsets.npy": "8e0f77105f1fd3a13580adcd2c4dcbf5b09de5e32dbfd906795014a9d8f0be2c",
+      "latent_flux.npy": "5cdaff08c31f10c717de4b55f148c8af2e2333711fdaf0715e213403d8ce9758",
+      "latent_offsets.npy": "aba31f5bf921b48a046037b8ab09474edcd3136c2b405ed84b0f6e011867dd5c",
+      "retained_flux.npy": "f8e8fa86f9a307ef78bd34b153752078110b9461d8d172b7ec0d3e9425edebc6",
+      "retained_native_index.npy": "c0b19f204fecad603c0d8b63bfe0a0643cb57ea74694d4f8849e443786072e4c",
+      "retained_offsets.npy": "5fd86ec64fe858b3ed665f11a06f4ca7f054e83c51c6e21cb3339693cb99da64",
+      "retained_time_s.npy": "573527515b71d29eadfe20d0b6eb87296f38f8ec188419a1a4b5fc95dab1d050"
+    }
+  },
+  "next_permitted_operation_after_authorization_git_freeze": "F3B6_SINGLE_USE_BLINDED_HELDOUT_AFINO_EXECUTION",
+  "phase": "F3B.6",
+  "prospective_outputs": {
+    "blinded_decisions": "workflows/phase3b/heldout/execution/evidence/tables/f3b6_heldout_decisions_blinded.csv",
+    "blinded_results": "workflows/phase3b/heldout/execution/evidence/tables/f3b6_heldout_results_blinded.csv",
+    "checkpoint": "runtime/phase3b/f3b6/heldout_checkpoint.sqlite"
+  },
+  "runner": {
+    "development_regression_function": "run_development_regression",
+    "development_regression_function_sha256": "6693028b993cdd5c3eaf1a5a6251fffc3836f8026067809ccae96613fd9fefa0",
+    "path": "workflows/phase3b/scripts/run_f3b_heldout_checkpointed.py",
+    "sha256": "c4d59cb211f95fd61b251c4c2f7d0d82e5474f2670bb8437f49fa08f94e10f3d"
+  },
+  "schema_version": "1.0.0",
+  "status": "FROZEN_PENDING_SINGLE_USE_EXECUTION_AUTHORIZATION_COMMIT"
+}
