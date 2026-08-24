@@ -9,7 +9,7 @@
     "scipy": "1.18.0"
   },
   "artifact_role": "HELDOUT_EXECUTION_INPUT_BINDING",
-  "binding_id": "F3B6_FROZEN_BLINDED_HELDOUT_EXECUTION_INPUTS_V1",
+  "binding_id": "F3B6_FROZEN_BLINDED_HELDOUT_EXECUTION_INPUTS_V2",
   "blinding_firewall": {
     "candidate_search_authorized": false,
     "final_rule_application_authorized": false,
@@ -109,8 +109,29 @@
     "development_regression_function": "run_development_regression",
     "development_regression_function_sha256": "6693028b993cdd5c3eaf1a5a6251fffc3836f8026067809ccae96613fd9fefa0",
     "path": "workflows/phase3b/scripts/run_f3b_heldout_checkpointed.py",
-    "sha256": "c4d59cb211f95fd61b251c4c2f7d0d82e5474f2670bb8437f49fa08f94e10f3d"
+    "sha256": "dc270bcc8576f7eb82e5efb013ab95c7c975712ef4274f446f82d208f690c719"
   },
-  "schema_version": "1.0.0",
-  "status": "FROZEN_PENDING_SINGLE_USE_EXECUTION_AUTHORIZATION_COMMIT"
+  "schema_version": "1.1.0",
+  "status": "RECOVERY_REBOUND_PENDING_SINGLE_USE_EXECUTION_AUTHORIZATION_COMMIT",
+  "tooling_incident_recovery": {
+    "afino_modified": false,
+    "checkpoint_archive_path": "runtime/phase3b/f3b6/incidents/F3B6-TOOL-007_empty_pre_afino_checkpoint.sqlite",
+    "checkpoint_bytes": 28672,
+    "checkpoint_sha256": "0eedacdac0e67a88164b41112ed79c261aafe3607a851dff956d6b2ebdb738fc",
+    "correction": "Normalize every HELDOUT job through frozen F3B.3 validate_job and exercise the same normalized job contract during preflight.",
+    "development_regression_rerun": false,
+    "environment_modified": false,
+    "failure_stage": "PRE_AFINO_MODEL_EXECUTION",
+    "final_rule_modified": false,
+    "heldout_payload_modified": false,
+    "heldout_plan_modified": false,
+    "incident_class": "HELDOUT_ADAPTER_JOB_NORMALIZATION_OMISSION",
+    "incident_id": "F3B6-TOOL-007",
+    "invocation_rows_before_recovery": 0,
+    "observed_exception": "KeyError: 'model_name'",
+    "results_rows_before_recovery": 0,
+    "root_cause": "HELDOUT plan rows were not normalized through frozen F3B.3 validate_job before execute_one_job.",
+    "scientific_jobs_consumed": 0,
+    "seed_modified": false
+  }
 }

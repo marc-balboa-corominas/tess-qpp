@@ -640,7 +640,8 @@ def derive_heldout_payload_loader(
 
 def load_heldout_plan(
     repo: Path,
-) -> list[dict[str, str]]:
+    runner,
+) -> list[dict[str, Any]]:
 
     paths = verify_frozen_inputs(
         repo
@@ -790,6 +791,14 @@ def load_heldout_plan(
             "decision_class"
         ] = "BASELINE"
 
+        # Normalize every HELDOUT job through the frozen F3B.3
+        # contract before it can reach execute_one_job().  This
+        # converts integer fields and attaches model_name exactly
+        # as DEVELOPMENT did.
+        job = runner.validate_job(
+            job
+        )
+
         jobs.append(
             job
         )
@@ -818,8 +827,26 @@ def verify_heldout_payload_contract(
     )
 
     jobs = load_heldout_plan(
-        repo
+        repo,
+        runner,
     )
+
+
+    required_job_fields = {
+        "decision_class",
+        "job_order",
+        "external_optimizer_seed",
+        "model_id",
+        "model_name",
+    }
+
+
+    if not required_job_fields.issubset(
+        jobs[0]
+    ):
+        raise RuntimeError(
+            "HELDOUT normalized job contract incomplete"
+        )
 
 
     # One extraction is enough to prove that the mechanically
@@ -1603,7 +1630,8 @@ def execute_heldout(
 
 
     jobs = load_heldout_plan(
-        repo
+        repo,
+        runner,
     )
 
 

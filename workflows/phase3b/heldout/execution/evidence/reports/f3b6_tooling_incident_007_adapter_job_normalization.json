@@ -1,0 +1,47 @@
+{
+  "artifact_role": "F3B6_TOOLING_INCIDENT_RECOVERY_AUDIT",
+  "checkpoint_evidence": {
+    "archive_path": "runtime/phase3b/f3b6/incidents/F3B6-TOOL-007_empty_pre_afino_checkpoint.sqlite",
+    "bytes": 28672,
+    "invocations_rows": 0,
+    "metadata_rows": 9,
+    "results_rows": 0,
+    "sha256": "0eedacdac0e67a88164b41112ed79c261aafe3607a851dff956d6b2ebdb738fc",
+    "sqlite_integrity": "ok"
+  },
+  "correction": {
+    "afino_modified": false,
+    "development_regression_rerun": false,
+    "development_runner_modified": false,
+    "environment_modified": false,
+    "final_rule_modified": false,
+    "heldout_jobs_normalized_with_frozen_validate_job": true,
+    "heldout_payload_modified": false,
+    "heldout_plan_modified": false,
+    "preflight_uses_same_normalized_job_contract": true,
+    "seed_modified": false
+  },
+  "failure_stage": "PRE_AFINO_MODEL_EXECUTION",
+  "hash_transition": {
+    "adapter_sha256_after": "dc270bcc8576f7eb82e5efb013ab95c7c975712ef4274f446f82d208f690c719",
+    "adapter_sha256_before": "c4d59cb211f95fd61b251c4c2f7d0d82e5474f2670bb8437f49fa08f94e10f3d",
+    "authorization_sha256_after": "4924a1589932e67d132b79321c55c6d81b124afc790a65ac7c8883c55fd8daa5",
+    "authorization_sha256_before": "a900a16d29b0ee4bd4e59f49019d2fb8912e9d6957c0f5bc04da2c1f80784d63",
+    "execution_input_binding_sha256_after": "23c897ef0ea24f45c32cb3b382da98e8c914018c1438ba6ea725a848510219bd",
+    "execution_input_binding_sha256_before": "937dc6e63ca3e4ad346d6e95bad6a0d729a0abb7316e4cc13aaa89c84a50fb50"
+  },
+  "incident_class": "HELDOUT_ADAPTER_JOB_NORMALIZATION_OMISSION",
+  "incident_id": "F3B6-TOOL-007",
+  "next_gate": "COMMIT_RECOVERY_AUTHORIZATION_THEN_REPEAT_NON_SCIENTIFIC_PREFLIGHT",
+  "observed_exception": "KeyError: 'model_name'",
+  "pre_recovery_git_head": "65e8e2bcda0426704274894b4da70173ede9cc04",
+  "root_cause": "HELDOUT plan rows bypassed frozen F3B.3 validate_job, so model_name was absent when execute_one_job attempted to construct its pre-fit result object.",
+  "scientific_boundary": {
+    "afino_model_fits_completed": 0,
+    "heldout_metrics_computed": false,
+    "heldout_model_outputs_persisted": 0,
+    "heldout_outcomes_inspected": false,
+    "truth_join_performed": false
+  },
+  "status": "RECOVERY_PATCH_PRECOMMIT"
+}

@@ -1,7 +1,7 @@
 {
   "artifact_role": "F3B6_SINGLE_USE_EXECUTION_AUTHORIZATION",
-  "authorization_id": "F3B6_SINGLE_USE_EXECUTION_AUTHORIZATION_V2",
-  "authorization_parent_commit": "57bcfddbd08caa365fc5d3b585a3b023d065c0db",
+  "authorization_id": "F3B6_SINGLE_USE_EXECUTION_AUTHORIZATION_V3",
+  "authorization_parent_commit": "65e8e2bcda0426704274894b4da70173ede9cc04",
   "authorized_scope": {
     "M0_jobs": 3600,
     "M1_jobs": 3600,
@@ -25,11 +25,11 @@
   },
   "execution_input_binding": {
     "path": "workflows/phase3b/heldout/execution/config/f3b6_execution_input_binding.json",
-    "sha256": "937dc6e63ca3e4ad346d6e95bad6a0d729a0abb7316e4cc13aaa89c84a50fb50"
+    "sha256": "23c897ef0ea24f45c32cb3b382da98e8c914018c1438ba6ea725a848510219bd"
   },
   "frozen_inputs": {
-    "adapter_sha256": "c4d59cb211f95fd61b251c4c2f7d0d82e5474f2670bb8437f49fa08f94e10f3d",
-    "execution_input_binding_sha256": "937dc6e63ca3e4ad346d6e95bad6a0d729a0abb7316e4cc13aaa89c84a50fb50",
+    "adapter_sha256": "dc270bcc8576f7eb82e5efb013ab95c7c975712ef4274f446f82d208f690c719",
+    "execution_input_binding_sha256": "23c897ef0ea24f45c32cb3b382da98e8c914018c1438ba6ea725a848510219bd",
     "final_rule_freeze_sha256": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
     "heldout_decision_grid_sha256": "09419a4d5d968d5305f262b5aefe28cd29bc01cdcf67b53d91e1732c0e15aa34",
     "heldout_exact_afino_plan_sha256": "0b59e2f4ab4e1f3a1064b2281a9a428b117a7b258102e237702deee86171f2f9",
@@ -37,7 +37,8 @@
   },
   "git_boundary": {
     "authorization_commit_not_yet_known_inside_artifact": true,
-    "authorization_must_be_committed_before_first_heldout_job": true
+    "authorization_must_be_committed_before_first_heldout_job": true,
+    "recovery_authorization_must_be_committed_before_heldout_execution": true
   },
   "next_permitted_operation_after_exact_git_freeze": "F3B6_SINGLE_USE_BLINDED_HELDOUT_AFINO_EXECUTION",
   "permissions": {
@@ -54,6 +55,7 @@
   },
   "phase": "F3B.6",
   "pre_execution_state": {
+    "failed_empty_checkpoint_archived": true,
     "heldout_checkpoint_exists": false,
     "heldout_decisions_exist": false,
     "heldout_jobs_executed": 0,
@@ -61,7 +63,7 @@
     "heldout_results_exist": false,
     "truth_join_performed": false
   },
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "scientific_firewall": {
     "candidate_search_authorized": false,
     "development_reopened_for_tuning": false,
@@ -89,6 +91,31 @@
     "checkpoint_created_before_recovery": false,
     "development_regression_rerun": false,
     "execution_input_binding_modified": false,
+    "heldout_adapter_recovery": {
+      "afino_modified": false,
+      "checkpoint_archive_path": "runtime/phase3b/f3b6/incidents/F3B6-TOOL-007_empty_pre_afino_checkpoint.sqlite",
+      "checkpoint_bytes": 28672,
+      "checkpoint_sha256": "0eedacdac0e67a88164b41112ed79c261aafe3607a851dff956d6b2ebdb738fc",
+      "development_regression_rerun": false,
+      "environment_modified": false,
+      "execution_input_binding_modified": true,
+      "failure_stage": "PRE_AFINO_MODEL_EXECUTION",
+      "final_rule_modified": false,
+      "heldout_metrics_before_recovery": false,
+      "heldout_outcomes_inspected": false,
+      "heldout_payload_modified": false,
+      "heldout_plan_modified": false,
+      "incident_class": "HELDOUT_ADAPTER_JOB_NORMALIZATION_OMISSION",
+      "incident_id": "F3B6-TOOL-007",
+      "invocation_rows_before_recovery": 0,
+      "observed_exception": "KeyError: 'model_name'",
+      "resolution": "NORMALIZE_HELDOUT_JOBS_THROUGH_FROZEN_F3B3_VALIDATE_JOB_AND_PREFLIGHT_SAME_CONTRACT",
+      "results_rows_before_recovery": 0,
+      "runner_modified": true,
+      "scientific_jobs_consumed": 0,
+      "seed_modified": false,
+      "truth_join_before_recovery": false
+    },
     "heldout_jobs_consumed_before_recovery": 0,
     "heldout_metrics_before_recovery": false,
     "heldout_payload_modified": false,
