@@ -1,7 +1,7 @@
 {
-  "artifact_role": "SINGLE_USE_BLINDED_HELDOUT_AFINO_EXECUTION_AUTHORIZATION",
-  "authorization_id": "F3B6_SINGLE_USE_BLINDED_HELDOUT_EXECUTION_V1",
-  "authorization_parent_commit": "690b54212ffc91d5d396da02db2bcd883b359e6b",
+  "artifact_role": "F3B6_SINGLE_USE_EXECUTION_AUTHORIZATION",
+  "authorization_id": "F3B6_SINGLE_USE_EXECUTION_AUTHORIZATION_V2",
+  "authorization_parent_commit": "57bcfddbd08caa365fc5d3b585a3b023d065c0db",
   "authorized_scope": {
     "M0_jobs": 3600,
     "M1_jobs": 3600,
@@ -27,11 +27,31 @@
     "path": "workflows/phase3b/heldout/execution/config/f3b6_execution_input_binding.json",
     "sha256": "937dc6e63ca3e4ad346d6e95bad6a0d729a0abb7316e4cc13aaa89c84a50fb50"
   },
+  "frozen_inputs": {
+    "adapter_sha256": "c4d59cb211f95fd61b251c4c2f7d0d82e5474f2670bb8437f49fa08f94e10f3d",
+    "execution_input_binding_sha256": "937dc6e63ca3e4ad346d6e95bad6a0d729a0abb7316e4cc13aaa89c84a50fb50",
+    "final_rule_freeze_sha256": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
+    "heldout_decision_grid_sha256": "09419a4d5d968d5305f262b5aefe28cd29bc01cdcf67b53d91e1732c0e15aa34",
+    "heldout_exact_afino_plan_sha256": "0b59e2f4ab4e1f3a1064b2281a9a428b117a7b258102e237702deee86171f2f9",
+    "heldout_payload_manifest_sha256": "d20b0dac662cf809eb86d5e87d96f35e236b6ff2fbfb0fa86eeb4da8a49af8b4"
+  },
   "git_boundary": {
     "authorization_commit_not_yet_known_inside_artifact": true,
     "authorization_must_be_committed_before_first_heldout_job": true
   },
   "next_permitted_operation_after_exact_git_freeze": "F3B6_SINGLE_USE_BLINDED_HELDOUT_AFINO_EXECUTION",
+  "permissions": {
+    "candidate_search_authorized": false,
+    "development_reopened_for_tuning": false,
+    "final_rule_application_authorized": false,
+    "heldout_afino_execution_authorized": true,
+    "heldout_metrics_authorized": false,
+    "heldout_unblinding_authorized": false,
+    "rule_refitting_authorized": false,
+    "threshold_mutation_authorized": false,
+    "truth_join_authorized": false,
+    "truth_ledger_access_authorized": false
+  },
   "phase": "F3B.6",
   "pre_execution_state": {
     "heldout_checkpoint_exists": false,
@@ -41,7 +61,7 @@
     "heldout_results_exist": false,
     "truth_join_performed": false
   },
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "scientific_firewall": {
     "candidate_search_authorized": false,
     "development_reopened_for_tuning": false,
@@ -64,5 +84,31 @@
     "seed_mutation": "FORBIDDEN",
     "selective_retry_after_outcome": "FORBIDDEN"
   },
-  "status": "AUTHORIZED_AFTER_EXACT_GIT_COMMIT_ONLY"
+  "status": "AUTHORIZED_FOR_SINGLE_USE_AFINO_EXECUTION",
+  "tooling_incident_recovery": {
+    "checkpoint_created_before_recovery": false,
+    "development_regression_rerun": false,
+    "execution_input_binding_modified": false,
+    "heldout_jobs_consumed_before_recovery": 0,
+    "heldout_metrics_before_recovery": false,
+    "heldout_payload_modified": false,
+    "heldout_plan_modified": false,
+    "prior_artifact_role": "SINGLE_USE_BLINDED_HELDOUT_AFINO_EXECUTION_AUTHORIZATION",
+    "prior_authorization_commit": "57bcfddbd08caa365fc5d3b585a3b023d065c0db",
+    "prior_authorization_sha256": "4274dea9ab253d4b08a12c5c5535a783c9721e3ce79f0d8d82e45039ff581767",
+    "prior_status": "AUTHORIZED_AFTER_EXACT_GIT_COMMIT_ONLY",
+    "recovery_guard_followup": {
+      "authorization_bytes_written_before_failure": false,
+      "commit_created_before_failure": false,
+      "incident_class": "RECOVERY_GUARD_NONEXISTENT_FIELD_ASSUMPTION",
+      "incident_id": "F3B6-TOOL-006",
+      "resolution": "REMOVE_NON_RUNNER_FIELD_REQUIREMENT",
+      "scientific_jobs_consumed": 0
+    },
+    "root_incident_class": "EXECUTION_AUTHORIZATION_SCHEMA_MISMATCH",
+    "root_incident_id": "F3B6-TOOL-005",
+    "root_resolution": "REISSUE_AUTHORIZATION_WITH_RUNNER_COMPATIBLE_SCHEMA",
+    "runner_modified": false,
+    "truth_join_before_recovery": false
+  }
 }
