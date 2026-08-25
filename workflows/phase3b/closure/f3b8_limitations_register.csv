@@ -1,0 +1,22 @@
+limitation_id,category,limitation,consequence,mandatory_manuscript_qualification
+L001,TRUTH,"Ground truth is synthetic, not observational physical truth.",Limits claims to controlled simulations.,Use synthetic-ground-truth wording.
+L002,SIGNAL_FAMILY,The primary synthetic signal family is frozen by the F3B.1 generator contract.,Other QPP morphologies are not covered.,Do not generalize to arbitrary QPP waveforms.
+L003,PERIOD_SUPPORT,True-period support is restricted to 40–300 s.,Performance outside this range is uncharacterized.,State period support when discussing recovery.
+L004,DISCRETE_GRID,"Durations/sample counts, red-noise slopes and signal strengths lie on a discrete frozen grid.",The selection function is not a continuous population law.,Describe a stratified empirical surface.
+L005,CHALLENGES,"The 720 input-admissibility challenges are a designed diagnostic plane, not a population sample.",Their aggregate fraction is not observational prevalence.,Keep challenge metrics separate.
+L006,NULL_MODEL,Synthetic nulls do not exhaust observational background behavior.,Real background mismatch can alter false-selection behavior.,Do not transport FPR directly to TESS.
+L007,SENSITIVITY,HELDOUT synthetic sensitivity is low: 152/1800.,Many injected QPP signals are not selected.,Report low sensitivity with high specificity.
+L008,ZERO_FP,HELDOUT observed 0/1800 false selections.,Zero count retains finite-sample uncertainty.,Give Wilson interval; do not claim population FPR=0.
+L009,SELECTION_DOMAIN,The 156-row final selection function is valid only on the frozen synthetic domain.,No observational population correction follows automatically.,Transport requires F4+ evidence.
+L010,PERIOD_CONDITIONING,Period-error metrics condition on selected true positives with finite recovered period.,They do not summarize all injected positives.,Do not interpret good period accuracy as completeness.
+L011,NUMERICAL_STABILITY,Extra-seed stability was assessed only in DEVELOPMENT.,HELDOUT stability was not rerun by design.,Do not imply HELDOUT multi-seed evidence.
+L012,OPTIMIZER,Numerical stability does not establish a unique global optimum.,Optimizer-level uncertainty is bounded.,Avoid unique-optimum claims.
+L013,SOFTWARE_VERSION,Execution is bound to AFINO 0.5 and its frozen environment/commit.,Other versions are outside this evidence.,Report frozen implementation identity.
+L014,CANDIDATE_FAMILY,Candidate development was restricted to the frozen two-threshold family.,Alternative classifier families were not explored.,Do not claim arbitrary-rule optimality.
+L015,CANDIDATE_GATE,The DEVELOPMENT optimum failed the preregistered specificity-preservation gate.,Final rule remains baseline.,Do not rescue a runner-up post hoc.
+L016,COMPARATORS,External comparator methods were not executed in F3B.8.,Closure is not a benchmark against every detector.,Do not claim comparative superiority.
+L017,SINGLE_USE,HELDOUT is consumed as a single-use validation set.,It cannot support new rule development without circularity.,Future tuning requires new independent data.
+L018,TRANSPORT,No calibration maps the synthetic design distribution to the real TESS population.,Population prevalence and correction are not established.,Reserve transport/correction for F4+.
+L019,PHYSICAL_INFERENCE,Synthetic classification performance does not establish the physical origin of observed variability.,Physical QPP truth remains separate.,Do not convert classifier outcomes into physical proof.
+L020,EVIDENCE_PLANES,"F0, F1, F2, F3A and F3B answer different evidence questions.",Collapsing them into one validation label overstates scope.,Keep evidence planes separate in Manuscript 1.
+L021,DESCRIPTIVE_COMPARISON,DEVELOPMENT and HELDOUT are compared descriptively without pooling/equivalence/hypothesis testing.,"Similarity is qualitative, not formal equivalence.",Do not claim statistical equivalence.

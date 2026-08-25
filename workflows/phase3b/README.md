@@ -1,23 +1,21 @@
 # Phase 3B
 
 STATUS:
-DEVELOPMENT MATERIALIZED —
-AFINO EXECUTION NOT STARTED
-HELDOUT NOT GENERATED
+PHASE 3B CLOSED —
+SYNTHETIC HELDOUT CHARACTERIZATION COMPLETE
+CORRECTION NOT ESTABLISHED
+READY FOR MANUSCRIPT 1
 
-F3B.1 design freeze:
-`phase3b-design-v1`
-`b8680934644be1bfec196e2009311b3060968f0a`
+Phase 3B prospectively evaluated the frozen AFINO 0.5 baseline on controlled synthetic ground truth. DEVELOPMENT and independent single-use HELDOUT both show a low-sensitivity, extremely-high-specificity operating profile within the preregistered synthetic domain.
 
-F3B.2 implementation binding:
-`467abe9d5fc8379e342f7c98d735aae12ad56ea1`
+The DEVELOPMENT candidate rule was not promoted because it failed the frozen specificity-preservation gate. The final rule remained `delta_BIC01 > 10 AND delta_BIC21 > 10` with strict greater-than comparisons.
 
-F3B.2 has validated the frozen generator, materialized 1,800 DEVELOPMENT
-backgrounds / 4,320 DEVELOPMENT series, verified exact roundtrip and complete
-rematerialization, and frozen the exact future AFINO worklist.
+Final HELDOUT: TP=152, FN=1648, TN=1800, FP=0; sensitivity=152/1800=0.08444444444444445; specificity=1800/1800=1.0 with finite-sample Wilson uncertainty; final selection-function rows=156; period-recovery rows=152.
 
-AFINO has not been executed. No sensitivity, specificity, FPR, selection
-function estimate, candidate threshold or classifier outcome exists yet.
+Formal gate: `HELDOUT_BASELINE_CHARACTERIZATION_SUCCESS`. Correction claim: `NOT_ESTABLISHED`.
 
-HELDOUT remains ungenerated, unaccessed and protected by its byte-exact F3B.1
-guard. F3B.3 may begin only after F3B.2 closure validation plus Git/OSF freeze.
+The HELDOUT is consumed and cannot be reused for threshold or rule development. Phase 3B does not establish observational prevalence, observational sensitivity/specificity/FPR, physical QPP truth, or a validated population correction.
+
+F3B.7 freeze: `phase3b-heldout-validation-v1` / `1a006edbafc05eab5ff9a6f46efbd4e94a074b49`.
+
+F3B.8 closure artifacts live under `workflows/phase3b/closure/`. The next program state is Manuscript 1 evidence→claim→section architecture, not F3B.9.

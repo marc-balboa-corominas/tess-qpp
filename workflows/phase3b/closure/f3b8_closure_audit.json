@@ -1,0 +1,105 @@
+{
+  "artifact_role": "F3B8_PHASE3B_CLOSURE_AUDIT",
+  "claim_governance": {
+    "allowed_statuses": [
+      "PROHIBITED",
+      "REQUIRES_F4_PLUS",
+      "SUPPORTED_NOW",
+      "SUPPORTED_WITH_EXPLICIT_LIMITATION"
+    ],
+    "claim_rows": 22,
+    "limitations_rows": 21,
+    "manuscript_handoff_rows": 10
+  },
+  "closure_controls": {
+    "development_heldout_pooling": false,
+    "development_reopened_for_tuning": false,
+    "equivalence_test_performed": false,
+    "f3b1_to_f3b7_artifacts_modified": false,
+    "generator_calls": 0,
+    "heldout_reused_for_development": false,
+    "hypothesis_test_added": false,
+    "new_afino_calls": 0,
+    "new_candidate_rule": false,
+    "new_statistical_inference": false,
+    "new_threshold_search": false,
+    "original_f3b5_truth_ledger_read": false,
+    "rule_refitted": false,
+    "thresholds_modified": false
+  },
+  "entry_boundary": {
+    "f3b7_commit": "1a006edbafc05eab5ff9a6f46efbd4e94a074b49",
+    "f3b7_tag": "phase3b-heldout-validation-v1"
+  },
+  "final_selection_function": {
+    "new_probabilistic_model_fitted": false,
+    "rows": 156,
+    "source_fields_reproduced_exactly": true,
+    "source_role": "HELDOUT_PRIMARY_FINAL",
+    "structural_no_exposure": 9
+  },
+  "phase": "F3B.8",
+  "preclosure_tooling_incidents": [
+    {
+      "failed_report_word_count": 1386,
+      "generator_calls": 0,
+      "heldout_reused_for_development": false,
+      "incident_class": "REPORT_WORD_COUNT_CONTRACT_PRECOMMIT_DEFECT",
+      "incident_id": "F3B8-TOOL-001",
+      "new_afino_calls": 0,
+      "new_statistical_inference": false,
+      "repair": "REPORT_TEMPLATE_EXTENDED_BEFORE_COMMIT",
+      "required_report_word_count_max": 2000,
+      "required_report_word_count_min": 1500,
+      "scientific_algorithm_changed": false
+    },
+    {
+      "closure_outputs_recomputed_after_repair": true,
+      "correct_path": "workflows/phase3b/README.md",
+      "discovered_before_commit": true,
+      "generator_calls": 0,
+      "heldout_reused_for_development": false,
+      "incident_class": "GIT_PORCELAIN_LEADING_SPACE_STRIP_PATH_PARSE_DEFECT",
+      "incident_id": "F3B8-TOOL-002",
+      "new_afino_calls": 0,
+      "new_statistical_inference": false,
+      "observed_false_path": "orkflows/phase3b/README.md",
+      "repair": "run_git newline trimming changed from strip() to rstrip(chr(13)+chr(10)) semantics so porcelain leading status whitespace is preserved",
+      "root_cause": "run_git used str.strip(), removing the leading porcelain status column space from the first modified tracked path before status_paths sliced columns 0..2",
+      "scientific_algorithm_changed": false
+    }
+  ],
+  "reconstruction": {
+    "candidate_rule_promoted": false,
+    "correction_claim": "NOT_ESTABLISHED",
+    "development_classifier_rows": 3600,
+    "development_confusion_matrix": {
+      "FN": 1657,
+      "FP": 1,
+      "TN": 1799,
+      "TP": 143
+    },
+    "development_period_rows": 143,
+    "development_selection_rows": 156,
+    "development_structural_no_exposure": 9,
+    "final_t01": 10.0,
+    "final_t21": 10.0,
+    "heldout_classifier_rows": 3600,
+    "heldout_confusion_matrix": {
+      "FN": 1648,
+      "FP": 0,
+      "TN": 1800,
+      "TP": 152
+    },
+    "heldout_gate": "HELDOUT_BASELINE_CHARACTERIZATION_SUCCESS",
+    "heldout_period_rows": 152,
+    "heldout_selection_rows": 156,
+    "heldout_single_use_consumed": true,
+    "heldout_structural_no_exposure": 9
+  },
+  "report_word_count": 1597,
+  "required_independent_validator_result": "PHASE3B_CLOSURE_VALIDATION_PASS",
+  "schema_version": "1.0.0",
+  "source_bindings_sha256": "8e10cc7191369cfdc3d0957f6004a4e7d2904926a4cee5e07ed58c5bc3c49124",
+  "status": "PHASE3B_CLOSURE_VALIDATION_PASS"
+}

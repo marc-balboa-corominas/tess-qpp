@@ -1,0 +1,12 @@
+metric,development_numerator,development_denominator,development_point_estimate,development_interval_lower,development_interval_upper,heldout_numerator,heldout_denominator,heldout_point_estimate,heldout_interval_lower,heldout_interval_upper,comparison_role,inferential_test,pooling,interpretation
+TP,143,3600,,,,152,3600,,,,DESCRIPTIVE_SPLIT_SEPARATE,NOT_PERFORMED,NOT_PERFORMED,Count kept separate by frozen split.
+FN,1657,3600,,,,1648,3600,,,,DESCRIPTIVE_SPLIT_SEPARATE,NOT_PERFORMED,NOT_PERFORMED,Count kept separate by frozen split.
+TN,1799,3600,,,,1800,3600,,,,DESCRIPTIVE_SPLIT_SEPARATE,NOT_PERFORMED,NOT_PERFORMED,Count kept separate by frozen split.
+FP,1,3600,,,,0,3600,,,,DESCRIPTIVE_SPLIT_SEPARATE,NOT_PERFORMED,NOT_PERFORMED,Count kept separate by frozen split.
+sensitivity_TPR,143,1800,0.07944444444444444,0.06782821927072591,0.09285189893111712,152,1800,0.08444444444444445,0.07246744846806605,0.0981913737445873,DESCRIPTIVE_SPLIT_SEPARATE,NOT_PERFORMED,NOT_PERFORMED,Frozen synthetic-domain characterization; no equivalence or hypothesis test.
+specificity_TNR,1799,1800,0.9994444444444445,0.9968597321206145,0.9999019240703273,1800,1800,1.0,0.997870401081032,1.0,DESCRIPTIVE_SPLIT_SEPARATE,NOT_PERFORMED,NOT_PERFORMED,Frozen synthetic-domain characterization; no equivalence or hypothesis test.
+false_positive_rate_FPR,1,1800,0.0005555555555555556,9.807592967258326e-05,0.0031402678793854047,0,1800,0.0,2.168404344971009e-19,0.002129598918967953,DESCRIPTIVE_SPLIT_SEPARATE,NOT_PERFORMED,NOT_PERFORMED,Frozen synthetic-domain characterization; no equivalence or hypothesis test.
+balanced_accuracy,,,0.5394444444444445,,,,,0.5422222222222223,,,DESCRIPTIVE_SPLIT_SEPARATE,NOT_PERFORMED,NOT_PERFORMED,Secondary descriptive summary only.
+selection_function_rows,156,,,,,156,,,,,DESCRIPTIVE_SPLIT_SEPARATE,NOT_PERFORMED,NOT_PERFORMED,"Final surface is HELDOUT only, not pooled."
+STRUCTURAL_NO_EXPOSURE,9,,,,,9,,,,,DESCRIPTIVE_SPLIT_SEPARATE,NOT_PERFORMED,NOT_PERFORMED,Structural non-exposure is not an empirical zero.
+period_recovery_rows,143,,,,,152,,,,,DESCRIPTIVE_SPLIT_SEPARATE,NOT_PERFORMED,NOT_PERFORMED,Conditional on selected true positives with finite recovered period.

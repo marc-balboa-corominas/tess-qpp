@@ -1,0 +1,32 @@
+{
+  "afino_observationally_validated": false,
+  "artifact_role": "F3B8_PHASE3B_FORMAL_DECISION",
+  "candidate_discovery_authorized": false,
+  "candidate_rule_promoted": false,
+  "correction_claim_established": false,
+  "f3b7_entry_commit": "1a006edbafc05eab5ff9a6f46efbd4e94a074b49",
+  "f3b7_entry_tag": "phase3b-heldout-validation-v1",
+  "final_rule": {
+    "comparison_operator": "STRICT_GREATER_THAN",
+    "rule_type": "AFINO_0_5_BASELINE",
+    "selection_rule": "delta_BIC01 > 10 AND delta_BIC21 > 10",
+    "t01": 10.0,
+    "t21": 10.0
+  },
+  "heldout_baseline_characterization_success": true,
+  "heldout_single_use_consumed": true,
+  "manuscript1_ready": true,
+  "observational_fpr_established": false,
+  "observational_ground_truth_established": false,
+  "observational_selection_function_established": false,
+  "observational_sensitivity_established": false,
+  "observational_specificity_established": false,
+  "phase": "F3B.8",
+  "phase_status": "PHASE3B_COMPLETE_HELDOUT_BASELINE_CHARACTERIZED_CORRECTION_NOT_ESTABLISHED_PROCEED_TO_MANUSCRIPT1",
+  "physical_qpp_truth_established": false,
+  "population_correction_complete": false,
+  "required_closure_validator_result": "PHASE3B_CLOSURE_VALIDATION_PASS",
+  "schema_version": "1.0.0",
+  "selection_function_characterized": true,
+  "synthetic_ground_truth_validation_complete": true
+}
