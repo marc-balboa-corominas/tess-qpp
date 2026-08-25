@@ -1,0 +1,23 @@
+{
+  "artifact_role": "F3B7_SINGLE_USE_EVALUATION_AUDIT",
+  "blind_decisions_sha256": "bc7c8720d9cdeed249301f986bcf960ef46c2d75ec4e38356a0dfa42ee3b3ab1",
+  "candidate_search_performed": false,
+  "development_reopened_for_tuning": false,
+  "generator_calls": 0,
+  "heldout_afino_executed": true,
+  "heldout_blind_decisions_frozen_before_truth": true,
+  "heldout_materialized": true,
+  "heldout_metrics_computed": true,
+  "heldout_optimizer_stability": "NOT_EXECUTED_BY_DESIGN",
+  "heldout_period_metrics_computed": true,
+  "heldout_selection_function_computed": true,
+  "heldout_single_use_consumed": true,
+  "new_afino_calls": 0,
+  "phase": "F3B.7",
+  "pretruth_repair_commit": "3277ec9561d850182de05517caccf63aea8228f9",
+  "procedure_freeze_commit": "19436932aaaf39e07e176f35753a12a6385818e0",
+  "rule_refitted": false,
+  "schema_version": "1.0.0",
+  "thresholds_modified": false,
+  "truth_join_performed": true
+}

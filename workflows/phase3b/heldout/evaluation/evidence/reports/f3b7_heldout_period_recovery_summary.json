@@ -1,0 +1,57 @@
+{
+  "artifact_role": "HELDOUT_BASELINE_PERIOD_RECOVERY_SUMMARY",
+  "period_estimate_coverage_fraction": {
+    "denominator": 1800,
+    "denominator_definition": "ALL_ELIGIBLE_SYNTHETIC_QPP_PRESENT",
+    "numerator": 152,
+    "point_estimate": 0.08444444444444445
+  },
+  "period_semantics": {
+    "nonselected_error_imputation": "PROHIBITED",
+    "nonselected_m1_center_is_period_recovery": false,
+    "period_recovered_within_X_percent_threshold": "NOT_USED"
+  },
+  "phase": "F3B.7",
+  "population": {
+    "baseline_true_positives": 152,
+    "eligible_positive_injections": 1800,
+    "selected_true_positives_missing_finite_period": 0,
+    "selected_true_positives_with_finite_period": 152
+  },
+  "schema_version": "1.0.0",
+  "scope": {
+    "input_condition": "ELIGIBLE_FOR_AFINO",
+    "observational_period_claim": false,
+    "optimizer_seed": 0,
+    "selected_only_for_recovered_period": true,
+    "split": "HELDOUT",
+    "synthetic_domain_only": true,
+    "truth_state": "SYNTHETIC_QPP_PRESENT"
+  },
+  "selected_true_positive_error_distributions": {
+    "absolute_period_error_s": {
+      "empirical_percentile_16": 0.204941740587293,
+      "empirical_percentile_84": 1.819208591831031,
+      "median": 0.728071354085948,
+      "n": 152,
+      "quantile_implementation": "numpy.quantile",
+      "quantile_method": "linear"
+    },
+    "log_period_ratio": {
+      "empirical_percentile_16": -0.01273103850868719,
+      "empirical_percentile_84": 0.02231253344626497,
+      "median": 0.0032587212754156855,
+      "n": 152,
+      "quantile_implementation": "numpy.quantile",
+      "quantile_method": "linear"
+    },
+    "relative_period_error": {
+      "empirical_percentile_16": 0.003001087252311194,
+      "empirical_percentile_84": 0.026282855154387812,
+      "median": 0.011820556706242477,
+      "n": 152,
+      "quantile_implementation": "numpy.quantile",
+      "quantile_method": "linear"
+    }
+  }
+}

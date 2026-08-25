@@ -1,0 +1,33 @@
+{
+  "artifact_role": "F3B7_HELDOUT_EVALUATION_AUDIT",
+  "confusion_matrix": {
+    "FN": 1648,
+    "FP": 0,
+    "TN": 1800,
+    "TP": 152,
+    "total": 3600
+  },
+  "counts": {
+    "baseline_evaluations": 3600,
+    "heldout_total_series": 4320,
+    "input_admissibility_challenges": 720,
+    "null_primary": 1800,
+    "period_recovery_rows": 152,
+    "positive_primary": 1800,
+    "primary_classifier_series": 3600,
+    "selection_function_rows": 156,
+    "structural_no_exposure": 9
+  },
+  "firewall": {
+    "candidate_search": false,
+    "development_retuning": false,
+    "generator_calls": false,
+    "new_afino": false,
+    "rule_refit": false,
+    "threshold_mutation": false
+  },
+  "phase": "F3B.7",
+  "schema_version": "1.0.0",
+  "status": "PASS",
+  "validation_target": "PHASE3B_HELDOUT_EVALUATION_VALIDATION_PASS"
+}

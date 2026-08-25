@@ -1,0 +1,14 @@
+{
+  "artifact_role": "F3B7_HELDOUT_VALIDATION_GATE",
+  "branch": "BASELINE_ONLY",
+  "candidate_rule_promoted": false,
+  "correction_claim": "NOT_ESTABLISHED",
+  "criteria": {
+    "complete_heldout_baseline_characterization": true,
+    "no_development_retuning_after_heldout_generation": true
+  },
+  "performance_threshold_required": false,
+  "phase": "F3B.7",
+  "schema_version": "1.0.0",
+  "status": "HELDOUT_BASELINE_CHARACTERIZATION_SUCCESS"
+}
