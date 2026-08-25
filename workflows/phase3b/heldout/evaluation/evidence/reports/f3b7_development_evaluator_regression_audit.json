@@ -1,0 +1,31 @@
+{
+  "artifact_role": "F3B7_DEVELOPMENT_EVALUATOR_REGRESSION_AUDIT",
+  "development": {
+    "FN": 1657,
+    "FP": 1,
+    "FPR": 0.0005555555555555556,
+    "STRUCTURAL_NO_EXPOSURE": 9,
+    "TN": 1799,
+    "TP": 143,
+    "balanced_accuracy": 0.5394444444444445,
+    "classifier_rows": 3600,
+    "frozen_end_to_end_rows": 9,
+    "metric_mismatches": 0,
+    "period_recovery_mismatches": 0,
+    "period_rows": 143,
+    "selection_function_mismatches": 0,
+    "selection_function_rows": 156,
+    "sensitivity": 0.07944444444444444,
+    "specificity": 0.9994444444444445,
+    "wilson_95_exact": true
+  },
+  "generator_calls": 0,
+  "heldout_admissibility_content_read": false,
+  "heldout_series_content_read": false,
+  "heldout_truth_content_read": false,
+  "new_afino_calls": 0,
+  "phase": "F3B.7_PRETRUTH",
+  "result": "F3B7_DEVELOPMENT_EVALUATOR_REGRESSION_PASS",
+  "schema_version": "1.0.0",
+  "status": "PASS"
+}

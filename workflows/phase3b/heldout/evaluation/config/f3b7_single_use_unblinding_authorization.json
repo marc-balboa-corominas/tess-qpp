@@ -1,0 +1,50 @@
+{
+  "activation_condition": {
+    "evaluator_binding_authorization_tests_must_be_committed": true,
+    "required_commit_subject": "ops(phase3b): freeze single-use heldout unblinding procedure",
+    "required_parent_commit": "7776676aab1e4d2922902f4046495500864f7ca1",
+    "working_tree_must_be_clean_before_truth_read": true
+  },
+  "artifact_role": "F3B7_SINGLE_USE_UNBLINDING_AUTHORIZATION",
+  "authorization_id": "F3B7_SINGLE_USE_UNBLINDING_AUTHORIZATION_V1",
+  "binding_sha256": "690292c4aebde2576baee8bd2f7326f8aa7d89ed4d00d1dbedb016cda06c4480",
+  "blind_decisions_sha256": "bc7c8720d9cdeed249301f986bcf960ef46c2d75ec4e38356a0dfa42ee3b3ab1",
+  "blind_execution_freeze_verified": true,
+  "evaluator_sha256": "8d334ffd170431033845c3d13e1a7fdf6c9f43f85f461f44fd9de661337c04aa",
+  "final_rule": {
+    "candidate_rule_promoted": false,
+    "comparison": "STRICT_GREATER_THAN",
+    "freeze_state": "FINAL_RULE_FREEZE_BASELINE_ONLY",
+    "rule": "delta_BIC01 > 10 AND delta_BIC21 > 10",
+    "t01": 10,
+    "t21": 10
+  },
+  "final_rule_freeze_verified": true,
+  "permissions": {
+    "candidate_search_authorized": false,
+    "development_retuning_authorized": false,
+    "generator_execution_authorized": false,
+    "heldout_metrics_authorized": true,
+    "heldout_optimizer_stability_authorized": false,
+    "heldout_period_metrics_authorized": true,
+    "heldout_selection_function_authorized": true,
+    "new_afino_execution_authorized": false,
+    "rule_refitting_authorized": false,
+    "threshold_mutation_authorized": false,
+    "truth_join_authorized": true
+  },
+  "phase": "F3B.7",
+  "pretruth_state": {
+    "heldout_metrics_computed": false,
+    "heldout_truth_content_read": false,
+    "truth_join_performed": false
+  },
+  "schema_version": "1.0.0",
+  "single_use": {
+    "heldout_is_single_use": true,
+    "revised_method_requires_new_independent_validation_dataset": true,
+    "runtime_consumption_marker": "runtime/phase3b/f3b7/HELDOUT_TRUTH_CONSUMED.json",
+    "second_attempt_on_same_heldout_authorized": false
+  },
+  "status": "AUTHORIZED_AFTER_PROCEDURE_FREEZE_COMMIT"
+}

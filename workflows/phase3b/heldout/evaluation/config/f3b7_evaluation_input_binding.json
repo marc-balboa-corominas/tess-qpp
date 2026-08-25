@@ -1,0 +1,44 @@
+{
+  "artifact_role": "F3B7_EVALUATION_INPUT_BINDING",
+  "blind_decisions_sha256": "bc7c8720d9cdeed249301f986bcf960ef46c2d75ec4e38356a0dfa42ee3b3ab1",
+  "blind_execution_freeze_verified": true,
+  "blind_results_sha256": "2a55963e4b916a997efa5db5893e1b49f6a091b536fa6b98099da7733af7fe30",
+  "f3b6_final_commit": "7776676aab1e4d2922902f4046495500864f7ca1",
+  "f3b6_final_tag": "phase3b-heldout-execution-v1",
+  "final_rule": {
+    "candidate_rule_promoted": false,
+    "comparison": "STRICT_GREATER_THAN",
+    "freeze_state": "FINAL_RULE_FREEZE_BASELINE_ONLY",
+    "rule": "delta_BIC01 > 10 AND delta_BIC21 > 10",
+    "t01": 10,
+    "t21": 10
+  },
+  "final_rule_freeze_verified": true,
+  "normative_inputs": {
+    "workflows/phase3b/design/f3b1_heldout_access_policy.json": "4f7276fdfec55a887e06adc5146a42e0974c9e2ca0650622972e66f593f417f3",
+    "workflows/phase3b/design/f3b1_metrics_contract.json": "4ff43df03a0b895944c78382b864ace92c66967e760238ffb4f83367bf9dfb22",
+    "workflows/phase3b/design/f3b1_selection_function_contract.json": "ae2cc931d239ee25b4d5eb4c7eaf65dd00d3d2f1daaf43d96c7e8b77b33cfc51",
+    "workflows/phase3b/design/f3b1_success_failure_gate.json": "23d65ce7dc281799a484012c19a883f27ce17fbf5af0022c856bd7b946b6bfab",
+    "workflows/phase3b/development/analysis/f3b4_final_rule_freeze.json": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
+    "workflows/phase3b/heldout/execution/evidence/tables/f3b6_heldout_decisions_blinded.csv": "bc7c8720d9cdeed249301f986bcf960ef46c2d75ec4e38356a0dfa42ee3b3ab1",
+    "workflows/phase3b/heldout/execution/evidence/tables/f3b6_heldout_results_blinded.csv": "2a55963e4b916a997efa5db5893e1b49f6a091b536fa6b98099da7733af7fe30",
+    "workflows/phase3b/heldout/materialization/evidence/tables/f3b5_heldout_admissibility.csv": "dfd79a20616f333f4e3f1cb0a0f0a03e46e537233554a956fa3547262af07ffe",
+    "workflows/phase3b/heldout/materialization/evidence/tables/f3b5_heldout_series_manifest.csv": "3b98e31137b3f1d3cc67c2a7eead70414879891556be16196f954e4682410336",
+    "workflows/phase3b/heldout/materialization/evidence/tables/f3b5_heldout_truth_ledger.csv": "2270ef77926c6e95a8df97b292ba6ae0a64cb081e683a1e42cf238360232c708"
+  },
+  "phase": "F3B.7",
+  "pretruth_state": {
+    "generator_calls": 0,
+    "heldout_metrics_computed": false,
+    "heldout_truth_content_read": false,
+    "heldout_truth_join_performed": false,
+    "new_afino_calls": 0
+  },
+  "procedure_code": {
+    "evaluator_sha256": "8d334ffd170431033845c3d13e1a7fdf6c9f43f85f461f44fd9de661337c04aa",
+    "test_sha256": "855e36465d47af63259ddc1f8b876f8dc6fc72f22474ad38594206dea64b45c5",
+    "validator_sha256": "23d4ade1437e99beca848d7e0e91631ccff176acba5c4d3ed7d0aa2ef69a86fd"
+  },
+  "schema_version": "1.0.0",
+  "status": "PRETRUTH_PROCEDURE_BINDING"
+}
