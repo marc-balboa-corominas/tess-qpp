@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Manuscript-facing claim and limitation boundaries from the frozen M1.1 claim architecture.}
+\label{tab:m1\_claim\_boundaries}
+\begin{tabular}{p{0.16\linewidth}p{0.16\linewidth}p{0.16\linewidth}p{0.16\linewidth}p{0.16\linewidth}}
+\hline
+\textbf{evidence\_or\_result} & \textbf{claim\_ids} & \textbf{allowed\_interpretation} & \textbf{mandatory\_qualification} & \textbf{prohibited\_interpretation} \\
+\hline
+F0 reproduction & M1C001 & The frozen public AFINO baseline reproduced the five published TESS detections in the F0 reproduction cohort. & Scope to the frozen F0 cohort; paper-code identity remains unresolved. & AFINO is observationally validated or the five detections are physically proven. \\
+F3A 51/61 baseline mismatch & M1C006;M1C007 & Under the frozen F3A W00/P00/seed0 baseline, 51 of 61 published-QPP references are baseline mismatches. | The 51 F3A baseline mismatches are reproduction mismatches, not physical falsifications. & Cause remains UNRESOLVED\_WITHIN\_F3A. | Observational labels are reference states, not physical truth. & 51 published QPPs are false detections. | 51 published QPPs are physically false. \\
+F3A zero selection gains & M1C009;M1C010 & No baseline-relative selection gains were observed in the relevant baseline-concordant not-selected reference scope. | The absence of F3A selection gains is a robustness result, not an observational FPR estimate. & Repeated perturbations of observational references are not independent known negatives. | Keep evidence-plane semantics explicit. & Observational FPR is zero. | F3A establishes observational specificity or FPR. \\
+F3A seed stability (116/116) & M1C011 & All 116 input-eligible F3A W00/P00 events preserve binary classification across the frozen seed grid. & Stable classification does not imply unique optimizer convergence. & The optimizer converges uniquely. \\
+F3B HELDOUT FP=0 (0/1800) & M1C015;M1C016 & No false selections were observed among 1800 HELDOUT synthetic nulls; finite-sample Wilson uncertainty remains. | The observed 0/1800 HELDOUT false-selection count does not establish an underlying population FPR of zero. & Do not call specificity perfect or population FPR zero. | Retain Wilson uncertainty and synthetic-domain scope. & AFINO has zero false-positive rate in the population. | Population FPR is exactly zero. \\
+F3B selection function (156 strata) & M1C019;M1C020 & The final 156-row HELDOUT stratified empirical selection surface characterizes the frozen synthetic domain. | The F3B selection surface is synthetic-domain evidence and is not an observational population correction. & No DEVELOPMENT pooling, smoothing, or observational transport. | Population transport remains a separate future problem. & This is a universal TESS selection function. | Apply it directly as the TESS population correction. \\
+Conditional period recovery (152 selected TPs) & M1C021;M1C022 & Period-recovery accuracy is summarized conditional on selected true positives, while overall positive selection coverage is low. | Accurate periods among selected true positives can coexist with low selection sensitivity. & Keep conditioning on selection explicit. | Separate period recovery from classifier sensitivity. & Good period accuracy means high completeness. | Period accuracy proves detection completeness. \\
+DEVELOPMENT candidate-rule failure & M1C017;M1C018 & The DEVELOPMENT candidate failed the preregistered specificity-preservation criterion and was not promoted. | The HELDOUT target remained the frozen AFINO 0.5 rule delta\_BIC01>10 and delta\_BIC21>10. & No runner-up rescue or post-hoc alternate search. | Strict greater-than; frozen before HELDOUT truth. & The candidate was rejected because of HELDOUT results. | HELDOUT was used to tune thresholds. \\
+Correction NOT\_ESTABLISHED & M1C023 & Phase 3B closed with correction claim NOT\_ESTABLISHED. & Do not weaken or silently omit this boundary. & A validated observational correction was established. \\
+Programme evidence-plane boundary & M1C024 & The programme provides distinct reproduction, robustness and synthetic-ground-truth evidence, but not observational validation of AFINO. & Keep the evidence planes separate. & AFINO is observationally validated. \\
+BAII priority constraint & M1C028 & Position the contribution in terms of the combined prospective robustness and heldout architecture rather than unqualified first-ever claims. & BAII is bounded to its frozen search/extraction scope and is not a global novelty proof. & first catalogue-scale TESS QPP study; first TESS QPP catalogue; first QPP injection-recovery study \\
+\hline
+\end{tabular}
+\end{table*}

@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Manuscript 1 evidence planes and truth conditions.}
+\label{tab:m1\_evidence\_planes}
+\begin{tabular}{p{0.16\linewidth}p{0.16\linewidth}p{0.16\linewidth}p{0.16\linewidth}p{0.16\linewidth}p{0.16\linewidth}}
+\hline
+\textbf{plane} & \textbf{data\_type} & \textbf{ground\_truth\_status} & \textbf{what\_it\_establishes} & \textbf{what\_it\_does\_not\_establish} & \textbf{manuscript\_role} \\
+\hline
+F0 & OBSERVATIONAL & OBSERVATIONAL\_REFERENCE\_NOT\_PHYSICAL\_GROUND\_TRUTH & Reproducibility of the frozen public AFINO baseline on the observational reproduction cohort and the operational baseline used downstream. & Observational physical QPP truth, population sensitivity/specificity/FPR, or identity with unpublished private analysis code. & published-event reproduction and baseline specification \\
+F1 & SYNTHETIC & SYNTHETIC\_KNOWN\_TRUTH\_WITHIN\_DESIGNED\_DOMAIN & Controlled synthetic-domain benchmark behavior, support dependence, period behavior and numerical diagnostics of the frozen AFINO implementation. & Observational population performance or transport to real TESS prevalence. & synthetic benchmark and numerical behavior \\
+F2 & OBSERVATIONAL & OBSERVATIONAL\_REFERENCE\_NOT\_PHYSICAL\_GROUND\_TRUTH & Pilot-scale sensitivity of observational reference classifications to prospectively frozen methodological perturbations. & Classifier accuracy, observational FPR/sensitivity/specificity, or physical truth. & pilot methodological robustness \\
+F3A & OBSERVATIONAL & OBSERVATIONAL\_REFERENCE\_NOT\_PHYSICAL\_GROUND\_TRUTH & Catalogue-scale baseline reproduction limitations, methodological classification robustness, seed stability and conditional period robustness. & Observational validation, sensitivity, specificity, FPR, physical truth, or a selection function. & catalogue-scale observational robustness \\
+F3B & SYNTHETIC & SYNTHETIC\_KNOWN\_TRUTH\_WITH\_INDEPENDENT\_HELDOUT & Independent single-use HELDOUT synthetic-ground-truth performance, final synthetic selection function and conditional period recovery for the frozen baseline. & Observational validation, real-TESS prevalence, physical truth or a validated population correction. & known-truth heldout validation \\
+BAII — AUXILIARY NON-RESULT & NEITHER & DOCUMENTARY\_LITERATURE\_EVIDENCE & Bounded literature-positioning, overlap and precedence constraints under the frozen BAII search/extraction scope. & A scientific result of the AFINO/TESS experiment or unrestricted global priority. & introduction/discussion framing and priority-claim firewall \\
+\hline
+\end{tabular}
+\end{table*}

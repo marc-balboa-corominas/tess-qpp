@@ -1,0 +1,67 @@
+{
+  "all_source_bindings_verified": true,
+  "all_visible_scientific_values_source_mapped": true,
+  "architecture_freeze": {
+    "commit": "52024ec3728eeda25f9d640d8f1395a87671c541",
+    "tag": "manuscript1-architecture-v1"
+  },
+  "artifact_role": "MANUSCRIPT1_DEFINITIVE_VISUAL_PACKAGE_AUDIT",
+  "contextual_architecture_annotations_policy": {
+    "contextual_claims_must_already_exist_in_frozen_m1_1_claim_matrix": true,
+    "manifest_must_preserve_normative_plan_source_ids_and_claim_ids": true,
+    "no_new_scientific_source_is_authorized": true,
+    "normative_plan_source_ids_and_claim_ids_remain_unchanged": true,
+    "purpose": "Resolve mentor-mandated interpretive annotations without modifying the frozen M1.1 visual plan.",
+    "row_or_annotation_provenance_may_use_the_explicit_supplementary_frozen_context_source_ids_above": true,
+    "supplementary_context_sources_must_already_exist_in_frozen_m1_1_source_bindings": true
+  },
+  "f3a_frozen_counts": {
+    "qpp_baseline_mismatch": "51/61",
+    "seed_stable_events": "116/116",
+    "transitions": "295/171/3178/0"
+  },
+  "f3b_frozen_counts": {
+    "development_confusion": "143/1657/1799/1",
+    "heldout_confusion": "152/1648/1800/0",
+    "period_rows": 152,
+    "selection_function_rows": 156,
+    "structural_no_exposure": 9
+  },
+  "figure_pdf": 5,
+  "figure_png": 5,
+  "figures": 5,
+  "interpretation_firewalls": {
+    "development_heldout_pooled": false,
+    "f2_f3a_denominators_pooled": false,
+    "f3a_observational_confusion_labels_used": false,
+    "f3b_metrics_explicitly_synthetic": true,
+    "heldout_fp_zero_described_as_population_fpr_zero": false,
+    "period_recovery_conditioned_on_selection": true,
+    "selection_function_described_as_observational_correction": false
+  },
+  "manuscript_full_prose_started": false,
+  "new_afino_execution": false,
+  "new_bibliographic_search": false,
+  "new_scientific_computation": false,
+  "new_statistical_inference": false,
+  "new_synthetic_generation": false,
+  "normative_plan_claim_ids_unchanged": true,
+  "normative_plan_source_ids_unchanged": true,
+  "pre_freeze_tooling_incidents": [
+    "M1V-TOOL-001",
+    "M1V-TOOL-002"
+  ],
+  "pre_freeze_visual_review_incidents": [
+    "M1V-VIS-001",
+    "M1V-VIS-002",
+    "M1V-VIS-003"
+  ],
+  "rendered_value_audit_rows": 532,
+  "rendering_contract_freeze_commit": "144289c001cf92b1c0d2a616281d428ab9fbaeae",
+  "schema_version": "1.0.0",
+  "status": "M1_VISUAL_PACKAGE_VALIDATION_PASS",
+  "table_csv": 4,
+  "table_tex": 4,
+  "tables": 4,
+  "visual_manifest_rows": 18
+}
