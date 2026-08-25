@@ -1,0 +1,584 @@
+{
+  "architecture_claim_matrix_sha256": "8b01572171feef251357925d3553ec7843789407a343b895aedc52ea6ed8a9b4",
+  "architecture_evidence_plane_registry_sha256": "9157754193b06cebb65442847be2c7ddbc57e8aef68564682da54f5c034d0a0a",
+  "architecture_source_bindings_sha256": "3516ede53b0b77e33ba5099468a1b70f59d7606a564cb1a2bc90f86172292409",
+  "artifact_role": "MANUSCRIPT1_2_VISUAL_SOURCE_BINDINGS",
+  "authoritative_plan_sha256": "aad8812717b79c0e15e767e835e1157f2dbc66f502dba81b9bb4d8be391bd35a",
+  "entry_architecture_commit": "52024ec3728eeda25f9d640d8f1395a87671c541",
+  "entry_architecture_tag": "manuscript1-architecture-v1",
+  "new_source_artifact": false,
+  "normative_plan_source_id_count": 20,
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "allowed_use": "observational reproduction evidence only",
+      "bytes": 21882,
+      "contextual_artifact_ids": [
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP01",
+      "freeze_basis": "HISTORICAL_F0_F2_FROZEN_FOUNDATION_NO_DEDICATED_PHASE_TAG",
+      "freeze_commit": "d45a5aafad6e3a70f8af09abed6090948e1d425d",
+      "freeze_tag": null,
+      "normative_artifact_ids": [],
+      "phase": "F0",
+      "prohibited_use": "do not infer observational physical truth or classifier accuracy",
+      "repository_relative_path": "foundation/f0-f2/phase0/fase0_tarea15_reproduced_baseline.json",
+      "scientific_role": "baseline reproduction decision payload",
+      "sha256": "4c0bf97f875b9beb2bd2d619b26fa77b083fb946a05d3ee48c32896046690dc7",
+      "source_id": "M1S001",
+      "visual_use_class": "SUPPLEMENTARY_FROZEN_CONTEXT_SOURCE"
+    },
+    {
+      "allowed_use": "observational reproduction evidence only",
+      "bytes": 10189,
+      "contextual_artifact_ids": [
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP01",
+      "freeze_basis": "HISTORICAL_F0_F2_FROZEN_FOUNDATION_NO_DEDICATED_PHASE_TAG",
+      "freeze_commit": "d45a5aafad6e3a70f8af09abed6090948e1d425d",
+      "freeze_tag": null,
+      "normative_artifact_ids": [
+        "M1F01",
+        "M1T01"
+      ],
+      "phase": "F0",
+      "prohibited_use": "do not infer observational physical truth or classifier accuracy",
+      "repository_relative_path": "foundation/f0-f2/phase0/fase0_tarea15_phase0_synthesis.md",
+      "scientific_role": "Phase 0 reproduction synthesis",
+      "sha256": "cdebb7584ff1d1dbaadfa9f1c0dd55883aa7d1573627a7303bc17c3671613b0e",
+      "source_id": "M1S002",
+      "visual_use_class": "BOTH"
+    },
+    {
+      "allowed_use": "observational reproduction evidence only",
+      "bytes": 19502,
+      "contextual_artifact_ids": [
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP01",
+      "freeze_basis": "HISTORICAL_F0_F2_FROZEN_FOUNDATION_NO_DEDICATED_PHASE_TAG",
+      "freeze_commit": "d45a5aafad6e3a70f8af09abed6090948e1d425d",
+      "freeze_tag": null,
+      "normative_artifact_ids": [],
+      "phase": "F0",
+      "prohibited_use": "do not infer observational physical truth or classifier accuracy",
+      "repository_relative_path": "foundation/f0-f2/phase0/fase0_tarea15_evidence_matrix.csv",
+      "scientific_role": "Phase 0 evidence matrix",
+      "sha256": "42136fc3ef268c65c72d15910e6f248ed513940f268c4bcf5e69b455a143b270",
+      "source_id": "M1S003",
+      "visual_use_class": "SUPPLEMENTARY_FROZEN_CONTEXT_SOURCE"
+    },
+    {
+      "allowed_use": "synthetic/numerical benchmark evidence only",
+      "bytes": 8232,
+      "contextual_artifact_ids": [],
+      "evidence_plane": "M1EP02",
+      "freeze_basis": "HISTORICAL_F0_F2_FROZEN_FOUNDATION_NO_DEDICATED_PHASE_TAG",
+      "freeze_commit": "7e2e4b716b870decf224f993b315df3c9611d6e9",
+      "freeze_tag": null,
+      "normative_artifact_ids": [
+        "M1F01",
+        "M1T01"
+      ],
+      "phase": "F1",
+      "prohibited_use": "do not transport synthetic performance directly to observational populations",
+      "repository_relative_path": "foundation/f0-f2/phase1/fase1_tarea14_phase1_synthesis_report.md",
+      "scientific_role": "Phase 1 synthesis",
+      "sha256": "5d748476630023ec6b0f4a11c0851711f34b5b5c7a20a2e30fce1b1138a6c466",
+      "source_id": "M1S015",
+      "visual_use_class": "NORMATIVE_PLAN_SOURCE"
+    },
+    {
+      "allowed_use": "observational pilot robustness evidence only",
+      "bytes": 2419,
+      "contextual_artifact_ids": [],
+      "evidence_plane": "M1EP03",
+      "freeze_basis": "HISTORICAL_F0_F2_FROZEN_FOUNDATION_NO_DEDICATED_PHASE_TAG",
+      "freeze_commit": "28c97e220ebdd74d05fd76ad9527fe7d11c686ca",
+      "freeze_tag": null,
+      "normative_artifact_ids": [
+        "M1F02"
+      ],
+      "phase": "F2",
+      "prohibited_use": "do not interpret observational reference labels as physical ground truth or estimate observational FPR/sensitivity",
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea05_event_summary.csv",
+      "scientific_role": "pilot event-level robustness summary",
+      "sha256": "e43d6656f82b97b57b6dc7df5ed1b2060304a7202bcf214e1c6087327edf52d7",
+      "source_id": "M1S016",
+      "visual_use_class": "NORMATIVE_PLAN_SOURCE"
+    },
+    {
+      "allowed_use": "observational pilot robustness evidence only",
+      "bytes": 5362,
+      "contextual_artifact_ids": [],
+      "evidence_plane": "M1EP03",
+      "freeze_basis": "HISTORICAL_F0_F2_FROZEN_FOUNDATION_NO_DEDICATED_PHASE_TAG",
+      "freeze_commit": "28c97e220ebdd74d05fd76ad9527fe7d11c686ca",
+      "freeze_tag": null,
+      "normative_artifact_ids": [
+        "M1T04"
+      ],
+      "phase": "F2",
+      "prohibited_use": "do not interpret observational reference labels as physical ground truth or estimate observational FPR/sensitivity",
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea06_manuscript_claim_matrix.csv",
+      "scientific_role": "Phase 2 manuscript claim matrix",
+      "sha256": "070c7cb4eb85345c6222ecc476d527007abdfff940d80b2fd3a1b009286e57b0",
+      "source_id": "M1S021",
+      "visual_use_class": "NORMATIVE_PLAN_SOURCE"
+    },
+    {
+      "allowed_use": "observational pilot robustness evidence only",
+      "bytes": 5587,
+      "contextual_artifact_ids": [],
+      "evidence_plane": "M1EP03",
+      "freeze_basis": "HISTORICAL_F0_F2_FROZEN_FOUNDATION_NO_DEDICATED_PHASE_TAG",
+      "freeze_commit": "28c97e220ebdd74d05fd76ad9527fe7d11c686ca",
+      "freeze_tag": null,
+      "normative_artifact_ids": [
+        "M1T04"
+      ],
+      "phase": "F2",
+      "prohibited_use": "do not interpret observational reference labels as physical ground truth or estimate observational FPR/sensitivity",
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea06_phase2_limitations_register.csv",
+      "scientific_role": "Phase 2 limitations",
+      "sha256": "5379501c84162ff18b4c1dfc7d576e9051a214c885a2ab0ce10faf684d67c07a",
+      "source_id": "M1S022",
+      "visual_use_class": "NORMATIVE_PLAN_SOURCE"
+    },
+    {
+      "allowed_use": "observational pilot robustness evidence only",
+      "bytes": 10191,
+      "contextual_artifact_ids": [],
+      "evidence_plane": "M1EP03",
+      "freeze_basis": "HISTORICAL_F0_F2_FROZEN_FOUNDATION_NO_DEDICATED_PHASE_TAG",
+      "freeze_commit": "28c97e220ebdd74d05fd76ad9527fe7d11c686ca",
+      "freeze_tag": null,
+      "normative_artifact_ids": [
+        "M1F01",
+        "M1T01"
+      ],
+      "phase": "F2",
+      "prohibited_use": "do not interpret observational reference labels as physical ground truth or estimate observational FPR/sensitivity",
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea06_phase2_synthesis_report.md",
+      "scientific_role": "Phase 2 synthesis",
+      "sha256": "b2c693c40fd8d29227e4d03837e1901e488624b1dc60d87ca8b5b5461a93303e",
+      "source_id": "M1S025",
+      "visual_use_class": "NORMATIVE_PLAN_SOURCE"
+    },
+    {
+      "allowed_use": "framing, precedence and positioning constraints only; not a scientific result plane",
+      "bytes": 6157,
+      "contextual_artifact_ids": [],
+      "evidence_plane": "M1EP06",
+      "freeze_basis": "BAII_COMPLETE_FREEZE",
+      "freeze_commit": "73378199865258e89f6132c82755a647be37a9d6",
+      "freeze_tag": "bibliographic-audit-ii-complete-v1",
+      "normative_artifact_ids": [
+        "M1T04"
+      ],
+      "phase": "BAII",
+      "prohibited_use": "do not assert priority/novelty beyond the frozen bounded audit and do not treat BAII as a result plane",
+      "repository_relative_path": "docs/literature/bibliographic_audit_ii/closure/precedence_positioning_matrix.csv",
+      "scientific_role": "final precedence/positioning matrix",
+      "sha256": "0b14fe7002b1b11e77b56203b9d85336b5b21ac2683bd0e1a1c64799b8d035e1",
+      "source_id": "M1S026",
+      "visual_use_class": "NORMATIVE_PLAN_SOURCE"
+    },
+    {
+      "allowed_use": "framing, precedence and positioning constraints only; not a scientific result plane",
+      "bytes": 10578,
+      "contextual_artifact_ids": [],
+      "evidence_plane": "M1EP06",
+      "freeze_basis": "BAII_COMPLETE_FREEZE",
+      "freeze_commit": "73378199865258e89f6132c82755a647be37a9d6",
+      "freeze_tag": "bibliographic-audit-ii-complete-v1",
+      "normative_artifact_ids": [
+        "M1F01",
+        "M1T01"
+      ],
+      "phase": "BAII",
+      "prohibited_use": "do not assert priority/novelty beyond the frozen bounded audit and do not treat BAII as a result plane",
+      "repository_relative_path": "docs/literature/bibliographic_audit_ii/closure/final_synthesis_report.md",
+      "scientific_role": "final BAII synthesis",
+      "sha256": "84b795fda2711c45aa18364775545ce5c7ad4ada1c80cd4863078345ede0d2d5",
+      "source_id": "M1S029",
+      "visual_use_class": "NORMATIVE_PLAN_SOURCE"
+    },
+    {
+      "allowed_use": "catalogue-scale observational robustness evidence only",
+      "bytes": 14926,
+      "contextual_artifact_ids": [
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP04",
+      "freeze_basis": "PHASE3A_COMPLETE_FREEZE",
+      "freeze_commit": "1f3b1cc21286c25dea6a0e5779c0dc18edd81933",
+      "freeze_tag": "phase3a-complete-v2",
+      "normative_artifact_ids": [
+        "M1F03",
+        "M1T02"
+      ],
+      "phase": "F3A",
+      "prohibited_use": "do not infer observational ground truth, sensitivity, specificity, FPR, or physical falsity from reference mismatch",
+      "repository_relative_path": "workflows/phase3a/evidence/tables/f3a5_reference_baseline_audit.csv",
+      "scientific_role": "catalogue baseline-reproduction gate",
+      "sha256": "86958544bd2f8246c79a7b0a75abd1aaf55d6ca2b044c65fa5c34725c2eed2bc",
+      "source_id": "M1S030",
+      "visual_use_class": "BOTH"
+    },
+    {
+      "allowed_use": "catalogue-scale observational robustness evidence only",
+      "bytes": 1814869,
+      "contextual_artifact_ids": [
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP04",
+      "freeze_basis": "PHASE3A_COMPLETE_FREEZE",
+      "freeze_commit": "1f3b1cc21286c25dea6a0e5779c0dc18edd81933",
+      "freeze_tag": "phase3a-complete-v2",
+      "normative_artifact_ids": [
+        "M1F02",
+        "M1F03",
+        "M1T02"
+      ],
+      "phase": "F3A",
+      "prohibited_use": "do not infer observational ground truth, sensitivity, specificity, FPR, or physical falsity from reference mismatch",
+      "repository_relative_path": "workflows/phase3a/evidence/tables/f3a5_primary_outcome_matrix.csv",
+      "scientific_role": "catalogue-scale robustness outcome matrix",
+      "sha256": "950547b4c97b871d8a6015ffaef6a8931252b4fd34d75b3ad00a7c69d85e0526",
+      "source_id": "M1S031",
+      "visual_use_class": "BOTH"
+    },
+    {
+      "allowed_use": "catalogue-scale observational robustness evidence only",
+      "bytes": 2858,
+      "contextual_artifact_ids": [
+        "M1T02",
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP04",
+      "freeze_basis": "PHASE3A_COMPLETE_FREEZE",
+      "freeze_commit": "1f3b1cc21286c25dea6a0e5779c0dc18edd81933",
+      "freeze_tag": "phase3a-complete-v2",
+      "normative_artifact_ids": [],
+      "phase": "F3A",
+      "prohibited_use": "do not infer observational ground truth, sensitivity, specificity, FPR, or physical falsity from reference mismatch",
+      "repository_relative_path": "workflows/phase3a/evidence/reports/f3a5_robustness_audit.json",
+      "scientific_role": "catalogue robustness audit",
+      "sha256": "fd5be4f38e656ed9bcac7c1974e15a40baac2666404880d792e1b89120b847f2",
+      "source_id": "M1S032",
+      "visual_use_class": "SUPPLEMENTARY_FROZEN_CONTEXT_SOURCE"
+    },
+    {
+      "allowed_use": "catalogue-scale observational robustness evidence only",
+      "bytes": 33013,
+      "contextual_artifact_ids": [
+        "M1T02",
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP04",
+      "freeze_basis": "PHASE3A_COMPLETE_FREEZE",
+      "freeze_commit": "1f3b1cc21286c25dea6a0e5779c0dc18edd81933",
+      "freeze_tag": "phase3a-complete-v2",
+      "normative_artifact_ids": [],
+      "phase": "F3A",
+      "prohibited_use": "do not infer observational ground truth, sensitivity, specificity, FPR, or physical falsity from reference mismatch",
+      "repository_relative_path": "workflows/phase3a/evidence/tables/f3a5_optimizer_stability.csv",
+      "scientific_role": "catalogue numerical-stability table",
+      "sha256": "2f1286e6697b87a7de6ec63c4237f40a4943e3dcb6ad256be1e06cd1a3ee3767",
+      "source_id": "M1S033",
+      "visual_use_class": "SUPPLEMENTARY_FROZEN_CONTEXT_SOURCE"
+    },
+    {
+      "allowed_use": "catalogue-scale observational robustness evidence only",
+      "bytes": 6816,
+      "contextual_artifact_ids": [
+        "M1F03",
+        "M1T02"
+      ],
+      "evidence_plane": "M1EP04",
+      "freeze_basis": "PHASE3A_COMPLETE_FREEZE",
+      "freeze_commit": "1f3b1cc21286c25dea6a0e5779c0dc18edd81933",
+      "freeze_tag": "phase3a-complete-v2",
+      "normative_artifact_ids": [
+        "M1T04"
+      ],
+      "phase": "F3A",
+      "prohibited_use": "do not infer observational ground truth, sensitivity, specificity, FPR, or physical falsity from reference mismatch",
+      "repository_relative_path": "workflows/phase3a/closure/f3a6_claim_matrix.csv",
+      "scientific_role": "Phase 3A claim matrix",
+      "sha256": "46bbafc78230b77d7e0cca0cc7a87d18588da4eb7247e6a23e420524dd1aa8b4",
+      "source_id": "M1S035",
+      "visual_use_class": "BOTH"
+    },
+    {
+      "allowed_use": "catalogue-scale observational robustness evidence only",
+      "bytes": 6504,
+      "contextual_artifact_ids": [
+        "M1F03",
+        "M1T02"
+      ],
+      "evidence_plane": "M1EP04",
+      "freeze_basis": "PHASE3A_COMPLETE_FREEZE",
+      "freeze_commit": "1f3b1cc21286c25dea6a0e5779c0dc18edd81933",
+      "freeze_tag": "phase3a-complete-v2",
+      "normative_artifact_ids": [
+        "M1T04"
+      ],
+      "phase": "F3A",
+      "prohibited_use": "do not infer observational ground truth, sensitivity, specificity, FPR, or physical falsity from reference mismatch",
+      "repository_relative_path": "workflows/phase3a/closure/f3a6_limitations_register.csv",
+      "scientific_role": "Phase 3A limitations",
+      "sha256": "7a9dd6eede0038c320d719bb78d9c3a2a5d63a25740847d0e222078a34e6d2e0",
+      "source_id": "M1S036",
+      "visual_use_class": "BOTH"
+    },
+    {
+      "allowed_use": "catalogue-scale observational robustness evidence only",
+      "bytes": 2379,
+      "contextual_artifact_ids": [
+        "M1T02",
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP04",
+      "freeze_basis": "PHASE3A_COMPLETE_FREEZE",
+      "freeze_commit": "1f3b1cc21286c25dea6a0e5779c0dc18edd81933",
+      "freeze_tag": "phase3a-complete-v2",
+      "normative_artifact_ids": [],
+      "phase": "F3A",
+      "prohibited_use": "do not infer observational ground truth, sensitivity, specificity, FPR, or physical falsity from reference mismatch",
+      "repository_relative_path": "workflows/phase3a/closure/f3a6_phase3a_decision.json",
+      "scientific_role": "Phase 3A formal decision",
+      "sha256": "7826665097e7fdaf366d24eb914abb3a357b9a5ad60bcdeee887a286db919214",
+      "source_id": "M1S037",
+      "visual_use_class": "SUPPLEMENTARY_FROZEN_CONTEXT_SOURCE"
+    },
+    {
+      "allowed_use": "catalogue-scale observational robustness evidence only",
+      "bytes": 13658,
+      "contextual_artifact_ids": [
+        "M1F03",
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP04",
+      "freeze_basis": "PHASE3A_COMPLETE_FREEZE",
+      "freeze_commit": "1f3b1cc21286c25dea6a0e5779c0dc18edd81933",
+      "freeze_tag": "phase3a-complete-v2",
+      "normative_artifact_ids": [
+        "M1F01",
+        "M1F02",
+        "M1T01",
+        "M1T02"
+      ],
+      "phase": "F3A",
+      "prohibited_use": "do not infer observational ground truth, sensitivity, specificity, FPR, or physical falsity from reference mismatch",
+      "repository_relative_path": "workflows/phase3a/closure/f3a6_phase3a_synthesis_report.md",
+      "scientific_role": "Phase 3A synthesis",
+      "sha256": "c6398e78364047a8e0dac3cfffb7b1661f23f8bbef8fa2f64d1d151234ad5432",
+      "source_id": "M1S038",
+      "visual_use_class": "BOTH"
+    },
+    {
+      "allowed_use": "synthetic-ground-truth validation and selection-function evidence only",
+      "bytes": 4375,
+      "contextual_artifact_ids": [],
+      "evidence_plane": "M1EP05",
+      "freeze_basis": "PHASE3B_COMPLETE_FREEZE",
+      "freeze_commit": "b501fa16c3b3af5d6105df38421995e5d5600763",
+      "freeze_tag": "phase3b-complete-v1",
+      "normative_artifact_ids": [
+        "M1T03"
+      ],
+      "phase": "F3B",
+      "prohibited_use": "do not claim observational validation, observational prevalence, or a validated population correction",
+      "repository_relative_path": "workflows/phase3b/development/analysis/f3b4_baseline_metrics.json",
+      "scientific_role": "DEVELOPMENT baseline metrics",
+      "sha256": "718f1a03af218da8a3bc52cdea9f8007f7b3dffc3477038a5577eef0f162250c",
+      "source_id": "M1S039",
+      "visual_use_class": "NORMATIVE_PLAN_SOURCE"
+    },
+    {
+      "allowed_use": "synthetic-ground-truth validation and selection-function evidence only",
+      "bytes": 4440,
+      "contextual_artifact_ids": [
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP05",
+      "freeze_basis": "PHASE3B_COMPLETE_FREEZE",
+      "freeze_commit": "b501fa16c3b3af5d6105df38421995e5d5600763",
+      "freeze_tag": "phase3b-complete-v1",
+      "normative_artifact_ids": [],
+      "phase": "F3B",
+      "prohibited_use": "do not claim observational validation, observational prevalence, or a validated population correction",
+      "repository_relative_path": "workflows/phase3b/development/analysis/f3b4_candidate_rule_gate.json",
+      "scientific_role": "DEVELOPMENT candidate-rule gate",
+      "sha256": "f47b2b03aff0d60d8dbce040d7298d1904295552f610cdf92bba6a48f6eddbf9",
+      "source_id": "M1S040",
+      "visual_use_class": "SUPPLEMENTARY_FROZEN_CONTEXT_SOURCE"
+    },
+    {
+      "allowed_use": "synthetic-ground-truth validation and selection-function evidence only",
+      "bytes": 3189,
+      "contextual_artifact_ids": [
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP05",
+      "freeze_basis": "PHASE3B_COMPLETE_FREEZE",
+      "freeze_commit": "b501fa16c3b3af5d6105df38421995e5d5600763",
+      "freeze_tag": "phase3b-complete-v1",
+      "normative_artifact_ids": [],
+      "phase": "F3B",
+      "prohibited_use": "do not claim observational validation, observational prevalence, or a validated population correction",
+      "repository_relative_path": "workflows/phase3b/development/analysis/f3b4_final_rule_freeze.json",
+      "scientific_role": "final-rule freeze",
+      "sha256": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
+      "source_id": "M1S041",
+      "visual_use_class": "SUPPLEMENTARY_FROZEN_CONTEXT_SOURCE"
+    },
+    {
+      "allowed_use": "synthetic-ground-truth validation and selection-function evidence only",
+      "bytes": 1929,
+      "contextual_artifact_ids": [
+        "M1F05",
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP05",
+      "freeze_basis": "PHASE3B_COMPLETE_FREEZE",
+      "freeze_commit": "b501fa16c3b3af5d6105df38421995e5d5600763",
+      "freeze_tag": "phase3b-complete-v1",
+      "normative_artifact_ids": [
+        "M1T03"
+      ],
+      "phase": "F3B",
+      "prohibited_use": "do not claim observational validation, observational prevalence, or a validated population correction",
+      "repository_relative_path": "workflows/phase3b/heldout/evaluation/evidence/reports/f3b7_heldout_baseline_metrics.json",
+      "scientific_role": "independent HELDOUT metrics",
+      "sha256": "2d69eb0bea19edea244721065b34e995b26b9b9665174b0f63d8e14de8516730",
+      "source_id": "M1S042",
+      "visual_use_class": "BOTH"
+    },
+    {
+      "allowed_use": "synthetic-ground-truth validation and selection-function evidence only",
+      "bytes": 44871,
+      "contextual_artifact_ids": [
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP05",
+      "freeze_basis": "PHASE3B_COMPLETE_FREEZE",
+      "freeze_commit": "b501fa16c3b3af5d6105df38421995e5d5600763",
+      "freeze_tag": "phase3b-complete-v1",
+      "normative_artifact_ids": [
+        "M1F04"
+      ],
+      "phase": "F3B",
+      "prohibited_use": "do not claim observational validation, observational prevalence, or a validated population correction",
+      "repository_relative_path": "workflows/phase3b/heldout/evaluation/evidence/tables/f3b7_heldout_selection_function.csv",
+      "scientific_role": "final HELDOUT selection function",
+      "sha256": "fe8654481c83f23c9ebc276a84455d0c2f6de55d9e76011d1199cafa43a30509",
+      "source_id": "M1S043",
+      "visual_use_class": "BOTH"
+    },
+    {
+      "allowed_use": "synthetic-ground-truth validation and selection-function evidence only",
+      "bytes": 38102,
+      "contextual_artifact_ids": [
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP05",
+      "freeze_basis": "PHASE3B_COMPLETE_FREEZE",
+      "freeze_commit": "b501fa16c3b3af5d6105df38421995e5d5600763",
+      "freeze_tag": "phase3b-complete-v1",
+      "normative_artifact_ids": [
+        "M1F05"
+      ],
+      "phase": "F3B",
+      "prohibited_use": "do not claim observational validation, observational prevalence, or a validated population correction",
+      "repository_relative_path": "workflows/phase3b/heldout/evaluation/evidence/tables/f3b7_heldout_period_recovery.csv",
+      "scientific_role": "HELDOUT conditional period recovery",
+      "sha256": "a7f1ab028d80e8a4c64b16e1f791f7c565b7021dcda5de50ec6bf9524bbe493c",
+      "source_id": "M1S044",
+      "visual_use_class": "BOTH"
+    },
+    {
+      "allowed_use": "synthetic-ground-truth validation and selection-function evidence only",
+      "bytes": 6644,
+      "contextual_artifact_ids": [],
+      "evidence_plane": "M1EP05",
+      "freeze_basis": "PHASE3B_COMPLETE_FREEZE",
+      "freeze_commit": "b501fa16c3b3af5d6105df38421995e5d5600763",
+      "freeze_tag": "phase3b-complete-v1",
+      "normative_artifact_ids": [
+        "M1T04"
+      ],
+      "phase": "F3B",
+      "prohibited_use": "do not claim observational validation, observational prevalence, or a validated population correction",
+      "repository_relative_path": "workflows/phase3b/closure/f3b8_claim_matrix.csv",
+      "scientific_role": "Phase 3B claim matrix",
+      "sha256": "f913ad8588e14a1ec7b161956e91494e82c71aac936b9a73655c3a46b7b5581a",
+      "source_id": "M1S045",
+      "visual_use_class": "NORMATIVE_PLAN_SOURCE"
+    },
+    {
+      "allowed_use": "synthetic-ground-truth validation and selection-function evidence only",
+      "bytes": 3899,
+      "contextual_artifact_ids": [],
+      "evidence_plane": "M1EP05",
+      "freeze_basis": "PHASE3B_COMPLETE_FREEZE",
+      "freeze_commit": "b501fa16c3b3af5d6105df38421995e5d5600763",
+      "freeze_tag": "phase3b-complete-v1",
+      "normative_artifact_ids": [
+        "M1T04"
+      ],
+      "phase": "F3B",
+      "prohibited_use": "do not claim observational validation, observational prevalence, or a validated population correction",
+      "repository_relative_path": "workflows/phase3b/closure/f3b8_limitations_register.csv",
+      "scientific_role": "Phase 3B limitations",
+      "sha256": "ba745119a38b9711a556454b4fcf5c22c3830ac130beb4a1fc0429efedc54851",
+      "source_id": "M1S046",
+      "visual_use_class": "NORMATIVE_PLAN_SOURCE"
+    },
+    {
+      "allowed_use": "synthetic-ground-truth validation and selection-function evidence only",
+      "bytes": 1343,
+      "contextual_artifact_ids": [
+        "M1T04"
+      ],
+      "evidence_plane": "M1EP05",
+      "freeze_basis": "PHASE3B_COMPLETE_FREEZE",
+      "freeze_commit": "b501fa16c3b3af5d6105df38421995e5d5600763",
+      "freeze_tag": "phase3b-complete-v1",
+      "normative_artifact_ids": [],
+      "phase": "F3B",
+      "prohibited_use": "do not claim observational validation, observational prevalence, or a validated population correction",
+      "repository_relative_path": "workflows/phase3b/closure/f3b8_phase3b_decision.json",
+      "scientific_role": "Phase 3B closure decision",
+      "sha256": "fe00632755722d37fcb6c6d5f90d1e6b65f7e6552bb6a023da419e387027111a",
+      "source_id": "M1S047",
+      "visual_use_class": "SUPPLEMENTARY_FROZEN_CONTEXT_SOURCE"
+    },
+    {
+      "allowed_use": "synthetic-ground-truth validation and selection-function evidence only",
+      "bytes": 3859,
+      "contextual_artifact_ids": [],
+      "evidence_plane": "M1EP05",
+      "freeze_basis": "PHASE3B_COMPLETE_FREEZE",
+      "freeze_commit": "b501fa16c3b3af5d6105df38421995e5d5600763",
+      "freeze_tag": "phase3b-complete-v1",
+      "normative_artifact_ids": [
+        "M1F01",
+        "M1T01"
+      ],
+      "phase": "F3B",
+      "prohibited_use": "do not claim observational validation, observational prevalence, or a validated population correction",
+      "repository_relative_path": "workflows/phase3b/closure/f3b8_manuscript1_handoff.csv",
+      "scientific_role": "Phase 3B manuscript handoff",
+      "sha256": "aaa8dc0e5d3a22811f345b0a456b7e71458058d075529e5a09d4e4e657f2e891",
+      "source_id": "M1S048",
+      "visual_use_class": "NORMATIVE_PLAN_SOURCE"
+    }
+  ],
+  "supplementary_frozen_context_source_id_count": 17,
+  "total_visual_source_id_count": 28
+}

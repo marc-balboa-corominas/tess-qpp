@@ -1,0 +1,307 @@
+{
+  "allowed_transformations": [
+    "row filtering already defined by frozen scope",
+    "deterministic ordering",
+    "pivoting for display",
+    "unit/label formatting",
+    "direct categorical counting already frozen by source rows",
+    "visual composition"
+  ],
+  "artifact_role": "MANUSCRIPT1_2_VISUAL_RENDERING_CONTRACT",
+  "artifacts": {
+    "M1F01": {
+      "contextual_architecture_claim_ids": [],
+      "new_computation_required": false,
+      "normative_plan_claim_ids": [
+        "M1C029"
+      ],
+      "normative_plan_source_ids": [
+        "M1S002",
+        "M1S015",
+        "M1S025",
+        "M1S029",
+        "M1S038",
+        "M1S048"
+      ],
+      "planned_transformation": "documentary architecture schematic",
+      "render_status": "COMPOSITE_FROM_FROZEN_ARTIFACTS",
+      "supplementary_frozen_context_source_ids": [],
+      "type": "FIGURE"
+    },
+    "M1F02": {
+      "contextual_architecture_claim_ids": [],
+      "new_computation_required": false,
+      "normative_plan_claim_ids": [
+        "M1C004",
+        "M1C005",
+        "M1C006",
+        "M1C008"
+      ],
+      "normative_plan_source_ids": [
+        "M1S016",
+        "M1S031",
+        "M1S038"
+      ],
+      "planned_transformation": "composite of frozen robustness summaries",
+      "render_status": "COMPOSITE_FROM_FROZEN_ARTIFACTS",
+      "supplementary_frozen_context_source_ids": [],
+      "type": "FIGURE"
+    },
+    "M1F03": {
+      "contextual_architecture_claim_ids": [
+        "M1C007"
+      ],
+      "new_computation_required": false,
+      "normative_plan_claim_ids": [
+        "M1C006",
+        "M1C008",
+        "M1C009"
+      ],
+      "normative_plan_source_ids": [
+        "M1S030",
+        "M1S031"
+      ],
+      "planned_transformation": "render from frozen tables",
+      "render_status": "RENDER_FROM_FROZEN_TABLE",
+      "supplementary_frozen_context_source_ids": [
+        "M1S035",
+        "M1S036",
+        "M1S038"
+      ],
+      "type": "FIGURE"
+    },
+    "M1F04": {
+      "contextual_architecture_claim_ids": [],
+      "new_computation_required": false,
+      "normative_plan_claim_ids": [
+        "M1C019",
+        "M1C020"
+      ],
+      "normative_plan_source_ids": [
+        "M1S043"
+      ],
+      "planned_transformation": "render final 156-row stratified empirical surface",
+      "render_status": "RENDER_FROM_FROZEN_TABLE",
+      "supplementary_frozen_context_source_ids": [],
+      "type": "FIGURE"
+    },
+    "M1F05": {
+      "contextual_architecture_claim_ids": [
+        "M1C014"
+      ],
+      "new_computation_required": false,
+      "normative_plan_claim_ids": [
+        "M1C021",
+        "M1C022"
+      ],
+      "normative_plan_source_ids": [
+        "M1S044"
+      ],
+      "planned_transformation": "render from frozen period-recovery table",
+      "render_status": "RENDER_FROM_FROZEN_TABLE",
+      "supplementary_frozen_context_source_ids": [
+        "M1S042"
+      ],
+      "type": "FIGURE"
+    },
+    "M1T01": {
+      "contextual_architecture_claim_ids": [],
+      "new_computation_required": false,
+      "normative_plan_claim_ids": [
+        "M1C029"
+      ],
+      "normative_plan_source_ids": [
+        "M1S002",
+        "M1S015",
+        "M1S025",
+        "M1S029",
+        "M1S038",
+        "M1S048"
+      ],
+      "planned_transformation": "tabulate architecture registry from frozen sources",
+      "render_status": "COMPOSITE_FROM_FROZEN_ARTIFACTS",
+      "supplementary_frozen_context_source_ids": [],
+      "type": "TABLE"
+    },
+    "M1T02": {
+      "contextual_architecture_claim_ids": [
+        "M1C005",
+        "M1C010",
+        "M1C011"
+      ],
+      "new_computation_required": false,
+      "normative_plan_claim_ids": [
+        "M1C006",
+        "M1C008",
+        "M1C009"
+      ],
+      "normative_plan_source_ids": [
+        "M1S030",
+        "M1S031",
+        "M1S038"
+      ],
+      "planned_transformation": "tabulate frozen counts without recomputation beyond presentation",
+      "render_status": "RENDER_FROM_FROZEN_TABLE",
+      "supplementary_frozen_context_source_ids": [
+        "M1S032",
+        "M1S033",
+        "M1S035",
+        "M1S036",
+        "M1S037"
+      ],
+      "type": "TABLE"
+    },
+    "M1T03": {
+      "contextual_architecture_claim_ids": [],
+      "new_computation_required": false,
+      "normative_plan_claim_ids": [
+        "M1C013",
+        "M1C014",
+        "M1C015",
+        "M1C016"
+      ],
+      "normative_plan_source_ids": [
+        "M1S039",
+        "M1S042"
+      ],
+      "planned_transformation": "present frozen split-specific metrics and intervals",
+      "render_status": "COMPOSITE_FROM_FROZEN_ARTIFACTS",
+      "supplementary_frozen_context_source_ids": [],
+      "type": "TABLE"
+    },
+    "M1T04": {
+      "contextual_architecture_claim_ids": [
+        "M1C001",
+        "M1C006",
+        "M1C009",
+        "M1C011",
+        "M1C015",
+        "M1C016",
+        "M1C019",
+        "M1C021",
+        "M1C022",
+        "M1C017",
+        "M1C018"
+      ],
+      "new_computation_required": false,
+      "normative_plan_claim_ids": [
+        "M1C007",
+        "M1C010",
+        "M1C020",
+        "M1C023",
+        "M1C024",
+        "M1C028"
+      ],
+      "normative_plan_source_ids": [
+        "M1S021",
+        "M1S022",
+        "M1S026",
+        "M1S035",
+        "M1S036",
+        "M1S045",
+        "M1S046"
+      ],
+      "planned_transformation": "compose manuscript-facing boundary table from frozen claim/limitation matrices",
+      "render_status": "COMPOSITE_FROM_FROZEN_ARTIFACTS",
+      "supplementary_frozen_context_source_ids": [
+        "M1S001",
+        "M1S002",
+        "M1S003",
+        "M1S030",
+        "M1S031",
+        "M1S032",
+        "M1S033",
+        "M1S037",
+        "M1S038",
+        "M1S040",
+        "M1S041",
+        "M1S042",
+        "M1S043",
+        "M1S044",
+        "M1S047"
+      ],
+      "type": "TABLE"
+    }
+  },
+  "authoritative_plan": {
+    "artifact_ids": [
+      "M1F01",
+      "M1F02",
+      "M1F03",
+      "M1F04",
+      "M1F05",
+      "M1T01",
+      "M1T02",
+      "M1T03",
+      "M1T04"
+    ],
+    "path": "manuscripts/manuscript_01/planning/m1_figure_table_plan.csv",
+    "sha256": "aad8812717b79c0e15e767e835e1157f2dbc66f502dba81b9bb4d8be391bd35a"
+  },
+  "color_only_encoding_forbidden": true,
+  "contextual_architecture_annotations_policy": {
+    "contextual_claims_must_already_exist_in_frozen_m1_1_claim_matrix": true,
+    "manifest_must_preserve_normative_plan_source_ids_and_claim_ids": true,
+    "no_new_scientific_source_is_authorized": true,
+    "normative_plan_source_ids_and_claim_ids_remain_unchanged": true,
+    "purpose": "Resolve mentor-mandated interpretive annotations without modifying the frozen M1.1 visual plan.",
+    "row_or_annotation_provenance_may_use_the_explicit_supplementary_frozen_context_source_ids_above": true,
+    "supplementary_context_sources_must_already_exist_in_frozen_m1_1_source_bindings": true
+  },
+  "entry_architecture_commit": "52024ec3728eeda25f9d640d8f1395a87671c541",
+  "entry_architecture_tag": "manuscript1-architecture-v1",
+  "figure_ids": [
+    "M1F01",
+    "M1F02",
+    "M1F03",
+    "M1F04",
+    "M1F05"
+  ],
+  "firewall": {
+    "f2_f3a_f3b_denominator_pooling": false,
+    "manuscript_full_prose_started": false,
+    "new_afino_execution": false,
+    "new_bibliographic_search": false,
+    "new_synthetic_generation": false
+  },
+  "font_family": "DejaVu Sans",
+  "grayscale_distinguishable": true,
+  "m1t04_projection_policy": {
+    "mentor_required_boundary_rows_are_contextual_claim_projections": true,
+    "new_claim_creation": false,
+    "table_is_a_manuscript_facing_projection_of_existing_frozen_m1_1_claims": true
+  },
+  "minimum_png_dpi": 300,
+  "missing_or_structural_no_exposure_must_not_be_rendered_as_zero": true,
+  "new_scientific_computation": false,
+  "new_source_artifact": false,
+  "new_statistical_inference": false,
+  "preview_figure_format": "PNG",
+  "primary_figure_format": "PDF",
+  "prohibited_transformations": [
+    "new binning",
+    "smoothing",
+    "regression",
+    "interpolation",
+    "new confidence interval",
+    "new estimator",
+    "new normalization with scientific meaning",
+    "pooling F2/F3A/F3B"
+  ],
+  "render_environment": {
+    "matplotlib": "3.11.1",
+    "pillow": "12.3.0",
+    "pytest": "9.1.1",
+    "python": "3.13.13",
+    "render_backend": "Agg"
+  },
+  "schema_version": "1.0.0",
+  "status": "FROZEN_BEFORE_FIRST_DEFINITIVE_RENDER",
+  "table_ids": [
+    "M1T01",
+    "M1T02",
+    "M1T03",
+    "M1T04"
+  ],
+  "vector_text_required": true
+}
