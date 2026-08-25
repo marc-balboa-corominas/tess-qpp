@@ -568,6 +568,8 @@ save_figure(fig, "M1F03", "f3a_catalogue_robustness")
 
 # -------------------------------------------------------------------------
 # M1F04 — HELDOUT synthetic selection function
+# Publication-readability revision after pre-freeze visual review:
+# designed for native full-width (~7.2 in) manuscript placement.
 # -------------------------------------------------------------------------
 
 families = Counter(r["stratum_family"] for r in sf)
@@ -585,134 +587,164 @@ period_bins = [x for x in ["P40_63","P63_106","P106_300"] if x in set(r["period_
 if len(qpps) != 3 or len(period_bins) != 3:
     raise RuntimeError("unexpected F3B selection-function category cardinality")
 
-fig = plt.figure(figsize=(15.5, 12.5))
-gs = fig.add_gridspec(3, 3, height_ratios=[1.0, 1.5, 1.0], hspace=0.55, wspace=0.30)
+# Native journal-full-width composition. The dense 9-column period-expanded
+# surfaces are stacked vertically rather than placed three-across.
+fig = plt.figure(figsize=(7.2, 10.4))
+gs = fig.add_gridspec(
+    5, 3,
+    height_ratios=[1.15, 1.25, 1.25, 1.25, 1.10],
+    hspace=0.68,
+    wspace=0.34,
+)
 
-def draw_sf_matrix(ax, rows_here, x_keys, y_keys, key_func, x_labels, y_labels, title, panel):
+def add_heatmap_value(ax, xi, yi, r, panel, fontsize=6.2):
+    if r["exposure_status"] == "STRUCTURAL_NO_EXPOSURE":
+        rect = Rectangle(
+            (xi-0.5, yi-0.5), 1, 1,
+            facecolor="white", edgecolor="0.25", hatch="///", linewidth=0.7
+        )
+        ax.add_patch(rect)
+        ax.text(xi, yi, "N/E", ha="center", va="center", fontsize=fontsize, weight="bold")
+        add_value(
+            "M1F04", panel, f"stratum {r['stratum_order']}", "N/E", "M1S043",
+            f"stratum_order={r['stratum_order']}:exposure_status",
+            "STRUCTURAL_NO_EXPOSURE",
+            "structural absence rendered as N/E rather than zero",
+            "STRUCTURAL_NO_EXPOSURE_PRESERVED",
+        )
+    else:
+        v = float(r["conditional_selection_point_estimate"])
+        txt = f"{v:.2f}"
+        ax.text(
+            xi, yi, txt, ha="center", va="center",
+            fontsize=fontsize, color=("white" if v > 0.60 else "black")
+        )
+        add_value(
+            "M1F04", panel, f"stratum {r['stratum_order']}", txt, "M1S043",
+            f"stratum_order={r['stratum_order']}:conditional_selection_point_estimate",
+            r["conditional_selection_point_estimate"],
+            "two-decimal deterministic label formatting of frozen point estimate",
+            "DETERMINISTIC_LABEL_FORMAT",
+        )
+
+def render_matrix(ax, row_lookup, x_keys, y_keys, title, panel, xlabels, fontsize=6.2):
     data = np.full((len(y_keys), len(x_keys)), np.nan, dtype=float)
-    row_lookup = {}
-    for r in rows_here:
-        k = key_func(r)
-        if k not in row_lookup:
-            row_lookup[k] = r
     for yi, yv in enumerate(y_keys):
         for xi, xv in enumerate(x_keys):
-            key = (yv, xv)
-            r = row_lookup.get(key)
+            r = row_lookup.get((yv, xv))
             if r is None:
-                raise RuntimeError(f"missing selection-function stratum for {panel}: {key}")
-            if r["exposure_status"] == "STRUCTURAL_NO_EXPOSURE":
-                data[yi, xi] = np.nan
-            else:
+                raise RuntimeError(f"missing selection-function stratum for {panel}: {(yv, xv)}")
+            if r["exposure_status"] != "STRUCTURAL_NO_EXPOSURE":
                 data[yi, xi] = float(r["conditional_selection_point_estimate"])
-    masked = np.ma.masked_invalid(data)
-    ax.imshow(masked, cmap="Greys", vmin=0, vmax=1, aspect="auto")
-    ax.set_xticks(np.arange(len(x_keys)), labels=x_labels, rotation=45, ha="right")
-    ax.set_yticks(np.arange(len(y_keys)), labels=y_labels)
-    ax.set_title(title, fontsize=9)
+
+    ax.imshow(np.ma.masked_invalid(data), cmap="Greys", vmin=0, vmax=1, aspect="auto")
+    ax.set_xticks(np.arange(len(x_keys)), labels=xlabels, fontsize=6.5)
+    ax.set_yticks(np.arange(len(y_keys)), labels=[f"n={n}" for n in y_keys], fontsize=6.5)
+    ax.set_title(title, fontsize=7.8, pad=5)
+
     for yi, yv in enumerate(y_keys):
         for xi, xv in enumerate(x_keys):
-            r = row_lookup[(yv, xv)]
-            if r["exposure_status"] == "STRUCTURAL_NO_EXPOSURE":
-                rect = Rectangle((xi-0.5, yi-0.5),1,1,facecolor="white",edgecolor="0.25",hatch="///",linewidth=0.8)
-                ax.add_patch(rect)
-                ax.text(xi, yi, "N/E", ha="center", va="center", fontsize=6.5, weight="bold")
-                add_value(
-                    "M1F04", panel, f"stratum {r['stratum_order']}", "N/E", "M1S043",
-                    f"stratum_order={r['stratum_order']}:exposure_status",
-                    "STRUCTURAL_NO_EXPOSURE",
-                    "structural absence rendered as N/E rather than zero",
-                    "STRUCTURAL_NO_EXPOSURE_PRESERVED",
-                )
-            else:
-                v = float(r["conditional_selection_point_estimate"])
-                txt = f"{v:.2f}"
-                ax.text(xi, yi, txt, ha="center", va="center", fontsize=5.8, color=("white" if v > 0.60 else "black"))
-                add_value(
-                    "M1F04", panel, f"stratum {r['stratum_order']}", txt, "M1S043",
-                    f"stratum_order={r['stratum_order']}:conditional_selection_point_estimate",
-                    r["conditional_selection_point_estimate"],
-                    "two-decimal deterministic label formatting of frozen point estimate",
-                    "DETERMINISTIC_LABEL_FORMAT",
-                )
+            add_heatmap_value(ax, xi, yi, row_lookup[(yv, xv)], panel, fontsize=fontsize)
 
-# A: positive base, faceted by qpp fraction.
+# A — Positive base, three compact facets.
 for j, q in enumerate(qpps):
     ax = fig.add_subplot(gs[0, j])
-    rows_here = [r for r in sf if r["stratum_family"]=="POSITIVE_BASE" and r["qpp_fraction"]==q]
-    draw_sf_matrix(
-        ax, rows_here, alphas, n_samples,
-        lambda r: (r["n_samples"], r["red_noise_alpha"]),
-        [f"alpha={a}" for a in alphas],
-        [f"n={n}" for n in n_samples],
-        f"A{j+1} — Positive base; QPP fraction={q}",
+    rows_here = [
+        r for r in sf
+        if r["stratum_family"] == "POSITIVE_BASE" and r["qpp_fraction"] == q
+    ]
+    lookup = {(r["n_samples"], r["red_noise_alpha"]): r for r in rows_here}
+    render_matrix(
+        ax, lookup, alphas, n_samples,
+        f"A{j+1} — Base; QPP fraction={q}",
         f"Panel A{j+1}",
+        [f"alpha={a}" for a in alphas],
+        fontsize=6.3,
     )
+    ax.tick_params(axis="x", labelrotation=35)
 
-# B: period-expanded, x=(alpha,period-bin), faceted by qpp fraction.
-xpairs = [(a,p) for a in alphas for p in period_bins]
+# B — Period-expanded surfaces stacked vertically at full width.
+xpairs = [(a, p) for a in alphas for p in period_bins]
+period_label = {
+    "P40_63": "40–63",
+    "P63_106": "63–106",
+    "P106_300": "106–300",
+}
+
 for j, q in enumerate(qpps):
-    ax = fig.add_subplot(gs[1, j])
-    rows_here = [r for r in sf if r["stratum_family"]=="POSITIVE_PERIOD_BIN" and r["qpp_fraction"]==q]
-    data = np.full((len(n_samples), len(xpairs)), np.nan)
-    lookup={}
-    for r in rows_here:
-        lookup[(r["n_samples"], (r["red_noise_alpha"], r["period_bin_id"]))]=r
-    # Prepare the complete matrix before the single definitive imshow call.
-    data = np.full((len(n_samples), len(xpairs)), np.nan)
-    for yi,n in enumerate(n_samples):
-        for xi,pair in enumerate(xpairs):
-            r=lookup.get((n,pair))
-            if r is None:
-                raise RuntimeError(f"missing period-expanded stratum n={n} pair={pair} q={q}")
-            if r["exposure_status"]!="STRUCTURAL_NO_EXPOSURE":
-                data[yi,xi]=float(r["conditional_selection_point_estimate"])
-    ax.imshow(np.ma.masked_invalid(data), cmap="Greys", vmin=0, vmax=1, aspect="auto")
-    labels=[f"a={a}\n{p.replace('P','')}" for a,p in xpairs]
-    ax.set_xticks(np.arange(len(xpairs)),labels=labels,rotation=90,fontsize=5.5)
-    ax.set_yticks(np.arange(len(n_samples)),labels=[f"n={n}" for n in n_samples])
-    ax.set_title(f"B{j+1} — Period-expanded; QPP fraction={q}",fontsize=9)
-    for yi,n in enumerate(n_samples):
-        for xi,pair in enumerate(xpairs):
-            r=lookup[(n,pair)]
-            if r["exposure_status"]=="STRUCTURAL_NO_EXPOSURE":
-                ax.add_patch(Rectangle((xi-0.5,yi-0.5),1,1,facecolor="white",edgecolor="0.25",hatch="///",linewidth=0.7))
-                ax.text(xi,yi,"N/E",ha="center",va="center",fontsize=5.2,weight="bold")
-                add_value("M1F04",f"Panel B{j+1}",f"stratum {r['stratum_order']}","N/E","M1S043",f"stratum_order={r['stratum_order']}:exposure_status","STRUCTURAL_NO_EXPOSURE","structural absence rendered as N/E rather than zero","STRUCTURAL_NO_EXPOSURE_PRESERVED")
-            else:
-                v=float(r["conditional_selection_point_estimate"])
-                txt=f"{v:.2f}"
-                ax.text(xi,yi,txt,ha="center",va="center",fontsize=4.7,color=("white" if v>0.60 else "black"))
-                add_value("M1F04",f"Panel B{j+1}",f"stratum {r['stratum_order']}",txt,"M1S043",f"stratum_order={r['stratum_order']}:conditional_selection_point_estimate",r["conditional_selection_point_estimate"],"two-decimal deterministic label formatting of frozen point estimate","DETERMINISTIC_LABEL_FORMAT")
+    ax = fig.add_subplot(gs[1+j, :])
+    rows_here = [
+        r for r in sf
+        if r["stratum_family"] == "POSITIVE_PERIOD_BIN" and r["qpp_fraction"] == q
+    ]
+    lookup = {
+        (r["n_samples"], (r["red_noise_alpha"], r["period_bin_id"])): r
+        for r in rows_here
+    }
+    render_matrix(
+        ax, lookup, xpairs, n_samples,
+        f"B{j+1} — Period-expanded; QPP fraction={q}",
+        f"Panel B{j+1}",
+        [period_label[p] for _, p in xpairs],
+        fontsize=6.2,
+    )
+    ax.tick_params(axis="x", labelrotation=0, pad=2)
 
-# C: null pooled
-ax = fig.add_subplot(gs[2, :])
-null_rows = [r for r in sf if r["stratum_family"]=="NULL_POOLED"]
-draw_sf_matrix(
-    ax, null_rows, alphas, n_samples,
-    lambda r: (r["n_samples"], r["red_noise_alpha"]),
-    [f"alpha={a}" for a in alphas],
-    [f"n={n}" for n in n_samples],
-    "C — Synthetic null strata (QPP fraction pooled pairing label; not a null parameter)",
+    # Alpha group labels above each three-period block.
+    for center, a in zip([1, 4, 7], alphas):
+        ax.text(
+            center, 1.02, f"alpha={a}",
+            transform=ax.get_xaxis_transform(),
+            ha="center", va="bottom", fontsize=6.6, weight="bold"
+        )
+    ax.axvline(2.5, color="0.55", linewidth=0.6)
+    ax.axvline(5.5, color="0.55", linewidth=0.6)
+    if j == 2:
+        ax.set_xlabel("True-period bin (s), repeated within each red-noise-alpha block", fontsize=7)
+
+# C — Null strata, full width.
+ax = fig.add_subplot(gs[4, :])
+null_rows = [r for r in sf if r["stratum_family"] == "NULL_POOLED"]
+null_lookup = {(r["n_samples"], r["red_noise_alpha"]): r for r in null_rows}
+render_matrix(
+    ax, null_lookup, alphas, n_samples,
+    "C — Synthetic null strata (QPP-fraction pairing label pooled; not a null parameter)",
     "Panel C",
+    [f"alpha={a}" for a in alphas],
+    fontsize=6.3,
 )
-ax.set_xlabel("Red-noise alpha")
+ax.set_xlabel("Red-noise alpha", fontsize=7)
+
 fig.suptitle(
-    "F3B independent HELDOUT synthetic selection function\nCell text = frozen conditional_selection_point_estimate; hatched N/E = structural no exposure",
-    y=0.995,
+    "F3B independent HELDOUT synthetic selection function\n"
+    "Cell text = frozen conditional_selection_point_estimate; hatched N/E = structural no exposure",
+    y=0.995, fontsize=9.4,
 )
-fig.text(0.5, 0.01, "Synthetic HELDOUT domain only. Grayscale assists reading; cell text carries the quantitative value.", ha="center", fontsize=8.5)
+fig.text(
+    0.5, 0.012,
+    "Synthetic HELDOUT domain only. Grayscale assists reading; cell text carries the quantitative value.",
+    ha="center", fontsize=6.8,
+)
 
 # Axis category values are frozen source labels, not newly estimated quantities.
 for val in n_samples:
-    r = next(r for r in sf if r["n_samples"]==val)
-    add_value("M1F04","Axes","n_samples category",val,"M1S043",f"first row with n_samples={val}:n_samples",val,"direct categorical axis label","EXACT_SOURCE_VALUE")
+    add_value(
+        "M1F04","Axes","n_samples category",val,"M1S043",
+        f"first row with n_samples={val}:n_samples",val,
+        "direct categorical axis label","EXACT_SOURCE_VALUE"
+    )
 for val in alphas:
-    r = next(r for r in sf if r["red_noise_alpha"]==val)
-    add_value("M1F04","Axes","red_noise_alpha category",val,"M1S043",f"first row with red_noise_alpha={val}:red_noise_alpha",val,"direct categorical axis label","EXACT_SOURCE_VALUE")
+    add_value(
+        "M1F04","Axes","red_noise_alpha category",val,"M1S043",
+        f"first row with red_noise_alpha={val}:red_noise_alpha",val,
+        "direct categorical axis label","EXACT_SOURCE_VALUE"
+    )
 for val in qpps:
-    r = next(r for r in sf if r["qpp_fraction"]==val and r["stratum_family"]!="NULL_POOLED")
-    add_value("M1F04","Facets","qpp_fraction category",val,"M1S043",f"first row with qpp_fraction={val}:qpp_fraction",val,"direct categorical facet label","EXACT_SOURCE_VALUE")
+    add_value(
+        "M1F04","Facets","qpp_fraction category",val,"M1S043",
+        f"first row with qpp_fraction={val}:qpp_fraction",val,
+        "direct categorical facet label","EXACT_SOURCE_VALUE"
+    )
 
 save_figure(fig, "M1F04", "f3b_heldout_selection_function")
 

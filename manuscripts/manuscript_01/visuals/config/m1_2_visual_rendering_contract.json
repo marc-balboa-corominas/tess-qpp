@@ -319,9 +319,29 @@
     "M1T04"
   ],
   "tooling_identity": {
-    "renderer_sha256": "a2d7349f60ffb3bb1c2e44966f447cbb7f1c2e9aa1dc3738858fdb1960dcb3a8",
+    "renderer_sha256": "1e80bddbf1546d765cdb8c27218d0b8886ce9e9fbf8a1673f79a0adaf6b3ccb0",
     "visual_test_sha256": "e43d7baaa268753088da8cf9e6e2f1d987c47d7f7c8ce76d92e16f84f0981eaa",
     "visual_validator_sha256": "f51888d00d10363dab91f8ce62bf3a4466a837ed74430e6d37430524231a373d"
   },
-  "vector_text_required": true
+  "vector_text_required": true,
+  "visual_review_incidents": [
+    {
+      "affected_artifact": "M1F04",
+      "claim_effect": "NONE",
+      "finding": "The 9-column period-expanded panels used cell/axis typography that would fall below publication-readable size at standard approximately 7.2-inch full-width placement.",
+      "first_candidate_frozen_or_committed": false,
+      "first_candidate_technical_validation": "PASS",
+      "incident_id": "M1V-VIS-001",
+      "new_scientific_computation": false,
+      "new_statistical_inference": false,
+      "repair": "Re-layout M1F04 for native 7.2-inch full-width use: keep A facets three-across, stack the three dense period-expanded B surfaces vertically at full width, use compact period-bin labels and alpha group headers, and raise quantitative cell/axis typography to publication-readable size.",
+      "review_bundle_bytes": 1001973,
+      "review_bundle_filename": "m1_2_visual_review_bundle.zip",
+      "review_bundle_sha256": "3d51588f06482664af16ae5927988475ca0e24d6f8c9b96973d30c988eff6211",
+      "scientific_effect": "NONE",
+      "source_value_effect": "NONE",
+      "stage": "pre_freeze_visual_review_after_first_definitive_render",
+      "status": "REPAIR_FROZEN_BEFORE_SECOND_RENDER"
+    }
+  ]
 }
