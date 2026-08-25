@@ -704,7 +704,9 @@ for j, q in enumerate(qpps):
         [period_label[p] for _, p in xpairs],
         fontsize=6.2,
     )
-    # Keep the panel title on a separate visual tier above the alpha-group headers.
+    # render_matrix() sets a centered title; remove that layer before adding
+    # the publication-facing left-aligned title tier.
+    ax.set_title("", loc="center")
     ax.set_title(
         f"B{j+1} — Period-expanded; QPP fraction={q}",
         loc="left", fontsize=7.8, pad=22
@@ -1083,6 +1085,16 @@ function is not an observational population correction. Period recovery is condi
 PDF is primary; PNG is a 300-dpi preview. Text remains vector in PDF. Figures use grayscale plus
 text, marker shape, line style and/or hatching; color-only encoding is forbidden.
 
+## Pre-freeze repair history
+
+- `M1V-TOOL-001`: renderer API compatibility defect, repaired before the first definitive render; scientific effect `NONE`.
+- `M1V-VIS-001`: first-candidate M1F04 publication-readability defect, repaired before the second render; scientific/source/claim effects `NONE`.
+- `M1V-TOOL-002`: Windows file-lock interruption during rejected-candidate cleanup, recovered before the third render; scientific effect `NONE`.
+- `M1V-VIS-002`: second-candidate M1F03/M1F04 readability polish, repaired before the third render; scientific/source/claim effects `NONE`.
+- `M1V-VIS-003`: third-candidate M1F04 duplicate-title-layer defect, repaired before the fourth render; scientific/source/claim effects `NONE`.
+
+Rejected visual candidates were never committed or tagged.
+
 ## No-new-analysis statement
 
 `new_scientific_computation=false`, `new_statistical_inference=false`,
@@ -1151,6 +1163,12 @@ visual_audit = {
     "table_tex":4,
     "visual_manifest_rows":18,
     "rendered_value_audit_rows":len(value_rows),
+    "pre_freeze_tooling_incidents":[
+        x["incident_id"] for x in contract.get("pre_render_tooling_incidents",[])
+    ],
+    "pre_freeze_visual_review_incidents":[
+        x["incident_id"] for x in contract.get("visual_review_incidents",[])
+    ],
     "all_source_bindings_verified":True,
     "all_visible_scientific_values_source_mapped":True,
     "normative_plan_source_ids_unchanged":True,

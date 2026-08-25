@@ -332,7 +332,7 @@
     "M1T04"
   ],
   "tooling_identity": {
-    "renderer_sha256": "b8e48b2f9bbd140d6542cf78c7713234dbc3b72c5a8aa285b4affad2de6c0a57",
+    "renderer_sha256": "cd527d9112dc89c200553c7d7ae590086c2c79ac8ecfcdf64f6f96291af32c39",
     "visual_test_sha256": "e43d7baaa268753088da8cf9e6e2f1d987c47d7f7c8ce76d92e16f84f0981eaa",
     "visual_validator_sha256": "f51888d00d10363dab91f8ce62bf3a4466a837ed74430e6d37430524231a373d"
   },
@@ -382,6 +382,24 @@
       "source_value_effect": "NONE",
       "stage": "pre_freeze_visual_review_after_second_controlled_render",
       "status": "REPAIR_FROZEN_BEFORE_THIRD_RENDER"
+    },
+    {
+      "affected_artifact": "M1F04",
+      "claim_effect": "NONE",
+      "finding": "B1-B3 each contained both the centered title created inside render_matrix() and the later left-aligned publication title, producing a visible duplicate/overlap title layer.",
+      "incident_id": "M1V-VIS-003",
+      "new_scientific_computation": false,
+      "new_statistical_inference": false,
+      "repair": "Explicitly clear the centered title layer before setting the left-aligned publication title; keep all frozen cells, labels, values, hatching and provenance unchanged.",
+      "review_bundle_bytes": 946490,
+      "review_bundle_filename": "m1_2_visual_review_bundle_v3.zip",
+      "review_bundle_sha256": "396e195c783eb8372e4843a87d3bc2edd22dd2fcfa2b8ff9c67fe75b5b615ff0",
+      "scientific_effect": "NONE",
+      "source_value_effect": "NONE",
+      "stage": "pre_freeze_visual_review_after_third_controlled_render",
+      "status": "REPAIR_FROZEN_BEFORE_FOURTH_RENDER",
+      "third_candidate_frozen_or_committed": false,
+      "third_candidate_technical_validation": "PASS"
     }
   ]
 }
