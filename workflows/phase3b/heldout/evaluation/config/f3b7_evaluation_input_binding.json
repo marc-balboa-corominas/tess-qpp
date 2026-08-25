@@ -34,11 +34,18 @@
     "heldout_truth_join_performed": false,
     "new_afino_calls": 0
   },
-  "procedure_code": {
-    "evaluator_sha256": "8d334ffd170431033845c3d13e1a7fdf6c9f43f85f461f44fd9de661337c04aa",
-    "test_sha256": "855e36465d47af63259ddc1f8b876f8dc6fc72f22474ad38594206dea64b45c5",
-    "validator_sha256": "23d4ade1437e99beca848d7e0e91631ccff176acba5c4d3ed7d0aa2ef69a86fd"
+  "pretruth_tooling_incident": {
+    "heldout_truth_content_read": false,
+    "incident_id": "F3B7-TOOL-001",
+    "incident_path": "workflows/phase3b/heldout/evaluation/evidence/reports/f3b7_pretruth_tooling_incident.json",
+    "scientific_algorithm_changed": false
   },
+  "procedure_code": {
+    "evaluator_sha256": "c6a0ae50bb076846a6829fa922d3be9d6a35ee4368c2cd2f0123a7b2b5778afe",
+    "test_sha256": "e3ae5a213c4c2bc1c70b8ed1ba5450cc6f93cb6184c4c4beb07f816004cdd399",
+    "validator_sha256": "2ee4a1bc77d8647832acaccbab3995b719f427cd0179d3afb9f1a97836edd696"
+  },
+  "procedure_freeze_commit": "19436932aaaf39e07e176f35753a12a6385818e0",
   "schema_version": "1.0.0",
-  "status": "PRETRUTH_PROCEDURE_BINDING"
+  "status": "PRETRUTH_PROCEDURE_BINDING_REPAIRED_BEFORE_TRUTH"
 }

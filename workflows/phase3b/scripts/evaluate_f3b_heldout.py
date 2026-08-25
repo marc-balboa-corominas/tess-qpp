@@ -15,7 +15,9 @@ import numpy as np
 
 F3B6_COMMIT = "7776676aab1e4d2922902f4046495500864f7ca1"
 F3B6_TAG = "phase3b-heldout-execution-v1"
+F3B7_PROCEDURE_FREEZE_COMMIT = "19436932aaaf39e07e176f35753a12a6385818e0"
 PROCEDURE_COMMIT_SUBJECT = "ops(phase3b): freeze single-use heldout unblinding procedure"
+PRETRUTH_REPAIR_COMMIT_SUBJECT = "fix(phase3b): repair pre-unblinding report contract"
 
 EXPECTED = {
     "workflows/phase3b/design/f3b1_metrics_contract.json":
@@ -890,6 +892,8 @@ The predetermined branch is BASELINE_ONLY. Its success requirements are complete
 
 These results apply to the synthetic family and parameter domain fixed prospectively in F3B.1. The positive and null proportions are controlled experimental allocations, not observational prevalence. The empirical selection function describes the sampled synthetic domain and its frozen strata; it is not a fitted population model. The input-admissibility challenges diagnose pipeline eligibility separately from classifier discrimination. Period recovery is conditional on true-positive selection and finite M1 period availability. Numerical optimizer stability is not rerun in HELDOUT: the extra-seed stability study remains a DEVELOPMENT-only diagnostic by design.
 
+A second limitation concerns interpretation across controlled strata. The experiment deliberately balances positive and null allocations and samples nuisance parameters according to the frozen simulation plan; therefore the unconditional mixture in this report has no direct population-frequency meaning. Stratum-specific differences may nevertheless be scientifically informative within the simulated domain, especially where cadence length, red-noise slope, QPP fraction or period support alter eligibility or selection. Those differences should be carried forward descriptively into the final Phase 3B synthesis, without using the consumed HELDOUT outcomes to redesign thresholds, merge strata, introduce new predictors or choose a different representation.
+
 ## 11. Continuing prohibitions
 
 The consumed HELDOUT set cannot be reused to invent or tune a new classification rule. No threshold tweak, feature addition, alternate candidate search, additional optimizer seeds, new AFINO execution, generator execution or DEVELOPMENT retuning is authorized. A revised method would require a new independent validation dataset and a new prospective freeze. Phase 3B.7 therefore closes with a frozen prospective baseline characterization, not with a claim that an observational correction has been established. The broader DEVELOPMENT-to-HELDOUT synthesis and final claim matrix belong to Phase 3B.8 rather than this report.
@@ -903,15 +907,19 @@ The consumed HELDOUT set cannot be reused to invent or tune a new classification
 def heldout_evaluate(repo: Path):
     # Critical activation checks BEFORE opening HELDOUT scientific content.
     verify_hashes(repo)
-    if git(repo, "rev-parse", "HEAD^") != F3B6_COMMIT:
-        raise RuntimeError("procedure-freeze commit is not direct child of F3B.6")
-    if git(repo, "log", "-1", "--pretty=%s") != PROCEDURE_COMMIT_SUBJECT:
-        raise RuntimeError("procedure-freeze commit subject mismatch")
+    if git(repo, "rev-parse", "HEAD^") != F3B7_PROCEDURE_FREEZE_COMMIT:
+        raise RuntimeError("active pretruth repair commit parent mismatch")
+    if git(repo, "rev-parse", "HEAD^^") != F3B6_COMMIT:
+        raise RuntimeError("procedure-freeze ancestry no longer descends from F3B.6")
+    if git(repo, "log", "-1", "--pretty=%s", "HEAD^") != PROCEDURE_COMMIT_SUBJECT:
+        raise RuntimeError("original procedure-freeze commit subject mismatch")
+    if git(repo, "log", "-1", "--pretty=%s") != PRETRUTH_REPAIR_COMMIT_SUBJECT:
+        raise RuntimeError("active pretruth repair commit subject mismatch")
     if git(repo, "status", "--porcelain=v1", "--untracked-files=all"):
         raise RuntimeError("working tree must be clean before single-use unblinding")
 
     auth = load_json(repo / AUTH)
-    if auth["status"] != "AUTHORIZED_AFTER_PROCEDURE_FREEZE_COMMIT":
+    if auth["status"] != "AUTHORIZED_AFTER_PRETRUTH_REPAIR_FREEZE_COMMIT":
         raise RuntimeError("unblinding authorization status mismatch")
     p = auth["permissions"]
     required_true = [
@@ -942,7 +950,8 @@ def heldout_evaluate(repo: Path):
     marker_obj = {
         "phase": "F3B.7",
         "status": "TRUTH_OPEN_AUTHORIZED_SINGLE_USE_CONSUMED",
-        "procedure_freeze_commit": git(repo, "rev-parse", "HEAD"),
+        "procedure_freeze_commit": F3B7_PROCEDURE_FREEZE_COMMIT,
+        "pretruth_repair_commit": git(repo, "rev-parse", "HEAD"),
         "truth_sha256": EXPECTED["workflows/phase3b/heldout/materialization/evidence/tables/f3b5_heldout_truth_ledger.csv"],
         "new_afino_calls": 0,
         "generator_calls": 0,
@@ -1025,7 +1034,8 @@ def heldout_evaluate(repo: Path):
         "generator_calls": 0,
         "heldout_optimizer_stability": "NOT_EXECUTED_BY_DESIGN",
         "heldout_single_use_consumed": True,
-        "procedure_freeze_commit": git(repo, "rev-parse", "HEAD"),
+        "procedure_freeze_commit": F3B7_PROCEDURE_FREEZE_COMMIT,
+        "pretruth_repair_commit": git(repo, "rev-parse", "HEAD"),
         "blind_decisions_sha256": EXPECTED["workflows/phase3b/heldout/execution/evidence/tables/f3b6_heldout_decisions_blinded.csv"],
     }
 

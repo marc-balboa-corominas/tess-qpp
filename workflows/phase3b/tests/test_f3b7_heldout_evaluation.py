@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import importlib.util
 import json
 import unittest
 from pathlib import Path
@@ -12,6 +13,7 @@ BIND = EVAL / "config/f3b7_evaluation_input_binding.json"
 REG = EVAL / "evidence/reports/f3b7_development_evaluator_regression_audit.json"
 FINAL_GATE = EVAL / "evidence/reports/f3b7_heldout_validation_gate.json"
 SINGLE = EVAL / "evidence/reports/f3b7_single_use_evaluation_audit.json"
+EVALUATOR = REPO / "workflows/phase3b/scripts/evaluate_f3b_heldout.py"
 
 class TestF3B7HeldoutEvaluation(unittest.TestCase):
     def test_binding_and_authorization(self):
@@ -22,6 +24,10 @@ class TestF3B7HeldoutEvaluation(unittest.TestCase):
         self.assertTrue(bind["final_rule_freeze_verified"])
         self.assertEqual(bind["final_rule"]["t01"], 10)
         self.assertEqual(bind["final_rule"]["t21"], 10)
+        self.assertEqual(
+            auth["status"],
+            "AUTHORIZED_AFTER_PRETRUTH_REPAIR_FREEZE_COMMIT",
+        )
         p = auth["permissions"]
         self.assertTrue(p["truth_join_authorized"])
         self.assertTrue(p["heldout_metrics_authorized"])
@@ -54,6 +60,48 @@ class TestF3B7HeldoutEvaluation(unittest.TestCase):
         self.assertIn("heldout_truth_consumed.json", src)
         self.assertIn("development-regression", src)
         self.assertIn("heldout-evaluate", src)
+
+    def test_report_contract_dry_render(self):
+        spec = importlib.util.spec_from_file_location(
+            "f3b7_evaluator_for_test",
+            EVALUATOR,
+        )
+        module = importlib.util.module_from_spec(spec)
+        assert spec.loader is not None
+        spec.loader.exec_module(module)
+
+        metrics = {
+            "confusion_matrix": {"TP": 1, "FN": 1799, "TN": 1800, "FP": 0},
+            "primary_classification_metrics": {
+                "sensitivity_TPR": {"point_estimate": 1 / 1800},
+                "specificity_TNR": {"point_estimate": 1.0},
+                "false_positive_rate_FPR": {"point_estimate": 0.0},
+            },
+            "secondary_classification_summary": {
+                "balanced_accuracy": {
+                    "point_estimate": 0.5 * ((1 / 1800) + 1.0),
+                }
+            },
+        }
+        selection = (
+            [{"exposure_status": "STRUCTURAL_NO_EXPOSURE"}] * 9
+            + [{"exposure_status": "EXPOSED"}] * 147
+        )
+        period_summary = {
+            "period_estimate_coverage_fraction": {"numerator": 1},
+        }
+        gate = {
+            "status": "HELDOUT_BASELINE_CHARACTERIZATION_SUCCESS",
+        }
+        report = module.report_text(
+            metrics,
+            [],
+            selection,
+            period_summary,
+            gate,
+        )
+        self.assertGreaterEqual(len(report.split()), 1100)
+        self.assertLessEqual(len(report.split()), 1500)
 
     def test_final_gate_if_present(self):
         if not FINAL_GATE.exists():

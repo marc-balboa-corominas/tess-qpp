@@ -1,0 +1,42 @@
+{
+  "artifact_role": "F3B7_PRETRUTH_TOOLING_INCIDENT",
+  "discovery": {
+    "after_procedure_freeze_commit": "19436932aaaf39e07e176f35753a12a6385818e0",
+    "before_heldout_truth_content_read": true,
+    "heldout_metrics_computed": false,
+    "heldout_truth_content_read": false,
+    "truth_consumption_marker_present": false,
+    "truth_join_performed": false
+  },
+  "incident_class": "REPORT_WORD_COUNT_CONTRACT_PREUSE_DEFECT",
+  "incident_id": "F3B7-TOOL-001",
+  "phase": "F3B.7_PRETRUTH",
+  "repair": {
+    "active_commit_guard_updated_for_pretruth_repair_commit": true,
+    "development_evaluator_regression_required_again": true,
+    "dry_render_word_count_after_repair": 1134,
+    "report_template_extended_without_changing_metric_or_selection_algorithms": true,
+    "test_added_for_report_word_count_contract": true,
+    "validator_strengthened_for_truth-join accounting, explicit denominators and Wilson intervals": true
+  },
+  "root_cause": {
+    "committed_report_template_word_count_dry_render": 1038,
+    "counterfactual_risk": "Without pre-use static dry rendering, heldout-evaluate would have created the single-use consumption marker and opened HELDOUT truth before aborting on the report-length guard.",
+    "failure_location": "report_text pre-write word-count guard",
+    "frozen_contract_max_words": 1500,
+    "frozen_contract_min_words": 1100
+  },
+  "schema_version": "1.0.0",
+  "scientific_boundary": {
+    "candidate_search_performed": false,
+    "development_retuned": false,
+    "final_rule_changed": false,
+    "generator_calls": 0,
+    "heldout_truth_content_read": false,
+    "new_afino_calls": 0,
+    "rule_refitted": false,
+    "scientific_algorithm_changed": false,
+    "thresholds_modified": false
+  },
+  "status": "REPAIRED_BEFORE_HELDOUT_TRUTH_READ"
+}
