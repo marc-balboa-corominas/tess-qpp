@@ -276,6 +276,21 @@
   "new_scientific_computation": false,
   "new_source_artifact": false,
   "new_statistical_inference": false,
+  "pre_render_tooling_incidents": [
+    {
+      "first_definitive_render_executed_before_repair": false,
+      "frozen_source_effect": "NONE",
+      "incident_id": "M1V-TOOL-001",
+      "manuscript_prose_effect": "NONE",
+      "renderer_sha256_after": "a2d7349f60ffb3bb1c2e44966f447cbb7f1c2e9aa1dc3738858fdb1960dcb3a8",
+      "renderer_sha256_before": "c754addeff08d0af7fafe810d3599c152024fd70abd9b72e49b4e2a6e73564c4",
+      "repair": "Construct the period-expanded matrix before the single imshow call and remove the unsupported ArtistList.clear() operation.",
+      "scientific_effect": "NONE",
+      "stage": "pre_render_static_compatibility_audit",
+      "status": "REPAIRED_BEFORE_FIRST_DEFINITIVE_RENDER",
+      "trigger": "The frozen renderer attempted ax.images.clear() after a temporary imshow call in M1F04. Matplotlib 3.11.1 exposes ax.images as an ArtistList without a clear() method, so the first definitive render would have failed before producing the visual package."
+    }
+  ],
   "preview_figure_format": "PNG",
   "primary_figure_format": "PDF",
   "prohibited_transformations": [
@@ -303,5 +318,10 @@
     "M1T03",
     "M1T04"
   ],
+  "tooling_identity": {
+    "renderer_sha256": "a2d7349f60ffb3bb1c2e44966f447cbb7f1c2e9aa1dc3738858fdb1960dcb3a8",
+    "visual_test_sha256": "e43d7baaa268753088da8cf9e6e2f1d987c47d7f7c8ce76d92e16f84f0981eaa",
+    "visual_validator_sha256": "f51888d00d10363dab91f8ce62bf3a4466a837ed74430e6d37430524231a373d"
+  },
   "vector_text_required": true
 }

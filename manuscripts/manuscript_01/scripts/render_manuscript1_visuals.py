@@ -658,8 +658,7 @@ for j, q in enumerate(qpps):
     lookup={}
     for r in rows_here:
         lookup[(r["n_samples"], (r["red_noise_alpha"], r["period_bin_id"]))]=r
-    ax.imshow(np.ma.masked_invalid(data), cmap="Greys", vmin=0, vmax=1, aspect="auto")
-    # Repaint after preparing because lookup controls structural cells.
+    # Prepare the complete matrix before the single definitive imshow call.
     data = np.full((len(n_samples), len(xpairs)), np.nan)
     for yi,n in enumerate(n_samples):
         for xi,pair in enumerate(xpairs):
@@ -668,7 +667,6 @@ for j, q in enumerate(qpps):
                 raise RuntimeError(f"missing period-expanded stratum n={n} pair={pair} q={q}")
             if r["exposure_status"]!="STRUCTURAL_NO_EXPOSURE":
                 data[yi,xi]=float(r["conditional_selection_point_estimate"])
-    ax.images.clear()
     ax.imshow(np.ma.masked_invalid(data), cmap="Greys", vmin=0, vmax=1, aspect="auto")
     labels=[f"a={a}\n{p.replace('P','')}" for a,p in xpairs]
     ax.set_xticks(np.arange(len(xpairs)),labels=labels,rotation=90,fontsize=5.5)
