@@ -510,8 +510,24 @@ for j, state in enumerate(states):
     v = [vals[i][j] for i in range(2)]
     bars = ax1.barh(roles, v, left=left, color=grays[j], edgecolor="0.2", hatch=hatches[j], label=state)
     for i, (bar, n) in enumerate(zip(bars, v)):
-        x = left[i] + (n/2 if n > 0 else 0.8)
-        ax1.text(x, bar.get_y()+bar.get_height()/2, str(n), ha="center", va="center", fontsize=8, weight="bold")
+        if n > 0:
+            x = left[i] + n/2
+            ax1.text(
+                x, bar.get_y()+bar.get_height()/2, str(n),
+                ha="center", va="center", fontsize=8, weight="bold"
+            )
+        else:
+            # Preserve the zero-valued frozen category without visually colliding
+            # with the next non-zero stacked segment.
+            ax1.annotate(
+                "0",
+                xy=(left[i], bar.get_y()+bar.get_height()/2),
+                xytext=(0, -16),
+                textcoords="offset points",
+                ha="center", va="center",
+                fontsize=7.5, weight="bold",
+                bbox=dict(boxstyle="round,pad=0.12", facecolor="white", edgecolor="0.55", linewidth=0.5),
+            )
     left += np.array(v)
 ax1.set_xlim(0, 64)
 ax1.set_xlabel("Events in frozen baseline gate")
@@ -593,7 +609,7 @@ fig = plt.figure(figsize=(7.2, 10.4))
 gs = fig.add_gridspec(
     5, 3,
     height_ratios=[1.15, 1.25, 1.25, 1.25, 1.10],
-    hspace=0.68,
+    hspace=0.78,
     wspace=0.34,
 )
 
@@ -688,9 +704,14 @@ for j, q in enumerate(qpps):
         [period_label[p] for _, p in xpairs],
         fontsize=6.2,
     )
+    # Keep the panel title on a separate visual tier above the alpha-group headers.
+    ax.set_title(
+        f"B{j+1} — Period-expanded; QPP fraction={q}",
+        loc="left", fontsize=7.8, pad=22
+    )
     ax.tick_params(axis="x", labelrotation=0, pad=2)
 
-    # Alpha group labels above each three-period block.
+    # Alpha group labels above each three-period block, below the panel title.
     for center, a in zip([1, 4, 7], alphas):
         ax.text(
             center, 1.02, f"alpha={a}",

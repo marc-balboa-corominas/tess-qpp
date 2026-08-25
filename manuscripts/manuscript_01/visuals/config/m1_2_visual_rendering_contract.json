@@ -289,6 +289,19 @@
       "stage": "pre_render_static_compatibility_audit",
       "status": "REPAIRED_BEFORE_FIRST_DEFINITIVE_RENDER",
       "trigger": "The frozen renderer attempted ax.images.clear() after a temporary imshow call in M1F04. Matplotlib 3.11.1 exposes ax.images as an ArtistList without a clear() method, so the first definitive render would have failed before producing the visual package."
+    },
+    {
+      "claim_effect": "NONE",
+      "frozen_source_effect": "NONE",
+      "incident_id": "M1V-TOOL-002",
+      "rejected_candidate_committed": false,
+      "rejected_candidate_tagged": false,
+      "repair": "Recover from the partial uncommitted-output cleanup by verifying the surviving path subset, performing an exclusive-lock preflight on every surviving candidate file before any further deletion, then completing cleanup and freezing the intended visual-only repair.",
+      "scientific_effect": "NONE",
+      "source_value_effect": "NONE",
+      "stage": "pre_freeze_visual_review_repair_cleanup",
+      "status": "REPAIRED_BEFORE_THIRD_RENDER",
+      "trigger": "Cleanup of the rejected second visual candidate was interrupted by a Windows access-denied/file-lock condition on m1_2_rendered_value_audit.csv after some uncommitted outputs had already been removed."
     }
   ],
   "preview_figure_format": "PNG",
@@ -319,7 +332,7 @@
     "M1T04"
   ],
   "tooling_identity": {
-    "renderer_sha256": "1e80bddbf1546d765cdb8c27218d0b8886ce9e9fbf8a1673f79a0adaf6b3ccb0",
+    "renderer_sha256": "b8e48b2f9bbd140d6542cf78c7713234dbc3b72c5a8aa285b4affad2de6c0a57",
     "visual_test_sha256": "e43d7baaa268753088da8cf9e6e2f1d987c47d7f7c8ce76d92e16f84f0981eaa",
     "visual_validator_sha256": "f51888d00d10363dab91f8ce62bf3a4466a837ed74430e6d37430524231a373d"
   },
@@ -342,6 +355,33 @@
       "source_value_effect": "NONE",
       "stage": "pre_freeze_visual_review_after_first_definitive_render",
       "status": "REPAIR_FROZEN_BEFORE_SECOND_RENDER"
+    },
+    {
+      "affected_artifacts": [
+        "M1F03",
+        "M1F04"
+      ],
+      "claim_effect": "NONE",
+      "findings": [
+        "M1F04 B1-B3 panel titles visually overlap the alpha-group headers despite the successful full-width restructuring.",
+        "M1F03 displays the zero-width not-selected mismatch label too close to the adjacent inadmissible segment label."
+      ],
+      "incident_id": "M1V-VIS-002",
+      "new_scientific_computation": false,
+      "new_statistical_inference": false,
+      "repair": [
+        "Move M1F04 B-panel titles to a separate left-aligned tier with additional vertical padding above alpha-group headers.",
+        "Render the M1F03 zero-width mismatch value as an offset boxed annotation at its frozen category boundary."
+      ],
+      "review_bundle_bytes": 927484,
+      "review_bundle_filename": "m1_2_visual_review_bundle_v2.zip",
+      "review_bundle_sha256": "5ff5c7d5bf098ae8160459a67d7ae175088f026944dd44667b01078e77b48ba8",
+      "scientific_effect": "NONE",
+      "second_candidate_frozen_or_committed": false,
+      "second_candidate_technical_validation": "PASS",
+      "source_value_effect": "NONE",
+      "stage": "pre_freeze_visual_review_after_second_controlled_render",
+      "status": "REPAIR_FROZEN_BEFORE_THIRD_RENDER"
     }
   ]
 }
