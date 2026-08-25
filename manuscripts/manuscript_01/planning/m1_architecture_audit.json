@@ -1,0 +1,77 @@
+{
+  "BAII_positioning_constraints": 9,
+  "artifact_role": "MANUSCRIPT1_ARCHITECTURE_AUDIT",
+  "claim_count": 29,
+  "claim_status_counts": {
+    "DEFER_TO_F4_PLUS": 1,
+    "POSITIONING_ONLY": 1,
+    "PROHIBITED": 2,
+    "SUPPORTED_NOW": 18,
+    "SUPPORTED_WITH_EXPLICIT_LIMITATION": 7
+  },
+  "entry_commit": "b501fa16c3b3af5d6105df38421995e5d5600763",
+  "evidence_planes": {
+    "auxiliary_positioning": 1,
+    "primary": 5,
+    "total": 6
+  },
+  "figure_candidates": 5,
+  "firewall": {
+    "f2_f3a_f3b_denominator_pooling": false,
+    "manuscript_prose_started": false,
+    "new_afino_execution": false,
+    "new_bibliographic_search": false,
+    "new_candidate_rule": false,
+    "new_scientific_computation": false,
+    "new_statistical_inference": false,
+    "new_synthetic_generation": false,
+    "new_threshold_search": false,
+    "protected_frozen_sources_modified": false
+  },
+  "frozen_source_sanity": {
+    "f3a_not_selected_baseline_concordant": 57,
+    "f3a_optimizer_stability_events": 116,
+    "f3a_qpp_baseline_concordant": 8,
+    "f3a_qpp_baseline_mismatches": 51,
+    "f3a_qpp_reference_events": 61,
+    "f3a_seed_discordant_events": 0,
+    "f3a_total_events": 122,
+    "f3b_final_selection_rows": 156,
+    "f3b_heldout_confusion": {
+      "FN": 1648,
+      "FP": 0,
+      "TN": 1800,
+      "TP": 152
+    },
+    "f3b_period_rows": 152
+  },
+  "limitations_count": 18,
+  "next_task": "MANUSCRIPT1_2_FIGURE_TABLE_MATERIALIZATION_AND_VISUAL_FREEZE",
+  "pre_freeze_tooling_incidents": [
+    {
+      "frozen_source_effect": "NONE",
+      "incident_id": "M1-TOOL-001",
+      "manuscript_prose_effect": "NONE",
+      "repair": "Replace the phrase-presence gate with structural assertions on evidence-plane ground_truth_status and observational_or_synthetic fields.",
+      "scientific_effect": "NONE",
+      "stage": "architecture_validator",
+      "status": "REPAIRED_BEFORE_GIT_FREEZE",
+      "trigger": "The first validator used an over-literal substring requirement for the exact prose phrase 'not physical ground truth' even though the registry encoded the intended distinction structurally as OBSERVATIONAL_REFERENCE_NOT_PHYSICAL_GROUND_TRUTH."
+    },
+    {
+      "frozen_source_effect": "NONE",
+      "incident_id": "M1-TOOL-002",
+      "manuscript_prose_effect": "NONE",
+      "repair": "Materialize base64-decoded Python payload bytes directly to temporary UTF-8 .py files and execute those files, avoiding PowerShell string/pipeline transcoding.",
+      "scientific_effect": "NONE",
+      "stage": "external_final_candidate_audit",
+      "status": "REPAIRED_BEFORE_GIT_FREEZE",
+      "trigger": "The first external final-candidate audit transported Unicode-bearing inline Python through the Windows PowerShell 5.1 pipeline to an external Python process. The expected README em dash was altered by the legacy external-process encoding path even though the candidate README bytes and UTF-8 content were correct."
+    }
+  ],
+  "schema_version": "1.0.0",
+  "section_count": 19,
+  "source_bindings": 48,
+  "status": "MANUSCRIPT1_ARCHITECTURE_VALIDATION_PASS",
+  "table_candidates": 4
+}
