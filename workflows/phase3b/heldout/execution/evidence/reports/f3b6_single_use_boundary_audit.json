@@ -1,0 +1,39 @@
+{
+  "artifact_role": "F3B6_SINGLE_USE_BOUNDARY_AUDIT",
+  "candidate_search_performed": false,
+  "counts": {
+    "afino_jobs": 10800,
+    "decision_status_VALID": 3600,
+    "heldout_decisions": 3600,
+    "status_OK": 10800
+  },
+  "development_reopened_for_tuning": false,
+  "execution_sequence": [
+    3000,
+    3000,
+    3000,
+    1800,
+    0
+  ],
+  "heldout_afino_executed": true,
+  "heldout_materialization_performed": true,
+  "heldout_metrics_computed": false,
+  "heldout_outcomes_scientifically_inspected": false,
+  "heldout_period_metrics_computed": false,
+  "heldout_rule_applied_blind": true,
+  "heldout_selection_function_computed": false,
+  "heldout_truth_join_performed": false,
+  "next_scientific_phase": "F3B.7",
+  "phase": "F3B.6",
+  "qpp_selected_aggregate": "NOT_COMPUTED",
+  "rule_refitted": false,
+  "status": "BLINDED_EXECUTION_COMPLETE_AWAITING_FINAL_GIT_ARCHIVE_FREEZE",
+  "thresholds_modified": false,
+  "tooling_incident": {
+    "failure_stage": "PRE_AFINO_MODEL_EXECUTION",
+    "id": "F3B6-TOOL-007",
+    "recovery_freeze_commit": "faf688a2b8c260cdee0d92c181971d0154df4532",
+    "scientific_jobs_consumed": 0
+  },
+  "unblinding_authorized_within_f3b6": false
+}

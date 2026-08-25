@@ -1,0 +1,94 @@
+{
+  "artifact_role": "F3B6_BLINDED_EXECUTION_AUDIT",
+  "blind_outputs": {
+    "decision_status_VALID": 3600,
+    "decisions_rows": 3600,
+    "decisions_sha256": "bc7c8720d9cdeed249301f986bcf960ef46c2d75ec4e38356a0dfa42ee3b3ab1",
+    "results_rows": 10800,
+    "results_sha256": "2a55963e4b916a997efa5db5893e1b49f6a091b536fa6b98099da7733af7fe30",
+    "temporal_rows": 3600,
+    "temporal_sha256": "1f15cc39f147e923d89697d400d3979a73e168ab3096daaac5678e7f30da715f"
+  },
+  "checkpoint": {
+    "M0": 3600,
+    "M1": 3600,
+    "M2": 3600,
+    "invocation_sequence": [
+      3000,
+      3000,
+      3000,
+      1800,
+      0
+    ],
+    "results": 10800,
+    "sha256": "f652555516bf830b82a23c1911a47d8ce72e2851b11b97b11614c23c6f944945",
+    "status_OK": 10800
+  },
+  "independent_validation": {
+    "checkpoint_csv_mismatches": 0,
+    "decision_recalculation_mismatches": 0,
+    "development_runner_regression": "18/18 exact",
+    "mean_dt_mismatches": 0,
+    "payload_identity_mismatches": 0,
+    "plan_checkpoint_mismatches": 0,
+    "positive_fftfreq_mismatches": 0,
+    "result": "PHASE3B_HELDOUT_BLINDED_EXECUTION_VALIDATION_PASS"
+  },
+  "operational_diagnostics": {
+    "M0": {
+      "bound_calls": 0,
+      "calls": 3600,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 3600
+      },
+      "warning_calls": 0,
+      "warning_total": 0
+    },
+    "M1": {
+      "bound_calls": 0,
+      "calls": 3600,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 3600
+      },
+      "warning_calls": 0,
+      "warning_total": 0
+    },
+    "M2": {
+      "bound_calls": 0,
+      "calls": 3600,
+      "convergence_status_counts": {
+        "NOT_AUDITABLE": 3600
+      },
+      "warning_calls": 1751,
+      "warning_total": 13581
+    }
+  },
+  "phase": "F3B.6",
+  "provenance": {
+    "adapter_sha256": "dc270bcc8576f7eb82e5efb013ab95c7c975712ef4274f446f82d208f690c719",
+    "afino_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "assembler_sha256": "f69e602f0925db750cdbaa6140cb8a1d5e42137d7e0d3a2a43835852bebd7fe5",
+    "authorization_sha256": "4924a1589932e67d132b79321c55c6d81b124afc790a65ac7c8883c55fd8daa5",
+    "binding_sha256": "23c897ef0ea24f45c32cb3b382da98e8c914018c1438ba6ea725a848510219bd",
+    "decision_grid_sha256": "09419a4d5d968d5305f262b5aefe28cd29bc01cdcf67b53d91e1732c0e15aa34",
+    "execution_authorization_commit": "faf688a2b8c260cdee0d92c181971d0154df4532",
+    "f3b5_commit": "690b54212ffc91d5d396da02db2bcd883b359e6b",
+    "f3b5_tag": "phase3b-heldout-materialization-v1",
+    "final_rule_sha256": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
+    "payload_manifest_sha256": "d20b0dac662cf809eb86d5e87d96f35e236b6ff2fbfb0fa86eeb4da8a49af8b4",
+    "plan_sha256": "0b59e2f4ab4e1f3a1064b2281a9a428b117a7b258102e237702deee86171f2f9",
+    "temporal_script_sha256": "234cc51faac18b84d9be91476a6b21cd0e31d4a1d155108721af019ad819f0c7",
+    "validation_audit_sha256": "cadbbf40303b4b26b465048a095a5555db04988d8ed3048770f343b61bc63483",
+    "validator_sha256": "dfb5af92c5ee887b28c326aff8b830639d972c2f522140a5ea237d53647e9185"
+  },
+  "scientific_outcomes": {
+    "confusion_matrix": "NOT_COMPUTED",
+    "performance_metrics": "NOT_COMPUTED",
+    "period_recovery": "NOT_COMPUTED",
+    "qpp_selected_aggregate": "NOT_COMPUTED",
+    "selection_fraction": "NOT_COMPUTED",
+    "selection_function": "NOT_COMPUTED"
+  },
+  "status": "PASS",
+  "truth_join_performed": false
+}

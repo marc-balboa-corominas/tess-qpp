@@ -1,0 +1,78 @@
+{
+  "artifact_role": "F3B6_HELDOUT_BLINDED_EXECUTION_VALIDATION_AUDIT",
+  "blind_decisions": {
+    "comparison_operator": "STRICT_GREATER_THAN",
+    "decision_recalculation_mismatches": 0,
+    "final_rule": "delta_BIC01 > 10 AND delta_BIC21 > 10",
+    "qpp_selected_aggregate": "NOT_COMPUTED",
+    "rows": 3600,
+    "status_valid": 3600,
+    "t01": 10.0,
+    "t21": 10.0
+  },
+  "blinding_firewall": {
+    "candidate_search_performed": false,
+    "heldout_metrics_computed": false,
+    "heldout_outcomes_scientifically_inspected": false,
+    "heldout_period_metrics_computed": false,
+    "heldout_selection_function_computed": false,
+    "rule_refitted": false,
+    "thresholds_modified": false,
+    "truth_columns_in_decisions": 0,
+    "truth_columns_in_results": 0,
+    "truth_columns_in_temporal": 0,
+    "truth_ledger_accessed": false
+  },
+  "development_runner_regression": {
+    "exact_matches": 18,
+    "jobs": 18
+  },
+  "git_head": "faf688a2b8c260cdee0d92c181971d0154df4532",
+  "hashes": {
+    "adapter_sha256": "dc270bcc8576f7eb82e5efb013ab95c7c975712ef4274f446f82d208f690c719",
+    "assembler_sha256": "f69e602f0925db750cdbaa6140cb8a1d5e42137d7e0d3a2a43835852bebd7fe5",
+    "authorization_sha256": "4924a1589932e67d132b79321c55c6d81b124afc790a65ac7c8883c55fd8daa5",
+    "binding_sha256": "23c897ef0ea24f45c32cb3b382da98e8c914018c1438ba6ea725a848510219bd",
+    "checkpoint_sha256": "f652555516bf830b82a23c1911a47d8ce72e2851b11b97b11614c23c6f944945",
+    "decision_grid_sha256": "09419a4d5d968d5305f262b5aefe28cd29bc01cdcf67b53d91e1732c0e15aa34",
+    "decisions_csv_sha256": "bc7c8720d9cdeed249301f986bcf960ef46c2d75ec4e38356a0dfa42ee3b3ab1",
+    "final_rule_sha256": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
+    "payload_manifest_sha256": "d20b0dac662cf809eb86d5e87d96f35e236b6ff2fbfb0fa86eeb4da8a49af8b4",
+    "plan_sha256": "0b59e2f4ab4e1f3a1064b2281a9a428b117a7b258102e237702deee86171f2f9",
+    "results_csv_sha256": "2a55963e4b916a997efa5db5893e1b49f6a091b536fa6b98099da7733af7fe30",
+    "temporal_csv_sha256": "1f15cc39f147e923d89697d400d3979a73e168ab3096daaac5678e7f30da715f",
+    "temporal_script_sha256": "234cc51faac18b84d9be91476a6b21cd0e31d4a1d155108721af019ad819f0c7"
+  },
+  "payload_identity": {
+    "mismatches": 0
+  },
+  "phase": "F3B.6",
+  "single_use_execution": {
+    "M0": 3600,
+    "M1": 3600,
+    "M2": 3600,
+    "checkpoint_csv_mismatches": 0,
+    "checkpoint_results": 10800,
+    "checkpoint_status_ok": 10800,
+    "duplicate_job_id": 0,
+    "duplicate_scientific_keys": 0,
+    "invocation_sequence": [
+      3000,
+      3000,
+      3000,
+      1800,
+      0
+    ],
+    "plan_checkpoint_mismatches": 0,
+    "result_core_mismatches": 0
+  },
+  "status": "PASS",
+  "temporal_contract": {
+    "legacy_rfftfreq": "DIAGNOSTIC_ONLY",
+    "mean_dt_matches": 3600,
+    "mismatches": 0,
+    "positive_fftfreq_matches": 3600,
+    "rows": 3600
+  },
+  "validation_result": "PHASE3B_HELDOUT_BLINDED_EXECUTION_VALIDATION_PASS"
+}

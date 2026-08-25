@@ -1,0 +1,36 @@
+{
+  "afino_source": {
+    "repository_head": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "staged_diff_empty": true,
+    "tracked_diff_empty": true
+  },
+  "afino_source_modified_during_heldout": false,
+  "artifact_role": "F3B6_EXECUTION_ENVIRONMENT",
+  "environment_modified_during_heldout": false,
+  "execution_boundary_git_head": "faf688a2b8c260cdee0d92c181971d0154df4532",
+  "packages": {
+    "afino": "0.5",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0"
+  },
+  "phase": "F3B.6",
+  "platform": {
+    "machine": "AMD64",
+    "release": "11",
+    "system": "Windows"
+  },
+  "python": {
+    "executable_basename": "python.exe",
+    "implementation": "CPython",
+    "version": "3.13.13"
+  },
+  "scientific_contract": {
+    "M0": "pow_const",
+    "M1": "pow_const_gauss",
+    "M2": "bpow_const",
+    "comparison": "STRICT_GREATER_THAN",
+    "external_optimizer_seed": 0,
+    "low_frequency_cutoff_hz": 0.025,
+    "rule": "delta_BIC01 > 10 AND delta_BIC21 > 10"
+  }
+}
