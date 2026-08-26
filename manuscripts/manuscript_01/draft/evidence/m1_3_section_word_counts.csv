@@ -1,0 +1,22 @@
+section_id,section_title,word_count,paragraph_count
+ABSTRACT,Abstract,212,1
+1,Introduction,581,6
+2,Evidence and analysis architecture,278,3
+3.1,Frozen AFINO baseline and observational reproduction,358,4
+3.2,Synthetic benchmark,360,4
+3.3,Pilot observational robustness,232,3
+3.4,Catalogue-scale robustness,291,4
+3.5,Synthetic injection--recovery and synthetic-ground-truth held-out validation,330,4
+4.1,Baseline reproduction and synthetic benchmark behavior,355,4
+4.2,Pilot robustness,233,3
+4.3,Catalogue-scale robustness and baseline reproduction,300,4
+4.4,Numerical stability,291,4
+4.5,DEVELOPMENT synthetic performance and rule gate,212,3
+4.6,Independent HELDOUT performance,245,3
+4.7,Synthetic selection function and conditional period recovery,213,3
+5.1,Methodological robustness,268,3
+5.2,Selection-limited behavior,254,3
+5.3,Observational versus synthetic evidence,238,3
+5.4,Why no correction is claimed,256,3
+5.5,Implications for population analyses,252,3
+6,Conclusions,178,3

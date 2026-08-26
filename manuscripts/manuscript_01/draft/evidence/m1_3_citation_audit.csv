@@ -1,0 +1,9 @@
+citation_key,bibliographic_source_id,BAII_work_id_if_applicable,first_manuscript_location,citation_role,frozen_metadata_source,status
+Inglis2016,S001,,1,AFINO methodology and catalogue precedent,docs/literature/bibliographic_audit_ii/SEED_SOURCES.csv,FROZEN_METADATA_VERIFIED
+Pugh2017,S002,,1,red-noise-aware QPP significance methodology,docs/literature/bibliographic_audit_ii/SEED_SOURCES.csv,FROZEN_METADATA_VERIFIED
+Broomhall2019,S003,,1,blind benchmark and robustness-method context,docs/literature/bibliographic_audit_ii/SEED_SOURCES.csv,FROZEN_METADATA_VERIFIED
+HowardMacGregor2022,S004,,1,high-cadence TESS QPP catalogue precedent,docs/literature/bibliographic_audit_ii/SEED_SOURCES.csv,FROZEN_METADATA_VERIFIED
+Belov2024,S005,BAIIW0098,1,machine-learning QPP detection precedent,docs/literature/bibliographic_audit_ii/SEED_SOURCES.csv;docs/literature/bibliographic_audit_ii/screening/work_registry.csv,FROZEN_METADATA_VERIFIED
+Joshi2025,S006,BAIIW0001,1,direct source catalogue and catalogue-scale AFINO/TESS precedent,docs/literature/bibliographic_audit_ii/SEED_SOURCES.csv;docs/literature/bibliographic_audit_ii/screening/work_registry.csv,FROZEN_METADATA_VERIFIED
+Wang2025,S007,BAIIW0003,1,TESS catalogue QPP classification precedent,docs/literature/bibliographic_audit_ii/SEED_SOURCES.csv;docs/literature/bibliographic_audit_ii/screening/work_registry.csv,FROZEN_METADATA_VERIFIED
+Reale2026,S008,BAIIW0008,1,recent solar-stellar QPP review context,docs/literature/bibliographic_audit_ii/SEED_SOURCES.csv;docs/literature/bibliographic_audit_ii/screening/work_registry.csv,FROZEN_METADATA_VERIFIED
