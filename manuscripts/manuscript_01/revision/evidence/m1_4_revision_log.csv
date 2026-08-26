@@ -1,0 +1,11 @@
+revision_id,issue_id,target,action_class,change_summary,claim_ids,new_claim_ids,new_source_ids,new_scientific_numerals,scientific_effect,status
+M14R001,M14I001,M1P0046,SCOPE_OR_STYLE_CLARIFICATION,M1P0046 wording now states promotion to synthetic-ground-truth held-out evaluation.,M1C020;M1C023,NONE,NONE,NONE,NONE,APPLIED_AND_AUDITED
+M14R002,M14I002,M1P0047,SCOPE_OR_STYLE_CLARIFICATION,M1P0047 now uses established population correction wording.,M1C023,NONE,NONE,NONE,NONE,APPLIED_AND_AUDITED
+M14R003,M14I003,M1P0004,SCOPE_OR_STYLE_CLARIFICATION,M1P0004 now uses known-truth evaluation analogues.,M1C028,NONE,NONE,NONE,NONE,APPLIED_AND_AUDITED
+M14R004,M14I004,M1P0040,SCOPE_OR_STYLE_CLARIFICATION,M1P0040 recast descriptively as catalogue-scale dependence on frozen analysis choices.,M1C004;M1C005;M1C008,NONE,NONE,NONE,NONE,APPLIED_AND_AUDITED
+M14R005,M14I005,M1T01,LAYOUT_PLACEMENT,M1T01 frozen TeX retained byte-exact; manuscript wrapper enlarged typography/margins and passed render inspection.,M1C029,NONE,NONE,NONE,NONE,APPLIED_AND_AUDITED
+M14R006,M14I006,M1T04,LAYOUT_PLACEMENT,M1T04 frozen TeX retained byte-exact; landscape wrapper increased usable width/font and passed render inspection.,M1C007;M1C010;M1C020;M1C023;M1C024;M1C028,NONE,NONE,NONE,NONE,APPLIED_AND_AUDITED
+M14R007,M14I007,M1P0001,REDUNDANCY_REDUCTION,Abstract closing boundary compressed into one sentence with no claim/denominator loss.,M1C001;M1C004;M1C005;M1C006;M1C012;M1C014;M1C015;M1C018;M1C019;M1C023;M1C024,NONE,NONE,NONE,NONE,APPLIED_AND_AUDITED
+M14R008,M14I008,M1P0003,SCOPE_OR_STYLE_CLARIFICATION,M1P0003 contribution-positioning sentence streamlined without changing priority firewall/citations.,M1C028,NONE,NONE,NONE,NONE,APPLIED_AND_AUDITED
+M14R009,M14I009,M1P0030,SCOPE_OR_STYLE_CLARIFICATION,M1P0030 now uses explicit dependence-on-methodological-perturbations wording.,M1C008;M1C009,NONE,NONE,NONE,NONE,APPLIED_AND_AUDITED
+M14R010,M14I010,M1P0069;M1P0070,REDUNDANCY_REDUCTION,Local Discussion redundancy reduced in M1P0069 and M1P0070 while preserving all frozen claim IDs.,M1C004;M1C005;M1C007;M1C010;M1C011;M1C013;M1C015;M1C016;M1C021;M1C022;M1C023;M1C024,NONE,NONE,NONE,NONE,APPLIED_AND_AUDITED

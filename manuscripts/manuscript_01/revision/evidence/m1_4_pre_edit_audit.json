@@ -1,0 +1,21 @@
+{
+  "issues_total": 10,
+  "mandatory_known_repairs": [
+    "M1P0046 generic validation wording",
+    "Table 1 normal-zoom readability",
+    "Table 4 normal-zoom readability"
+  ],
+  "semantic_occurrences": 138,
+  "semantic_revise": 5,
+  "severity_counts": {
+    "BLOCKING": 1,
+    "EDITORIAL": 2,
+    "MAJOR": 2,
+    "MINOR": 5
+  },
+  "status": "M1_4_PRE_EDIT_REFEREE_AUDIT_COMPLETE",
+  "v1_modified": false,
+  "v2_started": false,
+  "visual_pass": 7,
+  "visual_revise": 2
+}

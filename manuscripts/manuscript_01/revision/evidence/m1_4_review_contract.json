@@ -1,0 +1,76 @@
+{
+  "allowed_revision_actions": [
+    "scope clarification",
+    "redundancy reduction",
+    "sentence restructuring",
+    "paragraph ordering",
+    "transition improvement",
+    "caption clarification",
+    "citation placement",
+    "layout / placement changes"
+  ],
+  "artifact_role": "MANUSCRIPT1_4_SCIENTIFIC_EDITORIAL_REVIEW_CONTRACT",
+  "entry_freezes": {
+    "m1_2_commit": "7e65987511487ea7de01d1b2880cc70687823541",
+    "m1_2_tag": "manuscript1-visuals-v1",
+    "m1_3_commit": "ae0a697be742fc0c9c05fb5ddf572eaed79fd94e",
+    "m1_3_tag": "manuscript1-first-draft-v1",
+    "m1_3_tag_object": "44866215ac1c5e64d318175587caf4c4772b9cb4"
+  },
+  "firewalls": {
+    "f4_work": false,
+    "m1_1_to_m1_3_mutation": false,
+    "new_afino_execution": false,
+    "new_bibliography_search": false,
+    "new_confidence_intervals": false,
+    "new_scientific_claims": false,
+    "new_scientific_figures_tables": false,
+    "new_simulations": false,
+    "new_statistical_analysis": false,
+    "new_threshold_search": false
+  },
+  "gates": {
+    "gate1_issue_register": "COMPLETE_PRE_EDIT_AND_RESOLVED_IN_V2",
+    "gate2_semantic_language_audit": "COMPLETE_V2_ZERO_REVISE",
+    "gate3_scientific_editing": "COMPLETE",
+    "gate4_visual_readability": "COMPLETE_TABLE1_TABLE4_PASS",
+    "gate5_referee_attack_test": "COMPLETE_12_OF_12_PASS"
+  },
+  "issue_count": 10,
+  "m1_3_first_draft_mutated": false,
+  "referee_attack_test": {
+    "attack_count": 12,
+    "mapping_required": "CLAIM_AND_LIMITATION",
+    "new_claim_ids": 0,
+    "new_defense_claims": 0,
+    "new_source_ids": 0,
+    "pass_count": 12
+  },
+  "required_final_validator": "MANUSCRIPT1_SCIENTIFIC_EDITORIAL_REVIEW_PASS",
+  "schema_version": "1.0.0",
+  "semantic_occurrence_count": 138,
+  "semantic_occurrence_count_v2": 155,
+  "semantic_revise_count": 5,
+  "semantic_revise_count_v2": 0,
+  "status": "SCIENTIFIC_EDITORIAL_REVIEW_COMPLETE_VALIDATION_READY",
+  "target_journal_formatting_started": false,
+  "v1_identity": {
+    "manuscript_v1_pdf_sha256": "71fa1f614e7623e54481fbb59e059e39734201701320a0220333a0062dd00127",
+    "manuscript_v1_tex_sha256": "bf99e137972aeea9dec8739609a5937a6f1439182042ba1565fd80f3b19f2977",
+    "pdf_pages": 22
+  },
+  "v2_identity": {
+    "manuscript_v2_pdf_sha256": "3e9325f4777f243676de45a4e42809479ec95f3342b2c0cd437ddc239702ea5d",
+    "manuscript_v2_tex_sha256": "68178633764c3fc51a62434f520ed7c11f40d03a882bc6330c7546b5267baddd",
+    "pdf_pages": 22,
+    "references_v2_sha256": "aee3e5c9145828ea122e65b026e1a900d87371c25daaa15d046f255d985bbd7e"
+  },
+  "visual_baseline": {
+    "pass": 7,
+    "revise": 2
+  },
+  "visual_revised_status": {
+    "pass": 9,
+    "revise": 0
+  }
+}
