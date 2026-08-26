@@ -83,3 +83,22 @@ def test_final_validator_passes():
     assert cp.returncode==0, cp.stdout+cp.stderr
     assert "MANUSCRIPT1_SCIENTIFIC_EDITORIAL_REVIEW_PASS" in cp.stdout
     assert "MANUSCRIPT1_SUBMISSION_PLAN_VALIDATION_PASS" in cp.stdout
+
+def test_req009_title_and_author_state_resolved_confirmed():
+    r=rows(PLAN/"m1_5_submission_requirements.csv")
+    x=next(x for x in r if x["requirement_id"]=="REQ009")
+    assert x["current_manuscript_status"]=="TITLE_FROZEN_AUTHORS_RESOLVED_CONFIRMED"
+    assert x["blocking_for_submission"].lower()=="true"
+
+def test_no_blocking_unresolved_requirement_except_explicit_m1_6_portal_defer():
+    r=rows(PLAN/"m1_5_submission_requirements.csv")
+    allowed={"REQ010"}
+    offenders=[]
+    for x in r:
+        if x["blocking_for_submission"].lower()=="true" and "UNRESOLVED" in x["current_manuscript_status"]:
+            if x["requirement_id"] not in allowed:
+                offenders.append((x["requirement_id"],x["current_manuscript_status"]))
+            else:
+                action=x["action_required_in_m1_6"].lower()
+                assert any(token in action for token in ("m1.6","portal","submission"))
+    assert offenders==[]

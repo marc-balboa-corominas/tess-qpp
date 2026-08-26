@@ -87,6 +87,30 @@ def main():
     if len(assets)!=16:
         fail("submission asset plan count changed")
 
+    # Corrective v2 consistency gate:
+    # no blocking submission requirement may retain an UNRESOLVED state,
+    # except requirements explicitly deferred to M1.6 / the live portal.
+    req_by={r["requirement_id"]:r for r in req}
+    if req_by["REQ009"]["current_manuscript_status"]!="TITLE_FROZEN_AUTHORS_RESOLVED_CONFIRMED":
+        fail("REQ009 stale title/author resolution status")
+
+    explicitly_deferred_blocking_unresolved={"REQ010"}
+    for r in req:
+        status=r["current_manuscript_status"]
+        is_blocking=r["blocking_for_submission"].lower()=="true"
+        if is_blocking and "UNRESOLVED" in status:
+            if r["requirement_id"] not in explicitly_deferred_blocking_unresolved:
+                fail(
+                    "blocking submission requirement retains unresolved status: "
+                    f"{r['requirement_id']}={status}"
+                )
+            action=r["action_required_in_m1_6"].lower()
+            if not any(token in action for token in ("m1.6","portal","submission")):
+                fail(
+                    "blocking unresolved requirement is not explicitly deferred "
+                    f"to M1.6/portal: {r['requirement_id']}"
+                )
+
     # Exactly one explicitly confirmed author.
     if len(authors)!=1:
         fail("exactly one confirmed author expected")
@@ -149,7 +173,6 @@ def main():
             fail(f"scientific/formatting firewall failed: {field}")
 
     # Critical journal-decision requirements resolved or explicitly deferred.
-    req_by={r["requirement_id"]:r for r in req}
     required_statuses={
         "REQ006":"RESOLVED_ONE_CONFIRMED_AUTHOR_EMAIL",
         "REQ007":"RESOLVED_AUTHOR_ORDER_1_CORRESPONDING_AUTHOR_1",
