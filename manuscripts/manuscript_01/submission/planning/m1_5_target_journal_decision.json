@@ -1,0 +1,44 @@
+{
+  "acceptance_rate_speculation_used": false,
+  "access_date": "2026-08-27",
+  "alternatives_ranked": [
+    {
+      "article_type": "Regular paper",
+      "journal": "Astronomy & Astrophysics",
+      "rank": 2
+    },
+    {
+      "article_type": "Paper",
+      "journal": "Monthly Notices of the Royal Astronomical Society",
+      "rank": 3
+    }
+  ],
+  "apc_or_discount_route": "UNRESOLVED_UNTIL_SUBMISSION",
+  "article_type": "Article",
+  "author_metadata_gate": "RESOLVED_AND_AUTHOR_CONFIRMED",
+  "decision_method": "ORDERED_LEXICOGRAPHIC_CRITERIA_FROM_MENTOR_SPEC",
+  "dual_anonymous_review": "NO",
+  "journal_abbreviation": "ApJ",
+  "journal_formatting_started": false,
+  "official_sources": [
+    "https://journals.aas.org/scope-statements/",
+    "https://journals.aas.org/pre-submission-checklist-for-aas-journal-authors/",
+    "https://journals.aas.org/aastexguide",
+    "https://journals.aas.org/article-charges-and-copyright/",
+    "https://www.aanda.org/doc_journal/instructions/aadoc.pdf",
+    "https://academic.oup.com/mnras/pages/general_instructions"
+  ],
+  "preprint_arxiv_before_peer_review": "YES",
+  "schema_version": "1.0.0",
+  "selected_candidate_id": "J001",
+  "selection_rationale": [
+    "All three candidates are scientifically viable.",
+    "ApJ has the strongest direct fit to an astrophysical application of a QPP analysis/reproducibility framework to TESS stellar flares.",
+    "Its audience is directly aligned with the present astrophysical application and the current 212-word abstract already satisfies the <=250-word constraint.",
+    "AASTeX v7 supports the wide/rotated table handling required by the frozen visual package without scientific regeneration.",
+    "AAS software/data policies are compatible with the repository/OSF reproducibility architecture.",
+    "APC/cost is seventh in the mandated decision order and therefore does not override the higher-order scope/audience/manuscript-fit result."
+  ],
+  "status": "SELECTED_AND_METADATA_GATE_RESOLVED",
+  "target_journal": "The Astrophysical Journal"
+}

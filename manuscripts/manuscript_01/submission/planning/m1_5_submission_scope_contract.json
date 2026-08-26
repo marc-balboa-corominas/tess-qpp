@@ -1,0 +1,56 @@
+{
+  "acceptance_rate_speculation_used": false,
+  "artifact_role": "MANUSCRIPT1_5_SUBMISSION_SCOPE_CONTRACT",
+  "author_gate": "RESOLVED_AND_AUTHOR_CONFIRMED",
+  "author_input_resolution": {
+    "aas_dar_preprint_source": "https://journals.aas.org/pre-submission-checklist-for-aas-journal-authors/",
+    "aas_style_guide_source": "https://journals.aas.org/aas-style-guide/",
+    "access_date": "2026-08-27",
+    "affiliations_resolved": true,
+    "all_authors_confirmed": true,
+    "author_count": 1,
+    "corresponding_author_count": 1,
+    "dual_anonymous_review": "NO",
+    "personal_postal_address_policy": "WITHHELD_USING_AAS_INDEPENDENT_RESEARCHER_STYLE_EXCEPTION",
+    "preprint_arxiv_before_peer_review": "YES"
+  },
+  "authorized_web_scope": [
+    "official journal pages",
+    "official instructions for authors",
+    "DOI/Crossref or official pages for the eight already-frozen references",
+    "metadata directly supplied and confirmed by authors"
+  ],
+  "candidate_journal_limit": 3,
+  "decision_criteria_order": [
+    "scientific scope fit",
+    "methodological-paper fit",
+    "audience fit",
+    "manuscript-length/visual fit",
+    "data/code-policy compatibility",
+    "submission burden",
+    "publication model / APC implications"
+  ],
+  "entry_freeze": {
+    "m1_4_commit": "10e4ac7017950f60e74a1f0fddb41f6004f7755d",
+    "m1_4_tag": "manuscript1-reviewed-draft-v1",
+    "m1_4_tag_object": "bcf8d54483ccedb62b9817bf94d81e3a72e8fd96",
+    "manuscript_v2_pdf_sha256": "3e9325f4777f243676de45a4e42809479ec95f3342b2c0cd437ddc239702ea5d",
+    "manuscript_v2_tex_sha256": "68178633764c3fc51a62434f520ed7c11f40d03a882bc6330c7546b5267baddd"
+  },
+  "journal_formatting_started": false,
+  "nature": "EDITORIAL_ADMINISTRATIVE_ONLY",
+  "prohibited": [
+    "new scientific references",
+    "BAII expansion",
+    "new scientific claims",
+    "scientific numerical changes",
+    "new AFINO execution",
+    "new simulations",
+    "new statistical inference",
+    "figure/table scientific regeneration",
+    "journal formatting during M1.5"
+  ],
+  "required_final_validator_marker": "MANUSCRIPT1_SUBMISSION_PLAN_VALIDATION_PASS",
+  "schema_version": "1.0.0",
+  "status": "FINAL_FREEZE_CANDIDATE"
+}

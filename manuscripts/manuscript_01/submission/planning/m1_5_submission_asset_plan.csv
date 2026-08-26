@@ -1,0 +1,17 @@
+asset_id,asset,planned_task,production_action,scientific_content_rule,status
+ASSET001,journal-formatted manuscript,M1.6,CREATE_FROM_FROZEN_M1_4_V2,AASTeX v7 ApJ Article; no scientific changes,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET002,submission PDF,M1.6,COMPILE_FROM_JOURNAL_FORMATTED_SOURCE,Must include line numbers for review,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET003,source TeX bundle,M1.6,CREATE_FLAT_PORTAL_BUNDLE,All assets one directory level,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET004,5 frozen figures,M1.6,REUSE_BYTE_EXACT_M1_2,No scientific regeneration,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET005,4 frozen tables,M1.6,REUSE_SCIENTIFIC_CONTENT_M1_2,Layout conversion only as required,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET006,references,M1.6,FORMAT_EIGHT_EXISTING_WORKS_ONLY,Apply AAS style; Howard DOI metadata correction is same-work metadata,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET007,cover letter,M1.6,CREATE,Required if DAR; planned regardless for editor-facing package,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET008,data availability statement,M1.6,CREATE_FROM_FROZEN_REPOSITORY_DATA_MAP,No new results,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET009,code availability statement,M1.6,CREATE_FROM_GITHUB_OSF_FREEZES,Pin exact versions/tags,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET010,author contributions,M1.6,CREATE_FROM_M1_5_CONFIRMED_ROLES,Author gate currently unresolved,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET011,conflict statement,M1.6,CREATE_FROM_AUTHOR_CONFIRMATION,Do not infer,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET012,funding statement,M1.6,CREATE_FROM_AUTHOR_CONFIRMATION,Do not infer,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET013,supplementary-material manifest,M1.6,CREATE,Decide what is portal asset vs external repository,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET014,arXiv/preprint package if authorized,M1.6,CONDITIONAL,Depends on author DAR/preprint choice,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET015,UAT concepts,M1.6,SELECT_1_TO_12_FROM_FROZEN_CONTENT,Portal metadata only,PLANNED_NOT_PRODUCED_IN_M1_5
+ASSET016,submission portal preflight record,M1.6,CREATE,Verify live fields immediately before submission,PLANNED_NOT_PRODUCED_IN_M1_5
