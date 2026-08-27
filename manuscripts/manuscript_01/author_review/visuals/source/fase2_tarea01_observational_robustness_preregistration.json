@@ -1,0 +1,430 @@
+{
+  "study_id": "afino_tess_frozen_cohort_robustness_v1",
+  "study_version": "1.0.0",
+  "preregistration_status": "FROZEN_BEFORE_VARIANT_MATERIALIZATION",
+  "candidate_discovery_allowed": false,
+  "normative_links": {
+    "fase0_tarea15_reproduced_baseline.json": {
+      "sha256": "4c0bf97f875b9beb2bd2d619b26fa77b083fb946a05d3ee48c32896046690dc7",
+      "verified": true
+    },
+    "fase1_tarea14_phase1_decision.json": {
+      "sha256": "356504bce1df734bfd5cf01cf1e84211fc5a458f6bf81ddb5458ef0a9166ef1a",
+      "verified": true
+    },
+    "fase1_tarea14_phase2_entry_requirements.csv": {
+      "sha256": "a2472a525cca398494faf876af1f7894bb0b625067bd750f156095eedd5cc298",
+      "verified": true
+    },
+    "fase1_tarea14_phase1_synthesis_audit.json": {
+      "sha256": "0255843af4b5f935aa6ff75398e695d3b8f5bf8bf20b57d4ee463eb741be22a7",
+      "verified": true
+    }
+  },
+  "phase1_gate": {
+    "required_decision": "PHASE1_COMPLETE_PROCEED_TO_OBSERVATIONAL_ROBUSTNESS_WITH_LIMITATIONS",
+    "observed_decision": "PHASE1_COMPLETE_PROCEED_TO_OBSERVATIONAL_ROBUSTNESS_WITH_LIMITATIONS",
+    "candidate_discovery_allowed": false,
+    "permitted_next_phase": "Análisis prerregistrado de robustez de las cinco detecciones y cinco controles observacionales ya congelados, aplicando controles simétricos y sin ampliar la cohorte."
+  },
+  "cohort": {
+    "cohort_csv": "fase2_tarea01_frozen_observational_cohort.csv",
+    "cohort_ordering": "calibration_pair, P1, P2, P3, P4; PUBLISHED_QPP_REPRODUCED before MATCHED_NOT_SELECTED",
+    "event_count": 10,
+    "pair_count": 5,
+    "published_qpp_reproduced_count": 5,
+    "matched_not_selected_count": 5,
+    "event_ids_source": "Existing baseline variant_id values from F0.10 and F0.13/F0.14",
+    "cohort_expansion_allowed": false,
+    "event_substitution_allowed": false,
+    "exclusion_after_variant_inspection_allowed": false,
+    "labels": [
+      "PUBLISHED_QPP_REPRODUCED",
+      "MATCHED_NOT_SELECTED"
+    ],
+    "forbidden_labels": [
+      "true_positive",
+      "true_negative",
+      "ground_truth"
+    ]
+  },
+  "window_perturbations": {
+    "csv": "fase2_tarea01_window_perturbations.csv",
+    "count": 13,
+    "index_convention": "inclusive FITS row indices",
+    "delta_start_interpretation": {
+      "negative": "earlier start",
+      "positive": "later start"
+    },
+    "delta_end_interpretation": {
+      "negative": "earlier end",
+      "positive": "later end"
+    },
+    "frozen_peak_must_remain_inside_window": true,
+    "automatic_boundary_compensation_allowed": false,
+    "rows": [
+      {
+        "window_variant_id": "W00",
+        "delta_start_cadences": 0,
+        "delta_end_cadences": 0,
+        "is_baseline": true,
+        "perturbation_family": "baseline",
+        "description": "baseline"
+      },
+      {
+        "window_variant_id": "WSm2",
+        "delta_start_cadences": -2,
+        "delta_end_cadences": 0,
+        "is_baseline": false,
+        "perturbation_family": "start_only",
+        "description": "inicio dos cadencias antes"
+      },
+      {
+        "window_variant_id": "WSm1",
+        "delta_start_cadences": -1,
+        "delta_end_cadences": 0,
+        "is_baseline": false,
+        "perturbation_family": "start_only",
+        "description": "inicio una cadencia antes"
+      },
+      {
+        "window_variant_id": "WSp1",
+        "delta_start_cadences": 1,
+        "delta_end_cadences": 0,
+        "is_baseline": false,
+        "perturbation_family": "start_only",
+        "description": "inicio una cadencia después"
+      },
+      {
+        "window_variant_id": "WSp2",
+        "delta_start_cadences": 2,
+        "delta_end_cadences": 0,
+        "is_baseline": false,
+        "perturbation_family": "start_only",
+        "description": "inicio dos cadencias después"
+      },
+      {
+        "window_variant_id": "WEm2",
+        "delta_start_cadences": 0,
+        "delta_end_cadences": -2,
+        "is_baseline": false,
+        "perturbation_family": "end_only",
+        "description": "final dos cadencias antes"
+      },
+      {
+        "window_variant_id": "WEm1",
+        "delta_start_cadences": 0,
+        "delta_end_cadences": -1,
+        "is_baseline": false,
+        "perturbation_family": "end_only",
+        "description": "final una cadencia antes"
+      },
+      {
+        "window_variant_id": "WEp1",
+        "delta_start_cadences": 0,
+        "delta_end_cadences": 1,
+        "is_baseline": false,
+        "perturbation_family": "end_only",
+        "description": "final una cadencia después"
+      },
+      {
+        "window_variant_id": "WEp2",
+        "delta_start_cadences": 0,
+        "delta_end_cadences": 2,
+        "is_baseline": false,
+        "perturbation_family": "end_only",
+        "description": "final dos cadencias después"
+      },
+      {
+        "window_variant_id": "WX1",
+        "delta_start_cadences": -1,
+        "delta_end_cadences": 1,
+        "is_baseline": false,
+        "perturbation_family": "symmetric_extension",
+        "description": "extensión simétrica de una cadencia"
+      },
+      {
+        "window_variant_id": "WC1",
+        "delta_start_cadences": 1,
+        "delta_end_cadences": -1,
+        "is_baseline": false,
+        "perturbation_family": "symmetric_contraction",
+        "description": "contracción simétrica de una cadencia"
+      },
+      {
+        "window_variant_id": "WX2",
+        "delta_start_cadences": -2,
+        "delta_end_cadences": 2,
+        "is_baseline": false,
+        "perturbation_family": "symmetric_extension",
+        "description": "extensión simétrica de dos cadencias"
+      },
+      {
+        "window_variant_id": "WC2",
+        "delta_start_cadences": 2,
+        "delta_end_cadences": -2,
+        "is_baseline": false,
+        "perturbation_family": "symmetric_contraction",
+        "description": "contracción simétrica de dos cadencias"
+      }
+    ]
+  },
+  "processing_profiles": {
+    "csv": "fase2_tarea01_processing_profiles.csv",
+    "count": 6,
+    "rows": [
+      {
+        "processing_profile_id": "P00",
+        "flux_product": "PDCSAP",
+        "quality_policy": "finite_all",
+        "detrending": "none"
+      },
+      {
+        "processing_profile_id": "P01",
+        "flux_product": "SAP",
+        "quality_policy": "finite_all",
+        "detrending": "none"
+      },
+      {
+        "processing_profile_id": "P02",
+        "flux_product": "PDCSAP",
+        "quality_policy": "q0_native",
+        "detrending": "none"
+      },
+      {
+        "processing_profile_id": "P03",
+        "flux_product": "SAP",
+        "quality_policy": "q0_native",
+        "detrending": "none"
+      },
+      {
+        "processing_profile_id": "P04",
+        "flux_product": "PDCSAP",
+        "quality_policy": "finite_all",
+        "detrending": "linear_residual_plus_one"
+      },
+      {
+        "processing_profile_id": "P05",
+        "flux_product": "SAP",
+        "quality_policy": "finite_all",
+        "detrending": "linear_residual_plus_one"
+      }
+    ],
+    "finite_all_definition": "np.isfinite(time) & np.isfinite(flux)",
+    "q0_native_definition": "np.isfinite(time) & np.isfinite(flux) & (QUALITY == 0)",
+    "q0_native_interpolation": false,
+    "linear_residual_plus_one": {
+      "x": "time_seconds - np.mean(time_seconds)",
+      "X": "np.column_stack([np.ones(len(x)), x])",
+      "beta": "np.linalg.lstsq(X, flux, rcond=None)[0]",
+      "trend": "X @ beta",
+      "scale": "np.median(flux)",
+      "flux_transformed": "1.0 + (flux - trend) / scale",
+      "requirements": [
+        "scale finite",
+        "scale != 0",
+        "trend finite",
+        "flux_transformed finite"
+      ],
+      "interpretation": "preprocessing sensitivity test, not a physical flare model"
+    },
+    "profiles_forbidden_after_freeze": [
+      "q0 plus detrending",
+      "interpolation",
+      "gap filling",
+      "Savitzky-Golay filters",
+      "additional profile combinations"
+    ]
+  },
+  "admissibility": {
+    "statuses": [
+      "ELIGIBLE_FOR_AFINO",
+      "MISSING_PRODUCT",
+      "WINDOW_OUT_OF_RANGE",
+      "PEAK_OUTSIDE_WINDOW",
+      "PEAK_REMOVED_BY_QUALITY",
+      "TOO_FEW_CADENCES",
+      "NONFINITE_INPUT",
+      "IRREGULAR_SAMPLING",
+      "DETREND_FAILURE"
+    ],
+    "status_precedence": [
+      "MISSING_PRODUCT",
+      "WINDOW_OUT_OF_RANGE",
+      "PEAK_OUTSIDE_WINDOW",
+      "PEAK_REMOVED_BY_QUALITY",
+      "TOO_FEW_CADENCES",
+      "NONFINITE_INPUT",
+      "IRREGULAR_SAMPLING",
+      "DETREND_FAILURE",
+      "ELIGIBLE_FOR_AFINO"
+    ],
+    "eligible_requirements": [
+      "requested product exists",
+      "shifted inclusive indices are within the frozen FITS product",
+      "frozen peak index belongs to the shifted raw window",
+      "after quality filtering at least 15 cadences remain",
+      "frozen peak row remains after quality filtering",
+      "retained time is strictly increasing",
+      "retained original FITS indices are consecutive",
+      "retained time has no duplicates",
+      "maximum interval deviation from median cadence <= 1e-3 s",
+      "retained time and flux are finite",
+      "detrending is valid when requested"
+    ],
+    "minimum_cadences": 15,
+    "maximum_interval_deviation_from_median_s": 0.001,
+    "interpolation_allowed": false,
+    "gap_filling_allowed": false,
+    "reindexing_to_hide_gaps_allowed": false,
+    "inadmissible_as_not_selected_allowed": false,
+    "silent_denominator_exclusion_allowed": false,
+    "eligibility_resolution_task": "F2.2"
+  },
+  "planned_decision_grid": {
+    "csv": "fase2_tarea01_planned_decision_grid.csv",
+    "primary": {
+      "event_count": 10,
+      "window_count": 13,
+      "profile_count": 6,
+      "external_optimizer_seeds": [
+        0
+      ],
+      "planned_decisions": 780,
+      "planned_model_calls": 2340
+    },
+    "stability": {
+      "event_count": 10,
+      "window_variant_ids": [
+        "W00"
+      ],
+      "profile_count": 6,
+      "external_optimizer_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "planned_decisions": 540,
+      "planned_model_calls": 1620
+    },
+    "planned_decisions_maximum": 1320,
+    "planned_model_calls_maximum": 3960,
+    "inadmissible_rows_retained_in_grid": true,
+    "calls_only_for_eligible_variants": true,
+    "planned_models": [
+      "M0",
+      "M1",
+      "M2"
+    ],
+    "candidate_discovery_use": false,
+    "exact_eligible_count_frozen_in_task": "F2.2"
+  },
+  "future_afino_protocol": {
+    "models": {
+      "M0": "pow_const",
+      "M1": "pow_const_gauss",
+      "M2": "bpow_const"
+    },
+    "low_frequency_cutoff_hz": 0.025,
+    "low_frequency_cutoff_expression": "1.0 / 40.0",
+    "m1_bounds": [
+      [
+        -10.0,
+        10.0
+      ],
+      [
+        -1.0,
+        6.0
+      ],
+      [
+        -20.0,
+        10.0
+      ],
+      [
+        -16.0,
+        5.0
+      ],
+      [
+        "np.log(1.0 / 300.0)",
+        "np.log(1.0 / 40.0)"
+      ],
+      [
+        0.05,
+        0.25
+      ]
+    ],
+    "seed_reset": "np.random.seed(external_optimizer_seed) before each model",
+    "selection_rule": "(BIC_M0 - BIC_M1 > 10.0) and (BIC_M2 - BIC_M1 > 10.0)",
+    "threshold": 10.0,
+    "post_result_protocol_changes_allowed": false
+  },
+  "outcomes": {
+    "eligible_variant_fields": [
+      "decision_status",
+      "qpp_selected",
+      "delta_bic_0_1",
+      "delta_bic_2_1",
+      "joint_margin",
+      "bic_winner",
+      "classification_retained_vs_frozen_baseline",
+      "estimated_period_s",
+      "period_label",
+      "warning_count_by_model",
+      "bound_hit_by_model"
+    ],
+    "inadmissible_variant_contract": {
+      "decision_status": "INPUT_INADMISSIBLE",
+      "admissibility_reason": "required",
+      "qpp_selected": null,
+      "BIC": null
+    },
+    "event_classification_robustness_fields": [
+      "eligible_primary_variants",
+      "baseline_classification_retained_count",
+      "selection_loss_count",
+      "selection_gain_count",
+      "inadmissible_variant_count",
+      "retention_fraction_among_eligible"
+    ],
+    "robustness_threshold": null,
+    "period_shift_vs_baseline_s_rule": "compute only when frozen baseline and variant are both selected and both periods are available",
+    "new_control_selection_period_label": "formal M1 center; not recovery of a true period",
+    "pair_analysis": "same variant identifiers applied to both pair members; describe concordant or discordant changes only",
+    "sensitivity_or_specificity_test": false
+  },
+  "denominators": {
+    "planned_primary_maximum": 780,
+    "planned_stability_maximum": 540,
+    "planned_total_maximum": 1320,
+    "eligible_primary_denominator": "number of ELIGIBLE_FOR_AFINO primary variants per event",
+    "inadmissible_variants": "reported separately and never counted as non-selection",
+    "stability_denominator": "eligible W00 event-profile combinations × seeds 1..9",
+    "pair_denominator": "pairs where both members have the same eligible variant; reported descriptively"
+  },
+  "prohibited_interpretations": {
+    "observational_ground_truth_established": false,
+    "sensitivity_estimated": false,
+    "specificity_estimated": false,
+    "observational_false_positive_rate_estimated": false,
+    "afino_validated": false,
+    "physical_qpp_truth_inferred": false,
+    "candidate_discovery_allowed": false
+  },
+  "prohibited_operations": [
+    "post hoc significance tests",
+    "selection of favorable variants",
+    "averaging inadmissibility with non-selection",
+    "cohort changes",
+    "new robustness thresholds",
+    "interpreting MATCHED_NOT_SELECTED as physical absence of QPP",
+    "new event downloads",
+    "candidate search"
+  ],
+  "next_task": "F2.2 — materialize 780 primary variants, resolve admissibility and freeze the exact execution plan before AFINO"
+}

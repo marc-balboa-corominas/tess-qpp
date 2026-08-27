@@ -1,0 +1,70 @@
+{
+  "artifact_role": "FINAL_RULE_FREEZE",
+  "development_scope": "DEVELOPMENT_ONLY_PRE_HELDOUT",
+  "execution_boundary": {
+    "candidate_search_rerun": false,
+    "generator_calls": 0,
+    "heldout_accessed": false,
+    "heldout_generated": false,
+    "new_afino_calls": 0,
+    "runner_up_search": false
+  },
+  "final_rule": {
+    "alternate_candidate_search": "FORBIDDEN",
+    "candidate_rule_promoted": false,
+    "comparison_operator": "STRICT_GREATER_THAN",
+    "correction_claim": "NOT_ESTABLISHED",
+    "rule_type": "AFINO_0_5_BASELINE",
+    "runner_up_rescue": "FORBIDDEN",
+    "selection_rule": "delta_BIC01 > 10 AND delta_BIC21 > 10",
+    "t01": 10.0,
+    "t21": 10.0,
+    "threshold_mutation_after_freeze": "FORBIDDEN"
+  },
+  "freeze_id": "F3B4_FINAL_RULE_FREEZE_BASELINE_ONLY_V1",
+  "freeze_state": "FINAL_RULE_FREEZE_BASELINE_ONLY",
+  "heldout_boundary": {
+    "heldout_accessed_at_freeze": false,
+    "heldout_generated_at_freeze": false,
+    "heldout_materialization_before_exact_git_freeze": "FORBIDDEN",
+    "heldout_used_for_rule_selection": false,
+    "next_permitted_step_after_validation_and_exact_git_freeze": "HELDOUT_SINGLE_USE_EVALUATION_GATE",
+    "rule_tuning_after_heldout": "FORBIDDEN"
+  },
+  "phase": "F3B.4",
+  "promotion_basis": {
+    "all_four_passed": false,
+    "candidate_rule_promoted": false,
+    "criteria_passed": 3,
+    "criteria_required": 4,
+    "failed_criteria": [
+      "C4_LOWER_CI_DELTA_SPECIFICITY_GT_NEG_0_025"
+    ],
+    "rejected_development_candidate": {
+      "balanced_accuracy": 0.635,
+      "balanced_accuracy_improvement": 0.0955555555555555,
+      "baseline_balanced_accuracy": 0.5394444444444445,
+      "candidate_id": "DEVELOPMENT_OPTIMUM_001",
+      "t01": -7.517054630023225,
+      "t21": -4.4514075428899105
+    }
+  },
+  "provenance": {
+    "analysis_implementation_binding_sha256": "4ec52789deb06f40cc6a80b31b0a98852af7723971625c5e86bebd17cc2997cf",
+    "baseline_metrics_sha256": "718f1a03af218da8a3bc52cdea9f8007f7b3dffc3477038a5577eef0f162250c",
+    "candidate_rule_gate_sha256": "f47b2b03aff0d60d8dbce040d7298d1904295552f610cdf92bba6a48f6eddbf9",
+    "candidate_rule_policy_sha256": "8b6f65739825ff1b67fc33694861298dbf5e704685deee2f3b9594fab1e6325a",
+    "promotion_gate_upstream_provenance": {
+      "analysis_implementation_binding_sha256": "4ec52789deb06f40cc6a80b31b0a98852af7723971625c5e86bebd17cc2997cf",
+      "baseline_metrics_sha256": "718f1a03af218da8a3bc52cdea9f8007f7b3dffc3477038a5577eef0f162250c",
+      "candidate_rule_development_sha256": "b67de57a2678842bda6bdae451b14d9bb8114e5c6c8fee7986e095d70cf94775",
+      "candidate_rule_policy_sha256": "8b6f65739825ff1b67fc33694861298dbf5e704685deee2f3b9594fab1e6325a",
+      "candidate_threshold_axes_sha256": "52845deea2db624ee8d213449448585361feb8434c477103b4afa5504bf44be1",
+      "paired_bootstrap_sha256": "67da9348e488076e35efad1c3b355cedd1027100dadd501aeba717779288d406",
+      "success_failure_gate_sha256": "23d65ce7dc281799a484012c19a883f27ce17fbf5af0022c856bd7b946b6bfab"
+    },
+    "success_failure_gate_sha256": "23d65ce7dc281799a484012c19a883f27ce17fbf5af0022c856bd7b946b6bfab"
+  },
+  "schema_version": "1.0.0",
+  "status": "FINAL_RULE_FROZEN"
+}

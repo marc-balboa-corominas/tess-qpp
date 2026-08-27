@@ -1,0 +1,112 @@
+{
+  "contract_id": "PHASE3A_COHORT_CONTRACT_V1",
+  "format_note": "JSON-compatible YAML 1.2; parsed deterministically as JSON by the offline validator.",
+  "status": "FROZEN_BEFORE_COHORT_MATERIALIZATION_WITH_EVENT_LEVEL_ACCESS_VERIFICATION_PENDING",
+  "parent_catalogue": {
+    "source_work_id": "BAIIW0001",
+    "preferred_version_id": "BAIIV0002",
+    "title": "Stationary quasi-periodic pulsations in 20-second cadence TESS flares",
+    "reported_parent_flare_count": 3878,
+    "reported_qpp_reference_count": 61,
+    "reported_qpp_reference_star_count": 57,
+    "catalogue_artifact_rule": "F3A.2 must locate and checksum the exact event-level source table or machine-readable representation. A paper-level count is not sufficient for materialization.",
+    "no_automatic_fallback": true
+  },
+  "reference_event_population": {
+    "definition": "Every unique BAIIW0001 source event carrying the source QPP-selected observational classification, before any F3A execution or admissibility result.",
+    "project_reference_role": "PUBLISHED_QPP_REFERENCE",
+    "expected_max_from_reported_count": 61,
+    "sampling": "ALL_SOURCE_QPP_REFERENCES",
+    "replacement_after_materialization_failure": false
+  },
+  "comparison_event_population": {
+    "definition": "BAIIW0001 parent-catalogue flare events not QPP-selected by the source classification procedure. This is observational non-selection, not a true-negative class.",
+    "project_reference_role": "PUBLISHED_NOT_SELECTED_REFERENCE",
+    "sampling": "DETERMINISTIC_MATCHED_WITHOUT_REPLACEMENT",
+    "matching_ratio": "1:1 control per reference event",
+    "replacement_after_materialization_failure": false
+  },
+  "allowed_sectors": {
+    "minimum": 27,
+    "maximum": 80,
+    "rule": "Source-catalogue events only; no sector expansion in F3A.1/F3A.2."
+  },
+  "cadence_policy": {
+    "required_nominal_cadence_s": 20,
+    "archive_product_requirement": "TESS light-curve product containing TIME, SAP_FLUX, PDCSAP_FLUX and QUALITY at the source-event cadence.",
+    "exact_product_identifier_rule": "Resolved and frozen in F3A.2 from stable source identifiers before any AFINO execution."
+  },
+  "target_classes": "All stellar targets represented by the primary source catalogue; no additional astrophysical class filter is introduced by F3A.",
+  "event_identifier_contract": {
+    "canonical_key_fields": [
+      "source_work_id",
+      "tic_id",
+      "sector",
+      "source_event_identifier"
+    ],
+    "required_source_fields": [
+      "stable event identifier or deterministic source-row key",
+      "TIC identifier",
+      "sector",
+      "flare start marker",
+      "flare peak marker",
+      "flare end marker"
+    ],
+    "fallback_if_source_event_identifier_absent": "Use a canonical hash of source table checksum + canonical row number + TIC + sector + source peak marker; freeze mapping in F3A.2.",
+    "failure_policy": "If a stable one-to-one event identity cannot be established, PHASE3A cohort materialization is blocked and a versioned design amendment is required."
+  },
+  "time_reference_contract": {
+    "source_markers": "flare start/peak/end markers from the primary source record",
+    "archive_mapping": "Map source markers deterministically to the native TESS cadence indices without optimizing boundaries against F3A outcomes.",
+    "baseline_window": "W00 uses the mapped inclusive source start and end indices and preserves the mapped source peak index.",
+    "temporal_convention": "Use the effective frozen AFINO 0.5 temporal convention inherited from F0-F2.",
+    "failure_policy": "Unresolvable or ambiguous source-to-cadence timing is INPUT_INADMISSIBLE; no boundary tuning is allowed."
+  },
+  "inclusion_criteria": [
+    "Event belongs to the frozen BAIIW0001 source universe in Sectors 27-80.",
+    "Event has a deterministic source identity and source observational reference label before F3A output is inspected.",
+    "Reference-event stratum includes all source QPP-selected events; comparison candidates come only from source non-selected flares.",
+    "Required matching metadata are present before the deterministic comparison sample is frozen."
+  ],
+  "exclusion_criteria": [
+    "Exact duplicate source records after canonical-key resolution.",
+    "Unresolvable conflicting duplicate identities.",
+    "Missing metadata required to construct the deterministic source event key or comparison matching before materialization.",
+    "Events outside the primary source sector/cadence universe."
+  ],
+  "duplicate_policy": {
+    "exact_duplicate": "Collapse exact duplicate source records to one canonical event before matching; preserve all source row references in the F3A.2 provenance map.",
+    "conflicting_duplicate": "Do not adjudicate from F3A results. Mark provenance conflict and block that event from primary transition analysis until source provenance is resolved.",
+    "different_flares_same_star": "Distinct events if source event identifiers/times differ."
+  },
+  "repeated_sector_policy": "The same TIC observed in different sectors is not a duplicate. Each source flare event remains distinct; sector is part of the canonical event key.",
+  "same_star_multiple_flare_policy": "Multiple source flares on one star remain separate observational events. Dependence is disclosed; no claim of event-level statistical independence is made.",
+  "comparison_sampling_policy": {
+    "ratio": 1,
+    "without_replacement": true,
+    "reference_iteration_order": "Ascending canonical reference-event key.",
+    "eligible_pool": "Primary-source non-selected flare events not already assigned as a comparison.",
+    "matching_variables": [
+      "tic_id",
+      "sector",
+      "log_duration"
+    ],
+    "duration_definition": "log(max(source_end_time-source_start_time, one cadence)); source timing only, before F3A execution.",
+    "matching_fallback_hierarchy": [
+      "same TIC and same sector; nearest log_duration",
+      "same TIC in any allowed sector; nearest log_duration",
+      "same sector; nearest log_duration",
+      "global allowed-sector pool; nearest log_duration"
+    ],
+    "matching_tie_breaking": [
+      "smallest absolute log-duration difference",
+      "lexicographically smallest canonical comparison-event key"
+    ],
+    "insufficient_pool_policy": "Record unmatched reference; do not reuse a control, expand sectors, alter ratio, or use F3A outcomes."
+  },
+  "missing_product_policy": "Membership is not rewritten. During F3A.2/materialization the event receives INPUT_INADMISSIBLE/MISSING_PRODUCT and remains visible in planned denominators.",
+  "baseline_reproduction_mismatch_policy": "Membership is not rewritten. W00/P00/seed0 disagreement with the frozen source reference becomes REFERENCE_BASELINE_MISMATCH; the event remains documented but is excluded from robustness denominators that require a reproducible baseline.",
+  "candidate_discovery_authorized": false,
+  "cohort_materialized": false,
+  "scientific_results_used_for_cohort_selection": false
+}

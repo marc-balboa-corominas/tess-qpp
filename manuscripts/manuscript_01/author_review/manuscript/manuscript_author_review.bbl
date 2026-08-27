@@ -1,0 +1,323 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Belov2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=d8f97f8ffef303a6d5618d086df3383a}{%
+           family={Belov},
+           familyi={B\bibinitperiod},
+           given={Sergey\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=253a1e1b597624223d6c5c6449016f16}{%
+           family={Kolotkov},
+           familyi={K\bibinitperiod},
+           given={Dmitrii\bibnamedelima Y.},
+           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db901bd7de083ae211fcf7d09723ec33}{%
+           family={Nakariakov},
+           familyi={N\bibinitperiod},
+           given={Valery\bibnamedelima M.},
+           giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f518bf09394d164824feec2579fee8a1}{%
+           family={Broomhall},
+           familyi={B\bibinitperiod},
+           given={Anne-Marie},
+           giveni={A\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{acf272b11389b2083493033ac2584d58}
+      \strng{fullhash}{c632e443647b428dc5402dd0a6609d89}
+      \strng{fullhashraw}{c632e443647b428dc5402dd0a6609d89}
+      \strng{bibnamehash}{acf272b11389b2083493033ac2584d58}
+      \strng{authorbibnamehash}{acf272b11389b2083493033ac2584d58}
+      \strng{authornamehash}{acf272b11389b2083493033ac2584d58}
+      \strng{authorfullhash}{c632e443647b428dc5402dd0a6609d89}
+      \strng{authorfullhashraw}{c632e443647b428dc5402dd0a6609d89}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal Supplement Series}
+      \field{title}{Detecting Quasiperiodic Pulsations in Solar and Stellar Flares with a Neural Network}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.3847/1538-4365/ad6f98
+      \endverb
+    \endentry
+    \entry{Broomhall2019}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2e32bde11a09a39edae9097e46946e9f}{%
+           family={{Broomhall et al.}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e32bde11a09a39edae9097e46946e9f}
+      \strng{fullhash}{2e32bde11a09a39edae9097e46946e9f}
+      \strng{fullhashraw}{2e32bde11a09a39edae9097e46946e9f}
+      \strng{bibnamehash}{2e32bde11a09a39edae9097e46946e9f}
+      \strng{authorbibnamehash}{2e32bde11a09a39edae9097e46946e9f}
+      \strng{authornamehash}{2e32bde11a09a39edae9097e46946e9f}
+      \strng{authorfullhash}{2e32bde11a09a39edae9097e46946e9f}
+      \strng{authorfullhashraw}{2e32bde11a09a39edae9097e46946e9f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal Supplement Series}
+      \field{title}{A blueprint of state-of-the-art techniques for detecting quasi-periodic pulsations in solar and stellar flares}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.3847/1538-4365/ab40b3
+      \endverb
+    \endentry
+    \entry{HowardMacGregor2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b9f70cbb473c65c19063cc40e14be4c4}{%
+           family={Howard},
+           familyi={H\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=b52a09d89bc8e4021b68d526d7061210}{%
+           family={MacGregor},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{540e9242c4fc40f2e1bd9ca13f17d481}
+      \strng{fullhash}{540e9242c4fc40f2e1bd9ca13f17d481}
+      \strng{fullhashraw}{540e9242c4fc40f2e1bd9ca13f17d481}
+      \strng{bibnamehash}{540e9242c4fc40f2e1bd9ca13f17d481}
+      \strng{authorbibnamehash}{540e9242c4fc40f2e1bd9ca13f17d481}
+      \strng{authornamehash}{540e9242c4fc40f2e1bd9ca13f17d481}
+      \strng{authorfullhash}{540e9242c4fc40f2e1bd9ca13f17d481}
+      \strng{authorfullhashraw}{540e9242c4fc40f2e1bd9ca13f17d481}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{title}{No Such Thing as a Simple Flare: Substructure and Quasi-periodic Pulsations Observed in a Statistical Sample of 20 s Cadence TESS Flares}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.3847/1538-4357/ac426e
+      \endverb
+    \endentry
+    \entry{Inglis2016}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=101e357fac34c784a859ddfdb575ce4e}{%
+           family={{Inglis et al.}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{101e357fac34c784a859ddfdb575ce4e}
+      \strng{fullhash}{101e357fac34c784a859ddfdb575ce4e}
+      \strng{fullhashraw}{101e357fac34c784a859ddfdb575ce4e}
+      \strng{bibnamehash}{101e357fac34c784a859ddfdb575ce4e}
+      \strng{authorbibnamehash}{101e357fac34c784a859ddfdb575ce4e}
+      \strng{authornamehash}{101e357fac34c784a859ddfdb575ce4e}
+      \strng{authorfullhash}{101e357fac34c784a859ddfdb575ce4e}
+      \strng{authorfullhashraw}{101e357fac34c784a859ddfdb575ce4e}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{title}{A large-scale search for evidence of quasi-periodic pulsations in solar flares}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.3847/1538-4357/833/2/284
+      \endverb
+    \endentry
+    \entry{Joshi2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=2bc577eef1c603aa2a11be439ca24cda}{%
+           family={Joshi},
+           familyi={J\bibinitperiod},
+           given={Aadish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d7c1bd940fe1137b149fd15337b9cf3}{%
+           family={Van\bibnamedelima Doorsselaere},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=760f1f84bbfcf02e409ff8698e86f80d}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Daye},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0a29f31a78d44f801e9be574084675f}{%
+           family={Fritzewski},
+           familyi={F\bibinitperiod},
+           given={Dario\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{641cb1e40d6763fa5bf80133573049a4}
+      \strng{fullhash}{62ec3375f832b1bf38781414e72bb7eb}
+      \strng{fullhashraw}{62ec3375f832b1bf38781414e72bb7eb}
+      \strng{bibnamehash}{641cb1e40d6763fa5bf80133573049a4}
+      \strng{authorbibnamehash}{641cb1e40d6763fa5bf80133573049a4}
+      \strng{authornamehash}{641cb1e40d6763fa5bf80133573049a4}
+      \strng{authorfullhash}{62ec3375f832b1bf38781414e72bb7eb}
+      \strng{authorfullhashraw}{62ec3375f832b1bf38781414e72bb7eb}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{title}{Stationary quasi-periodic pulsations in 20-second cadence TESS flares}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1051/0004-6361/202554820
+      \endverb
+    \endentry
+    \entry{Pugh2017}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7983a5c6a8188e360e9f5c63b6636b46}{%
+           family={{Pugh et al.}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7983a5c6a8188e360e9f5c63b6636b46}
+      \strng{fullhash}{7983a5c6a8188e360e9f5c63b6636b46}
+      \strng{fullhashraw}{7983a5c6a8188e360e9f5c63b6636b46}
+      \strng{bibnamehash}{7983a5c6a8188e360e9f5c63b6636b46}
+      \strng{authorbibnamehash}{7983a5c6a8188e360e9f5c63b6636b46}
+      \strng{authornamehash}{7983a5c6a8188e360e9f5c63b6636b46}
+      \strng{authorfullhash}{7983a5c6a8188e360e9f5c63b6636b46}
+      \strng{authorfullhashraw}{7983a5c6a8188e360e9f5c63b6636b46}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{title}{Significance testing for quasi-periodic pulsations in solar and stellar flares}
+      \field{volume}{602}
+      \field{year}{2017}
+      \field{pages}{A47}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1051/0004-6361/201730595
+      \endverb
+      \verb{eprint}
+      \verb 1703.07294
+      \endverb
+    \endentry
+    \entry{Reale2026}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=583fe35273784bdb0bb265d425b62442}{%
+           family={Reale},
+           familyi={R\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{583fe35273784bdb0bb265d425b62442}
+      \strng{fullhash}{583fe35273784bdb0bb265d425b62442}
+      \strng{fullhashraw}{583fe35273784bdb0bb265d425b62442}
+      \strng{bibnamehash}{583fe35273784bdb0bb265d425b62442}
+      \strng{authorbibnamehash}{583fe35273784bdb0bb265d425b62442}
+      \strng{authornamehash}{583fe35273784bdb0bb265d425b62442}
+      \strng{authorfullhash}{583fe35273784bdb0bb265d425b62442}
+      \strng{authorfullhashraw}{583fe35273784bdb0bb265d425b62442}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{Similarities and differences between solar and stellar flare pulsation processes}
+      \field{year}{2026}
+      \verb{eprint}
+      \verb 2602.03499
+      \endverb
+    \endentry
+    \entry{Wang2025}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8fd71c4d335738767d49add04634c339}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yinpeng},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0f1e8893890483cdd972af47d905790}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Li-yun},
+           giveni={L\bibinithyphendelim y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66ca606e78a8b89150090c79547aeb50}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Tianhao},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d689f42df04fa5c382d8eb8deabb021}{%
+           family={Misra},
+           familyi={M\bibinitperiod},
+           given={Prabhakar},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=52abc5a2a7656230d767f99bfeda1907}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Xianming\bibnamedelima L.},
+           giveni={X\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4b85250a393c137b29d2abd745e86d2d}
+      \strng{fullhash}{d8e95b71d8e2f6c704eaae50a60075e8}
+      \strng{fullhashraw}{d8e95b71d8e2f6c704eaae50a60075e8}
+      \strng{bibnamehash}{4b85250a393c137b29d2abd745e86d2d}
+      \strng{authorbibnamehash}{4b85250a393c137b29d2abd745e86d2d}
+      \strng{authornamehash}{4b85250a393c137b29d2abd745e86d2d}
+      \strng{authorfullhash}{d8e95b71d8e2f6c704eaae50a60075e8}
+      \strng{authorfullhashraw}{d8e95b71d8e2f6c704eaae50a60075e8}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal Supplement Series}
+      \field{title}{Properties of Flare Quasiperiodic Pulsations Based on a New TESS Flare Catalog}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.3847/1538-4365/ae1469
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

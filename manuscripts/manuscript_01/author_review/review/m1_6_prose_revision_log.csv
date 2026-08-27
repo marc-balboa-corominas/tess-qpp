@@ -1,0 +1,9 @@
+revision_id,section,old_text_locator,new_text_locator,change_type,claim_ids,evidence_planes,scientific_meaning_changed,numeric_content_changed,citation_scope_changed,author_initiated,status
+M16P001,Methods F0,M1P0011,M1P0011,CLARITY,M1C001,M1EP01,false,false,false,true,PASS
+M16P002,Methods F2/F3A/F3B,M1P0016/M1P0017/methods,same plus frozen config paths,CLARITY,M1C004;M1C005;M1C018,M1EP03;M1EP04;M1EP05,false,false,false,true,PASS
+M16P003,Results/Discussion,period accuracy wording,neutral conditional-period wording,WORD_CHOICE,M1C021,M1EP05,false,false,false,true,PASS
+M16P004,Discussion/Conclusions,formal closure / NOT_ESTABLISHED wording,natural-language non-establishment wording,VOICE,M1C023;M1C024,M1EP05,false,false,false,true,PASS
+M16P005,Data/code,Data and code provenance,"Data, code, and reproducibility resources",CLARITY,M1C029,M1EP01;M1EP03;M1EP04;M1EP05,false,false,false,true,PASS
+M16P006,Methods F3B,M1P0020,M1P0020 + frozen-generator description,CLARITY,M1C012;M1C018,M1EP05,false,false,false,true,PASS
+M16P007,Discussion,M1P0040 vicinity,M1P0072,CLARITY,M1C001;M1C006;M1C024,M1EP01;M1EP04,false,false,false,true,PASS
+M16P008,Results/Discussion,M1P0039/M1P0067/M1P0047,same paragraph IDs,VOICE,M1C021;M1C023;M1C024,M1EP05,false,false,false,true,PASS

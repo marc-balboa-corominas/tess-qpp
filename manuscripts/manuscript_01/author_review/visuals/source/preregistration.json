@@ -1,0 +1,85 @@
+{
+  "study_id": "TESS_QPP_PHASE3A_CATALOGUE_ROBUSTNESS_V1",
+  "study_version": "1.0.0",
+  "status": "PHASE3A_SCIENTIFIC_DESIGN_FROZEN_WITH_DOCUMENTED_LIMITATION",
+  "design_date": "2026-08-11",
+  "scientific_question": "Do independently defined observational QPP reference classifications retain their selected/not-selected status and selected period under prospectively frozen temporal-window, processing, admissibility, and numerical perturbations at catalogue scale?",
+  "scientific_role": "CATALOGUE_SCALE_OBSERVATIONAL_ROBUSTNESS_STRESS_TEST",
+  "primary_contribution": "Catalogue-scale robustness of independently defined observational QPP classifications under a deliberately F2-connected, prospectively frozen perturbation and numerical-audit contract; not a new TESS QPP catalogue and not a validation/correction study.",
+  "baii_gate": {
+    "decision": "F3A_DESIGN_RECONSIDERATION_REQUIRED",
+    "closure_commit": "73378199865258e89f6132c82755a647be37a9d6",
+    "closure_tag": "bibliographic-audit-ii-complete-v1",
+    "final_gate_decision_sha256": "3bd6872cdf558889769d245ba86d7cd924bd333db1fe117a9a591e9755ba8c1c",
+    "f3a_gate_requirements_sha256": "0437def01a1021fa0ca77035936eb56e002215abe2c7f52160621e393cd92b1a",
+    "comparator_consideration_matrix_sha256": "34bb2e7b105f51b94c334aa3ec0fec90307fa2240ddab18c29b4e3d21e87bb86",
+    "final_evidence_ledger_sha256": "09f7d73f97773672b90552cfe7fc73d8bd0fa4e67a8a0460bb3c6dbd4f63ab0a",
+    "dr003_sha256": "87b10926d36a45cfcf4ed574b76f13b62c860093cac3754e7ea239c15b065fc6"
+  },
+  "historical_f3a_reference": {
+    "entry_contract_sha256": "fed87a63b1afc8221d7be175648955141664195eba253ffb05cafe8071db760a",
+    "frozen_inputs_sha256": "57e2ac1ad9185fb6cba057723a2bf97199dbb4f24091a7cf03df560e8093eda7",
+    "pre_baii_readme_sha256": "50cf38db3f1439afc75d7f08cfa8cc61e959e089df60a9caf3072304961e964a"
+  },
+  "primary_catalogue_source": {
+    "source_work_id": "BAIIW0001",
+    "preferred_version_id": "BAIIV0002",
+    "sectors": "27-80",
+    "cadence_s": 20,
+    "source_role": "PRIMARY_COHORT_SOURCE",
+    "event_level_access_status": "PENDING_F3A2_PROVENANCE_VERIFICATION"
+  },
+  "reference_label_policy": "Primary source BAIIW0001 labels define observational reference roles; external labels remain independently provenanced; observational labels are not physical ground truth.",
+  "gate_resolution_matrix_sha256": "6a338468f894600ee8a47788b1feb55bea18e4aa0e40b74dbba6598d930c66c8",
+  "catalogue_source_decision_sha256": "4990404109c0a06e47b951fd47b853af58278e13fab891effd4152d7ff380704",
+  "cohort_contract_sha256": "613267b13bdcfbcb89859ee9f2ed7f072d161b43c295574b718a0d3061d48c86",
+  "reference_label_policy_sha256": "e139db5e335eb6ae059a25166e08918c9fa5f7ae2d9a7f6d406ef5c52e2412f0",
+  "robustness_matrix_sha256": "2412c686b91a287361865347f8159fb48fabae809eee783222dbbc190f0d3590",
+  "outcomes_denominators_sha256": "59b5513c763e6fba0859ddd139ca9c746374b75c0682dfa8e6c474ed47d3234c",
+  "numerical_stability_protocol_sha256": "c7869210a9d7d75532d285349a39f62be108e72acb53dd4143e2e4891b66686a",
+  "comparator_decisions_sha256": "ba2ea33bde73be9a80338ff7393643457cc2e5c29ec0a36b62de4cf4841255fb",
+  "primary_matrix_cells_per_event": 78,
+  "primary_optimizer_seed": 0,
+  "stability_seeds": "0..9",
+  "afino_execution_contract": {
+    "effective_version": "AFINO 0.5 convention inherited from frozen F0-F2",
+    "models": [
+      "pow_const",
+      "pow_const_gauss",
+      "bpow_const"
+    ],
+    "low_frequency_cutoff_hz": "1/40",
+    "selection_rule": "BIC_M0-BIC_M1 > 10 AND BIC_M2-BIC_M1 > 10"
+  },
+  "analysis_plan": {
+    "type": "descriptive_complete_grid",
+    "primary_strata": [
+      "PUBLISHED_QPP_REFERENCE",
+      "PUBLISHED_NOT_SELECTED_REFERENCE"
+    ],
+    "data_driven_cell_selection_authorized": false,
+    "formal_hypothesis_tests_preregistered": false,
+    "multiplicity_policy": "No inferential p-value family; report the complete frozen grid and denominators without result-dependent selection.",
+    "robustness_threshold": null
+  },
+  "candidate_discovery_authorized": false,
+  "observational_ground_truth_assumed": false,
+  "correction_claim_authorized": false,
+  "sensitivity_estimation_authorized": false,
+  "specificity_estimation_authorized": false,
+  "observational_fpr_estimation_authorized": false,
+  "priority_claim_authorized": false,
+  "cohort_materialized": false,
+  "tess_light_curves_downloaded": false,
+  "tess_light_curves_opened": false,
+  "afino_executed": false,
+  "scientific_results_computed": false,
+  "documented_limitation": {
+    "code": "PRIMARY_SOURCE_EVENT_LEVEL_PROVENANCE_PENDING",
+    "description": "BAII froze the scientific source choice but did not freeze the exact machine-readable BAIIW0001 event table/schema or native TESS product identifiers. F3A.2 must locate, checksum, and map these before cohort materialization.",
+    "blocking_if_unresolved": true,
+    "prohibited_resolution": "Do not silently substitute another catalogue, infer missing event identifiers, or use F3A outcomes to repair source provenance.",
+    "amendment_if_unresolved": "phase3a-design-v2 with explicit scientific decision record before any F3A result is inspected."
+  },
+  "next_task": "F3A.2 — deterministic cohort materialization, provenance/admissibility verification, and exact execution-plan freeze before AFINO."
+}

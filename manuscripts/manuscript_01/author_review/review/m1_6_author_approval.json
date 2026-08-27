@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "status": "AUTHOR_APPROVED_FINAL",
+  "author_visual_review_complete": true,
+  "author_full_readthrough_complete": true,
+  "author_confirms_scientific_scope_preserved": true,
+  "author_confirms_claim_boundaries_preserved": true,
+  "author_approves_figures": true,
+  "author_approves_tables": true,
+  "author_approves_page_layout": true,
+  "author_approves_prose_voice": true,
+  "author_approves_pdf_for_submission_formatting": true,
+  "approval_date": "2026-08-28",
+  "approved_pdf_sha256": "ce94f3d55a626a9a156c0f5cf2cc16263e3b2d6cb0bcae21e729e17bb28de752",
+  "approval_basis": "Author explicitly reviewed all 21 pages and the visual render and declared this exact V4 manuscript ready for submission.",
+  "note": "This approval is an explicit author act and is cryptographically bound to the reviewed PDF SHA-256."
+}

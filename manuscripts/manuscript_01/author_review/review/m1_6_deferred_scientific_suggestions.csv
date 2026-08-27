@@ -1,0 +1,3 @@
+suggestion_id,suggestion,reason_deferred,status
+M16D001,Event-level distribution of 171 F3A selection losses among eight concordant QPP references.,Would create a new scientific summary/statistic outside M1.6 editorial firewall.,DEFERRED_OUTSIDE_M1_6
+M16D002,Add median/IQR or other new descriptive metric for conditional period error.,Would create a new scientific statistic outside M1.6 editorial firewall.,DEFERRED_OUTSIDE_M1_6

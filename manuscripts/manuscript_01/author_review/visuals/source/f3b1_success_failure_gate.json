@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "artifact_role": "SUCCESS_FAILURE_GATE",
+  "contract_status": "FROZEN_WITHIN_F3B1_DESIGN_BLOCK_4",
+  "margins": {
+    "absolute_noninferiority_margin": 0.025,
+    "candidate_practical_balanced_accuracy_improvement": 0.025,
+    "rationale": "Both are fixed to the preregistered ±0.025 absolute precision target used to size each primary truth class per split."
+  },
+  "BASELINE_CHARACTERIZATION_SUCCESS": {
+    "performance_threshold_required": false,
+    "criteria": [
+      "100% of planned primary series are accounted for as ELIGIBLE_FOR_AFINO or INPUT_INADMISSIBLE",
+      "100% of ELIGIBLE_FOR_AFINO primary series have a complete M0/M1/M2 AFINO decision or a prospectively classified execution failure",
+      "all primary metric numerators, denominators and Wilson intervals are produced",
+      "input inadmissibility is reported separately from classification",
+      "period recovery is reported separately from classification"
+    ],
+    "failure_state": "BASELINE_CHARACTERIZATION_INCOMPLETE",
+    "interpretation": "Poor baseline sensitivity/specificity is a scientific result, not by itself an execution failure."
+  },
+  "CANDIDATE_RULE_DEVELOPMENT_SUCCESS": {
+    "candidate_mandatory": false,
+    "comparison": "candidate vs frozen AFINO baseline on DEVELOPMENT primary eligible series",
+    "all_required": true,
+    "criteria": [
+      "candidate point-estimate balanced_accuracy improvement >= 0.025",
+      "95% paired-bootstrap lower confidence bound of candidate-minus-baseline balanced_accuracy > 0",
+      "95% paired-bootstrap lower confidence bound of candidate-minus-baseline sensitivity > -0.025",
+      "95% paired-bootstrap lower confidence bound of candidate-minus-baseline specificity > -0.025"
+    ],
+    "if_pass": "PROMOTED_TO_FINAL_RULE_FREEZE_CANDIDATE",
+    "if_fail": "NOT_PROMOTED_TO_HELDOUT",
+    "if_no_candidate_passes": "FINAL_RULE_FREEZE_BASELINE_ONLY; correction_claim=NOT_ESTABLISHED"
+  },
+  "HELDOUT_VALIDATION_SUCCESS": {
+    "single_use": true,
+    "branch_baseline_only": {
+      "criteria": [
+        "complete heldout baseline characterization under the frozen metrics contract",
+        "no development retuning after heldout generation"
+      ],
+      "success_state": "HELDOUT_BASELINE_CHARACTERIZATION_SUCCESS",
+      "correction_claim": "NOT_ESTABLISHED"
+    },
+    "branch_frozen_candidate": {
+      "comparison": "frozen candidate vs frozen AFINO baseline on HELDOUT primary eligible series",
+      "criteria": [
+        "candidate point-estimate balanced_accuracy improvement >= 0.025",
+        "95% paired-bootstrap lower confidence bound of candidate-minus-baseline balanced_accuracy > 0",
+        "95% paired-bootstrap lower confidence bound of candidate-minus-baseline sensitivity > -0.025",
+        "95% paired-bootstrap lower confidence bound of candidate-minus-baseline specificity > -0.025"
+      ],
+      "all_required": true,
+      "success_state": "HELDOUT_VALIDATION_SUCCESS",
+      "failure_state": "HELDOUT_VALIDATION_FAILED",
+      "on_failure": [
+        "no threshold tweak",
+        "no feature addition",
+        "no second attempt on the same heldout",
+        "correction_claim=NOT_ESTABLISHED",
+        "any revised candidate requires a new independent validation dataset and new prospective freeze"
+      ]
+    }
+  },
+  "correction_claim_establishment": {
+    "allowed_only_if": "a candidate passes DEVELOPMENT promotion, is frozen before heldout generation, and passes the single-use HELDOUT candidate branch",
+    "otherwise": "NOT_ESTABLISHED"
+  },
+  "scientific_boundaries": [
+    "baseline characterization success does not imply baseline accuracy is acceptable",
+    "development promotion does not establish correction validity",
+    "heldout success does not create observational ground truth",
+    "classification stability is not evidence of a unique numerical optimum"
+  ]
+}

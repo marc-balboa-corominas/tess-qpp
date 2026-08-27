@@ -1,0 +1,13 @@
+comment_id,section,paragraph_or_caption,author_comment,requested_change_type,related_claim_ids,scientific_change_requested,resolution,status
+M16C001,Global,"Tables 1,2,4; Table3",Redesign dense tables for public readability.,STRUCTURE,M1C029;M1C005;M1C006;M1C013;M1C024,false,Implemented editorial redesign.,RESOLVED
+M16C002,Global,"Figures 1,2,4",Remove connector/label collisions and improve spacing.,CLARITY,M1C029;M1C004;M1C019,false,Editorially regenerated from frozen sources.,RESOLVED
+M16C003,Methods,F0/F3A,Clarify calibration case and F0 5/5 versus F3A 8/61 roles.,CLARITY,M1C001;M1C006,false,Clarified cohort purpose without new result.,RESOLVED
+M16C004,Methods,design specification,Make W/P/cohort/synthetic/gate configurations externally resolvable.,CLARITY,M1C004;M1C005;M1C018,false,Added machine-readable frozen paths and source bindings.,RESOLVED
+M16C005,Discussion/Conclusions,governance jargon,Reduce internal workflow language such as formal closure/NOT_ESTABLISHED.,VOICE,M1C023;M1C024,false,Rewritten in natural scientific language.,RESOLVED
+M16C006,Data/code,provenance,Provide concrete repository/archive/freeze route.,CLARITY,M1C029,false,Expanded reproducibility resources section.,RESOLVED
+M16C007,Results,period accuracy wording,Avoid qualitative accuracy wording without a new descriptive statistic.,WORD_CHOICE,M1C021,false,Neutralized wording; no new statistic computed.,RESOLVED
+M16C008,Global,title block,Remove internal Author-review draft label before public freeze.,EDITORIAL_OTHER,,false,Removed internal date label.,RESOLVED
+M16C009,References,Pugh2017;HowardMacGregor2022,Restore published Pugh metadata and correct Howard DOI.,CITATION_METADATA,,false,Applied frozen M1.5 same-work metadata resolution; no new references.,RESOLVED
+M16C010,Results/Discussion,M1P0039;M1P0067;M1P0047,Remove repetitive/procedural wording in period-recovery and Discussion passages.,VOICE,M1C021;M1C023;M1C024,false,Rewritten more directly with scope and denominators preserved.,RESOLVED
+M16C011,Layout,page 14 / Figure 4 transition,Use page 14 more effectively without compacting Figure 4.,FLOW,M1C019;M1C021,false,Moved existing conditional-period paragraph before the landscape Figure 4.,RESOLVED
+M16C012,Methods,F3B generator,Add a compact in-paper description of the frozen synthetic generator.,CLARITY,M1C012;M1C018,false,Added three source-backed generator sentences from the frozen F3B contract.,RESOLVED

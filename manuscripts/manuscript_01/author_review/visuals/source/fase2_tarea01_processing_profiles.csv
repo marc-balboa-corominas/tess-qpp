@@ -1,0 +1,7 @@
+processing_profile_id,flux_product,quality_policy,detrending,quality_definition,detrending_definition,interpolation_allowed,gap_filling_allowed
+P00,PDCSAP,finite_all,none,np.isfinite(time) & np.isfinite(flux),none,False,False
+P01,SAP,finite_all,none,np.isfinite(time) & np.isfinite(flux),none,False,False
+P02,PDCSAP,q0_native,none,np.isfinite(time) & np.isfinite(flux) & (QUALITY == 0),none,False,False
+P03,SAP,q0_native,none,np.isfinite(time) & np.isfinite(flux) & (QUALITY == 0),none,False,False
+P04,PDCSAP,finite_all,linear_residual_plus_one,np.isfinite(time) & np.isfinite(flux),"x=time_seconds-mean(time_seconds); X=[1,x]; beta=lstsq(X,flux); trend=X@beta; scale=median(flux); transformed=1+(flux-trend)/scale",False,False
+P05,SAP,finite_all,linear_residual_plus_one,np.isfinite(time) & np.isfinite(flux),"x=time_seconds-mean(time_seconds); X=[1,x]; beta=lstsq(X,flux); trend=X@beta; scale=median(flux); transformed=1+(flux-trend)/scale",False,False

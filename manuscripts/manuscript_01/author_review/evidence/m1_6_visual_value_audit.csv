@@ -1,0 +1,533 @@
+rendered_value_id,artifact_id,location,displayed_value,original_M1_2_value,source_id,frozen_source_value,display_only_transformation,numeric_identity,status
+M1RV0001,M1F02,F2 card,10,10,M1S016,10,direct frozen table row count,true,PASS
+M1RV0002,M1F02,F2 card,13,13,M1S038,13,literal-to-label formatting,true,PASS
+M1RV0003,M1F02,F2 card,6,6,M1S038,6,literal-to-label formatting,true,PASS
+M1RV0004,M1F02,F2 card,780,780,M1S038,780,literal number formatting,true,PASS
+M1RV0005,M1F02,F3A card,122,122,M1S031,122,direct categorical count confirmed by frozen synthesis,true,PASS
+M1RV0006,M1F02,F3A card,13,13,M1S038,13,literal-to-label formatting,true,PASS
+M1RV0007,M1F02,F3A card,6,6,M1S038,6,literal-to-label formatting,true,PASS
+M1RV0008,M1F02,F3A card,9516,9516,M1S031,9516,direct frozen table row count with thousands separator,true,PASS
+M1RV0009,M1F03,Panel A,8,8,M1S030,8,direct categorical count,true,PASS
+M1RV0010,M1F03,Panel A,51,51,M1S030,51,direct categorical count,true,PASS
+M1RV0011,M1F03,Panel A,2,2,M1S030,2,direct categorical count,true,PASS
+M1RV0012,M1F03,Panel A,57,57,M1S030,57,direct categorical count,true,PASS
+M1RV0013,M1F03,Panel A,0,0,M1S030,0,direct categorical count,true,PASS
+M1RV0014,M1F03,Panel A,4,4,M1S030,4,direct categorical count,true,PASS
+M1RV0015,M1F03,Panel B,295,295,M1S031,295,direct categorical count,true,PASS
+M1RV0016,M1F03,Panel B,171,171,M1S031,171,direct categorical count,true,PASS
+M1RV0017,M1F03,Panel B,3178,3178,M1S031,3178,direct categorical count,true,PASS
+M1RV0018,M1F03,Panel B,0,0,M1S031,0,direct categorical count,true,PASS
+M1RV0019,M1F04,Panel A1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0020,M1F04,Panel A1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0021,M1F04,Panel A1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0022,M1F04,Panel A1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0023,M1F04,Panel A1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0024,M1F04,Panel A1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0025,M1F04,Panel A1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0026,M1F04,Panel A1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0027,M1F04,Panel A1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0028,M1F04,Panel A1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0029,M1F04,Panel A1,0.02,0.02,M1S043,0.02,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0030,M1F04,Panel A1,0.24,0.24,M1S043,0.24,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0031,M1F04,Panel A2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0032,M1F04,Panel A2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0033,M1F04,Panel A2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0034,M1F04,Panel A2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0035,M1F04,Panel A2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0036,M1F04,Panel A2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0037,M1F04,Panel A2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0038,M1F04,Panel A2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0039,M1F04,Panel A2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0040,M1F04,Panel A2,0.10,0.10,M1S043,0.1,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0041,M1F04,Panel A2,0.32,0.32,M1S043,0.32,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0042,M1F04,Panel A2,0.40,0.40,M1S043,0.4,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0043,M1F04,Panel A3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0044,M1F04,Panel A3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0045,M1F04,Panel A3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0046,M1F04,Panel A3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0047,M1F04,Panel A3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0048,M1F04,Panel A3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0049,M1F04,Panel A3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0050,M1F04,Panel A3,0.02,0.02,M1S043,0.02,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0051,M1F04,Panel A3,0.08,0.08,M1S043,0.08,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0052,M1F04,Panel A3,0.56,0.56,M1S043,0.56,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0053,M1F04,Panel A3,0.60,0.60,M1S043,0.6,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0054,M1F04,Panel A3,0.70,0.70,M1S043,0.7,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0055,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0056,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0057,M1F04,Panel B1,N/E,N/E,M1S043,STRUCTURAL_NO_EXPOSURE,structural absence rendered as N/E rather than zero,true,PASS
+M1RV0058,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0059,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0060,M1F04,Panel B1,N/E,N/E,M1S043,STRUCTURAL_NO_EXPOSURE,structural absence rendered as N/E rather than zero,true,PASS
+M1RV0061,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0062,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0063,M1F04,Panel B1,N/E,N/E,M1S043,STRUCTURAL_NO_EXPOSURE,structural absence rendered as N/E rather than zero,true,PASS
+M1RV0064,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0065,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0066,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0067,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0068,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0069,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0070,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0071,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0072,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0073,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0074,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0075,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0076,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0077,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0078,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0079,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0080,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0081,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0082,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0083,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0084,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0085,M1F04,Panel B1,0.07,0.07,M1S043,0.07142857142857142,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0086,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0087,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0088,M1F04,Panel B1,0.63,0.63,M1S043,0.631578947368421,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0089,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0090,M1F04,Panel B1,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0091,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0092,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0093,M1F04,Panel B2,N/E,N/E,M1S043,STRUCTURAL_NO_EXPOSURE,structural absence rendered as N/E rather than zero,true,PASS
+M1RV0094,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0095,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0096,M1F04,Panel B2,N/E,N/E,M1S043,STRUCTURAL_NO_EXPOSURE,structural absence rendered as N/E rather than zero,true,PASS
+M1RV0097,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0098,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0099,M1F04,Panel B2,N/E,N/E,M1S043,STRUCTURAL_NO_EXPOSURE,structural absence rendered as N/E rather than zero,true,PASS
+M1RV0100,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0101,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0102,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0103,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0104,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0105,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0106,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0107,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0108,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0109,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0110,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0111,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0112,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0113,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0114,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0115,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0116,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0117,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0118,M1F04,Panel B2,0.20,0.20,M1S043,0.2,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0119,M1F04,Panel B2,0.25,0.25,M1S043,0.25,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0120,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0121,M1F04,Panel B2,0.80,0.80,M1S043,0.8,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0122,M1F04,Panel B2,0.62,0.62,M1S043,0.6153846153846154,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0123,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0124,M1F04,Panel B2,1.00,1.00,M1S043,1.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0125,M1F04,Panel B2,0.64,0.64,M1S043,0.6363636363636364,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0126,M1F04,Panel B2,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0127,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0128,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0129,M1F04,Panel B3,N/E,N/E,M1S043,STRUCTURAL_NO_EXPOSURE,structural absence rendered as N/E rather than zero,true,PASS
+M1RV0130,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0131,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0132,M1F04,Panel B3,N/E,N/E,M1S043,STRUCTURAL_NO_EXPOSURE,structural absence rendered as N/E rather than zero,true,PASS
+M1RV0133,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0134,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0135,M1F04,Panel B3,N/E,N/E,M1S043,STRUCTURAL_NO_EXPOSURE,structural absence rendered as N/E rather than zero,true,PASS
+M1RV0136,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0137,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0138,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0139,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0140,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0141,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0142,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0143,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0144,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0145,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0146,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0147,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0148,M1F04,Panel B3,0.11,0.11,M1S043,0.1111111111111111,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0149,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0150,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0151,M1F04,Panel B3,0.36,0.36,M1S043,0.36363636363636365,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0152,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0153,M1F04,Panel B3,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0154,M1F04,Panel B3,1.00,1.00,M1S043,1.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0155,M1F04,Panel B3,1.00,1.00,M1S043,1.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0156,M1F04,Panel B3,0.15,0.15,M1S043,0.15384615384615385,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0157,M1F04,Panel B3,1.00,1.00,M1S043,1.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0158,M1F04,Panel B3,1.00,1.00,M1S043,1.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0159,M1F04,Panel B3,0.13,0.13,M1S043,0.13043478260869565,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0160,M1F04,Panel B3,1.00,1.00,M1S043,1.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0161,M1F04,Panel B3,1.00,1.00,M1S043,1.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0162,M1F04,Panel B3,0.32,0.32,M1S043,0.3181818181818182,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0163,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0164,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0165,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0166,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0167,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0168,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0169,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0170,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0171,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0172,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0173,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0174,M1F04,Panel C,0.00,0.00,M1S043,0.0,two-decimal deterministic label formatting of frozen point estimate,true,PASS
+M1RV0175,M1F04,Axes,15,15,M1S043,15,direct categorical axis label,true,PASS
+M1RV0176,M1F04,Axes,30,30,M1S043,30,direct categorical axis label,true,PASS
+M1RV0177,M1F04,Axes,60,60,M1S043,60,direct categorical axis label,true,PASS
+M1RV0178,M1F04,Axes,120,120,M1S043,120,direct categorical axis label,true,PASS
+M1RV0179,M1F04,Axes,0.0,0.0,M1S043,0.0,direct categorical axis label,true,PASS
+M1RV0180,M1F04,Axes,1.0,1.0,M1S043,1.0,direct categorical axis label,true,PASS
+M1RV0181,M1F04,Axes,2.0,2.0,M1S043,2.0,direct categorical axis label,true,PASS
+M1RV0182,M1F04,Facets,0.01,0.01,M1S043,0.01,direct categorical facet label,true,PASS
+M1RV0183,M1F04,Facets,0.02,0.02,M1S043,0.02,direct categorical facet label,true,PASS
+M1RV0184,M1F04,Facets,0.04,0.04,M1S043,0.04,direct categorical facet label,true,PASS
+M1RV0185,M1F05,Panel A,true=45.797321245491254; recovered=44.966420914341576,true=45.797321245491254; recovered=44.966420914341576,M1S044,true=45.797321245491254; recovered=44.966420914341576,direct source coordinate pair,true,PASS
+M1RV0186,M1F05,Panel B,true=45.797321245491254; relative_error=0.018142989776535896,true=45.797321245491254; relative_error=0.018142989776535896,M1S044,true=45.797321245491254; relative_error=0.018142989776535896,direct source coordinate pair,true,PASS
+M1RV0187,M1F05,Panel A,true=41.927160257660496; recovered=40.0,true=41.927160257660496; recovered=40.0,M1S044,true=41.927160257660496; recovered=40.0,direct source coordinate pair,true,PASS
+M1RV0188,M1F05,Panel B,true=41.927160257660496; relative_error=0.04596448330431312,true=41.927160257660496; relative_error=0.04596448330431312,M1S044,true=41.927160257660496; relative_error=0.04596448330431312,direct source coordinate pair,true,PASS
+M1RV0189,M1F05,Panel A,true=52.25404127105198; recovered=51.49526450391465,true=52.25404127105198; recovered=51.49526450391465,M1S044,true=52.25404127105198; recovered=51.49526450391465,direct source coordinate pair,true,PASS
+M1RV0190,M1F05,Panel B,true=52.25404127105198; relative_error=0.014520920271054444,true=52.25404127105198; relative_error=0.014520920271054444,M1S044,true=52.25404127105198; relative_error=0.014520920271054444,direct source coordinate pair,true,PASS
+M1RV0191,M1F05,Panel A,true=53.46149134147106; recovered=52.56415760277833,true=53.46149134147106; recovered=52.56415760277833,M1S044,true=53.46149134147106; recovered=52.56415760277833,direct source coordinate pair,true,PASS
+M1RV0192,M1F05,Panel B,true=53.46149134147106; relative_error=0.016784674654158994,true=53.46149134147106; relative_error=0.016784674654158994,M1S044,true=53.46149134147106; relative_error=0.016784674654158994,direct source coordinate pair,true,PASS
+M1RV0193,M1F05,Panel A,true=45.480211309235536; recovered=44.065245533520105,true=45.480211309235536; recovered=44.065245533520105,M1S044,true=45.480211309235536; recovered=44.065245533520105,direct source coordinate pair,true,PASS
+M1RV0194,M1F05,Panel B,true=45.480211309235536; relative_error=0.03111167989292295,true=45.480211309235536; relative_error=0.03111167989292295,M1S044,true=45.480211309235536; relative_error=0.03111167989292295,direct source coordinate pair,true,PASS
+M1RV0195,M1F05,Panel A,true=42.00572317670321; recovered=40.09802756375717,true=42.00572317670321; recovered=40.09802756375717,M1S044,true=42.00572317670321; recovered=40.09802756375717,direct source coordinate pair,true,PASS
+M1RV0196,M1F05,Panel B,true=42.00572317670321; relative_error=0.04541513557381317,true=42.00572317670321; relative_error=0.04541513557381317,M1S044,true=42.00572317670321; relative_error=0.04541513557381317,direct source coordinate pair,true,PASS
+M1RV0197,M1F05,Panel A,true=70.1826078007049; recovered=69.90797900280658,true=70.1826078007049; recovered=69.90797900280658,M1S044,true=70.1826078007049; recovered=69.90797900280658,direct source coordinate pair,true,PASS
+M1RV0198,M1F05,Panel B,true=70.1826078007049; relative_error=0.003913060607240044,true=70.1826078007049; relative_error=0.003913060607240044,M1S044,true=70.1826078007049; relative_error=0.003913060607240044,direct source coordinate pair,true,PASS
+M1RV0199,M1F05,Panel A,true=45.61322587670629; recovered=45.902741478716344,true=45.61322587670629; recovered=45.902741478716344,M1S044,true=45.61322587670629; recovered=45.902741478716344,direct source coordinate pair,true,PASS
+M1RV0200,M1F05,Panel B,true=45.61322587670629; relative_error=0.006347185414875585,true=45.61322587670629; relative_error=0.006347185414875585,M1S044,true=45.61322587670629; relative_error=0.006347185414875585,direct source coordinate pair,true,PASS
+M1RV0201,M1F05,Panel A,true=73.92477218742805; recovered=74.27001991033761,true=73.92477218742805; recovered=74.27001991033761,M1S044,true=73.92477218742805; recovered=74.27001991033761,direct source coordinate pair,true,PASS
+M1RV0202,M1F05,Panel B,true=73.92477218742805; relative_error=0.0046702575157651464,true=73.92477218742805; relative_error=0.0046702575157651464,M1S044,true=73.92477218742805; relative_error=0.0046702575157651464,direct source coordinate pair,true,PASS
+M1RV0203,M1F05,Panel A,true=78.09840451253184; recovered=78.26695025352483,true=78.09840451253184; recovered=78.26695025352483,M1S044,true=78.09840451253184; recovered=78.26695025352483,direct source coordinate pair,true,PASS
+M1RV0204,M1F05,Panel B,true=78.09840451253184; relative_error=0.0021581201568072654,true=78.09840451253184; relative_error=0.0021581201568072654,M1S044,true=78.09840451253184; relative_error=0.0021581201568072654,direct source coordinate pair,true,PASS
+M1RV0205,M1F05,Panel A,true=127.82286646492656; recovered=132.50275669885892,true=127.82286646492656; recovered=132.50275669885892,M1S044,true=127.82286646492656; recovered=132.50275669885892,direct source coordinate pair,true,PASS
+M1RV0206,M1F05,Panel B,true=127.82286646492656; relative_error=0.03661230860611684,true=127.82286646492656; relative_error=0.03661230860611684,M1S044,true=127.82286646492656; relative_error=0.03661230860611684,direct source coordinate pair,true,PASS
+M1RV0207,M1F05,Panel A,true=51.9324925964754; recovered=51.79126853720372,true=51.9324925964754; recovered=51.79126853720372,M1S044,true=51.9324925964754; recovered=51.79126853720372,direct source coordinate pair,true,PASS
+M1RV0208,M1F05,Panel B,true=51.9324925964754; relative_error=0.0027193776422213016,true=51.9324925964754; relative_error=0.0027193776422213016,M1S044,true=51.9324925964754; relative_error=0.0027193776422213016,direct source coordinate pair,true,PASS
+M1RV0209,M1F05,Panel A,true=110.93333497773631; recovered=110.8494426148733,true=110.93333497773631; recovered=110.8494426148733,M1S044,true=110.93333497773631; recovered=110.8494426148733,direct source coordinate pair,true,PASS
+M1RV0210,M1F05,Panel B,true=110.93333497773631; relative_error=0.0007562412405599092,true=110.93333497773631; relative_error=0.0007562412405599092,M1S044,true=110.93333497773631; relative_error=0.0007562412405599092,direct source coordinate pair,true,PASS
+M1RV0211,M1F05,Panel A,true=110.50025428514144; recovered=110.82962147087956,true=110.50025428514144; recovered=110.82962147087956,M1S044,true=110.50025428514144; recovered=110.82962147087956,direct source coordinate pair,true,PASS
+M1RV0212,M1F05,Panel B,true=110.50025428514144; relative_error=0.002980691654230972,true=110.50025428514144; relative_error=0.002980691654230972,M1S044,true=110.50025428514144; relative_error=0.002980691654230972,direct source coordinate pair,true,PASS
+M1RV0213,M1F05,Panel A,true=95.6397202696739; recovered=96.30724792558574,true=95.6397202696739; recovered=96.30724792558574,M1S044,true=95.6397202696739; recovered=96.30724792558574,direct source coordinate pair,true,PASS
+M1RV0214,M1F05,Panel B,true=95.6397202696739; relative_error=0.006979606946043154,true=95.6397202696739; relative_error=0.006979606946043154,M1S044,true=95.6397202696739; relative_error=0.006979606946043154,direct source coordinate pair,true,PASS
+M1RV0215,M1F05,Panel A,true=41.855396019260276; recovered=40.0,true=41.855396019260276; recovered=40.0,M1S044,true=41.855396019260276; recovered=40.0,direct source coordinate pair,true,PASS
+M1RV0216,M1F05,Panel B,true=41.855396019260276; relative_error=0.0443287173392528,true=41.855396019260276; relative_error=0.0443287173392528,M1S044,true=41.855396019260276; relative_error=0.0443287173392528,direct source coordinate pair,true,PASS
+M1RV0217,M1F05,Panel A,true=64.97422075733968; recovered=65.60476967099231,true=64.97422075733968; recovered=65.60476967099231,M1S044,true=64.97422075733968; recovered=65.60476967099231,direct source coordinate pair,true,PASS
+M1RV0218,M1F05,Panel B,true=64.97422075733968; relative_error=0.009704601398877157,true=64.97422075733968; relative_error=0.009704601398877157,M1S044,true=64.97422075733968; relative_error=0.009704601398877157,direct source coordinate pair,true,PASS
+M1RV0219,M1F05,Panel A,true=98.57306210580624; recovered=101.58441178057552,true=98.57306210580624; recovered=101.58441178057552,M1S044,true=98.57306210580624; recovered=101.58441178057552,direct source coordinate pair,true,PASS
+M1RV0220,M1F05,Panel B,true=98.57306210580624; relative_error=0.03054941796915022,true=98.57306210580624; relative_error=0.03054941796915022,M1S044,true=98.57306210580624; relative_error=0.03054941796915022,direct source coordinate pair,true,PASS
+M1RV0221,M1F05,Panel A,true=62.27863878083842; recovered=63.28242479057704,true=62.27863878083842; recovered=63.28242479057704,M1S044,true=62.27863878083842; recovered=63.28242479057704,direct source coordinate pair,true,PASS
+M1RV0222,M1F05,Panel B,true=62.27863878083842; relative_error=0.016117661358511556,true=62.27863878083842; relative_error=0.016117661358511556,M1S044,true=62.27863878083842; relative_error=0.016117661358511556,direct source coordinate pair,true,PASS
+M1RV0223,M1F05,Panel A,true=45.87256546628876; recovered=45.62497512615886,true=45.87256546628876; recovered=45.62497512615886,M1S044,true=45.87256546628876; recovered=45.62497512615886,direct source coordinate pair,true,PASS
+M1RV0224,M1F05,Panel B,true=45.87256546628876; relative_error=0.005397351066223992,true=45.87256546628876; relative_error=0.005397351066223992,M1S044,true=45.87256546628876; relative_error=0.005397351066223992,direct source coordinate pair,true,PASS
+M1RV0225,M1F05,Panel A,true=96.88638943667776; recovered=97.0858414488431,true=96.88638943667776; recovered=97.0858414488431,M1S044,true=96.88638943667776; recovered=97.0858414488431,direct source coordinate pair,true,PASS
+M1RV0226,M1F05,Panel B,true=96.88638943667776; relative_error=0.0020586174521003728,true=96.88638943667776; relative_error=0.0020586174521003728,M1S044,true=96.88638943667776; relative_error=0.0020586174521003728,direct source coordinate pair,true,PASS
+M1RV0227,M1F05,Panel A,true=57.77484052056487; recovered=57.37239803963139,true=57.77484052056487; recovered=57.37239803963139,M1S044,true=57.77484052056487; recovered=57.37239803963139,direct source coordinate pair,true,PASS
+M1RV0228,M1F05,Panel B,true=57.77484052056487; relative_error=0.006965704748076829,true=57.77484052056487; relative_error=0.006965704748076829,M1S044,true=57.77484052056487; relative_error=0.006965704748076829,direct source coordinate pair,true,PASS
+M1RV0229,M1F05,Panel A,true=55.703735393922564; recovered=56.365023925292995,true=55.703735393922564; recovered=56.365023925292995,M1S044,true=55.703735393922564; recovered=56.365023925292995,direct source coordinate pair,true,PASS
+M1RV0230,M1F05,Panel B,true=55.703735393922564; relative_error=0.011871529381180055,true=55.703735393922564; relative_error=0.011871529381180055,M1S044,true=55.703735393922564; relative_error=0.011871529381180055,direct source coordinate pair,true,PASS
+M1RV0231,M1F05,Panel A,true=48.281247926244674; recovered=48.681206176006484,true=48.281247926244674; recovered=48.681206176006484,M1S044,true=48.281247926244674; recovered=48.681206176006484,direct source coordinate pair,true,PASS
+M1RV0232,M1F05,Panel B,true=48.281247926244674; relative_error=0.00828392526996802,true=48.281247926244674; relative_error=0.00828392526996802,M1S044,true=48.281247926244674; relative_error=0.00828392526996802,direct source coordinate pair,true,PASS
+M1RV0233,M1F05,Panel A,true=72.16413080351703; recovered=73.46457420453162,true=72.16413080351703; recovered=73.46457420453162,M1S044,true=72.16413080351703; recovered=73.46457420453162,direct source coordinate pair,true,PASS
+M1RV0234,M1F05,Panel B,true=72.16413080351703; relative_error=0.018020634164573224,true=72.16413080351703; relative_error=0.018020634164573224,M1S044,true=72.16413080351703; relative_error=0.018020634164573224,direct source coordinate pair,true,PASS
+M1RV0235,M1F05,Panel A,true=60.015496717961824; recovered=59.96567218052997,true=60.015496717961824; recovered=59.96567218052997,M1S044,true=60.015496717961824; recovered=59.96567218052997,direct source coordinate pair,true,PASS
+M1RV0236,M1F05,Panel B,true=60.015496717961824; relative_error=0.0008301945356879981,true=60.015496717961824; relative_error=0.0008301945356879981,M1S044,true=60.015496717961824; relative_error=0.0008301945356879981,direct source coordinate pair,true,PASS
+M1RV0237,M1F05,Panel A,true=44.89240308233687; recovered=44.95852143093258,true=44.89240308233687; recovered=44.95852143093258,M1S044,true=44.89240308233687; recovered=44.95852143093258,direct source coordinate pair,true,PASS
+M1RV0238,M1F05,Panel B,true=44.89240308233687; relative_error=0.0014728182065558166,true=44.89240308233687; relative_error=0.0014728182065558166,M1S044,true=44.89240308233687; relative_error=0.0014728182065558166,direct source coordinate pair,true,PASS
+M1RV0239,M1F05,Panel A,true=91.59599411909257; recovered=92.766139754904,true=91.59599411909257; recovered=92.766139754904,M1S044,true=91.59599411909257; recovered=92.766139754904,direct source coordinate pair,true,PASS
+M1RV0240,M1F05,Panel B,true=91.59599411909257; relative_error=0.012775074358492367,true=91.59599411909257; relative_error=0.012775074358492367,M1S044,true=91.59599411909257; relative_error=0.012775074358492367,direct source coordinate pair,true,PASS
+M1RV0241,M1F05,Panel A,true=65.45538087686019; recovered=65.8253105802962,true=65.45538087686019; recovered=65.8253105802962,M1S044,true=65.45538087686019; recovered=65.8253105802962,direct source coordinate pair,true,PASS
+M1RV0242,M1F05,Panel B,true=65.45538087686019; relative_error=0.0056516316684789465,true=65.45538087686019; relative_error=0.0056516316684789465,M1S044,true=65.45538087686019; relative_error=0.0056516316684789465,direct source coordinate pair,true,PASS
+M1RV0243,M1F05,Panel A,true=59.15656134150425; recovered=60.21132665546577,true=59.15656134150425; recovered=60.21132665546577,M1S044,true=59.15656134150425; recovered=60.21132665546577,direct source coordinate pair,true,PASS
+M1RV0244,M1F05,Panel B,true=59.15656134150425; relative_error=0.01783006466302994,true=59.15656134150425; relative_error=0.01783006466302994,M1S044,true=59.15656134150425; relative_error=0.01783006466302994,direct source coordinate pair,true,PASS
+M1RV0245,M1F05,Panel A,true=54.13791662813515; recovered=55.05301655664503,true=54.13791662813515; recovered=55.05301655664503,M1S044,true=54.13791662813515; recovered=55.05301655664503,direct source coordinate pair,true,PASS
+M1RV0246,M1F05,Panel B,true=54.13791662813515; relative_error=0.016903124196587627,true=54.13791662813515; relative_error=0.016903124196587627,M1S044,true=54.13791662813515; relative_error=0.016903124196587627,direct source coordinate pair,true,PASS
+M1RV0247,M1F05,Panel A,true=81.26060171891605; recovered=82.97243765280385,true=81.26060171891605; recovered=82.97243765280385,M1S044,true=81.26060171891605; recovered=82.97243765280385,direct source coordinate pair,true,PASS
+M1RV0248,M1F05,Panel B,true=81.26060171891605; relative_error=0.021066001206945437,true=81.26060171891605; relative_error=0.021066001206945437,M1S044,true=81.26060171891605; relative_error=0.021066001206945437,direct source coordinate pair,true,PASS
+M1RV0249,M1F05,Panel A,true=111.22019279844473; recovered=111.56754264138937,true=111.22019279844473; recovered=111.56754264138937,M1S044,true=111.22019279844473; recovered=111.56754264138937,direct source coordinate pair,true,PASS
+M1RV0250,M1F05,Panel B,true=111.22019279844473; relative_error=0.003123082546477075,true=111.22019279844473; relative_error=0.003123082546477075,M1S044,true=111.22019279844473; relative_error=0.003123082546477075,direct source coordinate pair,true,PASS
+M1RV0251,M1F05,Panel A,true=82.68400332168468; recovered=82.62407020788733,true=82.68400332168468; recovered=82.62407020788733,M1S044,true=82.68400332168468; recovered=82.62407020788733,direct source coordinate pair,true,PASS
+M1RV0252,M1F05,Panel B,true=82.68400332168468; relative_error=0.0007248453314988245,true=82.68400332168468; relative_error=0.0007248453314988245,M1S044,true=82.68400332168468; relative_error=0.0007248453314988245,direct source coordinate pair,true,PASS
+M1RV0253,M1F05,Panel A,true=46.24417884696904; recovered=46.492558659723,true=46.24417884696904; recovered=46.492558659723,M1S044,true=46.24417884696904; recovered=46.492558659723,direct source coordinate pair,true,PASS
+M1RV0254,M1F05,Panel B,true=46.24417884696904; relative_error=0.005371050345080124,true=46.24417884696904; relative_error=0.005371050345080124,M1S044,true=46.24417884696904; relative_error=0.005371050345080124,direct source coordinate pair,true,PASS
+M1RV0255,M1F05,Panel A,true=54.68286904128952; recovered=54.030091005176004,true=54.68286904128952; recovered=54.030091005176004,M1S044,true=54.68286904128952; recovered=54.030091005176004,direct source coordinate pair,true,PASS
+M1RV0256,M1F05,Panel B,true=54.68286904128952; relative_error=0.01193752353448431,true=54.68286904128952; relative_error=0.01193752353448431,M1S044,true=54.68286904128952; relative_error=0.01193752353448431,direct source coordinate pair,true,PASS
+M1RV0257,M1F05,Panel A,true=97.34003044205475; recovered=97.2312308756138,true=97.34003044205475; recovered=97.2312308756138,M1S044,true=97.34003044205475; recovered=97.2312308756138,direct source coordinate pair,true,PASS
+M1RV0258,M1F05,Panel B,true=97.34003044205475; relative_error=0.0011177268585889483,true=97.34003044205475; relative_error=0.0011177268585889483,M1S044,true=97.34003044205475; relative_error=0.0011177268585889483,direct source coordinate pair,true,PASS
+M1RV0259,M1F05,Panel A,true=48.174883681097796; recovered=47.509124073547476,true=48.174883681097796; recovered=47.509124073547476,M1S044,true=48.174883681097796; recovered=47.509124073547476,direct source coordinate pair,true,PASS
+M1RV0260,M1F05,Panel B,true=48.174883681097796; relative_error=0.013819641204687379,true=48.174883681097796; relative_error=0.013819641204687379,M1S044,true=48.174883681097796; relative_error=0.013819641204687379,direct source coordinate pair,true,PASS
+M1RV0261,M1F05,Panel A,true=47.94059143656636; recovered=48.20042738084215,true=47.94059143656636; recovered=48.20042738084215,M1S044,true=47.94059143656636; recovered=48.20042738084215,direct source coordinate pair,true,PASS
+M1RV0262,M1F05,Panel B,true=47.94059143656636; relative_error=0.005419957002816707,true=47.94059143656636; relative_error=0.005419957002816707,M1S044,true=47.94059143656636; relative_error=0.005419957002816707,direct source coordinate pair,true,PASS
+M1RV0263,M1F05,Panel A,true=41.94107001062492; recovered=40.0,true=41.94107001062492; recovered=40.0,M1S044,true=41.94107001062492; recovered=40.0,direct source coordinate pair,true,PASS
+M1RV0264,M1F05,Panel B,true=41.94107001062492; relative_error=0.04628088911735415,true=41.94107001062492; relative_error=0.04628088911735415,M1S044,true=41.94107001062492; relative_error=0.04628088911735415,direct source coordinate pair,true,PASS
+M1RV0265,M1F05,Panel A,true=66.48408099565913; recovered=65.74758172092646,true=66.48408099565913; recovered=65.74758172092646,M1S044,true=66.48408099565913; recovered=65.74758172092646,direct source coordinate pair,true,PASS
+M1RV0266,M1F05,Panel B,true=66.48408099565913; relative_error=0.0110778289133718,true=66.48408099565913; relative_error=0.0110778289133718,M1S044,true=66.48408099565913; relative_error=0.0110778289133718,direct source coordinate pair,true,PASS
+M1RV0267,M1F05,Panel A,true=68.78831389407493; recovered=68.35591860805816,true=68.78831389407493; recovered=68.35591860805816,M1S044,true=68.78831389407493; recovered=68.35591860805816,direct source coordinate pair,true,PASS
+M1RV0268,M1F05,Panel B,true=68.78831389407493; relative_error=0.006285882899857138,true=68.78831389407493; relative_error=0.006285882899857138,M1S044,true=68.78831389407493; relative_error=0.006285882899857138,direct source coordinate pair,true,PASS
+M1RV0269,M1F05,Panel A,true=50.8607231506127; recovered=50.98162248766416,true=50.8607231506127; recovered=50.98162248766416,M1S044,true=50.8607231506127; recovered=50.98162248766416,direct source coordinate pair,true,PASS
+M1RV0270,M1F05,Panel B,true=50.8607231506127; relative_error=0.0023770668123110537,true=50.8607231506127; relative_error=0.0023770668123110537,M1S044,true=50.8607231506127; relative_error=0.0023770668123110537,direct source coordinate pair,true,PASS
+M1RV0271,M1F05,Panel A,true=84.37285299851436; recovered=84.58869746909987,true=84.37285299851436; recovered=84.58869746909987,M1S044,true=84.37285299851436; recovered=84.58869746909987,direct source coordinate pair,true,PASS
+M1RV0272,M1F05,Panel B,true=84.37285299851436; relative_error=0.0025582217847879285,true=84.37285299851436; relative_error=0.0025582217847879285,M1S044,true=84.37285299851436; relative_error=0.0025582217847879285,direct source coordinate pair,true,PASS
+M1RV0273,M1F05,Panel A,true=45.57154354441323; recovered=46.05078481889298,true=45.57154354441323; recovered=46.05078481889298,M1S044,true=45.57154354441323; recovered=46.05078481889298,direct source coordinate pair,true,PASS
+M1RV0274,M1F05,Panel B,true=45.57154354441323; relative_error=0.010516239679542284,true=45.57154354441323; relative_error=0.010516239679542284,M1S044,true=45.57154354441323; relative_error=0.010516239679542284,direct source coordinate pair,true,PASS
+M1RV0275,M1F05,Panel A,true=62.05553928278701; recovered=65.39132641393779,true=62.05553928278701; recovered=65.39132641393779,M1S044,true=62.05553928278701; recovered=65.39132641393779,direct source coordinate pair,true,PASS
+M1RV0276,M1F05,Panel B,true=62.05553928278701; relative_error=0.05375486491140788,true=62.05553928278701; relative_error=0.05375486491140788,M1S044,true=62.05553928278701; relative_error=0.05375486491140788,direct source coordinate pair,true,PASS
+M1RV0277,M1F05,Panel A,true=67.84754608756512; recovered=68.41650876774229,true=67.84754608756512; recovered=68.41650876774229,M1S044,true=67.84754608756512; recovered=68.41650876774229,direct source coordinate pair,true,PASS
+M1RV0278,M1F05,Panel B,true=67.84754608756512; relative_error=0.008385899166387727,true=67.84754608756512; relative_error=0.008385899166387727,M1S044,true=67.84754608756512; relative_error=0.008385899166387727,direct source coordinate pair,true,PASS
+M1RV0279,M1F05,Panel A,true=46.54402120293744; recovered=46.213147686678504,true=46.54402120293744; recovered=46.213147686678504,M1S044,true=46.54402120293744; recovered=46.213147686678504,direct source coordinate pair,true,PASS
+M1RV0280,M1F05,Panel B,true=46.54402120293744; relative_error=0.007108829613502564,true=46.54402120293744; relative_error=0.007108829613502564,M1S044,true=46.54402120293744; relative_error=0.007108829613502564,direct source coordinate pair,true,PASS
+M1RV0281,M1F05,Panel A,true=67.88891693560252; recovered=68.19897170733584,true=67.88891693560252; recovered=68.19897170733584,M1S044,true=67.88891693560252; recovered=68.19897170733584,direct source coordinate pair,true,PASS
+M1RV0282,M1F05,Panel B,true=67.88891693560252; relative_error=0.0045670896772065026,true=67.88891693560252; relative_error=0.0045670896772065026,M1S044,true=67.88891693560252; relative_error=0.0045670896772065026,direct source coordinate pair,true,PASS
+M1RV0283,M1F05,Panel A,true=63.26752679353244; recovered=63.98717022697167,true=63.26752679353244; recovered=63.98717022697167,M1S044,true=63.26752679353244; recovered=63.98717022697167,direct source coordinate pair,true,PASS
+M1RV0284,M1F05,Panel B,true=63.26752679353244; relative_error=0.0113746098498163,true=63.26752679353244; relative_error=0.0113746098498163,M1S044,true=63.26752679353244; relative_error=0.0113746098498163,direct source coordinate pair,true,PASS
+M1RV0285,M1F05,Panel A,true=66.51522891134637; recovered=68.83568872255886,true=66.51522891134637; recovered=68.83568872255886,M1S044,true=66.51522891134637; recovered=68.83568872255886,direct source coordinate pair,true,PASS
+M1RV0286,M1F05,Panel B,true=66.51522891134637; relative_error=0.03488614335681337,true=66.51522891134637; relative_error=0.03488614335681337,M1S044,true=66.51522891134637; relative_error=0.03488614335681337,direct source coordinate pair,true,PASS
+M1RV0287,M1F05,Panel A,true=46.35348800724077; recovered=47.31725640323728,true=46.35348800724077; recovered=47.31725640323728,M1S044,true=46.35348800724077; recovered=47.31725640323728,direct source coordinate pair,true,PASS
+M1RV0288,M1F05,Panel B,true=46.35348800724077; relative_error=0.020791712499520255,true=46.35348800724077; relative_error=0.020791712499520255,M1S044,true=46.35348800724077; relative_error=0.020791712499520255,direct source coordinate pair,true,PASS
+M1RV0289,M1F05,Panel A,true=61.31796526614887; recovered=62.447229500091545,true=61.31796526614887; recovered=62.447229500091545,M1S044,true=61.31796526614887; recovered=62.447229500091545,direct source coordinate pair,true,PASS
+M1RV0290,M1F05,Panel B,true=61.31796526614887; relative_error=0.018416531420133376,true=61.31796526614887; relative_error=0.018416531420133376,M1S044,true=61.31796526614887; relative_error=0.018416531420133376,direct source coordinate pair,true,PASS
+M1RV0291,M1F05,Panel A,true=73.25514127998227; recovered=73.29030053603357,true=73.25514127998227; recovered=73.29030053603357,M1S044,true=73.25514127998227; recovered=73.29030053603357,direct source coordinate pair,true,PASS
+M1RV0292,M1F05,Panel B,true=73.25514127998227; relative_error=0.0004799561564822051,true=73.25514127998227; relative_error=0.0004799561564822051,M1S044,true=73.25514127998227; relative_error=0.0004799561564822051,direct source coordinate pair,true,PASS
+M1RV0293,M1F05,Panel A,true=45.35998888676251; recovered=45.57448615879306,true=45.35998888676251; recovered=45.57448615879306,M1S044,true=45.35998888676251; recovered=45.57448615879306,direct source coordinate pair,true,PASS
+M1RV0294,M1F05,Panel B,true=45.35998888676251; relative_error=0.004728776996970254,true=45.35998888676251; relative_error=0.004728776996970254,M1S044,true=45.35998888676251; relative_error=0.004728776996970254,direct source coordinate pair,true,PASS
+M1RV0295,M1F05,Panel A,true=51.348880101103575; recovered=51.1069375192242,true=51.348880101103575; recovered=51.1069375192242,M1S044,true=51.348880101103575; recovered=51.1069375192242,direct source coordinate pair,true,PASS
+M1RV0296,M1F05,Panel B,true=51.348880101103575; relative_error=0.0047117401860176395,true=51.348880101103575; relative_error=0.0047117401860176395,M1S044,true=51.348880101103575; relative_error=0.0047117401860176395,direct source coordinate pair,true,PASS
+M1RV0297,M1F05,Panel A,true=93.4661286504995; recovered=94.89692995957513,true=93.4661286504995; recovered=94.89692995957513,M1S044,true=93.4661286504995; recovered=94.89692995957513,direct source coordinate pair,true,PASS
+M1RV0298,M1F05,Panel B,true=93.4661286504995; relative_error=0.015308233364686244,true=93.4661286504995; relative_error=0.015308233364686244,M1S044,true=93.4661286504995; relative_error=0.015308233364686244,direct source coordinate pair,true,PASS
+M1RV0299,M1F05,Panel A,true=67.93186230979198; recovered=68.15559857583678,true=67.93186230979198; recovered=68.15559857583678,M1S044,true=67.93186230979198; recovered=68.15559857583678,direct source coordinate pair,true,PASS
+M1RV0300,M1F05,Panel B,true=67.93186230979198; relative_error=0.0032935394148990585,true=67.93186230979198; relative_error=0.0032935394148990585,M1S044,true=67.93186230979198; relative_error=0.0032935394148990585,direct source coordinate pair,true,PASS
+M1RV0301,M1F05,Panel A,true=49.765692112995865; recovered=50.455253019974414,true=49.765692112995865; recovered=50.455253019974414,M1S044,true=49.765692112995865; recovered=50.455253019974414,direct source coordinate pair,true,PASS
+M1RV0302,M1F05,Panel B,true=49.765692112995865; relative_error=0.013856150245290704,true=49.765692112995865; relative_error=0.013856150245290704,M1S044,true=49.765692112995865; relative_error=0.013856150245290704,direct source coordinate pair,true,PASS
+M1RV0303,M1F05,Panel A,true=83.96132134259278; recovered=84.35680224958844,true=83.96132134259278; recovered=84.35680224958844,M1S044,true=83.96132134259278; recovered=84.35680224958844,direct source coordinate pair,true,PASS
+M1RV0304,M1F05,Panel B,true=83.96132134259278; relative_error=0.0047102749298328925,true=83.96132134259278; relative_error=0.0047102749298328925,M1S044,true=83.96132134259278; relative_error=0.0047102749298328925,direct source coordinate pair,true,PASS
+M1RV0305,M1F05,Panel A,true=87.27263700516198; recovered=87.22460013560524,true=87.27263700516198; recovered=87.22460013560524,M1S044,true=87.27263700516198; recovered=87.22460013560524,direct source coordinate pair,true,PASS
+M1RV0306,M1F05,Panel B,true=87.27263700516198; relative_error=0.000550423032982239,true=87.27263700516198; relative_error=0.000550423032982239,M1S044,true=87.27263700516198; relative_error=0.000550423032982239,direct source coordinate pair,true,PASS
+M1RV0307,M1F05,Panel A,true=109.36173473296935; recovered=111.78792363742703,true=109.36173473296935; recovered=111.78792363742703,M1S044,true=109.36173473296935; recovered=111.78792363742703,direct source coordinate pair,true,PASS
+M1RV0308,M1F05,Panel B,true=109.36173473296935; relative_error=0.022184989204695287,true=109.36173473296935; relative_error=0.022184989204695287,M1S044,true=109.36173473296935; relative_error=0.022184989204695287,direct source coordinate pair,true,PASS
+M1RV0309,M1F05,Panel A,true=82.09215809091903; recovered=81.39700895345018,true=82.09215809091903; recovered=81.39700895345018,M1S044,true=82.09215809091903; recovered=81.39700895345018,direct source coordinate pair,true,PASS
+M1RV0310,M1F05,Panel B,true=82.09215809091903; relative_error=0.008467911596366508,true=82.09215809091903; relative_error=0.008467911596366508,M1S044,true=82.09215809091903; relative_error=0.008467911596366508,direct source coordinate pair,true,PASS
+M1RV0311,M1F05,Panel A,true=88.58260074068289; recovered=90.09458112229741,true=88.58260074068289; recovered=90.09458112229741,M1S044,true=88.58260074068289; recovered=90.09458112229741,direct source coordinate pair,true,PASS
+M1RV0312,M1F05,Panel B,true=88.58260074068289; relative_error=0.017068593256148564,true=88.58260074068289; relative_error=0.017068593256148564,M1S044,true=88.58260074068289; relative_error=0.017068593256148564,direct source coordinate pair,true,PASS
+M1RV0313,M1F05,Panel A,true=72.00405723514474; recovered=70.94654363229206,true=72.00405723514474; recovered=70.94654363229206,M1S044,true=72.00405723514474; recovered=70.94654363229206,direct source coordinate pair,true,PASS
+M1RV0314,M1F05,Panel B,true=72.00405723514474; relative_error=0.014686861316705276,true=72.00405723514474; relative_error=0.014686861316705276,M1S044,true=72.00405723514474; relative_error=0.014686861316705276,direct source coordinate pair,true,PASS
+M1RV0315,M1F05,Panel A,true=40.8181987819275; recovered=40.0,true=40.8181987819275; recovered=40.0,M1S044,true=40.8181987819275; recovered=40.0,direct source coordinate pair,true,PASS
+M1RV0316,M1F05,Panel B,true=40.8181987819275; relative_error=0.02004495069218394,true=40.8181987819275; relative_error=0.02004495069218394,M1S044,true=40.8181987819275; relative_error=0.02004495069218394,direct source coordinate pair,true,PASS
+M1RV0317,M1F05,Panel A,true=61.03087135749249; recovered=61.93094116746474,true=61.03087135749249; recovered=61.93094116746474,M1S044,true=61.03087135749249; recovered=61.93094116746474,direct source coordinate pair,true,PASS
+M1RV0318,M1F05,Panel B,true=61.03087135749249; relative_error=0.014747779114933999,true=61.03087135749249; relative_error=0.014747779114933999,M1S044,true=61.03087135749249; relative_error=0.014747779114933999,direct source coordinate pair,true,PASS
+M1RV0319,M1F05,Panel A,true=46.74416722987074; recovered=46.80260246426329,true=46.74416722987074; recovered=46.80260246426329,M1S044,true=46.74416722987074; recovered=46.80260246426329,direct source coordinate pair,true,PASS
+M1RV0320,M1F05,Panel B,true=46.74416722987074; relative_error=0.0012501075076422744,true=46.74416722987074; relative_error=0.0012501075076422744,M1S044,true=46.74416722987074; relative_error=0.0012501075076422744,direct source coordinate pair,true,PASS
+M1RV0321,M1F05,Panel A,true=51.82767594192946; recovered=52.141555659786896,true=51.82767594192946; recovered=52.141555659786896,M1S044,true=51.82767594192946; recovered=52.141555659786896,direct source coordinate pair,true,PASS
+M1RV0322,M1F05,Panel B,true=51.82767594192946; relative_error=0.006056218268577584,true=51.82767594192946; relative_error=0.006056218268577584,M1S044,true=51.82767594192946; relative_error=0.006056218268577584,direct source coordinate pair,true,PASS
+M1RV0323,M1F05,Panel A,true=76.74018970789105; recovered=76.32007255278938,true=76.74018970789105; recovered=76.32007255278938,M1S044,true=76.74018970789105; recovered=76.32007255278938,direct source coordinate pair,true,PASS
+M1RV0324,M1F05,Panel B,true=76.74018970789105; relative_error=0.005474538917623556,true=76.74018970789105; relative_error=0.005474538917623556,M1S044,true=76.74018970789105; relative_error=0.005474538917623556,direct source coordinate pair,true,PASS
+M1RV0325,M1F05,Panel A,true=87.57938807198337; recovered=88.62152333904112,true=87.57938807198337; recovered=88.62152333904112,M1S044,true=87.57938807198337; recovered=88.62152333904112,direct source coordinate pair,true,PASS
+M1RV0326,M1F05,Panel B,true=87.57938807198337; relative_error=0.011899321175904901,true=87.57938807198337; relative_error=0.011899321175904901,M1S044,true=87.57938807198337; relative_error=0.011899321175904901,direct source coordinate pair,true,PASS
+M1RV0327,M1F05,Panel A,true=112.4064483582291; recovered=118.13872954352733,true=112.4064483582291; recovered=118.13872954352733,M1S044,true=112.4064483582291; recovered=118.13872954352733,direct source coordinate pair,true,PASS
+M1RV0328,M1F05,Panel B,true=112.4064483582291; relative_error=0.050996017301694084,true=112.4064483582291; relative_error=0.050996017301694084,M1S044,true=112.4064483582291; relative_error=0.050996017301694084,direct source coordinate pair,true,PASS
+M1RV0329,M1F05,Panel A,true=101.07778102197086; recovered=104.0561972278479,true=101.07778102197086; recovered=104.0561972278479,M1S044,true=101.07778102197086; recovered=104.0561972278479,direct source coordinate pair,true,PASS
+M1RV0330,M1F05,Panel B,true=101.07778102197086; relative_error=0.02946657688527643,true=101.07778102197086; relative_error=0.02946657688527643,M1S044,true=101.07778102197086; relative_error=0.02946657688527643,direct source coordinate pair,true,PASS
+M1RV0331,M1F05,Panel A,true=40.160021121128175; recovered=40.0,true=40.160021121128175; recovered=40.0,M1S044,true=40.160021121128175; recovered=40.0,direct source coordinate pair,true,PASS
+M1RV0332,M1F05,Panel B,true=40.160021121128175; relative_error=0.003984587573934007,true=40.160021121128175; relative_error=0.003984587573934007,M1S044,true=40.160021121128175; relative_error=0.003984587573934007,direct source coordinate pair,true,PASS
+M1RV0333,M1F05,Panel A,true=95.22643641811477; recovered=94.97763454419176,true=95.22643641811477; recovered=94.97763454419176,M1S044,true=95.22643641811477; recovered=94.97763454419176,direct source coordinate pair,true,PASS
+M1RV0334,M1F05,Panel B,true=95.22643641811477; relative_error=0.0026127395215188903,true=95.22643641811477; relative_error=0.0026127395215188903,M1S044,true=95.22643641811477; relative_error=0.0026127395215188903,direct source coordinate pair,true,PASS
+M1RV0335,M1F05,Panel A,true=64.277595887869; recovered=64.76715699116193,true=64.277595887869; recovered=64.76715699116193,M1S044,true=64.277595887869; recovered=64.76715699116193,direct source coordinate pair,true,PASS
+M1RV0336,M1F05,Panel B,true=64.277595887869; relative_error=0.0076163567807818735,true=64.277595887869; relative_error=0.0076163567807818735,M1S044,true=64.277595887869; relative_error=0.0076163567807818735,direct source coordinate pair,true,PASS
+M1RV0337,M1F05,Panel A,true=94.80226778030959; recovered=93.51518222278219,true=94.80226778030959; recovered=93.51518222278219,M1S044,true=94.80226778030959; recovered=93.51518222278219,direct source coordinate pair,true,PASS
+M1RV0338,M1F05,Panel B,true=94.80226778030959; relative_error=0.013576527098592596,true=94.80226778030959; relative_error=0.013576527098592596,M1S044,true=94.80226778030959; relative_error=0.013576527098592596,direct source coordinate pair,true,PASS
+M1RV0339,M1F05,Panel A,true=55.0606486099216; recovered=55.09357264375339,true=55.0606486099216; recovered=55.09357264375339,M1S044,true=55.0606486099216; recovered=55.09357264375339,direct source coordinate pair,true,PASS
+M1RV0340,M1F05,Panel B,true=55.0606486099216; relative_error=0.0005979594258876474,true=55.0606486099216; relative_error=0.0005979594258876474,M1S044,true=55.0606486099216; relative_error=0.0005979594258876474,direct source coordinate pair,true,PASS
+M1RV0341,M1F05,Panel A,true=57.12046792685906; recovered=56.61573778692994,true=57.12046792685906; recovered=56.61573778692994,M1S044,true=57.12046792685906; recovered=56.61573778692994,direct source coordinate pair,true,PASS
+M1RV0342,M1F05,Panel B,true=57.12046792685906; relative_error=0.00883623958710224,true=57.12046792685906; relative_error=0.00883623958710224,M1S044,true=57.12046792685906; relative_error=0.00883623958710224,direct source coordinate pair,true,PASS
+M1RV0343,M1F05,Panel A,true=54.116639493231744; recovered=55.07157895098556,true=54.116639493231744; recovered=55.07157895098556,M1S044,true=54.116639493231744; recovered=55.07157895098556,direct source coordinate pair,true,PASS
+M1RV0344,M1F05,Panel B,true=54.116639493231744; relative_error=0.017645948948349775,true=54.116639493231744; relative_error=0.017645948948349775,M1S044,true=54.116639493231744; relative_error=0.017645948948349775,direct source coordinate pair,true,PASS
+M1RV0345,M1F05,Panel A,true=56.27355784141354; recovered=56.871617269534916,true=56.27355784141354; recovered=56.871617269534916,M1S044,true=56.27355784141354; recovered=56.871617269534916,direct source coordinate pair,true,PASS
+M1RV0346,M1F05,Panel B,true=56.27355784141354; relative_error=0.010627716658804229,true=56.27355784141354; relative_error=0.010627716658804229,M1S044,true=56.27355784141354; relative_error=0.010627716658804229,direct source coordinate pair,true,PASS
+M1RV0347,M1F05,Panel A,true=54.751651313351715; recovered=55.60919866612936,true=54.751651313351715; recovered=55.60919866612936,M1S044,true=54.751651313351715; recovered=55.60919866612936,direct source coordinate pair,true,PASS
+M1RV0348,M1F05,Panel B,true=54.751651313351715; relative_error=0.015662492951486976,true=54.751651313351715; relative_error=0.015662492951486976,M1S044,true=54.751651313351715; relative_error=0.015662492951486976,direct source coordinate pair,true,PASS
+M1RV0349,M1F05,Panel A,true=79.32266277386628; recovered=80.35237067627585,true=79.32266277386628; recovered=80.35237067627585,M1S044,true=79.32266277386628; recovered=80.35237067627585,direct source coordinate pair,true,PASS
+M1RV0350,M1F05,Panel B,true=79.32266277386628; relative_error=0.012981257391031733,true=79.32266277386628; relative_error=0.012981257391031733,M1S044,true=79.32266277386628; relative_error=0.012981257391031733,direct source coordinate pair,true,PASS
+M1RV0351,M1F05,Panel A,true=147.91522728546968; recovered=150.31530970786403,true=147.91522728546968; recovered=150.31530970786403,M1S044,true=147.91522728546968; recovered=150.31530970786403,direct source coordinate pair,true,PASS
+M1RV0352,M1F05,Panel B,true=147.91522728546968; relative_error=0.01622606723080848,true=147.91522728546968; relative_error=0.01622606723080848,M1S044,true=147.91522728546968; relative_error=0.01622606723080848,direct source coordinate pair,true,PASS
+M1RV0353,M1F05,Panel A,true=82.82143865809552; recovered=83.67231040430168,true=82.82143865809552; recovered=83.67231040430168,M1S044,true=82.82143865809552; recovered=83.67231040430168,direct source coordinate pair,true,PASS
+M1RV0354,M1F05,Panel B,true=82.82143865809552; relative_error=0.01027356877630134,true=82.82143865809552; relative_error=0.01027356877630134,M1S044,true=82.82143865809552; relative_error=0.01027356877630134,direct source coordinate pair,true,PASS
+M1RV0355,M1F05,Panel A,true=40.03303632609882; recovered=40.0,true=40.03303632609882; recovered=40.0,M1S044,true=40.03303632609882; recovered=40.0,direct source coordinate pair,true,PASS
+M1RV0356,M1F05,Panel B,true=40.03303632609882; relative_error=0.0008252265911011857,true=40.03303632609882; relative_error=0.0008252265911011857,M1S044,true=40.03303632609882; relative_error=0.0008252265911011857,direct source coordinate pair,true,PASS
+M1RV0357,M1F05,Panel A,true=50.102091062788325; recovered=49.66802816940476,true=50.102091062788325; recovered=49.66802816940476,M1S044,true=50.102091062788325; recovered=49.66802816940476,direct source coordinate pair,true,PASS
+M1RV0358,M1F05,Panel B,true=50.102091062788325; relative_error=0.008663568409541987,true=50.102091062788325; relative_error=0.008663568409541987,M1S044,true=50.102091062788325; relative_error=0.008663568409541987,direct source coordinate pair,true,PASS
+M1RV0359,M1F05,Panel A,true=61.73520493377487; recovered=60.80179663425461,true=61.73520493377487; recovered=60.80179663425461,M1S044,true=61.73520493377487; recovered=60.80179663425461,direct source coordinate pair,true,PASS
+M1RV0360,M1F05,Panel B,true=61.73520493377487; relative_error=0.015119546464963602,true=61.73520493377487; relative_error=0.015119546464963602,M1S044,true=61.73520493377487; relative_error=0.015119546464963602,direct source coordinate pair,true,PASS
+M1RV0361,M1F05,Panel A,true=44.58862137211922; recovered=45.48037801810579,true=44.58862137211922; recovered=45.48037801810579,M1S044,true=44.58862137211922; recovered=45.48037801810579,direct source coordinate pair,true,PASS
+M1RV0362,M1F05,Panel B,true=44.58862137211922; relative_error=0.019999646065401205,true=44.58862137211922; relative_error=0.019999646065401205,M1S044,true=44.58862137211922; relative_error=0.019999646065401205,direct source coordinate pair,true,PASS
+M1RV0363,M1F05,Panel A,true=47.449771208196864; recovered=47.00135301804808,true=47.449771208196864; recovered=47.00135301804808,M1S044,true=47.449771208196864; recovered=47.00135301804808,direct source coordinate pair,true,PASS
+M1RV0364,M1F05,Panel B,true=47.449771208196864; relative_error=0.009450376234297255,true=47.449771208196864; relative_error=0.009450376234297255,M1S044,true=47.449771208196864; relative_error=0.009450376234297255,direct source coordinate pair,true,PASS
+M1RV0365,M1F05,Panel A,true=50.530154647343615; recovered=50.693596191622106,true=50.530154647343615; recovered=50.693596191622106,M1S044,true=50.530154647343615; recovered=50.693596191622106,direct source coordinate pair,true,PASS
+M1RV0366,M1F05,Panel B,true=50.530154647343615; relative_error=0.003234534812314957,true=50.530154647343615; relative_error=0.003234534812314957,M1S044,true=50.530154647343615; relative_error=0.003234534812314957,direct source coordinate pair,true,PASS
+M1RV0367,M1F05,Panel A,true=42.97610485816357; recovered=41.21133315819644,true=42.97610485816357; recovered=41.21133315819644,M1S044,true=42.97610485816357; recovered=41.21133315819644,direct source coordinate pair,true,PASS
+M1RV0368,M1F05,Panel B,true=42.97610485816357; relative_error=0.04106402164159615,true=42.97610485816357; relative_error=0.04106402164159615,M1S044,true=42.97610485816357; relative_error=0.04106402164159615,direct source coordinate pair,true,PASS
+M1RV0369,M1F05,Panel A,true=46.250517117317536; recovered=47.01778363670819,true=46.250517117317536; recovered=47.01778363670819,M1S044,true=46.250517117317536; recovered=47.01778363670819,direct source coordinate pair,true,PASS
+M1RV0370,M1F05,Panel B,true=46.250517117317536; relative_error=0.01658936088096982,true=46.250517117317536; relative_error=0.01658936088096982,M1S044,true=46.250517117317536; relative_error=0.01658936088096982,direct source coordinate pair,true,PASS
+M1RV0371,M1F05,Panel A,true=48.655514233474754; recovered=48.786187295728055,true=48.655514233474754; recovered=48.786187295728055,M1S044,true=48.655514233474754; recovered=48.786187295728055,direct source coordinate pair,true,PASS
+M1RV0372,M1F05,Panel B,true=48.655514233474754; relative_error=0.002685678371957244,true=48.655514233474754; relative_error=0.002685678371957244,M1S044,true=48.655514233474754; relative_error=0.002685678371957244,direct source coordinate pair,true,PASS
+M1RV0373,M1F05,Panel A,true=40.10756003744539; recovered=40.0,true=40.10756003744539; recovered=40.0,M1S044,true=40.10756003744539; recovered=40.0,direct source coordinate pair,true,PASS
+M1RV0374,M1F05,Panel B,true=40.10756003744539; relative_error=0.0026817896013860676,true=40.10756003744539; relative_error=0.0026817896013860676,M1S044,true=40.10756003744539; relative_error=0.0026817896013860676,direct source coordinate pair,true,PASS
+M1RV0375,M1F05,Panel A,true=50.29110263102367; recovered=50.20968738502884,true=50.29110263102367; recovered=50.20968738502884,M1S044,true=50.29110263102367; recovered=50.20968738502884,direct source coordinate pair,true,PASS
+M1RV0376,M1F05,Panel B,true=50.29110263102367; relative_error=0.0016188797169979425,true=50.29110263102367; relative_error=0.0016188797169979425,M1S044,true=50.29110263102367; relative_error=0.0016188797169979425,direct source coordinate pair,true,PASS
+M1RV0377,M1F05,Panel A,true=49.80086170056648; recovered=51.11160315849428,true=49.80086170056648; recovered=51.11160315849428,M1S044,true=49.80086170056648; recovered=51.11160315849428,direct source coordinate pair,true,PASS
+M1RV0378,M1F05,Panel B,true=49.80086170056648; relative_error=0.026319654182065985,true=49.80086170056648; relative_error=0.026319654182065985,M1S044,true=49.80086170056648; relative_error=0.026319654182065985,direct source coordinate pair,true,PASS
+M1RV0379,M1F05,Panel A,true=60.037814323358845; recovered=60.61359566009634,true=60.037814323358845; recovered=60.61359566009634,M1S044,true=60.037814323358845; recovered=60.61359566009634,direct source coordinate pair,true,PASS
+M1RV0380,M1F05,Panel B,true=60.037814323358845; relative_error=0.009590311426668203,true=60.037814323358845; relative_error=0.009590311426668203,M1S044,true=60.037814323358845; relative_error=0.009590311426668203,direct source coordinate pair,true,PASS
+M1RV0381,M1F05,Panel A,true=40.587751440174436; recovered=40.0,true=40.587751440174436; recovered=40.0,M1S044,true=40.587751440174436; recovered=40.0,direct source coordinate pair,true,PASS
+M1RV0382,M1F05,Panel B,true=40.587751440174436; relative_error=0.014481005212638367,true=40.587751440174436; relative_error=0.014481005212638367,M1S044,true=40.587751440174436; relative_error=0.014481005212638367,direct source coordinate pair,true,PASS
+M1RV0383,M1F05,Panel A,true=70.76264481790481; recovered=72.81517108889095,true=70.76264481790481; recovered=72.81517108889095,M1S044,true=70.76264481790481; recovered=72.81517108889095,direct source coordinate pair,true,PASS
+M1RV0384,M1F05,Panel B,true=70.76264481790481; relative_error=0.02900578795871677,true=70.76264481790481; relative_error=0.02900578795871677,M1S044,true=70.76264481790481; relative_error=0.02900578795871677,direct source coordinate pair,true,PASS
+M1RV0385,M1F05,Panel A,true=77.52216747806456; recovered=79.90770583516174,true=77.52216747806456; recovered=79.90770583516174,M1S044,true=77.52216747806456; recovered=79.90770583516174,direct source coordinate pair,true,PASS
+M1RV0386,M1F05,Panel B,true=77.52216747806456; relative_error=0.030772338218899516,true=77.52216747806456; relative_error=0.030772338218899516,M1S044,true=77.52216747806456; relative_error=0.030772338218899516,direct source coordinate pair,true,PASS
+M1RV0387,M1F05,Panel A,true=47.715161847828696; recovered=48.900509819511356,true=47.715161847828696; recovered=48.900509819511356,M1S044,true=47.715161847828696; recovered=48.900509819511356,direct source coordinate pair,true,PASS
+M1RV0388,M1F05,Panel B,true=47.715161847828696; relative_error=0.024842166007168216,true=47.715161847828696; relative_error=0.024842166007168216,M1S044,true=47.715161847828696; relative_error=0.024842166007168216,direct source coordinate pair,true,PASS
+M1RV0389,M1F05,Panel A,true=63.20090429363795; recovered=65.03048181725258,true=63.20090429363795; recovered=65.03048181725258,M1S044,true=63.20090429363795; recovered=65.03048181725258,direct source coordinate pair,true,PASS
+M1RV0390,M1F05,Panel B,true=63.20090429363795; relative_error=0.02894859724022657,true=63.20090429363795; relative_error=0.02894859724022657,M1S044,true=63.20090429363795; relative_error=0.02894859724022657,direct source coordinate pair,true,PASS
+M1RV0391,M1F05,Panel A,true=44.3208093597128; recovered=43.43820213602214,true=44.3208093597128; recovered=43.43820213602214,M1S044,true=44.3208093597128; recovered=43.43820213602214,direct source coordinate pair,true,PASS
+M1RV0392,M1F05,Panel B,true=44.3208093597128; relative_error=0.019914059252106917,true=44.3208093597128; relative_error=0.019914059252106917,M1S044,true=44.3208093597128; relative_error=0.019914059252106917,direct source coordinate pair,true,PASS
+M1RV0393,M1F05,Panel A,true=44.65366349358203; recovered=43.97034118741542,true=44.65366349358203; recovered=43.97034118741542,M1S044,true=44.65366349358203; recovered=43.97034118741542,direct source coordinate pair,true,PASS
+M1RV0394,M1F05,Panel B,true=44.65366349358203; relative_error=0.015302715448304064,true=44.65366349358203; relative_error=0.015302715448304064,M1S044,true=44.65366349358203; relative_error=0.015302715448304064,direct source coordinate pair,true,PASS
+M1RV0395,M1F05,Panel A,true=99.54053013117922; recovered=97.70100674607001,true=99.54053013117922; recovered=97.70100674607001,M1S044,true=99.54053013117922; recovered=97.70100674607001,direct source coordinate pair,true,PASS
+M1RV0396,M1F05,Panel B,true=99.54053013117922; relative_error=0.018480144547000164,true=99.54053013117922; relative_error=0.018480144547000164,M1S044,true=99.54053013117922; relative_error=0.018480144547000164,direct source coordinate pair,true,PASS
+M1RV0397,M1F05,Panel A,true=75.927830437514; recovered=77.65926070674315,true=75.927830437514; recovered=77.65926070674315,M1S044,true=75.927830437514; recovered=77.65926070674315,direct source coordinate pair,true,PASS
+M1RV0398,M1F05,Panel B,true=75.927830437514; relative_error=0.0228036315439575,true=75.927830437514; relative_error=0.0228036315439575,M1S044,true=75.927830437514; relative_error=0.0228036315439575,direct source coordinate pair,true,PASS
+M1RV0399,M1F05,Panel A,true=62.81838293604479; recovered=64.31907614411826,true=62.81838293604479; recovered=64.31907614411826,M1S044,true=62.81838293604479; recovered=64.31907614411826,direct source coordinate pair,true,PASS
+M1RV0400,M1F05,Panel B,true=62.81838293604479; relative_error=0.023889395714011226,true=62.81838293604479; relative_error=0.023889395714011226,M1S044,true=62.81838293604479; relative_error=0.023889395714011226,direct source coordinate pair,true,PASS
+M1RV0401,M1F05,Panel A,true=57.37549262552661; recovered=57.41744382826363,true=57.37549262552661; recovered=57.41744382826363,M1S044,true=57.37549262552661; recovered=57.41744382826363,direct source coordinate pair,true,PASS
+M1RV0402,M1F05,Panel B,true=57.37549262552661; relative_error=0.0007311693689642186,true=57.37549262552661; relative_error=0.0007311693689642186,M1S044,true=57.37549262552661; relative_error=0.0007311693689642186,direct source coordinate pair,true,PASS
+M1RV0403,M1F05,Panel A,true=46.923605648858754; recovered=47.77767346383567,true=46.923605648858754; recovered=47.77767346383567,M1S044,true=46.923605648858754; recovered=47.77767346383567,direct source coordinate pair,true,PASS
+M1RV0404,M1F05,Panel B,true=46.923605648858754; relative_error=0.018201240146976792,true=46.923605648858754; relative_error=0.018201240146976792,M1S044,true=46.923605648858754; relative_error=0.018201240146976792,direct source coordinate pair,true,PASS
+M1RV0405,M1F05,Panel A,true=56.23548121927997; recovered=56.04211603553087,true=56.23548121927997; recovered=56.04211603553087,M1S044,true=56.23548121927997; recovered=56.04211603553087,direct source coordinate pair,true,PASS
+M1RV0406,M1F05,Panel B,true=56.23548121927997; relative_error=0.0034384907812046476,true=56.23548121927997; relative_error=0.0034384907812046476,M1S044,true=56.23548121927997; relative_error=0.0034384907812046476,direct source coordinate pair,true,PASS
+M1RV0407,M1F05,Panel A,true=48.481641650957904; recovered=49.57904293516339,true=48.481641650957904; recovered=49.57904293516339,M1S044,true=48.481641650957904; recovered=49.57904293516339,direct source coordinate pair,true,PASS
+M1RV0408,M1F05,Panel B,true=48.481641650957904; relative_error=0.022635398613483345,true=48.481641650957904; relative_error=0.022635398613483345,M1S044,true=48.481641650957904; relative_error=0.022635398613483345,direct source coordinate pair,true,PASS
+M1RV0409,M1F05,Panel A,true=71.0627010314957; recovered=70.12606451487102,true=71.0627010314957; recovered=70.12606451487102,M1S044,true=71.0627010314957; recovered=70.12606451487102,direct source coordinate pair,true,PASS
+M1RV0410,M1F05,Panel B,true=71.0627010314957; relative_error=0.01318042380924363,true=71.0627010314957; relative_error=0.01318042380924363,M1S044,true=71.0627010314957; relative_error=0.01318042380924363,direct source coordinate pair,true,PASS
+M1RV0411,M1F05,Panel A,true=76.2340616423353; recovered=75.14332640828863,true=76.2340616423353; recovered=75.14332640828863,M1S044,true=76.2340616423353; recovered=75.14332640828863,direct source coordinate pair,true,PASS
+M1RV0412,M1F05,Panel B,true=76.2340616423353; relative_error=0.014307715088880353,true=76.2340616423353; relative_error=0.014307715088880353,M1S044,true=76.2340616423353; relative_error=0.014307715088880353,direct source coordinate pair,true,PASS
+M1RV0413,M1F05,Panel A,true=94.39271871048345; recovered=93.25465451197327,true=94.39271871048345; recovered=93.25465451197327,M1S044,true=94.39271871048345; recovered=93.25465451197327,direct source coordinate pair,true,PASS
+M1RV0414,M1F05,Panel B,true=94.39271871048345; relative_error=0.012056694775375541,true=94.39271871048345; relative_error=0.012056694775375541,M1S044,true=94.39271871048345; relative_error=0.012056694775375541,direct source coordinate pair,true,PASS
+M1RV0415,M1F05,Panel A,true=46.20131807445682; recovered=45.85984667648258,true=46.20131807445682; recovered=45.85984667648258,M1S044,true=46.20131807445682; recovered=45.85984667648258,direct source coordinate pair,true,PASS
+M1RV0416,M1F05,Panel B,true=46.20131807445682; relative_error=0.007390944938495748,true=46.20131807445682; relative_error=0.007390944938495748,M1S044,true=46.20131807445682; relative_error=0.007390944938495748,direct source coordinate pair,true,PASS
+M1RV0417,M1F05,Panel A,true=41.33247616628348; recovered=40.0,true=41.33247616628348; recovered=40.0,M1S044,true=41.33247616628348; recovered=40.0,direct source coordinate pair,true,PASS
+M1RV0418,M1F05,Panel B,true=41.33247616628348; relative_error=0.03223799515235505,true=41.33247616628348; relative_error=0.03223799515235505,M1S044,true=41.33247616628348; relative_error=0.03223799515235505,direct source coordinate pair,true,PASS
+M1RV0419,M1F05,Panel A,true=48.773533532389415; recovered=48.266833433741574,true=48.773533532389415; recovered=48.266833433741574,M1S044,true=48.773533532389415; recovered=48.266833433741574,direct source coordinate pair,true,PASS
+M1RV0420,M1F05,Panel B,true=48.773533532389415; relative_error=0.010388833081190483,true=48.773533532389415; relative_error=0.010388833081190483,M1S044,true=48.773533532389415; relative_error=0.010388833081190483,direct source coordinate pair,true,PASS
+M1RV0421,M1F05,Panel A,true=47.408112434411485; recovered=48.595475225128695,true=47.408112434411485; recovered=48.595475225128695,M1S044,true=47.408112434411485; recovered=48.595475225128695,direct source coordinate pair,true,PASS
+M1RV0422,M1F05,Panel B,true=47.408112434411485; relative_error=0.025045561397533184,true=47.408112434411485; relative_error=0.025045561397533184,M1S044,true=47.408112434411485; relative_error=0.025045561397533184,direct source coordinate pair,true,PASS
+M1RV0423,M1F05,Panel A,true=79.939148106013; recovered=82.3110462796862,true=79.939148106013; recovered=82.3110462796862,M1S044,true=79.939148106013; recovered=82.3110462796862,direct source coordinate pair,true,PASS
+M1RV0424,M1F05,Panel B,true=79.939148106013; relative_error=0.02967129660335708,true=79.939148106013; relative_error=0.02967129660335708,M1S044,true=79.939148106013; relative_error=0.02967129660335708,direct source coordinate pair,true,PASS
+M1RV0425,M1F05,Panel A,true=57.78220412142459; recovered=59.441326693239496,true=57.78220412142459; recovered=59.441326693239496,M1S044,true=57.78220412142459; recovered=59.441326693239496,direct source coordinate pair,true,PASS
+M1RV0426,M1F05,Panel B,true=57.78220412142459; relative_error=0.028713383247347124,true=57.78220412142459; relative_error=0.028713383247347124,M1S044,true=57.78220412142459; relative_error=0.028713383247347124,direct source coordinate pair,true,PASS
+M1RV0427,M1F05,Panel A,true=66.8242229579672; recovered=68.5676442320174,true=66.8242229579672; recovered=68.5676442320174,M1S044,true=66.8242229579672; recovered=68.5676442320174,direct source coordinate pair,true,PASS
+M1RV0428,M1F05,Panel B,true=66.8242229579672; relative_error=0.026089660259077427,true=66.8242229579672; relative_error=0.026089660259077427,M1S044,true=66.8242229579672; relative_error=0.026089660259077427,direct source coordinate pair,true,PASS
+M1RV0429,M1F05,Panel A,true=123.0112453966247; recovered=123.21436703598471,true=123.0112453966247; recovered=123.21436703598471,M1S044,true=123.0112453966247; recovered=123.21436703598471,direct source coordinate pair,true,PASS
+M1RV0430,M1F05,Panel B,true=123.0112453966247; relative_error=0.0016512444752923346,true=123.0112453966247; relative_error=0.0016512444752923346,M1S044,true=123.0112453966247; relative_error=0.0016512444752923346,direct source coordinate pair,true,PASS
+M1RV0431,M1F05,Panel A,true=116.8625612402579; recovered=115.9675956722372,true=116.8625612402579; recovered=115.9675956722372,M1S044,true=116.8625612402579; recovered=115.9675956722372,direct source coordinate pair,true,PASS
+M1RV0432,M1F05,Panel B,true=116.8625612402579; relative_error=0.007658274459522992,true=116.8625612402579; relative_error=0.007658274459522992,M1S044,true=116.8625612402579; relative_error=0.007658274459522992,direct source coordinate pair,true,PASS
+M1RV0433,M1F05,Panel A,true=82.81438134030883; recovered=85.18444517541256,true=82.81438134030883; recovered=85.18444517541256,M1S044,true=82.81438134030883; recovered=85.18444517541256,direct source coordinate pair,true,PASS
+M1RV0434,M1F05,Panel B,true=82.81438134030883; relative_error=0.02861898859528324,true=82.81438134030883; relative_error=0.02861898859528324,M1S044,true=82.81438134030883; relative_error=0.02861898859528324,direct source coordinate pair,true,PASS
+M1RV0435,M1F05,Panel A,true=67.82293568550072; recovered=69.66585423683289,true=67.82293568550072; recovered=69.66585423683289,M1S044,true=67.82293568550072; recovered=69.66585423683289,direct source coordinate pair,true,PASS
+M1RV0436,M1F05,Panel B,true=67.82293568550072; relative_error=0.02717249751437909,true=67.82293568550072; relative_error=0.02717249751437909,M1S044,true=67.82293568550072; relative_error=0.02717249751437909,direct source coordinate pair,true,PASS
+M1RV0437,M1F05,Panel A,true=65.71871865183611; recovered=67.62563111592321,true=65.71871865183611; recovered=67.62563111592321,M1S044,true=65.71871865183611; recovered=67.62563111592321,direct source coordinate pair,true,PASS
+M1RV0438,M1F05,Panel B,true=65.71871865183611; relative_error=0.02901627577660969,true=65.71871865183611; relative_error=0.02901627577660969,M1S044,true=65.71871865183611; relative_error=0.02901627577660969,direct source coordinate pair,true,PASS
+M1RV0439,M1F05,Panel A,true=106.97804456380233; recovered=108.16931963012833,true=106.97804456380233; recovered=108.16931963012833,M1S044,true=106.97804456380233; recovered=108.16931963012833,direct source coordinate pair,true,PASS
+M1RV0440,M1F05,Panel B,true=106.97804456380233; relative_error=0.011135696779496811,true=106.97804456380233; relative_error=0.011135696779496811,M1S044,true=106.97804456380233; relative_error=0.011135696779496811,direct source coordinate pair,true,PASS
+M1RV0441,M1F05,Panel A,true=44.09472472258684; recovered=43.247617544300155,true=44.09472472258684; recovered=43.247617544300155,M1S044,true=44.09472472258684; recovered=43.247617544300155,direct source coordinate pair,true,PASS
+M1RV0442,M1F05,Panel B,true=44.09472472258684; relative_error=0.019211077597515124,true=44.09472472258684; relative_error=0.019211077597515124,M1S044,true=44.09472472258684; relative_error=0.019211077597515124,direct source coordinate pair,true,PASS
+M1RV0443,M1F05,Panel A,true=129.05266698239348; recovered=125.8976942381746,true=129.05266698239348; recovered=125.8976942381746,M1S044,true=129.05266698239348; recovered=125.8976942381746,direct source coordinate pair,true,PASS
+M1RV0444,M1F05,Panel B,true=129.05266698239348; relative_error=0.024447171980175434,true=129.05266698239348; relative_error=0.024447171980175434,M1S044,true=129.05266698239348; relative_error=0.024447171980175434,direct source coordinate pair,true,PASS
+M1RV0445,M1F05,Panel A,true=77.07880794293158; recovered=77.49114442890172,true=77.07880794293158; recovered=77.49114442890172,M1S044,true=77.07880794293158; recovered=77.49114442890172,direct source coordinate pair,true,PASS
+M1RV0446,M1F05,Panel B,true=77.07880794293158; relative_error=0.0053495441480547285,true=77.07880794293158; relative_error=0.0053495441480547285,M1S044,true=77.07880794293158; relative_error=0.0053495441480547285,direct source coordinate pair,true,PASS
+M1RV0447,M1F05,Panel A,true=45.251304228053954; recovered=45.088967894167965,true=45.251304228053954; recovered=45.088967894167965,M1S044,true=45.251304228053954; recovered=45.088967894167965,direct source coordinate pair,true,PASS
+M1RV0448,M1F05,Panel B,true=45.251304228053954; relative_error=0.0035874398905246805,true=45.251304228053954; relative_error=0.0035874398905246805,M1S044,true=45.251304228053954; relative_error=0.0035874398905246805,direct source coordinate pair,true,PASS
+M1RV0449,M1F05,Panel A,true=65.36521448173762; recovered=66.1092062637071,true=65.36521448173762; recovered=66.1092062637071,M1S044,true=65.36521448173762; recovered=66.1092062637071,direct source coordinate pair,true,PASS
+M1RV0450,M1F05,Panel B,true=65.36521448173762; relative_error=0.011382075127701657,true=65.36521448173762; relative_error=0.011382075127701657,M1S044,true=65.36521448173762; relative_error=0.011382075127701657,direct source coordinate pair,true,PASS
+M1RV0451,M1F05,Panel A,true=64.06792105336238; recovered=64.51029613108679,true=64.06792105336238; recovered=64.51029613108679,M1S044,true=64.06792105336238; recovered=64.51029613108679,direct source coordinate pair,true,PASS
+M1RV0452,M1F05,Panel B,true=64.06792105336238; relative_error=0.00690478277507945,true=64.06792105336238; relative_error=0.00690478277507945,M1S044,true=64.06792105336238; relative_error=0.00690478277507945,direct source coordinate pair,true,PASS
+M1RV0453,M1F05,Panel A,true=86.1518664492675; recovered=86.5156281547472,true=86.1518664492675; recovered=86.5156281547472,M1S044,true=86.1518664492675; recovered=86.5156281547472,direct source coordinate pair,true,PASS
+M1RV0454,M1F05,Panel B,true=86.1518664492675; relative_error=0.004222331105199128,true=86.1518664492675; relative_error=0.004222331105199128,M1S044,true=86.1518664492675; relative_error=0.004222331105199128,direct source coordinate pair,true,PASS
+M1RV0455,M1F05,Panel A,true=45.00366274722606; recovered=45.47196717801435,true=45.00366274722606; recovered=45.47196717801435,M1S044,true=45.00366274722606; recovered=45.47196717801435,direct source coordinate pair,true,PASS
+M1RV0456,M1F05,Panel B,true=45.00366274722606; relative_error=0.010405918145343829,true=45.00366274722606; relative_error=0.010405918145343829,M1S044,true=45.00366274722606; relative_error=0.010405918145343829,direct source coordinate pair,true,PASS
+M1RV0457,M1F05,Panel A,true=77.58592105133305; recovered=79.68440005908458,true=77.58592105133305; recovered=79.68440005908458,M1S044,true=77.58592105133305; recovered=79.68440005908458,direct source coordinate pair,true,PASS
+M1RV0458,M1F05,Panel B,true=77.58592105133305; relative_error=0.0270471624144685,true=77.58592105133305; relative_error=0.0270471624144685,M1S044,true=77.58592105133305; relative_error=0.0270471624144685,direct source coordinate pair,true,PASS
+M1RV0459,M1F05,Panel A,true=102.25436237115416; recovered=103.4330513930903,true=102.25436237115416; recovered=103.4330513930903,M1S044,true=102.25436237115416; recovered=103.4330513930903,direct source coordinate pair,true,PASS
+M1RV0460,M1F05,Panel B,true=102.25436237115416; relative_error=0.011527029210331701,true=102.25436237115416; relative_error=0.011527029210331701,M1S044,true=102.25436237115416; relative_error=0.011527029210331701,direct source coordinate pair,true,PASS
+M1RV0461,M1F05,Panel A,true=123.203077234611; recovered=127.77664392002788,true=123.203077234611; recovered=127.77664392002788,M1S044,true=123.203077234611; recovered=127.77664392002788,direct source coordinate pair,true,PASS
+M1RV0462,M1F05,Panel B,true=123.203077234611; relative_error=0.03712217899158157,true=123.203077234611; relative_error=0.03712217899158157,M1S044,true=123.203077234611; relative_error=0.03712217899158157,direct source coordinate pair,true,PASS
+M1RV0463,M1F05,Panel A,true=73.7137537024731; recovered=75.1723374220206,true=73.7137537024731; recovered=75.1723374220206,M1S044,true=73.7137537024731; recovered=75.1723374220206,direct source coordinate pair,true,PASS
+M1RV0464,M1F05,Panel B,true=73.7137537024731; relative_error=0.01978713125144473,true=73.7137537024731; relative_error=0.01978713125144473,M1S044,true=73.7137537024731; relative_error=0.01978713125144473,direct source coordinate pair,true,PASS
+M1RV0465,M1F05,Panel A,true=100.85848369623993; recovered=102.15241783155192,true=100.85848369623993; recovered=102.15241783155192,M1S044,true=100.85848369623993; recovered=102.15241783155192,direct source coordinate pair,true,PASS
+M1RV0466,M1F05,Panel B,true=100.85848369623993; relative_error=0.012829204722222336,true=100.85848369623993; relative_error=0.012829204722222336,M1S044,true=100.85848369623993; relative_error=0.012829204722222336,direct source coordinate pair,true,PASS
+M1RV0467,M1F05,Panel A,true=48.19053723895287; recovered=47.62335466140529,true=48.19053723895287; recovered=47.62335466140529,M1S044,true=48.19053723895287; recovered=47.62335466140529,direct source coordinate pair,true,PASS
+M1RV0468,M1F05,Panel B,true=48.19053723895287; relative_error=0.0117695840313049,true=48.19053723895287; relative_error=0.0117695840313049,M1S044,true=48.19053723895287; relative_error=0.0117695840313049,direct source coordinate pair,true,PASS
+M1RV0469,M1F05,Panel A,true=76.34474351940526; recovered=76.04932191403239,true=76.34474351940526; recovered=76.04932191403239,M1S044,true=76.34474351940526; recovered=76.04932191403239,direct source coordinate pair,true,PASS
+M1RV0470,M1F05,Panel B,true=76.34474351940526; relative_error=0.003869573617701338,true=76.34474351940526; relative_error=0.003869573617701338,M1S044,true=76.34474351940526; relative_error=0.003869573617701338,direct source coordinate pair,true,PASS
+M1RV0471,M1F05,Panel A,true=59.251343053309924; recovered=60.846804337053435,true=59.251343053309924; recovered=60.846804337053435,M1S044,true=59.251343053309924; recovered=60.846804337053435,direct source coordinate pair,true,PASS
+M1RV0472,M1F05,Panel B,true=59.251343053309924; relative_error=0.02692700623356392,true=59.251343053309924; relative_error=0.02692700623356392,M1S044,true=59.251343053309924; relative_error=0.02692700623356392,direct source coordinate pair,true,PASS
+M1RV0473,M1F05,Panel A,true=75.757973689604; recovered=75.54127477077172,true=75.757973689604; recovered=75.54127477077172,M1S044,true=75.757973689604; recovered=75.54127477077172,direct source coordinate pair,true,PASS
+M1RV0474,M1F05,Panel B,true=75.757973689604; relative_error=0.002860410703698845,true=75.757973689604; relative_error=0.002860410703698845,M1S044,true=75.757973689604; relative_error=0.002860410703698845,direct source coordinate pair,true,PASS
+M1RV0475,M1F05,Panel A,true=136.22104374867152; recovered=139.30860690795768,true=136.22104374867152; recovered=139.30860690795768,M1S044,true=136.22104374867152; recovered=139.30860690795768,direct source coordinate pair,true,PASS
+M1RV0476,M1F05,Panel B,true=136.22104374867152; relative_error=0.02266583102228119,true=136.22104374867152; relative_error=0.02266583102228119,M1S044,true=136.22104374867152; relative_error=0.02266583102228119,direct source coordinate pair,true,PASS
+M1RV0477,M1F05,Panel A,true=54.334290313146354; recovered=54.19679004850961,true=54.334290313146354; recovered=54.19679004850961,M1S044,true=54.334290313146354; recovered=54.19679004850961,direct source coordinate pair,true,PASS
+M1RV0478,M1F05,Panel B,true=54.334290313146354; relative_error=0.002530635144846521,true=54.334290313146354; relative_error=0.002530635144846521,M1S044,true=54.334290313146354; relative_error=0.002530635144846521,direct source coordinate pair,true,PASS
+M1RV0479,M1F05,Panel A,true=51.60080993144939; recovered=51.477727790427096,true=51.60080993144939; recovered=51.477727790427096,M1S044,true=51.60080993144939; recovered=51.477727790427096,direct source coordinate pair,true,PASS
+M1RV0480,M1F05,Panel B,true=51.60080993144939; relative_error=0.002385275370402257,true=51.60080993144939; relative_error=0.002385275370402257,M1S044,true=51.60080993144939; relative_error=0.002385275370402257,direct source coordinate pair,true,PASS
+M1RV0481,M1F05,Panel A,true=99.78808449063392; recovered=99.47792674459808,true=99.78808449063392; recovered=99.47792674459808,M1S044,true=99.78808449063392; recovered=99.47792674459808,direct source coordinate pair,true,PASS
+M1RV0482,M1F05,Panel B,true=99.78808449063392; relative_error=0.0031081641422323588,true=99.78808449063392; relative_error=0.0031081641422323588,M1S044,true=99.78808449063392; relative_error=0.0031081641422323588,direct source coordinate pair,true,PASS
+M1RV0483,M1F05,Panel A,true=89.99280569169662; recovered=89.51872700394641,true=89.99280569169662; recovered=89.51872700394641,M1S044,true=89.99280569169662; recovered=89.51872700394641,direct source coordinate pair,true,PASS
+M1RV0484,M1F05,Panel B,true=89.99280569169662; relative_error=0.005267962078817033,true=89.99280569169662; relative_error=0.005267962078817033,M1S044,true=89.99280569169662; relative_error=0.005267962078817033,direct source coordinate pair,true,PASS
+M1RV0485,M1F05,Panel A,true=77.42618990488164; recovered=76.43797026913349,true=77.42618990488164; recovered=76.43797026913349,M1S044,true=77.42618990488164; recovered=76.43797026913349,direct source coordinate pair,true,PASS
+M1RV0486,M1F05,Panel B,true=77.42618990488164; relative_error=0.012763376797465862,true=77.42618990488164; relative_error=0.012763376797465862,M1S044,true=77.42618990488164; relative_error=0.012763376797465862,direct source coordinate pair,true,PASS
+M1RV0487,M1F05,Panel A,true=108.55165533309632; recovered=106.50301981586996,true=108.55165533309632; recovered=106.50301981586996,M1S044,true=108.55165533309632; recovered=106.50301981586996,direct source coordinate pair,true,PASS
+M1RV0488,M1F05,Panel B,true=108.55165533309632; relative_error=0.018872448429644077,true=108.55165533309632; relative_error=0.018872448429644077,M1S044,true=108.55165533309632; relative_error=0.018872448429644077,direct source coordinate pair,true,PASS
+M1RV0489,M1F05,Figure note,152,152,M1S044,152,direct frozen table row count,true,PASS
+M1RV0490,M1F05,Figure note,1800,1800,M1S042,1800,direct frozen metric denominator used as contextual annotation mandated by M1.2,true,PASS
+M1RV0491,M1T02,Cohort: all F3A observational references,122 events,122 events,M1S030,122,direct frozen count presentation,true,PASS
+M1RV0492,M1T02,Primary variants: frozen 13 x 6 matrix across 122 events,9516,9516,M1S031,9516,direct frozen count presentation,true,PASS
+M1RV0493,M1T02,Input eligibility: eligible variants,6422,6422,M1S038,6422,direct frozen count presentation,true,PASS
+M1RV0494,M1T02,Input eligibility: inadmissible variants,3094,3094,M1S038,3094,direct frozen count presentation,true,PASS
+M1RV0495,M1T02,Baseline gate: all references: concordant,65,65,M1S030,65,direct frozen count presentation,true,PASS
+M1RV0496,M1T02,Baseline gate: all references: mismatch,51,51,M1S030,51,direct frozen count presentation,true,PASS
+M1RV0497,M1T02,Baseline gate: all references: inadmissible,6,6,M1S030,6,direct frozen count presentation,true,PASS
+M1RV0498,M1T02,Baseline gate: QPP reference: concordant / mismatch / inadmissible,8 / 51 / 2,8 / 51 / 2,M1S030,8 / 51 / 2,direct frozen count presentation,true,PASS
+M1RV0499,M1T02,Baseline gate: not-selected reference: concordant / mismatch / inadmissible,57 / 0 / 4,57 / 0 / 4,M1S030,57 / 0 / 4,direct frozen count presentation,true,PASS
+M1RV0500,M1T02,Transitions: QPP selected retained / selection lost,295 / 171,295 / 171,M1S031,295 / 171,direct frozen count presentation,true,PASS
+M1RV0501,M1T02,Transitions: not-selected retained / selection gained,3178 / 0,3178 / 0,M1S031,3178 / 0,direct frozen count presentation,true,PASS
+M1RV0502,M1T02,Numerical stability: optimizer summaries,116,116,M1S038,116,direct frozen count presentation,true,PASS
+M1RV0503,M1T02,Numerical stability: seed decisions,1160,1160,M1S038,1160,direct frozen count presentation,true,PASS
+M1RV0504,M1T02,Numerical stability: seed-discordant events,0,0,M1S038,0,direct frozen count presentation,true,PASS
+M1RV0505,M1T02,Period robustness: period-comparable variants,295,295,M1S038,295,direct frozen count presentation,true,PASS
+M1RV0506,M1T03,TP,143,143,M1S039,143,direct frozen metric value,true,PASS
+M1RV0507,M1T03,TP,152,152,M1S042,152,direct frozen metric value,true,PASS
+M1RV0508,M1T03,FN,1657,1657,M1S039,1657,direct frozen metric value,true,PASS
+M1RV0509,M1T03,FN,1648,1648,M1S042,1648,direct frozen metric value,true,PASS
+M1RV0510,M1T03,TN,1799,1799,M1S039,1799,direct frozen metric value,true,PASS
+M1RV0511,M1T03,TN,1800,1800,M1S042,1800,direct frozen metric value,true,PASS
+M1RV0512,M1T03,FP,1,1,M1S039,1,direct frozen metric value,true,PASS
+M1RV0513,M1T03,FP,0,0,M1S042,0,direct frozen metric value,true,PASS
+M1RV0514,M1T03,Sensitivity,0.079444,0.079444,M1S039,0.07944444444444444,deterministic decimal formatting,true,PASS
+M1RV0515,M1T03,Sensitivity,0.084444,0.084444,M1S042,0.08444444444444445,deterministic decimal formatting,true,PASS
+M1RV0516,M1T03,Sensitivity,"[0.067828, 0.092852]","[0.067828, 0.092852]",M1S039,"(0.06782821927072591, 0.09285189893111712)",frozen interval bracket formatting,true,PASS
+M1RV0517,M1T03,Sensitivity,"[0.072467, 0.098191]","[0.072467, 0.098191]",M1S042,"(0.07246744846806605, 0.0981913737445873)",frozen interval bracket formatting,true,PASS
+M1RV0518,M1T03,Specificity,0.999444,0.999444,M1S039,0.9994444444444445,deterministic decimal formatting,true,PASS
+M1RV0519,M1T03,Specificity,1,1,M1S042,1.0,deterministic decimal formatting,true,PASS
+M1RV0520,M1T03,Specificity,"[0.99686, 0.999902]","[0.99686, 0.999902]",M1S039,"(0.9968597321206145, 0.9999019240703273)",frozen interval bracket formatting,true,PASS
+M1RV0521,M1T03,Specificity,"[0.99787, 1]","[0.99787, 1]",M1S042,"(0.997870401081032, 1.0)",frozen interval bracket formatting,true,PASS
+M1RV0522,M1T03,FPR,0.000556,0.000556,M1S039,0.0005555555555555556,deterministic decimal formatting,true,PASS
+M1RV0523,M1T03,FPR,0,0,M1S042,0.0,deterministic decimal formatting,true,PASS
+M1RV0524,M1T03,FPR,"[9.808e-05, 0.00314]","[9.808e-05, 0.00314]",M1S039,"(9.807592967258326e-05, 0.0031402678793854047)",frozen interval bracket formatting,true,PASS
+M1RV0525,M1T03,FPR,"[2.168e-19, 0.00213]","[2.168e-19, 0.00213]",M1S042,"(2.168404344971009e-19, 0.002129598918967953)",frozen interval bracket formatting,true,PASS
+M1RV0526,M1T03,Balanced accuracy,0.539444,0.539444,M1S039,0.5394444444444445,deterministic decimal formatting,true,PASS
+M1RV0527,M1T03,Balanced accuracy,0.542222,0.542222,M1S042,0.5422222222222223,deterministic decimal formatting,true,PASS
+M1RV0528,M1T04,F3A mismatch label,51/61,51/61,M1S030,51/61,frozen value embedded in manuscript-facing boundary label,true,PASS
+M1RV0529,M1T04,F3A seed stability label,116/116,116/116,M1S038,116/116,frozen value embedded in manuscript-facing boundary label,true,PASS
+M1RV0530,M1T04,HELDOUT FP label,0/1800,0/1800,M1S042,0/1800,frozen value embedded in manuscript-facing boundary label,true,PASS
+M1RV0531,M1T04,selection function label,156,156,M1S043,156,frozen value embedded in manuscript-facing boundary label,true,PASS
+M1RV0532,M1T04,period recovery label,152,152,M1S044,152,frozen value embedded in manuscript-facing boundary label,true,PASS

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "phase": "F3B.1",
+  "artifact_role": "SAMPLING_PLAN",
+  "plan_status": "FROZEN_WITHIN_F3B1_DESIGN_BLOCK_3",
+  "source_artifacts": {
+    "simulation_domain_sha256": "f4436ccf7907b660c415e86b8e8c88867656bc481c957e5a07662c06155992f9",
+    "generator_contract_sha256": "08877cb38f9e86cfe52c310bf9e19d1bd5cd437c800d2935f81c3587eb7c484e",
+    "split_registry_sha256": "2316e09ba061910d360ba0d11aa4a766a3b657f56182bb6ba1c455d2b8120c93"
+  },
+  "statistical_precision": {
+    "primary_estimands": [
+      "sensitivity among primary ELIGIBLE_FOR_AFINO synthetic positives",
+      "specificity/FPR among primary ELIGIBLE_FOR_AFINO synthetic nulls"
+    ],
+    "confidence_level": 0.95,
+    "interval_method_for_design": "Wilson score, worst case p=0.5",
+    "target_precision_absolute_half_width": 0.025,
+    "minimum_n_per_truth_class_per_split": 1533,
+    "chosen_n_per_truth_class_per_split_primary": 1800,
+    "chosen_worst_case_half_width": 0.023073788803358412,
+    "precision_requirement_met": true,
+    "note": "Precision target is for each overall primary truth class within DEVELOPMENT and HELDOUT separately, not for every 36-cell interaction stratum."
+  },
+  "stratification": {
+    "split_unit": "background_realization_id",
+    "designated_dimensions": [
+      "n_samples",
+      "red_noise_alpha",
+      "positive_qpp_fraction_stratum"
+    ],
+    "primary_strata": 36,
+    "background_realizations_per_stratum_per_split": 50,
+    "background_realizations_per_stratum_total": 100,
+    "assignment": "Within each stratum, create 100 frozen background IDs, rank by SHA256 under TESS-QPP:F3B1:SPLIT:v1, assign first 50 DEVELOPMENT and remaining 50 HELDOUT.",
+    "independent_of_afino_result": true
+  },
+  "paired_background_design": {
+    "enabled": true,
+    "same_background_realization": {
+      "synthetic_null": 1,
+      "synthetic_qpp_positive": 1
+    },
+    "positive_pair_qpp_fraction_defined_by_stratum": true,
+    "true_period_draw": "deferred deterministic draw from the frozen generator RNG namespace at materialization time; no period is drawn in F3B.1",
+    "same_background_never_crosses_split": true
+  },
+  "development_background_realizations": 1800,
+  "heldout_background_realizations": 1800,
+  "development_positive_series": 2160,
+  "development_null_series": 2160,
+  "heldout_positive_series": 2160,
+  "heldout_null_series": 2160,
+  "primary_metric_series": {
+    "development_positive": 1800,
+    "development_null": 1800,
+    "heldout_positive": 1800,
+    "heldout_null": 1800
+  },
+  "input_admissibility_challenges": {
+    "backgrounds_per_stratum_per_split": 5,
+    "backgrounds_per_split": 180,
+    "challenge_regimes": [
+      "ONE_INTERNAL_NONPEAK_SAMPLE_MASKED",
+      "PEAK_SAMPLE_MASKED"
+    ],
+    "series_per_split": 720,
+    "truth_state_balance_per_split": {
+      "positive": 360,
+      "null": 360
+    },
+    "expected_to_reach_afino": false,
+    "prevalence_interpretation": "PROHIBITED"
+  },
+  "total_planned_series": 8640,
+  "expected_baseline_decisions": 7200,
+  "expected_baseline_model_calls": 21600,
+  "execution_budget": {
+    "development_primary_model_calls": 10800,
+    "heldout_primary_model_calls_after_final_rule_freeze": 10800,
+    "total_primary_baseline_model_calls": 21600,
+    "reference_budget_context": "Slightly below the already completed Phase-3A full baseline execution of 22,398 model calls.",
+    "challenge_series_expected_afino_calls": 0,
+    "numerical_stability_extra_calls": "NOT_INCLUDED_HERE; separately frozen in f3b1_numerical_stability_protocol.json"
+  },
+  "materialization_state": {
+    "background_realizations_materialized": 0,
+    "true_period_draws_materialized": 0,
+    "synthetic_series_materialized": 0,
+    "development_series_materialized": 0,
+    "heldout_series_materialized": 0,
+    "injections_generated": false,
+    "afino_executed": false
+  }
+}

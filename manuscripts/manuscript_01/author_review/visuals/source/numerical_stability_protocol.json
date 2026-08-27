@@ -1,0 +1,61 @@
+{
+  "protocol_id": "PHASE3A_NUMERICAL_STABILITY_V1",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "scope": {
+    "window_variant_id": "W00",
+    "processing_profile_id": "P00",
+    "events": "ALL_COHORT_EVENTS_WITH_W00_P00_INPUT_ELIGIBLE"
+  },
+  "external_optimizer_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "primary_optimizer_seed": 0,
+  "stability_only_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "separation_from_primary_matrix": "The 78-cell perturbation matrix uses seed 0 only. Seeds 1-9 are a separate numerical evidence plane and are not additional robustness cells.",
+  "models": [
+    "M0",
+    "M1",
+    "M2"
+  ],
+  "diagnostics_required": [
+    "selected/not-selected state per seed",
+    "BIC_M0, BIC_M1, BIC_M2 and both selection margins per seed",
+    "formal M1 center/period per seed regardless of selection status, with selected-period outcome kept separate",
+    "parameter vector/payload hash per model and seed",
+    "unique parameter payload count per model",
+    "warning count and warning text/category",
+    "bound-hit indicators",
+    "convergence_status",
+    "runtime and execution status"
+  ],
+  "summaries": [
+    "classification discordance count and fraction versus seed 0",
+    "classification state set across seeds",
+    "BIC ranges and selection-margin ranges",
+    "formal M1 period range",
+    "unique parameter payload counts",
+    "warnings/bounds/convergence-status counts"
+  ],
+  "incomplete_seed_policy": "Preserve INCOMPLETE_NUMERICAL; do not impute or rerun with a different scientific configuration after seeing results.",
+  "stable_classification_implies_unique_optimum": false,
+  "unique_optimizer_convergence_claim_authorized": false
+}

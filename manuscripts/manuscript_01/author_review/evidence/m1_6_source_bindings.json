@@ -1,0 +1,120 @@
+{
+  "afino": {
+    "repository_commit": "6aceac9518fc8056052807e666da9d0c8bebb010",
+    "version": "0.5"
+  },
+  "artifact_role": "M1_6_AUTHOR_REVIEW_SOURCE_BINDINGS",
+  "author_approved_pdf_sha256": "ce94f3d55a626a9a156c0f5cf2cc16263e3b2d6cb0bcae21e729e17bb28de752",
+  "f3b_selection_function_source": {
+    "bytes": 44871,
+    "path": "workflows/phase3b/heldout/evaluation/evidence/tables/f3b7_heldout_selection_function.csv",
+    "sha256": "fe8654481c83f23c9ebc276a84455d0c2f6de55d9e76011d1199cafa43a30509"
+  },
+  "historical_freezes": {
+    "M1_2_visuals": {
+      "commit": "7e65987511487ea7de01d1b2880cc70687823541",
+      "tag": "manuscript1-visuals-v1"
+    },
+    "M1_3_first_draft": {
+      "commit": "ae0a697be742fc0c9c05fb5ddf572eaed79fd94e",
+      "pdf_sha256": "71fa1f614e7623e54481fbb59e059e39734201701320a0220333a0062dd00127",
+      "tag": "manuscript1-first-draft-v1",
+      "tex_sha256": "bf99e137972aeea9dec8739609a5937a6f1439182042ba1565fd80f3b19f2977"
+    },
+    "M1_4_scientific_review": {
+      "commit": "10e4ac7017950f60e74a1f0fddb41f6004f7755d",
+      "pdf_sha256": "3e9325f4777f243676de45a4e42809479ec95f3342b2c0cd437ddc239702ea5d",
+      "tag": "manuscript1-reviewed-draft-v1",
+      "tex_sha256": "68178633764c3fc51a62434f520ed7c11f40d03a882bc6330c7546b5267baddd"
+    },
+    "M1_5_submission_plan_v2": {
+      "commit": "e01db0ae1a47fac6de77bef7477dd119ab9f5d14",
+      "tag": "manuscript1-submission-plan-v2"
+    }
+  },
+  "method_configuration_bindings": [
+    {
+      "bytes": 859,
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea01_window_perturbations.csv",
+      "sha256": "4e0a602e89f17594afe4624ae0d48781cfde7c17a17a1cc129002aeb0c45f130",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 955,
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea01_processing_profiles.csv",
+      "sha256": "232af6bdc6fa09851cd1039c5b159849f2f675803ea6ff1f53f51e7a4a7629e0",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 13758,
+      "repository_relative_path": "foundation/f0-f2/phase2/fase2_tarea01_observational_robustness_preregistration.json",
+      "sha256": "ed37166ad6917b54711c3ce7ac9f3aeffdaaba9477672a9b1e5d506c07f427d7",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 6992,
+      "repository_relative_path": "workflows/phase3a/design/cohort_contract.yaml",
+      "sha256": "613267b13bdcfbcb89859ee9f2ed7f072d161b43c295574b718a0d3061d48c86",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 5331,
+      "repository_relative_path": "workflows/phase3a/design/preregistration.json",
+      "sha256": "b37741f058b6cc133014b52bef6621ee34ddfc9cc671d80113c2ec7b76094ba5",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 26733,
+      "repository_relative_path": "workflows/phase3a/design/robustness_matrix.csv",
+      "sha256": "2412c686b91a287361865347f8159fb48fabae809eee783222dbbc190f0d3590",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 1760,
+      "repository_relative_path": "workflows/phase3a/design/numerical_stability_protocol.json",
+      "sha256": "c7869210a9d7d75532d285349a39f62be108e72acb53dd4143e2e4891b66686a",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 7789,
+      "repository_relative_path": "workflows/phase3b/design/f3b1_generator_contract.json",
+      "sha256": "08877cb38f9e86cfe52c310bf9e19d1bd5cd437c800d2935f81c3587eb7c484e",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 5030,
+      "repository_relative_path": "workflows/phase3b/design/f3b1_simulation_domain.csv",
+      "sha256": "f4436ccf7907b660c415e86b8e8c88867656bc481c957e5a07662c06155992f9",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 3862,
+      "repository_relative_path": "workflows/phase3b/design/f3b1_sampling_plan.json",
+      "sha256": "3c8b36112ece4e028161c78338a3d7448056470453390b43705f6c6d5fd51a2e",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 3918,
+      "repository_relative_path": "workflows/phase3b/design/f3b1_success_failure_gate.json",
+      "sha256": "23d65ce7dc281799a484012c19a883f27ce17fbf5af0022c856bd7b946b6bfab",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 4440,
+      "repository_relative_path": "workflows/phase3b/development/analysis/f3b4_candidate_rule_gate.json",
+      "sha256": "f47b2b03aff0d60d8dbce040d7298d1904295552f610cdf92bba6a48f6eddbf9",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    },
+    {
+      "bytes": 3189,
+      "repository_relative_path": "workflows/phase3b/development/analysis/f3b4_final_rule_freeze.json",
+      "sha256": "e2faffdbb15d6e0fec52ff166e81a2ed58f5665d7d3f9dc43cb8b78f5c0a198c",
+      "verification_basis": "frozen repository snapshot; Phase3A/3B design hashes cross-checkable against frozen SHA registries where applicable"
+    }
+  ],
+  "new_scientific_computation": false,
+  "new_scientific_references": false,
+  "new_scientific_source_ids": [],
+  "schema_version": "1.0.0",
+  "status": "AUTHOR_APPROVED_FINAL"
+}
