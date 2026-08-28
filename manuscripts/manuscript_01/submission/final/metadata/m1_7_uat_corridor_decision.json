@@ -1,0 +1,68 @@
+{
+  "access_date": "2026-08-28",
+  "article_type": "Article",
+  "corridor_rationale": "The manuscript is centered on stellar-flare QPP methodology, TESS photometry, stellar time variability, and interpretation of stellar-flare analysis rather than a generic software/data-method paper.",
+  "official_sources": [
+    {
+      "access_date": "2026-08-28",
+      "purpose": "topical_corridor",
+      "url": "https://journals.aas.org/topical-corridors/"
+    },
+    {
+      "access_date": "2026-08-28",
+      "purpose": "UAT_current_release",
+      "url": "https://astrothesaurus.org/"
+    },
+    {
+      "access_date": "2026-08-28",
+      "purpose": "AASTeX_UAT_submission_guidance",
+      "url": "https://journals.aas.org/aastexguide"
+    }
+  ],
+  "render_keywords_in_manuscript": false,
+  "render_keywords_reason": "Current AAS guidance discourages legacy keyword markup for new submissions and prompts for UAT concepts in the submission system.",
+  "schema_version": "1.0.0",
+  "status": "FROZEN_EDITORIAL_SELECTION_M1_7",
+  "target_journal": "The Astrophysical Journal",
+  "topical_corridor": "Stars and Stellar Physics",
+  "uat_concepts": [
+    {
+      "concept_id": 1603,
+      "label": "Stellar flares",
+      "mapping": "primary astrophysical phenomenon",
+      "uri": "https://astrothesaurus.org/uat/1603"
+    },
+    {
+      "concept_id": 918,
+      "label": "Light curves",
+      "mapping": "time-series observable analyzed by the programme",
+      "uri": "https://astrothesaurus.org/uat/918"
+    },
+    {
+      "concept_id": 1234,
+      "label": "Photometry",
+      "mapping": "TESS photometric measurement context",
+      "uri": "https://astrothesaurus.org/uat/1234"
+    },
+    {
+      "concept_id": 1916,
+      "label": "Time series analysis",
+      "mapping": "methodological time-series robustness and period analysis",
+      "uri": "https://astrothesaurus.org/uat/1916"
+    },
+    {
+      "concept_id": 1955,
+      "label": "Period search",
+      "mapping": "QPP period/model-selection analysis",
+      "uri": "https://astrothesaurus.org/uat/1955"
+    },
+    {
+      "concept_id": 1043,
+      "label": "Astronomical methods",
+      "mapping": "methodological characterization of AFINO",
+      "uri": "https://astrothesaurus.org/uat/1043"
+    }
+  ],
+  "uat_release": "6.0.0",
+  "uat_release_date": "2025-12-16"
+}

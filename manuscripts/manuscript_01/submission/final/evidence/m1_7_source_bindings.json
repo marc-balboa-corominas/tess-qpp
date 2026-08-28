@@ -1,0 +1,162 @@
+{
+  "access_date": "2026-08-28",
+  "files": [
+    {
+      "path": "manuscripts/manuscript_01/author_review/manuscript/manuscript_author_review.tex",
+      "role": "M1.6_AUTHOR_APPROVED_INPUT",
+      "sha256": "7502a70633f8b7235920ef8e53155f3815bee0006196b8f3f1a733fe90ad0f14"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/manuscript/manuscript_author_review.pdf",
+      "role": "M1.6_AUTHOR_APPROVED_INPUT",
+      "sha256": "ce94f3d55a626a9a156c0f5cf2cc16263e3b2d6cb0bcae21e729e17bb28de752"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/manuscript/references_author_review.bib",
+      "role": "M1.6_AUTHOR_APPROVED_INPUT",
+      "sha256": "9dd94962703a3762e9cf6b38ffa491935f27dacfbc147389701624cdfc09d985"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/review/m1_6_author_approval.json",
+      "role": "M1.6_AUTHOR_APPROVED_INPUT",
+      "sha256": "0963f45437bab348b05c45d491147bd897e33cf426484bb04aeb95923fcd26f7"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/evidence/m1_6_claim_identity_audit.csv",
+      "role": "M1.6_AUTHOR_APPROVED_INPUT",
+      "sha256": "6c02918b26c706974e04cc67318836498338ea82ef19659e2b3accb1c43d3a7c"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/evidence/m1_6_numeric_identity_audit.csv",
+      "role": "M1.6_AUTHOR_APPROVED_INPUT",
+      "sha256": "a5ec6f1ae8d26ab3e7872179c404a36041eb4df0fb18ede1b9871d37f1d383dc"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/evidence/m1_6_citation_identity_audit.csv",
+      "role": "M1.6_AUTHOR_APPROVED_INPUT",
+      "sha256": "bb9fc27be551d040acf609cba25fdb7ed3792179a41050f9b7f036216e1ab3d9"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/evidence/m1_6_visual_identity_audit.csv",
+      "role": "M1.6_AUTHOR_APPROVED_INPUT",
+      "sha256": "45b2c4104af555b71c08cb0b358a87f19f6ba5acaa6ac4470aba5d3c6a56381b"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/visuals/figures/M1F01_author_review.pdf",
+      "role": "M1.6_APPROVED_FIGURE",
+      "sha256": "02964e3f42fbd28040a462c416c84b032d866ac52b42598aec03d05962716285"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/visuals/figures/M1F02_author_review.pdf",
+      "role": "M1.6_APPROVED_FIGURE",
+      "sha256": "19892addf74b9250e45196c8f04fc7ec21c8651721b0956392a815e0e20e9081"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/visuals/figures/M1F03_author_review.pdf",
+      "role": "M1.6_APPROVED_FIGURE",
+      "sha256": "f26316dd58d6e652ba0ff8f46457962d9b198b7d869c271134deb3f27bc0a394"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/visuals/figures/M1F04_author_review.pdf",
+      "role": "M1.6_APPROVED_FIGURE",
+      "sha256": "f7eff7704cd4c1500cdd0ac1f0f0663fd127d84460fdb2f71cad6ed2fdd1dbb0"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/visuals/figures/M1F05_author_review.pdf",
+      "role": "M1.6_APPROVED_FIGURE",
+      "sha256": "96c105a1dcff766390d0faa0eaba70f9d4707bb4e5278fca72e86b219995c185"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/visuals/tables/M1T01_author_review.tex",
+      "role": "M1.6_APPROVED_TABLE",
+      "sha256": "e0e194861d744bc48546cb91ad1e2df3dd798b3c5a851419c8a2554e1deead7d"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/visuals/tables/M1T02_author_review.tex",
+      "role": "M1.6_APPROVED_TABLE",
+      "sha256": "e018656383fa856a37c2a54a9dc27740d0b0419165008aa90d482b9268fd55bb"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/visuals/tables/M1T03_author_review.tex",
+      "role": "M1.6_APPROVED_TABLE",
+      "sha256": "8fc71ea5228f43175f997597aad4ab0d1b733f076c6ca211cfb7c7dd1671deda"
+    },
+    {
+      "path": "manuscripts/manuscript_01/author_review/visuals/tables/M1T04_author_review.tex",
+      "role": "M1.6_APPROVED_TABLE",
+      "sha256": "62c17afab2edf4868966624a5dc5aebaa0e6c2b2e5ceb1c977e6edd713fc7830"
+    },
+    {
+      "path": "manuscripts/manuscript_01/submission/planning/m1_5_submission_requirements.csv",
+      "role": "M1.5_AUTHORITATIVE_SUBMISSION_INPUT",
+      "sha256": "131f092a8159b4827abe3f0a37706164bb1470008457c5b49c2a2d3b2b034ad4"
+    },
+    {
+      "path": "manuscripts/manuscript_01/submission/planning/m1_5_author_metadata.csv",
+      "role": "M1.5_AUTHORITATIVE_SUBMISSION_INPUT",
+      "sha256": "9d37fa3fd65f9afe992c8d68004755b5f4ff3c86da99bc104de49caf6422e80b"
+    },
+    {
+      "path": "manuscripts/manuscript_01/submission/planning/m1_5_affiliations.csv",
+      "role": "M1.5_AUTHORITATIVE_SUBMISSION_INPUT",
+      "sha256": "6324f15cbbb69da8634f5434fcd3eaaadf6ae8840ca67a44e45c01fbb535bc2f"
+    },
+    {
+      "path": "manuscripts/manuscript_01/submission/planning/m1_5_bibliographic_metadata_resolution.csv",
+      "role": "M1.5_AUTHORITATIVE_SUBMISSION_INPUT",
+      "sha256": "0f8427da679b561f69021e9ab27ba3fdc64f3cf269926e76689e9dc2f6867875"
+    },
+    {
+      "path": "manuscripts/manuscript_01/submission/planning/m1_5_target_journal_decision.json",
+      "role": "M1.5_AUTHORITATIVE_SUBMISSION_INPUT",
+      "sha256": "b8ec92e65bf3ec026ffbdb790309b3dfa0ae9d0e3e5d6967106684042eabc944"
+    }
+  ],
+  "m1_5_submission_plan": {
+    "commit": "e01db0ae1a47fac6de77bef7477dd119ab9f5d14",
+    "tag": "manuscript1-submission-plan-v2"
+  },
+  "m1_6_author_approved": {
+    "approved_pdf_sha256": "ce94f3d55a626a9a156c0f5cf2cc16263e3b2d6cb0bcae21e729e17bb28de752",
+    "commit": "d1007edcdbcf98b809ed46b0810fd62148f7b2af",
+    "tag": "manuscript1-author-approved-v1"
+  },
+  "official_submission_sources": [
+    {
+      "access_date": "2026-08-28",
+      "purpose": "AASTeX current distribution",
+      "url": "https://journals.aas.org/aastex-package-for-manuscript-preparation/"
+    },
+    {
+      "access_date": "2026-08-28",
+      "purpose": "AASTeX v7 author guide",
+      "url": "https://journals.aas.org/aastexguide"
+    },
+    {
+      "access_date": "2026-08-28",
+      "purpose": "AAS pre-submission checklist",
+      "url": "https://journals.aas.org/pre-submission-checklist-for-aas-journal-authors/"
+    },
+    {
+      "access_date": "2026-08-28",
+      "purpose": "AAS topical corridors",
+      "url": "https://journals.aas.org/topical-corridors/"
+    },
+    {
+      "access_date": "2026-08-28",
+      "purpose": "AAS data guide",
+      "url": "https://journals.aas.org/data-guide"
+    },
+    {
+      "access_date": "2026-08-28",
+      "purpose": "Unified Astronomy Thesaurus current release",
+      "url": "https://astrothesaurus.org/"
+    },
+    {
+      "access_date": "2026-08-28",
+      "purpose": "MAST DOI guidance and TESS bulk DOI mapping",
+      "url": "https://archive.stsci.edu/publishing/doi"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

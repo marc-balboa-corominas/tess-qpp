@@ -1,0 +1,27 @@
+\begin{longtable}{@{}p{0.31\textwidth}p{0.16\textwidth}p{0.45\textwidth}@{}}
+\caption{F3A catalogue-scale robustness counts. Observational reference roles are not physical ground truth.}\label{tab:f3a_counts}\\\\
+\toprule
+Category and scope & Count/state & Interpretation \\\\
+\midrule
+\endfirsthead
+\toprule
+Category and scope & Count/state & Interpretation \\\\
+\midrule
+\endhead
+\textbf{Cohort}\newline all F3A observational references & 122 events & Observational reference cohort; not physical ground truth \\
+\textbf{Primary variants}\newline frozen 13 x 6 matrix across 122 events & 9516 & Repeated-measure methodological variants \\
+\textbf{Input eligibility}\newline eligible variants & 6422 & Eligible for classification within the frozen stress test \\
+\textbf{Input eligibility}\newline inadmissible variants & 3094 & Structural/methodological inadmissibility retained as outcome \\
+\textbf{Baseline gate}\newline all references: concordant & 65 & 8 QPP-reference + 57 not-selected-reference \\
+\textbf{Baseline gate}\newline all references: mismatch & 51 & Published-QPP reproduction mismatch; not physical falsity \\
+\textbf{Baseline gate}\newline all references: inadmissible & 6 & No baseline comparison available \\
+\textbf{Baseline gate}\newline QPP reference: concordant / mismatch / inadmissible & 8 / 51 / 2 & Reference-state gate only \\
+\textbf{Baseline gate}\newline not-selected reference: concordant / mismatch / inadmissible & 57 / 0 / 4 & Reference-state gate only; mismatch count is not FPR \\
+\textbf{Transitions}\newline QPP selected retained / selection lost & 295 / 171 & Cell-level repeated measures conditional on baseline concordance \\
+\textbf{Transitions}\newline not-selected retained / selection gained & 3178 / 0 & Cell-level repeated measures; zero gain is not observational FPR \\
+\textbf{Numerical stability}\newline optimizer summaries & 116 & Input-eligible W00/P00 event scope \\
+\textbf{Numerical stability}\newline seed decisions & 1160 & Frozen seed grid; not evidence of unique optimizer convergence \\
+\textbf{Numerical stability}\newline seed-discordant events & 0 & Binary output seed-stable in frozen scope \\
+\textbf{Period robustness}\newline period-comparable variants & 295 & Conditional on retained selection and baseline comparability \\
+\bottomrule
+\end{longtable}

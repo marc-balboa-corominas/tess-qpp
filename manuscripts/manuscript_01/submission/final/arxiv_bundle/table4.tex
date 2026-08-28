@@ -1,0 +1,23 @@
+\begin{longtable}{@{}>{\RaggedRight\arraybackslash}p{0.20\textwidth}>{\RaggedRight\arraybackslash}p{0.38\textwidth}>{\RaggedRight\arraybackslash}p{0.34\textwidth}@{}}
+\caption{Reader-facing interpretation boundaries. The complete frozen claim-boundary matrix and internal claim identifiers remain preserved in the author-review source/evidence files.}\label{tab:claim_boundaries}\\
+\toprule
+Finding & Supported interpretation & Key limitation \\
+\midrule
+\endfirsthead
+\toprule
+Finding & Supported interpretation & Key limitation \\
+\midrule
+\endhead
+F0 reproduction & The frozen public AFINO baseline reproduced the five published TESS detections in the F0 cohort. & Reproduction is not observational validation or physical confirmation; paper-code identity remains unresolved. \\
+F3A 51/61 baseline mismatch & Under W00/P00/seed0, 51 of 61 published-QPP references did not reproduce their frozen reference state. & These are reproduction mismatches, not physical falsifications; the cause is unresolved within F3A and reference labels are not truth. \\
+F3A zero selection gains & No baseline-relative selection gains were observed in the eligible baseline-concordant not-selected reference scope. & Repeated observational references are not known negatives; this is not an observational FPR or specificity estimate. \\
+F3A seed stability (116/116) & All 116 input-eligible W00/P00 events preserved binary classification across the frozen seed grid. & Decision stability does not establish unique optimizer convergence. \\
+F3B HELDOUT FP=0 (0/1800) & No false selections were observed among 1800 HELDOUT synthetic nulls, with finite-sample Wilson uncertainty. & This synthetic finite-sample result does not establish population FPR=0 or observational specificity. \\
+F3B selection function (156 strata) & The 156-row HELDOUT stratified empirical selection surface characterizes the frozen synthetic domain. & No DEVELOPMENT pooling, smoothing, or observational transport was performed; it is not a universal TESS correction. \\
+Conditional period recovery (152 selected TPs) & Period recovery is summarized for 152 selected true positives and can remain accurate despite low selection coverage. & The result is conditioned on selection and does not imply high completeness or classifier sensitivity. \\
+DEVELOPMENT candidate-rule failure & The candidate failed the preregistered specificity-preservation criterion and was not promoted; HELDOUT evaluated the frozen 10/10 baseline. & No runner-up rescue or post-hoc threshold search was performed; HELDOUT was not used to tune thresholds. \\
+Observational population correction & The Phase 3B results do not establish an observational population correction. & This limitation is part of the scientific interpretation and must remain explicit. \\
+Programme evidence-plane boundary & The programme provides distinct reproduction, robustness, and synthetic-ground-truth evidence. & The evidence planes remain separate and do not establish observational validation of AFINO. \\
+BAII priority constraint & The contribution is positioned around the combined prospective robustness and held-out architecture. & BAII is bounded to its frozen scope and does not support unrestricted global novelty or first-ever claims. \\
+\bottomrule
+\end{longtable}

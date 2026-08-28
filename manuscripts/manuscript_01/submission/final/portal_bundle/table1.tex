@@ -1,0 +1,18 @@
+\begin{longtable}{@{}>{\RaggedRight\arraybackslash}p{0.08\textwidth}>{\RaggedRight\arraybackslash}p{0.18\textwidth}>{\RaggedRight\arraybackslash}p{0.34\textwidth}>{\RaggedRight\arraybackslash}p{0.34\textwidth}@{}}
+\caption{Evidence planes and their interpretation boundaries. The complete frozen source table remains preserved in the author-review source directory.}\label{tab:evidence_planes}\\
+\toprule
+Plane & Data / truth status & What it establishes & What it does not establish \\
+\midrule
+\endfirsthead
+\toprule
+Plane & Data / truth status & What it establishes & What it does not establish \\
+\midrule
+\endhead
+F0 & Observational reference; not physical ground truth. & Reproducibility of the frozen public AFINO baseline on the observational reproduction cohort and the operational baseline used downstream. & Observational physical QPP truth, population sensitivity/specificity/FPR, or identity with unpublished private analysis code. \\
+F1 & Synthetic known truth; designed domain. & Controlled synthetic-domain benchmark behavior, support dependence, period behavior and numerical diagnostics of the frozen AFINO implementation. & Observational population performance or transport to real TESS prevalence. \\
+F2 & Observational reference; not physical ground truth. & Pilot-scale sensitivity of observational reference classifications to prospectively frozen methodological perturbations. & Classifier accuracy, observational FPR/sensitivity/specificity, or physical truth. \\
+F3A & Observational reference; not physical ground truth. & Catalogue-scale baseline reproduction limitations, methodological classification robustness, seed stability and conditional period robustness. & Observational validation, sensitivity, specificity, FPR, physical truth, or a selection function. \\
+F3B & Synthetic known truth; independent HELDOUT. & Independent single-use HELDOUT synthetic-ground-truth performance, final synthetic selection function and conditional period recovery for the frozen baseline. & Observational validation, real-TESS prevalence, physical truth or a validated population correction. \\
+BAII (aux.) & Literature-positioning evidence; non-result plane. & Bounded literature-positioning, overlap and precedence constraints under the frozen BAII search/extraction scope. & A scientific result of the AFINO/TESS experiment or unrestricted global priority. \\
+\bottomrule
+\end{longtable}

@@ -1,0 +1,2 @@
+dataset_id,archive,mission,product,cadence,sector_scope,doi,doi_url,official_source,access_date,scientific_bibliography_class,portal_action,status
+TESS_FAST_20S_FROZEN_OBSERVATIONAL_COHORT,MAST,TESS,Fast cadence light curves,20-second,27-80,10.17909/t9-st5g-3177,https://doi.org/10.17909/t9-st5g-3177,https://archive.stsci.edu/publishing/doi,2026-08-28,ARCHIVE_DATASET_CITATION,ENTER_DATASET_DOI,PASS

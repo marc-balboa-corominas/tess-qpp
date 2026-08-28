@@ -9,3 +9,18 @@
 *.npy binary
 *.npz binary
 *.sqlite binary
+# BEGIN M1.7 byte-exact submission asset exceptions
+# Preserve exact upstream/vendor and audited CRLF bytes in Git checkout/status.
+manuscripts/manuscript_01/submission/final/arxiv_bundle/aasjournalv7.1.bst -text -eol
+manuscripts/manuscript_01/submission/final/arxiv_bundle/aastex702.cls -text -eol
+manuscripts/manuscript_01/submission/final/portal_bundle/aasjournalv7.1.bst -text -eol
+manuscripts/manuscript_01/submission/final/portal_bundle/aastex702.cls -text -eol
+manuscripts/manuscript_01/submission/final/editorial/supplementary_material_manifest.csv -text -eol
+manuscripts/manuscript_01/submission/final/evidence/m1_7_numeric_identity_audit.csv -text -eol
+manuscripts/manuscript_01/submission/final/evidence/m1_7_reference_identity_audit.csv -text -eol
+manuscripts/manuscript_01/submission/final/evidence/m1_7_requirement_preflight.csv -text -eol
+manuscripts/manuscript_01/submission/final/evidence/m1_7_scientific_identity_audit.csv -text -eol
+manuscripts/manuscript_01/submission/final/evidence/m1_7_submission_asset_manifest.csv -text -eol
+manuscripts/manuscript_01/submission/final/metadata/m1_7_archive_dataset_metadata.csv -text -eol
+manuscripts/manuscript_01/submission/final/metadata/m1_7_portal_preflight.csv -text -eol
+# END M1.7 byte-exact submission asset exceptions

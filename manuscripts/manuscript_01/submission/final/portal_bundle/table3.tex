@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{Synthetic-ground-truth performance of the frozen baseline. Confidence intervals are Wilson intervals where defined.}
+\label{tab:synthetic_performance}
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Metric & DEVELOPMENT & 95\% Wilson & HELDOUT & 95\% Wilson \\\\
+\midrule
+TP & 143 &  & 152 &  \\
+FN & 1657 &  & 1648 &  \\
+TN & 1799 &  & 1800 &  \\
+FP & 1 &  & 0 &  \\
+Sensitivity & 0.079444 & [0.067828, 0.092852] & 0.084444 & [0.072467, 0.098191] \\
+Specificity & 0.999444 & [0.99686, 0.999902] & 1 & [0.99787, 1] \\
+FPR & 0.000556 & [9.808e-05, 0.00314] & 0 & [2.168e-19, 0.00213] \\
+Balanced accuracy & 0.539444 &  & 0.542222 &  \\
+\bottomrule
+\end{tabular}
+\par\vspace{0.4em}\footnotesize All quantities are split-specific synthetic-ground-truth metrics within the frozen design and are not observational performance estimates.
+\end{table}

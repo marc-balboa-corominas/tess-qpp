@@ -1,0 +1,5 @@
+asset,submission_location,journal_supplementary_upload,reason
+Large reproducibility archives,External OSF/Git freezes,NO,Already persistently archived and versioned; avoid redundant upload.
+Five manuscript figures,Main manuscript / flat portal bundle,NO,Primary manuscript figures.
+Four manuscript tables,Main manuscript / flat portal bundle,NO,Primary manuscript tables.
+Additional journal supplementary material,None planned,NO,No additional file is materially required for scientific interpretation.
