@@ -1,0 +1,10 @@
+change_id,difference_class,location,description,scientific_content_changed,status
+N001,SOURCE_PACKAGING_ONLY,public source comments,removed 81 private M1TRACE/M1VISUAL comment lines,false,PASS
+N002,SOURCE_PACKAGING_ONLY,bibliography/figure/table input names,renamed inputs to flat journal-neutral arXiv-safe filenames,false,PASS
+N003,NEUTRAL_METADATA_ONLY,"Data, code, and reproducibility resources",replaced superseded M1.5 submission-plan/internal author-review provenance with M1.6 author-approved freeze provenance,false,PASS
+N004,PAGINATION_ONLY,before Section 2,forced new page because the major section began in the lower quarter of the previous candidate page,false,PASS
+N005,PAGINATION_ONLY,before subsection 4.4 Numerical stability,forced new page because the subsection began in the last quarter of the previous candidate page,false,PASS
+N006,PAGINATION_ONLY,before References,forced References to begin on a new page,false,PASS
+N007,NEUTRAL_METADATA_ONLY,back matter policy,verified against authoritative M1.6: Data/code resources plus bibliography are retained; M1.7 journal-preparation funding/COI/author-contribution blocks were not part of M1.6 and are deliberately not imported into M1.8,false,PASS
+N008,PAGINATION_ONLY,before Section 3 Methods,forced Methods to begin at the top of a fresh page after Section 2/Table 1,false,PASS
+N009,PAGINATION_ONLY,between Figure 3 and subsection 4.5,flushed the pending Figure 3 before subsection 4.5 so 4.5 begins cleanly after the figure,false,PASS

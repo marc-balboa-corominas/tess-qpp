@@ -1,0 +1,6 @@
+check,count,expected,scope,status
+ApJ-specific marker,0,0,manuscript TeX scaffolding/content; bibliography journal-title metadata excluded,PASS
+AAS-specific submission marker,0,0,manuscript TeX scaffolding/content; bibliography journal-title metadata excluded,PASS
+OJAp-specific formatting marker,0,0,manuscript TeX scaffolding/content; bibliography journal-title metadata excluded,PASS
+PASA-specific formatting marker,0,0,manuscript TeX scaffolding/content; bibliography journal-title metadata excluded,PASS
+journal-neutral scientific content,0,PASS,M1.6 to M1.8 transformation classification,PASS

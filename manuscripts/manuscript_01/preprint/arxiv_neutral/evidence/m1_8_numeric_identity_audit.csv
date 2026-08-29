@@ -1,0 +1,121 @@
+numeric_id,paragraph_or_caption_id,displayed_value_m1_6,scientific_meaning,claim_id,source_id,m1_8_disposition,scientific_numeric_change_m1_8,new_scientific_value,missing_in_m1_8,status
+M1N0001,M1P0001,5,published TESS detections reproduced in F0,M1C001,M1S002,PRESERVED,false,false,false,PASS
+M1N0002,M1P0001,10,F2 pilot event count,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0003,M1P0001,51,F3A QPP-reference baseline mismatches,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0004,M1P0001,61,F3A published-QPP reference denominator,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0005,M1P0001,0.5,AFINO version,M1C018,M1S047,PRESERVED,false,false,false,PASS
+M1N0006,M1P0001,152,HELDOUT selected synthetic positives,M1C014,M1S042,PRESERVED,false,false,false,PASS
+M1N0007,M1P0001,1800,HELDOUT positive denominator,M1C014,M1S042,PRESERVED,false,false,false,PASS
+M1N0008,M1P0001,1800,HELDOUT synthetic null denominator,M1C015,M1S042,PRESERVED,false,false,false,PASS
+M1N0009,M1P0001,156,HELDOUT selection-function strata,M1C019,M1S043,PRESERVED,false,false,false,PASS
+M1N0010,M1P0009,0.5,AFINO package version,M1C001,M1S002,PRESERVED,false,false,false,PASS
+M1N0011,M1P0009,3,number of AFINO spectral models,M1C001,M1S002,PRESERVED,false,false,false,PASS
+M1N0012,M1P0010,10,delta-BIC threshold against M0,M1C001,M1S002,PRESERVED,false,false,false,PASS
+M1N0013,M1P0010,10,delta-BIC threshold against M2,M1C001,M1S002,PRESERVED,false,false,false,PASS
+M1N0014,M1P0010,40,lower candidate-period bound in seconds,M1C001,M1S002,PRESERVED,false,false,false,PASS
+M1N0015,M1P0010,300,upper candidate-period bound in seconds,M1C001,M1S002,PRESERVED,false,false,false,PASS
+M1N0016,M1P0011,5,published QPP detections in F0 reproduction cohort,M1C001,M1S002,PRESERVED,false,false,false,PASS
+M1N0017,M1P0011,5,paired not-selected events in F0 reproduction cohort,M1C001,M1S002,PRESERVED,false,false,false,PASS
+M1N0018,M1P0012,20,synthetic cadence in seconds,M1C002,M1S005,PRESERVED,false,false,false,PASS
+M1N0019,M1P0012,111,F1 primary benchmark conditions,M1C002,M1S005,PRESERVED,false,false,false,PASS
+M1N0020,M1P0012,12,F1 null conditions,M1C002,M1S005,PRESERVED,false,false,false,PASS
+M1N0021,M1P0012,99,F1 positive conditions,M1C002,M1S005,PRESERVED,false,false,false,PASS
+M1N0022,M1P0012,40,realizations per primary condition,M1C002,M1S005,PRESERVED,false,false,false,PASS
+M1N0023,M1P0015,10,F2 observational events,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0024,M1P0015,5,F2 event pairs,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0025,M1P0015,13,F2 temporal windows,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0026,M1P0015,6,F2 processing profiles,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0027,M1P0017,13,F3A temporal-window count,M1C005,M1S038,PRESERVED,false,false,false,PASS
+M1N0028,M1P0017,6,F3A processing-profile count,M1C005,M1S038,PRESERVED,false,false,false,PASS
+M1N0029,M1P0017,122,F3A observational references,M1C005,M1S038,PRESERVED,false,false,false,PASS
+M1N0030,M1P0017,9516,F3A planned variants,M1C005,M1S038,PRESERVED,false,false,false,PASS
+M1N0031,M1P0017,0,F3A baseline external optimizer seed,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0032,M1P0020,10,final F3B delta-BIC01 threshold,M1C018,M1S041,PRESERVED,false,false,false,PASS
+M1N0033,M1P0020,10,final F3B delta-BIC21 threshold,M1C018,M1S041,PRESERVED,false,false,false,PASS
+M1N0034,M1P0021,4,number of candidate promotion criteria,M1C017,M1S040,PRESERVED,false,false,false,PASS
+M1N0035,M1P0021,3,promotion criteria passed,M1C017,M1S040,PRESERVED,false,false,false,PASS
+M1N0036,M1P0021,10,frozen baseline threshold t01,M1C018,M1S041,PRESERVED,false,false,false,PASS
+M1N0037,M1P0021,10,frozen baseline threshold t21,M1C018,M1S041,PRESERVED,false,false,false,PASS
+M1N0038,M1P0023,5,F0 reproduced published QPP detections,M1C001,M1S002,PRESERVED,false,false,false,PASS
+M1N0039,M1P0023,5,F0 paired not-selected events,M1C001,M1S002,PRESERVED,false,false,false,PASS
+M1N0040,M1P0024,480,F1 primary null realizations,M1C002,M1S005,PRESERVED,false,false,false,PASS
+M1N0041,M1P0024,99,F1 positive conditions,M1C002,M1S005,PRESERVED,false,false,false,PASS
+M1N0042,M1P0024,78,positive conditions with zero selections,M1C002,M1S005,PRESERVED,false,false,false,PASS
+M1N0043,M1P0024,21,positive conditions with at least one selection,M1C002,M1S005,PRESERVED,false,false,false,PASS
+M1N0044,M1P0024,15,short-support sample count,M1C002,M1S005,PRESERVED,false,false,false,PASS
+M1N0045,M1P0024,30,short-support sample count,M1C002,M1S005,PRESERVED,false,false,false,PASS
+M1N0046,M1P0026,780,F2 planned variants,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0047,M1P0026,10,F2 events,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0048,M1P0026,514,F2 eligible variants,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0049,M1P0026,266,F2 inadmissible variants,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0050,M1P0026,140,F2 selected-retained transitions,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0051,M1P0026,136,F2 selection-lost transitions,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0052,M1P0026,238,F2 not-selected-retained transitions,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0053,M1P0026,0,F2 baseline-relative selection gains,M1C004,M1S025,PRESERVED,false,false,false,PASS
+M1N0054,M1P0028,122,F3A observational references,M1C005,M1S038,PRESERVED,false,false,false,PASS
+M1N0055,M1P0028,9516,F3A planned variants,M1C005,M1S038,PRESERVED,false,false,false,PASS
+M1N0056,M1P0028,6422,F3A eligible variants,M1C005,M1S038,PRESERVED,false,false,false,PASS
+M1N0057,M1P0028,3094,F3A inadmissible variants,M1C005,M1S038,PRESERVED,false,false,false,PASS
+M1N0058,M1P0028,65,F3A baseline-concordant references,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0059,M1P0028,51,F3A baseline mismatches,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0060,M1P0028,6,F3A baseline-inadmissible references,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0061,M1P0028,61,published-QPP reference count,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0062,M1P0028,8,QPP references baseline-concordant,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0063,M1P0028,51,QPP references baseline-mismatched,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0064,M1P0028,2,QPP references baseline-inadmissible,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0065,M1P0028,61,not-selected reference count,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0066,M1P0028,57,not-selected references baseline-concordant,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0067,M1P0028,0,not-selected baseline mismatches,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0068,M1P0028,4,not-selected baseline-inadmissible references,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0069,M1P0029,51,F3A QPP-reference baseline mismatches,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0070,M1P0029,61,F3A QPP-reference denominator,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0071,M1P0029,0,external optimizer seed in F3A baseline gate,M1C006,M1S038,PRESERVED,false,false,false,PASS
+M1N0072,M1P0030,295,F3A selected-retained transitions,M1C008,M1S038,PRESERVED,false,false,false,PASS
+M1N0073,M1P0030,171,F3A selection-lost transitions,M1C008,M1S038,PRESERVED,false,false,false,PASS
+M1N0074,M1P0030,3178,F3A not-selected-retained transitions,M1C009,M1S038,PRESERVED,false,false,false,PASS
+M1N0075,M1P0030,0,F3A selection-gained transitions,M1C009,M1S038,PRESERVED,false,false,false,PASS
+M1N0076,M1P0031,111,F1 primary conditions in seed-stability scope,M1C003,M1S005,PRESERVED,false,false,false,PASS
+M1N0077,M1P0031,97,F1 conditions with M2 multiplicity flag,M1C003,M1S005,PRESERVED,false,false,false,PASS
+M1N0078,M1P0031,111,F1 denominator for M2 multiplicity,M1C003,M1S005,PRESERVED,false,false,false,PASS
+M1N0079,M1P0032,116,F3A optimizer stability event count,M1C011,M1S038,PRESERVED,false,false,false,PASS
+M1N0080,M1P0032,1160,F3A seed decisions,M1C011,M1S038,PRESERVED,false,false,false,PASS
+M1N0081,M1P0032,0,F3A seed-discordant events,M1C011,M1S038,PRESERVED,false,false,false,PASS
+M1N0082,M1P0033,295,F3A period-comparable rows,M1C011,M1S038,PRESERVED,false,false,false,PASS
+M1N0083,M1P0034,10,DEVELOPMENT baseline threshold t01,M1C013,M1S039,PRESERVED,false,false,false,PASS
+M1N0084,M1P0034,10,DEVELOPMENT baseline threshold t21,M1C013,M1S039,PRESERVED,false,false,false,PASS
+M1N0085,M1P0034,143,DEVELOPMENT TP,M1C013,M1S039,PRESERVED,false,false,false,PASS
+M1N0086,M1P0034,1657,DEVELOPMENT FN,M1C013,M1S039,PRESERVED,false,false,false,PASS
+M1N0087,M1P0034,1799,DEVELOPMENT TN,M1C013,M1S039,PRESERVED,false,false,false,PASS
+M1N0088,M1P0034,1,DEVELOPMENT FP,M1C013,M1S039,PRESERVED,false,false,false,PASS
+M1N0089,M1P0034,3600,DEVELOPMENT classifier rows,M1C013,M1S039,PRESERVED,false,false,false,PASS
+M1N0090,M1P0034,0.07944,DEVELOPMENT sensitivity,M1C013,M1S039,PRESERVED,false,false,false,PASS
+M1N0091,M1P0034,0.99944,DEVELOPMENT specificity,M1C013,M1S039,PRESERVED,false,false,false,PASS
+M1N0092,M1P0034,0.000556,DEVELOPMENT observed FPR,M1C013,M1S039,PRESERVED,false,false,false,PASS
+M1N0093,M1P0035,3,DEVELOPMENT promotion criteria passed,M1C017,M1S040,PRESERVED,false,false,false,PASS
+M1N0094,M1P0035,4,DEVELOPMENT promotion criteria required,M1C017,M1S040,PRESERVED,false,false,false,PASS
+M1N0095,M1P0035,10,final baseline t01,M1C018,M1S041,PRESERVED,false,false,false,PASS
+M1N0096,M1P0035,10,final baseline t21,M1C018,M1S041,PRESERVED,false,false,false,PASS
+M1N0097,M1P0036,152,HELDOUT TP,M1C014,M1S042,PRESERVED,false,false,false,PASS
+M1N0098,M1P0036,1648,HELDOUT FN,M1C014,M1S042,PRESERVED,false,false,false,PASS
+M1N0099,M1P0036,1800,HELDOUT TN,M1C015,M1S042,PRESERVED,false,false,false,PASS
+M1N0100,M1P0036,0,HELDOUT FP,M1C015,M1S042,PRESERVED,false,false,false,PASS
+M1N0101,M1P0036,1800,HELDOUT positive denominator,M1C014,M1S042,PRESERVED,false,false,false,PASS
+M1N0102,M1P0036,1800,HELDOUT null denominator,M1C015,M1S042,PRESERVED,false,false,false,PASS
+M1N0103,M1P0036,0.08444,HELDOUT sensitivity,M1C014,M1S042,PRESERVED,false,false,false,PASS
+M1N0104,M1P0036,1.0,HELDOUT specificity point estimate,M1C015,M1S042,PRESERVED,false,false,false,PASS
+M1N0105,M1P0036,0,HELDOUT observed false-selection numerator,M1C015,M1S042,PRESERVED,false,false,false,PASS
+M1N0106,M1P0036,1800,HELDOUT observed false-selection denominator,M1C015,M1S042,PRESERVED,false,false,false,PASS
+M1N0107,M1P0036,0.00213,HELDOUT FPR Wilson upper bound,M1C015,M1S042,PRESERVED,false,false,false,PASS
+M1N0108,M1P0038,156,HELDOUT selection-function strata,M1C019,M1S043,PRESERVED,false,false,false,PASS
+M1N0109,M1P0038,9,structural no-exposure strata,M1C019,M1S043,PRESERVED,false,false,false,PASS
+M1N0110,M1CAPF04,9,structural no-exposure cells shown as N/E,M1C019,M1S043,PRESERVED,false,false,false,PASS
+M1N0111,M1P0039,152,HELDOUT period-recovery rows,M1C021,M1S044,PRESERVED,false,false,false,PASS
+M1N0112,M1P0039,1800,eligible synthetic positives in HELDOUT,M1C021,M1S042,PRESERVED,false,false,false,PASS
+M1N0113,M1P0039,152,selected positives contributing period recovery,M1C021,M1S042,PRESERVED,false,false,false,PASS
+M1N0114,M1CAPF05,152,selected true positives plotted,M1C021,M1S044,PRESERVED,false,false,false,PASS
+M1N0115,M1CAPF05,1800,eligible synthetic positive denominator,M1C021,M1S042,PRESERVED,false,false,false,PASS
+M1N0116,M1P0044,51,F3A published-QPP baseline mismatches,M1C007,M1S038,PRESERVED,false,false,false,PASS
+M1N0117,M1P0051,10,final AFINO t01 threshold,M1C018,M1S047,PRESERVED,false,false,false,PASS
+M1N0118,M1P0051,10,final AFINO t21 threshold,M1C018,M1S047,PRESERVED,false,false,false,PASS
+M1N0119,M1P0051,0.5,AFINO version for final baseline,M1C018,M1S047,PRESERVED,false,false,false,PASS
+M1N0120,M1P0004,20,TESS cadence in seconds for the motivating observational analysis,M1C028,M1S026,PRESERVED,false,false,false,PASS

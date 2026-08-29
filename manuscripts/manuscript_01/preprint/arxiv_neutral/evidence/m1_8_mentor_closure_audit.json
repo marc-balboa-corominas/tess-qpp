@@ -1,0 +1,54 @@
+{
+  "activity": "M1.8 mentor technical closure audit after explicit author visual approval",
+  "author_visual_gate": {
+    "canonical_pdf_sha256": "04e5fc3b4fad60a6877d46b349d9327ccbf7476391a930d1032d81e038db08a5",
+    "figure4_landscape_page": 16,
+    "pages_reviewed": "22/22",
+    "render_equivalence": "22/22 PASS",
+    "reviewed_standalone_pdf_sha256": "7a010db1dfd3dd423ebed6462941ec2dcc45a0f17b6eea639e3355aad934aa39",
+    "status": "PASS"
+  },
+  "authorization": {
+    "arxiv_metadata_frozen": false,
+    "arxiv_submission_authorized": false,
+    "formal_m1_8_closed": false,
+    "freeze_authorized": true,
+    "osf_snapshot_authorized": true,
+    "public_infrastructure_update_started": false,
+    "tag_creation_authorized": true
+  },
+  "date": "2026-08-29",
+  "normative_source": {
+    "authoritative_source_package_sha256": "3c206bce9f193212b929f7a33fc4492a704289dc208079481eac83821635de29",
+    "m1_6_author_approved_commit": "d1007edcdbcf98b809ed46b0810fd62148f7b2af",
+    "m1_6_tag": "manuscript1-author-approved-v1",
+    "m1_7_role": "historical / preserved / not normative"
+  },
+  "required_next_gate": "GIT_FREEZE_AND_OSF_SNAPSHOT_VERIFICATION",
+  "schema_version": "1.0.0",
+  "scientific_identity": {
+    "claims": "27/27 PASS",
+    "figures": "5/5 M1.6 author-approved byte-exact",
+    "new_scientific_analysis": false,
+    "new_scientific_bibliography": false,
+    "new_statistical_inference": false,
+    "numeric_items": "120/120 PASS",
+    "scientific_references": "8/8 PASS",
+    "tables": "4/4 scientific content preserved"
+  },
+  "status": "TECHNICAL_CLOSURE_PASS_FREEZE_AUTHORIZED",
+  "technical_identity": {
+    "candidate_tests": "11/11 PASS",
+    "candidate_validator": "PASS",
+    "clean_directory_compile": "PASS",
+    "journal_neutrality": "PASS",
+    "latex_errors": 0,
+    "overfull_hbox": 0,
+    "overfull_vbox": 0,
+    "source_hygiene": "PASS",
+    "undefined_citations": 0,
+    "undefined_references": 0,
+    "upload_bundle_files": 11,
+    "upload_bundle_sha256": "379cc4dc9da3e09669aa46b2358ac7934d567777919716c2dcf4843ce0a30154"
+  }
+}

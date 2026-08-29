@@ -1,0 +1,27 @@
+{
+  "activity": "M1.8 author-reviewed standalone PDF versus canonical freeze PDF visual equivalence",
+  "author_visual_review": "PASS",
+  "canonical_freeze_pdf": {
+    "bytes": 459359,
+    "path": "build/manuscript_arxiv_neutral.pdf",
+    "sha256": "04e5fc3b4fad60a6877d46b349d9327ccbf7476391a930d1032d81e038db08a5"
+  },
+  "date": "2026-08-29",
+  "interpretation": "The author-reviewed standalone file and canonical freeze PDF differ in PDF serialization bytes but render identically on all 22 pages. The canonical repository PDF remains the frozen PDF identity.",
+  "layout_effect": "NONE",
+  "pages": 22,
+  "render_comparison": {
+    "changed_pages": 0,
+    "dpi": 120,
+    "engine": "pdftoppm",
+    "identical_render_pages": "22/22",
+    "status": "PASS"
+  },
+  "reviewed_standalone_pdf": {
+    "bytes": 513977,
+    "filename": "manuscript_arxiv_neutral_candidate_v3.pdf",
+    "sha256": "7a010db1dfd3dd423ebed6462941ec2dcc45a0f17b6eea639e3355aad934aa39"
+  },
+  "schema_version": "1.0.0",
+  "scientific_effect": "NONE"
+}

@@ -1,0 +1,16 @@
+{
+  "m1_6_approved_pdf_sha256": "ce94f3d55a626a9a156c0f5cf2cc16263e3b2d6cb0bcae21e729e17bb28de752",
+  "m1_6_commit": "d1007edcdbcf98b809ed46b0810fd62148f7b2af",
+  "m1_6_references_bib_sha256": "9dd94962703a3762e9cf6b38ffa491935f27dacfbc147389701624cdfc09d985",
+  "m1_6_source_tex_sha256": "7502a70633f8b7235920ef8e53155f3815bee0006196b8f3f1a733fe90ad0f14",
+  "m1_6_tag": "manuscript1-author-approved-v1",
+  "m1_6_tag_object": "8eb7e71d793eb08cef49f9d887255f5118f4a49e",
+  "m1_7_commit": "b457543887ff6fa3b7b418b5d8df0c6caecc894b",
+  "m1_7_historical_reference_only": true,
+  "m1_7_normative_for_scientific_content": false,
+  "m1_7_tag": "manuscript1-submission-ready-v1",
+  "normative_scientific_source": "M1.6 author_review",
+  "schema_version": "1.0.0",
+  "scientific_changes_allowed": false,
+  "status": "M1_8_AUTHORITATIVE_SOURCE_BOUND"
+}

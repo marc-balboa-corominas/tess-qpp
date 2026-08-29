@@ -1,0 +1,15 @@
+check,status
+title present,PASS
+author block present,PASS
+abstract present,PASS
+all scientific sections present,PASS
+5 figures present,PASS
+4 tables present,PASS
+8 scientific works represented,PASS
+no broken refs,PASS
+no missing citations,PASS
+no placeholders,PASS
+no structural clipping warnings,PASS
+no journal-specific submission text,PASS
+automated_pdf_status,PASS
+author_visual_status,PASS

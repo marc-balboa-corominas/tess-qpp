@@ -1,0 +1,11 @@
+item,author_request,implementation,difference_class,final_review_status
+R001,Page break before Section 2 - Evidence and analysis architecture,APPLIED,PAGINATION_ONLY,PASS
+R002,Page break before 4.4 Numerical stability,APPLIED,PAGINATION_ONLY,PASS
+R003,References always start on a new page,APPLIED,PAGINATION_ONLY,PASS
+R004,Keep Figure 4 as the single landscape page,PRESERVED,FORMAT_ONLY,PASS
+R005,Keep Introduction on page 1 after the abstract,PRESERVED,PAGINATION_ONLY,PASS
+R006,"Do not force 3.2, 3.5, 4.6, 5.3, or 5.5",PRESERVED_NO_FORCED_BREAK,PAGINATION_ONLY,PASS
+R007,Verify neutral back matter consciously before freeze,VERIFIED_M1_6_HAS_DATA_CODE_PLUS_BIBLIOGRAPHY_ONLY; M1_7_JOURNAL_EDITORIAL_BLOCKS_NOT_IMPORTED,NEUTRAL_METADATA_ONLY,PASS
+R008,Start Section 3 Methods on a fresh page after Section 2/Table 1,APPLIED,PAGINATION_ONLY,PASS
+R009,Place Figure 3 before subsection 4.5 and start 4.5 after the figure,APPLIED_CLEARPAGE_BEFORE_4_5,PAGINATION_ONLY,PASS
+R010,Recheck subsection 4.7 after Figure 3/4.5 reflow and move only if still in final page quarter,VERIFIED_PAGE_15_NOT_IN_FINAL_QUARTER_NO_ADDITIONAL_BREAK,PAGINATION_ONLY,PASS

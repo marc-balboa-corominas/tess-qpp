@@ -1,0 +1,21 @@
+{
+  "arxiv_metadata_frozen": false,
+  "arxiv_submission_authorized": false,
+  "author_approval_date": "2026-08-29",
+  "author_approves_neutral_pdf": true,
+  "author_reviewed_pages": "22/22",
+  "author_reviewed_render_sha256": "7a010db1dfd3dd423ebed6462941ec2dcc45a0f17b6eea639e3355aad934aa39",
+  "author_visual_status": "PASS",
+  "candidate_pdf": "build/manuscript_arxiv_neutral.pdf",
+  "candidate_pdf_pages": 22,
+  "candidate_pdf_sha256": "04e5fc3b4fad60a6877d46b349d9327ccbf7476391a930d1032d81e038db08a5",
+  "canonical_freeze_pdf_sha256": "04e5fc3b4fad60a6877d46b349d9327ccbf7476391a930d1032d81e038db08a5",
+  "formal_m1_8_closed": false,
+  "freeze_authorized": true,
+  "osf_snapshot_authorized": true,
+  "public_infrastructure_update_started": false,
+  "reviewed_render_equivalent_to_canonical": true,
+  "schema_version": "1.0.0",
+  "status": "AUTHOR_VISUAL_APPROVED_FREEZE_AUTHORIZED",
+  "tag_creation_authorized": true
+}

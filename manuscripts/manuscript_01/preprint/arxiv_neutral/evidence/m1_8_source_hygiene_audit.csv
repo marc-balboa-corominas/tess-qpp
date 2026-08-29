@@ -1,0 +1,13 @@
+check,status
+bundle_file_count,PASS
+allowed_arxiv_filenames,PASS
+no_absolute_paths,PASS
+no_parent_relative_inputs,PASS
+no_repository_relative_inputs,PASS
+no_private_trace_comments,PASS
+no_author_review_filenames,PASS
+no_build_outputs_in_bundle,PASS
+five_figures_present,PASS
+four_tables_present,PASS
+references_present,PASS
+main_tex_present,PASS

@@ -1,0 +1,19 @@
+{
+  "arxiv_submission_authorized": false,
+  "author_visual_review_date": "2026-08-29",
+  "author_visual_review_pages": "22/22 PASS",
+  "author_visual_status": "PASS",
+  "automated_pdf_status": "PASS",
+  "clean_directory_compile": "PASS",
+  "compile_engine": "pdflatex+biber",
+  "freeze_authorized": true,
+  "latex_errors": 0,
+  "overfull_hbox": 0,
+  "overfull_vbox": 0,
+  "page_count": 22,
+  "pdf_bytes": 459359,
+  "pdf_bytes_reported": 459359,
+  "pdf_sha256": "04e5fc3b4fad60a6877d46b349d9327ccbf7476391a930d1032d81e038db08a5",
+  "undefined_citations": 0,
+  "undefined_references": 0
+}

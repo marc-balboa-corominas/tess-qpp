@@ -1,0 +1,23 @@
+page,text_layout,figures,tables,section_starts,captions,legibility,overall,author_comment
+1,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Full-page author visual review PASS.
+2,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Full-page author visual review PASS.
+3,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Section 2 starts cleanly.
+4,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Whitespace after Table 1 accepted; improves separation before Methods.
+5,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Section 3 Methods starts cleanly at top of page.
+6,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Full-page author visual review PASS.
+7,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Full-page author visual review PASS.
+8,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Full-page author visual review PASS.
+9,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Full-page author visual review PASS.
+10,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Full-page author visual review PASS.
+11,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Full-page author visual review PASS.
+12,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Subsection 4.4 Numerical stability starts cleanly; whitespace accepted.
+13,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Figure 3 occupies a clean independent float page; whitespace accepted.
+14,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Subsection 4.5 starts cleanly; prior isolated continuation word removed.
+15,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Subsection 4.7 placement accepted; no additional forced break required.
+16,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Figure 4 confirmed as the single true landscape page.
+17,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Discussion starts naturally after Figure 5.
+18,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Full-page author visual review PASS.
+19,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Full-page author visual review PASS.
+20,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Full-page author visual review PASS.
+21,PASS,PASS,PASS,PASS,PASS,PASS,PASS,Conclusions start cleanly.
+22,PASS,PASS,PASS,PASS,PASS,PASS,PASS,References start on a new page; whitespace accepted.
